@@ -14,8 +14,6 @@ const mysql = require('mysql')
 const  userRoutes = require('./api/routes/user')
 const  serviceRoutes = require('./api/routes/service')
 
-
-
 //using basic middlwares
 app.use(bodyParser.json())
 app.use(cookieParser())
@@ -24,23 +22,29 @@ app.use(morgan('dev'))
 
 //mySQL database connection
 
-
- var con = mysql.createConnection({
-  host: '',
-  user: '',
-  password: ''
+// for online
+let connection1 = mysql.createConnection({    //got squal server account from https://www.freemysqlhosting.net/
+    host: 'sql12.freemysqlhosting.net',
+    user: 'sql12353294',
+    password:'jGw3nnLIkl',
+    database: 'sql12353294'
 });
 
- con.connect(function(err) {
-  if(err){
-      console.log(err)
-  }
-  else{
-      console.log("DB connected successfully")
-  }
- });
+//for locally
+let connection2 = mysql.createConnection({  
+    host: 'localhost',
+    user: 'root',
+    password:'password',
+    database: 'bgunified'
+});
 
-
+connection1.connect(function(err) {
+    if (err) {
+      return console.error('error: ' + err.message);
+    }
+    console.log('Connected to the MySQL server.');
+  });
+  
 //routes middleware
 app.use("/api", userRoutes)
 app.use("/api", serviceRoutes)
