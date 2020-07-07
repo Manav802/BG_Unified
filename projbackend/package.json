@@ -1,0 +1,27 @@
+{
+  "name": "projbackend",
+  "version": "1.0.0",
+  "description": "Backend of Website BG-Unified Solutions",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "BG-Unified Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "express-validator": "^6.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "uuid": "^8.2.0"
+  }
+}
