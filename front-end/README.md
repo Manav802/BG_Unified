@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### If you have npm installed:
+
+First Change directory to front-end folder, 
+
+On terminal You can run `npm i` to get started
+
+
 ## Available Scripts
 
 In the project directory, you can run:
