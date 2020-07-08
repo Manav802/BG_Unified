@@ -8,9 +8,9 @@ const cors = require("cors");
 const morgan = require('morgan')
 
 //database
-const mysql = require('mysql')
+const {dbConnection} = require('./config/db')
 
-//requiring  routes
+//routes
 const  userRoutes = require('./api/routes/user')
 const  serviceRoutes = require('./api/routes/service')
 
@@ -20,35 +20,12 @@ app.use(cookieParser())
 app.use(cors());
 app.use(morgan('dev'))
 
-//mySQL database connection
+//database connectivity
+dbConnection()
 
-// for online
-let connection1 = mysql.createConnection({    //got squal server account from https://www.freemysqlhosting.net/
-    host: 'sql12.freemysqlhosting.net',
-    user: 'sql12353294',
-    password:'jGw3nnLIkl',
-    database: 'sql12353294'
-});
-
-//for locally
-let connection2 = mysql.createConnection({  
-    host: 'localhost',
-    user: 'root',
-    password:'password',
-    database: 'bgunified'
-});
-
-connection1.connect(function(err) {
-    if (err) {
-      return console.error('error: ' + err.message);
-    }
-    console.log('Connected to the MySQL server.');
-  });
-  
 //routes middleware
 app.use("/api", userRoutes)
 app.use("/api", serviceRoutes)
-
 
 //exporting the file 
 module.exports =app 
