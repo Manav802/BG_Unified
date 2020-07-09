@@ -15,5 +15,4 @@ exports.sendMail =(message) =>{
 }
 
 //strcutre of the message
-
 // { to, from,subject,text,html}

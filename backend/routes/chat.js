@@ -2,9 +2,9 @@ const express = require('express')
 const Router = express.Router()
 
 //Testing API
-Router.get('/user',async (req, res)=>{
+Router.get('/get',async (req, res)=>{
  
-  res.send("In Progress for User")    
+  res.send("In Progress for chat")    
    
 })
 
