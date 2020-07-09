@@ -5,10 +5,10 @@ exports.dbConnection  = () =>{
     
 // for online
 let connection1 = mysql.createConnection({    //got squal server account from https://www.freemysqlhosting.net/
-    host: 'sql12.freemysqlhosting.net',
-    user: 'sql12353294',
-    password:'jGw3nnLIkl',
-    database: 'sql12353294'
+    host: '',
+    user: '',
+    password:'',
+    database: ''
 });
 
 //for locally
@@ -16,10 +16,10 @@ let connection2 = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password:'password',
-    database: 'bgunified'
+    database: 'bgunified' //database should be present in your localhost with this name
 });
 
-connection1.connect(function(err) {
+connection2.connect(function(err) {
     if (err) {
       return console.error('error: ' + err.message);
     }
