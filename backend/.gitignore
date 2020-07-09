@@ -1,2 +1,5 @@
 #for ignoring the node modules
 node_modules
+
+# environment variable
+.env

@@ -9,7 +9,8 @@ exports.handleError = (res, err, message) => {
         success: false,
         message: err.message
       });
-    } catch (error) {
+    } 
+    catch (error) {
       res.status(500).json({
         success: false,
         message: message
