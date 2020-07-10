@@ -6,7 +6,7 @@ function SideNav()
         <div className="col col-sm-3 sidebar-container bg-dark" >
         <ul id="sideNav" className="margin-top nav nav-tabs flex-column">
             <li className="nav-item">
-                <a className="nav-link active" href="#1">Active</a>
+                <a className="nav-link active" href="#1">Image-popUp</a>
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="#2">Link</a>
