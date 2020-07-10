@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Header from './Header'
+import { ButtonGroup } from "@chakra-ui/core";
 import '../scss/_componentsheet.scss'
 
 //Components 
-import Login from '../components/login/main';
+import Login from '../components/auth/main';
 
 // eslint-disableY
 
@@ -52,7 +53,11 @@ class Componentsheet extends Component {
                                     <div className="my-3">
                                         <span className="display6">Authenticate</span>
                                         <div className="mt-2">
-                                            <Login />
+                                            <ButtonGroup spacing={4}>
+                                                <Login signup={false} />
+                                                <span> </span>
+                                                <Login signup={true}/>
+                                            </ButtonGroup>
                                         </div>
                                     </div>
                                 </div>
