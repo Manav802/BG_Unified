@@ -1,5 +1,7 @@
 //Anchor Tag
 a{
-    color: black;
+    color: $color-primary !important;
+    text-decoration: none !important;
+    font-weight: 700;
     cursor: pointer;
 }

@@ -1,14 +1,16 @@
 @import '_variables';
 
+$header_height: 80px;
+
 .component{
   &-sidebar-container 
   {
-    width: 320px;
+    width: 256px;
     padding: 2rem;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
-    height: calc(100vh - 81px);
+    height: calc(100vh - 80px);
     position: sticky;
-    top: 81px;
+    top: $header_height;
   }
 
   &-header{
@@ -16,5 +18,6 @@
     top: 0px;
     z-index: 10;
     background: $color-light;
+    height: $header_height;
   }
 }

@@ -1,0 +1,23 @@
+.auth{
+    &-fullscreen{
+        min-height: 100vh !important;
+    }
+    &-modal{
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        z-index: 200;
+    }
+    &-modal-container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    &-modal-footer{
+        margin-top: -64px;
+        min-height: 164px;
+        background-image: url('../');
+    
+    }
+}
