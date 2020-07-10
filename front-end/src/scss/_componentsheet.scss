@@ -1,0 +1,20 @@
+@import '_variables';
+
+.component{
+  &-sidebar-container 
+  {
+    width: 320px;
+    padding: 2rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    height: calc(100vh - 81px);
+    position: sticky;
+    top: 81px;
+  }
+
+  &-header{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: $color-light;
+  }
+}

@@ -5,9 +5,10 @@ import './main.css'
 
 function imgPopUp(props)
 {
-    return(<div id={props.id}>
-        <SmallImage >
-        </SmallImage>
+    return(
+        <div className="image-popup" id={props.id}>
+            <SmallImage >
+            </SmallImage>
         </div>);
 }
 
