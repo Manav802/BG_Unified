@@ -1,17 +1,20 @@
 import React from 'react';
+import '../css/styles.css'
 import SideNav from './elements/SideNav'
 import Header from  './elements/Header'
 import ContentArea from './elements/ContentArea'
 import Home from './ImageSlider';
-import '../css/styles.css'
+import Text from './TextBox'
 
 function App()
 {
-	return <div><Header /> 
+	return <div>
+	{/* <Header />  */}
 	<div className="container-fluid">
 	{/* <SideNav/>
 	<ContentArea/> */}
-	<Home />
+	{/* <Home /> */}
+	<Text/>
 	</div>
 	</div>
 }
