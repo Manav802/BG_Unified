@@ -42,3 +42,12 @@
         align-items: flex-end;
     }
 }
+
+@media screen and (min-width: 1920px){
+    .auth{
+        &-modal-footer{
+            background-size: cover;
+            
+        }
+    }
+}
