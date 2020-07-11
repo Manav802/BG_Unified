@@ -1,25 +1,35 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
+import { Input, Stack } from "@chakra-ui/core";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    '& > *': {
-      margin: theme.spacing(1),
-      width: '30ch',
-    },
-  },
-}));
+function PasswordInput() {
+  const [show, setShow] = React.useState(false);
+  const handleClick = () => setShow(!show);
 
-export default function BasicTextFields() {
-  const classes = useStyles();
+function Text(){
+  return(
+    <form>
+      <Stack spacing="3">
+      <Input placeholder="Basic usage" />
+      <Input placeholder="Basic usage" />
+      <Input placeholder="Basic usage" />
 
-  return (
-    <form className={classes.root} noValidate autoComplete="off">
-      <TextField id="standard-basic" label="Standard" color='secondary'/>
-
-      {/* <TextField id="filled-basic" label="Filled" variant="filled" />
-      <TextField id="outlined-basic" label="Outlined" variant="outlined" /> */}
+      <InputGroup size="md">
+      <Input
+        pr="4.5rem"
+        type={show ? "text" : "password"}
+        placeholder="Enter password"
+      />
+      <InputRightElement width="4.5rem">
+        <Button h="1.75rem" size="sm" onClick={handleClick}>
+          {show ? "Hide" : "Show"}
+        </Button>
+      </InputRightElement>
+    </InputGroup>
+      </Stack>
     </form>
-  );
+  )
 }
+
+}
+
+export default Text;

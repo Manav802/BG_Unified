@@ -23,7 +23,7 @@ export default class Home extends Component {
             }}
           >
             {images.map((image, index) => (
-              <div style={{ width: '40%', height: '800px', margin: '0 5em', padding:'2em', overflow:'hidden'}} key={index}>
+              <div style={{ width: '40%', height: '800px', margin: '0 0.5em', padding:'2em', overflow:'hidden'}} key={index}>
                 <img src={image} className='imageFlickity' alt="" />
               </div>
             ))}

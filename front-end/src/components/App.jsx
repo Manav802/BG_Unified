@@ -5,17 +5,25 @@ import Header from  './elements/Header'
 import ContentArea from './elements/ContentArea'
 import Home from './ImageSlider';
 import Text from './TextBox'
+import { ThemeProvider } from "@chakra-ui/core";
+
 
 function App()
 {
-	return <div>
-	{/* <Header />  */}
-	<div className="container-fluid">
-	{/* <SideNav/>
-	<ContentArea/> */}
-	{/* <Home /> */}
-	<Text/>
-	</div>
-	</div>
+	return( 
+	<ThemeProvider>
+		<div>
+		{/* <Header />  */}
+		<div className="container-fluid">
+		{/* <SideNav/>
+		<ContentArea/> */}
+		{/* <Home /> */}
+		<Text/>
+		</div>
+		</div>
+	</ThemeProvider>
+
+	
+	)
 }
 export default App;
