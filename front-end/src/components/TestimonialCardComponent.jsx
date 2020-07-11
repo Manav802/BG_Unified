@@ -14,28 +14,39 @@ function AirbnbExample() {
   
     return (
     <div className="container">
-        <div className="row mt-5">
+        <div className="row col-md-5 col-sm-3 mt-5">
+            
             <Box maxW="lg" borderWidth="1px"  rounded="lg" bg="gray.50" boxShadow="md" overflow="hidden">
-                <Box w="3">
-                {/* <Image src={property.imageUrl} alt={property.imageAlt} /> */}
-                <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
-            </Box>
+                
+                <div className='row ml-3 mt-4'>
+                    {/* <Box maxW="sm" boxShadow="md" bg='gray.200'/> */}
+                    {/* <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" /> */}
+                    <Box bg="gray.400" w="20" rounded="lg" p={5} >
 
-            <Box mt="3">
-                {property.paragraph}
-                <Box as="span" color="gray.600" fontSize="sm">
+                    </Box>
+                </div>
+
+                <div className='row mt-1 mr-3 ml-3'>
+                <Box mt="3">
+                    {property.paragraph}
+                    <Box as="span" color="gray.600" fontSize="sm">
+                    </Box>
                 </Box>
-            </Box>
+                </div>
 
-            <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight" isTruncated>
-                {property.author}
+                <div className='row mt-1 ml-3'>
+                <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight" isTruncated>
+                    {property.author}
+                </Box>
+                </div>
+                
+                <div className="row mb-4 ml-3">
+                <Box as="span" color="gray.600" fontSize="sm">
+                    {property.CompanyName}
+                </Box>
+                </div>
+            
             </Box>
-
-            <Box as="span" color="gray.600" fontSize="sm">
-                {property.CompanyName}
-            </Box>
-        
-        </Box>
             </div>
         </div>
       
