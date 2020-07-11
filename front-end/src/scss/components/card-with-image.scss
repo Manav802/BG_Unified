@@ -1,9 +1,6 @@
 .backgroundImage 
 {
   position: relative;
-  background-image: url(https://picsum.photos/400);
-  background-size: cover;
-  background-position: center;
   border-radius:8px;  
   width: 308px;
   height: 387px;
@@ -42,7 +39,7 @@
   {
     margin-top: 5%;
     display:flex;
-    justify-content:start;
+    justify-content:flex-start;
     .red{
       margin-left: 20%;
       color:$color-primary !important; 

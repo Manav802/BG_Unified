@@ -62,14 +62,14 @@ return (
                             <div className="my-3">
                                 <span className="display6">Image popup</span>
                                 <div className="mt-2">
-                                    <ImgPopup id="2" />
+                                        <ImgPopup image="https://picsum.photos/id/106/200" />
                                 </div>
                             </div>
 
                             <div className="my-3">
                                 <span className="display6">Card With Image</span>
                                 <div className="mt-2">
-                                    <CardWithImage />
+                                        <CardWithImage image="https://picsum.photos/id/106/400"/>
                                 </div>
                             </div>
                             <div className="my-3">

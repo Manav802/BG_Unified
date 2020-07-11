@@ -4,7 +4,7 @@ import Links from './ActionLinks'
 function cardWithImage(props)
 {
     return(
-        <div className="backgroundImage" id={props.id}>
+        <div className="backgroundImage"style={{backgroundImage:"url("+props.image+")"}}>
             <div className="mask-element">
                 <Content/>
                 <Links/>
