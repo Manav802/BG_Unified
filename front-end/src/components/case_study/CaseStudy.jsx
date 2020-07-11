@@ -16,10 +16,10 @@ function CaseStudy() {
                     </div>
                     <img className="img-fluid img-lg" src={sdwan_s} alt="sdwan_s"/>
                 </div>
-                <div className="col-12 d-sm-none">
+                <div className="col-12 d-md-none">
                     <img className="img-fluid" src={sdwan}/>
-                    <div className="imagediv-sm ">
-                        <img className="img-fluid image23" src={image23}/>
+                    <div className="imagediv-sm image23-sm">
+                        <img className="img-fluid" src={image23}/>
                     </div>
                 </div>
                 <div className="col offset-md-1">
@@ -36,3 +36,5 @@ function CaseStudy() {
 }
 
 export default CaseStudy;
+
+
