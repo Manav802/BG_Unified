@@ -14,7 +14,6 @@ class Testimonial extends Component {
                 <div key={testimonialDetails.id} className="col-12 mt-5">
                     <Box maxW="lg" borderWidth="1px"  rounded="lg" bg="" boxShadow="md" overflow="hidden">   
                     <div className='ml-3 mt-4'>
-                        {/* <Box maxW="sm" boxShadow="md" bg='gray.200'/> */}
                         <Avatar name="Dan Abrahmov" src={testimonialDetails.imageUrl} /> 
                         {/* <Box bg="gray.400" w="20" rounded="lg" p={5} /> */}
                     </div>
@@ -60,17 +59,3 @@ class Testimonial extends Component {
     }
  
 export default Testimonial;
-
-// function Testimonial() {
-//     const testimonialDetails = {
-//       imageUrl: "https://bit.ly/dan-abramov",
-//       imageAlt: "Company Logo",
-//       author: "Gared Hudson",
-//       paragraph: "Dolor id culpa eu nostrud id reprehenderit laboris ex dolor enim aliquip mollit. Magna excepteur culpa sint nostrud reprehenderit consequat. Quis magna dolore quis qui duis fugiat ea excepteur. Ut duis dolore velit irure. Enim do voluptate laborum nostrud laborum culpa officia aliquip sint ea.",
-//       CompanyName: "Alejandro",
-//     };
-  
-//     return (
-    
-
-//   export default Testimonial;
