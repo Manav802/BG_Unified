@@ -1,3 +1,84 @@
 .case-study{
+    .feature{
+        text-align: left;
+        line-height: 22px;
+        font: 16px/22px 'Nunito Sans ExtraBold';
+        letter-spacing: 1.6px;
+        color: #F32222;
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
     
+    
+    .img-lg{
+        position: absolute;
+        border-radius: 8px;
+        left: 65px;
+    }
+    
+    .img-sm{
+        border-radius: 8px;
+    }
+    
+    .content{
+        text-align: left;
+        font: 16px/22px 'Nunito Sans Regular';
+        letter-spacing: 1.6px;
+        color: #051133;
+        opacity: 1;
+    }
+    
+    .readmore{
+        text-align: left;
+        padding: 10px 20px 10px 20px;
+        font-size: 13px;
+        font-family: 'Nunito Sans ExtraBold';
+        letter-spacing: 0px;
+        color: #051133;
+        opacity: 1;
+    }
+    
+    .repeatGrid{
+        position: absolute;
+        top: 280px;
+        z-index: 0;
+        width: 158px;
+        height: 186px;
+        opacity: 0.41;
+    }
+    
+    .image23{
+        width: 106px;
+        height: 69px;
+    }
+    
+    .imagediv{
+        padding-top: 20px;
+        padding-left: 6px;
+        width: 116px;
+        height: 116px;
+        position: absolute;
+        overflow: hidden;
+        border-radius: 50%;
+        top: 310px;
+        left: 340px;
+        z-index: 20;
+        background-color: white;
+    }
+    
+    .imagediv-sm{
+        position: absolute;
+        left: 252px;
+        top: 125px;
+        padding: 11px;
+        z-index: 20;
+        background-color: white;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 12px;
+    }
+    
+    .image23-sm{
+        width: 106px;
+        height: 69px;
+    }
 }
