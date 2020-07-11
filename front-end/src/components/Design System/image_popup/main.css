@@ -1,12 +1,89 @@
-.large {
-  position: absolute;
-  left: -9999px;
-}
-.smallImg:hover .large {
-  left: 20px;
-  top: 150px;
+/*Eliminates padding, sets up document style */
+body, html {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
 }
 
-.smallImg{
-  width: fit-content;
+/* Styles the thumbnail */
+
+a.thumbnail img {
+	position: relative;
+	margin: auto;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+a {
+	color: black;
+	text-decoration: none;
+
+}
+
+a:hover
+{
+	color:white;
+}
+.lightbox {
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, .5);
+	visibility: hidden;
+	opacity: 0;
+	z-index: 3;
+}
+
+.lightboxClose {
+	color: black;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.closeIcon
+{
+	position: relative;
+	z-index: 20;
+	color: whitesmoke;
+	top: 50%;
+	left:5%;
+}
+.animate {
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-ms-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+
+/* Styles the lightbox content, centering it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox img {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 40%;
+	max-height: 40%;
+	border: 2px solid white;
+	box-sizing: border-box;
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox anchor */
+
+.lightbox:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.lightbox:target img{
+	max-width: 95%;
+	max-height: 95%;
 }
