@@ -1,12 +1,11 @@
 import React from 'react'
-import './main.css'
-
+import Content from './contents'
 function cardWithImage(props)
 {
     return(
         <div className="backgroundImage" id={props.id}>
-            <div className="contentDiv">
-                
+            <div className="mask-element">
+                <Content/>
             </div>
         </div>);
 }

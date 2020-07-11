@@ -1,14 +1,13 @@
 import React from 'react'
-import './main.css'
 
 
-function imgPopUp(props)
+function ImgPopUp(props)
 {
     return (
       <div id={props.id}>
-        <a className="thumbnail" href="#img1">
-          <img src="https://picsum.photos/200" alt=" did not load correctly"/>
-        </a>
+          <a href="#img1" className="thumbnail">
+            <img src="https://picsum.photos/200" alt=" did not load correctly" />
+          </a>
         <div className="lightbox animate" id="img1">
           <a className="lightboxClose" href="#!">       
           CLOSE</a>
@@ -22,4 +21,4 @@ function imgPopUp(props)
     );
     }
     
-    export default imgPopUp;
+    export default ImgPopUp;
