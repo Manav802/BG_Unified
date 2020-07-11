@@ -69,25 +69,28 @@
         .img-lg{
             left: 40px;
         }
+        .imagediv{
+            padding-top: 16px;
+        }
         
     }
     @media (min-width: 768px){
         .imagediv{
-            top: 200px;
+            top: 250px;
             left: 210px;
-            width: 90px;
-            height: 90px;
+            width: 80px;
+            height: 80px;
         }
         .repeatGrid{
-            top:120px;
+            top:160px;
         }
         
     }
 
     @media (min-width: 992px){
         .imagediv{
-            top: 290px;
-            left: 300px;
+            top: 270px;
+            left: 305px;
             width: 90px;
             height: 90px;
         }
