@@ -4,7 +4,7 @@ import SideNav from './elements/SideNav'
 import Header from  './elements/Header'
 import ContentArea from './elements/ContentArea'
 import ImageSlider from './ImageSliderComponent';
-import Text from './TextBox'
+import TextBox from './TextBoxComponent'
 import Testimonial from './TestimonialCardComponent'
 import { ThemeProvider } from "@chakra-ui/core";
 
@@ -19,8 +19,9 @@ function App()
 		{/* <SideNav/>
 		<ContentArea/> */}
 		<ImageSlider />
-		{/* <Text/> */}
-		{/* <Testimonial/> */}
+		<Testimonial/>
+		<TextBox/>
+		
 		</div>
 		</div>
 	</ThemeProvider>

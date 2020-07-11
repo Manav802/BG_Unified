@@ -1,10 +1,11 @@
 import React from 'react';
 import { Input, Stack } from "@chakra-ui/core";
 
-function Text(){
+function TextBox(){
   return(
     <div className="container">
-      <div className="row row-header">
+      <div className="row row-header justify-content-center">
+        <div className="col-md-5">
         <form>
           <Stack spacing="3">
           <Input placeholder="Username"/>
@@ -14,9 +15,10 @@ function Text(){
           <Input focusBorderColor="pink.400" placeholder="textbox-danger" />
           </Stack>
         </form>
+        </div>
       </div>
     </div>
   )
 }
 
-export default Text;
+export default TextBox;

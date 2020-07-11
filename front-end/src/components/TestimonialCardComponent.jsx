@@ -4,8 +4,8 @@ import { Box, Image, Avatar, AvatarBadge } from "@chakra-ui/core";
 
 
 function Testimonial() {
-    const property = {
-      imageUrl: "https://bit.ly/2Z4KKcF",
+    const testimonialcard1 = {
+      imageUrl: "https://bit.ly/dan-abramov",
       imageAlt: "Company Logo",
       author: "Gared Hudson",
       paragraph: "Dolor id culpa eu nostrud id reprehenderit laboris ex dolor enim aliquip mollit. Magna excepteur culpa sint nostrud reprehenderit consequat. Quis magna dolore quis qui duis fugiat ea excepteur. Ut duis dolore velit irure. Enim do voluptate laborum nostrud laborum culpa officia aliquip sint ea.",
@@ -20,15 +20,13 @@ function Testimonial() {
             <Box maxW="lg" borderWidth="1px"  rounded="lg" bg="" boxShadow="md" overflow="hidden">   
                 <div className='ml-3 mt-4'>
                     {/* <Box maxW="sm" boxShadow="md" bg='gray.200'/> */}
-                    {/* <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" /> */}
-                    <Box bg="gray.400" w="20" rounded="lg" p={5} >
-
-                    </Box>
+                    <Avatar name="Dan Abrahmov" src={testimonialcard1.imageUrl} /> 
+                    {/* <Box bg="gray.400" w="20" rounded="lg" p={5} /> */}
                 </div>
 
                 <div className=' mt-1 mr-3 ml-3'>
                 <Box mt="3">
-                    {property.paragraph}
+                    {testimonialcard1.paragraph}
                     <Box as="span" color="gray.600" fontSize="sm">
                     </Box>
                 </Box>
@@ -36,13 +34,13 @@ function Testimonial() {
 
                 <div className='mt-1 ml-3'>
                 <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight" isTruncated>
-                    {property.author}
+                    {testimonialcard1.author}
                 </Box>
                 </div>
                 
                 <div className="mb-4 ml-3">
                 <Box as="span" color="gray.600" fontSize="sm">
-                    {property.CompanyName}
+                    {testimonialcard1.CompanyName}
                 </Box>
                 </div>
             
