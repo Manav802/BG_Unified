@@ -5,6 +5,7 @@ import Header from  './elements/Header'
 import ContentArea from './elements/ContentArea'
 import Home from './ImageSlider';
 import Text from './TextBox'
+import AirbnbExample from './TestimonialCardComponent'
 import { ThemeProvider } from "@chakra-ui/core";
 
 
@@ -18,7 +19,8 @@ function App()
 		{/* <SideNav/>
 		<ContentArea/> */}
 		{/* <Home /> */}
-		<Text/>
+		{/* <Text/> */}
+		<AirbnbExample/>
 		</div>
 		</div>
 	</ThemeProvider>
