@@ -1,0 +1,26 @@
+.card-with-action{
+    overflow: hidden;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+    .iconbox{
+        padding: 40px 30px 20px 30px;
+    }
+    .cardContent{
+        font-size: $font-size-body-1;
+        font-family: 'Nunito Sans Regular';
+    }
+    .slant-image{
+        transform: skewY(-3.7deg) translateY(-14%);
+        max-height: 256px;
+        overflow: hidden;
+        background: $color-light;
+        img{
+            width: 100%;
+            
+            transform: skewY(3.7deg) scale(1.1);
+        }
+    }
+}
+.card-with-action:hover{
+    cursor: pointer;
+}
