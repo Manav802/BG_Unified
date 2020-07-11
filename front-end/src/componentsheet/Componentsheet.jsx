@@ -55,7 +55,6 @@ class Componentsheet extends Component {
                                         <div className="mt-2">
                                             <ButtonGroup spacing={4}>
                                                 <Login signup={false} />
-                                                <span> </span>
                                                 <Login signup={true}/>
                                             </ButtonGroup>
                                         </div>
