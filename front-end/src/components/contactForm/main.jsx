@@ -6,24 +6,28 @@ import {
 function ContactForm() {
     return <div className="contact-form">
         <form>
-            <Stack spacing={12}>
+            <Stack shouldWrapChildren spacing={8}>
                 <FormControl isRequired>
-                    <Input id="fname" placeholder="First name" />
+                    <FormLabel>Your name</FormLabel>
+                    <Input id="name" variant="flushed"/>
                 </FormControl>
-                <Stack isInline spacing={200} className="flex-fill">
+                <Stack isInline spacing={200}>
                     <FormControl isRequired>
-                        <Input type="email" id="email" placeholder="Email adress " aria-describedby="email-helper-text" />
+                        <FormLabel>Email Adress</FormLabel>
+                        <Input type="email" id="email" aria-describedby="email-helper-text" variant="flushed" />
 
                     </FormControl>
                     <FormControl isRequired>
-                        <Input type="phone" placeholder="Contact number" />
+                        <FormLabel>Contact No.</FormLabel>
+                        <Input type="phone" variant="flushed"/>
                     </FormControl>
                 </Stack>
                 <FormControl isRequired>
-                    <Input placeholder="Message" size="lg" />
+                    <FormLabel>Message</FormLabel>
+                    <Input variant="flushed" size="lg" />
                 </FormControl>
                 <Button
-                    mt={34}
+                    mt={2}
                     type="submit"
                     size="md"
                     height="48px"
