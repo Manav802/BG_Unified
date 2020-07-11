@@ -1,6 +1,6 @@
 // Sample card from Airbnb
 import React from 'react';
-import { Box, Image, Badge } from "@chakra-ui/core";
+import { Box, Image, Avatar, AvatarBadge } from "@chakra-ui/core";
 
 
 function AirbnbExample() {
@@ -13,8 +13,14 @@ function AirbnbExample() {
     };
   
     return (
-      <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
-        <Image src={property.imageUrl} alt={property.imageAlt} />
+    <div className="container">
+        <div className="row mt-5">
+            <Box maxW="lg" borderWidth="1px"  rounded="lg" bg="gray.50" boxShadow="md" overflow="hidden">
+                <Box w="3">
+                {/* <Image src={property.imageUrl} alt={property.imageAlt} /> */}
+                <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+            </Box>
+
             <Box mt="3">
                 {property.paragraph}
                 <Box as="span" color="gray.600" fontSize="sm">
@@ -30,6 +36,9 @@ function AirbnbExample() {
             </Box>
         
         </Box>
+            </div>
+        </div>
+      
     );
   }
 
