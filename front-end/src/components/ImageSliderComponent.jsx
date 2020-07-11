@@ -8,10 +8,10 @@ import Slider from './Slider';
 
 const images = [Image1, Image2, Image3, Image4, Image5];
 
-export default class Home extends Component {
+export default class ImageSlider extends Component {
   render() {
     return (
-        <div>
+        <div className="">
           <div style={{ display: 'flex', justifyContent: 'space-between' }} />
           <Slider
             options={{
@@ -23,7 +23,7 @@ export default class Home extends Component {
             }}
           >
             {images.map((image, index) => (
-              <div style={{ width: '40%', height: '800px', margin: '0 0.5em', padding:'2em', overflow:'hidden'}} key={index}>
+              <div style={{ width: '40%', height: '400px', margin: '0 -1.5em', padding:'2em', overflow:'hidden'}} key={index}>
                 <img src={image} className='imageFlickity' alt="" />
               </div>
             ))}

@@ -3,9 +3,9 @@ import '../css/styles.css'
 import SideNav from './elements/SideNav'
 import Header from  './elements/Header'
 import ContentArea from './elements/ContentArea'
-import Home from './ImageSlider';
+import ImageSlider from './ImageSliderComponent';
 import Text from './TextBox'
-import AirbnbExample from './TestimonialCardComponent'
+import Testimonial from './TestimonialCardComponent'
 import { ThemeProvider } from "@chakra-ui/core";
 
 
@@ -18,9 +18,9 @@ function App()
 		<div className="container-fluid">
 		{/* <SideNav/>
 		<ContentArea/> */}
-		{/* <Home /> */}
+		<ImageSlider />
 		{/* <Text/> */}
-		<AirbnbExample/>
+		{/* <Testimonial/> */}
 		</div>
 		</div>
 	</ThemeProvider>

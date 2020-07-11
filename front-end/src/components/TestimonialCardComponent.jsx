@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, Image, Avatar, AvatarBadge } from "@chakra-ui/core";
 
 
-function AirbnbExample() {
+function Testimonial() {
     const property = {
       imageUrl: "https://bit.ly/2Z4KKcF",
       imageAlt: "Company Logo",
@@ -54,4 +54,4 @@ function AirbnbExample() {
     );
   }
 
-  export default AirbnbExample;
+  export default Testimonial;
