@@ -15,7 +15,7 @@ function ImgPopUp(props)
           <img className="animate" src={props.image}
           width="40%"
           height="40%"
-            alt="did not load correctly"/>
+            alt="Did not load correctly"/>
         </div>
       </div>
     );

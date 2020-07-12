@@ -4,19 +4,19 @@ FormControl,Stack,
 FormLabel,Input,Flex,Button
 } from "@chakra-ui/core";
 function ContactForm() {
-return <div className="contact-form">
+return <div className="contact-form p-5">
     <form>
         <Stack spacing={8}>
             <FormControl isRequired>
                 <FormLabel>Your name</FormLabel>
                 <Input id="name" variant="flushed" />
             </FormControl>
-            <Flex justifyContent="space-between" flexDirection={["column","column","row","row"]}>
-                <FormControl isRequired>
+            <Flex className="row" flexDirection={["column","column","row","row"]}>
+                <FormControl className="col-lg-6" isRequired>
                     <FormLabel>Email Adress</FormLabel>
                     <Input type="email" id="email" aria-describedby="email-helper-text" variant="flushed" />
                 </FormControl>
-                <FormControl isRequired>
+                <FormControl className="col-lg-6" isRequired>
                     <FormLabel>Contact No.</FormLabel>
                     <Input type="phone" variant="flushed" />
                 </FormControl>
