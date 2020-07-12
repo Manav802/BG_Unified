@@ -1,3 +1,4 @@
+
 .case-study{
     .feature{
         text-align: left;
@@ -48,8 +49,8 @@
     }
     
     .image23{
-        width: 106px;
-        height: 69px;
+        width: 100%;
+        height: auto;
     }
     
     .imagediv{
@@ -60,17 +61,60 @@
         position: absolute;
         overflow: hidden;
         border-radius: 50%;
-        top: 310px;
-        left: 340px;
+        
         z-index: 20;
         background-color: white;
     }
-    
+    @media (max-width: 991.98px){
+        .img-lg{
+            left: 40px;
+        }
+        .imagediv{
+            padding-top: 16px;
+        }
+        
+    }
+    @media (min-width: 768px){
+        .imagediv{
+            top: 250px;
+            left: 210px;
+            width: 80px;
+            height: 80px;
+        }
+        .repeatGrid{
+            top:160px;
+        }
+        
+    }
+
+    @media (min-width: 992px){
+        .imagediv{
+            top: 270px;
+            left: 305px;
+            width: 90px;
+            height: 90px;
+        }
+        .repeatGrid{
+            top:210px;
+        }
+      }
+
+    @media(min-width: 1200px){
+        .imagediv{
+            top: 310px;
+            left: 340px;
+            width: 116px;
+            height: 116px;
+        }
+        .repeatGrid{
+            top:280px;
+        }
+      }
     .imagediv-sm{
         position: absolute;
-        left: 252px;
-        top: 125px;
-        padding: 11px;
+        left: 73%;
+        top: 80%;
+        padding: 1%;
         z-index: 20;
         background-color: white;
         box-shadow: 0px 3px 6px #00000029;
@@ -78,7 +122,8 @@
     }
     
     .image23-sm{
-        width: 106px;
-        height: 69px;
+        display: block;
+        width: 20%;
+        height: auto;
     }
 }
