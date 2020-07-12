@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Slider from '../ImageSlider/Slider'
 import { Box, Image, Avatar, AvatarBadge } from "@chakra-ui/core";
 
 class Testimonial extends Component {
@@ -11,22 +12,21 @@ class Testimonial extends Component {
         const TestimonialVariable = this.props.testimonialDetails.map((testimonialDetails)=>
         {
             return(
-                <div key={testimonialDetails.id} className="col-12 mt-5">
-                    <Box maxW="lg" borderWidth="1px"  rounded="lg" bg="" boxShadow="md" overflow="hidden">   
+                <div key={testimonialDetails.id} className="col-lg-7 p-2 my-3">
+                    <Box borderWidth="1px" className="px-4 py-2"  rounded="lg" bg="" boxShadow="md" overflow="hidden">   
                     <div className='ml-3 mt-4'>
-                        <Avatar name="Dan Abrahmov" src={testimonialDetails.imageUrl} /> 
-                        {/* <Box bg="gray.400" w="20" rounded="lg" p={5} /> */}
+                        <img src={testimonialDetails.imageUrl} style={{height:'64px'}} alt=""/>
                     </div>
 
-                    <div className=' mt-1 mr-3 ml-3'>
-                    <Box mt="3">
+                    <div className='mt-1 mr-3 ml-3'>
+                    <Box mt="3" className="text-justify">
                         {testimonialDetails.paragraph}
                         <Box as="span" color="gray.600" fontSize="sm">
                         </Box>
                     </Box>
                     </div>
 
-                    <div className='mt-1 ml-3'>
+                    <div className='mt-3 ml-3'>
                     <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight" isTruncated>
                         {testimonialDetails.author}
                     </Box>
@@ -45,15 +45,16 @@ class Testimonial extends Component {
 
 
         return ( 
-            <div className="container mt-5">
-                <div className="row justify-content-center ">
-                    <div className="col-md-6 col-10 mt-5">
-                        <h4>Testimonial Card</h4>
-                        {TestimonialVariable}
-                    </div>
-                </div>
-            </div>
-        
+            <Slider
+            options={{
+              freeScroll: true,
+              contain: true,
+              adaptiveHeight: true,
+              pageDots: false,
+
+            }}>
+                {TestimonialVariable}
+            </Slider>
         );
     }
     }

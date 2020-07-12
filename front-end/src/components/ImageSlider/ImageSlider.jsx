@@ -11,21 +11,21 @@ const images = [Image1, Image2, Image3, Image4, Image5];
 export default class ImageSlider extends Component {
   render() {
     return (
-        <div className="">
+        <div className="image-slider">
           <div style={{ display: 'flex', justifyContent: 'space-between' }} />
           <Slider
             options={{
               autoPlay: 4000,
               pauseAutoPlayOnHover: true,
               wrapAround: true,
+              freeScroll: true,
+              contain: true,
               fullscreen: true,
-              adaptiveHeight: true,
+              adaptiveHeight: true
             }}
           >
             {images.map((image, index) => (
-              <div style={{ width: '40%', height: '400px', margin: '0 -1.5em', padding:'2em', overflow:'hidden'}} key={index}>
-                <img src={image} className='imageFlickity' alt="" />
-              </div>
+                <img src={image} className='image' key={index} alt="" />
             ))}
           </Slider>
         </div>
