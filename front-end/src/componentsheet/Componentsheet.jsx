@@ -7,6 +7,7 @@ import Login from '../components/auth/main';
 import CardWithImage from "../components/cardWithImage/main";
 import ImgPopup from "../components/ImagePopup/main";
 import ContactForm from '../components/contactForm/main';
+import Footer from '../components/footer/main';
 // eslint-disableY
 
 class Componentsheet extends Component {
@@ -62,20 +63,27 @@ return (
                             <div className="my-3">
                                 <span className="display6">Image popup</span>
                                 <div className="mt-2">
-                                        <ImgPopup image="https://picsum.photos/id/106/200" />
+                                    <ImgPopup image="https://picsum.photos/id/106/200" />
                                 </div>
                             </div>
 
                             <div className="my-3">
                                 <span className="display6">Card With Image</span>
                                 <div className="mt-2">
-                                        <CardWithImage image="https://picsum.photos/id/106/400"/>
+                                    <CardWithImage image="https://picsum.photos/id/106/400" />
                                 </div>
                             </div>
                             <div className="my-3">
                                 <span className="display6">Contact Us </span>
                                 <div className="mt-2">
                                     <ContactForm />
+                                </div>
+
+                                <div className="my-3">
+                                    <span className="display6">Footer</span>
+                                    <div className="mt-2">
+                                        <Footer />
+                                    </div>
                                 </div>
                             </div>
                         </div>
