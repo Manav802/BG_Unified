@@ -63,7 +63,11 @@ return (
                             <div className="my-3">
                                 <span className="display6">Image popup</span>
                                 <div className="mt-2">
-                                    <ImgPopup image="https://picsum.photos/id/106/200" />
+                                    <ImgPopup image="https://picsum.photos/id/108/200" 
+                                    width="200px"
+                                    height="200px"
+                                    closeBtnColor="black"
+                                    />
                                 </div>
                             </div>
 
