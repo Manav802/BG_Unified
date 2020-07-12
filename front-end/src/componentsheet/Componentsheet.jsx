@@ -82,7 +82,7 @@ return (
                                 <div className="my-3">
                                     <span className="display6">Footer</span>
                                     <div className="mt-2">
-                                        <Footer />
+                                        <Footer></Footer>
                                     </div>
                                 </div>
                             </div>

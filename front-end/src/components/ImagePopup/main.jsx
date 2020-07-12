@@ -4,7 +4,7 @@ import React from 'react'
 function ImgPopUp(props)
 {
     return (
-      <div class="img-popup">
+      <div className="img-popup">
           <a href="#img1" className="thumbnail">
             <img src={props.image}alt=" did not load correctly" />
           </a>
