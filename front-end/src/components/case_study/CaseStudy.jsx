@@ -1,33 +1,36 @@
 import React from 'react'
 import image23 from './Image 23.png'
-import sdwan from './sdwan_s.png';
 import sdwan_s from './sdwan_s-1.png';
 import repeat_grid from './Repeat Grid 12.png'
+import {Icon} from '@chakra-ui/core';
 
-function CaseStudy() {
+function CaseStudy(props) {
+    var content = props.content || "Software-defined wide-area networking (SD-WAN) is rapidly replacing the traditional WAN for remote office and branch deployments. SD-WAN was designed to provide a wide range of benefits to support digital innovation. However, far too many SD-WAN solutions lack critical networking and security features, requiring organizations to add complex and costly overlay solutions to manage and protect their SD-WAN deployments.";
+    var feature = props.feature || "Featured CASE STUDY"
+    var title = props.title || "Simplifying SD-WAN with Centralized Management and Orchestration";
+    var iconImg = props.iconImg||image23;
+    var imglg = props.imglg || sdwan_s;
     return (
-        <div className="container py-2 case-study">
+        <div className="container py-2 my-5 case-study">
            
-            <div className="row mt-2">
-                <div className="col-4 d-none d-md-block">
-                    <img className="img-fluid repeatGrid" src={repeat_grid} alt="repeatgird"/>
-                    <div className="imagediv align-items-center text-center shadow">
-                    <img className="img-fluid image23" src={image23} alt="image23"/>
+            <div className="row mt-2 m-0">
+                <div className="col-xl-5 col-lg-6 d-flex pt-md-5 pl-lg-4 pt-lg-0 fluid-container align-items-stetch">
+                    <div className="fluid-1 mb-4">
+                        <div className="img-container">
+                            <img src={iconImg} className="" alt=""/>
+                        </div>
+                        <img src={repeat_grid} className="repeatgrid d-none d-lg-block" alt=""/>
                     </div>
-                    <img className="img-fluid img-lg" src={sdwan_s} alt="sdwan_s"/>
+                    <img className="flex-fill img-lg rounded shadow-lg" src={imglg} alt="sdwan_s"/>
                 </div>
-                <div className="col-12 d-sm-none">
-                    <img className="img-fluid" src={sdwan}/>
-                    <div className="imagediv-sm ">
-                        <img className="img-fluid image23" src={image23}/>
+                <div className="col-xl-6 col-lg-5 offset-lg-1">
+                    <div className='row mx-1 mx-md-0 feature my-3'>{feature}</div>
+                    <div className="row mx-1 mx-md-0 display5 my-1">{title}</div>
+                    <div className="row mx-1 mx-md-0 ">
+                        <p className="content py-2"> {content}
+                        </p>
                     </div>
-                </div>
-                <div className="col offset-md-1">
-                    <div className='row mx-1 mx-md-0 feature my-3'>Featured CASE STUDY</div>
-                    <div className="row mx-1 mx-md-0 display5"><h2>Simplifying SD-WAN with Centralized Management and Orchestration</h2></div>
-                    <div className="row mx-1 mx-md-0"><p className="content">Software-defined wide-area networking (SD-WAN) is rapidly replacing the traditional WAN for remote office and branch deployments. SD-WAN was designed to provide a wide range of benefits to support digital innovation. However, far too many SD-WAN solutions lack critical networking and security features, requiring organizations to add complex and costly overlay solutions to manage and protect their SD-WAN deployments.
-                    </p></div>
-                    <button className="btn btn-light rounded readmore" style={{border: '2px solid #051133',borderRadius:'4px'}}>Read More <i className="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    <button className="btn btn-light rounded readmore mt-2" style={{border: '2px solid #051133',borderRadius:'4px'}}>Read More <Icon name="arrow-forward" size="22px"/></button>
                 </div>
                 
             </div>
@@ -36,3 +39,5 @@ function CaseStudy() {
 }
 
 export default CaseStudy;
+
+

@@ -1,3 +1,4 @@
+
 .case-study{
     .feature{
         text-align: left;
@@ -9,76 +10,71 @@
         opacity: 0.5;
       }
     
-    
-    .img-lg{
+    .fluid-1{
         position: absolute;
-        border-radius: 8px;
-        left: 65px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .img-container{
+            background: white;
+            padding: .5rem;
+            height: 112px;
+            width: 112px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border-radius: 50%;
+            transform: translate(-15px, 33%);
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.334);
+        }
+        .repeatgrid{
+            transform: translate(-20%, 25%);
+        }
+       
     }
-    
-    .img-sm{
-        border-radius: 8px;
+
+    @media (max-width: 991.98px){
+        .fluid-container{
+            max-height: 320px;
+        }
+        
+        .fluid-1{
+            .img-container{
+                
+                padding: .50rem;
+                height: 70px;
+                width: 100px;
+                transform: translate(-15px, 0%);
+                border-radius: 15%;
+                
+            }
+        }
+        .img-lg{
+            object-fit: cover;
+        }
+        
     }
-    
+
     .content{
-        text-align: left;
-        font: 16px/22px 'Nunito Sans Regular';
-        letter-spacing: 1.6px;
-        color: #051133;
-        opacity: 1;
+       max-height: 160px;
+       overflow: hidden;
+       text-overflow: ellipsis !important;
+        
     }
     
     .readmore{
         text-align: left;
         padding: 10px 20px 10px 20px;
-        font-size: 13px;
+        font-size: 15px;
         font-family: 'Nunito Sans ExtraBold';
         letter-spacing: 0px;
         color: #051133;
         opacity: 1;
     }
     
-    .repeatGrid{
-        position: absolute;
-        top: 280px;
-        z-index: 0;
-        width: 158px;
-        height: 186px;
-        opacity: 0.41;
-    }
+   
     
-    .image23{
-        width: 106px;
-        height: 69px;
-    }
-    
-    .imagediv{
-        padding-top: 20px;
-        padding-left: 6px;
-        width: 116px;
-        height: 116px;
-        position: absolute;
-        overflow: hidden;
-        border-radius: 50%;
-        top: 310px;
-        left: 340px;
-        z-index: 20;
-        background-color: white;
-    }
-    
-    .imagediv-sm{
-        position: absolute;
-        left: 252px;
-        top: 125px;
-        padding: 11px;
-        z-index: 20;
-        background-color: white;
-        box-shadow: 0px 3px 6px #00000029;
-        border-radius: 12px;
-    }
-    
-    .image23-sm{
-        width: 106px;
-        height: 69px;
-    }
 }
