@@ -70,7 +70,7 @@ return (
                             <div className="my-3">
                                 <span className="display6">Card With Image</span>
                                 <div className="mt-2">
-                                    <CardWithImage image="https://picsum.photos/id/106/400" />
+                                    <CardWithImage image="https://picsum.photos/id/106/400" title="Title" text="This is a sample text line" blackLink="#" redLink="#"/>
                                 </div>
                             </div>
                             <div className="my-3">

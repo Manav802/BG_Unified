@@ -1,9 +1,9 @@
 import React from "react";
 
-function Links() {
+function Links(props) {
 return <div className='links'>
-    <a href="#" className="display6">Action</a>
-    <a href="#" className="display6 red">Action
+    <a href={props.blackLInk} className="display6">Action</a>
+    <a href={props.redLink} className="display6 red">Action
     </a>
 </div>
 }

@@ -6,8 +6,8 @@ function cardWithImage(props)
     return(
         <div className="backgroundImage"style={{backgroundImage:"url("+props.image+")"}}>
             <div className="mask-element">
-                <Content/>
-                <Links/>
+                <Content title={props.title} text={props.text}/>
+                <Links blackLink={props.blackLink} redLink={props.redLink}/>
             </div>
         </div>);
 }
