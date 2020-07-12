@@ -47,6 +47,9 @@ class Componentsheet extends Component {
                         <div id="sideNav" className="d-flex flex-column">
                             <a className="py-2 active">Image Viewer</a>
                             <a className="py-2" href="#">Card</a>
+                            <a className="py-2" href="#">Image Slider</a>
+                            <a className="py-2" href="#">Testimonial Card</a>
+                            <a className="py-2" href="#">Input</a>
                         </div>
                     </div>
                     <div className="col">
