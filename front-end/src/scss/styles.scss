@@ -1,0 +1,20 @@
+//Variables
+@import '_variables';
+
+//Essentials
+@import '_typography';
+
+//Components
+@import '_globalcomponents';
+
+@import 'components/image-popup';
+@import 'components/auth';
+
+//Fonts
+@import 'fonts/nexa';
+@import 'fonts/nunitosans';
+
+
+
+//For Custom SCSS
+@import 'custom'

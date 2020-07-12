@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
-import './css/styles.css'
+import App from './App';
+import './scss/styles.scss'
 import { theme } from "@chakra-ui/core";
+
 
 // Let's say you want to add custom colors
 const customTheme = {
