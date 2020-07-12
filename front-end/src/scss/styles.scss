@@ -11,12 +11,13 @@
 @import 'components/auth';
 @import './components/card-with-icon.scss';
 @import './components/case-study.scss';
-
+@import 'components/image-popup';
+@import 'components/card-with-image';
+@import 'components/contact-form';
+// @import 'components/footer';
 //Fonts
 @import 'fonts/nexa';
 @import 'fonts/nunitosans';
-
-
 
 //For Custom SCSS
 @import 'custom'

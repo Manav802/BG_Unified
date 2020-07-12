@@ -1,0 +1,37 @@
+import React from 'react';
+import {
+FormControl,Stack,
+FormLabel,Input,Flex,Button
+} from "@chakra-ui/core";
+function ContactForm() {
+return <div className="contact-form">
+    <form>
+        <Stack spacing={8}>
+            <FormControl isRequired>
+                <FormLabel>Your name</FormLabel>
+                <Input id="name" variant="flushed" />
+            </FormControl>
+            <Flex justifyContent="space-between" flexDirection={["column","column","row","row"]}>
+                <FormControl isRequired>
+                    <FormLabel>Email Adress</FormLabel>
+                    <Input type="email" id="email" aria-describedby="email-helper-text" variant="flushed" />
+                </FormControl>
+                <FormControl isRequired>
+                    <FormLabel>Contact No.</FormLabel>
+                    <Input type="phone" variant="flushed" />
+                </FormControl>
+            </Flex>
+            <FormControl isRequired>
+                <FormLabel>Message</FormLabel>
+                <Input variant="flushed" size="lg" />
+            </FormControl>
+            <Button mt={"20px"} type="submit" size="md" height="48px" width="115px" backgroundColor="#F32222"
+                color="white">
+                Submit
+            </Button>
+        </Stack>
+    </form>
+</div>
+}
+
+export default ContactForm;

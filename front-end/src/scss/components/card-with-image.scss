@@ -1,0 +1,47 @@
+.backgroundImage 
+{
+  position: relative;
+  border-radius:8px;  
+  width: 308px;
+  height: 387px;
+  margin: 0 auto;
+  -moz-box-shadow: 20 20 8px #000;
+  -webkit-box-shadow: 0 0 8px #000;
+  box-shadow: 0 0 8px #000; 
+
+.mask-element
+{
+  background-color:$color-light;
+  background-size: cover;
+  width: 308px;
+  height: 387px;
+  border-radius:8px;  
+  padding:55% 10% 10% 10%;
+  text-align:center;
+  -webkit-clip-path: polygon(0 42%, 100% 38%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 42%, 100% 38%, 100% 100%, 0% 100%);
+  .contents
+  {
+    position:relative;
+    text-align:justify;
+    .title{
+      @extend .display5;
+      font-size:$font-size-5;
+    }
+    .text{
+      color: $color-dark-2;
+      font-size:$font-size-body-1;
+    }
+
+  }
+  .links
+  {
+    margin-top: 5%;
+    display:flex;
+    justify-content:flex-start;
+    .red{
+      margin-left: 20%;
+      color:$color-primary !important; 
+    }
+  }
+}}
