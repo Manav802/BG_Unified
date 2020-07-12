@@ -14,7 +14,7 @@ $header_height: 80px;
   }
 
   &-header{
-    position: sticky;
+    position: sticky !important;
     top: 0px;
     z-index: 10;
     background: $color-light;

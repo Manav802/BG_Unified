@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ComponentSheet from './componentsheet/Componentsheet'
 import { ThemeProvider, CSSReset } from '@chakra-ui/core'
 import customTheme from './static/js/theme.js'
 
-function App()
-{
-	return <div>
+class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = { 
+			
+		 }
+	}
+	render() { 
+		return ( 
+			<div>
 		<ThemeProvider theme={customTheme}>
-			<CSSReset />
-			<ComponentSheet />
+		<div className="container-fluid">
+		<CSSReset />
+		<ComponentSheet />
+		</div>
 		</ThemeProvider>
-		
-	</div>
+		</div>
+		 );
+	}
 }
+ 
 export default App;
