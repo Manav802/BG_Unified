@@ -45,7 +45,7 @@ class Testimonial extends Component {
 
 
         return ( 
-            <div className="container">
+            <div className="container mt-5">
                 <div className="row justify-content-center ">
                     <div className="col-md-6 col-10 mt-5">
                         <h4>Testimonial Card</h4>

@@ -1,0 +1,15 @@
+.image-popup{
+    .large {
+      position: absolute;
+      left: -9999px;
+    }
+    .smallImg:hover{
+      .large {
+        left: 20px;
+        top: 150px;
+      }
+    } 
+    .smallImg{
+      width: fit-content;
+    }
+  }
