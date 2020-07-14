@@ -1,24 +1,32 @@
-import React from 'react'
+import React from 'react';
+import {
+Modal,
+ModalOverlay,
+ModalContent,
+ModalBody,
+ModalCloseButton,
+Button,
+useDisclosure,
+} from "@chakra-ui/core";
+function ImgPopUp(props) {
+const { isOpen, onOpen, onClose } = useDisclosure();
 
+return (
+<>
+  <Button width={props.width} height={props.height} backgroundImage={"url(" + props.image + ")" }
+    backgroundPosition="center" backgroundRepeat="no-repeat" onClick={onOpen}></Button>
 
-function ImgPopUp(props)
-{
-    return (
-      <div class="img-popup">
-          <a href="#img1" className="thumbnail">
-            <img src={props.image}alt=" did not load correctly" />
-          </a>
-        <div className="lightbox animate" id="img1">
-          <a className="lightboxClose" href="#!">       
-          CLOSE</a>
-          <a className="closeIcon"href="!#">Close</a>
-          <img className="animate" src={props.image}
-          width="40%"
-          height="40%"
-            alt="Did not load correctly"/>
-        </div>
-      </div>
-    );
-    }
-    
-    export default ImgPopUp;
+  <Modal onClose={onClose} isOpen={isOpen} isCentered>
+    <ModalOverlay />
+    <ModalContent>
+      <ModalCloseButton color={props.closeBtnColor} />
+        <ModalBody p={0} textAlign="center" >
+        <img src={props.image} alt="Text" width="100%" />
+      </ModalBody>
+    </ModalContent>
+  </Modal>
+</>
+);
+}
+
+export default ImgPopUp;
