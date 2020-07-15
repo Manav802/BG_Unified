@@ -6,7 +6,7 @@ function CardWithIcon(props) {
     return (
         <div className="card-with-icon rounded p-3">
                 <div className="row iconbox">
-                        <Box className="text-white" rounded="12px" w='48px' h='48px' padding='12px' bg="Blue"> 
+                        <Box className="text-white" rounded="12px" w='48px' h='48px' padding='12px' bg={props.iconBg|| "Blue"}> 
                             <Box as={props.icon} size="24px" color="white" />
                         </Box>
                 </div>
