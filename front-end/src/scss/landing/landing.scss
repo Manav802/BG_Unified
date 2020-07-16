@@ -1,0 +1,146 @@
+.landing{
+    @media (max-width: 767.98px){
+        .display4{
+            font-size: $font-size-5;
+        }
+        
+    }
+    .mycard{
+        transition: .3s;
+        .iconbox{
+            padding: 40px 30px 20px 30px;
+        }
+        .cardContent{
+            font-size: $font-size-body-1;
+            font-family: 'Nunito Sans Regular';
+        }
+    }
+    .first{
+        .welcome{
+            font-size: $font-size-body-1;
+            font-family: "Nunito Sans ExtraBold";
+            text-transform: uppercase;
+            color: $color-primary;
+            opacity: 0.5;
+        }
+        .content{
+            color: $color-dark-2;
+            font-family: "Nunito Sans SemiBold";
+            width: 70%;
+            opacity: 0.8;
+        }
+        .explore{
+            font-family: "Nunito Sans SemiBold";
+            font-size: $font-size-body-2;
+        }
+        .explore:hover{
+            background-color: #ce1e1e;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.256);
+        }
+        .get-btn{
+            font-family: "Nunito Sans ExtraBold";
+            font-size: $font-size-body-2;
+        }
+        .get-btn:hover{
+            background-color: #f1f1f1;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.256);
+        }
+    }
+
+    .second{
+        .content{
+            font-family: "Nunito Sans Regular";
+            font-size: $font-size-body-1;
+            opacity: 0.7;
+        }
+    }
+
+    .third{
+        .our-services{
+            font-size: $font-size-body-1;
+            font-family: "Nunito Sans ExtraBold";
+            text-transform: uppercase;
+            color: $color-primary;
+        }
+        .view-btn{
+            font-family: "Nunito Sans ExtraBold";
+            font-size: 12px;
+        }
+        .view-btn:hover{
+            background-color: #f1f1f1;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.069);
+        }
+    }
+
+    .forth{
+        .features{
+            font-size: $font-size-body-1;
+            font-family: "Nunito Sans ExtraBold";
+            text-transform: uppercase;
+            color: $color-primary;
+        }
+        .cards{
+            margin: auto;
+        }
+    }
+
+    .brands{
+        overflow: hidden;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        opacity: 0.6;
+        .abc{
+            flex-wrap: wrap;
+        }
+        @media (max-width: 1020px){
+            .marquee {
+                @-moz-keyframes scroll-left {
+                    from {
+                        -moz-transform: translateX(100%);
+                    }
+                    to {
+                        -moz-transform: translateX(-100%);
+                    }
+                }
+                
+                @-webkit-keyframes scroll-left {
+                    from {
+                        -webkit-transform: translateX(100%);
+                    }
+                    to {
+                        -webkit-transform: translateX(-100%);
+                    }
+                }
+                
+                @keyframes scroll-left {
+                    from {
+                        -moz-transform: translateX(100%);
+                        -webkit-transform: translateX(100%);
+                        transform: translateX(100%);
+                    }
+                    to {
+                        -moz-transform: translateX(-100%);
+                        -webkit-transform: translateX(-100%);
+                        transform: translateX(-100%);
+                    }
+                }
+                .scroll {
+                    flex-wrap: nowrap;
+                    margin: 0;
+                    line-height: 50px;
+                    text-align: center;
+                    -moz-transform: translateX(100%);
+                    -webkit-transform: translateX(100%);
+                    transform: translateX(100%);
+                    -moz-animation: scroll-left 2s linear infinite;
+                    -webkit-animation: scroll-left 2s linear infinite;
+                    animation: scroll-left 20s linear infinite;
+                }
+            }
+            
+        }
+        
+        
+    }
+
+}
