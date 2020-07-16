@@ -1,0 +1,16 @@
+export {default as Img1} from './Image 1.png';
+export {default as Img2} from './Image 2.png';
+export {default as Img4} from './Image 4.png';
+export {default as Img5} from './Image 5.png';
+export {default as Img6} from './Image 6.png';
+export {default as Img8} from './Image 8.png';
+export {default as Img9} from './Image 9.png';
+export {default as Img10} from './Image 10.png';
+export {default as Img14} from './Image 14.png';
+export {default as Img15} from './Image 15.png';
+export {default as Img16} from './Image 16.png';
+export {default as Img17} from './Image 17.png';
+export {default as Img18} from './Image 18.png';
+export {default as Img19} from './Image 19.png';
+export {default as Img20} from './Image 20.png';
+export {default as Img21} from './Image 21.png';
