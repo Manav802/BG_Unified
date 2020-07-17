@@ -8,7 +8,6 @@ class Testimonial extends Component {
         this.state = {  }
     }
     render() { 
-        console.log(this.props.testimonialDetails);
         const TestimonialVariable = this.props.testimonialDetails.map((testimonialDetails)=>
         {
             return(
@@ -48,11 +47,11 @@ class Testimonial extends Component {
             <Slider
                 options={{
                 freeScroll: true,
-                adaptiveHeight: true,
                 pageDots: false,
                 contain: true,
                 draggable: true,
                 }}>
+                <div className="slider-offset"></div>
                 {TestimonialVariable}
             </Slider>
         );
