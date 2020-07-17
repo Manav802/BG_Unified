@@ -102,11 +102,10 @@
         /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
         opacity: 0.6;
-
-        .abc {
-            flex-wrap: wrap;
+        img{
+            padding: 1rem;
+            margin: 1rem;
         }
-
         @media (max-width: 1020px) {
             .marquee {
                 @-moz-keyframes scroll-left {
@@ -182,6 +181,11 @@
 
 
     &-benefits {
-        margin-top: 160px;
+        .vector{
+            margin-top: calc(100vw/8 - 64px);
+            margin-right: -64px;
+            height: 520px;
+            width: auto;
+        }
     }
 }

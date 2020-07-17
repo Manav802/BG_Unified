@@ -6,7 +6,6 @@ import TestimonialCard from '../components/TestimonialCard/TestimonialCard'
 import ContactForm from '../components/contactForm/main'
 import FooterComponent from '../components/footer/main'
 import Asset from './Asset.png';
-import Map from './Map.png';
 import Icon18 from './Icons/Mask Group 18.svg';
 import Icon19 from './Icons/Mask Group 19.svg';
 import Icon20 from './Icons/Mask Group 20.svg';
@@ -25,6 +24,8 @@ import bgFeatures from '../static/images/backgrouds/bgFeatures.svg';
 import icNeon from '../static/images/backgrouds/ic_chip_neon.png';
 import dividerWhite from '../static/images/backgrouds/divider_white.svg'
 import dividerWhiteBottom from '../static/images/backgrouds/divider_white_bottom.svg'
+import dividerRedBottom from '../static/images/backgrouds/divider_red_bottom.svg'
+import dividerWhitePlain from '../static/images/backgrouds/divider_white_plain.svg'
 
 
 import { TESTIMONIALS } from '../shared/testimonials.jsx';
@@ -124,32 +125,21 @@ export class Landing extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="row flex forth mt-5 py-lg-5 justify-content-center">
-                    <div className="position-absolute overflow-hidden w-100" >
-                        <svg style={{ width: "1920px" }} height="864.684" viewBox="0 0 1922 864.684">
-                            <defs>
-                                <clipPath id="clip-path">
-                                    <path id="Path_266" data-name="Path 266" d="M-318.159-17.14l1920-91.457V715.5l-1920-184.812Z" transform="translate(318.159 2059)" fill="#051133" />
-                                </clipPath>
-                            </defs>
-                            <g id="Group_233" data-name="Group 233" transform="translate(0 -1950.403)">
-                                <g id="Group_232" data-name="Group 232">
-                                    <path id="Path_267" data-name="Path 267" d="M-321.192,138.631l1920-247.228V301.028l-1920,455.058Z" transform="translate(323.192 2059)" fill="#f32222" />
-                                    <path id="Path_266-2" data-name="Path 266" d="M-318.159-17.14l1920-91.457V715.5l-1920-184.812Z" transform="translate(320.159 2059)" fill="#051133" />
-                                </g>
-                                <g id="Mask_Group_31" data-name="Mask Group 31" clip-path="url(#clip-path)">
-                                    <g id="Group_234" data-name="Group 234" transform="translate(-5.126 59)">
-                                        <image id="Artboard_105_2x-100" data-name="Artboard 105@2x-100" width="750.128" height="562.752" transform="translate(1203 2198.307)" href={icNeon} />
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-
+                <div className="row flex forth landing-benefits justify-content-center">
+                    
+                    <div className="col-12 p-0 bg-dark">
+                        <img src={dividerWhitePlain} className="w-100" alt=""/>
                     </div>
-                    {/* <div className="position-absolute w-100 d-flex justify-content-end">
-                            <img src={icNeon} alt=""/>
-                        </div> */}
-                    <div className="container landing-benefits p-0">
+                    <div className="col-12 p-0 bg-dark overflow-hidden">
+                            <div style={{height:"440px"}} className="d-flex justify-content-end">
+                                <img src={icNeon} className="vector" alt=""/>
+                            </div>
+                        <div className="layer-1">
+                        <img src={dividerRedBottom} className="w-100 divider-img" alt=""/>
+                        </div>
+                    </div>
+                    <div className="col-12 p-0 special-div-content">
+                    <div className="container p-0">
                         <div className="col-12 text-center text-primary text-uppercase">
                             Features
                             </div>
@@ -178,13 +168,15 @@ export class Landing extends Component {
                                 </div>
                             </div>
                         </div>
+                    </div>                        
                     </div>
+                   
                 </div>
 
 
                 <div className="container-fluid brands my-5 py-2">
                     <div className="marquee">
-                        <div className="justify-content-center text-center d-flex abc mx-xl-5 mx-0 scroll">
+                        <div className="justify-content-center text-center d-flex flex-wrap mx-xl-5 mx-0 scroll">
                             <Image src={brands.Img1} />
                             <Image src={brands.Img2} />
                             <Image src={brands.Img4} />
