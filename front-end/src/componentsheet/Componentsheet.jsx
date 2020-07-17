@@ -14,6 +14,7 @@ import CardWithIcon from '../components/cards/CardWithIcon'
 import ImageSlider from '../components/ImageSlider/ImageSlider'
 import Testimonials from '../components/TestimonialCard/TestimonialCard'
 import CaseStudy from '../components/case_study/CaseStudy'
+//import ContactForm from '../components/contactForm/main';
 
 // eslint-disableY
 
@@ -99,6 +100,11 @@ class Componentsheet extends Component {
                                     <div className="col-lg-12">
                                         <Testimonials testimonialDetails={this.state.testimonialDetails} />
                                     </div>
+                                {/* <span className="display6 my-3 mt-5 col-12">Contact Form</span>
+                                <div className="col-lg-12">
+                                    <ContactForm/>
+                                </div> */}
+
                             </div>
                         </div>
                     </div>

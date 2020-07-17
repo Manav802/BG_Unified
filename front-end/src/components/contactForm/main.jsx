@@ -12,11 +12,11 @@ return <div className="contact-form p-5">
                 <Input id="name" variant="flushed" />
             </FormControl>
             <Flex className="row" flexDirection={["column","column","row","row"]}>
-                <FormControl className="col-lg-6" isRequired>
+                <FormControl className="col-lg-6 btm-margin" isRequired>
                     <FormLabel>Email Adress</FormLabel>
                     <Input type="email" id="email" aria-describedby="email-helper-text" variant="flushed" />
                 </FormControl>
-                <FormControl className="col-lg-6" isRequired>
+                <FormControl className="col-lg-6 btm-margin" isRequired>
                     <FormLabel>Contact No.</FormLabel>
                     <Input type="phone" variant="flushed" />
                 </FormControl>
