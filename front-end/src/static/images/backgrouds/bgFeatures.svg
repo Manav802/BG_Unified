@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3840" height="1727.568" viewBox="0 0 3840 1727.568">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_266" data-name="Path 266" d="M-318.159,78.622l3838-187.219V1578.38l-3838-378.323Z" transform="translate(318.159 108.597)" fill="#051133"/>
+    </clipPath>
+  </defs>
+  <g id="Group_233" data-name="Group 233" transform="translate(0 -1950.403)">
+    <g id="Group_232" data-name="Group 232" transform="translate(2 1950.403)">
+      <path id="Path_267" data-name="Path 267" d="M-321.192,385.344l3838-493.942V709.8l-3838,909.17Z" transform="translate(321.192 108.597)" fill="#f32222"/>
+      <path id="Path_266-2" data-name="Path 266" d="M-318.159,78.622l3838-187.219V1578.38l-3838-378.323Z" transform="translate(318.159 108.597)" fill="#051133"/>
+    </g>
+    <g id="Mask_Group_31" data-name="Mask Group 31" transform="translate(0 1950.403)" clip-path="url(#clip-path)">
+      <g id="Group_234" data-name="Group 234" transform="translate(2518.435 755.172)">
+        <image id="Artboard_105_2x-100" data-name="Artboard 105@2x-100" width="1498.064" height="1123.86" transform="translate(0 0)" />
+      </g>
+    </g>
+  </g>
+</svg>

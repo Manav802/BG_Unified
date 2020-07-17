@@ -16,7 +16,7 @@ function CardWithIcon(props) {
                 <div className="row display6 mx-3">
                         {props.title}
                 </div>
-                <div className="row cardContent mx-3">
+                <div className="row cardContent mx-3 text-justify">
                     {props.children}
                 </div>
                 <div className="row mx-3 my-3">
