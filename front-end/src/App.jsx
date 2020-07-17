@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ComponentSheet from './componentsheet/Componentsheet'
 import { ThemeProvider, CSSReset } from '@chakra-ui/core'
 import customTheme from './static/js/theme.js'
+import Landing from './landing/Landing'
 
 class App extends Component {
 	constructor(props) {
@@ -16,7 +17,7 @@ class App extends Component {
 		<ThemeProvider theme={customTheme}>
 		<div className="container-fluid">
 		<CSSReset />
-		<ComponentSheet />
+		<Landing />
 		</div>
 		</ThemeProvider>
 		</div>
