@@ -12,7 +12,7 @@ class Testimonial extends Component {
         {
             return(
                 <div key={testimonialDetails.id} className="col-lg-4 p-2 my-3">
-                    <Box className="px-4 py-2"  rounded="lg" bg="" boxShadow="md" overflow="hidden">   
+                    <Box className="px-4 py-2"  rounded="lg" bg="white" boxShadow="md" overflow="hidden">   
                     <div className='ml-3 mt-4'>
                         <img src={testimonialDetails.imageUrl} style={{height:'64px'}} alt=""/>
                     </div>

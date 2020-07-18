@@ -23,7 +23,9 @@ a{
 .special-div-content{
     margin-top: calc(100vw/-8 - 440px);
 }
-
+.image-flip{
+    transform: rotateY(180deg);
+}
 .layer{
     &-0{
         z-index: 1;

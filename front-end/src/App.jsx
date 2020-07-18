@@ -15,7 +15,7 @@ class App extends Component {
 		return ( 
 			<ThemeProvider theme={customTheme}>		
 			<CSSReset />
-			<ComponentSheet />
+			<Landing />
 			</ThemeProvider>
 		);
 	}
