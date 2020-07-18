@@ -3,9 +3,12 @@ $container-width: 570px;
 //Anchor Tag
 a{
     color: $color-dark;
-    text-decoration:underline;
+    text-decoration: none !important;
     font-weight: 700;
     cursor: pointer;
+}
+a:hover{
+    color: $color-primary !important;
 }
 
 .icon-24{
@@ -23,9 +26,13 @@ a{
 .special-div-content{
     margin-top: calc(100vw/-8 - 440px);
 }
+.section{
+    padding: 4rem 0px;
+}
 .image-flip{
     transform: rotateY(180deg);
 }
+
 .layer{
     &-0{
         z-index: 1;

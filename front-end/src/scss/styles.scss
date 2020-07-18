@@ -22,7 +22,8 @@
 @import 'fonts/nunitosans';
 
 //Pages
-@import './landing/landing.scss';
+@import './views/landing.scss';
+@import './views/about.scss';
 
 //For Custom SCSS
 @import 'custom';
