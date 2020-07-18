@@ -11,6 +11,7 @@ import dividerWhiteBottom from '../static/images/backgrouds/divider_white_bottom
 import dividerRedBottom from '../static/images/backgrouds/divider_red_bottom.svg'
 import dividerWhitePlain from '../static/images/backgrouds/divider_white_plain.svg'
 import dividerYellowBottom from '../static/images/backgrouds/divider_yellow_bottom.svg'
+import topRedTriangle from '../static/images/backgrouds/top_red_triangle.svg'
 import Asset from '../static/images/landing/Asset.png';
 import Map from '../static/images/landing/Map.png';
 import Icon18 from '../static/images/landing/Icons/Mask Group 18.svg';
@@ -58,7 +59,9 @@ class Landing extends Component {
         }
         return (
             <div className="landing overflow-hidden">
-
+                <div className="container-fluid p-0 overflow-hidden position-absolute">
+                    <img src={topRedTriangle} className="divider-topred-with-margin w-100 layer-2" alt=""/>
+                </div>
                 <div className="container">
                     <div className="row first my-5">
                         <div className="col-12 col-lg-6 py-5">
@@ -289,7 +292,6 @@ class Landing extends Component {
                         </div>
                     </div>
                 </div>
-
             </div>
         )
     }

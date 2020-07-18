@@ -17,4 +17,8 @@
     &-plain-white-offset{
         margin-top: calc(100vw/6);
     }
+    &-topred-with-margin{
+        margin-top: calc(100vw/-10);
+        z-index: 60;
+    }
 }
