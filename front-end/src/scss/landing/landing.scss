@@ -90,10 +90,6 @@
             text-transform: uppercase;
             color: $color-primary;
         }
-
-        .cards {
-            margin: auto;
-        }
     }
 
     .brands {
@@ -177,9 +173,6 @@
             z-index: 400;
         }
     }
-
-
-
     &-benefits {
         .vector{
             margin-top: calc(100vw/8 - 64px);
@@ -187,5 +180,8 @@
             height: 520px;
             width: auto;
         }
+    }
+    .bg-contact{
+        height: 720px;
     }
 }

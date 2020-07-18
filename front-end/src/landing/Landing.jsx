@@ -5,31 +5,33 @@ import CaseStudy from '../components/case_study/CaseStudy'
 import TestimonialCard from '../components/TestimonialCard/TestimonialCard'
 import ContactForm from '../components/contactForm/main'
 import FooterComponent from '../components/footer/main'
-import Asset from './Asset.png';
-import Icon18 from './Icons/Mask Group 18.svg';
-import Icon19 from './Icons/Mask Group 19.svg';
-import Icon20 from './Icons/Mask Group 20.svg';
-import Icon21 from './Icons/Mask Group 21.svg';
-import Icon22 from './Icons/Mask Group 22.svg';
-import Icon23 from './Icons/Mask Group 23.svg';
 
-import Icon9 from './Icons 2/Mask Group 9.svg'
-import Icon10 from './Icons 2/Mask Group 10.svg'
-import Icon11 from './Icons 2/Mask Group 11.svg'
-import Icon12 from './Icons 2/Mask Group 12.svg'
-import Icon13 from './Icons 2/Mask Group 13.svg'
-import Icon14 from './Icons 2/Mask Group 14.svg'
-
-import bgFeatures from '../static/images/backgrouds/bgFeatures.svg';
-import icNeon from '../static/images/backgrouds/ic_chip_neon.png';
 import dividerWhite from '../static/images/backgrouds/divider_white.svg'
 import dividerWhiteBottom from '../static/images/backgrouds/divider_white_bottom.svg'
 import dividerRedBottom from '../static/images/backgrouds/divider_red_bottom.svg'
 import dividerWhitePlain from '../static/images/backgrouds/divider_white_plain.svg'
+import dividerYellowBottom from '../static/images/backgrouds/divider_yellow_bottom.svg'
+import Asset from '../static/images/landing/Asset.png';
+import Map from '../static/images/landing/Map.png';
+import Icon18 from '../static/images/landing/Icons/Mask Group 18.svg';
+import Icon19 from '../static/images/landing/Icons/Mask Group 19.svg';
+import Icon20 from '../static/images/landing/Icons/Mask Group 20.svg';
+import Icon21 from '../static/images/landing/Icons/Mask Group 21.svg';
+import Icon22 from '../static/images/landing/Icons/Mask Group 22.svg';
+import Icon23 from '../static/images/landing/Icons/Mask Group 23.svg';
 
+import Icon9 from '../static/images/landing/Icons 2/Mask Group 9.svg'
+import Icon10 from '../static/images/landing/Icons 2/Mask Group 10.svg'
+import Icon11 from '../static/images/landing/Icons 2/Mask Group 11.svg'
+import Icon12 from '../static/images/landing/Icons 2/Mask Group 12.svg'
+import Icon13 from '../static/images/landing/Icons 2/Mask Group 13.svg'
+import Icon14 from '../static/images/landing/Icons 2/Mask Group 14.svg';
 
-import { TESTIMONIALS } from '../shared/testimonials.jsx';
-import * as brands from './BrandIcons/index';
+import icNeon from '../static/images/landing/backgrouds/ic_chip_neon.png';
+
+import {TESTIMONIALS} from '../shared/testimonials.jsx';
+import * as brands from '../static/images/landing/BrandIcons/index';
+
 
 function MyCard(props) {
     return (
@@ -47,14 +49,16 @@ function MyCard(props) {
     )
 }
 
-export class Landing extends Component {
-
+class Landing extends Component {
     render() {
-
+        var svgWidth=1920;
+        if(window.innerWidth>1920){
+            svgWidth=window.innerWidth;
+        }
         return (
             <div className="landing">
-                <div className="container">
 
+                <div className="container">
                     <div className="row first my-5">
                         <div className="col-12 col-lg-6 py-5">
                             <div className="welcome">
@@ -197,9 +201,7 @@ export class Landing extends Component {
                     </div>
                 </div>
 
-                <div className="container my-lg-4 py-lg-3">
-                    <CaseStudy />
-                </div>
+                
 
                 <div className="my-5 row overflow-hidden globe-section">
                     <img src={dividerWhite} className="col-12 p-0" alt="" />
@@ -232,14 +234,18 @@ export class Landing extends Component {
                                 </div>
                             </div>
                             <div className="col-xl-8 col-lg-7 col-md-6 globe-container">
-                                <canvas class="ml-auto mr-auto d-block" id='globe' width="1200" height="1200"></canvas>
+                                {/* <canvas class="ml-auto mr-auto d-block" id='globe' width="1200" height="1200"></canvas> */}
                             </div>
                         </div>
                     
                     </div>
                    <img src={dividerWhiteBottom} className="col-12 p-0 divider-bottom" alt="" />
                 </div>
-                <div className="container-fluid mb-2">
+                <div className="container my-lg-4 py-lg-3">
+                    <CaseStudy />
+                </div>
+                <div className="container-fluid bg-dark mt-5 p-0">
+                <img src={dividerWhitePlain} class="position-absolute image-flip left-0" alt=""/>
                     <div className="row mt-lg-5 mt-2 mt-lg-5">
                         <div className="slider-offset"></div>
                         <div className="col pt-3 pt-md-4 first">
@@ -254,6 +260,11 @@ export class Landing extends Component {
                             <TestimonialCard testimonialDetails={TESTIMONIALS} />
                         </div>
                     </div>
+                    
+                </div>
+                <div className="container-fluid p-0 bg-dark">
+                    <div className="bg-contact"></div>
+                    <img src={dividerYellowBottom} alt=""/>
                 </div>
                 <div className="container">
                     <div className="row my-5">
@@ -273,9 +284,10 @@ export class Landing extends Component {
                         </div>
                     </div>
                 </div>
+
             </div>
         )
     }
 }
 
-export default Landing
+export default Landing;

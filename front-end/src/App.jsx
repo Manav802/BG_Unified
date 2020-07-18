@@ -13,15 +13,11 @@ class App extends Component {
 	}
 	render() { 
 		return ( 
-			<div>
-		<ThemeProvider theme={customTheme}>
-		<div className="container-fluid">
-		<CSSReset />
-		<Landing />
-		</div>
-		</ThemeProvider>
-		</div>
-		 );
+			<ThemeProvider theme={customTheme}>		
+			<CSSReset />
+			<ComponentSheet />
+			</ThemeProvider>
+		);
 	}
 }
  
