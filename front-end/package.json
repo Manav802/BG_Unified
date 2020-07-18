@@ -14,6 +14,8 @@
     "emotion-theming": "^10.0.27",
     "flickity": "^2.2.1",
     "gh-pages": "^3.1.0",
+    "next": "^9.4.4",
+    "next-images": "^1.4.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -21,13 +23,18 @@
     "react-router": "^5.2.0",
     "react-scripts": "3.4.1"
   },
-  "scripts": {
+  "scripts-old": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "eslintConfig": {
     "extends": "react-app"
