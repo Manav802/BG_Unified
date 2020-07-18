@@ -15,14 +15,12 @@
 
         .cardContent {
             font-size: $font-size-body-1;
-            font-family: 'Nunito Sans Regular';
         }
     }
 
     .first {
         .welcome {
             font-size: $font-size-body-1;
-            font-family: "Nunito Sans ExtraBold";
             text-transform: uppercase;
             color: $color-primary;
             opacity: 0.5;
@@ -30,13 +28,11 @@
 
         .content {
             color: $color-dark-2;
-            font-family: "Nunito Sans SemiBold";
             width: 70%;
             opacity: 0.8;
         }
 
         .explore {
-            font-family: "Nunito Sans SemiBold";
             font-size: $font-size-body-2;
         }
 
@@ -46,7 +42,6 @@
         }
 
         .get-btn {
-            font-family: "Nunito Sans ExtraBold";
             font-size: $font-size-body-2;
         }
 
@@ -58,7 +53,6 @@
 
     .second {
         .content {
-            font-family: "Nunito Sans Regular";
             font-size: $font-size-body-1;
             opacity: 0.7;
         }
@@ -67,13 +61,11 @@
     .third {
         .our-services {
             font-size: $font-size-body-1;
-            font-family: "Nunito Sans ExtraBold";
             text-transform: uppercase;
             color: $color-primary;
         }
 
         .view-btn {
-            font-family: "Nunito Sans ExtraBold";
             font-size: 12px;
         }
 
@@ -86,7 +78,6 @@
     .forth {
         .features {
             font-size: $font-size-body-1;
-            font-family: "Nunito Sans ExtraBold";
             text-transform: uppercase;
             color: $color-primary;
         }

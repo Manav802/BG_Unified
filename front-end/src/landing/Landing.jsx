@@ -44,7 +44,7 @@ function MyCard(props) {
             <div className="row display6 mx-3">
                 {props.title}
             </div>
-            <div className="row cardContent mx-3 mb-4">
+            <div className="row cardContent NunitoSans-Regular mx-3 mb-4">
                 {props.children}
             </div>
         </div>
@@ -65,16 +65,16 @@ class Landing extends Component {
                 <div className="container">
                     <div className="row first my-5">
                         <div className="col-12 col-lg-6 py-5">
-                            <div className="welcome">
+                            <div className="welcome NunitoSans-ExtraBold">
                                 Welcome
                             </div>
                             <p className="my-2 display4">Enhancing experience with enhanced technology</p>
-                            <p className="my-2 content">Your go-to partner for all hossting business solutions and services that deliver value and enable solid corporate growth.</p>
+                            <p className="my-2 content NunitoSans-SemiBold">Your go-to partner for all hossting business solutions and services that deliver value and enable solid corporate growth.</p>
                             <ButtonGroup spacing={4}>
-                                <Button className="my-3 py-2 px-4 explore" variantColor="primary" variant="solid">
+                                <Button className="my-3 py-2 px-4 explore NunitoSans-SemiBold" variantColor="primary" variant="solid">
                                     Explore now
                                 </Button>
-                                <Button className="get-btn" border="2px" borderColor="#051133" variantColor="black" variant="outline">
+                                <Button className="get-btn NunitoSans-ExtraBold" border="2px" borderColor="#051133" variantColor="black" variant="outline">
                                     Get a quote <Icon className="mx-1" size="16px" name="arrow-forward" />
                                 </Button>
                             </ButtonGroup>
@@ -89,7 +89,7 @@ class Landing extends Component {
                             <div className="row display4">
                                 We’re a dynamic team of creative people, innovators & Technology Expert.
                             </div>
-                            <div className="row my-2 px-4 content">
+                            <div className="row my-2 px-4 content NunitoSans-Regular">
                                 We understand that every business is different. Our flexible IT services portfolio can easily be aligned with your specific requirements, situation, and objectives.
                             </div>
                         </div>
@@ -97,14 +97,14 @@ class Landing extends Component {
 
                     <div className="row third my-5">
                         <div className="col-lg-3 col-md-4 col-12 p-3 pt-5">
-                            <div className="our-services my-2">
+                            <div className="our-services NunitoSans-ExtraBold my-2">
                                 OUR Services
                                 </div>
                             <div className="display6">
                                 Build the future of your business with the latest tech and infrastructure.
                                 </div>
                             <div className="mt-3">
-                                <Button className="view-btn" variantColor="black" color="black" >
+                                <Button className="view-btn NunitoSans-ExtraBold" variantColor="black" color="black" >
                                     View all <Icon className="mx-1" size="16px" name="arrow-forward" />
                                 </Button>
                             </div>
@@ -148,7 +148,7 @@ class Landing extends Component {
                     </div>
                     <div className="col-12 p-0 special-div-content">
                     <div className="container p-0">
-                        <div className="col-12 text-center text-primary text-uppercase">
+                        <div className="col-12 text-center NunitoSans-ExtraBold text-primary text-uppercase">
                             Features
                             </div>
                         <div className="col-12 my-2 text-center text-white display5">
