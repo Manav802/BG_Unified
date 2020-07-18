@@ -4,7 +4,7 @@ FormControl,Stack,
 FormLabel,Input,Flex,Button
 } from "@chakra-ui/core";
 function ContactForm() {
-return <div className="contact-form p-5">
+return <div className="contact-form p-5 bg-white rounded">
     <form>
         <Stack spacing={8}>
             <FormControl isRequired>

@@ -27,6 +27,7 @@ import Icon12 from '../static/images/landing/Icons 2/Mask Group 12.svg'
 import Icon13 from '../static/images/landing/Icons 2/Mask Group 13.svg'
 import Icon14 from '../static/images/landing/Icons 2/Mask Group 14.svg';
 
+import contactImage from '../static/images/vectors/contact.png'
 import icNeon from '../static/images/landing/backgrouds/ic_chip_neon.png';
 
 import {TESTIMONIALS} from '../shared/testimonials.jsx';
@@ -56,7 +57,7 @@ class Landing extends Component {
             svgWidth=window.innerWidth;
         }
         return (
-            <div className="landing">
+            <div className="landing overflow-hidden">
 
                 <div className="container">
                     <div className="row first my-5">
@@ -234,22 +235,24 @@ class Landing extends Component {
                                 </div>
                             </div>
                             <div className="col-xl-8 col-lg-7 col-md-6 globe-container">
-                                {/* <canvas class="ml-auto mr-auto d-block" id='globe' width="1200" height="1200"></canvas> */}
+                                <canvas class="ml-auto mr-auto d-block" id='globe' width="1200" height="1200"></canvas>
                             </div>
                         </div>
                     
                     </div>
                    <img src={dividerWhiteBottom} className="col-12 p-0 divider-bottom" alt="" />
                 </div>
-                <div className="container my-lg-4 py-lg-3">
-                    <CaseStudy />
+                <div className="section">
+                    <div className="container my-lg-4 py-lg-3">
+                        <CaseStudy />
+                    </div>
                 </div>
                 <div className="container-fluid bg-dark mt-5 p-0">
-                <img src={dividerWhitePlain} class="position-absolute image-flip left-0" alt=""/>
-                    <div className="row mt-lg-5 mt-2 mt-lg-5">
+                <img src={dividerWhitePlain} class="position-absolute w-100 image-flip" alt=""/>
+                    <div className="row my-5 ">
                         <div className="slider-offset"></div>
-                        <div className="col pt-3 pt-md-4 first">
-                            <div className="welcome">
+                        <div className="col py-4">
+                            <div className="text-primary h6 text-uppercase">
                                 Testimonials
                             </div>
                             <p className="mt-2 display5">What people say about us</p>
@@ -262,17 +265,19 @@ class Landing extends Component {
                     </div>
                     
                 </div>
-                <div className="container-fluid p-0 bg-dark">
-                    <div className="bg-contact"></div>
-                    <img src={dividerYellowBottom} alt=""/>
+                <div className="container-fluid p-0 bg-dark overflow-hidden">
+                    <div className="bg-contact">
+                        <img src={contactImage} className="contact-image" alt=""/>
+                    </div>
+                    <img src={dividerYellowBottom} className="divider-yellow-with-margin w-100 layer-2" alt=""/>
                 </div>
-                <div className="container">
+                <div className="container landing-contact-form py-5">
                     <div className="row my-5">
-                        <div className="col-md-4 col-12 pt-md-5 third mycard ">
+                        <div className="col-md-4 col-12 pt-md-5 third mycard text-white">
                             <div className="our-services my-2">
                                 Contact Us
                                 </div>
-                            <div className="display6" style={{ fontSize: "35px" }}>
+                            <div className="display6 text-white" style={{ fontSize: "35px" }}>
                                 Let's make IT done
                                 </div>
                             <div className="cardContent py-3">

@@ -183,5 +183,22 @@
     }
     .bg-contact{
         height: 720px;
+        img{
+            margin-left: -30vw;
+            margin-top: -96px;
+            @media (max-width: 1680px){
+                margin-left: -40vw;
+            }
+            @media (max-width: 1440px){
+                margin-left: -50vw;
+            }
+            @media (max-width: 1280px){
+                display: none;
+            }
+        }
     }
+    &-contact-form{
+        margin-top: -600px;
+    }
+    
 }
