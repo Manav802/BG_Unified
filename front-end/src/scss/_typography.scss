@@ -33,3 +33,15 @@
     color: $color-dark-2 !important;
     color: $color-dark;
 }
+
+.NunitoSans{
+    &-SemiBold{
+        font-family: "Nunito Sans SemiBold";
+    }
+    &-ExtraBold{
+        font-family: "Nunito Sans ExtraBold";
+    }
+    &-Regular{
+        font-family: "Nunito Sans Regular";
+    }
+}
