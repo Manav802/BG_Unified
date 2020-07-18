@@ -5,26 +5,26 @@ import CaseStudy from '../components/case_study/CaseStudy'
 import TestimonialCard from '../components/TestimonialCard/TestimonialCard'
 import ContactForm from '../components/contactForm/main'
 import FooterComponent from '../components/footer/main'
-import Asset from './Asset.png';
-import Map from './Map.png';
-import Icon18 from './Icons/Mask Group 18.svg';
-import Icon19 from './Icons/Mask Group 19.svg';
-import Icon20 from './Icons/Mask Group 20.svg';
-import Icon21 from './Icons/Mask Group 21.svg';
-import Icon22 from './Icons/Mask Group 22.svg';
-import Icon23 from './Icons/Mask Group 23.svg';
+import Asset from '../static/images/landing/Asset.png';
+import Map from '../static/images/landing/Map.png';
+import Icon18 from '../static/images/landing/Icons/Mask Group 18.svg';
+import Icon19 from '../static/images/landing/Icons/Mask Group 19.svg';
+import Icon20 from '../static/images/landing/Icons/Mask Group 20.svg';
+import Icon21 from '../static/images/landing/Icons/Mask Group 21.svg';
+import Icon22 from '../static/images/landing/Icons/Mask Group 22.svg';
+import Icon23 from '../static/images/landing/Icons/Mask Group 23.svg';
 
-import Icon9 from './Icons 2/Mask Group 9.svg'
-import Icon10 from './Icons 2/Mask Group 10.svg'
-import Icon11 from './Icons 2/Mask Group 11.svg'
-import Icon12 from './Icons 2/Mask Group 12.svg'
-import Icon13 from './Icons 2/Mask Group 13.svg'
-import Icon14 from './Icons 2/Mask Group 14.svg';
+import Icon9 from '../static/images/landing/Icons 2/Mask Group 9.svg'
+import Icon10 from '../static/images/landing/Icons 2/Mask Group 10.svg'
+import Icon11 from '../static/images/landing/Icons 2/Mask Group 11.svg'
+import Icon12 from '../static/images/landing/Icons 2/Mask Group 12.svg'
+import Icon13 from '../static/images/landing/Icons 2/Mask Group 13.svg'
+import Icon14 from '../static/images/landing/Icons 2/Mask Group 14.svg';
 
-import icNeon from '../static/images/backgrouds/ic_chip_neon.png';
+import icNeon from '../static/images/landing/backgrouds/ic_chip_neon.png';
 
 import {TESTIMONIALS} from '../shared/testimonials.jsx';
-import * as brands from './BrandIcons/index';
+import * as brands from '../static/images/landing/BrandIcons/index';
 
 
 function MyCard(props){
