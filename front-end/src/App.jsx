@@ -3,6 +3,7 @@ import ComponentSheet from './componentsheet/Componentsheet'
 import { ThemeProvider, CSSReset } from '@chakra-ui/core'
 import customTheme from './static/js/theme.js'
 import Landing from './landing/Landing'
+import About from './views/about'
 
 class App extends Component {
 	constructor(props) {
@@ -17,7 +18,7 @@ class App extends Component {
 		<ThemeProvider theme={customTheme}>
 		<div className="container-fluid">
 		<CSSReset />
-		<Landing />
+		<About />
 		</div>
 		</ThemeProvider>
 		</div>

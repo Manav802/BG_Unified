@@ -10,4 +10,11 @@
         margin-bottom: calc(100vw/-8);
         z-index: 0;
     }
+    &-yellow-with-margin{
+        margin-top: calc(100vw/-4);
+        z-index: 400;
+    }
+    &-plain-white-offset{
+        margin-top: calc(100vw/6);
+    }
 }
