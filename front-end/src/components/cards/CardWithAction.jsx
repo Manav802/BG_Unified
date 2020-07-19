@@ -1,12 +1,12 @@
 import React from 'react'
-import { Box} from "@chakra-ui/core";
+import {Image, Box} from "@chakra-ui/core";
 
 
 function CardWithIcon(props) {
     return (
-        <div className="card-with-action rounded p-3">
+        <div className="card-with-action rounded bg-white p-3">
                 {props.icon && <div className="row iconbox">
-                    <Box as={props.icon} size="48px" color={props.iconColor} />
+                    <Image src={props.icon} size="48px" color={props.iconColor} />
                 </div>}
                 <div className="row display6 mt-2 mx-3">
                         {props.title}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Slider from '../ImageSlider/Slider'
+import Slider from 'react-flickity-component'
+// import Slider from '../ImageSlider/Slider'
 import { Box, Image, Avatar, AvatarBadge } from "@chakra-ui/core";
 
 class Testimonial extends Component {

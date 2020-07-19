@@ -2,54 +2,13 @@ import React, { Component } from 'react'
 import Head from 'next/head'
 import { Image, Button, ButtonGroup, Icon, Box } from "@chakra-ui/core";
 import CardWithIcon from '../components/cards/CardWithIcon'
+import CardWithAction from '../components/cards/CardWithAction'
 import CaseStudy from '../components/case_study/CaseStudy'
 import TestimonialCard from '../components/TestimonialCard/TestimonialCard'
 import ContactForm from '../components/contactForm/main'
 import FooterComponent from '../components/footer/main'
+import {TESTIMONIALS} from '../../public/assets/data/testimonials';
 
-import dividerWhite from '../static/images/backgrouds/divider_white.svg'
-import dividerWhiteBottom from '../static/images/backgrouds/divider_white_bottom.svg'
-import dividerRedBottom from '../static/images/backgrouds/divider_red_bottom.svg'
-import dividerWhitePlain from '../static/images/backgrouds/divider_white_plain.svg'
-import dividerYellowBottom from '../static/images/backgrouds/divider_yellow_bottom.svg'
-import topRedTriangle from '../static/images/backgrouds/top_red_triangle.svg'
-import Asset from '../static/images/landing/Asset.png';
-import Icon18 from '../static/images/landing/Icons/Mask Group 18.svg';
-import Icon19 from '../static/images/landing/Icons/Mask Group 19.svg';
-import Icon20 from '../static/images/landing/Icons/Mask Group 20.svg';
-import Icon21 from '../static/images/landing/Icons/Mask Group 21.svg';
-import Icon22 from '../static/images/landing/Icons/Mask Group 22.svg';
-import Icon23 from '../static/images/landing/Icons/Mask Group 23.svg';
-
-import Icon9 from '../static/images/landing/Icons 2/Mask Group 9.svg'
-import Icon10 from '../static/images/landing/Icons 2/Mask Group 10.svg'
-import Icon11 from '../static/images/landing/Icons 2/Mask Group 11.svg'
-import Icon12 from '../static/images/landing/Icons 2/Mask Group 12.svg'
-import Icon13 from '../static/images/landing/Icons 2/Mask Group 13.svg'
-import Icon14 from '../static/images/landing/Icons 2/Mask Group 14.svg';
-
-import contactImage from '../static/images/vectors/contact.png'
-import icNeon from '../static/images/landing/backgrouds/ic_chip_neon.png';
-
-import {TESTIMONIALS} from '../shared/testimonials.jsx';
-import * as brands from '../static/images/landing/BrandIcons/index';
-
-
-function MyCard(props) {
-    return (
-        <div className="mycard rounded-lg p-3 my-3 shadow " style={{ backgroundColor: "white" }}>
-            <div className="row mx-3 mt-3 mb-2">
-                <Box size="48px" color="white" >{props.icon}</Box>
-            </div>
-            <div className="row display6 mx-3">
-                {props.title}
-            </div>
-            <div className="row cardContent NunitoSans-Regular mx-3 mb-4">
-                {props.children}
-            </div>
-        </div>
-    )
-}
 
 class Landing extends Component {
     componentDidMount(){
@@ -63,11 +22,11 @@ class Landing extends Component {
                     <title>BG Unified Solutions</title>
                     <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
                     <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
-                    <script type='text/javascript' src='/planetaryjs.min.js'></script>
-                    <script type='text/javascript' src='/globe.js'></script>
+                    <script type='text/javascript' src='/assets/js/planetaryjs.min.js'></script>
+                    <script type='text/javascript' src='/assets/js/globe.js'></script>
                 </Head>
                 <div className="container-fluid p-0 overflow-hidden position-absolute">
-                    <img src={topRedTriangle} className="divider-topred-with-margin w-100 layer-2" alt=""/>
+                    <img src="/assets/images/backgrounds/top_red_triangle.svg" className="divider-topred-with-margin w-100 layer-2" alt=""/>
                 </div>
                 <div className="container">
                     <div className="row first my-5">
@@ -87,7 +46,7 @@ class Landing extends Component {
                             </ButtonGroup>
                         </div>
                         <div className="col-lg-6 d-none d-lg-block">
-                            <Image src={Asset} />
+                            <Image src="/assets/images/hero.png" />
                         </div>
                     </div>
 
@@ -105,13 +64,13 @@ class Landing extends Component {
                     <div className="row third my-5">
                         <div className="col-lg-3 col-md-4 col-12 p-3 pt-5">
                             <div className="our-services NunitoSans-ExtraBold my-2">
-                                OUR Services
+                                OuR Services
                                 </div>
                             <div className="display6">
                                 Build the future of your business with the latest tech and infrastructure.
                                 </div>
                             <div className="mt-3">
-                                <Button className="view-btn NunitoSans-ExtraBold" variantColor="black" color="black" >
+                                <Button className="view-btn NunitoSans-ExtraBold px-0" variantColor="black" color="black" >
                                     View all <Icon className="mx-1" size="16px" name="arrow-forward" />
                                 </Button>
                             </div>
@@ -119,22 +78,22 @@ class Landing extends Component {
                         <div className="col">
                             <div className="no-gutters row">
                                 <div className="col-xl-4 col-sm-6">
-                                    <CardWithIcon icon={<Image src={Icon9} />} title={<div>Infrastructure <br /> as a service </div>} children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
+                                    <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>Infrastructure <br /> as a service </div>} children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
                                 </div>
                                 <div className="col-xl-4 col-sm-6">
-                                    <CardWithIcon icon={<Image src={Icon10} />} title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
+                                    <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
                                 </div>
                                 <div className="col-xl-4 col-sm-6">
-                                    <CardWithIcon icon={<Image src={Icon12} />} title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
+                                    <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
                                 </div>
                                 <div className="col-xl-4 col-sm-6">
-                                    <CardWithIcon icon={<Image src={Icon13} />} title={<div>Backup <br /> as a service </div>} iconBg="#F33022" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
+                                    <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>Backup <br /> as a service </div>} iconBg="#F33022" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
                                 </div>
                                 <div className="col-xl-4 col-sm-6">
-                                    <CardWithIcon icon={<Image src={Icon14} />} title={<div>Proxy <br /> as a service </div>} iconBg="#0D5EA5" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
+                                    <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>Proxy <br /> as a service </div>} iconBg="#0D5EA5" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
                                 </div>
                                 <div className="col-xl-4 col-sm-6">
-                                    <CardWithIcon icon={<Image src={Icon11} />} title={<div>Platform <br /> as a service </div>} iconBg="#19C741" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
+                                    <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>Platform <br /> as a service </div>} iconBg="#19C741" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
                                 </div>
                             </div>
                         </div>
@@ -143,14 +102,14 @@ class Landing extends Component {
                 <div className="row flex forth landing-benefits justify-content-center">
                     
                     <div className="col-12 p-0 bg-dark">
-                        <img src={dividerWhitePlain} className="w-100" alt=""/>
+                        <img src="/assets/images/dividers/divider_white_plain.svg" className="w-100" alt=""/>
                     </div>
                     <div className="col-12 p-0 bg-dark overflow-hidden">
                             <div style={{height:"440px"}} className="d-flex justify-content-end">
-                                <img src={icNeon} className="vector" alt=""/>
+                                <img src="/assets/images/vectors/ic_chip_neon.png" className="vector" alt=""/>
                             </div>
                         <div className="layer-1">
-                        <img src={dividerRedBottom} className="w-100 divider-img" alt=""/>
+                        <img src="/assets/images/dividers/divider_red_bottom.svg" className="w-100 divider-img" alt=""/>
                         </div>
                     </div>
                     <div className="col-12 p-0 special-div-content">
@@ -162,25 +121,38 @@ class Landing extends Component {
                             Why Choose Us?
                             </div>
                         <div className="col-lg-10 offset-lg-1 col-12 mb-3 ">
-                            <div className="row no-gutters">
-                                <div className="col-xl-4 px-2 col-sm-6 col-12 ">
-                                    <MyCard icon={<Image src={Icon18} />} title="24/7 Industry Support" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." iconBg="Green" />
+                            <div className="row">
+                                <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                                    <CardWithAction title="24/7 Active Support" icon="/assets/images/icons/color/headphones.svg">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio fugit repudiandae, aspernatur molestias fugiat praesentium odio.
+                                    </CardWithAction>
                                 </div>
-                                <div className="col-xl-4 px-2 col-sm-6 col-12">
-                                    <MyCard icon={<Image src={Icon19} />} title="Dashboard Reporting" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." iconBg="Green" />
+                                <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                                    <CardWithAction title="24/7 Active Support" icon="/assets/images/icons/color/headphones.svg">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio fugit repudiandae, aspernatur molestias fugiat praesentium odio.
+                                    </CardWithAction>
                                 </div>
-                                <div className="col-xl-4 px-2 col-sm-6 col-12">
-                                    <MyCard icon={<Image src={Icon20} />} title="Wide range of services" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." iconBg="Green" />
+                                <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                                    <CardWithAction title="24/7 Active Support" icon="/assets/images/icons/color/headphones.svg">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio fugit repudiandae, aspernatur molestias fugiat praesentium odio.
+                                    </CardWithAction>
                                 </div>
-                                <div className="col-xl-4 px-2 col-sm-6 col-12">
-                                    <MyCard icon={<Image src={Icon21} />} title="Secure Transactions" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." iconBg="Green" />
+                                <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                                    <CardWithAction title="24/7 Active Support" icon="/assets/images/icons/color/headphones.svg">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio fugit repudiandae, aspernatur molestias fugiat praesentium odio.
+                                    </CardWithAction>
                                 </div>
-                                <div className="col-xl-4 px-2 col-sm-6 col-12">
-                                    <MyCard icon={<Image src={Icon22} />} title="Enhanced Performance" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." iconBg="Green" />
+                                <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                                    <CardWithAction title="24/7 Active Support" icon="/assets/images/icons/color/headphones.svg">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio fugit repudiandae, aspernatur molestias fugiat praesentium odio.
+                                    </CardWithAction>
                                 </div>
-                                <div className="col-xl-4 px-2 col-sm-6 col-12">
-                                    <MyCard icon={<Image src={Icon23} />} title="Simple Pricing" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." iconBg="Green" />
+                                <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                                    <CardWithAction title="24/7 Active Support" icon="/assets/images/icons/color/headphones.svg">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio fugit repudiandae, aspernatur molestias fugiat praesentium odio.
+                                    </CardWithAction>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>                        
@@ -192,7 +164,7 @@ class Landing extends Component {
                 <div className="container-fluid brands my-5 py-2">
                     <div className="marquee">
                         <div className="justify-content-center text-center d-flex flex-wrap mx-xl-5 mx-0 scroll">
-                            <Image src={brands.Img1} />
+                            {/* <Image src={brands.Img1} />
                             <Image src={brands.Img2} />
                             <Image src={brands.Img4} />
                             <Image src={brands.Img5} />
@@ -207,7 +179,7 @@ class Landing extends Component {
                             <Image src={brands.Img18} />
                             <Image src={brands.Img19} />
                             <Image src={brands.Img20} />
-                            <Image src={brands.Img21} />
+                            <Image src={brands.Img21} /> */}
                         </div>
                     </div>
                 </div>
@@ -215,7 +187,7 @@ class Landing extends Component {
                 
 
                 <div className="my-5 row overflow-hidden globe-section">
-                    <img src={dividerWhite} className="col-12 p-0" alt="" />
+                    <img src="/assets/images/dividers/divider_white.svg" className="col-12 p-0" alt="" />
                     <div className="row">
                         <div className="slider-offset"></div>
                         <div className="row col mt-3 d-flex align-items-center">
@@ -250,7 +222,7 @@ class Landing extends Component {
                         </div>
                     
                     </div>
-                   <img src={dividerWhiteBottom} className="col-12 p-0 divider-bottom" alt="" />
+                   <img src="/assets/images/dividers/divider_white_bottom.svg" className="col-12 p-0 divider-bottom" alt="" />
                 </div>
                 <div className="section">
                     <div className="container my-lg-4 py-lg-3">
@@ -258,7 +230,7 @@ class Landing extends Component {
                     </div>
                 </div>
                 <div className="container-fluid bg-dark mt-5 p-0">
-                <img src={dividerWhitePlain} className ="position-absolute w-100 image-flip" alt=""/>
+                <img src="/assets/images/dividers/divider_white_plain.svg" className ="position-absolute w-100 image-flip" alt=""/>
                     <div className="row my-5 ">
                         <div className="slider-offset"></div>
                         <div className="col py-4">
@@ -277,9 +249,9 @@ class Landing extends Component {
                 </div>
                 <div className="container-fluid p-0 bg-dark overflow-hidden">
                     <div className="bg-contact">
-                        <img src={contactImage} className="contact-image" alt=""/>
+                        <img src="/assets/images/vectors/contact.png" className="contact-image" alt=""/>
                     </div>
-                    <img src={dividerYellowBottom} className="divider-yellow-with-margin w-100 layer-2" alt=""/>
+                    <img src="/assets/images/dividers/divider_yellow_bottom.svg" className="divider-yellow-with-margin w-100 layer-2" alt=""/>
                 </div>
                 <div className="container landing-contact-form py-5">
                     <div className="row my-5">
