@@ -161,10 +161,9 @@ class Landing extends Component {
                    
                 </div>
 
-
                 <div className="container-fluid brands my-5 py-2">
                     <div className="marquee">
-                        <div className="justify-content-center text-center d-flex flex-wrap mx-xl-5 mx-0 scroll">
+                        <div className="justify-content-center text-center d-flex abc  mx-xl-5 mx-0 scroll">
                             <Image src="/assets/images/brands/aapt.png" />
                             <Image src="/assets/images/brands/advanced_life.png" />
                             <Image src="/assets/images/brands/agc_plus.png" />
