@@ -165,22 +165,22 @@ class Landing extends Component {
                 <div className="container-fluid brands my-5 py-2">
                     <div className="marquee">
                         <div className="justify-content-center text-center d-flex flex-wrap mx-xl-5 mx-0 scroll">
-                            {/* <Image src={brands.Img1} />
-                            <Image src={brands.Img2} />
-                            <Image src={brands.Img4} />
-                            <Image src={brands.Img5} />
-                            <Image src={brands.Img6} />
-                            <Image src={brands.Img8} />
-                            <Image src={brands.Img9} />
-                            <Image src={brands.Img10} />
-                            <Image src={brands.Img14} />
-                            <Image src={brands.Img15} />
-                            <Image src={brands.Img16} />
-                            <Image src={brands.Img17} />
-                            <Image src={brands.Img18} />
-                            <Image src={brands.Img19} />
-                            <Image src={brands.Img20} />
-                            <Image src={brands.Img21} /> */}
+                            <Image src="/assets/images/brands/aapt.png" />
+                            <Image src="/assets/images/brands/advanced_life.png" />
+                            <Image src="/assets/images/brands/agc_plus.png" />
+                            <Image src="/assets/images/brands/blueglue.png" />
+                            <Image src="/assets/images/brands/cumulus.png" />
+                            <Image src="/assets/images/brands/equinix.png" />
+                            <Image src="/assets/images/brands/fdba.png" />
+                            <Image src="/assets/images/brands/fortinet.png" />
+                            <Image src="/assets/images/brands/fujitsu.png" />
+                            <Image src="/assets/images/brands/halls.png" />
+                            <Image src="/assets/images/brands/huawei.png" />
+                            <Image src="/assets/images/brands/hutchisonports.png" />
+                            <Image src="/assets/images/brands/infin_it.png" />
+                            <Image src="/assets/images/brands/sabre_pacific.png" />
+                            <Image src="/assets/images/brands/straintz.png" />
+                            <Image src="/assets/images/brands/veeam.png" /> 
                         </div>
                     </div>
                 </div>
