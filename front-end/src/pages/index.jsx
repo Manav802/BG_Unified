@@ -6,7 +6,6 @@ import CardWithAction from '../components/cards/CardWithAction'
 import CaseStudy from '../components/case_study/CaseStudy'
 import TestimonialCard from '../components/TestimonialCard/TestimonialCard'
 import ContactForm from '../components/contactForm/main'
-import FooterComponent from '../components/footer/main'
 import {TESTIMONIALS} from '../../public/assets/data/testimonials';
 
 
@@ -50,6 +49,7 @@ class Landing extends Component {
                         </div>
                     </div>
 
+                    <div className="section pb-0">
                     <div className="row second my-5 py-lg-5">
                         <div className="col-12 col-lg-8 offset-lg-2 text-center">
                             <div className="row display4">
@@ -59,6 +59,7 @@ class Landing extends Component {
                                 We understand that every business is different. Our flexible IT services portfolio can easily be aligned with your specific requirements, situation, and objectives.
                             </div>
                         </div>
+                    </div>
                     </div>
 
                     <div className="row third my-5">
@@ -230,7 +231,10 @@ class Landing extends Component {
                     </div>
                 </div>
                 <div className="container-fluid bg-dark mt-5 p-0">
-                <img src="/assets/images/dividers/divider_white_plain.svg" className ="position-absolute w-100 image-flip" alt=""/>
+                <div className="position-absolute w-100 d-flex align-items-start">
+                    <img src="/assets/images/dividers/divider_white_plain.svg" className ="image-flip w-100" alt=""/>
+
+                </div>
                     <div className="row my-5 ">
                         <div className="slider-offset"></div>
                         <div className="col py-4">

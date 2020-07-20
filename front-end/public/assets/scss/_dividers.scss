@@ -11,6 +11,8 @@
         z-index: 0;
     }
     &-yellow-with-margin{
+        width: 100% !important;
+        transform: translate(0px, 5px);
         margin-top: calc(100vw/-4);
         z-index: 60;
     }

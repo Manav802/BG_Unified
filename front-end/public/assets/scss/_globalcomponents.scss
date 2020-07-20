@@ -56,6 +56,12 @@ a:hover{
     }
 }
 
+.back-cover{
+    @media (min-width: 1940px){
+        display: none;
+    }
+}
+
 .hover-effect:hover{
     cursor: pointer;
     background: hsl($primary-h, 0, 96) !important
