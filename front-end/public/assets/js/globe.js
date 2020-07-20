@@ -14,14 +14,10 @@ window.onload = () => {
         };
     };
 
-    d3.json('world-110m.json', function(err, data) {
-        planetaryjs.plugins.topojson({
-          world: data
-        });
-        // Create planets inside this callback
-    });
+
 
     planet.loadPlugin(planetaryjs.plugins.earth({
+        topojson: { file:   '/assets/js/world-110m.json' },
         oceans:   { fill:   '#091946' },
         land:     { fill:   '#0C225E' },
         borders:  { stroke: '#0C225E' }
