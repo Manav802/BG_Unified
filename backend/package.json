@@ -22,9 +22,13 @@
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
     "nexmo": "^2.8.0",
     "nodemon": "^2.0.4",
     "passport": "^0.4.1",
+    "sequelize": "^6.3.3",
+    "sqlite3": "^5.0.0",
     "uuid": "^8.2.0"
-  }
+  },
+  "devDependencies": {}
 }

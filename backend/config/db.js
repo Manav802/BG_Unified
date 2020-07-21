@@ -1,28 +1,13 @@
-const mysql = require("mysql")
+const mysql = require("mysql");
+const sequelize = require("./connectionDB")
 
-//mySQL database connection
-exports.dbConnection  = () =>{
-    
-// for online
-let connection1 = mysql.createConnection({    //got squal server account from https://www.freemysqlhosting.net/
-    host: '',
-    user: '',
-    password:'',
-    database: ''
-});
-
-//for locally
-let connection2 = mysql.createConnection({  
-    host: process.env.host,
-    user: process.env.user,
-    password:process.env.password,
-    database: process.env.database //database should be present in your localhost with this name
-});
-
-connection2.connect(function(err) {
-    if (err) {
-      return console.error('error: ' + err.message);
+//exporting the datbase conncetivity 
+exports.connectionDB = () =>{
+    try {
+      sequelize.authenticate();
+      console.log('Connection has been established successfully.');
+    } 
+    catch (error) {
+      console.error('Unable to connect to the database:', error);
     }
-    console.log('Connected to the MySQL server.');
-});
-} 
+}

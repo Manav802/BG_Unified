@@ -1,11 +1,21 @@
 const express = require('express')
-const Router = express.Router()
+const router = express.Router()
 
-//Testing API
-Router.get('/get',async (req, res)=>{
- 
-  res.send("In Progress for User")    
-   
-})
 
-module.exports = Router
+//controllers
+const { signup, signin ,signout} = require('../controllers/user')
+
+
+//signup
+router.post('/signup',signup);
+
+
+//signin
+router.post('/signin',signin);
+
+
+//signout
+router.get('/signout',signout);
+
+
+module.exports = router

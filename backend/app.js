@@ -9,7 +9,7 @@ const morgan = require('morgan')
 const dotenv = require('dotenv').config()
 
 //database
-const {dbConnection} = require('./config/db')
+const {connectionDB} = require('./config/db')
 
 //routes
 const router = require('./routeHandler/routes')
@@ -23,7 +23,7 @@ app.use(morgan('dev'))
 
 
 //database connectivity
-dbConnection()
+connectionDB()
 
 //routes middleware
 app.use(router)
