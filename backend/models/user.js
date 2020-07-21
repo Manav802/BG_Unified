@@ -20,6 +20,14 @@ module.exports = function(sequelize, DataTypes) {
     password: {
       type: DataTypes.STRING(255),
       allowNull: false
+    },
+    auth_base: {
+      type: DataTypes.STRING(50),
+      allowNull: false
+    },
+    auth_buffer: {
+      type: 'LONGBLOB',
+      allowNull: false
     }
   }, {
     timestamps:false,
