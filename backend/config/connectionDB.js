@@ -7,6 +7,7 @@ const  sequelize = new Sequelize('bgunified', 'root', 'password', {
     dialect: 'mysql'
 });
 
+
 //exporting the connection 
 module.exports = sequelize
 
