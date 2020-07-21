@@ -6,6 +6,7 @@ const { DataTypes } = require('sequelize');
 //authenication libraries
 const bcrypt = require('bcryptjs')
 const passport = require('passport')
+const jwt = require('jsonwebtoken')
 
 //validations 
 var User = require('../models/user')(sequelize, DataTypes);
@@ -33,7 +34,7 @@ exports.signup =async (req, res)=>{
     const user ={
         name:name,email :email , password: password
     }
-
+    
     //generate the salt and encrypt the password
     const salt = await bcrypt.genSalt(parseInt(process.env.salt));
     user.password= await bcrypt.hash(user.password,salt)
@@ -51,25 +52,53 @@ exports.signup =async (req, res)=>{
 }
 
 //signin 
-exports.signin = (req, res,next)=>{
+exports.signin = async(req, res) => {
+
+    //checking the cookie
+    const cookie = req.cookies['token']
+    if(cookie!==undefined){
+        return handleError(res,{},"User Already Signed In...")
+    }
+
+    const { email, password } = req.body;
+    var  user = await User.findOne({  where:{email: email} })
     
-    passport.authenticate('local',function(err, data){
-           if(err,data){
-               throw err;
-           }
-           else{
-               console.log("login successfully")
-           }
-    }),
-    (req, res,next)
-      
+    //checking if no  record found
+    if(user===null){
+        return handleError(res,{},"No Record Found")
+    }
+    
+    //checking if password match or not 
+    await bcrypt.compare(password,user.dataValues.password, (err,isMatch)=>{
+        if(!isMatch){
+            return handleError(res,err,"Incorrect Email and password")
+        }
+        else{
 
-}
+            //setting up  the cokkie
+            const token =jwt.sign({ id: user.dataValues.id }, "secret");
+            //put token in cookie
+            res.cookie("token", token, { maxAge: 60*60*1000, httpOnly: true });
+            res.status(200).json({
+                success:"true",
+                message:"SignIn successfully"
+            })
+        }
+    })
+};
+  
+//signut route
+exports.signout = (req, res) => {
 
-//logout controller
-exports.signout = (req,res)=>{
-
-    req.logout();
-    console.log('logout successfully')
-
-}
+    //checking the cookie
+    const cookie = req.cookies['token']
+    if(cookie===undefined){
+        return handleError(res,{},"User Already SignOut...")
+    }
+    res.clearCookie("token");
+    res.json({
+    success:"true",
+    message: "User signout successfully"
+    });
+};
+  

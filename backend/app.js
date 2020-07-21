@@ -12,11 +12,11 @@ const dotenv = require('dotenv').config()
 const {connectionDB} = require('./config/db')
 
 //routes
-const router = require('./routeHandler/routes')
-
+const router = require('./routeHandler/routes');
 
 //using basic middlwares
 app.use(bodyParser.json())
+
 app.use(cookieParser())
 app.use(cors());
 app.use(morgan('dev'))
