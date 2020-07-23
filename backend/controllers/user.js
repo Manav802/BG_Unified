@@ -6,6 +6,8 @@ const { DataTypes } = require("sequelize");
 const bcrypt = require("bcryptjs");
 const speakeasy = require("speakeasy");
 const QRCode = require("qrcode");
+const jwt = require('jsonwebtoken')
+// require('dotenv').config()
 
 //models
 var User = require("../models/user")(sequelize, DataTypes);
@@ -65,6 +67,7 @@ exports.signup = async (req, res) => {
 //signin
 exports.signin = async (req, res) => {
   const { email, password } = req.body;
+  const user = await User.findOne({ where: { email: email } });
   //checking if no  record found
   if (user === null) {
     return handleError(res, {}, "No Record Found");
@@ -82,27 +85,56 @@ exports.signin = async (req, res) => {
   });
 };
 
+
 //google authenitcator
 exports.verifyToken = async (req, res) => {
   const { email, token } = req.body;
   //getting the user details
-  const user = await User.findOne({ where: { email: email } });
+  const userDetails = await User.findOne({ where: { email: email } });
 
   //verify the google autheticator
   var verified = speakeasy.totp.verify({
-    secret: user.dataValues.auth_base,
+    secret: userDetails.dataValues.auth_base,
     encoding: "base32",
     token: token,
   });
   if (!verified) {
     return handleError(res, {}, "Incorrect Authenticator password");
-  } else {
-    res.status(200).json({
-      success: "True",
-      message: "Login Successfully",
-    });
+  } 
+  else {
+    
+    //generating the jwt token 
+    const user ={
+      email :userDetails.dataValues.email,
+      id: userDetails.dataValues.id
+    } 
+    jwt.sign( {user}, process.env.SECRET,{ expiresIn: '1h'},(err, data)=>{
+      if(err) throw err
+      else{
+        res.status(200).json({
+          success: "True",
+          message: "Login Successfully",
+          key : data
+      })}
+    })
   }
-};
+}
+
+
+//middlware for isauthenitcated 
+exports.IsSignin = (req, res, next)=> {
+  const authHeader = req.headers['authorization']
+  const token = authHeader && authHeader.split(' ')[1]
+  if (token == null) return res.sendStatus(401)
+
+  jwt.verify(token, process.env.SECRET, (err, user) => {
+    console.log(err)
+    if (err) return res.sendStatus(403)
+    req.user = user
+    next()
+  })
+}
+
 
 //signut route
 exports.signout = (req, res) => {
