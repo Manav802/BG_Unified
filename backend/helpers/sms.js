@@ -1,6 +1,14 @@
 //SMS using NEXMO 
 const Nexmo = require('nexmo');
 
+const successMessage = {
+  messageSent: "Message has successfully sent to"
+}
+
+const errorMessage = {
+  error: "An Error has Occured"
+}
+
 const nexmo = new Nexmo({
   apiKey: '',
   apiSecret: '',
@@ -12,10 +20,10 @@ exports.sendSMS = (to, text)=>{
     type: "unicode"
     },(err, data )=>{
     if(err){
-        console.log("An Error has Occured")
+        console.log(errorMessage.error)
     }
     else{
-        console.log(`Message has successfully sent to ${to} `)
+        console.log(`${messageSent} ${to} `)
     }
   })
 }

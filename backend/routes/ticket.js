@@ -1,10 +1,14 @@
 const express = require('express')
 const Router = express.Router()
 
+const successMessage = {
+  progTicket: "In Progress for ticket"
+}
+
 //Testing API
 Router.get('/get',async (req, res)=>{
  
-  res.send("In Progress for ticket")    
+  res.send(successMessage.progTicket)    
    
 })
 

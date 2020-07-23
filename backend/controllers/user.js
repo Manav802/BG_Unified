@@ -15,6 +15,21 @@ var User = require("../models/user")(sequelize, DataTypes);
 //for validations
 const { validationResult } = require("express-validator");
 
+const successMessage = {
+  userRegistered: "User Registered Successfully",
+  detailsVarified: "Incorrect Email and password",
+  login: "Login Successfully"
+}
+
+const errorMessage = {
+  passMatch: "Password should match",
+  emailExist: "Email already registered",
+  noRecordFound: "No Record Found",
+  incorrectCredentials: "Incorrect Email and password",
+  incorrectAuthenticator: "Incorrect Authenticator password"
+}
+
+
 //singup controller
 exports.signup = async (req, res) => {
   //apply the validations result
@@ -27,7 +42,7 @@ exports.signup = async (req, res) => {
 
   //check that password and confimm password are same or not
   if (password !== confirmPassword) {
-    return handleError(res, {}, "Password should match");
+    return handleError(res, {}, errorMessage.passMatch);
   }
 
   //generate the secret
@@ -54,13 +69,13 @@ exports.signup = async (req, res) => {
     .then((result) => {
       res.status(200).json({
         success: "true",
-        message: "User Registered Successfully",
+        message: successMessage.userRegistered,
         image: user.auth_buffer,
       });
     })
     .catch((err) => {
       console.log(err);
-      return handleError(res, err, "Email already registered");
+      return handleError(res, err, errorMessage.emailExist);
     });
 };
 
@@ -70,16 +85,16 @@ exports.signin = async (req, res) => {
   const user = await User.findOne({ where: { email: email } });
   //checking if no  record found
   if (user === null) {
-    return handleError(res, {}, "No Record Found");
+    return handleError(res, {}, errorMessage.noRecordFound);
   }
   //checking if password match or not
   bcrypt.compare(password, user.dataValues.password, (err, isMatch) => {
     if (!isMatch) {
-      return handleError(res, err, "Incorrect Email and password");
+      return handleError(res, err, errorMessage.incorrectCredentials);
     } else {
       res.status(200).json({
         success: "true",
-        message: "User Details Verified Successfully",
+        message: successMessage.detailsVarified,
       });
     }
   });
@@ -99,7 +114,7 @@ exports.verifyToken = async (req, res) => {
     token: token,
   });
   if (!verified) {
-    return handleError(res, {}, "Incorrect Authenticator password");
+    return handleError(res, {}, errorMessage.incorrectAuthenticator);
   } 
   else {
     
@@ -113,7 +128,7 @@ exports.verifyToken = async (req, res) => {
       else{
         res.status(200).json({
           success: "True",
-          message: "Login Successfully",
+          message: successMessage.login,
           key : data
       })}
     })
