@@ -8,11 +8,18 @@ const cors = require("cors");
 const morgan = require('morgan')
 const dotenv = require('dotenv').config()
 
+
 //database
 const {connectionDB} = require('./config/db')
 
 //routes
 const router = require('./routeHandler/routes');
+const passport = require('passport');
+
+
+//passport
+app.use(passport.initialize());
+app.use(passport.session());
 
 //using basic middlwares
 app.use(bodyParser.json())

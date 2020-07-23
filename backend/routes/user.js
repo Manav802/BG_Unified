@@ -1,12 +1,15 @@
 const express = require('express')
 const router = express.Router()
 
+const passport = require('passport')
+
 //for validations 
 const { check, validationResult } = require("express-validator");
 
 
 //controllers
-const { signup, signin ,signout} = require('../controllers/user')
+const { signup, signin ,signout, verifyToken} = require('../controllers/user');
+
 
 
 //signup
@@ -25,11 +28,11 @@ router.post('/signup',  [
 
 
 //signin
-router.post('/signin',signin);
 
+router.post('/signin',signin);
+router.post('/verify/token',verifyToken)
 
 //signout
 router.get('/signout',signout);
-
 
 module.exports = router

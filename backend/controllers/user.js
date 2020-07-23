@@ -4,6 +4,7 @@ const sequelize = require('../config/connectionDB');
 const { DataTypes } = require('sequelize');
 const  {sendMail} = require('../helpers/mail')
 
+
 //authenication libraries
 const bcrypt = require('bcryptjs')
 const passport = require('passport')
@@ -11,13 +12,11 @@ const jwt = require('jsonwebtoken')
 const speakeasy = require('speakeasy')
 const QRCode  = require('qrcode')
 
-//validations 
+//models
 var User = require('../models/user')(sequelize, DataTypes);
 
 //for validations 
 const { check, validationResult } = require("express-validator");
-const { send } = require('@sendgrid/mail');
-
 
 //singup controller
 exports.signup =async (req, res)=>{
@@ -51,7 +50,7 @@ exports.signup =async (req, res)=>{
     user.password= await bcrypt.hash(user.password,salt)
 
     User.create(user).then(result =>{
-      
+        
         res.status(200).json({
             success:"true",
             message:"User Registered Successfully",
@@ -66,70 +65,56 @@ exports.signup =async (req, res)=>{
 
 
 //signin 
-
 exports.signin = async(req, res) => {
 
-    //checking the cookie
-    const cookie = req.cookies['token']
-    if(cookie!==undefined){
-        return handleError(res,{},"User Already Signed In...")
-    }
-
     const { email, password} = req.body;
-    //for google authenticator
-    const key =req.body.token
-
-    var  user = await User.findOne({  where:{email: email} })
-    
     //checking if no  record found
     if(user===null){
         return handleError(res,{},"No Record Found")
     }
-    
     //checking if password match or not 
-    await bcrypt.compare(password,user.dataValues.password, (err,isMatch)=>{
+    bcrypt.compare(password,user.dataValues.password, (err,isMatch)=>{
         if(!isMatch){
             return handleError(res,err,"Incorrect Email and password")
         }
         else{
-
-            //verify the google autheticator 
-            var verified = speakeasy.totp.verify({
-                secret: user.dataValues.auth_base,
-                encoding: 'base32',
-                token: key
-            });
-
-            if(!verified){
-                return handleError(res,err,"Incorrect Authenticator password")
-            }
-
-            //setting up  the cokkie
-            const token =jwt.sign({ id: user.dataValues.id }, "secret");
-            //put token in cookie
-            res.cookie("token", token, { maxAge: 60*60*1000, httpOnly: true });
             res.status(200).json({
                 success:"true",
-                message:"SignIn successfully"
+                message:"User Details Verified Successfully"
             })
         }
     })
 };
 
 
-  
+//google authenitcator
+exports.verifyToken = async (req, res )=>{
+    
+    const {email, token} = req.body
+    //getting the user details
+    const user = await User.findOne({  where:{email: email} })
+
+    //verify the google autheticator 
+    var verified =speakeasy.totp.verify({
+        secret: user.dataValues.auth_base,
+        encoding: 'base32',
+        token: token
+    })
+    if(!verified){
+        return handleError(res,{},"Incorrect Authenticator password")
+    }
+    else{
+       
+        res.status(200).json({
+            success:"True",
+            message:"Login Successfully"
+        })
+    }
+}
+
+
 //signut route
 exports.signout = (req, res) => {
-
-    //checking the cookie
-    const cookie = req.cookies['token']
-    if(cookie===undefined){
-        return handleError(res,{},"User Already SignOut...")
-    }
-    res.clearCookie("token");
-    res.json({
-    success:"true",
-    message: "User signout successfully"
-    });
+   res.send("logout")
 };
   

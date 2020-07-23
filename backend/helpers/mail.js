@@ -2,7 +2,7 @@
 const sendMAIL = require('@sendgrid/mail');
 
 //setting up the apikey
-sendMAIL.setApiKey('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')
+sendMAIL.setApiKey('')
 
 exports.sendMail =(message) =>{
     sendMAIL.send(message).then(res =>{
@@ -16,3 +16,4 @@ exports.sendMail =(message) =>{
 
 //strcutre of the message
 // { to, from,subject,text,html}
+
