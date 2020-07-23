@@ -13,13 +13,7 @@ const dotenv = require('dotenv').config()
 const {connectionDB} = require('./config/db')
 
 //routes
-const router = require('./routeHandler/routes');
-const passport = require('passport');
-
-
-//passport
-app.use(passport.initialize());
-app.use(passport.session());
+const router = require('./routes/index');
 
 //using basic middlwares
 app.use(bodyParser.json())

@@ -1,10 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-const passport = require('passport')
-
 //for validations 
-const { check, validationResult } = require("express-validator");
+const { check } = require("express-validator");
 
 
 //controllers
