@@ -85,7 +85,7 @@ function features() {
             
             <div className="container my-lg-5 py-lg-5 my-md-4 py-md-4 pt-2 mt-2">
                 <div className="row no-gutters p-3">
-                    <div className="col-md-4 align-self-center">
+                    <div className="col-md-5 align-self-center">
                         <div className="display5" >
                             <span className="badge badge-pill my-2 badge-danger">5</span> <br/>
                             End-to-End Data Centre Networking
