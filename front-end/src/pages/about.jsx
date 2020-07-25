@@ -6,6 +6,17 @@ import { FaArrowRight } from "react-icons/fa";
 import { Box } from '@chakra-ui/core';
 
 class about extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            activeYearCard:1
+        }
+    }
+    goToIndex = (index) => {
+        //using Flickity API
+        this.flkty.select( index );
+        this.setState({activeYearCard:index})
+      }
     render() {
         return (
             <>
@@ -23,16 +34,18 @@ class about extends Component {
                         <div className="row m-0">
                             <div className="slider-offset p-3"></div>
                             <div className="col">
-                                <a href="#" className="text-primary border-bottom p-4">2020</a>
-                                <a href="#" className="p-4">2019</a>
-                                <a href="#" className="p-4">2018</a>
-                                <a href="#" className="p-4">2017</a>
-                                <a href="#" className="p-4">2016</a>
-                                <a href="#" className="p-4">2015</a>
-                                <a href="#" className="p-4">2014</a>
+                                <a onClick={()=>this.goToIndex(1)} className={ "p-4" + (this.state.activeYearCard==1 ? " text-primary border-bottom": "")}>2020</a>
+                                <a onClick={()=>this.goToIndex(2)} className={ "p-4" + (this.state.activeYearCard==2 ? " text-primary border-bottom": "")}>2019</a>
+                                <a onClick={()=>this.goToIndex(3)} className={ "p-4" + (this.state.activeYearCard==3 ? " text-primary border-bottom": "")}>2018</a>
+                                <a onClick={()=>this.goToIndex(4)} className={ "p-4" + (this.state.activeYearCard==4 ? " text-primary border-bottom": "")}>2017</a>
+                                <a onClick={()=>this.goToIndex(5)} className={ "p-4" + (this.state.activeYearCard==5 ? " text-primary border-bottom": "")}>2016</a>
+                                <a onClick={()=>this.goToIndex(6)} className={ "p-4" + (this.state.activeYearCard==6 ? " text-primary border-bottom": "")}>2015</a>
+                                <a onClick={()=>this.goToIndex(7)} className={ "p-4" + (this.state.activeYearCard==7 ? " text-primary border-bottom": "")}>2014</a>
                             </div>
+                            
                         </div>
-                       <Slider
+                        
+                       <Slider flickityRef={c => this.flkty = c}
                             options={{
                             freeScroll: true,
                             pageDots: false,
