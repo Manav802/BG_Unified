@@ -3,14 +3,13 @@ import WhatsNew from './whatsnew'
 import {Image,
     Box,
     Button,
+    Icon,
     Popover,
     PopoverTrigger,
     PopoverContent,
-    PopoverHeader,
-    PopoverBody,
-    PopoverFooter,
-    PopoverArrow,
-    PopoverCloseButton,} from '@chakra-ui/core'
+    } from '@chakra-ui/core'
+    
+import Link from 'next/link';
 
 function header(props) {
     const initRef = React.useRef();
@@ -19,7 +18,9 @@ function header(props) {
             <div className="container">
                 <div className="p-3 d-flex justify-content-between align-items-center layer-4">
                     <div className="d-flex align-items-center">
-                        <Image src="/assets/logo.png" className="mr-3"></Image>
+                        <Link href="/">
+                            <Image src="/assets/logo.png" className="mr-3"></Image>
+                        </Link>
                         <Popover
                     closeOnBlur={true}
                     placement="bottom"
@@ -43,14 +44,24 @@ function header(props) {
                                             <span className="mt-4 mb-1">
                                             IT Infrastructural Services
                                             </span>
-                                            <a href="">Computing Infrastructure</a>
-                                            <a href="">Storage Unit</a>
-                                            <a href="">Cloud Logging</a>
-                                            <a href="">Cloud Platform Service</a>
-                                            <a href="">Data backup</a>
-                                            <a href="">Firewalls</a>
-                                            <a href="">Application Development</a>
-                                            <a href="">Web Hosting Solutions</a>
+                                            <Link href="/services/infra">
+                                                <a>Computing Infrastructure</a>
+                                            </Link>
+                                            <Link href="/services/storage">
+                                                <a>Storage Unit</a>
+                                            </Link>
+                                            <Link href="/services/cloud-logging">
+                                                <a>Cloud Logging</a>
+                                            </Link>
+                                            <Link href="/services/platform">
+                                                <a>Cloud Platform Service</a>
+                                            </Link>
+                                            <Link href="/services/backup">
+                                                <a>Data backup</a>
+                                            </Link>
+                                            <Link href="/services/firewall"><a>Firewalls</a></Link>
+                                            <Link href="/services/application-dev"><a>Application Development</a></Link>
+                                            <Link href="/services/hosting"><a>Web Hosting Solutions</a></Link>
 
                                             
                                         </div>
@@ -58,25 +69,26 @@ function header(props) {
                                             <span className="mt-4 mb-1">
                                                 Network Services
                                             </span>
-                                            <a href="">SD-WAN Optimazation</a>
-                                            <a href="">Proxy Severs</a>
-                                            <a href="">DNS</a>
-                                            <a href="">Cloud Platform Services</a>
-                                            <a href="">Wireless Networks</a>
-                                            <a href="">Cloud Exchange Connectivity</a>
+                                            
+                                            <Link href="/services/sd-wan"><a>SD-WAN Optimazation</a></Link>
+                                            <Link href="/services/proxy"><a>Proxy Severs</a></Link>
+                                            <Link href="/services/dns"><a>DNS</a></Link>
+                                            <Link href="/services/platform"><a>Cloud Platform Services</a></Link>
+                                            <Link href="/services/wireless-networks"><a>Wireless Networks</a></Link>
+                                            <Link href="/services/cloud-exchange"><a>Cloud Exchange Connectivity</a></Link>
                                             <span className="mt-4 mb-1">
                                                 Disaster Recovery Services
                                             </span>
-                                            <a href="">Disaster Recovery Management</a>
+                                            <Link href="/services/disaster"><a>Disaster Recovery Management</a></Link>
                                             
                                         </div>
                                         <div className="col-lg-3 d-flex flex-column footer-content">
                                         <span className="mt-4 mb-1">
                                             Collaborative Services 
                                             </span>
-                                            <a href="">Unified Communications</a>
-                                            <a href="">Customer Support as a Service</a>
-                                            <a href="">Architectutral Consultancy</a>
+                                            <Link href="/services/communications"><a>Unified Communications</a></Link>
+                                            <Link href="/services/customer-support"><a>Customer Support as a Service</a></Link>
+                                            <Link href="/services/architectural-consultancy"><a>Architectutral Consultancy</a></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -105,10 +117,10 @@ function header(props) {
                                             <div className="NunitoSans-ExtraBold text-secondary mt-2">Get the latest resources and updates from our company here.</div>
                                         </div>
                                         <div className="col-lg-3 py-4 d-flex flex-column header-list">
-                                            <a href="">About Us</a>
-                                            <a href="">Newsroom</a>
-                                            <a href="">Blogs</a>
-                                            <a href="">Contact Us</a>
+                                            <Link href="/about"><a>About Us</a></Link>
+                                            <Link href="/newsroom"><a>Newsroom</a></Link>
+                                            <Link href="/blogs"><a>Blogs</a></Link>
+                                            <Link href="/contact"><a>Contact Us</a></Link>
                                         </div>
                                         <div className="col-lg-6 py-4 pr-5 d-flex flex-column header-list">
                                             <h5 className="text-primary display6">What's New</h5>
@@ -122,11 +134,18 @@ function header(props) {
                         </>
                     )}
                     </Popover>
-                    <Button className="text-dark hover-effect" variantColor="white">Our Features</Button>
+                    <Link href="/features">
+                        <Button className="text-dark hover-effect" variantColor="white">Our Features</Button>
+                    </Link>
                     </div>
                     <div>
-                    
-                    <Button className="mx-3" variant="solid" variantColor="primary">Contact Us</Button>
+                        <span className="NunitoSans-SemiBold p-2">Call Us <b>1300 00 BGUS</b></span>
+                        <span className="p-2 rounded-8 hover-effect">
+                            <Icon name="search" size="16px"></Icon>
+                        </span>
+                        <Link href="/contact">
+                            <Button className="mx-3" variant="solid" variantColor="primary">Contact Us</Button>
+                        </Link>
                     </div>
                 </div>
             </div>

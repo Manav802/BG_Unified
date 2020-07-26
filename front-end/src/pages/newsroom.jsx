@@ -42,7 +42,7 @@ import CardWithImage from '../components/cards/CardWithImage'
                     </div>
                     <div className="row my-2">
                         <div className="col-lg-4">
-                            <CardWithImage src="https://www.bgunifiedsolutions.net/wp-content/uploads/2016/11/blog3.png" title="Added 7 Cisco Blade Chassis" children="BG Unified Solutions have added 7 Cisco Blade Chassis with fully populated B230 Blades with 40 Cores CPU and..." />
+                            <CardWithImage src="https://www.bgunifiedsolutions.net/wp-content/uploads/2016/11/blog3.png" title="Added 7 Cisco Blade Chassis" children="BG Unified Solutions have added 7 Cisco Blade Chassis with fully populated B230 Blades with 40 Cores CPU ..." />
                         </div>
                         <div className="col-lg-4">
                             <CardWithImage src="https://www.bgunifiedsolutions.net/wp-content/uploads/2016/11/blog5.jpg" title="Successfull up gradation Mega Cisco Call Manager" children="BG Unified Solutions team have successfully upgraded its mega Cisco Call Manager cluster from version..."/>
@@ -53,7 +53,7 @@ import CardWithImage from '../components/cards/CardWithImage'
                     </div>
                 </div>
                </div>
-                {/* <div className="container my-4">
+                <div className="container my-4">
                     <div clasname="row my-2">
                         <div className="col display6">
                             Popular
@@ -70,7 +70,7 @@ import CardWithImage from '../components/cards/CardWithImage'
                             <CardWithImage action1="Action" action2="Action" title="Complete VDI/RDS As A Service" children="We feel proud in announcing ConstantVDI service offering, which will offer you a complete VDI/RDS As A Service Solution using... "/>
                         </div>
                     </div>
-                </div> */}
+                </div> 
                 </div>
             )
         }

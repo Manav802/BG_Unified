@@ -12,9 +12,9 @@ class OurSolutions extends Component {
     render() {
         return (
             <>
-                <div className="position-absolute w-100 overflow-hidden back-cover">
-                    <img className="w-100" src="/assets/images/backgrounds/top_red_triangle.svg" />
-                </div>
+                <div className="container-fluid p-0 overflow-hidden position-absolute">
+                    <img src="/assets/images/backgrounds/top_red_triangle.svg" className="divider-topred-with-margin w-100 layer-2" alt=""/>
+                 </div>
                 <div className="our-solutions layer-2">
                     <div className="section mt-5">
                         <div className="container p-0">

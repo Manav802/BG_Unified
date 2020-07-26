@@ -149,22 +149,11 @@ class about extends Component {
                                             Nobis dolore labore nam rerum sequi? Nemo enim totam exercitationem atque!
                                         </Team>
                                    </div>
-                                   <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
-                                        <Team title="Founder & Owner" name="Jingyi Li" img="https://www.bgunifiedsolutions.net/wp-content/uploads/2019/02/JingyiLi.png">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, iure sed. 
-                                            Nobis dolore labore nam rerum sequi? Nemo enim totam exercitationem atque!
-                                        </Team>
-                                    </div>
-                                    <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
-                                        <Team title="Co-Founder and Managing Director" name="Saurabh Sareen" img="https://www.bgunifiedsolutions.net/wp-content/uploads/2019/01/Closeup.jpg">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, iure sed. 
-                                            Nobis dolore labore nam rerum sequi? Nemo enim totam exercitationem atque!
-                                        </Team>
-                                   </div>
                                    <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-end py-3">
-                                        <span className="display6 text-dark">Interested in joining our team?</span>
-                                        <a className="text-primary d-flex my-2" href="">View Career Opportunities <Box as={FaArrowRight} h="16px" ml="12px" my="4px"></Box></a>
+                                        {/* <span className="display6 text-dark">Interested in joining our team?</span> */}
+                                        {/* <a className="text-primary d-flex my-2" href="">View Career Opportunities <Box as={FaArrowRight} h="16px" ml="12px" my="4px"></Box></a> */}
                                    </div>
+                                   <div classname="py-5" style={{paddingTop:"100px"}}></div>
                                </div>
                            </div>
                        </div>

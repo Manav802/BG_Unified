@@ -22,7 +22,7 @@ function features() {
                             Efficient Infrastructure
                         </div>
                         <p className="NunitoSans-SemiBold mt-1 pr-lg-5" style={{fontsize:'20px'},{opacity:0.8}}>
-                            Infrastructure includes more than 10000 Cores CPU, 4 10TB RAM. The storage infrastructure includes more than 900TB of storage.
+                            Infrastructure includes more than 10000 Cores CPU, 10TB RAM. The storage infrastructure includes more than 900TB of storage. Desktop virtualization, and server management.  Geographically sound, redundant, quick and efficient increasing your backup by 60%.F5 load balancing solutions ensures scaling your critical applications. Scaling up or down your storage capability as and when required.
                         </p>
                     </div>
                     <div className="col-lg-5 col-md-6 offset-lg-1 mt-lg-5 pt-lg-0 mt-5 pt-5 d-none d-md-block">
@@ -43,7 +43,7 @@ function features() {
                         Secure Enterprise Connectivity
                         </div>
                         <p className="NunitoSans-SemiBold mt-1  pr-lg-5" style={{fontsize:'20px'},{opacity:0.8}}>
-                            Connectivity to the highly secured infrastructure using multiple telco vendors.
+                            Connectivity to the highly secured infrastructure using multiple telco vendors.Improved operational efficiencies, Reduced communication related delays and enhanced collaboration. high levels of availability (HA) as well as flexibility and scalability for core business tasks.Improved clustering scenarios along with remote locations. 
                         </p>
                     </div>
 
@@ -58,7 +58,7 @@ function features() {
                             Multiple Data Center Locations
                         </div>
                         <p className="NunitoSans-SemiBold mt-1 pr-lg-5" style={{fontsize:'20px'},{opacity:0.8}}>
-                            7 to be precise including Equinix SY3, SY4, ME1, LD3, Solarix, Auckland, Airtrunk SYD/ME and GovDC
+                            7 to be precise including Equinix SY3, SY4, ME1, LD3, Solarix, Auckland, Airtrunk SYD/ME and GovDC.End-to-End DC network infrastructure encompassing server switching. Server consolidation and virtualization, high availability & clustering.
                         </p>
                     </div>
                     <div className="col mt-lg-5 pt-lg-0 mt-5 pt-5 d-none d-md-block">
@@ -79,7 +79,7 @@ function features() {
                             Upto 1600 SIP channels
                         </div>
                         <p className="NunitoSans-SemiBold mt-1  pr-lg-5" style={{fontsize:'20px'},{opacity:0.8}}>
-                            15 Cisco Unified Border Elements with 1600 SIP channels spanned across multiple DC locations with DUAL Exchange Homing.
+                            15 Cisco Unified Border Elements with 1600 SIP channels spanned across multiple DC locations with DUAL Exchange Homing. Improved operational efficiencies, Reduced communication related delays and enhanced collaboration. Ensuring completely secure network by technologies such as NAC(Network Access Control) using ISE, SourceFire, Cisco / Palo Alto / Checkpoint / Fortinet Firewall, DDOS Protection.
                         </p>
                     </div>
                 </div>
@@ -90,10 +90,10 @@ function features() {
                     <div className="col-md-5 align-self-center">
                         <div className="display5" >
                             <span className="badge badge-pill my-2 badge-danger">5</span> <br/>
-                            End-to-End Data Centre Networking
+                            Data Centre Networking
                         </div>
                         <p className="NunitoSans-SemiBold mt-1 pr-lg-3" style={{fontsize:'20px'},{opacity:0.8}}>
-                        End-to-End DC network infrastructure encompassing server switching, storage switching and DC Interconnect Solutions. Huawei 10G core switching offering a high speed spine and leaf network.
+                            End-to-End DC network infrastructure encompassing server switching, storage switching and DC Interconnect Solutions. Huawei 10G core switching offering a high speed spine and leaf network. we can help you implement a flexible, agile architecture designed specifically to meet your unique needs.next-general data centers and enable your journey to the cloud.
                         </p>
                     </div>
                     <div className="col mt-lg-5 pt-lg-0 mt-5 pt-5 d-none d-md-block">
