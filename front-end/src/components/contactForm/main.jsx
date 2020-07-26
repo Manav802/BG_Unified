@@ -6,6 +6,7 @@ FormLabel,Input,Flex,Button
 function ContactForm() {
 return <div className="contact-form p-5 bg-white rounded">
     <form>
+        
         <Stack spacing={8}>
             <FormControl isRequired>
                 <FormLabel>Your name</FormLabel>
@@ -25,7 +26,7 @@ return <div className="contact-form p-5 bg-white rounded">
                 <FormLabel>Message</FormLabel>
                 <Input variant="flushed" size="lg" />
             </FormControl>
-            <Button mt={"20px"} type="submit" size="md" height="48px" width="115px" backgroundColor="#F32222"
+            <Button mt={"20px"} className="hover-color" type="submit" size="md" height="48px" width="115px" backgroundColor="#F32222"
                 color="white">
                 Submit
             </Button>
