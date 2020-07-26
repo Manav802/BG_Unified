@@ -33,18 +33,50 @@ function header(props) {
                         </PopoverTrigger>
                         <PopoverContent className="header-popover">
                             <Box>
-                                <div className="container">
+                                <div className="container pb-5 pt-3">
                                     <div className="row">
                                     <div className="col-lg-3 py-4 pr-5 d-flex flex-column header-list">
                                             <div className="display6 mt-2 text-primary text-uppercase">Solutions</div>
                                             <div className="NunitoSans-ExtraBold text-secondary mt-2">We cover almost 90% technology domain required by your business.</div>
                                         </div>
-                                        <div className="col-lg-3 py-4 d-flex flex-column header-list">
-                                            <span className="py-2">Cloud Services</span>
-                                            <a href="">Infrastructure</a>
-                                            <a href="">Backup & Restore Points</a>
-                                            <a href="">Web Hosting</a>
-                                            <a href="">Proxy</a>
+                                        <div className="col-lg-3 d-flex flex-column footer-content">
+                                            <span className="mt-4 mb-1">
+                                            IT Infrastructural Services
+                                            </span>
+                                            <a href="">Computing Infrastructure</a>
+                                            <a href="">Storage Unit</a>
+                                            <a href="">Cloud Logging</a>
+                                            <a href="">Cloud Platform Service</a>
+                                            <a href="">Data backup</a>
+                                            <a href="">Firewalls</a>
+                                            <a href="">Application Development</a>
+                                            <a href="">Web Hosting Solutions</a>
+
+                                            
+                                        </div>
+                                        <div className="col-lg-3 d-flex flex-column footer-content">
+                                            <span className="mt-4 mb-1">
+                                                Network Services
+                                            </span>
+                                            <a href="">SD-WAN Optimazation</a>
+                                            <a href="">Proxy Severs</a>
+                                            <a href="">DNS</a>
+                                            <a href="">Cloud Platform Services</a>
+                                            <a href="">Wireless Networks</a>
+                                            <a href="">Cloud Exchange Connectivity</a>
+                                            <span className="mt-4 mb-1">
+                                                Disaster Recovery Services
+                                            </span>
+                                            <a href="">Disaster Recovery Management</a>
+                                            
+                                        </div>
+                                        <div className="col-lg-3 d-flex flex-column footer-content">
+                                        <span className="mt-4 mb-1">
+                                            Collaborative Services 
+                                            </span>
+                                            <a href="">Unified Communications</a>
+                                            <a href="">Customer Support as a Service</a>
+                                            <a href="">Architectutral Consultancy</a>
                                         </div>
                                     </div>
                                 </div>
@@ -74,10 +106,8 @@ function header(props) {
                                         </div>
                                         <div className="col-lg-3 py-4 d-flex flex-column header-list">
                                             <a href="">About Us</a>
-                                            <a href="">Careers</a>
                                             <a href="">Newsroom</a>
                                             <a href="">Blogs</a>
-                                            <a href="">Partners</a>
                                             <a href="">Contact Us</a>
                                         </div>
                                         <div className="col-lg-6 py-4 pr-5 d-flex flex-column header-list">

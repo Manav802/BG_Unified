@@ -7,7 +7,8 @@ function features() {
             <div className="container-fluid p-0 overflow-hidden position-absolute">
                     <img src="/assets/images/backgrounds/top_red_triangle.svg" className="divider-topred-with-margin w-100 layer-2" alt=""/>
             </div>
-            <div className="container mt-md-5 pt-md-5 pt-3 mt-3">
+           <div className="section mt-5">
+           <div className="container mt-md-5 pt-md-5 pt-3 mt-3">
                 <div className="row p-3">
                     <div className="col-md-5">
                         <div className="display3">
@@ -29,6 +30,7 @@ function features() {
                     </div>
                 </div>
             </div> 
+           </div>
 
             <div className="container mt-lg-5 mt-lg-5 mt-md-4 pt-md-4 pt-2 mt-2">
                 <div className="row p-3 p-md-0">

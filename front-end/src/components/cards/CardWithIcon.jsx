@@ -15,7 +15,7 @@ function CardWithIcon(props) {
                 </Box>
     }
     return (
-        <div className="card-with-icon rounded p-3">
+        <div className="card-with-icon bg-white rounded p-3">
                 <div className="row iconbox">
                     {iconbox}
                 </div>

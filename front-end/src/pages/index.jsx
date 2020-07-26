@@ -24,15 +24,13 @@ class Landing extends Component {
                     <script type='text/javascript' src='/assets/js/planetaryjs.min.js'></script>
                     <script type='text/javascript' src='/assets/js/globe.js'></script>
                 </Head>
-                <div className="section pb-0 bg-landing">
-                    <div className="position-absolute w-100 d-flex align-items-center">
-                        <Image className="flex-fill" style={{opacity:.4}} src="/assets/images/backgrounds/hero_doodles.svg"></Image>
-                    </div>
-                    <div className="container">
-                        <div className="row">
+                <div className="bg-landing">
+                    <div className="container py-5">
+                       <div className="section mt-5 pb-0">
+                       <div className="row">
                             <div className="col-lg-10 offset-1 mt-5">
                                 <div className="h3 NunitoSans-ExtraBold text-white text-center">Deploy, scale, monitor your business online with our security and reliability.</div>
-                                <div className="h6 NunitoSans-SemiBold text-white-50 px-5 text-center mt-3">Computing Infrastructure, Proxy Servers, Firewalls, Web Hosting, Cloud Logging, UCaaS and much more….</div>
+                                <div className="h6 NunitoSans-SemiBold text-light px-5 text-center mt-3">Computing Infrastructure, Proxy Servers, Firewalls, Web Hosting, Cloud Logging, UCaaS and much more….</div>
                                 <div className="p-4 justify-content-center d-flex">
                                     <ButtonGroup spacing="4">
                                         <Button variant="solid" variantColor="primary" size="lg">Explore Now</Button>
@@ -44,6 +42,7 @@ class Landing extends Component {
                                 </div>
                             </div>
                         </div>
+                       </div>
                     </div>
                     <div className="divider-bottom-with-margin">
                         <Image src="/assets/images/dividers/divider_white_bottom.svg"></Image>

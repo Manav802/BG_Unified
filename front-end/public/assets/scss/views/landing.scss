@@ -2,6 +2,9 @@
     .bg-landing{
         // background: hsla($primary-h, $primary-s, $primary-l, .05);
         background: $color-dark;
+        background-image: url('/assets/images/backgrounds/hero_doodles.png');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     @media (max-width: 767.98px) {
         .display4 {
