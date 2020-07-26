@@ -147,7 +147,8 @@ class Landing extends Component {
                    
                 </div>
 
-                <div className="container-fluid brands my-5 py-2">
+              <div className="section pb-0 mt-5">
+              <div className="container-fluid brands py-2">
                     <div className="marquee">
                         <div className="justify-content-center text-center d-flex abc  mx-xl-5 mx-0 scroll">
                             <Image src="/assets/images/brands/aapt.png" />
@@ -169,16 +170,21 @@ class Landing extends Component {
                         </div>
                     </div>
                 </div>
-
+              </div>
+              <div className="section pb-0">
+                    <div className="container my-lg-4 py-lg-3">
+                        <CaseStudy />
+                    </div>
+                </div>
                 
 
-                <div className="my-5 row overflow-hidden globe-section">
+                <div className="mt-5 row globe-section">
                     <img src="/assets/images/dividers/divider_white.svg" className="col-12 p-0" alt="" />
                     <div className="row">
                         <div className="slider-offset"></div>
                         <div className="row col mt-3 d-flex align-items-center">
                             <div className="col-xl-4 col-lg-5 col-md-6 col-8 p-5 text-white">
-                                <div className="text-primary">
+                                <div className="text-primary h6 text-uppercase">
                                     Reach
                                 </div>
                                 <p className="my-2 display5 text-white">Our Data Center Locations</p>
@@ -208,25 +214,21 @@ class Landing extends Component {
                         </div>
                     
                     </div>
-                    <img src="/assets/images/dividers/divider_white_2.svg" className="w-100 image-flip" alt="" />
+                    {/* <img src="/assets/images/dividers/divider_white_2.svg" className="w-100 image-flip" alt="" /> */}
                 </div>
-                <div className="">
-                    <div className="container my-lg-4 py-lg-3">
-                        <CaseStudy />
-                    </div>
-                </div>
-                <div className="container-fluid bg-dark mt-5 p-0">
-                <div className="position-absolute w-100 d-flex align-items-start">
+                
+                <div className="container-fluid bg-dark p-0">
+                {/* <div className="position-absolute w-100 d-flex align-items-start">
                     <img src="/assets/images/dividers/divider_white_plain.svg" className ="image-flip w-100" alt=""/>
 
-                </div>
-                    <div className="row my-5 ">
+                </div> */}
+                    <div className="row pt-5 mb-5 ">
                         <div className="slider-offset"></div>
-                        <div className="col py-4">
+                        <div className="col p-4">
                             <div className="text-primary h6 text-uppercase">
                                 Testimonials
                             </div>
-                            <p className="mt-2 display5">What people say about us</p>
+                            <p className="mt-2 display5 text-white">What people say about us</p>
                         </div>
                     </div>
                     <div className="row">

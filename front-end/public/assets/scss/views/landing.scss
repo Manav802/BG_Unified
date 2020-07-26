@@ -89,14 +89,17 @@
 
     .brands{
         overflow: hidden;
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
-        opacity: 0.6;
+        
+        
+        
         .abc{
             flex-wrap: wrap;
         }
         img{
-            padding: 0.5rem;
+            padding: 1.2rem;
+            opacity: 0.4;
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         }
         @media (max-width: 1080px){
             .marquee {

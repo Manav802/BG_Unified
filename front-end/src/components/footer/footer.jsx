@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from "@chakra-ui/core";
+import { Image, Box } from "@chakra-ui/core";
 import { GrFacebookOption, GrLinkedinOption, GrTwitter } from "react-icons/gr";
 function footer(props) {
     return (
@@ -59,7 +59,11 @@ function footer(props) {
                 </div>
                 <div className="w-100 my-4 text-center">
                     <div className="my-2">Terms  |  Privacy Policies | Report an error | Feedback</div>
-                    <Image as={GrFacebookOption} w="24" h="24" p="12"></Image>
+                    <div className="d-flex justify-content-center">
+                        <Box as={GrFacebookOption} className="p-2" size="48px" color="grey.400" />
+                        <Box as={GrLinkedinOption} className="p-2" size="48px" color="grey.400" />
+                        <Box as={GrTwitter} className="p-2" size="48px" color="grey.400" />
+                    </div>
                     <div className="my-2">All Rights Reserved © BG Unified Solutions 2020</div>
                 </div>
             </div>

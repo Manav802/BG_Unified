@@ -66,6 +66,19 @@ class about extends Component {
                             <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
                                 <CardWithAction title="Title Here">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos culpa consectetur itaque nesciunt error esse voluptatibus, veniam commodi ab hic eligendi officia ratione quaerat? Quasi quidem alias sint rerum commodi.</CardWithAction>
                             </div>
+                            <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
+                                <CardWithAction title="Title Here">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos culpa consectetur itaque nesciunt error esse voluptatibus, veniam commodi ab hic eligendi officia ratione quaerat? Quasi quidem alias sint rerum commodi.</CardWithAction>
+
+                            </div>
+                            <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
+                                <CardWithAction title="Title Here">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos culpa consectetur itaque nesciunt error esse voluptatibus, veniam commodi ab hic eligendi officia ratione quaerat? Quasi quidem alias sint rerum commodi.</CardWithAction>
+                            </div>
+                            <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
+                                <CardWithAction title="Title Here">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos culpa consectetur itaque nesciunt error esse voluptatibus, veniam commodi ab hic eligendi officia ratione quaerat? Quasi quidem alias sint rerum commodi.</CardWithAction>
+                            </div>
+                            <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
+                                <CardWithAction title="Title Here">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos culpa consectetur itaque nesciunt error esse voluptatibus, veniam commodi ab hic eligendi officia ratione quaerat? Quasi quidem alias sint rerum commodi.</CardWithAction>
+                            </div>
                         </Slider>
                     </div>
                </div>
