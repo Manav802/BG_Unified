@@ -12,9 +12,9 @@ export default function App({ Component, pageProps }) {
     return ( 
         <ThemeProvider theme={customTheme}>		
         <CSSReset />
-            {/* <Header></Header>
-            <Component {...pageProps} /> */}
-            <Shapes iconnumber = {2} backgroundnumber = {7}/>
+            <Header></Header>
+            <Component {...pageProps} />
+            {/* <Shapes iconnumber = {1} backgroundnumber = {1}/> */}
             {/* <Footer></Footer> */}
         </ThemeProvider>
     );

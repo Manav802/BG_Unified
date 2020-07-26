@@ -12,11 +12,14 @@ class Shapes extends Component {
          }
     }
 
-    render() { 
+    render() {
+        //import the shapes in your component like "import Shapes from '../components/Shapes/Shapes'"
+        //iconnumber is to be passed as props - it defines what icon and background to put. 
+        // here's an example "<Shapes iconnumber = {1} backgroundnumber = {1}/>"
         const Icon = this.state.icon.filter(ico => ico.id === this.props.iconnumber).map((iconVar) => {
             return(
-                <div key={iconVar.id} className="icon">
-                    <img src={iconVar.image} alt="bruh" />
+                <div key={iconVar.id} className="icon responsive">
+                    <img src={iconVar.image} alt="icon image" />
                     {console.log(iconVar)}
                 </div>
             );
@@ -24,20 +27,19 @@ class Shapes extends Component {
 
         const IconBG = this.state.iconbg.filter(icobg => icobg.id === this.props.backgroundnumber).map((iconBgVar) => {
             return(
-                <div key={iconBgVar.id} className="icon-bg">
-                    <img src={iconBgVar.image} alt="bruh" />
+                <div key={iconBgVar.id} className="icon-bg responsive">
+                    <img src={iconBgVar.image} alt="icon background image" />
                     {console.log(iconBgVar)}
                 </div>
             );
         });
 
         return ( 
-            <div className="shape-component">
-                {console.log(this.state.icon)}
-                {console.log(this.state.iconbg)}
-                
-                {IconBG}
-                {Icon}
+            <div className="shape-component container-fluid">
+                <div className="row col-1">
+                    {IconBG}
+                    {Icon}
+                </div>
             </div>
          );
     }
