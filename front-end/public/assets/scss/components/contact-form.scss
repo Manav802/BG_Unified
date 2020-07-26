@@ -1,9 +1,12 @@
 .contact-form
 {
-    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 6px rgba(12, 11, 11, 0.3);
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); 
     .btm-margin{
         margin-bottom: 8%;
+    }
+    .hover-color:hover{
+        background-color:#ce1e1e;
     }
 }
