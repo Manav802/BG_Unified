@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { ThemeProvider, CSSReset } from '@chakra-ui/core'
 import Header from '../components/header/header'
-import Shapes from '../components/Shapes/Shapes'
 // import Footer from '../components/footer/footer'
 import customTheme from '../../public/assets/js/theme'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,7 +13,6 @@ export default function App({ Component, pageProps }) {
         <CSSReset />
             <Header></Header>
             <Component {...pageProps} />
-            {/* <Shapes iconnumber = {1} backgroundnumber = {1}/> */}
             {/* <Footer></Footer> */}
         </ThemeProvider>
     );
