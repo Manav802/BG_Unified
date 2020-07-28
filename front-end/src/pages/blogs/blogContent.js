@@ -33,19 +33,22 @@ export const BLOGS = [
     {
         id: "1",
         title: "BG Unified Solutions have added 7 Cisco Blade Chassis",
-        content: `BG Unified Solutions have added 7 Cisco Blade Chassis with fully populated B230 Blades with 40 Cores CPU and 256GB RAM along with a brand new Hitachi T1 Storage in Equinix Melbourne. We are now in the process of procuring 16 racks cage in Equinix SY3 and ME1 to become a storage hub for all of the existing BGUS members of the family and new members. These two cages will be purely assigned to storage. We have more than 16 NETAPP racks ready to go in these cages. BGUS Cloud Services will be launched very soon with the collaboration of Redhat and Cumulus Networks`
+        content: `BG Unified Solutions have added 7 Cisco Blade Chassis with fully populated B230 Blades with 40 Cores CPU and 256GB RAM along with a brand new Hitachi T1 Storage in Equinix Melbourne. We are now in the process of procuring 16 racks cage in Equinix SY3 and ME1 to become a storage hub for all of the existing BGUS members of the family and new members. These two cages will be purely assigned to storage. We have more than 16 NETAPP racks ready to go in these cages. BGUS Cloud Services will be launched very soon with the collaboration of Redhat and Cumulus Networks`,
+        image: "/assets/images/newsroom/1. cisco blade chasis.png"
     },
 
     {   
         id: "2",
         title: "Successfull up gradation of Mega Cisco Call Manager cluster from version 10.5.1 to 12.0.1.SU1",
-        content: `BG Unified Solutions team have successfully upgraded its mega Cisco Call Manager cluster from version 10.5.1 to 12.0.1.SU1. This was not an easy job. With so many dependencies/clients, making it happen without any downtime to any of the end users. All UCCX applications, CUC and CUPS integrations tested. CDR reporting is working absolutely normal. Informacast is working perfectly fine. Such an amazing job. The whole solution got backed up before and after upgrade to handle any catastrophic issues after the upgrade. Well done team ! ! ! !`
+        content: `BG Unified Solutions team have successfully upgraded its mega Cisco Call Manager cluster from version 10.5.1 to 12.0.1.SU1. This was not an easy job. With so many dependencies/clients, making it happen without any downtime to any of the end users. All UCCX applications, CUC and CUPS integrations tested. CDR reporting is working absolutely normal. Informacast is working perfectly fine. Such an amazing job. The whole solution got backed up before and after upgrade to handle any catastrophic issues after the upgrade. Well done team ! ! ! !`,
+        image: "/assets/images/newsroom/2. Call manager (we can add cisco lines).png"
     },
 
     {
         id:"3",
         title: "BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW",
-        content: `BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW in the annual excellence awards. We are proud in getting recognized. We deliver what we promised to our customers. BGUS team have also successfully upgrade a cluster of SBC in IBMDC Auckland without any downtime. It’s amazing to see team’s enthusiasm…`
+        content: `BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW in the annual excellence awards. We are proud in getting recognized. We deliver what we promised to our customers. BGUS team have also successfully upgrade a cluster of SBC in IBMDC Auckland without any downtime. It’s amazing to see team’s enthusiasm…`,
+        image: "/assets/images/newsroom/3. Award Nomination (changes required).jpg"
     },
 
     {
@@ -59,7 +62,8 @@ export const BLOGS = [
         
         Client filled up the Referee Report for BG Unified Solutions to get Federal Government Clearance.`
         ,
-        date: "Nov 2015"
+        date: "Nov 2015",
+        image: "/assets/images/newsroom/5. ASA 5520.png"
     },
     
     {
@@ -76,7 +80,8 @@ export const BLOGS = [
         
         Working on rolling out the FlexConnect configuration to all the LAP's.
         `,
-        date : "Feb 2014"
+        date : "Feb 2014",
+        image: "/assets/images/newsroom/6. Cisco WLC 5508.png"
     },
 
     {
@@ -101,7 +106,8 @@ export const BLOGS = [
         More work is in progress to roll out this solution to clients in multiple countries. Configured Cisco ASA 5510 HA Cluster as a UC Proxy. Configured Cisco 7925 Wireless handsets with a complete configuration for WLC 2504 & 1262 LAP's for the first client.
 
         `,
-        date : "Jan 2014"
+        date : "Jan 2014",
+        image: "/assets/images/newsroom/7. Unified Solutions.png"
     },
 
     {
@@ -114,6 +120,7 @@ export const BLOGS = [
         ARCaaS - Logging Cloud Connect : A remote logging facility to the BGUS end customers to save their logs over the internet to the highly secured storage platform within the BGUS data centers. The solution is offered using MicroFocus ArcSight and is the first step towards offering SOCaaS. A highly available solution to the end customers and taking their pain away for storing their critical logs.
         
         `,
+        image: "/assets/images/newsroom/8. Portfolio Update (jaise isme hai vaisa bna skte hai).jpg"
     },
 
     {
@@ -124,6 +131,8 @@ export const BLOGS = [
         We are here to help in this tough time. Please do not hesitate to ask for help, whether you need VDI, UC, Storage, Managed Firewall or anything that will help you to keep carrying on your work remotely and keep you & your family safe in this time! ! !
         
         `,
+        image: "/assets/images/newsroom/coronavirus.jpg"
+        
     },
 
     {
@@ -137,6 +146,7 @@ export const BLOGS = [
         Once again for any organizations related to Healthcare & Public Health & Safety, these offerings are FREE OF COST.
         
         `,
+        image: "/assets/images/newsroom/10. Remote working in covid 19.png"
     },
 
     {
@@ -153,6 +163,7 @@ export const BLOGS = [
         Solution is fully integrated with other Microsoft Office products like teams and office 365.        
         
         `,
+        
     },
 
     {
@@ -183,6 +194,7 @@ export const BLOGS = [
         Email Filtering for 5 Domains using highly redundant Email Filtering Gateways.              
         
         `,
+        image : "/assets/images/newsroom/12. Bundled Solutions.png"
     },
 
     {
@@ -204,6 +216,7 @@ export const BLOGS = [
         Email Filtering for 5 Domains using highly redundant Email Filtering Gateways for unlimited users.
                     
         `,
+        image : "/assets/images/newsroom/13. IT infrastructure.jpg"
     },
 
     {

@@ -5,9 +5,11 @@ import { useRouter } from 'next/router';
 
 import {BLOGS} from './blogContent'
 
+import Link from 'next/link';
+
 //  Gets id of blog (bid) from url and use that bid to get blog content from BLOGS array.
-//  url basic : /blog/bid
-//  example   : /blog/covid-19
+//  url basic : /blogs/bid
+//  example   : /blogs/covid-19
 
 //Using random images for now
 
@@ -34,8 +36,8 @@ function Blogs(){
                                     </div>
                                 </div>
                                 <div className="col-12 mt-5 pb-3 border-bottom">
-                                    <div className="display4">{blog.title}</div>
-                                    <div className="NunitoSans-Regular text-secondary">Last Updated <b>{blog.date}</b></div>
+                                    <div className="display4">{blog.title}</div> 
+                                    <div className="NunitoSans-Regular text-secondary">{blog.date ? <>Last Updated  <b>{blog.date}</b> </>  : ""}</div>
                                 </div>
                                 <div className="col-lg-8 mt-3">
                                     <div className="content-lead"> 
@@ -45,10 +47,10 @@ function Blogs(){
                                 <div className="col-lg-4 px-4 mt-3">
                                     <div className="h6 mb-2 text-secondary">Recent Posts</div>
                                     <div className="py-2">
-                                        <a href="" className="">Complete VDI/RDS As A Service</a>
+                                        <Link href="/blogs/3"> BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW </Link>
                                     </div>
                                     <div className="py-2">
-                                        <a href="" className="">Complete VDI/RDS As A Service</a>
+                                        <Link href="/blogs/5">Cisco ASA 5520 to 5525X with FirePower Services</Link>
                                     </div>
                                 </div>
                             </div>
