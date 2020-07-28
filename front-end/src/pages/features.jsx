@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import {Image} from '@chakra-ui/core'
 import Head  from 'next/head'
 function features() {
