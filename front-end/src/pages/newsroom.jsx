@@ -13,6 +13,9 @@ import CardWithImage from '../components/cards/CardWithImage'
         render() {
             return (
                 <div className="newsroom">
+                    <Head>
+                    <title>Newsroom - BG Unified</title>
+                    </Head>
                     <div className="position-absolute w-100 overflow-hidden background-svg">
                         <img className="w-100" src="/assets/images/backgrounds/top_red_polygon.svg" />
                     </div>
