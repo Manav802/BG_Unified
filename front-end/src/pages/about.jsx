@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import Head from 'next/head'
 import Slider from 'react-flickity-component'
 import CardWithAction from '../components/cards/CardWithAction' 
 import Team from '../components/cards/team'
 import { FaArrowRight } from "react-icons/fa";
 import { Box } from '@chakra-ui/core';
+import Head from 'next/head';
 
 class about extends Component {
     constructor(props){
@@ -24,6 +26,11 @@ class about extends Component {
                 <img className="w-100" src="/assets/images/backgrounds/top_red_triangle.svg"/>
             </div>
             <div className="about">
+                <Head>
+                    <title>
+                        More About Us - BG Unified
+                    </title>
+                </Head>
                <div className="section mt-5">
                     <div className="container p-0">
                         <div className="py-5">

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ContactForm from '../components/contactForm/main'
+import Head from 'next/head'
 class Contact extends Component {
     constructor(props) {
         super(props)
@@ -18,6 +19,9 @@ class Contact extends Component {
                 </div>
             </div>
             <div className="contact">
+                <Head>
+                    <title>Contact us - BG Unified</title>
+                </Head>
                 <div className="page-header">
                    <div className="container">
                    <div className="row">

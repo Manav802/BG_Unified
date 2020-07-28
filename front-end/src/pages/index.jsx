@@ -25,6 +25,7 @@ class Landing extends Component {
                     <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
                     <script type='text/javascript' src='/assets/js/planetaryjs.min.js'></script>
                     <script type='text/javascript' src='/assets/js/globe.js'></script>
+                    <link rel='shortcut icon' href='favicon.svg'/>
                 </Head>
                 <div className="bg-landing">
                     <div className="container py-5">

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head'
 import CardWithIcon from '../components/cards/CardWithIcon';
 
 import {Image} from '@chakra-ui/core'
@@ -16,6 +17,9 @@ class OurSolutions extends Component {
                     <img src="/assets/images/backgrounds/top_red_triangle.svg" className="divider-topred-with-margin w-100 layer-2" alt=""/>
                  </div>
                 <div className="our-solutions layer-2">
+                <Head>
+                    <title>Our Solutions - BG Unified</title>
+                </Head>
                     <div className="section mt-5">
                         <div className="container p-0">
                             <div className="p-5 mt-5 page-heading">

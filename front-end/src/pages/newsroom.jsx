@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Head from 'next/head'
 import CardWithImage from '../components/cards/CardWithImage'
 
 import Link from 'next/link';
@@ -15,6 +16,9 @@ import Link from 'next/link';
         render() {
             return (
                 <div className="newsroom">
+                    <Head>
+                    <title>Newsroom - BG Unified</title>
+                    </Head>
                     <div className="position-absolute w-100 overflow-hidden background-svg">
                         <img className="w-100" src="/assets/images/backgrounds/top_red_polygon.svg" />
                     </div>

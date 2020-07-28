@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import {Image} from '@chakra-ui/core'
 
 function features() {
@@ -8,6 +9,9 @@ function features() {
                     <img src="/assets/images/backgrounds/top_red_triangle.svg" className="divider-topred-with-margin w-100 layer-2" alt=""/>
             </div>
            <div className="section mt-5">
+                <Head>
+                    <title>Our Features - BG Unified</title>
+                </Head>
            <div className="container mt-md-5 pt-md-5 pt-3 mt-3">
                 <div className="row p-3">
                     <div className="col-md-5">
