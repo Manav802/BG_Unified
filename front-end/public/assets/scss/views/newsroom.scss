@@ -1,10 +1,9 @@
-.newsroom-bg {
-    .background-svg {
-        z-index: -1;
-    }
-}
 
 .newsroom {
+    .background-svg {
+        z-index: -1;
+        top: 0px !important;
+    }
     .page-header {
         margin-left: 15%;
         @media screen and(min-width:1920px) {
@@ -12,43 +11,23 @@
             margin-top: 5%;
         }
         margin-right: 23%;
-        .page-heading {
+        .page-heading{    
             margin-top: 50%;
             @extend .display3;
-            font-size: 70px;
+            font-size: $font-size-3;
             color: $color-light;
-            @media screen and (max-width:1360px) {
-                font-size: 54px;
-                margin-top: 35%;
-            }
-
-            @media screen and (max-width:1100px) {
-                font-size: 50px;
-            }
-
-            @media screen and (max-width:993px) {
-                margin-top: 23%;
-            }
-
-            @media screen and (max-width:723px) {
-                margin-top: 16%;
-                font-size: 38px;
-            }
         }
-
-        .heading-content {
+        .heading-content{
             @extend .text-secondary;
             color: $color-light-2;
             font-size: 20px;
-            @media screen and(min-width:1920px) {
-                font-size: 24px;
+        }
+        @media (max-width:992px){
+            .page-heading{
+                color: $color-dark 
             }
-            @media screen and (max-width:1100px) {
-                font-size: 16px;
-            }
-
-            @media screen and (max-width:650px) {
-                font-size: 13px;
+            .heading-content{
+                color: $color-dark-2
             }
         }
 
@@ -59,7 +38,6 @@
             }
         }
     }
-
     .page-content {
         text-align: center;
 

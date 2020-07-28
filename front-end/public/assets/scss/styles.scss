@@ -18,6 +18,7 @@
 @import 'components/header';
 @import 'components/footer';
 @import 'components/image-slider.scss';
+@import './testimonials.scss';
 
 //Fonts
 @import 'fonts/nexa';
@@ -26,9 +27,11 @@
 //Pages
 @import './views/landing.scss';
 @import './views/about.scss';
+@import './views/features.scss';
 @import './views/contact.scss';
 @import './views/newsroom.scss';
 @import './views/our-solutions.scss';
+@import './views/article.scss';
 
 //For Custom SCSS
 @import 'custom';

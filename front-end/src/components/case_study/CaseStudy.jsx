@@ -4,6 +4,8 @@ import sdwan_s from './sdwan_s-1.png';
 import repeat_grid from './Repeat Grid 12.png'
 import {Icon} from '@chakra-ui/core';
 
+import Link from 'next/link';
+
 function CaseStudy(props) {
     var content = props.content || "Software-defined wide-area networking (SD-WAN) is rapidly replacing the traditional WAN for remote office and branch deployments. SD-WAN was designed to provide a wide range of benefits to support digital innovation. However, far too many SD-WAN solutions lack critical networking and security features, requiring organizations to add complex and costly overlay solutions to manage and protect their SD-WAN deployments.";
     var feature = props.feature || "Featured CASE STUDY"
@@ -30,7 +32,9 @@ function CaseStudy(props) {
                         <p className="content py-2"> {content}
                         </p>
                     </div>
-                    <button className="btn btn-light rounded readmore mt-2" style={{border: '2px solid #051133',borderRadius:'4px'}}>Read More <Icon name="arrow-forward" size="22px"/></button>
+                    <Link href={props.link || "/"}>
+                        <button className="btn btn-light rounded readmore mt-2" style={{border: '2px solid #051133',borderRadius:'4px'}}>Read More <Icon name="arrow-forward" size="22px"/></button>
+                    </Link>
                 </div>
                 
             </div>

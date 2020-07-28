@@ -1,6 +1,8 @@
 import React from 'react';
-import { Image } from "@chakra-ui/core";
+import { Image, Box } from "@chakra-ui/core";
 import { GrFacebookOption, GrLinkedinOption, GrTwitter } from "react-icons/gr";
+import Link from 'next/link';
+
 function footer(props) {
     return (
         <div className="my-3 footer">
@@ -14,52 +16,66 @@ function footer(props) {
                         <span className="mt-4 mb-1">
                         IT Infrastructural Services
                         </span>
-                        <a href="">Computing Infrastructure</a>
-                        <a href="">Storage Unit</a>
-                        <a href="">Cloud Logging</a>
-                        <a href="">Cloud Platform Service</a>
-                        <a href="">Data backup</a>
-                        <a href="">Firewalls</a>
-                        <a href="">Application Development</a>
-                        <a href="">Web Hosting Solutions</a>
+                        <Link href="/services/infra">
+                            <a>Computing Infrastructure</a>
+                        </Link>
+                        <Link href="/services/storage">
+                            <a>Storage Unit</a>
+                        </Link>
+                        <Link href="/services/cloud-logging">
+                            <a>Cloud Logging</a>
+                        </Link>
+                        <Link href="/services/platform">
+                            <a>Cloud Platform Service</a>
+                        </Link>
+                        <Link href="/services/backup">
+                            <a>Data backup</a>
+                        </Link>
+                        <Link href="/services/firewall"><a>Firewalls</a></Link>
+                        <Link href="/services/application-dev"><a>Application Development</a></Link>
+                        <Link href="/services/hosting"><a>Web Hosting Solutions</a></Link>
 
                         <span className="mt-4 mb-1">
                             Disaster Recovery Services
                         </span>
-                        <a href="">Disaster Recovery Management</a>
+                        <Link href="/services/disaster"><a>Disaster Recovery Management</a></Link>
                     </div>
                     <div className="col-lg-3 d-flex flex-column footer-content">
                         <span className="mt-4 mb-1">
                             Network Services
                         </span>
-                        <a href="">SD-WAN Optimazation</a>
-                        <a href="">Proxy Severs</a>
-                        <a href="">DNS</a>
-                        <a href="">Cloud Platform Services</a>
-                        <a href="">Wireless Networks</a>
-                        <a href="">Cloud Exchange Connectivity</a>
+                        <Link href="/services/sd-wan"><a>SD-WAN Optimazation</a></Link>
+                        <Link href="/services/proxy"><a>Proxy Severs</a></Link>
+                        <Link href="/services/dns"><a>DNS</a></Link>
+                        <Link href="/services/platform"><a>Cloud Platform Services</a></Link>
+                        <Link href="/services/wireless-networks"><a>Wireless Networks</a></Link>
+                        <Link href="/services/cloud-exchange"><a>Cloud Exchange Connectivity</a></Link>
                         <span className="mt-4 mb-1">
                         Collaborative Services 
                         </span>
-                        <a href="">Unified Communications</a>
-                        <a href="">Customer Support as a Service</a>
-                        <a href="">Architectutral Consultancy</a>
+                        <Link href="/services/communications"><a>Unified Communications</a></Link>
+                        <Link href="/services/customer-support"><a>Customer Support as a Service</a></Link>
+                        <Link href="/services/architectural-consultancy"><a>Architectutral Consultancy</a></Link>
                     </div>
                     <div className="col-lg-3 d-flex flex-column footer-content">
                         <span className="mt-4 mb-1">
                            Company
                         </span>
-                        <a href="">Home</a>
-                        <a href="">Solutions</a>
-                        <a href="">About</a>
-                        <a href="">Newsroom</a>
-                        <a href="">Our Features</a>
-                        <a href="">Contact Us</a>
+                        <Link href="/"><a>Home</a></Link>
+                        <Link href="/solutions"><a>Solutions</a></Link>
+                        <Link href="/about"><a>About Us</a></Link>
+                        <Link href="/newsroom"><a>Newsroom</a></Link>
+                        <Link href="/blogs"><a>Blogs</a></Link>
+                        <Link href="/contact"><a>Contact Us</a></Link>
                     </div>
                 </div>
                 <div className="w-100 my-4 text-center">
                     <div className="my-2">Terms  |  Privacy Policies | Report an error | Feedback</div>
-                    <Image as={GrFacebookOption} w="24" h="24" p="12"></Image>
+                    <div className="d-flex justify-content-center">
+                        <Box as={GrFacebookOption} className="p-2" size="48px" color="grey.400" />
+                        <Box as={GrLinkedinOption} className="p-2" size="48px" color="grey.400" />
+                        <Box as={GrTwitter} className="p-2" size="48px" color="grey.400" />
+                    </div>
                     <div className="my-2">All Rights Reserved © BG Unified Solutions 2020</div>
                 </div>
             </div>

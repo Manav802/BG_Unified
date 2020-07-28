@@ -12,8 +12,8 @@ class Testimonial extends Component {
         const TestimonialVariable = this.props.testimonialDetails.map((testimonialDetails)=>
         {
             return(
-                <div key={testimonialDetails.id} className="col-lg-4 p-2 my-3">
-                    <Box className="px-4 py-2"  rounded="lg" bg="white" boxShadow="md" overflow="hidden">   
+                <div key={testimonialDetails.id} className="col-lg-7 p-2 my-3 ">
+                    <Box className="px-4 py-2 testimonialSlider"  rounded="lg" bg="white" boxShadow="md" overflow="hidden">   
                     <div className='ml-3 mt-4'>
                         <img src={testimonialDetails.imageUrl} style={{height:'64px'}} alt=""/>
                     </div>
@@ -32,7 +32,7 @@ class Testimonial extends Component {
                     </Box>
                     </div>
                     
-                    <div className="mb-4 ml-3">
+                    <div className="mb-auto ml-3 ">
                     <Box as="span" color="gray.600" fontSize="sm">
                         {testimonialDetails.CompanyName}
                     </Box>
@@ -47,10 +47,11 @@ class Testimonial extends Component {
         return ( 
             <Slider
                 options={{
+                adaptiveHeight: false,
                 freeScroll: true,
                 pageDots: false,
                 contain: true,
-                draggable: true,
+                draggable: true
                 }}>
                 <div className="slider-offset"></div>
                 {TestimonialVariable}

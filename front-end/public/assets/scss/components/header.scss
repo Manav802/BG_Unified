@@ -1,4 +1,9 @@
 .header{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    z-index: 600;
     &-popover{
         width: 100%;
         max-width: none !important;

@@ -2,6 +2,9 @@
     .bg-landing{
         // background: hsla($primary-h, $primary-s, $primary-l, .05);
         background: $color-dark;
+        background-image: url('/assets/images/backgrounds/hero_doodles.png');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     @media (max-width: 767.98px) {
         .display4 {
@@ -89,14 +92,17 @@
 
     .brands{
         overflow: hidden;
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
-        opacity: 0.6;
+        
+        
+        
         .abc{
             flex-wrap: wrap;
         }
         img{
-            padding: 0.5rem;
+            padding: 1.2rem;
+            opacity: 0.4;
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         }
         @media (max-width: 1080px){
             .marquee {
