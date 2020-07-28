@@ -5,7 +5,7 @@ import CardWithAction from '../components/cards/CardWithAction'
 import Team from '../components/cards/team'
 import { FaArrowRight } from "react-icons/fa";
 import { Box } from '@chakra-ui/core';
-import Head from 'next/head';
+
 
 class about extends Component {
     constructor(props){

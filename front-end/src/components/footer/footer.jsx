@@ -66,7 +66,6 @@ function footer(props) {
                         <Link href="/solutions"><a>Solutions</a></Link>
                         <Link href="/about"><a>About Us</a></Link>
                         <Link href="/newsroom"><a>Newsroom</a></Link>
-                        <Link href="/blogs"><a>Blogs</a></Link>
                         <Link href="/contact"><a>Contact Us</a></Link>
                     </div>
                 </div>
