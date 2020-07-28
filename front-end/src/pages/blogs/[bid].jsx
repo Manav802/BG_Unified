@@ -47,10 +47,10 @@ function Blogs(){
                                 <div className="col-lg-4 px-4 mt-3">
                                     <div className="h6 mb-2 text-secondary">Recent Posts</div>
                                     <div className="py-2">
-                                        <Link href="/blogs/3"> BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW </Link>
+                                        <Link href="/blogs/3-bg-unified-solutions-got-nominated-for-two-awards-under-service-and-collaboration-within-revenue-nsw"><a>BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW</a></Link>
                                     </div>
                                     <div className="py-2">
-                                        <Link href="/blogs/5">Cisco ASA 5520 to 5525X with FirePower Services</Link>
+                                        <Link href="/blogs/5-cisco-asa-5520-to-5525x-with-firepower-services"><a>Cisco ASA 5520 to 5525X with FirePower Services</a></Link>
                                     </div>
                                 </div>
                             </div>
