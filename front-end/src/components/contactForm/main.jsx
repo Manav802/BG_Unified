@@ -1,8 +1,9 @@
 import React,{Component} from 'react';
 import {
-FormControl,Stack,
-FormLabel,Input,Flex,Button
+FormControl,
+FormLabel,Input,Button
 } from "@chakra-ui/core";
+import keys from '../../apiKeys';
 class ContactForm extends Component {
   constructor(props) {
     super(props)
@@ -25,7 +26,7 @@ class ContactForm extends Component {
   }
   onSubmit(event) {
     event.preventDefault()
-    fetch(' https://submit-form.com/', {
+    fetch(' https://submit-form.com/'+keys.formscript, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
