@@ -12,8 +12,8 @@ class ContactForm extends Component {
       email: '',
       message: '',
       phone:'',
-      subject:'',
-      ServiceChoice:''
+      subject:''
+      // ServiceChoice:''
     }
     this.onChange = this.onChange.bind(this)
     this.onSubmit = this.onSubmit.bind(this)
@@ -98,7 +98,7 @@ class ContactForm extends Component {
             onChange={this.onChange}
           />
         </FormControl>
-        <FormControl mt={"9%"} className="container">
+        {/* <FormControl mt={"9%"} className="container">
           <FormLabel>Service Preference:</FormLabel>
           <Select
             variant="flushed"
@@ -111,7 +111,7 @@ class ContactForm extends Component {
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
           </Select>
-        </FormControl>
+        </FormControl> */}
         <FormControl mt={"9%"} className="container" isRequired>
           <FormLabel>Message:</FormLabel>
           <Input 
