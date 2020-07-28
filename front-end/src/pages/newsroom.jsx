@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import CardWithImage from '../components/cards/CardWithImage'
+<<<<<<< HEAD
+class Newsroom extends Component {
+=======
 
     class Newsroom extends Component {
+>>>>>>> 4d35416e2b8cdd7491620003a0e9a357a3172a31
         constructor(props) {
         super(props)
 
@@ -25,9 +29,19 @@ import CardWithImage from '../components/cards/CardWithImage'
                             </div>
                             <div className="phone-graphic col-lg-6 offset-lg-1 d-none d-lg-inline-block">
                                 <img className="phone-news" src="/assets/images/vectors/phone-news.png" alt="phone-news" />
-                                <div> <img src="/assets/images/vectors/shadow.png" alt="shadow" /></div>
+                                <div className="under-shadow"><img src="/assets/images/vectors/shadow.png" alt="shadow" /></div>
                             </div>
                         </div>
+<<<<<<< HEAD
+                        <div className="page-content">
+                            <div className="centered-content">
+                                <h1 className="category-heading display4">Latest</h1>
+                                    <div className="row recent-news">
+                                    </div>
+                                <h1 className="category-heading display4">Popular</h1>
+                                    <div className="row popular-news"></div>
+                            </div>
+=======
                     </div>
                
                 
@@ -68,6 +82,7 @@ import CardWithImage from '../components/cards/CardWithImage'
                         </div>
                         <div classname="col-lg-4 col-sm-2 col-12">
                             <CardWithImage action1="Action" action2="Action" title="Complete VDI/RDS As A Service" children="We feel proud in announcing ConstantVDI service offering, which will offer you a complete VDI/RDS As A Service Solution using... "/>
+>>>>>>> 4d35416e2b8cdd7491620003a0e9a357a3172a31
                         </div>
                     </div>
                 </div> 

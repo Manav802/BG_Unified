@@ -153,7 +153,7 @@ class about extends Component {
                                         {/* <span className="display6 text-dark">Interested in joining our team?</span> */}
                                         {/* <a className="text-primary d-flex my-2" href="">View Career Opportunities <Box as={FaArrowRight} h="16px" ml="12px" my="4px"></Box></a> */}
                                    </div>
-                                   <div classname="py-5" style={{paddingTop:"100px"}}></div>
+                                   <div className="py-5" style={{paddingTop:"100px"}}></div>
                                </div>
                            </div>
                        </div>
