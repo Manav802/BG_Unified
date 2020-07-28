@@ -25,7 +25,7 @@ class ContactForm extends Component {
   }
   onSubmit(event) {
     event.preventDefault()
-    fetch(' https://submit-form.com/x4v24007l0UuqqFXOYV8_', {
+    fetch(' https://submit-form.com/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
