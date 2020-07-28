@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Head from 'next/head'
 import Slider from 'react-flickity-component'
 import CardWithAction from '../components/cards/CardWithAction' 
 import Team from '../components/cards/team'
