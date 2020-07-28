@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head'
 import CardWithIcon from '../components/cards/CardWithIcon';
 
 import {Image} from '@chakra-ui/core'

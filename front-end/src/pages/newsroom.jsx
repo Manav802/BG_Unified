@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Head from 'next/head'
 import CardWithImage from '../components/cards/CardWithImage'
 
     class Newsroom extends Component {
