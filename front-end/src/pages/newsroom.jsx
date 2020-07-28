@@ -18,8 +18,8 @@ import Link from 'next/link';
                 <div className="newsroom">
                     <Head>
                     <title>Newsroom - BG Unified</title>
-
-                        <link rel="shortcut icon" href="/assets/images/icons/favicon/bg.ico" type="image/x-icon" />
+                    
+                    <link rel="shortcut icon" href="/assets/images/icons/favicon/bg.ico" type="image/x-icon" />
                     </Head>
                     <div className="position-absolute w-100 overflow-hidden background-svg">
                         <img className="w-100" src="/assets/images/backgrounds/top_red_polygon.svg" />
@@ -56,7 +56,7 @@ import Link from 'next/link';
                         </Link>
                         <Link href="/blogs/2-successfull-up-gradation-of-mega-cisco-call-manager-cluster-from-version-10.5.1-to-12.0.1.su1">
                         <div className="col-lg-4 my-2">
-                            <CardWithImage src="https://www.bgunifiedsolutions.net/wp-content/uploads/2016/11/blog5.jpg" title="Successfull up gradation Mega Cisco Call Manager" children="BG Unified Solutions team have successfully upgraded its mega Cisco Call Manager cluster from version..."/>
+                            <CardWithImage src="https://www.bgunifiedsolutions.net/wp-content/uploads/2016/11/blog5.jpg" title="Successfull upgradation Mega Cisco Call Manager" children="BG Unified Solutions team have successfully upgraded its mega Cisco Call Manager cluster from version..."/>
                         </div>
                         </Link>
                         <Link href="/blogs/3-bg-unified-solutions-got-nominated-for-two-awards-under-service-and-collaboration-within-revenue-nsw">
