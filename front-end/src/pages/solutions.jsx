@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CardWithIcon from '../components/cards/CardWithIcon';
-
+import Head from "next/head";
 import {Image} from '@chakra-ui/core'
 
 class OurSolutions extends Component {

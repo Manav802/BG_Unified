@@ -1,6 +1,6 @@
 import React from 'react'
 import {Image} from '@chakra-ui/core'
-
+import Head  from 'next/head'
 function features() {
     return (
         <div className="features overflow-hidden">

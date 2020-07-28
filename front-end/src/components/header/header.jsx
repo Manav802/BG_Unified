@@ -119,7 +119,7 @@ function header(props) {
                                         <div className="col-lg-3 py-4 d-flex flex-column header-list">
                                             <Link href="/about"><a>About Us</a></Link>
                                             <Link href="/newsroom"><a>Newsroom</a></Link>
-                                            <Link href="/blogs"><a>Blogs</a></Link>
+                                            <Link href="/solutions"><a> Solutions</a></Link>
                                             <Link href="/contact"><a>Contact Us</a></Link>
                                         </div>
                                         <div className="col-lg-6 py-4 pr-5 d-flex flex-column header-list">

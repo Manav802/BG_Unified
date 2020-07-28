@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import CardWithImage from '../components/cards/CardWithImage'
-
+import Head from "next/head"
     class Newsroom extends Component {
         constructor(props) {
         super(props)
