@@ -21,6 +21,8 @@ class Contact extends Component {
             <div className="contact">
                 <Head>
                     <title>Contact us - BG Unified</title>
+
+                        <link rel="shortcut icon" href="/assets/images/icons/favicon/bg.ico" type="image/x-icon" />
                 </Head>
                 <div className="page-header">
                    <div className="container">

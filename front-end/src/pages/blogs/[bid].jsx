@@ -25,6 +25,7 @@ function Blogs(){
       <div className="article">
                 <Head>
                     <title>{blog.title||""}</title>
+                    <link rel="shortcut icon" href="../assets/images/icons/favicon/bg.ico" type="image/x-icon"/>
                 </Head>
             <div className="container-fluid p-0 overflow-hidden position-absolute">
                     <img src="/assets/images/backgrounds/top_red_triangle.svg" className="divider-topred-with-margin w-100 layer-2" alt=""/>

@@ -10,6 +10,8 @@ function features() {
            <div className="section mt-5">
                 <Head>
                     <title>Our Features - BG Unified</title>
+
+                    <link rel="shortcut icon" href="/assets/images/icons/favicon/bg.ico" type="image/x-icon" />
                 </Head>
            <div className="container mt-md-5 pt-md-5 pt-3 mt-3">
                 <div className="row p-3">

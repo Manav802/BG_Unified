@@ -4,6 +4,7 @@ import CardWithAction from '../components/cards/CardWithAction'
 import Team from '../components/cards/team'
 import { FaArrowRight } from "react-icons/fa";
 import { Box } from '@chakra-ui/core';
+import Head from 'next/head';
 
 
 class about extends Component {
@@ -29,6 +30,8 @@ class about extends Component {
                     <title>
                         More About Us - BG Unified
                     </title>
+
+                        <link rel="shortcut icon" href="/assets/images/icons/favicon/bg.ico" type="image/x-icon" />
                 </Head>
                <div className="section mt-5">
                     <div className="container p-0">

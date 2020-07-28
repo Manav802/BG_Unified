@@ -18,6 +18,8 @@ class OurSolutions extends Component {
                 <div className="our-solutions layer-2">
                 <Head>
                     <title>Our Solutions - BG Unified</title>
+
+                        <link rel="shortcut icon" href="/assets/images/icons/favicon/bg.ico" type="image/x-icon" />
                 </Head>
                     <div className="section mt-5">
                         <div className="container p-0">
