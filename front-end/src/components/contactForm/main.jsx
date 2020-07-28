@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {
 FormControl,
-FormLabel,Input,Button
+FormLabel,Input,Button,Select
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 class ContactForm extends Component {
@@ -11,7 +11,9 @@ class ContactForm extends Component {
       name: '',
       email: '',
       message: '',
-      phone:''
+      phone:'',
+      subject:'',
+      ServiceChoice:''
     }
     this.onChange = this.onChange.bind(this)
     this.onSubmit = this.onSubmit.bind(this)
@@ -87,6 +89,29 @@ class ContactForm extends Component {
               </div>
             </div>
         </div>
+        <FormControl mt={"9%"} className="container">
+          <FormLabel>Subject:</FormLabel>
+          <Input
+            variant="flushed"
+            name="subject"
+            value={this.state.subject}
+            onChange={this.onChange}
+          />
+        </FormControl>
+        <FormControl mt={"9%"} className="container">
+          <FormLabel>Service Preference:</FormLabel>
+          <Select
+            variant="flushed"
+            placeholder="Select option"
+            name="ServiceChoice"
+            value={this.state.ServiceChoice}
+            onChange={this.onChange}
+          >
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </Select>
+        </FormControl>
         <FormControl mt={"9%"} className="container" isRequired>
           <FormLabel>Message:</FormLabel>
           <Input 
