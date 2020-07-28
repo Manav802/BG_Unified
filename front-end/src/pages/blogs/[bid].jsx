@@ -4,7 +4,7 @@ import RecentPost from '../../components/header/whatsnew'
 import { useRouter } from 'next/router';
 
 import {BLOGS} from './blogContent'
-
+import Head from 'next/head';
 import Link from 'next/link';
 
 //  Gets id of blog (bid) from url and use that bid to get blog content from BLOGS array.
@@ -23,6 +23,9 @@ function Blogs(){
   
   return(
       <div className="article">
+                <Head>
+                    <title>{blog.title||""}</title>
+                </Head>
             <div className="container-fluid p-0 overflow-hidden position-absolute">
                     <img src="/assets/images/backgrounds/top_red_triangle.svg" className="divider-topred-with-margin w-100 layer-2" alt=""/>
                  </div>
