@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-    class Newsroom extends Component {
+import CardWithImage from '../components/cards/CardWithImage'
+class Newsroom extends Component {
         constructor(props) {
         super(props)
 
@@ -26,12 +27,16 @@ import React, { Component } from 'react'
                             </div>
                             <div className="phone-graphic col-lg-6 offset-lg-1 d-none d-lg-inline-block">
                                 <img className="phone-news" src="/assets/images/vectors/phone-news.png" alt="phone-news" />
-                                <div> <img src="/assets/images/vectors/shadow.png" alt="shadow" /></div>
+                                <div className="under-shadow"><img src="/assets/images/vectors/shadow.png" alt="shadow" /></div>
                             </div>
                         </div>
                         <div className="page-content">
-                            <div className="row centered-content">
-                                {/* add cards here use card with image for content ask shubh */}
+                            <div className="centered-content">
+                                <h1 className="category-heading display4">Latest</h1>
+                                    <div className="row recent-news">
+                                    </div>
+                                <h1 className="category-heading display4">Popular</h1>
+                                    <div className="row popular-news"></div>
                             </div>
                         </div>
                     </div>
