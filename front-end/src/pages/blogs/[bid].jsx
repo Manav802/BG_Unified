@@ -4,10 +4,12 @@ import RecentPost from '../../components/header/whatsnew'
 import { useRouter } from 'next/router';
 
 import {BLOGS} from './blogContent'
+import Head from 'next/head';
+import Link from 'next/link';
 
 //  Gets id of blog (bid) from url and use that bid to get blog content from BLOGS array.
-//  url basic : /blog/bid
-//  example   : /blog/covid-19
+//  url basic : /blogs/bid
+//  example   : /blogs/covid-19
 
 //Using random images for now
 
@@ -21,6 +23,10 @@ function Blogs(){
   
   return(
       <div className="article">
+                <Head>
+                    <title>{blog.title||""}</title>
+                    <link rel="shortcut icon" href="../assets/images/icons/favicon/bg.ico" type="image/x-icon"/>
+                </Head>
             <div className="container-fluid p-0 overflow-hidden position-absolute">
                     <img src="/assets/images/backgrounds/top_red_triangle.svg" className="divider-topred-with-margin w-100 layer-2" alt=""/>
                  </div>
@@ -34,8 +40,8 @@ function Blogs(){
                                     </div>
                                 </div>
                                 <div className="col-12 mt-5 pb-3 border-bottom">
-                                    <div className="display4">{blog.title}</div>
-                                    <div className="NunitoSans-Regular text-secondary">Last Updated <b>{blog.date}</b></div>
+                                    <div className="display4">{blog.title}</div> 
+                                    <div className="NunitoSans-Regular text-secondary">{blog.date ? <>Last Updated  <b>{blog.date}</b> </>  : ""}</div>
                                 </div>
                                 <div className="col-lg-8 mt-3">
                                     <div className="content-lead"> 
@@ -45,10 +51,10 @@ function Blogs(){
                                 <div className="col-lg-4 px-4 mt-3">
                                     <div className="h6 mb-2 text-secondary">Recent Posts</div>
                                     <div className="py-2">
-                                        <a href="" className="">Complete VDI/RDS As A Service</a>
+                                        <Link href="/blogs/3-bg-unified-solutions-got-nominated-for-two-awards-under-service-and-collaboration-within-revenue-nsw"><a>BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW</a></Link>
                                     </div>
                                     <div className="py-2">
-                                        <a href="" className="">Complete VDI/RDS As A Service</a>
+                                        <Link href="/blogs/5-cisco-asa-5520-to-5525x-with-firepower-services"><a>Cisco ASA 5520 to 5525X with FirePower Services</a></Link>
                                     </div>
                                 </div>
                             </div>

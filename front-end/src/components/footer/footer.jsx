@@ -10,7 +10,8 @@ function footer(props) {
                 <div className="row pb-4">
                     <div className="col-lg-3 my-3">
                         <Image src="/assets/logo.png" w="128px"></Image>
-
+                    
+                        <p className="footer-content">Dynamic Team of Creative People, Innovators and Technical Experts. Your partner for all hosting business solutions and services.</p>
                     </div>
                     <div className="col-lg-3 d-flex flex-column footer-content">
                         <span className="mt-4 mb-1">
@@ -65,7 +66,6 @@ function footer(props) {
                         <Link href="/solutions"><a>Solutions</a></Link>
                         <Link href="/about"><a>About Us</a></Link>
                         <Link href="/newsroom"><a>Newsroom</a></Link>
-                        <Link href="/blogs"><a>Blogs</a></Link>
                         <Link href="/contact"><a>Contact Us</a></Link>
                     </div>
                 </div>
