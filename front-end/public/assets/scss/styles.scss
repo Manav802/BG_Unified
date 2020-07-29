@@ -1,7 +1,7 @@
 //Variables
 @import '_variables';
 
-//Essentials
+// Essentials
 @import '_typography';
 @import '_dividers';
 
@@ -16,7 +16,13 @@
 @import 'components/card-with-image';
 @import 'components/contact-form';
 @import 'components/header';
+<<<<<<< HEAD
 @import 'components/footer';
+=======
+@import 'components/shapes';
+
+// @import 'components/footer';
+>>>>>>> 425a5ab7cac081e7fddff4badf73ab19be339417
 @import 'components/image-slider.scss';
 @import './testimonials.scss';
 
