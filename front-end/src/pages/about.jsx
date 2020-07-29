@@ -52,15 +52,16 @@ class about extends Component {
                                 <a onClick={()=>this.goToIndex(7)} className={ "p-4" + (this.state.activeYearCard==7 ? " text-primary border-bottom": "")}>2014</a>                              
                                 <a onClick={()=>this.goToIndex(7)} className={ "p-4" + (this.state.activeYearCard==8 ? " text-primary border-bottom": "")}>2014</a>
                             </div> */}
-                            <div className="display4">BG-Unified a story of 8 years of excellence</div>
+                            {/* <div className="display4">BG-Unified a story of 8 years of excellence</div> */}
                         </div>
                         
-                       <Slider flickityRef={c => this.flkty = c}
+                       <Slider className="timeline" flickityRef={c => this.flkty = c}
                             options={{
                             freeScroll: true,
                             pageDots: false,
                             contain: true,
                             draggable: true,
+                            adaptiveHeight: false
                             }}>
                             <div className="slider-offset"></div>
                             <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
@@ -68,7 +69,7 @@ class about extends Component {
                             </div>
                             <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
                             <CardWithAction title="2019">Built our own Logging Cloud Connect Product, Newly deployed RDS/VDIaaS Solution into its portfolio as Workstation Service.
-</CardWithAction>
+                            </CardWithAction>
                             </div>
                             <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
                                     <CardWithAction title="2018">Received BTS Excellence Award in recognition of Excellent Service by the NSW Government.</CardWithAction>
