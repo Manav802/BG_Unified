@@ -84,7 +84,7 @@ return (
                                             <span className="mt-4 mb-1">
                                                 Collaborative Services
                                             </span>
-                                            <Link href="/services/communications"><a>Unified Communications</a></Link>
+                                            <Link href="/services/ucaas"><a>Unified Communications</a></Link>
                                             <Link href="/services/customer-support"><a>Customer Support as a Service</a>
                                             </Link>
                                             <Link href="/services/architectural-consultancy"><a>Architectutral
