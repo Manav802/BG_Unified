@@ -34,7 +34,7 @@ function Wireless(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-5 p-5">
-                        <img src="/assets/images/vectors/SVG/firewall.svg" alt=""/>
+                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -50,7 +50,7 @@ function Wireless(props) {
                 </div>
                 <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
                     <div className="col-lg-5 p-5">
-                        <img src="/assets/images/vectors/SVG/firewall.svg" alt=""/>
+                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -66,7 +66,7 @@ function Wireless(props) {
                 </div>
                 <div className="row">
                     <div className="col-lg-5 p-5">
-                        <img src="/assets/images/vectors/SVG/firewall.svg" alt=""/>
+                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
