@@ -73,22 +73,6 @@ function UCaaS(props) {
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
                         <div className="h5 NunitoSans-Bold text-dark">
-                        Hybrid Models 
-                        </div>
-                        <p className="text-secondary mt-3">
-                        We want to offer more advanced UC features to all of your staff. What if our offering includes the calling costs? Anyone from IT or Marketing or HR department, you wouldn’t be worried about the expenses.
-                        </p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/vectors/SVG/firewall.svg" alt=""/>
-                    </div>
-                    <div className="col-lg-7 d-flex align-items-center px-5">
-                        <div>
-                        <div className="h5 NunitoSans-Bold text-dark">
                         Wide range of services
                         </div>
                         <p className="text-secondary mt-3">

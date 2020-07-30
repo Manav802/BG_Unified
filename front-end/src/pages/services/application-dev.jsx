@@ -76,23 +76,7 @@ function ApplicationDev(props) {
                         Flexibility and Scalability
                         </div>
                         <p className="text-secondary mt-3">
-                        Digital transformation, App modernization and upgradation, and Application Integration Services.
-                        </p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/vectors/SVG/firewall.svg" alt=""/>
-                    </div>
-                    <div className="col-lg-7 d-flex align-items-center px-5">
-                        <div>
-                        <div className="h5 NunitoSans-Bold text-dark">
-                        Agility
-                        </div>
-                        <p className="text-secondary mt-3">
-                        Agile software development model followed to provide better results.
+                        Digital transformation, App modernization and upgradation, and Application Integration Services. Agile software development model followed to provide better results.
                         </p>
                         </div>
                     </div>

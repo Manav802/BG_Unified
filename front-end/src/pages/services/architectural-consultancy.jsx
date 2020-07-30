@@ -59,7 +59,7 @@ function Arch(props) {
                         Configuration Management
                         </div>
                         <p className="text-secondary mt-3">
-                        Configures network devices, performs inventory management and software management.
+                        Configures network devices, performs inventory management and software management. Local end-market support services and Local language capabilities.
                         </p>
                         </div>
                     </div>
@@ -72,26 +72,10 @@ function Arch(props) {
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
                         <div className="h5 NunitoSans-Bold text-dark">
-                        Flexible
-                        </div>
-                        <p className="text-secondary mt-3">
-                        Customized and tailor solutions to meet client needs with Local end-market support services and Local language capabilities.
-                        </p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/vectors/SVG/firewall.svg" alt=""/>
-                    </div>
-                    <div className="col-lg-7 d-flex align-items-center px-5">
-                        <div>
-                        <div className="h5 NunitoSans-Bold text-dark">
                         Wide Expert Range
                         </div>
                         <p className="text-secondary mt-3">
-                        Weather System Architecture, Technology Roadmap, or optimization solutions for your business, we’ve got it all covered.
+                        Weather System Architecture, Technology Roadmap, or optimization solutions for your business, we’ve got it all covered. Customized and tailor solutions to meet client needs
                         </p>
                         </div>
                     </div>

@@ -57,10 +57,10 @@ function infra(props) {
                             <div>
                                 <div className="h5 NunitoSans-Bold text-dark">
                                     Scalability and Management
-                        </div>
+                                </div>
                                 <p className="text-secondary mt-3">
                                     Easily adjust parameters based on deploying your application, physically, virtually or in the cloud. Security and Network Management, Data Centre, Management, IT Service Management, Cloud Computing.
-              </p>
+                                </p>
                             </div>
                         </div>
 
@@ -73,32 +73,33 @@ function infra(props) {
                             <div>
                                 <div className="h5 NunitoSans-Bold text-dark">
                                     Higher Asset Utilization with Simplicity
-                        </div>
+                                </div>
                                 <p className="text-secondary mt-3">
                                     Implement a flexible architecture designed specifically to meet your unique needs. F5 load balancing solutions ensure scaling your critical applications.
-                            </p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className="section">
-                        <div className="container">
-                            <div className="row">
-                                <div className="h2 NunitoSans-ExtraBold col-12 text-center">
-                                    Ready to try out our <br className="d-none d-md-block" /> UCaaS Services?
-                    </div>
-                                <div className="h6 col-12 mt-2 text-secondary text-center">
-                                    BGUS Servers are affordable and dynamically priced.
-                    </div>
-                                <div className="col-12 mt-4 d-flex justify-content-center">
-                                    <Button variantColor="primary" size="md">Get a Quote</Button>
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div className="section"></div>
+                
                 </div>
+            </div>
+            <div className="section">
+                <div className="container">
+                    <div className="row">
+                        <div className="h2 NunitoSans-ExtraBold col-12 text-center">
+                            Ready to try out our <br className="d-none d-md-block" /> UCaaS Services?
+                        </div>
+                        <div className="h6 col-12 mt-2 text-secondary text-center">
+                            BGUS Servers are affordable and dynamically priced.
+                        </div>
+                        <div className="col-12 mt-4 d-flex justify-content-center">
+                            <Button variantColor="primary" size="md">Get a Quote</Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div className="section"></div>
+        </div>
     );
 }
 

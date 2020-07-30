@@ -43,7 +43,7 @@ function Platform(props) {
                         Load Balancing
                         </div>
                         <p className="text-secondary mt-3">
-                        Meet the needs of your business—today and as you grow—with innovative, flexible load balancing.
+                        Meet the needs of your business—today and as you grow—with innovative, flexible load balancing. Platform-oriented cloud platforms.
 
                         </p>
                         </div>
@@ -57,10 +57,11 @@ function Platform(props) {
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
                         <div className="h5 NunitoSans-Bold text-dark">
-                        Abstraction
+                        Easy execution
                         </div>
                         <p className="text-secondary mt-3">
-                        Platform-oriented cloud platforms, obtains higher level of abstraction. PaaS cloud providing you with limitless resources of computing.
+                        Enabling clients to develop run and manage business applications without the need to build authentic software infrastructure.
+                        Platform-oriented cloud platforms obtains a higher level of abstraction. 
 
                         </p>
                         </div>
@@ -74,27 +75,10 @@ function Platform(props) {
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
                         <div className="h5 NunitoSans-Bold text-dark">
-                        Easy execution
-                        </div>
-                        <p className="text-secondary mt-3">
-                        Enabling clients to develop run and manage business applications without the need to build authentic software infrastructure.
-
-                        </p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/vectors/SVG/firewall.svg" alt=""/>
-                    </div>
-                    <div className="col-lg-7 d-flex align-items-center px-5">
-                        <div>
-                        <div className="h5 NunitoSans-Bold text-dark">
                         Cost-effective scalability
                         </div>
                         <p className="text-secondary mt-3">
-                        Scale up your project on demand by purchasing  just the amount of hardware or storage you require at affordable prices.
+                            Scale up your project on demand by purchasing just the amount of hardware or storage you require at affordable prices. Platform as a service cloud providing you with limitless resources of computing.
                         </p>
                         </div>
                     </div>
