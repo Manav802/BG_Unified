@@ -26,8 +26,7 @@ function infra(props) {
                         <div className="h4 NunitoSans-ExtraBold">Over 50 geographically dispersed sites hosting 
                                             & 250+ separate pieces of infrastructure.</div>
                         <div className="h6 mt-4 text-secondary text-dark">
-                                            Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management. 
-                                            Infrastructure includes more than 10000 Cores CPU, 10TB RAM.
+Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management. Infrastructure includes more than 10000 Cores CPU, 10TB RAM.
                         </div>
                     </div>
                 </div>
