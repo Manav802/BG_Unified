@@ -118,7 +118,7 @@ function SDWAN(props) {
             <div className="container">
                 <div className="row">
                     <div className="h2 NunitoSans-ExtraBold col-12 text-center">
-                        Ready to try out our <br className="d-none d-md-block" /> Infrastructure Services?
+                        Ready to try out our <br className="d-none d-md-block" /> WAN Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
                         BGUS Servers are affordable and dynamically priced.
