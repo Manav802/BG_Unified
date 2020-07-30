@@ -72,12 +72,13 @@ return (
                                             <Link href="/services/dns"><a>DNS</a></Link>
                                             <Link href="/services/platform"><a>Cloud Platform Services</a></Link>
                                             <Link href="/services/wireless-networks"><a>Wireless Networks</a></Link>
-                                            <Link href="/services/cloud-exchange"><a>Cloud Exchange Connectivity</a>
+                                            <Link href="/services/cloud-exchange"><a>Cloud Exchange Connectivity</a></Link>
+                                            <Link href="/services/sip-connectivity"><a>SIP Connectivity</a>
                                             </Link>
                                             <span className="mt-4 mb-1">
                                                 Disaster Recovery Services
                                             </span>
-                                            <Link href="/services/disaster"><a>Disaster Recovery Management</a></Link>
+                                            <Link href="/services/disaster-recovery"><a>Disaster Recovery Management</a></Link>
 
                                         </div>
                                         <div className="col-lg-3 d-flex flex-column footer-content">
