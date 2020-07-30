@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 460 430" style="enable-background:new 0 0 460 430;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:url(#newsroom_1_);}
+</style>
+<pattern  x="99" y="332" width="678" height="635" patternUnits="userSpaceOnUse" id="pattern" viewBox="0 -635 678 635" style="overflow:visible;">
+	<g>
+		<rect y="-635" class="st0" width="678" height="635"/>
+		
+			<image style="overflow:visible;enable-background:new    ;" width="678" height="635" xlink:href="9CC672E4.png"  transform="matrix(1 0 0 -1 0 0)">
+		</image>
+	</g>
+</pattern>
+<pattern  id="newsroom_1_" xlink:href="#pattern" patternTransform="matrix(0.6785 0 0 -0.6772 -2322.5635 -13594.8896)">
+</pattern>
+<rect id="newsroom" class="st1" width="460" height="430"/>
+</svg>
