@@ -60,12 +60,10 @@ function infra(props) {
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
                         <div className="h5 NunitoSans-Bold text-dark">
-                            Scalability and Management
+                            Higher Asset Utilization with Simplicity
                         </div>
                         <p className="text-secondary mt-3">
-                                Easily adjust parameters based on deploying your application, physically, virtually or in the cloud. 
-                                Security and Network Management, Data Centre, Management, IT Service Management, Cloud Computing.
-
+                               Implement a flexible architecture designed specifically to meet your unique needs. F5 load balancing solutions ensure scaling your critical applications.
                         </p>
                         </div>
                     </div>
