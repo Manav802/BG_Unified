@@ -41,7 +41,7 @@ function ApplicationDev(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-5 p-5">
-                        <img style={{maxHeight:"280px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
+                        <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -57,7 +57,7 @@ function ApplicationDev(props) {
                 </div>
                 <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
                     <div className="col-lg-5 p-5">
-                        <img style={{maxHeight:"280px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
+                        <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -73,7 +73,7 @@ function ApplicationDev(props) {
                 </div>
                 <div className="row">
                     <div className="col-lg-5 p-5">
-                        <img style={{maxHeight:"280px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
+                        <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
