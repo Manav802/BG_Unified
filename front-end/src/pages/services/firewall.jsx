@@ -31,7 +31,8 @@ function Firewall(props) {
                         <div className="h4 NunitoSans-ExtraBold">Centralized Policy Management using Panorama, Sourcefire DC.
                         </div>
                         <div className="h6 mt-4 text-secondary text-dark">
-                        Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA.
+                        Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA. 
+                            Cloud Based or on-premise, URL filtering, SSL VPN’s inclusion.
                         
                         </div>
                     </div>
@@ -50,8 +51,8 @@ function Firewall(props) {
                         Platform Diversity
                         </div>
                         <p className="text-secondary mt-3">
-                        On premise or cloud based, that helps secure your IT environment quickly.
-                        </p>
+                        On-premise or cloud-based, that helps secure your IT environment quickly.
+                            The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.</p>
                         </div>
                     </div>
                     
@@ -66,8 +67,8 @@ function Firewall(props) {
                         Fast and easy Deployment
                         </div>
                         <p className="text-secondary mt-3">
-                        Proven deployment methodology that integrates and extends your existing security infrastructure without capex.
-                        </p>
+                        Rapid evolvement, easily deployable with tremendous speed. 
+                            Proven deployment methodology that integrates and extends your existing security infrastructure without capex.</p>
                         </div>
                     </div>
                     
@@ -82,8 +83,8 @@ function Firewall(props) {
                         Advance Technology Stack
                         </div>
                         <p className="text-secondary mt-3">
-                        Advanced Malware Protection, Anti-Virus Detection, URL Filtering, User Based Policy and Advanced Logging facilities, SSL VPN’s included
-                        </p>
+                        Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, 
+                            User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included</p>
                         </div>
                     </div>
                     
