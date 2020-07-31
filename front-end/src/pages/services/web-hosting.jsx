@@ -75,7 +75,7 @@ function main(props) {
                                 <div className="h5 NunitoSans-Bold text-dark">Value for money
                         </div>
                                 <p className="text-secondary mt-3">
-Reduced costs, pay for what you want, no hidden costs and completely transparent process.
+ Reduced costs, pay for what you want, no hidden costs and completely transparent process. Costing and pricing discussed and negotiated at the starting of the job only.
                  </p>
                             </div>
                         </div>
