@@ -29,7 +29,7 @@ function Wireless(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        <div className="h5 NunitoSans-ExtraBold">
+                        <div className="h4 NunitoSans-ExtraBold">
                         SIP As A Service Infrastructure includes more than 15 Cisco Unified border.
                         </div>
                         <div className="h6 mt-4 text-secondary text-dark"> Elements with 1600 SIP channels spanned across multiple DC locations with DUAL Exchange Homing.
