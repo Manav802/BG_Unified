@@ -41,7 +41,7 @@ function infra(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 p-5">
-                            <img style={{maxHeight:"320px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt="" />
+                            <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt="" />
                         </div>
                         <div className="col-lg-7 d-flex align-items-center px-5">
                             <div>
@@ -56,7 +56,7 @@ function infra(props) {
                     </div>
                     <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
                         <div className="col-lg-5 p-5">
-                            <img style={{maxHeight:"320px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt="" />
+                            <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt="" />
                         </div>
                         <div className="col-lg-7 d-flex align-items-center px-5">
                             <div>
@@ -72,7 +72,7 @@ function infra(props) {
                     </div>
                     <div className="row">
                         <div className="col-lg-5 p-5">
-                            <img style={{maxHeight:"320px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt="" />
+                            <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt="" />
                         </div>
                         <div className="col-lg-7 d-flex align-items-center px-5">
                             <div>
@@ -92,10 +92,10 @@ function infra(props) {
                 <div className="container">
                     <div className="row">
                         <div className="h2 NunitoSans-ExtraBold col-12 text-center">
-                            Ready to try out our <br className="d-none d-md-block" /> UCaaS Services?
+                            Ready to try out our <br className="d-none d-md-block" /> Infrastructure Services?
                         </div>
                         <div className="h6 col-12 mt-2 text-secondary text-center">
-                            BGUS Services are affordable and dynamically priced.
+                            BGUS Servers are affordable and dynamically priced.
                         </div>
                         <div className="col-12 mt-4 d-flex justify-content-center">
                             <Button variantColor="primary" size="md">Get a Quote</Button>

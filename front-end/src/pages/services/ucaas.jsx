@@ -28,7 +28,7 @@ function UCaaS(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        <div className="h4 NunitoSans-ExtraBold"> Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring.
+                        <div className="h5 NunitoSans-ExtraBold"> Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring.
                         </div>
                         <div className="h6 mt-4 text-secondary text-dark">
                         N+N Redundant components fulfilling all Unified Collaboration requirements of your business.
@@ -41,7 +41,7 @@ function UCaaS(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-5 p-5">
-                        <img style={{maxHeight:"320px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
+                        <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -57,7 +57,7 @@ function UCaaS(props) {
                 </div>
                 <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
                     <div className="col-lg-5 p-5">
-                        <img style={{maxHeight:"320px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
+                        <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -73,7 +73,7 @@ function UCaaS(props) {
                 </div>
                 <div className="row">
                     <div className="col-lg-5 p-5">
-                        <img style={{maxHeight:"320px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
+                        <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>

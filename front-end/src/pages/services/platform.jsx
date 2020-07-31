@@ -28,7 +28,7 @@ function Platform(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        <div className="h4 NunitoSans-ExtraBold">End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions.</div>
+                        <div className="h5 NunitoSans-ExtraBold">End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions.</div>
                         <div className="h6 mt-4 text-secondary text-dark">
                         Huawei 10G core switching offering a high-speed spine and leaf network.
                         </div>
@@ -40,7 +40,7 @@ function Platform(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-5 p-5">
-                        <img style={{maxHeight:"320px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
+                        <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -57,7 +57,7 @@ function Platform(props) {
                 </div>
                 <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
                     <div className="col-lg-5 p-5">
-                        <img style={{maxHeight:"320px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
+                        <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -75,7 +75,7 @@ function Platform(props) {
                 </div>
                 <div className="row">
                     <div className="col-lg-5 p-5">
-                        <img style={{maxHeight:"320px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
+                        <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -98,7 +98,7 @@ function Platform(props) {
                         Ready to try out our <br className="d-none d-md-block" /> Cloud Platform Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
-                        BGUS Services are affordable and dynamically priced.
+                        BGUS Cloud Services are affordable and dynamically priced.
                     </div>
                     <div className="col-12 mt-4 d-flex justify-content-center">
                         <Button variantColor="primary" size="md">Get a Quote</Button>
