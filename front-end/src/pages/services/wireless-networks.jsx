@@ -4,11 +4,11 @@ import Head from 'next/head'
 
 function Wireless(props) {
     return (
-        <Head>
-            <title>Wireless Networks
-            </title>
-        </Head>
+        
         <div>
+            <Head>
+                <title>Wireless Networks</title>
+            </Head>
             <div className="section pb-0 bg-dark">
             <div className="section">
                 <div className="container">
@@ -96,7 +96,7 @@ function Wireless(props) {
                         Ready to try out our <br className="d-none d-md-block" />Wireless Network Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
-                        BGUS Services are affordable and dynamically priced.
+                        BGUS Wireless Network Services are affordable and dynamically priced.
                     </div>
                     <div className="col-12 mt-4 d-flex justify-content-center">
                         <Button variantColor="primary" size="md">Get a Quote</Button>
