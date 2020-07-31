@@ -49,8 +49,9 @@ function ApplicationDev(props) {
                         Platform Independence
                         </div>
                         <p className="text-secondary mt-3">
-                        Build applications for a range of digital platforms like mobile, desktop, smartwatch, AR etc.
-                        </p>
+                       Build applications for a range of digital platforms like mobile, desktop, smartwatch, AR etc. 
+                            User-interactivity, responsiveness, user-friendly interfaces kept into consideration.
+ </p>
                         </div>
                     </div>
                     
@@ -66,7 +67,8 @@ function ApplicationDev(props) {
                         </div>
                         <p className="text-secondary mt-3">
                         Highly talented team of professionals and technology experts, to build customized solutions as per the client’s needs.
-                        </p>
+                            Customer satisfaction is the prime motto, and we ensure to deliver every requirement expected.
+</p>
                         </div>
                     </div>
                     
