@@ -30,6 +30,9 @@ function main(props) {
                         <div className="col-lg-10 text-center offset-lg-1">
                             <div className="h4 NunitoSans-ExtraBold">Express Routes to office 365, AWS, Azure </div>
                         </div>
+                        <div className="h6 mt-4 text-secondary text-dark">
+                        Advanced Solution providing private seamless, and on-demand connections to many clouds as well as networks.
+</div>
                     </div>
                 </div>
             </div>
@@ -43,7 +46,7 @@ function main(props) {
                             <div>
                                 <div className="h5 NunitoSans-Bold text-dark">Reliable and Secure 
                         </div>
-                                <p className="text-secondary mt-3">Complete security on our end, while connecting to these cloud platforms.
+                                <p className="text-secondary mt-3">Complete security on our end, while connecting to these cloud platforms. Improve the experience of users throughout the extended enterprise providing significant benefits and reliability.
 </p>
                             </div>
                         </div>
@@ -57,7 +60,8 @@ function main(props) {
                             <div>
                                 <div className="h5 NunitoSans-Bold text-dark">Scalable 
                         </div>
-                                <p className="text-secondary mt-3">Traffic increased or decreased is handled with no difficulty at all.
+                                <p className="text-secondary mt-3">Traffic increased or decreased is handled with no difficulty at all. Avoiding vendor lock-in and meeting data-sovereignty requirements. Geo-redundant for improved performance.
+
                         </p>
                             </div>
                         </div>
@@ -72,8 +76,7 @@ function main(props) {
                             <div>
                                 <div className="h5 NunitoSans-Bold text-dark">Integration 
                         </div>
-                                <p className="text-secondary mt-3"> Simplified usage and integration of new technology services. On demand communication and connectivity.
-                        </p>
+                                <p className="text-secondary mt-3"> Simplified usage and integration of new technology services. On-demand communication and connectivity. Multi-cloud operations with a complex structure handled easily. </p>
                             </div>
                         </div>
 
