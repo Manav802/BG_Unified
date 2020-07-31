@@ -28,10 +28,10 @@ function Wireless(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        
-                        <div className="h4 NunitoSans-ExtraBold">We use Cisco Wi-Fi and Aruba Wi-Fi. </div>
+
+                        <div className="h4 NunitoSans-ExtraBold">Cisco Wi-Fi and Aruba Wi-Fi. </div>
                          <div className="h6 mt-4 text-secondary text-dark">
-                        The hosted wireless solution includes multiple clusters of Cisco WLC 5508, 2504 and Aruba controllers.
+                        The hosted wireless solution includes multiple clusters as well as isolated Data centers of Cisco WLC 5508, 2504 and Aruba controllers.
                         </div> 
 
                     </div>
