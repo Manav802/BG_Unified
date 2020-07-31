@@ -1,9 +1,14 @@
 import React from 'react';
 import { Button } from '@chakra-ui/core'
 
+import Head from 'next/head'
+
 function infra(props) {
     return (
         <div>
+            <Head>
+                <title>Computing Infrastructure</title>
+            </Head>
             <div className="section pb-0 bg-dark">
                 <div className="section">
                     <div className="container">
@@ -36,7 +41,7 @@ function infra(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 p-5">
-                            <img src="/assets/images/vectors/SVG/firewall.svg" alt="" />
+                            <img style={{maxHeight:"320px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt="" />
                         </div>
                         <div className="col-lg-7 d-flex align-items-center px-5">
                             <div>
@@ -51,7 +56,7 @@ function infra(props) {
                     </div>
                     <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
                         <div className="col-lg-5 p-5">
-                            <img src="/assets/images/vectors/SVG/firewall.svg" alt="" />
+                            <img style={{maxHeight:"320px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt="" />
                         </div>
                         <div className="col-lg-7 d-flex align-items-center px-5">
                             <div>
@@ -67,7 +72,7 @@ function infra(props) {
                     </div>
                     <div className="row">
                         <div className="col-lg-5 p-5">
-                            <img src="/assets/images/vectors/SVG/firewall.svg" alt="" />
+                            <img style={{maxHeight:"320px"}} src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt="" />
                         </div>
                         <div className="col-lg-7 d-flex align-items-center px-5">
                             <div>
