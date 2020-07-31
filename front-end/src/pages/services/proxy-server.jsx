@@ -14,7 +14,7 @@ function main(props) {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 mt-5 text-center py-5">
-                                <div className="display2 text-white">Proxy Server
+                                <div className="display2 text-white">Proxy Servers
                             </div>
                             </div>
                         </div>
@@ -26,7 +26,10 @@ function main(props) {
             <div className="section pt-0">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-10 text-center offset-lg-1"><div className="h6 mt-4 text-secondary text-dark">With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users.
+                        
+                        <div className="col-lg-10 text-center offset-lg-1">
+                        <div className="h4 NunitoSans-ExtraBold"> With assured low latency and high availability.
+                        </div><div className="h6 mt-4 text-secondary text-dark">It is a cost-effective way to make your applications and services available to your users.
                         </div>
                         </div>
                     </div>
@@ -85,10 +88,10 @@ function main(props) {
                 <div className="container">
                     <div className="row">
                         <div className="h2 NunitoSans-ExtraBold col-12 text-center">
-                            Ready to try out our <br className="d-none d-md-block" /> Proxy server Services?
+                            Ready to try out our <br className="d-none d-md-block" /> Proxy Server Services?
                     </div>
                         <div className="h6 col-12 mt-2 text-secondary text-center">
-                            BGUS Proxy server Services are affordable and dynamically priced.
+                            BGUS Proxy Server Services are affordable and dynamically priced.
                     </div>
                         <div className="col-12 mt-4 d-flex justify-content-center">
                             <Button variantColor="primary" size="md">Get a Quote</Button>

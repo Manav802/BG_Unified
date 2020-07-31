@@ -15,7 +15,7 @@ function main(props) {
                         <div className="row">
                             <div className="col-lg-12 mt-5 text-center py-5">
                                 <div className="display2 text-white">
-                    Web Hosting                            </div>
+                    Web - Hosting <br/> Solutions                         </div>
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ Reduced costs, pay for what you want, no hidden costs and completely transparent
                 <div className="container">
                     <div className="row">
                         <div className="h2 NunitoSans-ExtraBold col-12 text-center">
-                            Ready to try out our <br className="d-none d-md-block" />Web hosting Services?
+                            Ready to try out our <br className="d-none d-md-block" />Web Hosting Services?
                     </div>
                         <div className="h6 col-12 mt-2 text-secondary text-center">
                             BGUS Web hosting Services are affordable and dynamically priced.

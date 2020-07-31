@@ -23,12 +23,12 @@ function Disaster(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                    <div className="h5 NunitoSans-ExtraBold">
-                        Assist in DR strategy, evaluate threat models, select technologies, prototype multisite or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.
+                    <div className="h4 NunitoSans-ExtraBold">
+                        Assist in DR strategy, evaluate threat models, select technologies.
                     </div>
-                        {/* <div className="h6 mt-4 text-secondary text-dark">
-                       
-                        </div> */}
+                        <div className="h6 mt-4 text-secondary text-dark">
+                        Prototype multisite or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@ function Disaster(props) {
                         Ready to try out our <br className="d-none d-md-block" />DR Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
-                        BGUS Servers are affordable and dynamically priced.
+                        BGUS Services are affordable and dynamically priced.
                     </div>
                     <div className="col-12 mt-4 d-flex justify-content-center">
                         <Button variantColor="primary" size="md">Get a Quote</Button>

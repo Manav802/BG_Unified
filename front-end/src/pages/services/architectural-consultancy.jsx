@@ -91,11 +91,11 @@ function Arch(props) {
         <div className="section">
             <div className="container">
                 <div className="row">
-                    <div className="h2 NunitoSans-ExtraBold col-12 text-center">
-                        Ready to try out our <br className="d-none d-md-block" /> Consultancy Services?
+                    <div className="h3 NunitoSans-ExtraBold col-12 text-center">
+                        Ready to try out our <br className="d-none d-md-block" />Architectural Consultancy Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
-                        BGUS Servers are affordable and dynamically priced.
+                        BGUS Services are affordable and dynamically priced.
                     </div>
                     <div className="col-12 mt-4 d-flex justify-content-center">
                         <Button variantColor="primary" size="md">Get a Quote</Button>

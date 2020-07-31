@@ -28,10 +28,11 @@ function Firewall(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        <div className="h4 NunitoSans-ExtraBold">Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA.
+                        <div className="h4 NunitoSans-ExtraBold">Centralized Policy Management using Panorama, Sourcefire DC.
                         </div>
                         <div className="h6 mt-4 text-secondary text-dark">
-                        Centralized Policy Management using Panorama, Sourcefire DC.
+                        Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA.
+                        
                         </div>
                     </div>
                 </div>
@@ -96,7 +97,7 @@ function Firewall(props) {
                         Ready to try out our <br className="d-none d-md-block" /> Firewall Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
-                        BGUS Servers are affordable and dynamically priced.
+                        BGUS Services are affordable and dynamically priced.
                     </div>
                     <div className="col-12 mt-4 d-flex justify-content-center">
                         <Button variantColor="primary" size="md">Get a Quote</Button>
