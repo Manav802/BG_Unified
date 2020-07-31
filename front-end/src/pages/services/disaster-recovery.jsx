@@ -4,10 +4,11 @@ import Head from 'next/head'
 
 function Disaster(props) {
     return (
-        <Head>
-            <title>Disaster Recovery Management</title>
-        </Head>
+        
         <div>
+            <Head>
+                <title>Disaster Recovery Management</title>
+            </Head>
             <div className="section pb-0 bg-dark">
             <div className="section">
                 <div className="container">
@@ -96,7 +97,7 @@ function Disaster(props) {
                         Ready to try out our <br className="d-none d-md-block" />DR Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
-                        BGUS Services are affordable and dynamically priced.
+                        BGUS DR Services are affordable and dynamically priced.
                     </div>
                     <div className="col-12 mt-4 d-flex justify-content-center">
                         <Button variantColor="primary" size="md">Get a Quote</Button>
