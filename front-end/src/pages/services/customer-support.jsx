@@ -23,8 +23,8 @@ function Customer(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        <div className="h4 NunitoSans-ExtraBold">
-                            BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus.
+                        <div className="h5 NunitoSans-ExtraBold">
+                            BG Unified Solution’s CSaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus.
                         </div>
                     </div>
                 </div>
@@ -33,8 +33,8 @@ function Customer(props) {
         <div className="section">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
+                    <div className="col-lg-5 p-5 illustration">
+                        <img src="/assets/images/Illustrations/Services/Firewall/deployment.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -48,8 +48,8 @@ function Customer(props) {
                     
                 </div>
                 <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
+                    <div className="col-lg-5 p-5 illustration">
+                        <img src="/assets/images/Illustrations/Services/Firewall/deployment.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -64,8 +64,8 @@ function Customer(props) {
                     
                 </div>
                 <div className="row">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
+                    <div className="col-lg-5 p-5 illustration">
+                        <img src="/assets/images/Illustrations/Services/Firewall/deployment.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -85,7 +85,7 @@ function Customer(props) {
             <div className="container">
                 <div className="row">
                     <div className="h2 NunitoSans-ExtraBold col-12 text-center">
-                        Ready to try out our <br className="d-none d-md-block" /> Service?
+                        Ready to try out our <br className="d-none d-md-block" />Customer Support Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
                         BGUS Servers are affordable and dynamically priced.

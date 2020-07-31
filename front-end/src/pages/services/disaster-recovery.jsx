@@ -23,12 +23,12 @@ function Disaster(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                    <div className="h4 NunitoSans-ExtraBold">
-                        Assist in DR strategy, evaluate threat models, select technologies, prototype multisite or multi-cloud DR strategies.
+                    <div className="h5 NunitoSans-ExtraBold">
+                        Assist in DR strategy, evaluate threat models, select technologies, prototype multisite or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.
                     </div>
-                        <div className="h6 mt-4 text-secondary text-dark">
-                        Test rollback mechanisms and measure robustness using failure driven tests.
-                        </div>
+                        {/* <div className="h6 mt-4 text-secondary text-dark">
+                       
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -36,8 +36,8 @@ function Disaster(props) {
         <div className="section">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
+                    <div className="col-lg-5 p-5 illustration">
+                        <img src="/assets/images/Illustrations/Services/Firewall/deployment.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -52,8 +52,8 @@ function Disaster(props) {
                     
                 </div>
                 <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
+                    <div className="col-lg-5 p-5 illustration">
+                        <img src="/assets/images/Illustrations/Services/Firewall/deployment.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -68,8 +68,8 @@ function Disaster(props) {
                     
                 </div>
                 <div className="row">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
+                    <div className="col-lg-5 p-5 illustration">
+                        <img src="/assets/images/Illustrations/Services/Firewall/deployment.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -89,7 +89,7 @@ function Disaster(props) {
             <div className="container">
                 <div className="row">
                     <div className="h2 NunitoSans-ExtraBold col-12 text-center">
-                        Ready to try out our <br className="d-none d-md-block" /> Service?
+                        Ready to try out our <br className="d-none d-md-block" />DR Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
                         BGUS Servers are affordable and dynamically priced.

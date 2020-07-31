@@ -24,10 +24,10 @@ function Wireless(props) {
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
                         
-                        <div className="h4 NunitoSans-ExtraBold">Cisco Wi-Fi and Aruba Wi-Fi.</div>
-                        <div className="h6 mt-4 text-secondary text-dark">
-                        The hosted wireless solution includes multiple clusters of Cisco WLC 5508, 2504 and Aruba controllers.
-                        </div>
+                        <div className="h5 NunitoSans-ExtraBold">Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters of Cisco WLC 5508, 2504 and Aruba controllers.</div>
+                        {/* <div className="h6 mt-4 text-secondary text-dark">
+                        
+                        </div> */}
 
                     </div>
                 </div>
@@ -36,8 +36,8 @@ function Wireless(props) {
         <div className="section">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
+                    <div className="col-lg-5 p-5 illustration">
+                        <img src="/assets/images/Illustrations/Services/Firewall/deployment.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -52,8 +52,8 @@ function Wireless(props) {
                     
                 </div>
                 <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
+                    <div className="col-lg-5 p-5 illustration">
+                        <img src="/assets/images/Illustrations/Services/Firewall/deployment.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -67,8 +67,8 @@ function Wireless(props) {
                     
                 </div>
                 <div className="row">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
+                    <div className="col-lg-5 p-5 illustration">
+                        <img src="/assets/images/Illustrations/Services/Firewall/deployment.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -88,7 +88,7 @@ function Wireless(props) {
             <div className="container">
                 <div className="row">
                     <div className="h2 NunitoSans-ExtraBold col-12 text-center">
-                        Ready to try out our <br className="d-none d-md-block" /> Service?
+                        Ready to try out our <br className="d-none d-md-block" />Wireless Network Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
                         BGUS Servers are affordable and dynamically priced.

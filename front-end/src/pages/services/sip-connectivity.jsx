@@ -23,7 +23,7 @@ function Wireless(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        <div className="h4 NunitoSans-ExtraBold">
+                        <div className="h5 NunitoSans-ExtraBold">
                         SIP As A Service Infrastructure includes more than 15 Cisco Unified border Elements with 1600 SIP channels spanned across multiple DC locations with DUAL Exchange Homing.
                         </div>
                     </div>
@@ -33,8 +33,8 @@ function Wireless(props) {
         <div className="section">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
+                    <div className="col-lg-5 p-5 illustration">
+                        <img  src="/assets/images/Illustrations/Services/Firewall/deployment.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -49,8 +49,8 @@ function Wireless(props) {
                     
                 </div>
                 <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
+                    <div className="col-lg-5 p-5 illustration">
+                        <img src="/assets/images/Illustrations/Services/Firewall/deployment.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -65,8 +65,8 @@ function Wireless(props) {
                     
                 </div>
                 <div className="row">
-                    <div className="col-lg-5 p-5">
-                        <img src="/assets/images/Illustrations/Firewall/deploymentArtboard1.svg" alt=""/>
+                    <div className="col-lg-5 p-5 illustration">
+                        <img src="/assets/images/Illustrations/Services/Firewall/deployment.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -86,7 +86,7 @@ function Wireless(props) {
             <div className="container">
                 <div className="row">
                     <div className="h2 NunitoSans-ExtraBold col-12 text-center">
-                        Ready to try out our <br className="d-none d-md-block" /> Service?
+                        Ready to try out our <br className="d-none d-md-block" />SIP Connectivity Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
                         BGUS Servers are affordable and dynamically priced.
