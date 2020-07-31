@@ -1,8 +1,12 @@
 import React from 'react';
 import {Button} from '@chakra-ui/core'
+import Head from 'next/head'
 
 function Disaster(props) {
     return (
+        <Head>
+            <title>Disaster Recovery Management</title>
+        </Head>
         <div>
             <div className="section pb-0 bg-dark">
             <div className="section">
