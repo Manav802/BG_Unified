@@ -45,7 +45,7 @@ Storage Blocks                            </div>
                             <div>
                                 <div className="h5 NunitoSans-Bold text-dark">Low pricing
                         </div>
-                                <p className="text-secondary mt-3"> Pay only for the storage you actually require and use, bundling it up with Data Link.
+                                <p className="text-secondary mt-3"> Pay only for the storage you actually require and use, bundling it up with Data Link. Transparent pricing and costing schedule. Dynamic as per your needs.
 </p>
                             </div>
                         </div>
