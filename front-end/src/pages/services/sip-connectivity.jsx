@@ -1,8 +1,13 @@
 import React from 'react';
 import {Button} from '@chakra-ui/core'
 
+import Head from 'next/head'
+
 function Wireless(props) {
     return (
+        <Head>
+            <title>SIP Connectivity</title>
+        </Head>
         <div>
             <div className="section pb-0 bg-dark">
             <div className="section">
