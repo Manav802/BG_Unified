@@ -31,7 +31,7 @@ function Wireless(props) {
 
                         <div className="h4 NunitoSans-ExtraBold">Cisco Wi-Fi and Aruba Wi-Fi. </div>
                          <div className="h6 mt-4 text-secondary text-dark">
-                        The hosted wireless solution includes multiple clusters as well as isolated Data centers of Cisco WLC 5508, 2504 and Aruba controllers.
+                        The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers.
                         </div> 
 
                     </div>
@@ -50,8 +50,7 @@ function Wireless(props) {
                         Clustering of Devices
                         </div>
                         <p className="text-secondary mt-3">
-                        Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, so as to support Wireless Phones in any environment.
-                        </p>
+                        Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, so as to support Wireless Phones in any environment. Traffic and congestion problems reduced significantly.</p>
                         </div>
                     </div>
                     
@@ -64,8 +63,7 @@ function Wireless(props) {
                         <div>
                         <div className="h5 NunitoSans-Bold text-dark">
                         Unified and Efficient                        </div>
-                        <p className="text-secondary mt-3">
-                        Improved operational efficiencies, Reduced communication-related delays and enhanced collaboration.
+                        <p className="text-secondary mt-3">Improved operational efficiencies, Reduced communication-related delays and enhanced collaboration. Completely redundant process and efficient transmission.
                         </p>
                         </div>
                     </div>
