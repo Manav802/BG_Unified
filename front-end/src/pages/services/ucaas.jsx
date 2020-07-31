@@ -41,7 +41,7 @@ function UCaaS(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-5 p-5">
-                        <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
+                        <img className="max-height2" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -57,7 +57,7 @@ function UCaaS(props) {
                 </div>
                 <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
                     <div className="col-lg-5 p-5">
-                        <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
+                        <img className="max-height2" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -73,7 +73,7 @@ function UCaaS(props) {
                 </div>
                 <div className="row">
                     <div className="col-lg-5 p-5">
-                        <img className="illustration" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
+                        <img className="max-height2" src="/assets/images/Illustrations/Services/StorageBlocks/RealTimeMonitoring.svg" alt=""/>
                     </div>
                     <div className="col-lg-7 d-flex align-items-center px-5">
                         <div>
@@ -95,7 +95,7 @@ function UCaaS(props) {
                         Ready to try out our <br className="d-none d-md-block" /> UCaaS Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
-                        BGUS Services are affordable and dynamically priced.
+                        BGUS UCaaS Services are affordable and dynamically priced.
                     </div>
                     <div className="col-12 mt-4 d-flex justify-content-center">
                         <Button variantColor="primary" size="md">Get a Quote</Button>
