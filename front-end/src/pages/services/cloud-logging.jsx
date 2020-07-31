@@ -26,8 +26,8 @@ function main(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-10 text-center offset-lg-1">
-                            <div className="h4 NunitoSans-ExtraBold">Log central services over the internet                      </div>
-                            <div className="h6 mt-4 text-secondary text-dark">Collect, Store, and report the various data and underlying threats. Add the shield to protect your business reputation.
+                            <div className="h4 NunitoSans-ExtraBold">Log central services over the internet. Collect, Store, and report the various data and underlying threats.                      </div>
+                            <div className="h6 mt-4 text-secondary text-dark"> Add the shield to protect your business reputation. Application and system logs ingestions.
                         </div>
                         </div>
                     </div>
@@ -43,8 +43,7 @@ function main(props) {
                             <div>
                                 <div className="h5 NunitoSans-Bold text-dark">Completeness  
                         </div>
-                                <p className="text-secondary mt-3"> Fully integrated service performing at scale, can ingest system log data from multiple VMs.
-</p>
+                                <p className="text-secondary mt-3">  Fully integrated service performing at scale, can ingest system log data from multiple VMs. Reduction in need for on-site storage. Download archives on-demand.</p>
                             </div>
                         </div>
 
@@ -58,8 +57,7 @@ function main(props) {
                                 <div className="h5 NunitoSans-Bold text-dark">
                                     Simplified log management 
                         </div>
-                                <p className="text-secondary mt-3">Collecting and managing logs from numerous endpoints, servers and cloud-based resources with ease.Management and monitoring your logs and queries live.
-                        </p>
+                                <p className="text-secondary mt-3">Collecting and managing logs from numerous endpoints, servers and cloud-based resources with ease. Management and monitoring your logs and queries live.                   </p>
                             </div>
                         </div>
 
@@ -73,7 +71,7 @@ function main(props) {
                             <div>
                                 <div className="h5 NunitoSans-Bold text-dark">Proactive Troubleshooting
                         </div>
-                                <p className="text-secondary mt-3">Dynamic field explorer enhancing your troubleshooting experience.</p>
+                                <p className="text-secondary mt-3">Dynamic field explorer enhancing your troubleshooting experience. Easy troubleshooting in advanced and modern environments, with appropriate tools and resources.</p>
                             </div>
                         </div>
 
