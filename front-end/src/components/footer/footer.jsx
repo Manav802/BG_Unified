@@ -20,7 +20,7 @@ function footer(props) {
                         <Link href="/services/infra">
                             <a>Computing Infrastructure</a>
                         </Link>
-                        <Link href="/services/storage">
+                        <Link href="/services/storage-unit">
                             <a>Storage Unit</a>
                         </Link>
                         <Link href="/services/cloud-logging">
@@ -29,28 +29,25 @@ function footer(props) {
                         <Link href="/services/platform">
                             <a>Cloud Platform Service</a>
                         </Link>
-                        <Link href="/services/backup">
-                            <a>Data backup</a>
-                        </Link>
                         <Link href="/services/firewall"><a>Firewalls</a></Link>
                         <Link href="/services/application-dev"><a>Application Development</a></Link>
-                        <Link href="/services/hosting"><a>Web Hosting Solutions</a></Link>
+                        <Link href="/services/web-hosting"><a>Web Hosting Solutions</a></Link>
 
                         <span className="mt-4 mb-1">
                             Disaster Recovery Services
                         </span>
-                        <Link href="/services/disaster"><a>Disaster Recovery Management</a></Link>
+                        <Link href="/services/disaster-recovery"><a>Disaster Recovery Management</a></Link>
                     </div>
                     <div className="col-lg-3 d-flex flex-column footer-content">
                         <span className="mt-4 mb-1">
                             Network Services
                         </span>
                         <Link href="/services/sd-wan"><a>SD-WAN Optimazation</a></Link>
-                        <Link href="/services/proxy"><a>Proxy Severs</a></Link>
+                        <Link href="/services/proxy-server"><a>Proxy Severs</a></Link>
                         <Link href="/services/dns"><a>DNS</a></Link>
-                        <Link href="/services/platform"><a>Cloud Platform Services</a></Link>
                         <Link href="/services/wireless-networks"><a>Wireless Networks</a></Link>
                         <Link href="/services/cloud-exchange"><a>Cloud Exchange Connectivity</a></Link>
+                        <Link href="/services/sip-connectivity"><a>SIP Connectivity</a></Link>
                         <span className="mt-4 mb-1">
                         Collaborative Services 
                         </span>

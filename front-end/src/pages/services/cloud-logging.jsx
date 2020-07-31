@@ -84,7 +84,7 @@ function main(props) {
                 <div className="container">
                     <div className="row">
                         <div className="h2 NunitoSans-ExtraBold col-12 text-center">
-                            Ready to try out our <br className="d-none d-md-block" />Cloud logging Services?
+                            Ready to try out our <br className="d-none d-md-block" />Cloud Logging Services?
                     </div>
                         <div className="h6 col-12 mt-2 text-secondary text-center">
                             BGUS Cloud logging Services are affordable and dynamically priced.

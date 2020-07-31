@@ -28,7 +28,9 @@ function Customer(props) {
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
                         <div className="h5 NunitoSans-ExtraBold">
-                            BG Unified Solution’s CSaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus.
+                            BG Unified Solution’s CSaaS helps you provide a positive customer experience through a suite of advanced contact center tools.
+                        </div>
+                        <div className="h6 mt-4 text-secondary text-dark"> We have deep contracts with all major Telcos including AAPT, Telstra and Optus.
                         </div>
                     </div>
                 </div>
@@ -92,7 +94,7 @@ function Customer(props) {
                         Ready to try out our <br className="d-none d-md-block" />Customer Support Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
-                        BGUS Servers are affordable and dynamically priced.
+                        BGUS Services are affordable and dynamically priced.
                     </div>
                     <div className="col-12 mt-4 d-flex justify-content-center">
                         <Button variantColor="primary" size="md">Get a Quote</Button>

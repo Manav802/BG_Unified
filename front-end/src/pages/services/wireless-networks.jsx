@@ -29,10 +29,10 @@ function Wireless(props) {
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
                         
-                        <div className="h5 NunitoSans-ExtraBold">Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters of Cisco WLC 5508, 2504 and Aruba controllers.</div>
-                        {/* <div className="h6 mt-4 text-secondary text-dark">
-                        
-                        </div> */}
+                        <div className="h4 NunitoSans-ExtraBold">We use Cisco Wi-Fi and Aruba Wi-Fi. </div>
+                         <div className="h6 mt-4 text-secondary text-dark">
+                        The hosted wireless solution includes multiple clusters of Cisco WLC 5508, 2504 and Aruba controllers.
+                        </div> 
 
                     </div>
                 </div>
@@ -96,7 +96,7 @@ function Wireless(props) {
                         Ready to try out our <br className="d-none d-md-block" />Wireless Network Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
-                        BGUS Servers are affordable and dynamically priced.
+                        BGUS Services are affordable and dynamically priced.
                     </div>
                     <div className="col-12 mt-4 d-flex justify-content-center">
                         <Button variantColor="primary" size="md">Get a Quote</Button>

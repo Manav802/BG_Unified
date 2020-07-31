@@ -5,7 +5,7 @@ function main(props) {
     return (
         <div>
             <Head>
-                <title>Clod Exchanging Services - BG Unified</title>
+                <title>Cloud Exchange Services - BG Unified</title>
 
                 <link rel="shortcut icon" href="/assets/images/icons/favicon/bg.ico" type="image/x-icon" />
             </Head>
@@ -84,7 +84,7 @@ function main(props) {
                 <div className="container">
                     <div className="row">
                         <div className="h2 NunitoSans-ExtraBold col-12 text-center">
-                            Ready to try out our <br className="d-none d-md-block" /> Cloud exchanging connectivity Services?
+                            Ready to try out our <br className="d-none d-md-block" /> Cloud Exchange Services?
                     </div>
                         <div className="h6 col-12 mt-2 text-secondary text-center">
                             BGUS Cloud exchanging Services are affordable and dynamically priced.
