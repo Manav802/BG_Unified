@@ -7,7 +7,7 @@ function SDWAN(props) {
     return (
         <div>
             <Head>
-                <title>WAN Optimization</title>
+                <title>SD-WAN Optimization</title>
             </Head>
             <div className="section pb-0 bg-dark">
             <div className="section">
@@ -15,7 +15,7 @@ function SDWAN(props) {
                     <div className="row">
                         <div className="col-lg-12 mt-5 text-center py-5">
                             <div className="display2 text-white">
-                                WAN Optimization
+                                SD-WAN Optimization
                             </div>
                         </div>
                     </div>
@@ -92,10 +92,10 @@ function SDWAN(props) {
             <div className="container">
                 <div className="row">
                     <div className="h2 NunitoSans-ExtraBold col-12 text-center">
-                        Ready to try out our <br className="d-none d-md-block" /> WAN Services?
+                        Ready to try out our <br className="d-none d-md-block" /> SD-WAN Services?
                     </div>
                     <div className="h6 col-12 mt-2 text-secondary text-center">
-                        BGUS WAN Services are affordable and dynamically priced.
+                        BGUS SD-WAN Services are affordable and dynamically priced.
                     </div>
                     <div className="col-12 mt-4 d-flex justify-content-center">
                         <Button variantColor="primary" size="md">Get a Quote</Button>
