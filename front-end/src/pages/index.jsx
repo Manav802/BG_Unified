@@ -11,11 +11,12 @@ import {TESTIMONIALS} from '../../public/assets/data/testimonials';
 
 import Link from 'next/link';
 
+import Fade from 'react-reveal/Fade';
+
 class Landing extends Component {
-    componentDidMount(){
-        
-    }
+    
     render() {
+        
         return (
             
             <div className="landing overflow-hidden">
@@ -43,9 +44,11 @@ class Landing extends Component {
                                             <Button variant="outline" variantColor="white" className="mx-2 btn btn-outline-light" size="lg">Get a quote</Button>
                                         </Link>
                                 </div>
+                                <Fade duration={600} bottom>
                                 <div className="p-4 d-none d-md-block">
                                     <Image src="/assets/images/vectors/data_servers.svg"></Image>
                                 </div>
+                                </Fade>
                             </div>
                         </div>
                        </div>
@@ -73,8 +76,9 @@ class Landing extends Component {
                             </div>
                         </div>
                         <div className="col">
+                        
                             <div className="row">
-                                
+                                <Fade duration={600} bottom>
                                 <div className="col-xl-6 col-sm-6 my-2">
                                     <Link href="/services/infra">
                                         <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" />
@@ -106,7 +110,9 @@ class Landing extends Component {
                                         <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>Platform <br /> as a service </div>} iconBg="#19C741" children="Prototype multisite or multi-cloud DR strategies. Shortened Recovery Time.Geographically dispersed availability" />
                                     </Link>
                                 </div>
+                                </Fade>
                             </div>
+                
                         </div>
                     </div>
                 </div>
@@ -133,6 +139,7 @@ class Landing extends Component {
                             </div>
                         <div className="col-lg-10 offset-lg-1 col-12 mb-3 ">
                             <div className="row">
+                            <Fade duration={600} bottom>
                                 <div className="col-xl-4 p-2 col-sm-6 col-12 ">
                                     <CardWithAction title="24/7 Active Support" icon="/assets/images/icons/color/headphones.svg">
                                         24X7X365 support service, ensures you to provide a positive customer experience. Consulting, support and operational services tailored to your needs.
@@ -163,11 +170,12 @@ class Landing extends Component {
                                         We focus on providing the best a client can get, under the same cost, with maximum efficiency, maintenance and Disaster Management.
                                     </CardWithAction>
                                 </div>
+                                </Fade>
                                 <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-end py-3">
                                         <span className="display6 text-dark">Not Convinced?</span>
                                         <Link href="/features"><a className="text-primary d-flex my-2" href="">Learn More <Box as={FaArrowRight} h="16px" ml="12px" my="4px"></Box></a></Link>
                                    </div>
-                                
+                            
                             </div>
                         </div>
                     </div>                        
@@ -200,9 +208,11 @@ class Landing extends Component {
                 </div>
               </div>
               <div className="section pb-0">
+                <Fade duration={600} right>
                     <div className="container my-lg-4 py-lg-3">
                         <CaseStudy link="read" />
                     </div>
+                </Fade>
                 </div>
                 
 
