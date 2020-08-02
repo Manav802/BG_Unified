@@ -18,9 +18,11 @@ import config from 'react-reveal/globals';
 config({ ssrFadeout: true });
 
 export default class MyApp extends App {
-    state = {
-        loading: true,
+    constructor() {
+        super();
+        this.state = { loading: true }
     }
+    
 
     componentDidMount(){
         window.onload= ()=>{
