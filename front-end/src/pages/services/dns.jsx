@@ -1,7 +1,18 @@
 import React from 'react';
 import { Button } from '@chakra-ui/core'
 import Head from 'next/head'
+import { useDisclosure } from "@chakra-ui/core";
+import {
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalBody,
+    ModalCloseButton,
+} from "@chakra-ui/core";
+import ContactForm from '../../components/contactForm/main';
 function main(props) {
+    const { isOpen, onOpen, onClose } = useDisclosure();
     return (
         <div>
             <Head>
@@ -92,7 +103,17 @@ function main(props) {
                             BGUS DNS services are affordable and dynamically priced.
                     </div>
                         <div className="col-12 mt-4 d-flex justify-content-center">
-                            <Button variantColor="primary" size="md">Get a Quote</Button>
+                            <Button onClick={onOpen} variantColor="primary" size="md">Get a Quote</Button>
+                            <Modal isOpen={isOpen} onClose={onClose} isCentered size={['lg','xl']}>
+                                <ModalOverlay />
+                                <ModalContent>
+                                    <ModalHeader><span className="display5">Get a quote</span></ModalHeader>
+                                    <ModalCloseButton/>
+                                    <ModalBody>
+                                        <ContactForm/>
+                                    </ModalBody>
+                                </ModalContent>
+                            </Modal>
                         </div>
                     </div>
                 </div>
