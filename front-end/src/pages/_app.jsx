@@ -12,41 +12,51 @@ import App from 'next/app';
 
 import Router from 'next/router';
 
-import Loader from '../components/loader/Loader';
+// import Loader from '../components/loader/Loader';
+
+import NProgress from 'nprogress'; //nprogress module
+import 'nprogress/nprogress.css'; //styles of nprogress
+
 import config from 'react-reveal/globals';
 
 config({ ssrFadeout: true });
 
+
+
 export default class MyApp extends App {
-    constructor() {
-        super();
-        this.state = { loading: true }
-    }
+    // constructor() {
+    //     super();
+    //     this.state = { loading: true }
+    // }
     
 
-    componentDidMount(){
-        window.onload= ()=>{
-            this.setState({
-            loading: false}
-            )
-        }  
-    }
+    // componentDidMount(){
+    //     window.onload= ()=>{
+    //         this.setState({
+    //         loading: false}
+    //         )
+    //     }  
+    // }
         
     render() {
       const { Component, pageProps } = this.props;
-      const { loading } = this.state;
+    //   const { loading } = this.state;
+    NProgress.configure({ showSpinner: false });
+      Router.events.on('routeChangeStart', () => NProgress.start()); 
+      Router.events.on('routeChangeComplete', () => NProgress.done()); 
+      Router.events.on('routeChangeError', () => NProgress.done());
 
-      Router.events.on('routeChangeStart', () =>
-          this.setState({ loading: true })
-      );
-      Router.events.on('routeChangeComplete', () =>
-          this.setState({ loading: false })
-      );
-      Router.events.on('routeChangeError', () =>
-          this.setState({ loading: false })
-      );
+    //   Router.events.on('routeChangeStart', () =>
+    //       this.setState({ loading: true })
+    //   );
+    //   Router.events.on('routeChangeComplete', () =>
+    //       this.setState({ loading: false })
+    //   );
+    //   Router.events.on('routeChangeError', () =>
+    //       this.setState({ loading: false })
+    //   );
 
-      return loading ? <Loader/> : ( 
+      return ( 
         <ThemeProvider theme={customTheme}>		
         <CSSReset />
             <Header></Header>
