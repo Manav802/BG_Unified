@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "front-end",
   "version": "0.1.0",
   "private": true,
   "homepage": "http://manav802.github.io/BG_Unified/",
@@ -17,12 +17,10 @@
     "next": "^9.4.4",
     "next-images": "^1.4.0",
     "node-sass": "^4.14.1",
-    "nprogress": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-flickity-component": "^3.5.0",
     "react-icons": "^3.10.0",
-    "react-reveal": "^1.2.2",
     "react-router": "^5.2.0",
     "react-scripts": "3.4.1"
   },
