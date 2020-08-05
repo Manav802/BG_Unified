@@ -4,19 +4,20 @@ import {FaArrowRight} from 'react-icons/fa'
 import { Image, Button, ButtonGroup, Icon, Box } from "@chakra-ui/core";
 import CardWithIcon from '../components/cards/CardWithIcon'
 import CardWithAction from '../components/cards/CardWithAction'
+import FeatureCard from '../components/cards/FeatureCard'
 import CaseStudy from '../components/case_study/CaseStudy'
 import TestimonialCard from '../components/TestimonialCard/TestimonialCard'
 import ContactForm from '../components/contactForm/main'
 import {TESTIMONIALS} from '../../public/assets/data/testimonials';
 
+
 import Link from 'next/link';
 
-import Fade from 'react-reveal/Fade';
-
 class Landing extends Component {
-    
-    render() {
+    componentDidMount(){
         
+    }
+    render() {
         return (
             
             <div className="landing overflow-hidden">
@@ -34,185 +35,152 @@ class Landing extends Component {
                        <div className="section mt-lg-5 pb-0">
                        <div className="row">
                             <div className="col-lg-10 offset-lg-1 mt-5 mb-5 mb-lg-0">
-                                <div className="h3 NunitoSans-ExtraBold text-white text-center">Deploy, scale, monitor your business online with our security and reliability.</div>
-                                <div className="h6 NunitoSans-SemiBold text-light px-5 text-center mt-3">Computing Infrastructure, Proxy Servers, Firewalls, Web Hosting, Cloud Logging, UCaaS and much more….</div>
+                                <div className="h3 NunitoSans-ExtraBold text-center">Deploy, scale, monitor your business online with our security and reliability.</div>
+                                <div className="h6 NunitoSans-SemiBold px-5 text-center mt-3">Computing Infrastructure, Proxy Servers, Firewalls, Web Hosting, Cloud Logging, UCaaS and much more….</div>
                                 <div className="p-4 justify-content-center d-flex">
                                         <Link href="/solutions"> 
                                             <Button variant="solid" className="mx-2" variantColor="primary" size="lg">Explore Now</Button>
                                         </Link>
                                         <Link href="/contact">
-                                            <Button variant="outline" variantColor="white" className="mx-2 btn btn-outline-light" size="lg">Get a quote</Button>
+                                            <Button variant="outline" className="mx-2 btn btn-outline" size="lg">Get a quote</Button>
                                         </Link>
                                 </div>
-                                <Fade duration={600} bottom>
-                                <div className="p-4 d-none d-md-block">
-                                    <Image src="/assets/images/vectors/data_servers.svg"></Image>
-                                </div>
-                                </Fade>
                             </div>
                         </div>
                        </div>
                     </div>
-                    <div className="divider-bottom-with-margin">
-                        <Image src="/assets/images/dividers/divider_white_bottom.svg"></Image>
-                    </div>
-                </div>
-                
-                <div className="container">
-                    <div className="row third my-5">
-                        <div className="col-lg-3 col-md-4 col-12 p-3 pt-5">
-                            <div className="our-services NunitoSans-ExtraBold my-2">
-                                OuR Services
-                                </div>
-                            <div className="display6">
-                                The Heart of your Technological needs
-                                </div>
-                            <div className="mt-3">
-                            <Link href="/solutions"> 
-                                <Button className="view-btn NunitoSans-ExtraBold px-0" variantColor="black" color="black" >
-                                    View all <Icon className="mx-1" size="16px" name="arrow-forward" />
-                                </Button>
-                            </Link>
-                            </div>
-                        </div>
-                        <div className="col">
+                    <div className="container">
+                    <div className="row my-5">
                         
-                            <div className="row">
-                                <Fade duration={600} bottom>
-                                <div className="col-xl-6 col-sm-6 my-2">
+                        
+                                
+                                <div className="col-xl-4 col-sm-6 my-2">
                                     <Link href="/services/infra">
-                                        <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" />
+                                        <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" />
                                     </Link>
                                 </div>
                                 
-                                <div className="col-xl-6 col-sm-6 my-2">
+                                <div className="col-xl-4 col-sm-6 my-2">
                                     <Link href="/services/storage">
-                                        <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." />
+                                        <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." />
                                     </Link>
                                 </div>
-                                <div className="col-xl-6 col-sm-6 my-2">
+                                <div className="col-xl-4 col-sm-6 my-2">
                                     <Link href="/services/dns">
-                                        <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." />
+                                        <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." />
                                     </Link>
                                 </div>
-                                <div className="col-xl-6 col-sm-6 my-2">
+                                <div className="col-xl-4 col-sm-6 my-2">
                                     <Link href="/services/backup">
-                                        <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>Backup <br /> as a service </div>} iconBg="#F33022" children="Clustering of Devices, Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, Cisco Wi-Fi and Aruba Wi-Fi." />
+                                        <CardWithIcon icon="/assets/images/icons/monotone/disk.svg" title={<div>Backup <br /> as a service </div>} iconBg="#F33022" children="Clustering of Devices, Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, Cisco Wi-Fi and Aruba Wi-Fi." />
                                     </Link>
                                 </div>
-                                <div className="col-xl-6 col-sm-6 my-2">
+                                <div className="col-xl-4 col-sm-6 my-2">
                                     <Link href="/services/proxy">
-                                        <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>Proxy <br /> as a service </div>} iconBg="#0D5EA5" children="Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Workforce Optimization and Quality Monitoring, N+N Redundant components." />
+                                        <CardWithIcon icon="/assets/images/icons/monotone/proxy.svg" title={<div>Proxy <br /> as a service </div>} iconBg="#0D5EA5" children="Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Workforce Optimization and Quality Monitoring, N+N Redundant components." />
                                     </Link>
                                 </div>
-                                <div className="col-xl-6 col-sm-6 my-2">
+                                <div className="col-xl-4 col-sm-6 my-2">
                                     <Link href="/services/platform">
-                                        <CardWithIcon icon={<Image src="/assets/images/icons/monotone/server.svg" />} title={<div>Platform <br /> as a service </div>} iconBg="#19C741" children="Prototype multisite or multi-cloud DR strategies. Shortened Recovery Time.Geographically dispersed availability" />
+                                        <CardWithIcon icon="/assets/images/icons/monotone/dashboard.svg" title={<div>Platform <br /> as a service </div>} iconBg="#19C741" children="Prototype multisite or multi-cloud DR strategies. Shortened Recovery Time.Geographically dispersed availability" />
                                     </Link>
                                 </div>
-                                </Fade>
                             </div>
-                
-                        </div>
-                    </div>
-                </div>
-                <div className="row flex forth landing-benefits justify-content-center">
                     
-                    <div className="col-12 p-0 bg-dark">
-                        <img src="/assets/images/dividers/divider_white_plain.svg" className="w-100" alt=""/>
-                    </div>
-                    <div className="col-12 p-0 bg-dark overflow-hidden">
-                            <div style={{height:"440px"}} className="d-flex justify-content-end">
-                                <img src="/assets/images/vectors/ic_chip_neon.png" className="vector" alt=""/>
+                </div>
+                </div>
+                
+            <div className="mt-4">
+                    <div className="container-fluid brands py-2">
+                            <div className="marquee">
+                                <div className="justify-content-center text-center d-flex abc  mx-xl-5 mx-0 scroll">
+                                    <Image src="/assets/images/brands/aapt.png" />
+                                    <Image src="/assets/images/brands/advanced_life.png" />
+                                    <Image src="/assets/images/brands/agc_plus.png" />
+                                    <Image src="/assets/images/brands/blueglue.png" />
+                                    <Image src="/assets/images/brands/cumulus.png" />
+                                    <Image src="/assets/images/brands/equinix.png" />
+                                    <Image src="/assets/images/brands/fdba.png" />
+                                    <Image src="/assets/images/brands/fortinet.png" />
+                                    <Image src="/assets/images/brands/fujitsu.png" />
+                                    <Image src="/assets/images/brands/halls.png" />
+                                    <Image src="/assets/images/brands/huawei.png" />
+                                    <Image src="/assets/images/brands/hutchisonports.png" />
+                                    <Image src="/assets/images/brands/infin_it.png" />
+                                    <Image src="/assets/images/brands/sabre_pacific.png" />
+                                    <Image src="/assets/images/brands/straintz.png" />
+                                    <Image src="/assets/images/brands/veeam.png" /> 
+                                </div>
                             </div>
-                        <div className="layer-1">
-                        <img src="/assets/images/dividers/divider_red_bottom.svg" className="w-100 divider-img" alt=""/>
                         </div>
-                    </div>
-                    <div className="col-12 p-0 special-div-content">
+              </div>
+                
+            <div className="row bg-light landing-benefits justify-content-center">
+                <img src="/assets/images/dividers/divider_red_border.svg" className="w-100 divider-img" alt=""/>
+                    <div className="col-12 p-0">
                     <div className="container p-0">
                         <div className="col-12 text-center NunitoSans-ExtraBold text-primary text-uppercase">
                             Features
                             </div>
-                        <div className="col-12 my-2 text-center text-white display5">
+                        <div className="col-12 my-2 text-center text-dark display5">
                             Why Choose Us?
                             </div>
                         <div className="col-lg-10 offset-lg-1 col-12 mb-3 ">
                             <div className="row">
-                            <Fade duration={600} bottom>
                                 <div className="col-xl-4 p-2 col-sm-6 col-12 ">
-                                    <CardWithAction title="24/7 Active Support" icon="/assets/images/icons/color/headphones.svg">
+                                    <FeatureCard title="24/7 Active Support" icon="/assets/images/icons/color/headphones.svg">
                                         24X7X365 support service, ensures you to provide a positive customer experience. Consulting, support and operational services tailored to your needs.
-                                    </CardWithAction>
+                                    </FeatureCard>
                                 </div>
                                 <div className="col-xl-4 p-2 col-sm-6 col-12 ">
-                                    <CardWithAction title="Diversified Services" icon="/assets/images/icons/color/stack.svg">
+                                    <FeatureCard title="Diversified Services" icon="/assets/images/icons/color/stack.svg">
                                         Organisation’s core business systems infrastructure; reaching from desktop to the data centre, hosted data centres, carriage services.
-                                    </CardWithAction>
+                                    </FeatureCard>
                                 </div>
                                 <div className="col-xl-4 p-2 col-sm-6 col-12 ">
-                                    <CardWithAction title="Value for money" icon="/assets/images/icons/color/secure.svg">
+                                    <FeatureCard title="Value for money" icon="/assets/images/icons/color/secure.svg">
                                         Transparent methodology, no hidden costs, Pricing negotiations at the beginning of the project only. Low and affordable prices.
-                                    </CardWithAction>
+                                    </FeatureCard>
                                 </div>
                                 <div className="col-xl-4 p-2 col-sm-6 col-12 ">
-                                    <CardWithAction title="Transaction Security" icon="/assets/images/icons/color/price_tag.svg">
+                                    <FeatureCard title="Transaction Security" icon="/assets/images/icons/color/price_tag.svg">
                                         Information kept completely confidential, under a Non-Disclosure Agreement. Ensures secure monetary transactions by our trusted payment gateways.
-                                    </CardWithAction>
+                                    </FeatureCard>
                                 </div>
                                 <div className="col-xl-4 p-2 col-sm-6 col-12 ">
-                                    <CardWithAction title="Monitoring Freedom" icon="/assets/images/icons/color/analytics.svg">
+                                    <FeatureCard title="Monitoring Freedom" icon="/assets/images/icons/color/analytics.svg">
                                         Monitor the progress, data servers, data centres, network connectivity, security, cloud logging, storage and even backup or faults, in real-time
-                                    </CardWithAction>
+                                    </FeatureCard>
                                 </div>
                                 <div className="col-xl-4 p-2 col-sm-6 col-12 ">
-                                    <CardWithAction title="Enhanced Performance" icon="/assets/images/icons/color/speedometer.svg">
+                                    <FeatureCard title="Enhanced Performance" icon="/assets/images/icons/color/speedometer.svg">
                                         We focus on providing the best a client can get, under the same cost, with maximum efficiency, maintenance and Disaster Management.
-                                    </CardWithAction>
+                                    </FeatureCard>
                                 </div>
-                                </Fade>
                                 <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-end py-3">
                                         <span className="display6 text-dark">Not Convinced?</span>
                                         <Link href="/features"><a className="text-primary d-flex my-2" href="">Learn More <Box as={FaArrowRight} h="16px" ml="12px" my="4px"></Box></a></Link>
                                    </div>
-                            
+                                
                             </div>
                         </div>
                     </div>                        
                     </div>
-                   
+                    
                 </div>
-
-              <div className="section pb-0 mt-5">
-              <div className="container-fluid brands py-2">
-                    <div className="marquee">
-                        <div className="justify-content-center text-center d-flex abc  mx-xl-5 mx-0 scroll">
-                            <Image src="/assets/images/brands/aapt.png" />
-                            <Image src="/assets/images/brands/advanced_life.png" />
-                            <Image src="/assets/images/brands/agc_plus.png" />
-                            <Image src="/assets/images/brands/blueglue.png" />
-                            <Image src="/assets/images/brands/cumulus.png" />
-                            <Image src="/assets/images/brands/equinix.png" />
-                            <Image src="/assets/images/brands/fdba.png" />
-                            <Image src="/assets/images/brands/fortinet.png" />
-                            <Image src="/assets/images/brands/fujitsu.png" />
-                            <Image src="/assets/images/brands/halls.png" />
-                            <Image src="/assets/images/brands/huawei.png" />
-                            <Image src="/assets/images/brands/hutchisonports.png" />
-                            <Image src="/assets/images/brands/infin_it.png" />
-                            <Image src="/assets/images/brands/sabre_pacific.png" />
-                            <Image src="/assets/images/brands/straintz.png" />
-                            <Image src="/assets/images/brands/veeam.png" /> 
+                <div className="container-fluid p-0">
+                    <img src="/assets/images/dividers/divider_border_invert.svg" className="w-100 divider-img" style={{marginTop:"-24px"}} alt=""/>
+                    <div className="row">
+                        <div className="col-lg-6 globe-container">
+                            <canvas className ="ml-auto mr-auto d-block" id='globe' width="1200" height="1200"></canvas>
                         </div>
                     </div>
                 </div>
-              </div>
+            
               <div className="section pb-0">
-                <Fade duration={600} right>
                     <div className="container my-lg-4 py-lg-3">
                         <CaseStudy link="read" />
                     </div>
-                </Fade>
                 </div>
                 
 
@@ -248,7 +216,7 @@ class Landing extends Component {
                                 </div> */}
                             </div>
                             <div className="col-xl-8 col-lg-7 col-md-6 globe-container">
-                                <canvas className ="ml-auto mr-auto d-block" id='globe' width="1200" height="1200"></canvas>
+                                {/* <canvas className ="ml-auto mr-auto d-block" id='globe' width="1200" height="1200"></canvas> */}
                             </div>
                         </div>
                     
