@@ -5,14 +5,11 @@ import { useDisclosure } from "@chakra-ui/core";
 import {
     Modal,
     ModalOverlay,
-    ModalContent,
-    ModalHeader,
-    ModalBody,
-    ModalCloseButton,
+   
 } from "@chakra-ui/core";
-import ContactForm from '../../components/contactForm/main';
+import GetaQuoteForm from '../../components/GetaQuote/main';
 function main(props) {
-    const { isOpen, onOpen, onClose } = useDisclosure();
+const { isOpen, onOpen, onClose } = useDisclosure();
     return (
         <div>
             <Head>
@@ -103,17 +100,14 @@ function main(props) {
                             BGUS DNS services are affordable and dynamically priced.
                     </div>
                         <div className="col-12 mt-4 d-flex justify-content-center">
-                            <Button onClick={onOpen} variantColor="primary" size="md">Get a Quote</Button>
-                            <Modal isOpen={isOpen} onClose={onClose} isCentered size={['lg','xl']}>
-                                <ModalOverlay />
-                                <ModalContent>
-                                    <ModalHeader><span className="display5">Get a quote</span></ModalHeader>
-                                    <ModalCloseButton/>
-                                    <ModalBody>
-                                        <ContactForm/>
-                                    </ModalBody>
-                                </ModalContent>
-                            </Modal>
+                            
+        <Button onClick={onOpen} variantColor="primary" size="md">Get a Quote</Button>
+        <Modal isOpen={isOpen} onClose={onClose} isCentered size={['lg','xl']}>                          
+          <ModalOverlay />
+            <GetaQuoteForm serviceName="DNS as a service"
+            serviceDescription="2 Domain Names"
+            />
+        </Modal>
                         </div>
                     </div>
                 </div>

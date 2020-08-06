@@ -1,79 +1,12 @@
 
 .case-study{
-    .feature{
-        text-align: left;
-        line-height: 22px;
-        font: 16px/22px 'Nunito Sans ExtraBold';
-        letter-spacing: 1.6px;
-        color: #F32222;
-        text-transform: uppercase;
-        opacity: 0.5;
-      }
-    
-    .fluid-1{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-        .img-container{
-            background: white;
-            padding: .5rem;
-            height: 112px;
-            width: 112px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            border-radius: 50%;
-            transform: translate(-15px, 33%);
-            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.334);
-        }
-        .repeatgrid{
-            transform: translate(-20%, 25%);
-        }
-       
+    display: flex;
+    border-radius: 12px;
+    color: $color-light;
+    .box{
+        padding: 48px 20% 48px 10%;
     }
-
-    @media (max-width: 991.98px){
-        .fluid-container{
-            max-height: 320px;
-        }
-        
-        .fluid-1{
-            .img-container{
-                
-                padding: .50rem;
-                height: 70px;
-                width: 100px;
-                transform: translate(-15px, 0%);
-                border-radius: 15%;
-                
-            }
-        }
-        .img-lg{
-            object-fit: cover;
-        }
+    img{
         
     }
-    .content{
-       max-height: 160px;
-       overflow: hidden;
-       text-overflow: ellipsis !important;
-        
-    }
-    
-    .readmore{
-        text-align: left;
-        padding: 10px 20px 10px 20px;
-        font-size: 15px;
-        font-family: 'Nunito Sans ExtraBold';
-        letter-spacing: 0px;
-        color: #051133;
-        opacity: 1;
-    }
-    
-   
-    
 }

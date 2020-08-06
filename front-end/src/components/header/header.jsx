@@ -19,7 +19,7 @@ return (
         <div className="p-3 d-flex justify-content-between align-items-center layer-4">
             <div className="d-flex align-items-center">
                 <a href="/">
-                <Image src="/assets/logo.png" className="mr-3"></Image>
+                <Image src="/assets/logo.png" height="48px" className="mr-3"></Image>
                 </a>
                 <Popover closeOnBlur={true} placement="bottom" usePortal initialFocusRef={initRef}>
                     {({ isOpen, onClose }) => (

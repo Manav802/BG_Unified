@@ -13,32 +13,26 @@ class Contact extends Component {
     render(){
         return (
             <>
-            <div className="contact-bg">
-                <div className="position-absolute w-100 overflow-hidden background-svg">
-                    <img className="w-100" src="/assets/images/backgrounds/top_red_polygon.svg" />
-                </div>
-            </div>
             <div className="contact">
                 <Head>
                     <title>Contact us - BG Unified</title>
 
                         <link rel="shortcut icon" href="/assets/images/icons/favicon/bg.ico" type="image/x-icon" />
                 </Head>
+                <div className="position-absolute w-100 overflow-hidden background-svg">
+                        <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
+                    </div>
                 <div className="page-header">
-                   <div className="container">
-                   <div className="row">
-                        <div className="col-lg-5">
-                            <h1 className="page-heading">Contact Us</h1>
-                            <p className="heading-content">Your goto partner for all hosting business solutions and services that deliver value and enable solid business growth.</p>
+                        <div className="container">
+                        <div className="row">
+                            <div className="col-lg-4 offset-lg-4 text-center justify-content-center">
+                                <h1 className="display3">Contact Us</h1>
+                                <p className="">Your go-to partner for all hosting business solutions and services
+                                    that deliver value and enable solid business growth.</p>
+                            </div>
                         </div>
-                        <div className="message-graphics col-lg-6 offset-lg-1 pt-5 d-none d-lg-inline-block">
-                            <img src="/assets/images/vectors/messages.png" alt="messaging" width="95%"/>
-                            <img className="small-shadow" src="/assets/images/vectors/shadow.png" alt="shadow"/>
-                            <img className="large-shadow" src="/assets/images/vectors/shadow.png" alt="shadow" />
                         </div>
                     </div>
-                   </div>
-                </div>
                 <div className="section">
                 <div className="container">
                     <div className="row centered-content">

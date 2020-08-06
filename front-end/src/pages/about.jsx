@@ -22,9 +22,7 @@ class about extends Component {
     render() {
         return (
             <>
-            <div className="position-absolute w-100 overflow-hidden back-cover">
-                <img className="w-100" src="/assets/images/backgrounds/top_red_triangle.svg"/>
-            </div>
+            
             <div className="about">
                 <Head>
                     <title>
@@ -33,12 +31,19 @@ class about extends Component {
 
                         <link rel="shortcut icon" href="/assets/images/icons/favicon/bg.ico" type="image/x-icon" />
                 </Head>
-               <div className="section mt-5">
-                    <div className="container p-0">
-                        <div className="py-5">
-                            <span className="display2">About Us</span>
+                <div className="position-absolute w-100 overflow-hidden background-svg">
+                    <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
+                </div>
+                <div className="page-header">
+                    <div className="container">
+                    <div className="row">
+                        <div className="col-lg-4 offset-lg-4 text-center justify-content-center">
+                            <h1 className="display3">About Us</h1>
                         </div>
                     </div>
+                    </div>
+                </div>
+               <div className="section pt-0">
                     <div className="container-fluid p-0 py-5">
                         <div className="row m-0">
                             <div className="slider-offset p-3"></div>
@@ -126,24 +131,11 @@ class about extends Component {
                        </div>
                    </div>
                </div>
-               <div className="section pt-0">
-                    <div className="col-12 p-0 bg-dark overflow-hidden">
-                        <img src="/assets/images/dividers/divider_white_plain.svg" className="w-100 image-flip" alt=""/>
-                    </div>
-                   <div className="row m-0">
-                       <div className="position-absolute w-100">
-                            <div className="bg-dark w-100 overflow-hidden">
-                                    <img src="/assets/images/vectors/team.png" className="team-image" alt=""/>
-                            </div>
-                            <div className="p-0 w-100 layer-1 bg-dark">
-                                    <img src="/assets/images/dividers/divider_yellow_bottom.svg" className="divider-yellow-with-margin" alt=""/>
-                            </div>
-                       </div>
-                       <div className="layer-4 w-100">
+               <div className="section">
                            <div className="container">
                                <div className="p-3 text-center d-flex flex-column">
                                    <span className="h6 text-primary">TEAM</span>
-                                   <span className="display5 text-white">Meet the Visionary People</span>
+                                   <span className="display5">Meet the Visionary People</span>
                                </div>
                                <div className="row py-2">
                                    <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
@@ -165,12 +157,9 @@ class about extends Component {
                                    <div className="py-5" style={{paddingTop:"100px"}}></div>
                                </div>
                            </div>
-                       </div>
-                   </div>
+                
                </div>
-               <div className="section">
-                   
-               </div>
+        
             </div>
             </>
         );

@@ -1,10 +1,9 @@
 .landing {
     .bg-landing{
         // background: hsla($primary-h, $primary-s, $primary-l, .05);
-        background: $color-dark;
-        background-image: url('/assets/images/backgrounds/hero_doodles.png');
+        background-image: url('/assets/images/backgrounds/dots.png');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
     @media (max-width: 767.98px) {
         .display4 {
@@ -99,10 +98,12 @@
             flex-wrap: wrap;
         }
         img{
-            padding: 1.2rem;
-            opacity: 0.4;
-            filter: grayscale(100%);
-            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            height: 152px;
+            padding: 1.5rem;
+            mix-blend-mode: darken;
+            // opacity: 0.4;
+            // filter: grayscale(100%);
+            // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         }
         @media (max-width: 1080px){
             .marquee {
@@ -155,22 +156,26 @@
         
     }
 
-    .globe-section {
-        background: $color-dark;
+    // .globe-section {
+    //     background: $color-dark;
 
-        .globe-container {
-            max-height: 664px;
-        }
+    //     
 
+        
+
+    //     .divider-bottom {
+    //         z-index: 400;
+    //     }
+    // }
+    .globe-container {
+        display: flex;
+        flex-direction: row-reverse;
         #globe {
-            transform: translateX(128px) translateY(-192px);
-            cursor: grab;
-        }
-
-        .divider-bottom {
-            z-index: 400;
+            margin-top: 32px;
+            cursor: grab !important;
         }
     }
+    
     &-benefits {
         .vector{
             margin-top: calc(100vw/8 - 64px);

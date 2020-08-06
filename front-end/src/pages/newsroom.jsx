@@ -22,26 +22,24 @@ import Link from 'next/link';
                     <link rel="shortcut icon" href="/assets/images/icons/favicon/bg.ico" type="image/x-icon" />
                     </Head>
                     <div className="position-absolute w-100 overflow-hidden background-svg">
-                        <img className="w-100" src="/assets/images/backgrounds/top_red_polygon.svg" />
+                        <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
                     </div>
                     <div className="page-header">
+                        <div className="container">
                         <div className="row">
-                            <div className="col-lg-5">
-                                <h1 className=" page-heading">Newsroom</h1>
-                                <p className="heading-content">Your go-to partner for all hosting business solutions and services
+                            <div className="col-lg-4 offset-lg-4 text-center justify-content-center">
+                                <h1 className="display3">Newsroom</h1>
+                                <p className="">Your go-to partner for all hosting business solutions and services
                                     that deliver value and enable solid business growth.</p>
                             </div>
-                            <div className="phone-graphic col-lg-6 offset-lg-1 d-none d-lg-inline-block">
-                                <img className="phone-news" src="/assets/images/vectors/phone-news.png" alt="phone-news" />
-                                <div className="under-shadow"><img src="/assets/images/vectors/shadow.png" alt="shadow" /></div>
-                            </div>
+                        </div>
                         </div>
                     </div>
                
                 
                 {/* CardWithImage have weird width, bad component, pls fix */}
 
-               <div className="section">
+               <div className="section pt-0">
                <div className="container">
                     <div clasname="row">
                         <div className="col display5 py-2 mt-2">
@@ -66,10 +64,10 @@ import Link from 'next/link';
                         </Link>
                     </div>
                 </div>
-               </div>
+              
                 <div className="container my-4">
                     <div clasname="row my-2">
-                        <div className="col display6">
+                        <div className="col display5">
                             Popular
                         </div>
                     </div>
@@ -91,6 +89,7 @@ import Link from 'next/link';
                         </Link>
                     </div>
                 </div> 
+                </div>
                 </div>
             )
         }

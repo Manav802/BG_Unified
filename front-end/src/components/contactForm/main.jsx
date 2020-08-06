@@ -3,7 +3,7 @@ import {
 FormControl,
 FormLabel,Input,Button,Select
 } from "@chakra-ui/core";
-// import keys from '../../apiKeys';
+import keys from '../../apiKeys';
 class ContactForm extends Component {
   constructor(props) {
     super(props)
@@ -13,7 +13,6 @@ class ContactForm extends Component {
       message: '',
       phone:'',
       subject:''
-      // ServiceChoice:''
     }
     this.onChange = this.onChange.bind(this)
     this.onSubmit = this.onSubmit.bind(this)
@@ -28,7 +27,8 @@ class ContactForm extends Component {
   }
   onSubmit(event) {
     event.preventDefault()
-    fetch(' https://submit-form.com/', {
+    fetch('https://submit-form.com/'+keys.formscript, 
+    {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -98,20 +98,6 @@ class ContactForm extends Component {
             onChange={this.onChange}
           />
         </FormControl>
-        {/* <FormControl mt={"9%"} className="container">
-          <FormLabel>Service Preference:</FormLabel>
-          <Select
-            variant="flushed"
-            placeholder="Select option"
-            name="ServiceChoice"
-            value={this.state.ServiceChoice}
-            onChange={this.onChange}
-          >
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-          </Select>
-        </FormControl> */}
         <FormControl mt={"9%"} className="container" isRequired>
           <FormLabel>Message:</FormLabel>
           <Input 

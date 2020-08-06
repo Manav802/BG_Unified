@@ -1,43 +1,6 @@
 
 .newsroom {
-    .background-svg {
-        z-index: -1;
-        top: 0px !important;
-    }
-    .page-header {
-        margin-left: 15%;
-        @media screen and(min-width:1920px) {
-            margin-left: 20%;
-            margin-top: 5%;
-        }
-        margin-right: 23%;
-        .page-heading{    
-            margin-top: 50%;
-            @extend .display3;
-            font-size: $font-size-3;
-            color: $color-light;
-        }
-        .heading-content{
-            @extend .text-secondary;
-            color: $color-light-2;
-            font-size: 20px;
-        }
-        @media (max-width:992px){
-            .page-heading{
-                color: $color-dark 
-            }
-            .heading-content{
-                color: $color-dark-2
-            }
-        }
-
-        .phone-graphic {
-            margin-top: 16%;
-            .under-shadow{
-                margin-top: 76px;
-            }
-        }
-    }
+    
     .page-content {
         text-align: center;
 

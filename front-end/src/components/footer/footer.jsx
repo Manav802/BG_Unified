@@ -9,7 +9,7 @@ function footer(props) {
             <div className="container">
                 <div className="row pb-4">
                     <div className="col-lg-3 my-3">
-                        <Image src="/assets/logo.png" w="128px"></Image>
+                        <Image src="/assets/logo.png" className="mb-4" h="64px"></Image>
                     
                         <p className="footer-content">Dynamic Team of Creative People, Innovators and Technical Experts. Your partner for all hosting business solutions and services.</p>
                     </div>

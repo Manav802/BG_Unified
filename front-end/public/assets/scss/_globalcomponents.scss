@@ -1,6 +1,7 @@
 $container-width: 570px;
 body{
     color: $color-dark;
+    background: $color-light;
 }
 //Anchor Tag
 a{
@@ -25,14 +26,25 @@ a:hover{
 .bg-dark{
     background: $color-dark !important;
 }
+.bg-white{
+    background: $color-light !important;
+}
+.bg-light{
+    background: $color-light-2 !important;
+}
+
 .special-div-content{
     margin-top: calc(100vw/-8 - 440px);
 }
 .section{
+    transition: .3s;
     padding: 4rem 0px;
 }
 .image-flip{
     transform: rotateY(180deg);
+}
+.rotate-180{
+    transform: rotate(180deg)
 }
 
 .layer{
@@ -63,8 +75,30 @@ a:hover{
         display: none;
     }
 }
+.background-svg {
+    z-index: -1;
+    top: 0px !important;
+    mix-blend-mode: darken;
+    opacity: .6;
+    img{
+        height: 448px;
+        object-fit: cover;
+    }
+}
+.page-header{
+    margin-top: 80px;
+    height: 256px;
+    padding-top: 48px;
+    display: flex;
+    align-items: center;
+}
 
 .hover-effect:hover{
     cursor: pointer;
     background: hsl($primary-h, 0, 96) !important
+}
+
+.shadow-md{
+   box-shadow: 0 .5rem 1rem hsla(0, 90, 30, 0.140) !important;
+
 }

@@ -169,11 +169,21 @@ class Landing extends Component {
                     
                 </div>
                 <div className="container-fluid p-0">
-                    <img src="/assets/images/dividers/divider_border_invert.svg" className="w-100 divider-img" style={{marginTop:"-24px"}} alt=""/>
-                    <div className="row">
+                    <img src="/assets/images/dividers/divider_border_invert.svg" className="w-100 position-absolute divider-img layer-4" style={{marginTop:"-24px"}} alt=""/>
+                    <div className="container">
+                    <div className="row layer-1">
                         <div className="col-lg-6 globe-container">
-                            <canvas className ="ml-auto mr-auto d-block" id='globe' width="1200" height="1200"></canvas>
+                            <canvas className ="ml-auto mr-auto d-block" id='globe' width="800" height="800"></canvas>
                         </div>
+                        <div className="col-lg-6 p-5 d-flex flex-column justify-content-center">
+                                 <div className="mt-5 text-primary NunitoSans-Bold h6 text-uppercase">
+                                    Reach
+                                </div>
+                                <p className="mb-2 display5">Our Data Center Locations</p>
+                                <h6 className="NunitoSans-SemiBold text-lead text-secondary text-justify">BG Unified Solution is a specialist in Hosted Solutions and Services that helps clients plan, build, support and manage their IT infrastructure. Currently, we have 6 DC locations including Equinix SY3, SY4, ME1, LD3, IBM DC Auckland and GOVDC and planned to increase to 10 POPs by end of the year 2019.
+                                                                        BG Unified Solutions has deep technology skills and proven methodologies to help you leverage leading data center solutions from legacy production systems support to a wide technology lens and multi-vendor solutions. Through our dedicated Data Center Practice, we can help you to choose the best path to embrace transformation from your base infrastructure to achieve your strategic goals. We bring a broad perspective based on demonstrated experience working with many customers in varied environments.</h6>
+                        </div>
+                    </div>
                     </div>
                 </div>
             
@@ -183,59 +193,15 @@ class Landing extends Component {
                     </div>
                 </div>
                 
-
-                <div className="mt-5 row globe-section">
-                    <img src="/assets/images/dividers/divider_white.svg" className="col-12 p-0" alt="" />
+               <div className="section">
+               <div className="container-fluid p-0">
                     <div className="row">
-                        <div className="slider-offset"></div>
-                        <div className="row col mt-3 d-flex align-items-center">
-                            <div className="col-xl-4 col-lg-5 col-md-6 col-8 p-5 text-white">
-                                <div className="text-primary h6 text-uppercase">
-                                    Reach
-                                </div>
-                                <p className="my-2 display5 text-white">Our Data Center Locations</p>
-                                <h6 className="NunitoSans-SemiBold text-lead text-white-50">BG Unified Solution is a specialist in Hosted Solutions and Services that helps clients plan, build, support and manage their IT infrastructure. Currently, we have 6 DC locations including Equinix SY3, SY4, ME1, LD3, IBM DC Auckland and GOVDC and planned to increase to 10 POPs by end of the year 2019.
-                                                                        BG Unified Solutions has deep technology skills and proven methodologies to help you leverage leading data center solutions from legacy production systems support to a wide technology lens and multi-vendor solutions. Through our dedicated Data Center Practice, we can help you to choose the best path to embrace transformation from your base infrastructure to achieve your strategic goals. We bring a broad perspective based on demonstrated experience working with many customers in varied environments.</h6>
-                                {/* <div className="row w-100 mt-4">
-                                    <div className="col-6 p-3">
-                                        <span className="display4 mb-0 text-white">20+</span>
-                                        <h5>Data Locations</h5>
-                                    </div>
-                                    <div className="col-6 p-3">
-                                        <span className="display4 mb-0 text-white">20+</span>
-                                        <h5>Data Locations</h5>
-                                    </div>
-                                    <div className="col-6 p-3">
-                                        <span className="display4 mb-0 text-white">20+</span>
-                                        <h5>Data Locations</h5>
-                                    </div>
-                                    <div className="col-6 p-3">
-                                        <span className="display4 mb-0 text-white">20+</span>
-                                        <h5>Data Locations</h5>
-                                    </div>
-                                </div> */}
-                            </div>
-                            <div className="col-xl-8 col-lg-7 col-md-6 globe-container">
-                                {/* <canvas className ="ml-auto mr-auto d-block" id='globe' width="1200" height="1200"></canvas> */}
-                            </div>
-                        </div>
-                    
-                    </div>
-                    {/* <img src="/assets/images/dividers/divider_white_2.svg" className="w-100 image-flip" alt="" /> */}
-                </div>
-                
-                <div className="container-fluid bg-dark p-0">
-                {/* <div className="position-absolute w-100 d-flex align-items-start">
-                    <img src="/assets/images/dividers/divider_white_plain.svg" className ="image-flip w-100" alt=""/>
-
-                </div> */}
-                    <div className="row pt-5 mb-5 ">
                         <div className="slider-offset"></div>
                         <div className="col p-4">
                             <div className="text-primary h6 text-uppercase">
                                 Testimonials
                             </div>
-                            <p className="mt-2 display5 text-white">What people say about us</p>
+                            <p className="mt-2 display5">What people say about us</p>
                         </div>
                     </div>
                     <div className="row">
@@ -245,31 +211,7 @@ class Landing extends Component {
                     </div>
                     
                 </div>
-                <div className="container-fluid p-0 bg-dark overflow-hidden">
-                    <div className="bg-contact">
-                        <img src="/assets/images/vectors/contact.png" className="contact-image" alt=""/>
-                    </div>
-                    <img src="/assets/images/dividers/divider_yellow_bottom.svg" className="divider-yellow-with-margin w-100 layer-2" alt=""/>
-                </div>
-                <div className="container landing-contact-form py-5">
-                    <div className="row my-5">
-                        <div className="col-md-4 col-12 pt-md-5 third mycard text-white">
-                            <div className="our-services my-2">
-                                Contact Us
-                                </div>
-                            <div className="display6 text-white" style={{ fontSize: "35px" }}>
-                                Let's make IT done
-                                </div>
-                            <div className="cardContent py-3">
-                                Want to get in touch? We’d love to hear from you.  Drop us a message referring to your query or feedback, we’ll get back to you at the earliest. Orthodox long calls and mails also work for us !!
-
-                                </div>
-                        </div>
-                        <div className="offset-lg-2 offset-md-1 py-5 col">
-                          <ContactForm />
-                        </div>
-                    </div>
-                </div>
+               </div>
             </div>
         )
     }

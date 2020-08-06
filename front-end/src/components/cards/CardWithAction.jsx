@@ -4,7 +4,7 @@ import {Image, Box} from "@chakra-ui/core";
 
 function CardWithIcon(props) {
     return (
-        <div className="card-with-action rounded bg-white p-3">
+        <div className="card-with-action rounded bg-white p-3" style={{minHeight:"180px"}} >
                 {props.icon && <div className="row iconbox">
                     <Image src={props.icon} size="48px" color={props.iconColor} />
                 </div>}

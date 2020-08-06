@@ -1,7 +1,21 @@
 .card-with-icon{
     transition: .3s;
+    min-height: 448px;
     .iconbox{
-        padding: 40px 30px 20px 30px;
+        transition: .3s;
+        margin-top: -64px;
+    }
+    .display6{
+        transition: .3s;
+    }
+    .action-btn{
+        padding: 32px 48px !important;
+        background: $color-dark;
+        color: white;
+        border-radius: 0px 12px 0px 12px; 
+    }
+    .action-btn:hover{
+        background: $color-dark-2;
     }
     .cardContent{
         font-size: $font-size-body-1;
@@ -10,5 +24,10 @@
 }
 .card-with-icon:hover{
     cursor: pointer;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    .iconbox{
+        transform: translateY(-24px);
+    }
+    .display6{
+        transform: translateY(-12px);
+    }
 }
