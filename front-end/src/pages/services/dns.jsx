@@ -104,8 +104,8 @@ const { isOpen, onOpen, onClose } = useDisclosure();
         <Button onClick={onOpen} variantColor="primary" size="md">Get a Quote</Button>
         <Modal isOpen={isOpen} onClose={onClose} isCentered size={['lg','xl']}>                          
           <ModalOverlay />
-            <GetaQuoteForm serviceName="DNS as a service"
-            serviceDescription="2 Domain Names"
+            <GetaQuoteForm ServiceName="DNS as a service"
+            ServiceDescription="2 Domain Names"
             />
         </Modal>
                         </div>

@@ -1,11 +1,10 @@
 import React,{Component} from 'react';
 import {
 FormControl,
-FormLabel,Input,Button,Select,
+FormLabel,Input,Button,
 ModalContent,
 ModalHeader,
-ModalBody,
-ModalCloseButton,
+ModalCloseButton
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 class GetaQuoteForm extends Component {
@@ -62,12 +61,12 @@ class GetaQuoteForm extends Component {
                 <input
                   type="hidden"
                   name="serviceName"
-                  value={this.props.serviceName}
+                  value={this.props.ServiceName}
                 />
                 <input
                   type="hidden"
                   name="serviceDescription"
-                  value={this.props.serviceDescription}
+                  value={this.props.ServiceDescription}
                 />
                 <FormControl className="container" isRequired>
                   <FormLabel htmlFor="name">Name:</FormLabel>
