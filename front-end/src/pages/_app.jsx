@@ -9,7 +9,7 @@ import 'flickity/dist/flickity.min.css';
 import '../../public/assets/scss/styles.scss'
 
 import App from 'next/app';
-
+import Head from 'next/head'
 import Router from 'next/router';
 
 // import Loader from '../components/loader/Loader';
@@ -58,10 +58,10 @@ export default class MyApp extends App {
 
       return ( 
         <ThemeProvider theme={customTheme}>		
-        <CSSReset />
-            <Header></Header>
-            <Component {...pageProps} />
-            <Footer></Footer>
+          <CSSReset />
+          <Header></Header>
+          <Component {...pageProps} />
+          <Footer></Footer>
         </ThemeProvider>
     );
     }
