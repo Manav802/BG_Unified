@@ -7,8 +7,10 @@ import CardWithAction from '../components/cards/CardWithAction'
 import FeatureCard from '../components/cards/FeatureCard'
 import CaseStudy from '../components/case_study/CaseStudy'
 import TestimonialCard from '../components/TestimonialCard/TestimonialCard'
+import CaseStudyCard from '../components/case_study_card/CaseStudy'
 import ContactForm from '../components/contactForm/main'
 import {TESTIMONIALS} from '../../public/assets/data/testimonials';
+import {CASESTUDY} from '../../public/assets/data/casestudydata'
 
 
 import Link from 'next/link';
@@ -189,7 +191,7 @@ class Landing extends Component {
             
               <div className="section pb-0">
                     <div className="container my-lg-4 py-lg-3">
-                        <CaseStudy link="read" />
+                        {/* <CaseStudy casestudyDetails={CASESTUDY} link="read" /> */}
                     </div>
                 </div>
                 
