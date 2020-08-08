@@ -15,4 +15,4 @@ export const SEARCH = [
             "Disasterrecovery", "dns", "firewall", "platform", "proxyserver",
         "sdwan", "sip", "storage", "ucaas", "webhosting", "wirelessnetworks"]
     }
-]
+] 
