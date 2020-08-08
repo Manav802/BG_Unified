@@ -1,0 +1,18 @@
+export const SEARCH = [
+    {
+        id: "Blogs",
+        tags:["covidblog", "covid-19", "onlinejournal", "site", "diary", "journal", "record"]
+    },
+    {
+        id: "Pages",
+        tags: ["aboutus", "contactus", "blogs", "dashboard", "services", 
+            "customercare", "article", "newsroom", "solutions",
+        "features"]
+    },
+    {
+        id: "Services",
+        tags: ["services", "infra", "infrastructure", "cloudexchange", 
+            "Disasterrecovery", "dns", "firewall", "platform", "proxyserver",
+        "sdwan", "sip", "storage", "ucaas", "webhosting", "wirelessnetworks"]
+    }
+]
