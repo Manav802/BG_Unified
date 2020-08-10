@@ -21,7 +21,7 @@ export const CASESTUDY = [
         title: "Data Centre Design and Implementation",
         content_p1: "A client had a requirement to consolidate a distributed environment into a single highly available data centre.",
         content_p2: "Analysis into the current-state highlighted over 50 geographically dispersed sites hosting 250+ separate pieces of infrastructure.",
-        content_p3: "A dual-site, dual-core Data Centre model was developed to provide a highly available central repository for this infrastructure with security overlay providing defined zones for controlled and internet-facing services.",
+        content_p3_: "A dual-site, dual-core Data Centre model was developed to provide a highly available central repository for this infrastructure with security overlay providing defined zones for controlled and internet-facing services.",
         content_p4: "Some 24x7 workloads were protected by the deployment of self-healing network topologies and highly available virtualized infrastructure.",
         content_p6: "Optimizing storage resources was essential to controlling the cost of data growth. The Enterprise Storage Assessment provided in-depth reports and recommendations for improving storage efficiency, performance, and availability. Findings were linked to their specific risks and benefits—so that they can scale their storage systems to successfully serve the growing needs of their business. And while there are commonalities that allow for pre-packaged solutions, every data centre is different.",
         content_p7: "Our experienced, certified storage professionals and data centre practice team are adept and helped customers manage change and transform their data centre's to enable next-generation computing models.",

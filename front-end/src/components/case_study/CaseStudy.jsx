@@ -30,10 +30,10 @@ function CaseStudy(props) {
                         <Box>{casestudyDetails.content_p2}</Box>
                     </div>
 
-                    {/* <div>
+                    <div>
                         <Box>{casestudyDetails.content_p3}</Box>
                     </div>
-
+                    {/*
                     <div>
                         <Box>{casestudyDetails.content_p4}</Box>
                     </div>
