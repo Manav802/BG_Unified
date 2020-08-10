@@ -66,12 +66,12 @@ function UCaaS(props) {
                        </PricingCard>
                     </div>
                     <div className="col-lg-4 my-3">
-                        <PricingCard title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
+                        <PricingCard title="Dual Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
                             <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Dual Node CUCM");}}>View More</Button>
                         </PricingCard>
                     </div>
                     <div className="col-lg-4 my-3">
-                        <PricingCard className="hover-effect" title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
+                        <PricingCard className="hover-effect" title="Multiple Nodes CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
                             <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Multiple Nodes CUCM");}}>View More</Button>
                         </PricingCard>
                     </div>
