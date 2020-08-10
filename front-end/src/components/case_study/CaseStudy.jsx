@@ -116,16 +116,13 @@ function CaseStudy(props) {
 
         <Slider
                 options={{
-                fadeEffect: { crossFade: true },
                 adaptiveHeight: false,
-                autoPlay: 1500,
                 freeScroll: true,
                 pageDots: false,
-                fade: true,
                 contain: true,
                 draggable: true
                 }}>
-                <div></div>
+                
                 {CasestudyVariable}
             </Slider>
     )
