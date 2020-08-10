@@ -1,11 +1,36 @@
 import React from 'react';
-import {Button,Image, Icon, Box, Tabs, TabList, Tab, TabPanel, TabPanels} from '@chakra-ui/core'
+import {Button, Collapse, Image, Radio, RadioButtonGroup, NumberInput,
+    NumberInputField,
+    NumberInputStepper,
+    NumberIncrementStepper,
+    NumberDecrementStepper,
+Slider, SliderThumb, SliderTrack, SliderFilledTrack} from '@chakra-ui/core'
 import Fade from 'react-reveal/Fade';
 import CardWithIcon from "../../components/cards/CardWithIcon"
+import {PricingCard, PricingQuote} from '../../components/cards/PricingCard'
 import Head from 'next/head'
 import Link from 'next/link'
 
+const CustomRadio = React.forwardRef((props, ref) => {
+    const { isChecked, isDisabled, value, ...rest } = props;
+    return (
+      <Button
+        ref={ref}
+        variant={isChecked ? "solid" : "outline"}
+        variantColor={isChecked ? "primary" : "gray.300"}
+        aria-checked={isChecked}
+        role="radio"
+        isDisabled={isDisabled}
+        {...rest}
+      />
+    );
+  });
+
 function UCaaS(props) {
+    const [show, setShow] = React.useState(false);
+    const openControls = () => setShow(true);
+    const [value, setValue] = React.useState(0);
+    const handleChange = value => setValue(value);
     return (
         <div>
             <Head>
@@ -25,153 +50,107 @@ function UCaaS(props) {
         </div>
         <div className="section">
             <div className="container">
-                <div className="row">
-                    <div className="col-lg-10 offset-lg-1">
-                    <Tabs align="center">
-                        <TabList>
-                            <Tab className="p-3 px-4 display6">Private</Tab>
-                            <Tab className="p-3 px-4 display6">Virtual</Tab>
-                            <Tab className="p-3 px-4 display6">Other</Tab>
-                        </TabList>
-
-                        <TabPanels>
-                        
-                            <TabPanel className="py-2">
-                            <Fade duration={500} distance={"30%"} bottom >
-                                <div className="row justify-content-center">
-                                    <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/firewall_physical.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Physical 1G</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/physical_cluster.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Physical Cluster 1G</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </Fade>
-                            </TabPanel>
-                            
-                            <TabPanel className="py-2">
-                            <Fade duration={500} distance={"30%"} bottom >
-                            <div className="row justify-content-center">
-                                    <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/firewall_virtual.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Virtual 1G</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/virtual_cluster.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Virtual Cluster 1G</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                                <div className="row justify-content-center">
-                                    <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/firewall_virtual.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Virtual 10G</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/virtual_cluster.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Virtual Cluster 10G</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </Fade>
-                            </TabPanel>
-                            <TabPanel className="py-2">
-                            <Fade duration={500} distance={"30%"}  bottom >
-                            <div className="row justify-content-center">
-                                    <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/firewall_virtual.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">MAC</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/firewall_virtual.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Emergency Change</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                                </Fade>
-                            </TabPanel>
-                        </TabPanels>
-                    </Tabs>
+                <div className="row px-lg-5 px-3">
+                    <div className="col-lg-4 my-3">
+                        <PricingCard  title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
+                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
+                       </PricingCard>
                     </div>
+                    <div className="col-lg-4 my-3">
+                        <PricingCard title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
+                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
+                        </PricingCard>
+                    </div>
+                    <div className="col-lg-4 my-3">
+                        <PricingCard className="hover-effect" title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
+                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
+                        </PricingCard>
+                    </div>
+                </div>
+                <div>
+                    <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
+                        <div className="px-4 py-5 border">
+                            <div className="display5 text-center">Single Node CUCM</div>
+                            <div className="row px-3">
+                                <div className="col-lg-12 mt-2">
+                                    <div className="h6">Choose a type</div>
+                                    <RadioButtonGroup defaultValue="rad2" mt={4} isInline>
+                                        <CustomRadio value="rad1">CustomRadio 1</CustomRadio>
+                                        <CustomRadio value="rad2">CustomRadio 2</CustomRadio>
+                                        <CustomRadio value="rad3">CustomRadio 3</CustomRadio>
+                                    </RadioButtonGroup>
+                                </div>
+                                <div className="col-lg-5 mt-4">
+                                    <div className="h6">Total UCaaS</div>
+                                    <NumberInput defaultValue={0} min={0} max={20}>
+                                    <NumberInputField className="bg-light" />
+                                    <NumberInputStepper>
+                                        <NumberIncrementStepper />
+                                        <NumberDecrementStepper />
+                                    </NumberInputStepper>
+                                    </NumberInput>
+                                </div>
+                                <div className="col-lg-5 offset-lg-1 mt-4">
+                                    <div className="h6">Additional Hunt Groups</div>
+                                    <NumberInput defaultValue={0} min={0} max={20}>
+                                    <NumberInputField className="bg-light" />
+                                    <NumberInputStepper>
+                                        <NumberIncrementStepper />
+                                        <NumberDecrementStepper />
+                                    </NumberInputStepper>
+                                    </NumberInput>
+                                </div>
+                                <div className="col-lg-3 mt-4">
+                                    <div className="h6">NUM-10</div>
+                                    <NumberInput defaultValue={0} min={0} max={20}>
+                                    <NumberInputField className="bg-light" />
+                                    <NumberInputStepper>
+                                        <NumberIncrementStepper />
+                                        <NumberDecrementStepper />
+                                    </NumberInputStepper>
+                                    </NumberInput>
+                                </div>
+                                <div className="col-lg-3 offset-lg-1 mt-4">
+                                    <div className="h6">NUM-50</div>
+                                    <NumberInput defaultValue={0} min={0} max={20}>
+                                    <NumberInputField className="bg-light" />
+                                    <NumberInputStepper>
+                                        <NumberIncrementStepper />
+                                        <NumberDecrementStepper />
+                                    </NumberInputStepper>
+                                    </NumberInput>
+                                </div>
+                                <div className="col-lg-3 offset-lg-1 mt-4">
+                                    <div className="h6">NUM-100</div>
+                                    <NumberInput defaultValue={0} min={0} max={20}>
+                                    <NumberInputField className="bg-light" />
+                                    <NumberInputStepper>
+                                        <NumberIncrementStepper />
+                                        <NumberDecrementStepper />
+                                    </NumberInputStepper>
+                                    </NumberInput>
+                                </div>
+                                <div className="col-lg-11 mt-4">
+                                    <div className="h6">Extra VMs</div>
+                                    <Slider color="primary" defaultValue={30} value={value} onChange={handleChange}>
+                                        <SliderTrack h="16px" borderRadius="8px" />
+                                        <SliderFilledTrack h="16px" borderRadius="8px" />
+                                        <SliderThumb
+                                                    className="shadow-md" 
+                                                    fontSize="md"
+                                                    fontWeight="800"
+                                                    width="auto"
+                                                    padding="8px"
+                                                    height="32px"
+                                                    children={value} />
+                                    </Slider>
+                                </div>
+                                <div className="col-lg-12 mt-4 d-flex justify-content-center">
+                                    <PricingQuote button serviceName="Unified Communications As A Service" serviceDescription="Single Node CUCM, 100-50 SIP, 3 UCaaS, 2 Hunt Groups"></PricingQuote>
+                                </div>
+                            </div>
+                        </div>
+                    </Collapse>
                 </div>
             </div>
         </div>
