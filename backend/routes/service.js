@@ -1,15 +1,11 @@
 const express = require('express')
+const { iaasCostLicense, iaasCostCustom } = require('../controllers/service')
 const Router = express.Router()
 
-const successMessage = {
-  progService: "In Progress for service"
-}
 
-//Testing API
-Router.get('/get',async (req, res)=>{
- 
-  res.send(successMessage.progService)    
-   
-})
+//for non  custom
+Router.post('/iaas/serviceCharge',iaasCostLicense)
+//for custom
+Router.post('/iasss/custom/serviceCharge',iaasCostCustom)
 
 module.exports = Router
