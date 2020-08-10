@@ -30,7 +30,7 @@ function CaseStudy(props) {
                         <Box>{casestudyDetails.content_p2}</Box>
                     </div>
 
-                    <div>
+                    {/* <div>
                         <Box>{casestudyDetails.content_p3}</Box>
                     </div>
 
@@ -56,7 +56,7 @@ function CaseStudy(props) {
 
                     <div>
                         <Box>{casestudyDetails.content_p9}</Box>
-                    </div>
+                    </div> */}
 
                     <div className="ml-3">
                     <Box>
@@ -71,7 +71,7 @@ function CaseStudy(props) {
                     </Box>
                     </div>
 
-                    <div>
+                    {/* <div>
                         <Box>{casestudyDetails.content_after_list_p1}</Box>
                     </div>
 
@@ -85,7 +85,7 @@ function CaseStudy(props) {
 
                     <div>
                         <Box>{casestudyDetails.content_after_list_p4}</Box>
-                    </div>
+                    </div> */}
                     
                     <div>
                         <Box><Button variant="outline" rightIcon="arrow-forward" size="lg" className="btn btn-outline-light mt-4">Read More</Button></Box>
@@ -122,7 +122,7 @@ function CaseStudy(props) {
                 contain: true,
                 draggable: true
                 }}>
-                
+                <div></div>
                 {CasestudyVariable}
             </Slider>
     )
