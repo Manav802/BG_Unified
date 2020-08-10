@@ -1,15 +1,95 @@
 import React from 'react';
-import {Button, Collapse, Image, Radio, RadioButtonGroup, NumberInput,
+import TransitionGroup from 'react-transition-group/TransitionGroup';
+import {Button,Box, Collapse, Image, Tabs, TabList, TabPanels, Tab, TabPanel, RadioButtonGroup, NumberInput,
     NumberInputField,
     NumberInputStepper,
     NumberIncrementStepper,
     NumberDecrementStepper,
-Slider, SliderThumb, SliderTrack, SliderFilledTrack} from '@chakra-ui/core'
+    Drawer,
+    Switch, FormLabel,
+  DrawerBody,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+    useDisclosure,
+Slider, SliderThumb, SliderTrack, SliderFilledTrack, Icon} from '@chakra-ui/core'
 import Fade from 'react-reveal/Fade';
+import {FaWindows, FaServer, FaDatabase} from "react-icons/fa"
+import {MdBuild, MdSettings} from "react-icons/md"
 import CardWithIcon from "../../components/cards/CardWithIcon"
 import {PricingCard, PricingQuote} from '../../components/cards/PricingCard'
 import Head from 'next/head'
 import Link from 'next/link'
+
+const tabs = [
+    {
+        index: 0,
+        title: "Base Server",
+        icon: FaServer
+    },
+    {
+        index: 1,
+        title: "Windows 10",
+        icon: FaWindows
+    },
+    {
+        index: 2,
+        title: "Windows 2016 Standard",
+        icon: FaWindows
+    },
+    {
+        index: 3,
+        title: "Windows 2016 DC",
+        icon: FaWindows
+    },
+    {
+        index: 4,
+        title: "Dedicated DB Server",
+        icon: FaDatabase
+    }
+
+]
+
+const plans = [
+    {
+        index: 0,
+        name: "Standard",
+        icon: "/assets/images/icons/theme/firewall_physical.svg" ,
+        feature: ["2vCPU","80GB SSD Storage", "4GB RAM", "Desktop Virtualization", "High Availabilty", "High Clustering" ],
+        cpu: 2,
+        storage: 80,
+        ram: 4
+    },
+    {
+        index: 1,
+        name: "Premium",
+        icon: "/assets/images/icons/theme/firewall_physical.svg" ,
+        feature: ["4vCPU","80GB SSD Storage", "6GB RAM", "Desktop Virtualization", "High Availabilty", "High Clustering" ],
+        cpu: 4,
+        storage: 80,
+        ram: 6
+    },
+    {
+        index: 2,
+        name: "Gold",
+        icon: "/assets/images/icons/theme/firewall_physical.svg" ,
+        feature: ["6vCPU","80GB SSD Storage", "8GB RAM", "Desktop Virtualization", "High Availabilty", "High Clustering" ],
+        cpu: 6,
+        storage: 80,
+        ram: 8
+    },
+    {
+        index: 3,
+        name: "Platinum",
+        icon: "/assets/images/icons/theme/firewall_physical.svg" ,
+        feature: ["8vCPU","80GB SSD Storage", "16GB RAM", "Desktop Virtualization", "High Availabilty", "High Clustering" ],
+        cpu: 8,
+        storage: 80,
+        ram: 16
+    }
+]
+
+
 
 const CustomRadio = React.forwardRef((props, ref) => {
     const { isChecked, isDisabled, value, ...rest } = props;
@@ -27,10 +107,50 @@ const CustomRadio = React.forwardRef((props, ref) => {
   });
 
 function main(props) {
+
+    //Hooks
+    const [planName, setPlan] = React.useState("Standard");
+    const handlePlan = (name) => setPlan(name)
+
+    const { isOpen, onOpen, onClose } = useDisclosure();
+    
     const [show, setShow] = React.useState(false);
     const openControls = () => setShow(true);
-    const [value, setValue] = React.useState(0);
-    const handleChange = value => setValue(value);
+
+    const [storage, setStorage] = React.useState(0);
+    const handleStorage = storage => setStorage(storage);
+
+    const [ram, setRam] = React.useState(0);
+    const handleRam = ram => setRam(ram);
+
+    const [cpu, setCPU] = React.useState(0);
+
+    const [tabIndex, setTabIndex] = React.useState(0);
+    const handleTabsChange = index => {setTabIndex(index);};
+
+    //Panels
+    const tabPanel = (
+        <TabPanel className="py-2">
+            <div className="row justify-content-center">
+                {plans.map(plan => {
+                    return (
+                        <div key={plan.index} className="col-lg-3 col-md-6 px-1 my-3">
+                            <Fade duration={500} distance={"30%"} bottom >
+                                <PricingCard icon={plan.icon} title={plan.name} featureList={plan.feature}>
+                                    <Button className="mt-3" variant="solid" variantColor="primary" onClick={() => {
+                                        handlePlan(plan.name)
+                                        openControls()
+                                    }}>Customize</Button>
+                                </PricingCard>
+                            </Fade>
+                        </div>
+                    )
+                })}
+            </div>
+        </TabPanel>
+    )
+
+
     return (
         <div>
             <Head>
@@ -50,89 +170,84 @@ function main(props) {
         </div>
         <div className="section">
             <div className="container">
-                <div className="row px-lg-5 px-3">
-                    <div className="col-lg-4 my-3">
-                        <PricingCard  title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
-                       </PricingCard>
-                    </div>
-                    <div className="col-lg-4 my-3">
-                        <PricingCard title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
-                        </PricingCard>
-                    </div>
-                    <div className="col-lg-4 my-3">
-                        <PricingCard className="hover-effect" title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
-                        </PricingCard>
-                    </div>
+                <div className="row justify-content-center">
+                    <Button onClick={onOpen} className="tab-dropdown" size="lg" py="32px" mb="12px" px="48px" rightIcon="chevron-down"><Box as={tabs[tabIndex].icon} size="32px" mr="12px" ></Box>{tabs[tabIndex].title}</Button>
+                    <Drawer placement="bottom" size="lg" onClose={onClose} isOpen={isOpen}>
+                        <DrawerOverlay />
+                        <DrawerContent>
+                        <DrawerHeader borderBottomWidth="1px">Choose a opearing system</DrawerHeader>
+                        <DrawerBody>
+                        {tabs.map(tab => {
+                                return (
+                                    <>
+                                        <Button key={tab.index} onClick={() => {
+                                            setTabIndex(tab.index);
+                                            onClose();
+                                        }} variantColor="white" py="32px" className="box-none text-dark justify-content-start hover-effect w-100 display6"><Box as={tab.icon} size="32px" mr="12px" ></Box> {tab.title}</Button>
+                                    </>
+                                )
+                            })}
+                            
+                        </DrawerBody>
+                        </DrawerContent>
+                    </Drawer>
                 </div>
+            </div>
+            <Tabs align="center" index={tabIndex} onChange={handleTabsChange}>
+                        <TabList>
+                            {tabs.map(tab => {
+                                return (
+                                    <>
+                                        <Tab key={tab.index} onClick={() => {setTabIndex(tab.index)}} className={"box-none tab display6 " + (tabIndex === tab.index && "tab-selected")}><Box as={tab.icon} size="32px" mr="12px" ></Box> {tab.title}</Tab>
+                                    </>
+                                )
+                            })}
+                        </TabList>
+                        <div className="container">
+                        <TabPanels>
+                            <TabPanel className="py-2">
+                            <div className="row justify-content-center">
+                                <div className="col-lg-4 my-3">
+                                    <Fade duration={500} distance={"30%"} bottom >
+                                        <PricingCard icon="/assets/images/icons/theme/firewall_physical.svg" title="Standard" featureList={["2vCPU","80GB SSD Storage", "4GB RAM", "Desktop Virtualization", "High Availabilty", "High Clustering" ]}>
+                                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>Get a quote</Button>
+                                        </PricingCard>
+                                    </Fade>
+                                </div>
+                                <div className="col-lg-4 my-3">
+                                    <Fade duration={500} distance={"30%"} bottom >
+                                        <PricingCard icon="/assets/images/icons/theme/firewall_physical.svg" title="Premium" featureList={["4vCPU","80GB SSD Storage", "6GB RAM", "Desktop Virtualization", "High Availabilty", "High Clustering" ]}>
+                                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>Get a quote</Button>
+                                        </PricingCard>
+                                    </Fade>
+                                </div>
+                            </div>
+                            </TabPanel>
+                            {tabPanel}
+                            {tabPanel}
+                            {tabPanel}
+                            {tabPanel}
+                        </TabPanels>
+                        </div>
+                    </Tabs>
                 <div>
+                    <div className="container">
                     <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
                         <div className="px-4 py-5 border">
-                            <div className="display5 text-center">Single Node CUCM</div>
+                            <div className="display5 text-center">{tabs[tabIndex].title} ({planName})</div>
                             <div className="row px-3">
-                                <div className="col-lg-12 mt-2">
+                                { tabIndex === 4 && <div className="col-lg-12 mt-2">
                                     <div className="h6">Choose a type</div>
                                     <RadioButtonGroup defaultValue="rad2" mt={4} isInline>
-                                        <CustomRadio value="rad1">CustomRadio 1</CustomRadio>
-                                        <CustomRadio value="rad2">CustomRadio 2</CustomRadio>
-                                        <CustomRadio value="rad3">CustomRadio 3</CustomRadio>
+                                        <CustomRadio value="rad1">Daily Backups</CustomRadio>
+                                        <CustomRadio value="rad2">Hourly Snapshots</CustomRadio>
                                     </RadioButtonGroup>
                                 </div>
-                                <div className="col-lg-5 mt-4">
-                                    <div className="h6">Total UCaaS</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
-                                <div className="col-lg-5 offset-lg-1 mt-4">
-                                    <div className="h6">Additional Hunt Groups</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
-                                <div className="col-lg-3 mt-4">
-                                    <div className="h6">NUM-10</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
-                                <div className="col-lg-3 offset-lg-1 mt-4">
-                                    <div className="h6">NUM-50</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
-                                <div className="col-lg-3 offset-lg-1 mt-4">
-                                    <div className="h6">NUM-100</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
-                                <div className="col-lg-11 mt-4">
-                                    <div className="h6">Extra VMs</div>
-                                    <Slider color="primary" defaultValue={30} value={value} onChange={handleChange}>
+
+                                }
+                                <div className="col-lg-12 mt-4">
+                                    <div className="h6">Extend Storage</div>
+                                    <Slider color="primary" my="24px" defaultValue={0} min={0} max={22} value={storage} onChange={handleStorage}>
                                         <SliderTrack h="16px" borderRadius="8px" />
                                         <SliderFilledTrack h="16px" borderRadius="8px" />
                                         <SliderThumb
@@ -142,17 +257,55 @@ function main(props) {
                                                     width="auto"
                                                     padding="8px"
                                                     height="32px"
-                                                    children={value} />
+                                                    children={80 + (storage * 8) + " GB"} />
                                     </Slider>
                                 </div>
-                                <div className="col-lg-12 mt-4 d-flex justify-content-center">
+                                <div className="col-lg-12 mt-4">
+                                    <div className="h6">Additional Memory</div>
+                                    <Slider color="primary" my="24px" defaultValue={0} max="64" value={ram} onChange={handleRam}>
+                                        <SliderTrack h="16px" borderRadius="8px" />
+                                        <SliderFilledTrack h="16px" borderRadius="8px" />
+                                        <SliderThumb
+                                                    className="shadow-md" 
+                                                    fontSize="md"
+                                                    fontWeight="800"
+                                                    width="auto"
+                                                    padding="8px"
+                                                    height="32px"
+                                                    children={ram + " GB"} />
+                                    </Slider>
+                                </div>
+                                {tabIndex < 4 && <div className="col-lg-6 mt-4">
+                                <div className="d-flex">
+                                    <Switch id="daily-backups" />
+                                    <FormLabel ml="12px" htmlFor="daily-bakups">Enable Daily Backups</FormLabel>
+                                </div>
+                                </div>}
+                                {tabIndex < 4 && <div className="col-lg-6 mt-4">
+                                <div className="d-flex">
+                                    <Switch id="license" />
+                                    <FormLabel ml="12px" htmlFor="license">I have a Windows license</FormLabel>
+                                </div>
+                                </div>}
+                                <div className="col-lg-6 mt-4">
+                                    <div className="h6">Additional vCPUs</div>
+                                    <NumberInput maxWidth="160px" min={0} max={20} value={cpu} onChange={setCPU}>
+                                    <NumberInputField className="bg-light" />
+                                    <NumberInputStepper>
+                                        <NumberIncrementStepper />
+                                        <NumberDecrementStepper />
+                                    </NumberInputStepper>
+                                    </NumberInput>
+                                </div>
+                                
+                                <div className="col-lg-6 mt-4 py-3 d-flex justify-content-end align-items-center">
                                     <PricingQuote button ></PricingQuote>
                                 </div>
                             </div>
                         </div>
                     </Collapse>
+                    </div>
                 </div>
-            </div>
         </div>
 
         <div className="section py-0">
