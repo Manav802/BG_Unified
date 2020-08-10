@@ -19,18 +19,46 @@ function CaseStudy(props) {
                     </div>
 
                     <div className='display4 text-white'>
-                    <Box>
-                        {casestudyDetails.title}
-                    </Box>
+                        <Box>{casestudyDetails.title}</Box>
                     </div>
 
                     <div>
-                    <Box>
-                        {casestudyDetails.content}
-                    </Box>
+                        <Box>{casestudyDetails.content_p1}</Box>
                     </div>
 
-                    <div className="ml-5">
+                    <div>
+                        <Box>{casestudyDetails.content_p2}</Box>
+                    </div>
+
+                    <div>
+                        <Box>{casestudyDetails.content_p3}</Box>
+                    </div>
+
+                    <div>
+                        <Box>{casestudyDetails.content_p4}</Box>
+                    </div>
+
+                    <div>
+                        <Box>{casestudyDetails.content_p5}</Box>
+                    </div>
+
+                    <div>
+                        <Box>{casestudyDetails.content_p6}</Box>
+                    </div>
+
+                    <div>
+                        <Box>{casestudyDetails.content_p7}</Box>
+                    </div>
+
+                    <div>
+                        <Box>{casestudyDetails.content_p8}</Box>
+                    </div>
+
+                    <div>
+                        <Box>{casestudyDetails.content_p9}</Box>
+                    </div>
+
+                    <div className="ml-3">
                     <Box>
                         <ul className="list-unstyled">
                             <li>{casestudyDetails.list_item_1}</li>
@@ -44,33 +72,23 @@ function CaseStudy(props) {
                     </div>
 
                     <div>
-                    <Box>
-                        {casestudyDetails.content_after_list_p1}
-                    </Box>
+                        <Box>{casestudyDetails.content_after_list_p1}</Box>
                     </div>
 
                     <div>
-                    <Box>
-                        {casestudyDetails.content_after_list_p2}
-                    </Box>
+                        <Box>{casestudyDetails.content_after_list_p2}</Box>
                     </div>
 
                     <div>
-                    <Box>
-                        {casestudyDetails.content_after_list_p3}
-                    </Box>
+                        <Box>{casestudyDetails.content_after_list_p3}</Box>
                     </div>
 
                     <div>
-                    <Box>
-                        {casestudyDetails.content_after_list_p4}
-                    </Box>
+                        <Box>{casestudyDetails.content_after_list_p4}</Box>
                     </div>
                     
                     <div>
-                    <Box>
-                        <Button variant="outline" rightIcon="arrow-forward" size="lg" className="btn btn-outline-light mt-4">Read More</Button>
-                    </Box>
+                        <Box><Button variant="outline" rightIcon="arrow-forward" size="lg" className="btn btn-outline-light mt-4">Read More</Button></Box>
                     </div>
                 
                 </Box>
