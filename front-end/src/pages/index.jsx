@@ -191,7 +191,7 @@ class Landing extends Component {
             
               <div className="section pb-0">
                     <div className="container my-lg-4 py-lg-3">
-                        {/* <CaseStudy casestudyDetails={CASESTUDY} link="read" /> */}
+                        <CaseStudy casestudyDetails={CASESTUDY} link="read" />
                     </div>
                 </div>
                 
