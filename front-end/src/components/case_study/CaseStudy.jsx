@@ -13,7 +13,7 @@ function CaseStudy(props) {
     {
         return(
             <div key={casestudyDetails.id} className="col-lg-10 p-2 my-3">
-                 <Box bg="#2280BF" className="px-4 py-2 case-study-slider"  rounded="lg" boxShadow="md" overflow="hidden">   
+                 <Box bg="#2280BF" className="px-4 py-2 case-study"  rounded="lg" boxShadow="md" overflow="hidden" >   
                     <div>
                         <h6 className="h6 NunitoSans-Bold pt-4 pb-2 text-white-50">FEATURED CASE STUDY</h6>
                     </div>
@@ -118,11 +118,12 @@ function CaseStudy(props) {
                 options={{
                 fadeEffect: { crossFade: true },
                 adaptiveHeight: false,
+                autoPlay: 1500,
                 freeScroll: true,
                 pageDots: false,
+                fade: true,
                 contain: true,
                 draggable: true
-                
                 }}>
                 <div></div>
                 {CasestudyVariable}

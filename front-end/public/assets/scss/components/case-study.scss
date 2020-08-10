@@ -1,16 +1,9 @@
-
 .case-study{
-    display: flex;
     border-radius: 12px;
     color: $color-light;
-    .box{
-        padding: 48px 20% 48px 10%;
-    }
-    img{
-        
-    }
-    
-}
-.case-study-slider{
     min-height: 700px;
+    transform: scale(0.9);
+    opacity: 1 !important;
+    // &:not(.swiper-slide-active)
+    //     { opacity: 0 !important; }
 }
