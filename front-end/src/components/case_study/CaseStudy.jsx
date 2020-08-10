@@ -9,32 +9,67 @@ import Slider from 'react-flickity-component'
 import Link from 'next/link';
 
 function CaseStudy(props) {
-    const CasestudyVariable = this.props.CasestudyVariable.map((casestudyDetails)=>
+    const CasestudyVariable = props.casestudyDetails.map((casestudyDetails)=>
     {
         return(
-            <div key={casestudyDetails.id} className="col-lg-7 p-2 my-3">
-                 <Box className="px-4 py-2 testimonialSlider"  rounded="lg" bg="white" boxShadow="md" overflow="hidden">   
+            <div key={casestudyDetails.id} className="col-lg-10 p-2 my-3">
+                 <Box bg="#2280BF" className="px-4 py-2 case-study-slider"  rounded="lg" boxShadow="md" overflow="hidden">   
                     <div className='ml-3 mt-4'>
-                        <img src={casestudyDetails.imageUrl} style={{height:'64px'}} alt=""/>
+                        <h6 className="h6 NunitoSans-Bold pt-4 pb-2 text-white-50">FEATURED CASE STUDY</h6>
                     </div>
 
-                    <div className='mt-1 mr-3 ml-3'>
-                    <Box mt="3" className="text-justify">
-                        {casestudyDetails.paragraph}
-                        <Box as="span" color="gray.600" fontSize="sm">
-                        </Box>
+                    <div className='ml-3 display4 text-white'>
+                    <Box>
+                        {casestudyDetails.title}
                     </Box>
                     </div>
 
-                    <div className='mt-3 ml-3'>
-                    <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight" isTruncated>
-                        {casestudyDetails.author}
+                    <div className='mt-2 ml-3'>
+                    <Box>
+                        {casestudyDetails.content}
+                    </Box>
+                    </div>
+
+                    <div className="ml-5">
+                    <Box>
+                        <ul className="list-unstyled">
+                            <li>{casestudyDetails.list_item_1}</li>
+                            <li>{casestudyDetails.list_item_2}</li>
+                            <li>{casestudyDetails.list_item_3}</li>
+                            <li>{casestudyDetails.list_item_4}</li>
+                            <li>{casestudyDetails.list_item_5}</li>
+                            <li>{casestudyDetails.list_item_6}</li>
+                        </ul>
+                    </Box>
+                    </div>
+
+                    <div className='mt-1 ml-3'>
+                    <Box>
+                        {casestudyDetails.content_after_list_p1}
+                    </Box>
+                    </div>
+
+                    <div className='mt ml-3'>
+                    <Box>
+                        {casestudyDetails.content_after_list_p2}
+                    </Box>
+                    </div>
+
+                    <div className='mt ml-3'>
+                    <Box>
+                        {casestudyDetails.content_after_list_p3}
+                    </Box>
+                    </div>
+
+                    <div className='mt ml-3'>
+                    <Box>
+                        {casestudyDetails.content_after_list_p4}
                     </Box>
                     </div>
                     
                     <div className="mb-auto ml-3 ">
-                    <Box as="span" color="gray.600" fontSize="sm">
-                        {casestudyDetails.CompanyName}
+                    <Box className="mb-3">
+                        <Button variant="outline" rightIcon="arrow-forward" size="lg" className="btn btn-outline-light mt-4">Read More</Button>
                     </Box>
                     </div>
                 
@@ -69,7 +104,7 @@ function CaseStudy(props) {
                 contain: true,
                 draggable: true
                 }}>
-                <div className="slider-offset"></div>
+                <div></div>
                 {CasestudyVariable}
             </Slider>
     )
