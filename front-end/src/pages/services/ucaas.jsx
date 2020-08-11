@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {Button, Collapse, Image, Radio, RadioButtonGroup, NumberInput,
     NumberInputField,
     NumberInputStepper,
@@ -27,10 +27,19 @@ const CustomRadio = React.forwardRef((props, ref) => {
   });
 
 function UCaaS(props) {
+    const [node, setNode] = useState("");
+    const [type, setType] = useState("20-10 SIP");
+    const [totalUcaas, setTotalUcaas] = useState(0);
+    const [hunts, setHunts] = useState(0);
+    const [num10, setNum10] = useState(0);
+    const [num50, setNum50] = useState(0);
+    const [num100, setNum100] = useState(0);
+    const [extraVM, setExtraVM] = useState(0);
     const [show, setShow] = React.useState(false);
     const openControls = () => setShow(true);
     const [value, setValue] = React.useState(0);
-    const handleChange = value => setValue(value);
+    const handleChange = value => {setValue(value); setExtraVM(value);} 
+    
     return (
         <div>
             <Head>
@@ -53,36 +62,38 @@ function UCaaS(props) {
                 <div className="row px-lg-5 px-3">
                     <div className="col-lg-4 my-3">
                         <PricingCard  title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
+                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Single Node CUCM");}}>View More</Button>
                        </PricingCard>
                     </div>
                     <div className="col-lg-4 my-3">
-                        <PricingCard title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
+                        <PricingCard title="Dual Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
+                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Dual Node CUCM");}}>View More</Button>
                         </PricingCard>
                     </div>
                     <div className="col-lg-4 my-3">
-                        <PricingCard className="hover-effect" title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
+                        <PricingCard className="hover-effect" title="Multiple Nodes CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
+                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Multiple Nodes CUCM");}}>View More</Button>
                         </PricingCard>
                     </div>
                 </div>
                 <div>
                     <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
                         <div className="px-4 py-5 border">
-                            <div className="display5 text-center">Single Node CUCM</div>
+                            <div className="display5 text-center">{node}</div>
                             <div className="row px-3">
                                 <div className="col-lg-12 mt-2">
                                     <div className="h6">Choose a type</div>
-                                    <RadioButtonGroup defaultValue="rad2" mt={4} isInline>
-                                        <CustomRadio value="rad1">CustomRadio 1</CustomRadio>
-                                        <CustomRadio value="rad2">CustomRadio 2</CustomRadio>
-                                        <CustomRadio value="rad3">CustomRadio 3</CustomRadio>
+                                    <RadioButtonGroup onChange={value => setType(value)} defaultValue="20-10 SIP" mt={4} isInline>
+                                        <CustomRadio value="10-5 SIP">UCAAS-10-5SIP</CustomRadio>
+                                        <CustomRadio value="20-10 SIP">UCAAS-20-10SIP</CustomRadio>
+                                        <CustomRadio value="30-20 SIP">UCAAS-30-20SIP</CustomRadio>
+                                        <CustomRadio value="50-30 SIP">UCAAS-50-30SIP</CustomRadio>
+                                        <CustomRadio value="100-50 SIP">UCAAS-100-50SIP</CustomRadio>
                                     </RadioButtonGroup>
                                 </div>
                                 <div className="col-lg-5 mt-4">
                                     <div className="h6">Total UCaaS</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
+                                    <NumberInput onChange={value => setTotalUcaas(value)} defaultValue={0} min={0} max={20}>
                                     <NumberInputField className="bg-light" />
                                     <NumberInputStepper>
                                         <NumberIncrementStepper />
@@ -92,7 +103,7 @@ function UCaaS(props) {
                                 </div>
                                 <div className="col-lg-5 offset-lg-1 mt-4">
                                     <div className="h6">Additional Hunt Groups</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
+                                    <NumberInput onChange={value => setHunts(value)} defaultValue={0} min={0} max={20}>
                                     <NumberInputField className="bg-light" />
                                     <NumberInputStepper>
                                         <NumberIncrementStepper />
@@ -102,7 +113,7 @@ function UCaaS(props) {
                                 </div>
                                 <div className="col-lg-3 mt-4">
                                     <div className="h6">NUM-10</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
+                                    <NumberInput onChange={value => setNum10(value)} defaultValue={0} min={0} max={20}>
                                     <NumberInputField className="bg-light" />
                                     <NumberInputStepper>
                                         <NumberIncrementStepper />
@@ -112,7 +123,7 @@ function UCaaS(props) {
                                 </div>
                                 <div className="col-lg-3 offset-lg-1 mt-4">
                                     <div className="h6">NUM-50</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
+                                    <NumberInput onChange={value => setNum50(value)} defaultValue={0} min={0} max={20}>
                                     <NumberInputField className="bg-light" />
                                     <NumberInputStepper>
                                         <NumberIncrementStepper />
@@ -122,7 +133,7 @@ function UCaaS(props) {
                                 </div>
                                 <div className="col-lg-3 offset-lg-1 mt-4">
                                     <div className="h6">NUM-100</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
+                                    <NumberInput onChange={value => setNum100(value)} defaultValue={0} min={0} max={20}>
                                     <NumberInputField className="bg-light" />
                                     <NumberInputStepper>
                                         <NumberIncrementStepper />
@@ -146,7 +157,7 @@ function UCaaS(props) {
                                     </Slider>
                                 </div>
                                 <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                                    <PricingQuote button serviceName="Unified Communications As A Service" serviceDescription="Single Node CUCM, 100-50 SIP, 3 UCaaS, 2 Hunt Groups"></PricingQuote>
+                                    <PricingQuote button serviceName="Unified Communications As A Service" serviceDescription={`${node},${type},${totalUcaas} UCaaS,${hunts} Hunts, Num10 ${num10}, Num50 ${num50}, Num100 ${num100}, ExtraVM ${extraVM}`}></PricingQuote>
                                 </div>
                             </div>
                         </div>
