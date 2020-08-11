@@ -108,6 +108,9 @@ const CustomRadio = React.forwardRef((props, ref) => {
 
 function main(props) {
 
+    const verifyNotEmpty = (x, text) => x > 0 ? (", " + x + " " + text) : ""; 
+
+    const [type, setType] = React.useState("");
     //Hooks
     const [planName, setPlan] = React.useState("Standard");
     const handlePlan = (name) => setPlan(name)
@@ -127,6 +130,12 @@ function main(props) {
 
     const [tabIndex, setTabIndex] = React.useState(0);
     const handleTabsChange = index => {setTabIndex(index);};
+
+    const [dailybackup, setDailyBackup] = React.useState(false);
+    const handleDailyBackup = (dailybackup) => (dailybackup) ? (",Enabled Daily Backup") : ("")
+
+    const [windowLicense, setWindowLicense] = React.useState(false);
+    const handleWindowLicense = (windowLicense) => (windowLicense) ? (",I have a Windows License") : ("")
 
     //Panels
     const tabPanel = (
@@ -181,6 +190,7 @@ function main(props) {
                                 return (
                                     <>
                                         <Button key={tab.index} onClick={() => {
+                                            
                                             setTabIndex(tab.index);
                                             onClose();
                                         }} variantColor="white" py="32px" className="box-none text-dark justify-content-start hover-effect w-100 display6"><Box as={tab.icon} size="32px" mr="12px" ></Box> {tab.title}</Button>
@@ -198,7 +208,7 @@ function main(props) {
                             {tabs.map(tab => {
                                 return (
                                     <>
-                                        <Tab key={tab.index} onClick={() => {setTabIndex(tab.index)}} className={"box-none tab display6 " + (tabIndex === tab.index && "tab-selected")}><Box as={tab.icon} size="32px" mr="12px" ></Box> {tab.title}</Tab>
+                                        <Tab key={tab.index} onClick={() => {setTabIndex(tab.index); setWindowLicense(false); setDailyBackup(false); setType("");}} className={"box-none tab display6 " + (tabIndex === tab.index && "tab-selected")}><Box as={tab.icon} size="32px" mr="12px" ></Box> {tab.title}</Tab>
                                     </>
                                 )
                             })}
@@ -238,9 +248,9 @@ function main(props) {
                             <div className="row px-3">
                                 { tabIndex === 4 && <div className="col-lg-12 mt-2">
                                     <div className="h6">Choose a type</div>
-                                    <RadioButtonGroup defaultValue="rad2" mt={4} isInline>
-                                        <CustomRadio value="rad1">Daily Backups</CustomRadio>
-                                        <CustomRadio value="rad2">Hourly Snapshots</CustomRadio>
+                                    <RadioButtonGroup onChange={value => setType(value)} mt={4} isInline>
+                                        <CustomRadio value=",Daily Backups">Daily Backups</CustomRadio>
+                                        <CustomRadio value=",Hourly Snapshots">Hourly Snapshots</CustomRadio>
                                     </RadioButtonGroup>
                                 </div>
 
@@ -277,13 +287,13 @@ function main(props) {
                                 </div>
                                 {tabIndex < 4 && <div className="col-lg-6 mt-4">
                                 <div className="d-flex">
-                                    <Switch id="daily-backups" />
+                                    <Switch onChange={(e)=>{setDailyBackup(e.target.checked)}} isChecked={dailybackup} id="daily-backups" />
                                     <FormLabel ml="12px" htmlFor="daily-bakups">Enable Daily Backups</FormLabel>
                                 </div>
                                 </div>}
                                 {tabIndex < 4 && <div className="col-lg-6 mt-4">
                                 <div className="d-flex">
-                                    <Switch id="license" />
+                                    <Switch onChange={(e)=>{setWindowLicense(e.target.checked)}} isChecked={windowLicense} id="license" />
                                     <FormLabel ml="12px" htmlFor="license">I have a Windows license</FormLabel>
                                 </div>
                                 </div>}
@@ -299,7 +309,8 @@ function main(props) {
                                 </div>
                                 
                                 <div className="col-lg-6 mt-4 py-3 d-flex justify-content-end align-items-center">
-                                    <PricingQuote button ></PricingQuote>
+                                    <PricingQuote serviceDescription=
+                                        {`${tabs[tabIndex].title} (${planName})${verifyNotEmpty(storage*8,"Additional Storage")} ${verifyNotEmpty(ram,"Memory")}${handleDailyBackup(dailybackup)}${handleWindowLicense(windowLicense)} ${verifyNotEmpty(cpu,"Additional vCPUs")}${type}`} button ></PricingQuote>
                                 </div>
                             </div>
                         </div>
