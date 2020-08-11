@@ -1,16 +1,13 @@
-
 .case-study{
-    display: flex;
     border-radius: 12px;
     color: $color-light;
-    .box{
-        padding: 48px 20% 48px 10%;
-    }
-    img{
-        
-    }
-    
-}
-.case-study-slider{
-    min-height: 600px;
+    min-height: 420px;
+    // transform: scale(0.9);
+    // opacity: 0.3;
+    // .select{
+    //     opacity: 1; 
+    //   }
+
+    opacity: 0 !important;
+		&:not(.swiper-slide-active){ opacity: 1 !important; }
 }
