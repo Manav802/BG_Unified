@@ -310,7 +310,7 @@ function main(props) {
                                 
                                 <div className="col-lg-6 mt-4 py-3 d-flex justify-content-end align-items-center">
                                     <PricingQuote serviceDescription=
-                                        {`${tabs[tabIndex].title} (${planName})${verifyNotEmpty(storage*8,"Additional Storage")} ${verifyNotEmpty(ram,"Memory")}${handleDailyBackup(dailybackup)}${handleWindowLicense(windowLicense)} ${verifyNotEmpty(cpu,"Additional vCPUs")}${type}`} button ></PricingQuote>
+                                        {`${tabs[tabIndex].title} (${planName})${verifyNotEmpty(storage*8,"GB Additional Storage")} ${verifyNotEmpty(ram,"GB Memory")}${handleDailyBackup(dailybackup)}${handleWindowLicense(windowLicense)} ${verifyNotEmpty(cpu,"Additional vCPUs")}${type}`} button ></PricingQuote>
                                 </div>
                             </div>
                         </div>
