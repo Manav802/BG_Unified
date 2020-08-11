@@ -51,9 +51,9 @@ class GetaQuoteForm extends Component {
     return (      
       <ModalContent className="p-4" style={{maxWidth:"600px", width:"600px"}}>
             <ModalHeader><span className="display5">{this.props.serviceName}</span></ModalHeader>
-            <div className="d-flex px-3">{description.map((service, index) => {
+            <div className="d-flex flex-wrap px-3">{description.map((service, index) => {
              return (
-              <div className="rounded-8 hover-effect bg-light mx-2 py-2 px-3" key={index}>{service}</div>
+              <div className="rounded-8 hover-effect bg-light m-2 py-2 px-3" key={index}>{service}</div>
               )
             })}</div>
             <ModalCloseButton/>
