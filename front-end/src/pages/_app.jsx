@@ -8,14 +8,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'flickity/dist/flickity.min.css';
 import '../../public/assets/scss/styles.scss'
 
+import 'react-chat-widget/lib/styles.css';
+
 import App from 'next/app';
 import Head from 'next/head'
 import Router from 'next/router';
 
+import dynamic from "next/dynamic";
+
+const ChatBot = dynamic(
+  () => {
+    return import("../components/ChatBot/ChatBot");
+  },
+  { ssr: false }
+);
 // import Loader from '../components/loader/Loader';
 
 import NProgress from 'nprogress'; //nprogress module
 import 'nprogress/nprogress.css'; //styles of nprogress
+
 
 import config from 'react-reveal/globals';
 
@@ -59,6 +70,7 @@ export default class MyApp extends App {
       return ( 
         <ThemeProvider theme={customTheme}>		
           <CSSReset />
+          <ChatBot></ChatBot>
           <Header></Header>
           <Component {...pageProps} />
           <Footer></Footer>
