@@ -9,10 +9,10 @@ import Link from 'next/link';
 
 function CaseStudySingle(props) {
         return(
-            <div className="col-lg-8 p-2 my-3">
-                 <Box bg="#2280BF" className="px-4 py-2 case-study"  rounded="lg" boxShadow="md" overflow="hidden" >   
+            <div className="col-lg-8 offset-lg-2 p-2 my-3">
+                 <Box bg="#2280BF" className="px-4 py-2 case-study-single"  rounded="lg" boxShadow="md" overflow="hidden" >   
                     <div>
-                        <h6 className="h6 NunitoSans-Bold pt-4 pb-2 text-white-50">FEATURED CASE STUDY</h6>
+                        <h6 className="h6 NunitoSans-Bold pt-4 pb-2 text-white">FEATURED CASE STUDY</h6>
                     </div>
 
                     <div className='display4 text-white'>
@@ -37,9 +37,9 @@ function CaseStudy(props) {
     {
         return(
             <div key={casestudyDetails.id} className="col-lg-8 p-2 my-3">
-                 <Box bg="#2280BF" className="px-4 py-2 case-study"  rounded="lg" boxShadow="md" overflow="hidden" >   
+                 <Box className="case-study"  rounded="lg" boxShadow="md" overflow="hidden" >   
                     <div>
-                        <h6 className="h6 NunitoSans-Bold pt-4 pb-2 text-white-50">FEATURED CASE STUDY</h6>
+                        <h6 className="h6 NunitoSans-Bold pt-4 pb-2 text-white">FEATURED CASE STUDY</h6>
                     </div>
 
                     <div className='display4 text-white'>
@@ -94,6 +94,9 @@ function CaseStudy(props) {
     )
 }
 
-export default CaseStudySingle;
+export {
+    CaseStudy,
+    CaseStudySingle
+};
 
 
