@@ -12,6 +12,10 @@ function main(props) {
     const openControls = () => setShow(true);
     const [value, setValue] = React.useState(1);
     const handleChange = value => setValue(value);
+    const [restorePoints, setRestorePoints] = React.useState("");
+    const [geoLocations, setGeoLocations] = React.useState("");
+    const [hourlyBackups, setHourlyBackups] = React.useState(false);
+    const handleHourlyBackups = (hourlyBackups) => (hourlyBackups) ? (",Enabled Hourly Backups") : ("")
     return (
         <div>
             <Head>
@@ -34,12 +38,12 @@ function main(props) {
                 <div className="row px-lg-5 px-3">
                     <div className="col-lg-4 my-3">
                         <PricingCard  title="Standard" icon="/assets/images/icons/theme/stack.svg" featureList={["Single Copy", "Single Location", "Reliable & Secure", "Cost Effective"]}>
-                            <PricingQuote buttonStyle="mt-3" button serviceName="Backup As A Service" serviceDescription="Single Copy" ></PricingQuote>
+                            <PricingQuote buttonStyle="mt-3" button serviceName="Backup As A Service" serviceDescription="Standard, Single Copy, Single Location" ></PricingQuote>
                        </PricingCard>
                     </div>
                     <div className="col-lg-4 my-3">
                         <PricingCard title="Corporate" icon="/assets/images/icons/theme/work.svg" featureList={["Multiple Copies", "Single Location", "Reliable & Secure", "Cost Effective"]}>
-                            <PricingQuote buttonStyle="mt-3" button serviceName="Backup As A Service" serviceDescription="Single Copy" ></PricingQuote>
+                            <PricingQuote buttonStyle="mt-3" button serviceName="Backup As A Service" serviceDescription="Corporate, Multiple Copies, Single Location" ></PricingQuote>
                         </PricingCard>
                     </div>
                     <div className="col-lg-4 my-3">
@@ -70,26 +74,28 @@ function main(props) {
                                 </div>
                                 <div className="col-lg-5 mt-4">
                                     <div className="h6">How many Restore Points you want?</div>
-                                    <Select my="24px" placeholder="Select option" size="lg">
-                                        <option value="option1">Option 1</option>
-                                        <option value="option2">Option 2</option>
-                                        <option value="option3">Option 3</option>
+                                    <Select onChange={e => setRestorePoints(e.target.value)} my="24px" placeholder="Select option" size="lg">
+                                        <option value=",5 Restore Points">5</option>
+                                        <option value=",10 Restore Points">10</option>
+                                        <option value=",15 Restore Points">15</option>
+                                        <option value=",20 Restore Points">20</option>
+                                        <option value=",25 Restore Points">25</option>
+                                        <option value=",30 Restore Points">30</option>
                                     </Select>
                                 </div>
                                 <div className="col-lg-5 offset-lg-1 mt-4">
                                     <div className="h6">How many Geo Locations you want?</div>
-                                    <Select my="24px" placeholder="Select option" size="lg">
-                                        <option value="option1">Option 1</option>
-                                        <option value="option2">Option 2</option>
-                                        <option value="option3">Option 3</option>
+                                    <Select onChange={e => setGeoLocations(e.target.value)} my="24px" placeholder="Select option" size="lg">
+                                        <option value=",1 Geo Location">1</option>
+                                        <option value=",2 Geo Location">2</option>
                                     </Select>
                                 </div>
                                 <div className="col-lg-12 mt-3 d-flex justify-content-between">
                                     <Flex py="12px" justify="center" align="center">
-                                        <Switch color="primary" mb={0} id="hourly-backup" />
+                                        <Switch onChange={(e)=>{setHourlyBackups(e.target.checked)}} color="primary" mb={0} id="hourly-backup" />
                                         <FormLabel mb={0} ml="12px" htmlFor="hourly-backup">Hourly Backups</FormLabel>
                                     </Flex>
-                                    <PricingQuote button ></PricingQuote>
+                                    <PricingQuote serviceDescription={`${value} Copy${restorePoints}${geoLocations}${handleHourlyBackups(hourlyBackups)}`} button ></PricingQuote>
                                 </div>
                             </div>
                         </div>
