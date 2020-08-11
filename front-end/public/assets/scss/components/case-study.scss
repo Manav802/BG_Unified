@@ -1,13 +1,36 @@
 .case-study{
     border-radius: 12px;
     color: $color-light;
-    min-height: 420px;
-    // transform: scale(0.9);
-    // opacity: 0.3;
-    // .select{
-    //     opacity: 1; 
-    //   }
+    min-height: 400px;
+    padding: 45px 150px 51px 50px;
+    background: linear-gradient(
+    rgba(34, 128, 191, 0.6),
+    rgba(34, 128, 191, 0.6) ) ,
+    url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pxwall.com%2Fwp-content%2Fuploads%2F2018%2F04%2FDark-Images-Wallpapers-1024x521.jpg&f=1&nofb=1');
+    opacity: .4;
+    transition: all .3s;
+    transform: scale(.8);
+    &-container {
+      .is-selected{
+        .case-study{
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      }
+    }
+}
 
-    opacity: 0 !important;
-		&:not(.swiper-slide-active){ opacity: 1 !important; }
+.case-study-single{
+  border-radius: 12px;
+  color: $color-light;
+  min-height: 400px;
+  padding: 45px 150px 51px 50px;
+  transition: all .3s;
+  // background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pxwall.com%2Fwp-content%2Fuploads%2F2018%2F04%2FDark-Images-Wallpapers-1024x521.jpg&f=1&nofb=1');
+  // background-color: transparentize($color: #2280BF, $amount: 0);
+
+  background: linear-gradient(
+    rgba(34, 128, 191, 0.6),
+    rgba(34, 128, 191, 0.6) ) ,
+    url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pxwall.com%2Fwp-content%2Fuploads%2F2018%2F04%2FDark-Images-Wallpapers-1024x521.jpg&f=1&nofb=1');
 }

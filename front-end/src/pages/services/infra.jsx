@@ -108,6 +108,9 @@ const CustomRadio = React.forwardRef((props, ref) => {
 
 function main(props) {
 
+    const verifyNotEmpty = (x, text) => x > 0 ? (", " + x + " " + text) : ""; 
+
+    const [type, setType] = React.useState("");
     //Hooks
     const [planName, setPlan] = React.useState("Standard");
     const handlePlan = (name) => setPlan(name)
@@ -127,6 +130,12 @@ function main(props) {
 
     const [tabIndex, setTabIndex] = React.useState(0);
     const handleTabsChange = index => {setTabIndex(index);};
+
+    const [dailybackup, setDailyBackup] = React.useState(false);
+    const handleDailyBackup = (dailybackup) => (dailybackup) ? (",Enabled Daily Backup") : ("")
+
+    const [windowLicense, setWindowLicense] = React.useState(false);
+    const handleWindowLicense = (windowLicense) => (windowLicense) ? (",I have a Windows License") : ("")
 
     //Panels
     const tabPanel = (
@@ -163,7 +172,7 @@ function main(props) {
             <div className="container">
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">Infrastructure As A Service</h1>
+                    <h1 className="display3">Empowering the Internet generation.</h1>
                 </div>
             </div>
             </div>
@@ -181,6 +190,7 @@ function main(props) {
                                 return (
                                     <>
                                         <Button key={tab.index} onClick={() => {
+                                            
                                             setTabIndex(tab.index);
                                             onClose();
                                         }} variantColor="white" py="32px" className="box-none text-dark justify-content-start hover-effect w-100 display6"><Box as={tab.icon} size="32px" mr="12px" ></Box> {tab.title}</Button>
@@ -198,7 +208,7 @@ function main(props) {
                             {tabs.map(tab => {
                                 return (
                                     <>
-                                        <Tab key={tab.index} onClick={() => {setTabIndex(tab.index)}} className={"box-none tab display6 " + (tabIndex === tab.index && "tab-selected")}><Box as={tab.icon} size="32px" mr="12px" ></Box> {tab.title}</Tab>
+                                        <Tab key={tab.index} onClick={() => {setTabIndex(tab.index); setWindowLicense(false); setDailyBackup(false); setType("");}} className={"box-none tab display6 " + (tabIndex === tab.index && "tab-selected")}><Box as={tab.icon} size="32px" mr="12px" ></Box> {tab.title}</Tab>
                                     </>
                                 )
                             })}
@@ -238,9 +248,9 @@ function main(props) {
                             <div className="row px-3">
                                 { tabIndex === 4 && <div className="col-lg-12 mt-2">
                                     <div className="h6">Choose a type</div>
-                                    <RadioButtonGroup defaultValue="rad2" mt={4} isInline>
-                                        <CustomRadio value="rad1">Daily Backups</CustomRadio>
-                                        <CustomRadio value="rad2">Hourly Snapshots</CustomRadio>
+                                    <RadioButtonGroup onChange={value => setType(value)} mt={4} isInline>
+                                        <CustomRadio value=",Daily Backups">Daily Backups</CustomRadio>
+                                        <CustomRadio value=",Hourly Snapshots">Hourly Snapshots</CustomRadio>
                                     </RadioButtonGroup>
                                 </div>
 
@@ -277,13 +287,13 @@ function main(props) {
                                 </div>
                                 {tabIndex < 4 && <div className="col-lg-6 mt-4">
                                 <div className="d-flex">
-                                    <Switch id="daily-backups" />
+                                    <Switch onChange={(e)=>{setDailyBackup(e.target.checked)}} isChecked={dailybackup} id="daily-backups" />
                                     <FormLabel ml="12px" htmlFor="daily-bakups">Enable Daily Backups</FormLabel>
                                 </div>
                                 </div>}
                                 {tabIndex < 4 && <div className="col-lg-6 mt-4">
                                 <div className="d-flex">
-                                    <Switch id="license" />
+                                    <Switch onChange={(e)=>{setWindowLicense(e.target.checked)}} isChecked={windowLicense} id="license" />
                                     <FormLabel ml="12px" htmlFor="license">I have a Windows license</FormLabel>
                                 </div>
                                 </div>}
@@ -299,7 +309,8 @@ function main(props) {
                                 </div>
                                 
                                 <div className="col-lg-6 mt-4 py-3 d-flex justify-content-end align-items-center">
-                                    <PricingQuote button ></PricingQuote>
+                                    <PricingQuote serviceDescription=
+                                        {`${tabs[tabIndex].title} (${planName})${verifyNotEmpty(storage*8,"GB Additional Storage")} ${verifyNotEmpty(ram,"GB Memory")}${handleDailyBackup(dailybackup)}${handleWindowLicense(windowLicense)} ${verifyNotEmpty(cpu,"Additional vCPUs")}${type}`} button ></PricingQuote>
                                 </div>
                             </div>
                         </div>
@@ -312,10 +323,10 @@ function main(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        <div className="h4 NunitoSans-ExtraBold">Professional communication at your fingertips.
+                        <div className="h4 NunitoSans-ExtraBold">Why Do we need Infrastructure ??
                         </div>
                         <div className="h6 mt-4 text-secondary text-justify text-dark">
-                        In today’s world, collaboration involves so much more than voice. With a full range of video and web conferencing solutions, unified communications, and workspace applications, the adoption of collaboration technology is widespread across organizations and affects multiple lines of business. Putting video in action, from the desktop to the conference rooms and to the largest applicable venues—including audio/video and rich media content that can be captured, streamed live, archived, or repurposed for the required collaboration toolset
+                        Optimizing infrastructural resources is essential to controlling the cost of data growth. The Enterprise Infrastructure Assessment provides in-depth reports and recommendations for improving storage efficiency, performance, and availability. Findings are linked to your specific risks and benefits—so you can scale your infra systems to successfully serve the growing needs of your business. We can address your heterogeneous data centre environment and provide data and recommendations across all assets.
                         </div>
                     </div>
                 </div>
@@ -382,9 +393,12 @@ function main(props) {
                 <div className="row">
                     <div className="col-12 p-5 rounded-8 bg-light">
                         <h4 className="display5 py-2 mb-2 text-center">Why Us?</h4>
-                        <p className="text-justify">Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business.
-We have the expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint. We bring our team of experienced collaboration experts to every engagement, and we offer business and technology assessments to help identify any barriers in order for your collaborative Goals to succeed. We structure our discovery process to consider your entire telecommunications environment, including network infrastructure, data centres, and more. Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support. We have the expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint. We structure our discovery process to consider your entire telecommunications environment, including network infrastructure, data centres, and more. Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support.
-</p>
+                        <p className="text-justify">
+                        With BG Unified Solutions Infrastructure as a Service, not only do you pay only for the data storage you use when you use it but we provide you with a geographical redundant storage infrastructure and ready access to experts in Infrastructure Technologies who will be eager to understand your storage requirements. Initial setup is very quick, adding or removing capacity is even faster and without any downtime. Backups are geographical redundant, efficient and quick. Stop tying up capital in the depreciating asset that is infrastructure — pay only for the infrastructure you actually need and use, with over 50 geographically dispersed sites hosting 250+ separate pieces of infrastructure. 
+Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management. Infrastructure includes more than 10000 Cores CPU, 10TB RAM.
+Initial setup of your infrastructural requirements should happen in weeks — not months — with ongoing incremental needs occurring overnight. A little buffer would also help with urgent requirements. Boost up your operational efficiency. Improve your organization’s agility. Guaranteed access to a team of experts in different technologies. Modern SAN infrastructure can be expensive to procure and deploy and often requires specialist skills to maintain and manage.
+
+                        </p>
                     </div>
                 </div>
             </div>

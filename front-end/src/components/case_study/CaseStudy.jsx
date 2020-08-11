@@ -5,90 +5,53 @@ import repeat_grid from './Repeat Grid 12.png'
 import {Icon,Button, Box} from '@chakra-ui/core';
 import Slider from 'react-flickity-component'
 
-
 import Link from 'next/link';
+
+function CaseStudySingle(props) {
+        return(
+            <div className="col-lg-8 offset-lg-2 p-2 my-3">
+                 <Box bg="#2280BF" className="px-4 py-2 case-study-single"  rounded="lg" boxShadow="md" overflow="hidden" >   
+                    <div>
+                        <h6 className="h6 NunitoSans-Bold pt-4 pb-2 text-white">FEATURED CASE STUDY</h6>
+                    </div>
+
+                    <div className='display4 text-white'>
+                        <h6>{props.title}</h6>
+                    </div>
+
+                    <div>
+                        <p>{props.content}</p>
+                    </div>
+                    
+                    <div>
+                        <Button variant="outline" rightIcon="arrow-forward" size="lg" className="btn btn-outline-light mt-4">Read More</Button>
+                    </div>
+                
+                </Box>
+            </div>
+        );
+    }
 
 function CaseStudy(props) {
     const CasestudyVariable = props.casestudyDetails.map((casestudyDetails)=>
     {
         return(
-            <div key={casestudyDetails.id} className="col-lg-10 p-2 my-3">
-                 <Box bg="#2280BF" className="px-4 py-2 case-study"  rounded="lg" boxShadow="md" overflow="hidden" >   
+            <div key={casestudyDetails.id} className="col-lg-8 p-2 my-3">
+                 <Box className="case-study"  rounded="lg" boxShadow="md" overflow="hidden" >   
                     <div>
-                        <h6 className="h6 NunitoSans-Bold pt-4 pb-2 text-white-50">FEATURED CASE STUDY</h6>
+                        <h6 className="h6 NunitoSans-Bold pt-4 pb-2 text-white">FEATURED CASE STUDY</h6>
                     </div>
 
                     <div className='display4 text-white'>
-                        <Box>{casestudyDetails.title}</Box>
+                        <h6>{casestudyDetails.title}</h6>
                     </div>
 
                     <div>
-                        <Box>{casestudyDetails.content_p1}</Box>
+                        <p>{casestudyDetails.content}</p>
                     </div>
-
-                    <div>
-                        <Box>{casestudyDetails.content_p2}</Box>
-                    </div>
-
-                    <div>
-                        <Box>{casestudyDetails.content_p3}</Box>
-                    </div>
-                    {/*
-                    <div>
-                        <Box>{casestudyDetails.content_p4}</Box>
-                    </div>
-
-                    <div>
-                        <Box>{casestudyDetails.content_p5}</Box>
-                    </div>
-
-                    <div>
-                        <Box>{casestudyDetails.content_p6}</Box>
-                    </div>
-
-                    <div>
-                        <Box>{casestudyDetails.content_p7}</Box>
-                    </div>
-
-                    <div>
-                        <Box>{casestudyDetails.content_p8}</Box>
-                    </div>
-
-                    <div>
-                        <Box>{casestudyDetails.content_p9}</Box>
-                    </div> */}
-
-                    <div className="ml-3">
-                    <Box>
-                        <ul className="list-unstyled">
-                            <li>{casestudyDetails.list_item_1}</li>
-                            <li>{casestudyDetails.list_item_2}</li>
-                            <li>{casestudyDetails.list_item_3}</li>
-                            <li>{casestudyDetails.list_item_4}</li>
-                            <li>{casestudyDetails.list_item_5}</li>
-                            <li>{casestudyDetails.list_item_6}</li>
-                        </ul>
-                    </Box>
-                    </div>
-
-                    {/* <div>
-                        <Box>{casestudyDetails.content_after_list_p1}</Box>
-                    </div>
-
-                    <div>
-                        <Box>{casestudyDetails.content_after_list_p2}</Box>
-                    </div>
-
-                    <div>
-                        <Box>{casestudyDetails.content_after_list_p3}</Box>
-                    </div>
-
-                    <div>
-                        <Box>{casestudyDetails.content_after_list_p4}</Box>
-                    </div> */}
                     
                     <div>
-                        <Box><Button variant="outline" rightIcon="arrow-forward" size="lg" className="btn btn-outline-light mt-4">Read More</Button></Box>
+                        <Button variant="outline" rightIcon="arrow-forward" size="lg" className="btn btn-outline-light mt-4">Read More</Button>
                     </div>
                 
                 </Box>
@@ -114,20 +77,26 @@ function CaseStudy(props) {
         //     </div>
         // </Box>
 
-        <Slider
+        <Slider className="case-study-container"
                 options={{
                 adaptiveHeight: false,
                 freeScroll: true,
                 pageDots: false,
                 contain: true,
-                draggable: true
+                draggable: true,
+                initialIndex: 1
+                // fadeEffect: {crossFade: true}
                 }}>
-                <div></div>
+                <div className="slider-offset"></div>
                 {CasestudyVariable}
+                <div className="slider-offset"></div>
             </Slider>
     )
 }
 
-export default CaseStudy;
+export {
+    CaseStudy,
+    CaseStudySingle
+};
 
 
