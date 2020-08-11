@@ -11,6 +11,8 @@ import {PricingCard, PricingQuote} from '../../components/cards/PricingCard'
 import Head from 'next/head'
 import Link from 'next/link'
 
+const verifyNotEmpty = (x, text) => x > 0 ? (", " + x + " " + text) : ""; 
+
 const CustomRadio = React.forwardRef((props, ref) => {
     const { isChecked, isDisabled, value, ...rest } = props;
     return (
@@ -157,7 +159,8 @@ function UCaaS(props) {
                                     </Slider>
                                 </div>
                                 <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                                    <PricingQuote button serviceName="Unified Communications As A Service" serviceDescription={`${node},${type},${totalUcaas} UCaaS,${hunts} Hunts, Num10 ${num10}, Num50 ${num50}, Num100 ${num100}, ExtraVM ${extraVM}`}></PricingQuote>
+                                    <PricingQuote button serviceName="Unified Communications As A Service" serviceDescription=
+                                        {`${node},${type}${verifyNotEmpty(totalUcaas, "UCaaS")}${verifyNotEmpty(hunts, "Additonal Hunts")}${verifyNotEmpty(num10, "NUM-10")}${verifyNotEmpty(num50, "NUM-50")}${verifyNotEmpty(num100, "NUM-100")}${verifyNotEmpty(extraVM, "Additional VMs")}`}></PricingQuote>
                                 </div>
                             </div>
                         </div>
