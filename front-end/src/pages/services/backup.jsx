@@ -28,7 +28,7 @@ function main(props) {
             <div className="container">
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">Backup As A Service</h1>
+                    <h1 className="display3">Backup for your Digital system!</h1>
                 </div>
             </div>
             </div>
@@ -108,10 +108,10 @@ function main(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        <div className="h4 NunitoSans-ExtraBold">Professional communication at your fingertips.
+                        <div className="h4 NunitoSans-ExtraBold">Why Do we need a Backup?
                         </div>
                         <div className="h6 mt-4 text-secondary text-justify text-dark">
-                        In today’s world, collaboration involves so much more than voice. With a full range of video and web conferencing solutions, unified communications, and workspace applications, the adoption of collaboration technology is widespread across organizations and affects multiple lines of business. Putting video in action, from the desktop to the conference rooms and to the largest applicable venues—including audio/video and rich media content that can be captured, streamed live, archived, or repurposed for the required collaboration toolset
+                        In today’s dynamic and complex landscape, no one can afford to be idle. Whether we like it or not, data centre change is upon us. Migrating us to store confidential and information data somewhere else, for the worst-case scenarios. And with this change comes steep challenges—to migrate your legacy production application environments to next-general data centres and enable your journey to the cloud. 
                         </div>
                     </div>
                 </div>
@@ -177,10 +177,10 @@ function main(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-12 p-5 rounded-8 bg-light">
-                        <h4 className="display5 py-2 mb-2 text-center">Why Us?</h4>
-                        <p className="text-justify">Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business.
-We have the expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint. We bring our team of experienced collaboration experts to every engagement, and we offer business and technology assessments to help identify any barriers in order for your collaborative Goals to succeed. We structure our discovery process to consider your entire telecommunications environment, including network infrastructure, data centres, and more. Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support. We have the expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint. We structure our discovery process to consider your entire telecommunications environment, including network infrastructure, data centres, and more. Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support.
-</p>
+                        <h4 className="display5 py-2 mb-2 text-center">Why BG Unified Solutions?</h4>
+                        <p className="text-justify">
+                        Through our dedicated Data Center Practice, we can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today. BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams.BG Unified Solutions has the deep technology skills and proven methodologies to help you leverage leading data center solutions. From legacy production systems support to a wide technology lens and multi-vendor solutions, we can help you implement a flexible, agile architecture designed specifically to meet your unique needs. We bring a broad perspective based on demonstrated experience working with many customers in varied environments.
+                        </p>
                     </div>
                 </div>
             </div>

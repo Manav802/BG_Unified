@@ -5,7 +5,7 @@ import { Image, Button, ButtonGroup, Icon, Box } from "@chakra-ui/core";
 import CardWithIcon from '../components/cards/CardWithIcon'
 import CardWithAction from '../components/cards/CardWithAction'
 import FeatureCard from '../components/cards/FeatureCard'
-import CaseStudy from '../components/case_study/CaseStudy'
+import CaseStudySingle from '../components/case_study/CaseStudy'
 import TestimonialCard from '../components/TestimonialCard/TestimonialCard'
 import CaseStudyCard from '../components/case_study_card/CaseStudy'
 import ContactForm from '../components/contactForm/main'
@@ -190,8 +190,8 @@ class Landing extends Component {
                 </div>
             
               <div className="section pb-0">
-                    <div className="container my-lg-4 py-lg-3">
-                        <CaseStudy casestudyDetails={CASESTUDY} link="read" />
+                    <div className="my-lg-4 py-lg-3">
+                        <CaseStudySingle casestudyDetails={CASESTUDY} link="read" />
                     </div>
                 </div>
                 
