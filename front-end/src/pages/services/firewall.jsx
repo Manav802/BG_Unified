@@ -12,8 +12,8 @@ function Firewall(props) {
             <Head>
                 <title>Firewall</title>
             </Head>
-        <div className="position-absolute w-100 overflow-hidden background-svg">
-            <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
+        <div className="position-absolute w-100 overflow-hidden background-svg-firewall">
+            <img className="w-100" src="/assets/images/backgrounds/firewall.png" />
         </div>
         <div className="page-header">
             <div className="container">
