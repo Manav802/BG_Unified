@@ -106,11 +106,10 @@ function SDWAN(props) {
                         <div className="card h-100 rounded-8">
                             <div className="card-body d-flex flex-column align-items-center">
                                 <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
-                                Platform Diversity
+                                Virtual Flexibility
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                    On-premise or cloud-based, that helps secure your IT environment quickly.
-                                    The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.
+                                Industry’s only multi-gigabit virtual WAN optimization solution and the only products that support every major hypervisor. Email (MS Exchange and SMTP), file services (CIFS, FTP), document management(SharePoint)
                                 </div>
                                 <Image  height="300px" src="/assets/images/illustrations/diversity.svg"></Image>
                             </div>
@@ -123,11 +122,10 @@ function SDWAN(props) {
                             <div className="card-body d-flex flex-column align-items-center">
                                 
                                 <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                                Fast and easy Deployment
+                                Diversifying Applications
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                Rapid evolvement, easily deployable with tremendous speed. 
-                                Proven deployment methodology that integrates and extends your existing security infrastructure without capex.
+                                Silver Peak/ Riverbed’s WAN optimization solution works on all applications, regardless of transport protocol or version. Interactive and transactional applications such as VMware VDI, and SQL.
                                 </div>
                                 <Image  height="300px" src="/assets/images/illustrations/data_center.svg"></Image>
                             </div>
@@ -140,11 +138,10 @@ function SDWAN(props) {
                             <div className="card-body d-flex flex-column align-items-center">
                                 
                                 <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                                Advance Technology Stack
+                                Storage Centralization
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                    Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, 
-                                    User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included
+                                Fast, Reliable and Increasingly efficient centralizing servers and storage offers significant cost, management, security and compliance benefits. Detects, isolates notifies and corrects faults encountered in the network.
                                 </div>
                                 <Image src="/assets/images/illustrations/assets.svg" className="mt-auto" height="250px"></Image>
                             </div>
