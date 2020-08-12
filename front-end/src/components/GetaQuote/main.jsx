@@ -17,9 +17,11 @@ class GetaQuoteForm extends Component {
       phone:'',
       serviceName:this.props.ServiceName,
       serviceDescription:this.props.ServiceDescription
-      }
+    }
+    this.baseState=this.state
     this.onChange = this.onChange.bind(this)
     this.onSubmit = this.onSubmit.bind(this)
+    this.refreshForm = this.refreshForm.bind(this)
   }
   onChange(event) {
     const target = event.target
@@ -28,6 +30,11 @@ class GetaQuoteForm extends Component {
     this.setState({
       [name]: value
     })
+  }
+  refreshForm(){
+    setTimeout(()=>{
+      this.setState(this.baseState)
+    }, 7000)
   }
   onSubmit(event) {
     event.preventDefault()
@@ -39,12 +46,13 @@ class GetaQuoteForm extends Component {
       },
       body: JSON.stringify(this.state)
     })
-      .then(function(response) {
-        console.log(response)
-      })
-      .catch(function(error) {
-        console.log(error)
-      })
+    .then(function(response) {
+      console.log(response)
+    })
+    .catch(function(error) {
+      console.log(error)
+    })
+    this.refreshForm()
   }
   render() {
     return (      
@@ -82,14 +90,14 @@ class GetaQuoteForm extends Component {
                     <div className="row">
                     <div className="col-md-6">
                       <FormControl mt={"14%"} isRequired>
-                          <FormLabel htmlFor="email">Email:</FormLabel>
-                          <Input
-                              variant="flushed"
-                              type="email"
-                              name="email"
-                              value={this.state.email}
-                              onChange={this.onChange}
-                          />
+                        <FormLabel htmlFor="email">Email:</FormLabel>
+                        <Input
+                          variant="flushed"
+                          type="email"
+                          name="email"
+                          value={this.state.email}
+                          onChange={this.onChange}
+                        />
                       </FormControl>
                     </div>
                       <div className="col-md-6">
@@ -118,19 +126,19 @@ class GetaQuoteForm extends Component {
                 </FormControl>
                 <div className="container">
                     <Button 
-                        mt={"15%"} 
-                        className="hover-color" 
-                        type="submit" 
-                        size="md" 
-                        height="48px"
-                        width="115px" 
-                        backgroundColor="#F32222" 
-                        color="white"
-                    >Submit</Button>
+                      mt={"15%"} 
+                      className="hover-color" 
+                      type="submit" 
+                      size="md" 
+                      height="48px"
+                      width="115px" 
+                      backgroundColor="#F32222" 
+                      color="white"
+                    >Submit
+                    </Button>
                 </div>
               </form>
           </ModalContent>        
-             
     )
   }
 }

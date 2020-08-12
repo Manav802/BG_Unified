@@ -57,7 +57,6 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                                 <p className="text-secondary mt-3">Hierarchical nature of  DNS, making it scalable. Allows every organization to manage its authoritative and operational data effectively, even with increased resources. Maintaining compatibility as DNS servers clients run on different hardware, different operating systems.</p>
                             </div>
                         </div>
-
                     </div>
                     <div className="flex-lg-row-reverse row mt-5 mt-lg-0">
                         <div className="col-lg-5 p-5">
@@ -73,7 +72,6 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                         </div>
 
                     </div>
-
                     <div className=" row mt-5 mt-lg-0">
                         <div className="col-lg-5 p-5">
                             <img src="/assets/images/Illustrations/Services/Firewall/diversity.svg" alt="" className="max-height2"/>
@@ -82,11 +80,9 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                             <div>
                                 <div className="h5 NunitoSans-Bold text-dark">Reliability
                         </div>
-                                <p className="text-secondary mt-3">The user or the end host need not dive into the technicality about root or TLD servers. Only need to know the basics of the functioning. Eliminating vulnerabilities like cache poisoning, to reach a satisfactory level of security, making our DNS service extremely reliable.
-                        </p>
+                                <p className="text-secondary mt-3">The user or the end host need not dive into the technicality about root or TLD servers. Only need to know the basics of the functioning. Eliminating vulnerabilities like cache poisoning, to reach a satisfactory level of security, making our DNS service extremely reliable.</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -95,19 +91,18 @@ const { isOpen, onOpen, onClose } = useDisclosure();
                     <div className="row">
                         <div className="h2 NunitoSans-ExtraBold col-12 text-center">
                             Ready to try out our <br className="d-none d-md-block" />DNS services?
-                    </div>
-                        <div className="h6 col-12 mt-2 text-secondary text-center">
-                            BGUS DNS services are affordable and dynamically priced.
-                    </div>
-                        <div className="col-12 mt-4 d-flex justify-content-center">
-                            
-        <Button onClick={onOpen} variantColor="primary" size="md">Get a Quote</Button>
-        <Modal isOpen={isOpen} onClose={onClose} isCentered size={['lg','xl']}>                          
-          <ModalOverlay />
-            <GetaQuoteForm ServiceName="DNS as a service"
-            ServiceDescription="2 Domain Names"
-            />
-        </Modal>
+                        </div>
+                        <div className="h6 col-12 mt-2 text-secondary text-center">             BGUS DNS services are affordable and dynamically priced.
+                        </div>
+                        <div className="col-12 mt-4 d-flex justify-content-center">                    
+                            <Button onClick={onOpen} variantColor="primary" size="md">Get a Quote</Button>
+                            <Modal isOpen={isOpen} onClose={onClose} isCentered size={['lg','xl']}>                          
+                            <ModalOverlay />
+                                <GetaQuoteForm 
+                                    ServiceName="DNS as a service"
+                                    ServiceDescription="2 Domain Names"
+                                />
+                            </Modal>
                         </div>
                     </div>
                 </div>
@@ -116,5 +111,4 @@ const { isOpen, onOpen, onClose } = useDisclosure();
         </div>
     );
 }
-
 export default main;
