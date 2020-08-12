@@ -2,6 +2,7 @@ import React from 'react';
 import {Button,Image, Icon, Box, Tabs, TabList, Tab, TabPanel, TabPanels} from '@chakra-ui/core'
 import Fade from 'react-reveal/Fade';
 import CardWithIcon from "../../components/cards/CardWithIcon"
+import {PricingCard, PricingQuote} from "../../components/cards/PricingCard"
 import Head from 'next/head'
 import Link from 'next/link'
 
@@ -18,7 +19,7 @@ function Firewall(props) {
             <div className="container">
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">Firewall as a Service</h1>
+                    <h1 className="display3">Firewall As A Service</h1>
                 </div>
             </div>
             </div>
@@ -29,7 +30,7 @@ function Firewall(props) {
                     <div className="col-lg-10 offset-lg-1">
                     <Tabs align="center">
                         <TabList>
-                            <Tab className="p-3 px-4 display6">Private</Tab>
+                            <Tab className="p-3 px-4 display6">Physical</Tab>
                             <Tab className="p-3 px-4 display6">Virtual</Tab>
                             <Tab className="p-3 px-4 display6">Other</Tab>
                         </TabList>
@@ -40,32 +41,16 @@ function Firewall(props) {
                             <Fade duration={500} distance={"30%"} bottom >
                                 <div className="row justify-content-center">
                                     <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/firewall_physical.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Physical 1G</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
+                                        <PricingCard icon="/assets/images/icons/theme/firewall_physical.svg" title="Physical 1G">
+                                                <PricingQuote title="Single Location" serviceName="Firewall As A Service" serviceDescription="Physical 1G, Single Location" ></PricingQuote>
+                                                <PricingQuote title="Multihomed" serviceName="Firewall As A Service" serviceDescription="Physical 1G, Multihomed" ></PricingQuote>
+                                        </PricingCard>
                                     </div>
                                     <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/physical_cluster.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Physical Cluster 1G</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
+                                        <PricingCard icon="/assets/images/icons/theme/physical_cluster.svg" title="Physical Cluster 1G">
+                                                <PricingQuote title="Single Location" serviceName="Firewall As A Service" serviceDescription="Physical Cluster 1G, Single Location" ></PricingQuote>
+                                                <PricingQuote title="Multihomed" serviceName="Firewall As A Service" serviceDescription="Physical Cluster 1G, Multihomed" ></PricingQuote>
+                                        </PricingCard>
                                     </div>
                                 </div>
                                 </Fade>
@@ -73,99 +58,49 @@ function Firewall(props) {
                             
                             <TabPanel className="py-2">
                             <Fade duration={500} distance={"30%"} bottom >
-                            <div className="row justify-content-center">
+                                <div className="row justify-content-center">
                                     <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/firewall_virtual.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Virtual 1G</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
+                                        <PricingCard icon="/assets/images/icons/theme/firewall_virtual.svg" title="Virtual 1G">
+                                                <PricingQuote title="Single Location" serviceName="Firewall As A Service" serviceDescription="Virtual 1G, Single Location" ></PricingQuote>
+                                                <PricingQuote title="Multihomed" serviceName="Firewall As A Service" serviceDescription="Virtual 1G, Multihomed" ></PricingQuote>
+                                        </PricingCard>
                                     </div>
                                     <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/virtual_cluster.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Virtual Cluster 1G</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
+                                        <PricingCard icon="/assets/images/icons/theme/virtual_cluster.svg" title="Virtual Cluster 1G">
+                                            <PricingQuote title="Single Location" serviceName="Firewall As A Service" serviceDescription="Virtual Cluster 1G, Single Location" ></PricingQuote>
+                                            <PricingQuote title="Multihomed" serviceName="Firewall As A Service" serviceDescription="Virtual Cluster 1G, Multihomed" ></PricingQuote>
+                                        </PricingCard>
                                     </div> 
                                 </div>
                                 <div className="row justify-content-center">
                                     <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/firewall_virtual.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Virtual 10G</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
+                                        <PricingCard icon="/assets/images/icons/theme/firewall_virtual.svg" title="Virtual 10G">
+                                                <PricingQuote title="Single Location" serviceName="Firewall As A Service" serviceDescription="Virtual 10G, Single Location" ></PricingQuote>
+                                                <PricingQuote title="Multihomed" serviceName="Firewall As A Service" serviceDescription="Virtual 10G, Multihomed" ></PricingQuote>
+                                        </PricingCard>
                                     </div>
                                     <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/virtual_cluster.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Virtual Cluster 10G</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        <PricingCard icon="/assets/images/icons/theme/virtual_cluster.svg" title="Virtual Cluster 10G">
+                                            <PricingQuote title="Single Location" serviceName="Firewall As A Service" serviceDescription="Virtual Cluster 10G, Single Location" ></PricingQuote>
+                                            <PricingQuote title="Multihomed" serviceName="Firewall As A Service" serviceDescription="Virtual Cluster 10G, Multihomed" ></PricingQuote>
+                                        </PricingCard>
+                                    </div> 
                                 </div>
-                                </Fade>
+                            </Fade>
                             </TabPanel>
                             <TabPanel className="py-2">
                             <Fade duration={500} distance={"30%"}  bottom >
                             <div className="row justify-content-center">
                                     <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/firewall_virtual.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">MAC</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
+                                        <PricingCard icon="/assets/images/icons/theme/firewall_virtual.svg" title="Make any changes">
+                                            <PricingQuote buttonStyle="mt-4" button serviceName="Firewall As A Service" serviceDescription="Make any changes" ></PricingQuote>
+                                        </PricingCard>
                                     </div>
                                     <div className="col-lg-5 my-3">
-                                        <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-                                            <Image src="/assets/images/icons/theme/firewall_virtual.svg" height="64px"></Image>
-                                            <span className="mt-3 h6 NunitoSans-Bold">Emergency Change</span>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Single Location</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                            <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-                                                <p>Multihomed</p>
-                                                <a href="" className="">Get a quote</a>
-                                            </div>
-                                        </div>
-                                    </div> 
+                                        <PricingCard icon="/assets/images/icons/theme/firewall_virtual.svg" title="Emergency Change">
+                                                <PricingQuote buttonStyle="mt-4" button serviceName="Firewall As A Service" serviceDescription="Emergency Change" ></PricingQuote>
+                                        </PricingCard>
+                                    </div>
                                 </div>
                                 </Fade>
                             </TabPanel>
@@ -180,7 +115,7 @@ function Firewall(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        <div className="h4 NunitoSans-ExtraBold">To prevent a drastic fall, Install a Firewall
+                        <div className="h4 NunitoSans-ExtraBold">To prevent a drastic fall, install a Firewall
                         </div>
                         <div className="h6 mt-4 text-secondary text-justify text-dark">
                             In this digital era, when technology has proved to be a boon, small, medium and large-sized businesses are majorly dependent upon networking,connections and interactions. To help these operations get performed smoothly and efficiently, with full security, to eradicate security breach in your network. Firewalls block malicious connections being established inside a network and keeps data and information safe within a network.

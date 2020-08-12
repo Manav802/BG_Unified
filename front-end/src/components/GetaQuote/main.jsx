@@ -55,12 +55,17 @@ class GetaQuoteForm extends Component {
     this.refreshForm()
   }
   render() {
+    var description = this.props.serviceDescription.split(',')
     return (      
-      <ModalContent>
+      <ModalContent className="p-4" style={{maxWidth:"600px", width:"600px"}}>
             <ModalHeader><span className="display5">{this.props.serviceName}</span></ModalHeader>
-            <p className="px-4 h6">{this.props.serviceDescription}</p>
+            <div className="d-flex flex-wrap px-3">{description.map((service, index) => {
+             return (
+              <div className="rounded-8 hover-effect bg-light m-2 py-2 px-3" key={index}>{service}</div>
+              )
+            })}</div>
             <ModalCloseButton/>
-            <form className="getaquote-form" onSubmit={this.onSubmit}>
+            <form className="getaquote-form px-4" onSubmit={this.onSubmit}>
                 <input
                   type="hidden"
                   name="_redirect"
@@ -126,6 +131,7 @@ class GetaQuoteForm extends Component {
                 </FormControl>
                 <div className="container">
                     <Button 
+<<<<<<< HEAD
                       mt={"15%"} 
                       className="hover-color" 
                       type="submit" 
@@ -136,6 +142,17 @@ class GetaQuoteForm extends Component {
                       color="white"
                     >Submit
                     </Button>
+=======
+                        mt={"15%"} 
+                        className="hover-color shadow-md" 
+                        type="submit" 
+                        size="md" 
+                        height="48px"
+                        width="115px" 
+                        backgroundColor="#F32222" 
+                        color="white"
+                    >Submit</Button>
+>>>>>>> 5edac13b3f4ec3df5ca72c10c0a6db401621325a
                 </div>
               </form>
           </ModalContent>        
