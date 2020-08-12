@@ -131,18 +131,6 @@ class GetaQuoteForm extends Component {
                 </FormControl>
                 <div className="container">
                     <Button 
-<<<<<<< HEAD
-                      mt={"15%"} 
-                      className="hover-color" 
-                      type="submit" 
-                      size="md" 
-                      height="48px"
-                      width="115px" 
-                      backgroundColor="#F32222" 
-                      color="white"
-                    >Submit
-                    </Button>
-=======
                         mt={"15%"} 
                         className="hover-color shadow-md" 
                         type="submit" 
@@ -152,7 +140,6 @@ class GetaQuoteForm extends Component {
                         backgroundColor="#F32222" 
                         color="white"
                     >Submit</Button>
->>>>>>> 5edac13b3f4ec3df5ca72c10c0a6db401621325a
                 </div>
               </form>
           </ModalContent>        
