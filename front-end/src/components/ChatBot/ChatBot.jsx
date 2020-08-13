@@ -1,18 +1,41 @@
 import React, { Component } from 'react';
 import { Widget, addResponseMessage } from 'react-chat-widget';
+import UIfx from "uifx"
+import axios from "axios"
+
+const tick = new UIfx(
+  {asset: "/assets/data/juntos.mp3"}
+)
+
+const sendMessage = (message) => {
+  addResponseMessage(message);
+  try{
+    let audio = new Audio("/assets/data/juntos.mp3")
+    audio.play()
+  }
+  catch(e){
+    console.log("Please allow audio for a better experience.")
+  }
+}
 
 
 class ChatBot extends Component {
   componentDidMount() {
-    addResponseMessage("Welcome to this awesome chat!");
+    sendMessage("Welcome my friend!")
   }
 
   handleNewUserMessage = (newMessage) => {
-    console.log(`New message incomig! ${newMessage}`);
-    let audio = new Audio("/assets/data/juntos.mp3")
-    audio.play()
-    // Now send the message throught the backend API
-    addResponseMessage("Testing!");
+    axios.post("http://chat-bot-bg-unified.herokuapp.com/api/chat_bot/predictResponse/",{
+      message: newMessage
+    },{
+      headers: {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }).then(res => {
+      sendMessage("Success!")
+    }).catch(err => {
+      console.error(err)
+    })
   }
 
   render() {

@@ -69,8 +69,10 @@ export default class MyApp extends App {
 
       return ( 
         <ThemeProvider theme={customTheme}>		
+          <Head>
+            <script type="text/javascript" src="/assets/js/chatbot.js"></script>
+          </Head>
           <CSSReset />
-          <ChatBot></ChatBot>
           <Header></Header>
           <Component {...pageProps} />
           <Footer></Footer>
