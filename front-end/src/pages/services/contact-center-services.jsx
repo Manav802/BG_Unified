@@ -175,7 +175,7 @@ function main(props) {
                                 </>
                                 }
                                 
-                                <div className="col-lg-12 mt-3 d-flex justify-content-end">
+                                <div className="col-lg-12 mt-3 d-flex justify-content-center">
                                 <PricingQuote serviceDescription={`${planName}${verifyNotEmpty(value,"Additional CSQ")}${RDSType}${verifyNotEmpty(tbSpace,"TB Space")}${verifyNotEmpty(wfm,"WFM")}${verifyNotEmpty(complianceQM,"Compliance QM")}${verifyNotEmpty(advancedQM,"Advanced QM")}${handleFailOverNode(failOverNode)}`} button ></PricingQuote>
                                 </div>
                             </div>
