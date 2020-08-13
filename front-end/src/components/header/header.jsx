@@ -1,5 +1,6 @@
 import React from 'react';
 import WhatsNew from './whatsnew'
+import Menu from './menu'
 import {Image,
 Box,
 Button,
@@ -18,16 +19,15 @@ return (
     <div className="container">
         <div className="p-3 d-flex justify-content-between align-items-center layer-4">
             <div className="d-flex align-items-center">
+                <Menu></Menu>
                 <Link href="/">
-                    <a>
-                    <Image src="/assets/logo.png" height="48px" className="mr-3"></Image>
-                    </a>
+                    <Image src="/assets/logo.png" height="48px" className="d-none d-sm-block mr-3"></Image>
                 </Link>
-                <Popover closeOnBlur={true} placement="bottom" usePortal initialFocusRef={initRef}>
+                <Popover  closeOnBlur={true} placement="bottom" usePortal initialFocusRef={initRef}>
                     {({ isOpen, onClose }) => (
                     <>
                         <PopoverTrigger>
-                            <Button className="text-dark hover-effect" variantColor="white"
+                            <Button className="text-dark hover-effect d-none d-lg-block" variantColor="white"
                                 rightIcon="chevron-down">Solutions</Button>
                         </PopoverTrigger>
                         <PopoverContent className="header-popover">
@@ -97,11 +97,11 @@ return (
                     </>
                     )}
                 </Popover>
-                <Popover closeOnBlur={true} placement="bottom" usePortal initialFocusRef={initRef}>
+                <Popover  closeOnBlur={true} placement="bottom" usePortal initialFocusRef={initRef}>
                     {({ isOpen, onClose }) => (
                     <>
                         <PopoverTrigger>
-                            <Button className="text-dark hover-effect" variantColor="white"
+                            <Button className="d-none d-lg-block text-dark hover-effect" variantColor="white"
                                 rightIcon="chevron-down">Company</Button>
                         </PopoverTrigger>
                         <PopoverContent className="header-popover">
@@ -146,16 +146,19 @@ return (
                     )}
                 </Popover>
                 <Link href="/features">
-                <Button className="text-dark hover-effect" variantColor="white">Our Features</Button>
+                <Button className="d-none d-lg-block text-dark hover-effect" variantColor="white">Our Features</Button>
                 </Link>
             </div>
-            <div>
-                <span className="NunitoSans-SemiBold p-2">Call Us <b>1300 00 BGUS</b></span>
+            <Link href="/">
+                    <Image src="/assets/logo.png" height="48px" className="mr-3 d-sm-none"></Image>
+            </Link>
+            <div className="d-flex">
+                <span className="NunitoSans-SemiBold p-2 d-none d-lg-block">Call Us <b>1300 00 BGUS</b></span>
                 <span className="p-2 rounded-8 hover-effect">
                     <Icon name="search" size="16px"></Icon>
                 </span>
                 <Link href="/contact">
-                <Button className="mx-3" variant="solid" variantColor="primary">Contact Us</Button>
+                    <Button className="mx-3 d-none d-sm-block" variant="solid" variantColor="primary">Contact Us</Button>
                 </Link>
             </div>
         </div>

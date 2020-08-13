@@ -14,6 +14,14 @@ a:hover{
     color: $color-primary !important;
 }
 
+button:focus{
+    box-shadow: none !important;
+}
+button{
+    outline: none !important;
+}
+
+
 .icon-24{
     font-size: 24px !important;
 }
