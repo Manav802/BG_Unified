@@ -10,6 +10,7 @@ import CardWithIcon from "../../components/cards/CardWithIcon"
 import {PricingCard, PricingQuote} from '../../components/cards/PricingCard'
 import Head from 'next/head'
 import Link from 'next/link'
+import { set } from 'nprogress';
 
 const verifyNotEmpty = (x, text) => x > 0 ? (", " + x + " " + text) : ""; 
 
@@ -41,7 +42,10 @@ function UCaaS(props) {
     const openControls = () => setShow(true);
     const [value, setValue] = React.useState(0);
     const handleChange = value => {setValue(value); setExtraVM(value);} 
-    
+    const [showSIP, setShowSIP] = useState(false);
+    const [addSIP, setAddSIP] = useState(0);
+    const [advancedOptions, setAdvancedOptions] = useState(false);
+    const resetOnCardChange = () => {setAddSIP(0); setShowSIP(false);};
     return (
         <div>
             <Head>
@@ -75,18 +79,18 @@ function UCaaS(props) {
                             <Fade duration={500} distance={"30%"} bottom >
                                 <div className="row justify-content-center">
                                 <div className="col-lg-4 my-3">
-                                    <PricingCard  title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Single Node CUCM");}}>View More</Button>
+                                    <PricingCard  title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email*", "Include Cisco Jabber"]}>
+                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Single Node CUCM"); resetOnCardChange();  }}>View More</Button>
                                 </PricingCard>
                                 </div>
                                 <div className="col-lg-4 my-3">
-                                    <PricingCard title="Dual Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Dual Node CUCM");}}>View More</Button>
+                                    <PricingCard title="Dual Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email*", "Include Cisco Jabber"]}>
+                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Dual Node CUCM"); resetOnCardChange();}}>View More</Button>
                                     </PricingCard>
                                 </div>
                                 <div className="col-lg-4 my-3">
-                                    <PricingCard className="hover-effect" title="Multiple Nodes CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Multiple Nodes CUCM");}}>View More</Button>
+                                    <PricingCard className="hover-effect" title="Multiple Nodes CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email*", "Include Cisco Jabber"]}>
+                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Multiple Nodes CUCM"); resetOnCardChange();}}>View More</Button>
                                     </PricingCard>
                                 </div>
                                 </div>
@@ -96,18 +100,17 @@ function UCaaS(props) {
                             <Fade duration={500} distance={"30%"} bottom >
                                 <div className="row justify-content-center">
                                 <div className="col-lg-4 my-3">
-                                    <PricingCard  title="Single Node IP Office" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Single Node IP Office");}}>View More</Button>
+                                    <PricingCard  title="Single Node IP Office" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email*", "Include Cisco Jabber"]}>
+                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Single Node IP Office"); resetOnCardChange();}}>View More</Button>
                                 </PricingCard>
                                 </div>
-                                <div className="col-lg-4 my-3">
-                                    <PricingCard title="Dual Node IP Office" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Dual Node IP Office");}}>View More</Button>
+                                <div className="col-lg-4 my-3"> resetOnCardChange();     <PricingCard title="Dual Node IP Office" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email*", "Include Cisco Jabber"]}>
+                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Dual Node IP Office"); resetOnCardChange();}}>View More</Button>
                                     </PricingCard>
                                 </div>
                                 <div className="col-lg-4 my-3">
-                                    <PricingCard className="hover-effect" title="Multiple Nodes IP Office" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Multiple Nodes IP Office");}}>View More</Button>
+                                    <PricingCard className="hover-effect" title="Multiple Nodes IP Office" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email*", "Include Cisco Jabber"]}>
+                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Multiple Nodes IP Office"); resetOnCardChange();}}>View More</Button>
                                     </PricingCard>
                                 </div>
                                 </div>
@@ -117,18 +120,18 @@ function UCaaS(props) {
                             <Fade duration={500} distance={"30%"} bottom >
                                 <div className="row justify-content-center">
                                 <div className="col-lg-4 my-3">
-                                    <PricingCard  title="Single Node CX" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Single Node CX");}}>View More</Button>
+                                    <PricingCard  title="Single Node CX" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email*", "Include Cisco Jabber"]}>
+                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Single Node CX"); resetOnCardChange();}}>View More</Button>
                                 </PricingCard>
                                 </div>
                                 <div className="col-lg-4 my-3">
-                                    <PricingCard title="Dual Node CX" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Dual Node CX");}}>View More</Button>
+                                    <PricingCard title="Dual Node CX" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email*", "Include Cisco Jabber"]}>
+                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Dual Node CX"); resetOnCardChange();}}>View More</Button>
                                     </PricingCard>
                                 </div>
                                 <div className="col-lg-4 my-3">
-                                    <PricingCard className="hover-effect" title="Multiple Nodes CX" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Multiple Nodes CX");}}>View More</Button>
+                                    <PricingCard className="hover-effect" title="Multiple Nodes CX" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email*", "Include Cisco Jabber"]}>
+                                        <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Multiple Nodes CX"); resetOnCardChange(); }}>View More</Button>
                                     </PricingCard>
                                 </div>
                                 </div>
@@ -142,13 +145,12 @@ function UCaaS(props) {
                     <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
                         <div className="px-4 py-5 border">
                             <div className="display5 text-center">{node}</div>
-                            <div className="row px-3">
-                            <div className="mt-4 col-12">
-                                    <div className="h6 inline"> <ListIcon icon="check" color="green.500" /> Includes Voicemail, Email </div>
-                                </div>
-                                <div className="col-lg-12 mt-2">
+                            <div className="row justify-content-center px-3">
+                            <div className="mt-4 col-12"></div>
+                                    
+                                <div className="col-lg-11 mt-2">
                                     <div className="h6">Choose a type</div>
-                                    <RadioButtonGroup onChange={value => setType(value)} defaultValue="20-10 SIP" mt={4} isInline>
+                                    <RadioButtonGroup onChange={value => {setType(value); setAddSIP(0); setShowSIP(false);}} defaultValue="20-10 SIP" mt={4} isInline>
                                         <CustomRadio value="10-5 SIP">UCAAS-10-5SIP</CustomRadio>
                                         <CustomRadio value="20-10 SIP">UCAAS-20-10SIP</CustomRadio>
                                         <CustomRadio value="30-20 SIP">UCAAS-30-20SIP</CustomRadio>
@@ -156,8 +158,43 @@ function UCaaS(props) {
                                         <CustomRadio value="100-50 SIP">UCAAS-100-50SIP</CustomRadio>
                                     </RadioButtonGroup>
                                 </div>
-                                <div className="mt-4 col-12">
-                                    <div className="h6">Total UCaaS : {type.slice(0,2)}</div>
+                                <div className="mt-4 col-lg-11">
+                                    <div className="row">
+                                    <p className=" col-md-8 NunitoSans-Bold d-flex"> - This type includes {type.slice(0,2)} UCaaS and {type.slice(3,)}. </p> 
+                                    <a onClick={()=>{setShowSIP(!showSIP);}} className="col-md-3"> Add Additional SIP </a> 
+                                    </div>
+                                </div>
+                                <div className="col-lg-11">
+                                <Collapse className="mt-4" isOpen={showSIP}> 
+                                    <div className="h6">Additional SIP</div>
+                                    <Slider color="primary" defaultValue={30} value={addSIP} onChange={(value)=>{setAddSIP(value)}}>
+                                        <SliderTrack h="16px" borderRadius="8px" />
+                                        <SliderFilledTrack h="16px" borderRadius="8px" />
+                                        <SliderThumb
+                                                    className="shadow-md" 
+                                                    fontSize="md"
+                                                    fontWeight="800"
+                                                    width="auto"
+                                                    padding="8px"
+                                                    height="32px"
+                                                    children={addSIP} />
+                                    </Slider>
+                                 </Collapse>
+                                </div>
+                                <div className="col-lg-11 mt-4">
+                                    <div className="h6">Extra VMs</div>
+                                    <Slider color="primary" defaultValue={30} value={value} onChange={handleChange}>
+                                        <SliderTrack h="16px" borderRadius="8px" />
+                                        <SliderFilledTrack h="16px" borderRadius="8px" />
+                                        <SliderThumb
+                                                    className="shadow-md" 
+                                                    fontSize="md"
+                                                    fontWeight="800"
+                                                    width="auto"
+                                                    padding="8px"
+                                                    height="32px"
+                                                    children={value} />
+                                    </Slider>
                                 </div>
                                 <div className="col-lg-5 mt-4">
                                     <div className="h6">Additional UCaaS</div>
@@ -179,6 +216,12 @@ function UCaaS(props) {
                                     </NumberInputStepper>
                                     </NumberInput>
                                 </div>
+                                <div className="col-lg-11 mt-4">
+                                    <a onClick={()=>{setAdvancedOptions(!advancedOptions);}}> Advanced Options </a> 
+                                </div>
+                                
+                                <div className="col-lg-11">
+                                <Collapse className="row" isOpen={advancedOptions}>
                                 <div className="col-lg-3 mt-4">
                                     <div className="h6">NUM-10</div>
                                     <NumberInput onChange={value => setNum10(value)} defaultValue={0} min={0} max={20}>
@@ -209,24 +252,12 @@ function UCaaS(props) {
                                     </NumberInputStepper>
                                     </NumberInput>
                                 </div>
-                                <div className="col-lg-11 mt-4">
-                                    <div className="h6">Extra VMs</div>
-                                    <Slider color="primary" defaultValue={30} value={value} onChange={handleChange}>
-                                        <SliderTrack h="16px" borderRadius="8px" />
-                                        <SliderFilledTrack h="16px" borderRadius="8px" />
-                                        <SliderThumb
-                                                    className="shadow-md" 
-                                                    fontSize="md"
-                                                    fontWeight="800"
-                                                    width="auto"
-                                                    padding="8px"
-                                                    height="32px"
-                                                    children={value} />
-                                    </Slider>
+                                </Collapse>
                                 </div>
+                                
                                 <div className="col-lg-12 mt-4 d-flex justify-content-center">
                                     <PricingQuote button serviceName="Unified Communications As A Service" serviceDescription=
-                                        {`${node},${type}${verifyNotEmpty(additionalUcaas, "Additional UCaaS")}${verifyNotEmpty(hunts, "Additonal Hunts")}${verifyNotEmpty(num10, "NUM-10")}${verifyNotEmpty(num50, "NUM-50")}${verifyNotEmpty(num100, "NUM-100")}${verifyNotEmpty(extraVM, "Additional VMs")}`}></PricingQuote>
+                                        {`${node},${type}${verifyNotEmpty(additionalUcaas, "Additional UCaaS")}${verifyNotEmpty(addSIP, "Additional SIP")}${verifyNotEmpty(extraVM, "Extra VMs")}${verifyNotEmpty(hunts, "Additonal Hunts")}${verifyNotEmpty(num10, "NUM-10")}${verifyNotEmpty(num50, "NUM-50")}${verifyNotEmpty(num100, "NUM-100")}`}></PricingQuote>
                                 </div>
                             </div>
                         </div>
