@@ -137,16 +137,7 @@ function main(props) {
                                 }
 
                                 { (planIndex === 2 || planIndex===3 ) && <>
-                                <div className="my-1 col-lg-12 mt-4">
-                                    <div className="h6">Number of Agents</div>
-                                    <NumberInput maxWidth="200px" min={0} max={20} value={wfm>=complianceQM+advancedQM ? wfm:complianceQM+advancedQM} onChange={setWfm}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
+                                
                                 <div className="my-1 col-lg-6 mt-4">
                                     <div className="h6">COMPLIANCE QM</div>
                                     <NumberInput maxWidth="200px" min={0} max={20} value={complianceQM} onChange={setComplianceQM}>
@@ -160,6 +151,16 @@ function main(props) {
                                 <div className="my-1 col-lg-6 mt-4">
                                     <div className="h6">ADVANCED QM</div>
                                     <NumberInput maxWidth="200px" min={0} max={20} value={advancedQM} onChange={setAdvancedQM}>
+                                    <NumberInputField className="bg-light" />
+                                    <NumberInputStepper>
+                                        <NumberIncrementStepper />
+                                        <NumberDecrementStepper />
+                                    </NumberInputStepper>
+                                    </NumberInput>
+                                </div>
+                                <div className="my-1 col-lg-12 mt-4">
+                                    <div className="h6">Number of Agents</div>
+                                    <NumberInput maxWidth="200px" min={0} max={20} value={wfm<=complianceQM+advancedQM ? wfm:complianceQM+advancedQM} onChange={setWfm}>
                                     <NumberInputField className="bg-light" />
                                     <NumberInputStepper>
                                         <NumberIncrementStepper />
