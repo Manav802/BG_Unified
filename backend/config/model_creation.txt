@@ -1,5 +1,0 @@
-step 1) Run the following command after installing sequelize-auto  and mysql2 globally .
-
-step 2) sequelize-auto -o './models' -d  bgunified -h localhost -u root -p 3306  -x password -e mysql
-
-step 3 ) location  of running the command {backend folder}

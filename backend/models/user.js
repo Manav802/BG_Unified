@@ -1,37 +1,70 @@
-/* jshint indent: 2 */
+var mongoose = require("mongoose");
+const crypto = require("crypto");
+const uuidv1 = require("uuid/v1");
 
-module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('user', {
-    id: {
-      autoIncrement: true,
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true
+var userSchema = new mongoose.Schema(
+  {
+    firstName: {
+      type: String,
+      required: true,
+      maxlength: 32,
+      trim: true
+    },
+    lastName: {
+      type: String,
+      maxlength: 32,
+      trim: true
     },
     email: {
-      type: DataTypes.STRING(45),
-      allowNull: false,
+      type: String,
+      trim: true,
+      required: true,
       unique: true
     },
-    name: {
-      type: DataTypes.STRING(45),
-      allowNull: false
+    encry_password: {
+      type: String,
+      required: true
     },
-    password: {
-      type: DataTypes.STRING(255),
-      allowNull: false
-    },
-    auth_base: {
-      type: DataTypes.STRING(50),
-      allowNull: false
-    },
-    auth_buffer: {
-      type: 'LONGBLOB',
-      allowNull: false
+    //for storing the salt
+    salt: String,
+    //define admin and simple user
+    role: {
+      type: Number,
+      default: 0
     }
-  }, {
-    timestamps:false,
-    sequelize,
-    tableName: 'user'
+  },
+  //for stroing the update and create time
+  { timestamps: true }
+);
+
+userSchema
+  .virtual("password")
+  .set(function(password) {
+    this._password = password;
+    //storing the salt
+    this.salt = uuidv1();
+    this.encry_password = this.securePassword(password);
+  })
+  .get(function() {
+    return this._password;
   });
+
+userSchema.methods = {
+  autheticate: function(plainpassword) {
+    return this.securePassword(plainpassword) === this.encry_password;
+  },
+
+  securePassword: function(plainpassword) {
+    if (!plainpassword) return "";
+    try {
+      return crypto
+        .createHmac("sha256", this.salt)
+        .update(plainpassword)
+        .digest("hex");
+    } catch (err) {
+      return "";
+    }
+  }
 };
+
+module.exports = mongoose.model("User", userSchema);
