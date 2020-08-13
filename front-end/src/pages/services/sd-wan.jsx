@@ -7,7 +7,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 function SDWAN(props) {
-    const features= ["Express Routes to office 365, AWS, Azure", "High-performance routes", "Fully Managed Service" ];
+    const features= ["High-performance routes", "Fully Managed Service" ];
     return (
         <div>
             <Head>
