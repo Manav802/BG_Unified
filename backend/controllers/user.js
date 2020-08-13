@@ -107,7 +107,7 @@ exports.verifyToken = async (req,res)=>{
                 if(err) throw err
             })
             //send token in the header 
-            res.status(200).header('Authorization',token).json({
+            res.status(200).header('Authorization',`Bearer `+token).json({
                 type: "Success",
                 message :"Sign In successfully"
             })
@@ -123,8 +123,10 @@ exports.verifyToken = async (req,res)=>{
 exports.signout =async(req, res)=>{
 
     try {
-        //getting the token 
-        const token = req.header('Authorization')
+        //checking the header 
+        var Btoken = req.header('Authorization')
+        //adding the token
+        const token  = Btoken.split(' ')[1]
         //verify the toekn 
         jwt.verify(token,process.env.SECRET,(err,verified)=>{
         if(err)throw err;
@@ -154,13 +156,16 @@ exports.signout =async(req, res)=>{
 exports.isSignedIn = async (req, res, next)=>{
 
     //checking the header 
-    const token = req.header('Authorization')
-    
+    var Btoken = req.header('Authorization')
+    //adding the token
+    if(!Btoken){
+        return handleError(res,{},"User not loggedIn")
+    }
+    const token  = Btoken.split(' ')[1]
     //if token  does not exist 
     if(!token){
         return handleError(res,{},"Access Denied")
     }
-    
     //verify the toekn 
     jwt.verify(token,process.env.SECRET,(err,verified)=>{
         if(err) {

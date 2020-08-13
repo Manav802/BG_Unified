@@ -37,9 +37,9 @@ router.get('/signout',signout)
 
 
 //Testing API
-// router.get('/test',isSignedIn,(req, res)=>{
-//    res.send("Access Granted")
-// })
+router.get('/test',isSignedIn,(req, res)=>{
+   res.send("Access Granted")
+})
 
 
 module.exports = router
