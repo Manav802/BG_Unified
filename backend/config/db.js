@@ -7,12 +7,12 @@ exports.connectionDB = async () => {
     mongoose.connect(connection,
     { useUnifiedTopology: true, useUnifiedTopology: true ,useNewUrlParser: true },(err, data)=>{
       
-      if(err){ 
-        throw err;
-      }
-      else{
-        console.log("DB Connected")
-      }
+        if(err){ 
+          throw err;
+        }
+        else{
+          console.log("DB Connected")
+        }
     })
    
   } catch (error) {

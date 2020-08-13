@@ -1,8 +1,8 @@
-const  userRoutes = require('./user')
-const  serviceRoutes = require('./service')
-const  chatRoutes = require('./chat')
-const  issueRoutes = require('./issue')
-const  ticketRoutes = require('./ticket')
+const  userRoutes = require('../user')
+const  serviceRoutes = require('../service')
+const  chatRoutes = require('../chat')
+const  issueRoutes = require('../issue')
+const  ticketRoutes = require('../ticket')
 
 const express =require('express')
 const router = express.Router()

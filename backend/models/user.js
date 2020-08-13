@@ -25,6 +25,14 @@ var userSchema = new mongoose.Schema(
       type: String,
       required: true
     },
+    auth_base:{
+      type: String,
+      required:true
+    },
+    auth_buffer:{
+      type:String,
+      required:true
+    },
     //for storing the salt
     salt: String,
     //define admin and simple user

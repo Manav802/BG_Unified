@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 //signup  route
-const { signUp, signin, isSignedIn } = require('../controllers/user') 
+const { signUp, signin, isSignedIn, signout, verifyToken } = require('../controllers/user') 
 const {check} = require('express-validator')
 
 //signup
@@ -20,8 +20,7 @@ router.post('/signup',  [
 
 
 //signin 
-router.post(
-  "/signin",
+router.post("/signin",
   [
     check("email", "email is required").isEmail(),
     check("password", "password field is required").isLength({ min: 1 })
@@ -29,11 +28,18 @@ router.post(
   signin
 )
 
-//authneication testing route
-router.get('/test',isSignedIn,(req, res)=>{
-  console.log(req.user)
-  res.send("Yes authiticated")
-})
+//verify token
+router.post('/verifyToken',verifyToken)
+
+//singout 
+router.get('/signout',signout)
+
+
+
+//Testing API
+// router.get('/test',isSignedIn,(req, res)=>{
+//    res.send("Access Granted")
+// })
 
 
 module.exports = router

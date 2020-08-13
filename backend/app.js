@@ -13,7 +13,7 @@ const dotenv = require('dotenv').config()
 const {connectionDB} = require('./config/db')
 
 //routes
-const router = require('./routes/index');
+const router = require('./routes/helper/index');
 
 //using basic middlwares
 app.use(bodyParser.json())
