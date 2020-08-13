@@ -138,8 +138,8 @@ function main(props) {
 
                                 { (planIndex === 2 || planIndex===3 ) && <>
                                 <div className="my-1 col-lg-12 mt-4">
-                                    <div className="h6">WFM</div>
-                                    <NumberInput maxWidth="200px" min={0} max={20} value={wfm} onChange={setWfm}>
+                                    <div className="h6">Number of Agents</div>
+                                    <NumberInput maxWidth="200px" min={0} max={20} value={wfm>=complianceQM+advancedQM ? wfm:-1} onChange={setWfm}>
                                     <NumberInputField className="bg-light" />
                                     <NumberInputStepper>
                                         <NumberIncrementStepper />
