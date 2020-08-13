@@ -18,9 +18,11 @@ return (
     <div className="container">
         <div className="p-3 d-flex justify-content-between align-items-center layer-4">
             <div className="d-flex align-items-center">
-                <a href="/">
-                <Image src="/assets/logo.png" height="48px" className="mr-3"></Image>
-                </a>
+                <Link href="/">
+                    <a>
+                    <Image src="/assets/logo.png" height="48px" className="mr-3"></Image>
+                    </a>
+                </Link>
                 <Popover closeOnBlur={true} placement="bottom" usePortal initialFocusRef={initRef}>
                     {({ isOpen, onClose }) => (
                     <>
@@ -37,7 +39,7 @@ return (
                                             <div className="NunitoSans-ExtraBold text-secondary mt-2">We cover almost
                                                 90% technology domain required by your business.</div>
                                         </div>
-                                        <div className="col-lg-3 d-flex flex-column footer-content">
+                                        <div className="col-lg-3 col-sm-6 d-flex flex-column footer-content">
                                             <span className="mt-4 mb-1">
                                                 IT Infrastructural Services
                                             </span>
@@ -60,12 +62,12 @@ return (
 
 
                                         </div>
-                                        <div className="col-lg-3 d-flex flex-column footer-content">
+                                        <div className="col-lg-3 col-sm-6 d-flex flex-column footer-content">
                                             <span className="mt-4 mb-1">
                                                 Network Services
                                             </span>
 
-                                            <Link href="/services/sd-wan"><a>SD-WAN Optimazation</a></Link>
+                                            <Link href="/services/sd-wan"><a>SD-WAN Optimization</a></Link>
                                             <Link href="/services/proxy-server"><a>Proxy Severs</a></Link>
                                             <Link href="/services/dns"><a>DNS</a></Link>
                                             <Link href="/services/wireless-networks"><a>Wireless Networks</a></Link>
@@ -83,7 +85,7 @@ return (
                                                 Collaborative Services
                                             </span>
                                             <Link href="/services/ucaas"><a>Unified Communications</a></Link>
-                                            <Link href="/services/customer-support"><a>Customer Support as a Service</a>
+                                            <Link href="/services/contact-center-services"><a>Contact Center As A Service</a>
                                             </Link>
                                             <Link href="/services/architectural-consultancy"><a>Architectutral
                                                 Consultancy</a></Link>
