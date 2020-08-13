@@ -31,7 +31,8 @@
     "react-reveal": "^1.2.2",
     "react-router": "^5.2.0",
     "react-scripts": "^3.4.3",
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.1",
+    "uifx": "^2.0.7"
   },
   "scripts-old": {
     "start": "react-scripts start",

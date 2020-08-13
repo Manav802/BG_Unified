@@ -153,8 +153,8 @@ function main(props) {
                                     </Slider>
                                 </div>
                                 <div className="my-1 col-lg-6 mt-4">
-                                    <div className="h6">COMPLIANCE QM</div>
-                                    <NumberInput maxWidth="200px" min={0} max={20} value={complianceQM} onChange={setComplianceQM}>
+                                    <div className="h6">ADVANCED QM</div>
+                                    <NumberInput maxWidth="200px" min={0} max={20} value={advancedQM} onChange={setAdvancedQM}>
                                     <NumberInputField className="bg-light" />
                                     <NumberInputStepper>
                                         <NumberIncrementStepper />
@@ -162,9 +162,9 @@ function main(props) {
                                     </NumberInputStepper>
                                     </NumberInput>
                                 </div>
-                                <div className="my-1 col-lg-6 mt-4">
-                                    <div className="h6">ADVANCED QM</div>
-                                    <NumberInput maxWidth="200px" min={0} max={20} value={advancedQM} onChange={setAdvancedQM}>
+                                <div className="my-1 col-lg-12 mt-4">
+                                    <div className="h6">Number of Agents</div>
+                                    <NumberInput maxWidth="200px" min={0} max={20} value={wfm<=complianceQM+advancedQM ? wfm:complianceQM+advancedQM} onChange={setWfm}>
                                     <NumberInputField className="bg-light" />
                                     <NumberInputStepper>
                                         <NumberIncrementStepper />
