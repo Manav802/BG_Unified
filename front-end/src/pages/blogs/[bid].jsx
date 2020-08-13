@@ -3,7 +3,7 @@ import {Image} from '@chakra-ui/core'
 import RecentPost from '../../components/header/whatsnew'
 import { useRouter } from 'next/router';
 
-import {BLOGS} from './blogContent'
+import {BLOGS} from '../../../public/assets/data/blogContent.js'
 import Head from 'next/head';
 import Link from 'next/link';
 

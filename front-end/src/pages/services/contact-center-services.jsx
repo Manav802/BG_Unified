@@ -58,7 +58,7 @@ function main(props) {
             <div className="container">
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">Customer Support as a Service (CCaaS)</h1>
+                    <h1 className="display3">Contact Center As A Service (CCaaS)</h1>
                 </div>
             </div>
             </div>

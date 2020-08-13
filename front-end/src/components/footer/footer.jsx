@@ -43,7 +43,7 @@ function footer(props) {
                         <span className="mt-4 mb-1">
                             Network Services
                         </span>
-                        <Link href="/services/sd-wan"><a>SD-WAN Optimazation</a></Link>
+                        <Link href="/services/sd-wan"><a>SD-WAN Optimization</a></Link>
                         <Link href="/services/proxy-server"><a>Proxy Severs</a></Link>
                         <Link href="/services/dns"><a>DNS</a></Link>
                         <Link href="/services/wireless-networks"><a>Wireless Networks</a></Link>
