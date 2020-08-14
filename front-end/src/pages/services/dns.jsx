@@ -24,8 +24,8 @@ function DNS(props) {
             <div className="container">
             <div className="row">
                 <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
-                    <h1 className="display3 text-white">DNS As A Service</h1>
-                    <p className="h6 mt-3 text-white" style={{opacity:".7"}}>Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service with assured low latency and high availability.</p>
+                    <Fade duration={700} delay={300} bottom ><h1 className="display3 text-white">DNS As A Service</h1></Fade>
+                    <Fade duration={700} delay={500} bottom ><p className="h6 mt-3 text-white" style={{opacity:".7"}}>Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service with assured low latency and high availability.</p></Fade>
                 </div>
             </div>
             </div>
@@ -43,7 +43,7 @@ function DNS(props) {
                         <TabPanels>
                         
                             <TabPanel className="py-2">
-                            <Fade duration={500} distance={"30%"} bottom >
+                            <Fade duration={500} bottom >
                                 <div className="row justify-content-center">
                                     <div className="col-lg-5 col-sm-6 col-md-6 my-3">
                                         <PricingCard icon="/assets/images/icons/theme/stack.svg" title="Standard DNS (BlackBox)" featureList={["Includes 5 Zones","Low Latency", "High Availabilty", "BlackBox Service", "Cost Effective"]}>
@@ -60,7 +60,7 @@ function DNS(props) {
                             </TabPanel>
                             
                             <TabPanel className="py-2">
-                            <Fade duration={500} distance={"30%"}  bottom >
+                            <Fade duration={500} bottom >
                                 <div className="row justify-content-center">
                                     <div className="col-lg-5 col-sm-6 col-md-6 my-3">
                                         <PricingCard icon="/assets/images/icons/theme/stack.svg" title="Standard DNS (BlackBox)" featureList={["Includes 5 Zones","Low Latency", "High Availabilty", "BlackBox Service", "Cost Effective"]}>
