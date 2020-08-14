@@ -5,7 +5,7 @@ const { connection } = require('./connection');
 exports.connectionDB = async () => {
   try {
     mongoose.connect(connection,
-    { useUnifiedTopology: true, useUnifiedTopology: true ,useNewUrlParser: true },(err, data)=>{
+    { useUnifiedTopology: true ,useNewUrlParser: true,useCreateIndex: true },(err, data)=>{
       
         if(err){ 
           throw err;
