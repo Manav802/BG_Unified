@@ -1,10 +1,10 @@
 import React from 'react';
 import {Button, Collapse, Image, Select,
-Slider, SliderThumb, SliderTrack, SliderFilledTrack, Flex,RadioButtonGroup,NumberInput,
+Slider, SliderThumb, SliderTrack, SliderFilledTrack, FormLabel, Switch, Flex,RadioButtonGroup,NumberInput,
 NumberInputField,
 NumberInputStepper,
 NumberIncrementStepper,
-NumberDecrementStepper, FormLabel, Switch} from '@chakra-ui/core'
+NumberDecrementStepper, } from '@chakra-ui/core'
 import Fade from 'react-reveal/Fade';
 import CardWithIcon from "../../components/cards/CardWithIcon"
 import {PricingCard, PricingQuote} from '../../components/cards/PricingCard'
@@ -162,7 +162,7 @@ function main(props) {
                                     </NumberInputStepper>
                                     </NumberInput>
                                 </div>
-                                <div className="my-1 col-lg-12 mt-4">
+                                <div className="my-1 col-lg-6 mt-4">
                                     <div className="h6">Number of Agents</div>
                                     <NumberInput maxWidth="200px" min={0} max={20} value={wfm<=complianceQM+advancedQM ? wfm:complianceQM+advancedQM} onChange={setWfm}>
                                     <NumberInputField className="bg-light" />

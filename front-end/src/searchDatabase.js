@@ -4,7 +4,7 @@ export const SEARCH = {
             name: "Solutions",
             description: "ldmbrkjhfrnremr",
             tags: ["sdjd","dsk,jre"],
-            link: "./pages/solutions"
+            link: "/services/solutions"
         },
         {
             name: "Newsroom",
@@ -50,15 +50,15 @@ export const SEARCH = {
             description: "BG Unified Solutions provides services in the area of Web, Mobile and Enterprise Application Development.",
             sub-description: "Our team of technical and functional experts can help you in new Application Development, Modernizing and Supporting existing applications.",
             tags: ["application", "app", "dev", "development", "scalability", "platform", "independence", "client", "flexibility"],
-            price: ""
-            link: "./pages/services/application-dev"
+            price: "",
+            link: "/services/application-dev"
         },
         {
             name: "Architectural Consultancy",
             description: "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture.",
             sub-description: "Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
             tags: ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
-            price: ""
+            price: "",
             link: "./pages/services/architectural-consultancy"
         },
         {
