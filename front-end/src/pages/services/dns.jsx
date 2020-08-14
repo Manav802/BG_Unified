@@ -155,15 +155,14 @@ function DNS(props) {
                 </div>
             </div>
             </section> */}
-        <div className="section pt-0">
+        <div className="section py-0">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        <div className="h4 NunitoSans-ExtraBold">To prevent a drastic fall, install a Firewall
+                        <div className="h4 NunitoSans-ExtraBold">For a stronger web identity
                         </div>
                         <div className="h6 mt-4 text-secondary text-justify text-dark">
-                            In this digital era, when technology has proved to be a boon, small, medium and large-sized businesses are majorly dependent upon networking,connections and interactions. To help these operations get performed smoothly and efficiently, with full security, to eradicate security breach in your network. Firewalls block malicious connections being established inside a network and keeps data and information safe within a network.
-                        </div>
+                            Domain Name System as a Service is a functionality of deploying, maintaining managing and securing your website over the world wide web with a unique domain name for a particular website. The main functionality of DNS is to convert domain names into IP addresses, for the web browsers to identify a website, for them to load the required resources. Domain Name System Service allows you to host the website over the web, and maintain and monitor in real-time.                        </div>
                     </div>
                 </div>
             </div>
@@ -175,13 +174,11 @@ function DNS(props) {
                     <Fade duration={500} distance={"30%"} bottom >
                         <div className="card h-100 rounded-8">
                             <div className="card-body d-flex flex-column align-items-center">
-                                <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
-                                Platform Diversity
+                                <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark ">
+                                    Scalability 
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                    On-premise or cloud-based, that helps secure your IT environment quickly.
-                                    The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.
-                                </div>
+                                    Hierarchical nature of  DNS, making it scalable. Allows every organization to manage its authoritative and operational data effectively, even with increased resources. Maintaining compatibility as DNS servers clients run on different hardware, different operating systems.                                </div>
                                 <Image  height="300px" src="/assets/images/illustrations/diversity.svg"></Image>
                             </div>
                         </div>
@@ -193,12 +190,10 @@ function DNS(props) {
                             <div className="card-body d-flex flex-column align-items-center">
                                 
                                 <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                                Fast and easy Deployment
+                                    Reliability 
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                Rapid evolvement, easily deployable with tremendous speed. 
-                                Proven deployment methodology that integrates and extends your existing security infrastructure without capex.
-                                </div>
+                                    The user or the end host need not dive into the technicality about root or TLD servers. Only need to know the basics of the functioning. Eliminating vulnerabilities like cache poisoning, to reach a satisfactory level of security, making our DNS service extremely reliable.                                </div>
                                 <Image  height="300px" src="/assets/images/illustrations/data_center.svg"></Image>
                             </div>
                         </div>
@@ -210,12 +205,10 @@ function DNS(props) {
                             <div className="card-body d-flex flex-column align-items-center">
                                 
                                 <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                                Advance Technology Stack
+                                    Concurrency 
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                    Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, 
-                                    User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included
-                                </div>
+                                    Allows and handles multiple requests simultaneously and manages data by distributing over a large number of hosts. Detects, isolates notifies and corrects faults encountered in the network.                                </div>
                                 <Image src="/assets/images/illustrations/assets.svg" className="mt-auto" height="250px"></Image>
                             </div>
                         </div>
@@ -224,27 +217,25 @@ function DNS(props) {
                 </div>
             </div>
         </div>
-        <section className="fdb-block section">
-        <div className="container">
-            <div className="row">
-            <div className="col text-center">
-                <h1 className="display4">Why Us</h1>
+        <div className="section py-0">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12 p-5 rounded-8 bg-light">
+                        <h4 className="display5 py-2 mb-2 text-center">Why Us?</h4>
+                        <p className="text-justify">
+                        Delivering a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users.
 
-                <div className="row text-left pt-4">
-                <div className="col-12 col-md-6">
-                    <p className="lead text-justify">We, at BG Unified Solutions, tend to offer the best in class Security for your business around the globe. With our team of experts, the experience we’ve gained, ensure you to provide customizable security to your network, prevent any security breach, secure data flowing through your network. We offer you solutions that especially suits your business model, whether small, medium or large, 
-                        we’ve got it covered. We provide Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure. BG Unified solutions provide you firewalls for a single location system, or a multi-homed network, as per your needs and requirements.
-                        We have On-premise or cloud-based, that helps secure your IT environment quickly. </p>
+We have a ‘can-do’ attitude with an ‘easy to work with’ culture. Our values are based around fresh thinking, delivering on our promises, showing customer respect and making a 100% commitment.
+We design a Load Balancing topology for web servers running multiple instances of TOMCAT. A couple of applications are SSL based and others are Non-SSL based. Implementation of advanced features of F5 including Application Monitoring, Intrusion Prevention, Application Inspection and dynamically powering on the VMs based on the load or other criteria’s. Involvement in the integration of Big IPs to the newly implemented DC.
+BG Solutions has gained an excellent reputation in design and implementation of IP technology and significant experience in Web Hosting services design and implementation for a number of clients and in distributed environments and locations.
+BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use information technology to improve their business results.
+We give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches.
+
+                        </p>
+                    </div>
                 </div>
-                <div className="col-12 col-md-6">
-                    <p className="lead">The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance. Customer satisfaction and quality is our motto. Maintaining our service is our duty. Any customer support, regarding installation, usage or fault management, consultancy services for your business, we provide extremely satisfying service, and that’s the word for us. We promise you to provide affordable, transparent and cost-efficient service fulfilling your needs. Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA. Centralized Policy Management using Panorama, Sourcefire DC. Cloud-Based or on-premise, 
-                        URL filtering, SSL VPN’s inclusion.</p>
-                </div>
-                </div>
-            </div>
             </div>
         </div>
-        </section>
         <div className="section pt-0">
             <div className="container">
                 <div className="row">

@@ -159,10 +159,10 @@ function main(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        <div className="h4 NunitoSans-ExtraBold">Professional communication at your fingertips.
+                        <div className="h4 NunitoSans-ExtraBold">Storage Made Simple.
                         </div>
                         <div className="h6 mt-4 text-secondary text-justify text-dark">
-                        In today’s world, collaboration involves so much more than voice. With a full range of video and web conferencing solutions, unified communications, and workspace applications, the adoption of collaboration technology is widespread across organizations and affects multiple lines of business. Putting video in action, from the desktop to the conference rooms and to the largest applicable venues—including audio/video and rich media content that can be captured, streamed live, archived, or repurposed for the required collaboration toolset
+                        Today’s dynamic data canter’s present some unique storage challenges. How do you best manage explosive storage capacity requirements and multiple storage silos—as well as consolidation into internal clouds to provide storage as a service? Add complex backup and recovery plans, and their integration into your disaster recovery plans, and storage becomes even more complex. And while there are commonalities that allow for pre-packaged solutions, every data centre is different. Each one requires knowledgeable professionals to help define the correct solution, often across multiple manufacturers, to combine and collaborate in order to create the optimal solution for your organization.
                         </div>
                     </div>
                 </div>
@@ -175,12 +175,11 @@ function main(props) {
                     <Fade duration={500} distance={"30%"} bottom >
                         <div className="card h-100 rounded-8">
                             <div className="card-body d-flex flex-column align-items-center">
-                                <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
-                                Platform Diversity
+                                <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                                Low pricing
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                    On-premise or cloud-based, that helps secure your IT environment quickly.
-                                    The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.
+                                Pay only for the storage you actually require and use, bundling it up with Data Link. Transparent pricing and costing schedule. Dynamic as per your needs.
                                 </div>
                                 <Image  height="300px" src="/assets/images/illustrations/diversity.svg"></Image>
                             </div>
@@ -193,11 +192,10 @@ function main(props) {
                             <div className="card-body d-flex flex-column align-items-center">
                                 
                                 <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                                Fast and easy Deployment
+                                Efficient and Agile
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                Rapid evolvement, easily deployable with tremendous speed. 
-                                Proven deployment methodology that integrates and extends your existing security infrastructure without capex.
+                                Boost up your operational efficiency and improve your organization’s agility. Also, Real-time monitoring of your storage resources.
                                 </div>
                                 <Image  height="300px" src="/assets/images/illustrations/data_center.svg"></Image>
                             </div>
@@ -210,11 +208,10 @@ function main(props) {
                             <div className="card-body d-flex flex-column align-items-center">
                                 
                                 <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                                Advance Technology Stack
+                                Highly available infrastructure
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                    Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, 
-                                    User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included
+                                Cutting edge SAN array which intelligently uses caching, Solid State Disks(SSDs), and traditional hard disk spindles. Scaling up or down your storage capacity as and when required.
                                 </div>
                                 <Image src="/assets/images/illustrations/assets.svg" className="mt-auto" height="250px"></Image>
                             </div>
@@ -229,9 +226,13 @@ function main(props) {
                 <div className="row">
                     <div className="col-12 p-5 rounded-8 bg-light">
                         <h4 className="display5 py-2 mb-2 text-center">Why Us?</h4>
-                        <p className="text-justify">Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business.
-We have the expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint. We bring our team of experienced collaboration experts to every engagement, and we offer business and technology assessments to help identify any barriers in order for your collaborative Goals to succeed. We structure our discovery process to consider your entire telecommunications environment, including network infrastructure, data centres, and more. Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support. We have the expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint. We structure our discovery process to consider your entire telecommunications environment, including network infrastructure, data centres, and more. Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support.
-</p>
+                        <p className="text-justify">
+                        You can rely on us to help you navigate the storage landscape. Our experienced, certified storage professionals and data centre practice team are adept at helping customers manage change and transform their data centre's to enable next-generation computing models. From assessments to design, architecture, and implementation, we can help you transform your legacy application environments to “cloud-based” data centres, which provide:
+Easy provisioning of computing resources to support your diverse requirements
+Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage.
+Our staff are trained and experienced across top storage manufacturer offerings, enabling us to design complex, multi-vendor solutions. We’ll show you how to tame explosive storage capacity growth and put management products in place to support your specific virtualized computing and storage environments.
+
+                        </p>
                     </div>
                 </div>
             </div>
