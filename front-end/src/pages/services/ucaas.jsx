@@ -104,7 +104,8 @@ function UCaaS(props) {
                                         <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Single Node IP Office"); resetOnCardChange();}}>View More</Button>
                                 </PricingCard>
                                 </div>
-                                <div className="col-lg-4 my-3"> resetOnCardChange();     <PricingCard title="Dual Node IP Office" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email*", "Include Cisco Jabber"]}>
+                                <div className="col-lg-4 my-3">  
+                                    <PricingCard title="Dual Node IP Office" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email*", "Include Cisco Jabber"]}>
                                         <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setNode("Dual Node IP Office"); resetOnCardChange();}}>View More</Button>
                                     </PricingCard>
                                 </div>
@@ -160,8 +161,7 @@ function UCaaS(props) {
                                 </div>
                                 <div className="mt-4 col-lg-11">
                                     <div className="row">
-                                    <p className=" col-md-8 NunitoSans-Bold d-flex"> - This type includes {type.slice(0,2)} UCaaS and {type.slice(3,)}. </p> 
-                                    <a onClick={()=>{setShowSIP(!showSIP);}} className="col-md-3"> Add Additional SIP </a> 
+                                    <p className=" NunitoSans-Bold "> - This type includes {type.slice(0,2)} UCaaS users and {type.slice(3,)} channels. <a onClick={()=>{setShowSIP(!showSIP);}}> Add Additional SIP? </a> </p> 
                                     </div>
                                 </div>
                                 <div className="col-lg-11">
