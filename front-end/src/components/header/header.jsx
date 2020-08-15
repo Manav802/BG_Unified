@@ -149,14 +149,16 @@ return (
                 <Button className="text-dark hover-effect" variantColor="white">Our Features</Button>
                 </Link>
             </div>
-            <div>
-                <span className="NunitoSans-SemiBold p-2">Call Us <b>1300 00 BGUS</b></span>
-                <span className="p-2 rounded-8 hover-effect">
-                    <Icon name="search" size="16px"></Icon>
-                </span>
-                <Link href="/contact">
+            <div className="row">
+                <Link className="col" href="/contact">
                 <Button className="mx-3" variant="solid" variantColor="primary">Contact Us</Button>
                 </Link>
+                <p className="col contact-info">
+                    <span className="NunitoSans-SemiBold p-2">Call Us <b>1300&nbsp;00&nbsp;BGUS</b></span>
+                    <span className="p-2 rounded-8 hover-effect">
+                        <Icon className="search-icon" name="search"></Icon>
+                    </span>
+                </p>
             </div>
         </div>
     </div>

@@ -21,4 +21,15 @@
             font-family: "Nunito Sans Regular";
         }
     }
+    @media(max-width:992px) {
+        .container{
+            max-width:950px;
+            .col.contact-info{
+                font-size: smaller;
+                .search-icon{
+                    size: 12px;
+                }
+            }
+        }
+    }
 }
