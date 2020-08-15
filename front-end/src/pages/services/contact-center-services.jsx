@@ -137,16 +137,7 @@ function main(props) {
                                 }
 
                                 { (planIndex === 2 || planIndex===3 ) && <>
-                                <div className="my-1 col-lg-12 mt-4">
-                                    <div className="h6">WFM</div>
-                                    <NumberInput maxWidth="200px" min={0} max={20} value={wfm} onChange={setWfm}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
+                                
                                 <div className="my-1 col-lg-6 mt-4">
                                     <div className="h6">COMPLIANCE QM</div>
                                     <NumberInput maxWidth="200px" min={0} max={20} value={complianceQM} onChange={setComplianceQM}>
@@ -167,10 +158,20 @@ function main(props) {
                                     </NumberInputStepper>
                                     </NumberInput>
                                 </div>
+                                <div className="my-1 col-lg-12 mt-4">
+                                    <div className="h6">Number of Agents</div>
+                                    <NumberInput maxWidth="200px" min={0} max={20} value={wfm<=complianceQM+advancedQM ? wfm:complianceQM+advancedQM} onChange={setWfm}>
+                                    <NumberInputField className="bg-light" />
+                                    <NumberInputStepper>
+                                        <NumberIncrementStepper />
+                                        <NumberDecrementStepper />
+                                    </NumberInputStepper>
+                                    </NumberInput>
+                                </div>
                                 </>
                                 }
                                 
-                                <div className="col-lg-12 mt-3 d-flex justify-content-end">
+                                <div className="col-lg-12 mt-3 d-flex justify-content-center">
                                 <PricingQuote serviceDescription={`${planName}${verifyNotEmpty(value,"Additional CSQ")}${RDSType}${verifyNotEmpty(tbSpace,"TB Space")}${verifyNotEmpty(wfm,"WFM")}${verifyNotEmpty(complianceQM,"Compliance QM")}${verifyNotEmpty(advancedQM,"Advanced QM")}${handleFailOverNode(failOverNode)}`} button ></PricingQuote>
                                 </div>
                             </div>

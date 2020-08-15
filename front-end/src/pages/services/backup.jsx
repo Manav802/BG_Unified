@@ -97,10 +97,10 @@ function main(props) {
                                         <Switch onChange={(e)=>{setHourlyBackups(e.target.checked)}} color="primary" mb={0} id="hourly-backup" />
                                         <FormLabel mb={0} ml="12px" htmlFor="hourly-backup">Hourly Backups</FormLabel>
                                     </Flex>
-                                    <PricingQuote serviceDescription={`${value} Copy${restorePoints}${geoLocations}${handleHourlyBackups(hourlyBackups)}`} button ></PricingQuote>
+                                    <PricingQuote serviceName="Backup As A Service" serviceDescription={`${value} Copy${restorePoints}${geoLocations}${handleHourlyBackups(hourlyBackups)}`} button ></PricingQuote>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </Collapse>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import TransitionGroup from 'react-transition-group/TransitionGroup';
 import {Button,Box, Collapse, Image, Tabs, TabList, TabPanels, Tab, TabPanel, RadioButtonGroup, NumberInput,
     NumberInputField,
@@ -108,6 +108,10 @@ const CustomRadio = React.forwardRef((props, ref) => {
 
 function main(props) {
 
+    useEffect(() => {
+        
+    }, []);
+
     const verifyNotEmpty = (x, text) => x > 0 ? (", " + x + " " + text) : ""; 
 
     const [type, setType] = React.useState("");
@@ -163,7 +167,7 @@ function main(props) {
     return (
         <div>
             <Head>
-                <title>Storage As A Service</title>
+                <title>Empowering the Internet generation | Infrastructure As A Service - BG Unified Solutions </title>
             </Head>
         <div className="position-absolute w-100 overflow-hidden background-svg">
             <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
@@ -172,7 +176,7 @@ function main(props) {
             <div className="container">
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">Empowering the Internet generation.</h1>
+                    <h1 className="display3">Infrastructure As A Service</h1>
                 </div>
             </div>
             </div>
@@ -323,7 +327,7 @@ function main(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        <div className="h4 NunitoSans-ExtraBold">Why Do we need Infrastructure ??
+                        <div className="h4 NunitoSans-ExtraBold">Empowering the Internet generation
                         </div>
                         <div className="h6 mt-4 text-secondary text-justify text-dark">
                         Optimizing infrastructural resources is essential to controlling the cost of data growth. The Enterprise Infrastructure Assessment provides in-depth reports and recommendations for improving storage efficiency, performance, and availability. Findings are linked to your specific risks and benefits—so you can scale your infra systems to successfully serve the growing needs of your business. We can address your heterogeneous data centre environment and provide data and recommendations across all assets.

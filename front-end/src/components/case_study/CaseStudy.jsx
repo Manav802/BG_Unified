@@ -1,7 +1,4 @@
 import React from 'react'
-import image23 from './Image 23.png'
-import sdwan_s from './sdwan_s-1.png';
-import repeat_grid from './Repeat Grid 12.png'
 import {Icon,Button, Box} from '@chakra-ui/core';
 import Slider from 'react-flickity-component'
 
