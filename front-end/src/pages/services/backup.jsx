@@ -6,7 +6,6 @@ import CardWithIcon from "../../components/cards/CardWithIcon"
 import {PricingCard, PricingQuote} from '../../components/cards/PricingCard'
 import Head from 'next/head'
 import Link from 'next/link'
-import { useToast } from "@chakra-ui/core"
 
 function main(props) {
     const [show, setShow] = React.useState(false);
@@ -17,7 +16,6 @@ function main(props) {
     const [geoLocations, setGeoLocations] = React.useState("");
     const [hourlyBackups, setHourlyBackups] = React.useState(false);
     const handleHourlyBackups = (hourlyBackups) => (hourlyBackups) ? (",Enabled Hourly Backups") : ("")
-    const toast=useToast();
     return (
         <div>
             <Head>
@@ -212,13 +210,6 @@ function main(props) {
                 </div>
             </div>
         </div>
-        { toast({
-          title: "Account created.",
-          description: "We've created your account for you.",
-          status: "success",
-          duration: 9000,
-          isClosable: true,
-        })}
         </div>
     );
 }
