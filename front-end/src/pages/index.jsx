@@ -29,7 +29,6 @@ class Landing extends Component {
                     <script type='text/javascript' src='/assets/js/planetaryjs.min.js'></script>
                     <script type='text/javascript' src='/assets/js/globe.js'></script>
 
-                    <link rel="shortcut icon" href="/assets/images/icons/favicon/bg.ico" type="image/x-icon" />
                 </Head>
                 <div className="bg-landing">
                     <div className="container py-5">
@@ -40,7 +39,7 @@ class Landing extends Component {
                                 <div className="h6 NunitoSans-SemiBold px-5 text-center mt-3">Computing Infrastructure, Proxy Servers, Firewalls, Web Hosting, Cloud Logging, UCaaS and much more….</div>
                                 <div className="p-4 justify-content-center d-flex">
                                         <Link href="/solutions"> 
-                                            <Button variant="solid" className="mx-2" variantColor="primary" size="lg">Explore Now</Button>
+                                            <Button variant="solid" className="mx-2 btn btn-outline hoverable" variantColor="primary" size="lg">Explore Now</Button>
                                         </Link>
                                         <Link href="/contact">
                                             <Button variant="outline" className="mx-2 btn btn-outline" size="lg">Get a quote</Button>

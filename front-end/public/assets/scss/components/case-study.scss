@@ -1,13 +1,17 @@
 .case-study{
     border-radius: 12px;
     color: $color-light;
-    min-height: 400px;
+    min-height: 300px;
     padding: 45px 150px 51px 50px;
     background: linear-gradient(
     rgba(34, 128, 191, 0.6),
     rgba(34, 128, 191, 0.6) ) ,
-    url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pxwall.com%2Fwp-content%2Fuploads%2F2018%2F04%2FDark-Images-Wallpapers-1024x521.jpg&f=1&nofb=1');
+    url('/assets/images/case-study/sdwan_s.png');
+    img{
+      overflow: hidden;
+    }
     opacity: .4;
+    background-repeat: no-repeat;
     transition: all .3s;
     transform: scale(.8);
     &-container {

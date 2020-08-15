@@ -1,84 +1,85 @@
-export const SEARCH = {
-    pages: [
+{
+    "pages": [
         {
-            name: "Solutions",
-            description: "ldmbrkjhfrnremr",
-            tags: ["sdjd","dsk,jre"],
-            link: "./pages/solutions"
+            "name": "Solutions",
+            "description": "ldmbrkjhfrnremr",
+            "tags": ["sdjd","dsk,jre"],
+            "link": "./pages/solutions"
         },
         {
-            name: "Newsroom",
-            description: "",
-            tags: ["",""],
-            link:"./pages/newsroom"
+            "name": "Newsroom",
+            "description": "",
+            "tags": ["",""],
+            "link":"./pages/newsroom"
         },
         {
-            name: "Features",
-            description: "",
-            tags: ["",""],
-            link: "./pages/features"
+            "name": "Features",
+            "description": "",
+            "tags": ["",""],
+            "link": "./pages/features"
         },
         {
-            name: "Contact",
-            description: "",
-            tags: ["",""],
-            link: "./pages/contact",
+            "name": "Contact",
+            "description": "",
+            "tags": ["",""],
+            "link": "./pages/contact",
         },
         {
-            name: "About Us",
-            description: "",
-            tags: ["",""],
-            links: "./pages/about"
+            "name": "About Us",
+            "description": "",
+            "tags": ["",""],
+            "links": "./pages/about"
         },
         {
-            name: "Blogs",
-            description: "",
-            tags: ["",""],
-            links: "./pages/blogs/[bid]"
+            "name": "Blogs",
+            "description": "",
+            "tags": ["",""],
+            "links": "./pages/blogs/[bid]"
         },
         {
-            name: "Article",
-            description: "",
-            tags: [],
-            links: "./pages/article/template"
+            "name": "Article",
+            "description": "",
+            "tags": [],
+            "links": "./pages/article/template"
         }
-    ],
+},
 
-    services: [
+{
+    "services": [
         {
-            name: "Application Development and Scalability",
-            description: "BG Unified Solutions provides services in the area of Web, Mobile and Enterprise Application Development.",
-            sub-description: "Our team of technical and functional experts can help you in new Application Development, Modernizing and Supporting existing applications.",
-            tags: ["application", "app", "dev", "development", "scalability", "platform", "independence", "client", "flexibility"],
-            price: ""
-            link: "./pages/services/application-dev"
+            "name": "Application Development and Scalability",
+            "description": "BG Unified Solutions provides services in the area of Web, Mobile and Enterprise Application Development.",
+            "sub-description": "Our team of technical and functional experts can help you in new Application Development, Modernizing and Supporting existing applications.",
+            "tags": ["application", "app", "dev", "development", "scalability", "platform", "independence", "client", "flexibility"],
+            "price": "",
+            "link": "./pages/services/application-dev"
         },
         {
-            name: "Architectural Consultancy",
-            description: "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture.",
-            sub-description: "Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
-            tags: ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
-            price: ""
-            link: "./pages/services/architectural-consultancy"
+            "name": "Architectural Consultancy",
+            "description": "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture.",
+            "sub-description": "Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
+            "tags": ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
+            "price": "",
+            "link": "./pages/services/architectural-consultancy"
         },
         {
-            name: "Cloud Exchange Connectivity",
-            description: "Express Routes to office 365, AWS, Azure",
-            sub-description: "Advanced Solution providing private seamless, and on-demand connections to many clouds as well as networks.",
-            tags: ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
-            price: "",
-            link: "./pages/services/cloud-exchange"
+            "name": "Cloud Exchange Connectivity",
+            "description": "Express Routes to office 365, AWS, Azure",
+            "sub-description": "Advanced Solution providing private seamless, and on-demand connections to many clouds as well as networks.",
+            "tags": ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
+            "price": "",
+            "link": "./pages/services/cloud-exchange"
         },
         {
-            name: "Cloud Logging",
-            description: "Log central services over the internet. Collect, Store, and report the various data and underlying threats.",
-            sub-description: "Add the shield to protect your business reputation. Application and system logs ingestions.",
-            tags: ["cloud", "logging", "log", "threats", "log management", "troubleshooting"],
-            price: "",
-            link: ""
+            "name": "Cloud Logging",
+            "description": "Log central services over the internet. Collect, Store, and report the various data and underlying threats.",
+            "sub-description": "Add the shield to protect your business reputation. Application and system logs ingestions.",
+            "tags": ["cloud", "logging", "log", "threats", "log management", "troubleshooting"],
+            "price": "",
+            "link": ""
         },
         {
-            name: "Customer Support as a Service",
+            "name": "Customer Support as a Service",
             description: "BG Unified Solution’s CSaaS helps you provide a positive customer experience through a suite of advanced contact center tools.",
             sub-description: "We have deep contracts with all major Telcos including AAPT, Telstra and Optus.",
             tags: ["customer", "Support", "CSaaS", "Customer Experience", "Productivity", "Securing", "Data"],
