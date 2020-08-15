@@ -50,7 +50,7 @@ class GetaQuoteForm extends Component {
       console.log(response)
     })
     .catch(function(error) {
-      console.log(error)
+      console.log(error);
     })
     this.refreshForm()
   }

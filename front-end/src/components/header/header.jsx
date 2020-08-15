@@ -160,6 +160,12 @@ return (
                 <Link href="/contact">
                     <Button className="mx-3 d-none d-sm-block" variant="solid" variantColor="primary">Contact Us</Button>
                 </Link>
+                <p className="col contact-info">
+                    <span className="NunitoSans-SemiBold p-2">Call Us <b>1300&nbsp;00&nbsp;BGUS</b></span>
+                    <span className="p-2 rounded-8 hover-effect">
+                        <Icon className="search-icon" name="search"></Icon>
+                    </span>
+                </p>
             </div>
         </div>
     </div>

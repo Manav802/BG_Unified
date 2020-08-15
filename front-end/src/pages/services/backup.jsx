@@ -58,8 +58,8 @@ function main(props) {
                             <div className="display5 text-center">Customize your plan</div>
                             <div className="row px-3">
                                 <div className="col-lg-12 mt-4">
-                                    <div className="h6">How many copies you want?</div>
-                                    <Slider color="primary" my="24px" max={30} defaultValue={1} value={value} onChange={handleChange}>
+                                    <div className="h6">No. of Copies</div>
+                                    <Slider color="primary" my="24px" max={4} defaultValue={1} value={value} onChange={handleChange}>
                                         <SliderTrack h="16px" borderRadius="8px" />
                                         <SliderFilledTrack h="16px" borderRadius="8px" />
                                         <SliderThumb
@@ -73,7 +73,7 @@ function main(props) {
                                     </Slider>
                                 </div>
                                 <div className="col-lg-5 mt-4">
-                                    <div className="h6">How many Restore Points you want?</div>
+                                    <div className="h6">Specify your choice of no. of Restore Points?</div>
                                     <Select onChange={e => setRestorePoints(e.target.value)} my="24px" placeholder="Select option" size="lg">
                                         <option value=",5 Restore Points">5</option>
                                         <option value=",10 Restore Points">10</option>
@@ -84,7 +84,7 @@ function main(props) {
                                     </Select>
                                 </div>
                                 <div className="col-lg-5 offset-lg-1 mt-4">
-                                    <div className="h6">How many Geo Locations you want?</div>
+                                    <div className="h6">Set no. of Geo Locations for your Backups?</div>
                                     <Select onChange={e => setGeoLocations(e.target.value)} my="24px" placeholder="Select option" size="lg">
                                         <option value=",1 Geo Location">1</option>
                                         <option value=",2 Geo Location">2</option>
