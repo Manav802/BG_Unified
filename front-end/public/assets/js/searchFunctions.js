@@ -1,6 +1,6 @@
 import { Stack, Box } from "@chakra-ui/core";
 import Link from 'next/link';
-import data from '../public/assets/data/searchDatabase.json';
+import data from '../data/searchDatabase.json';
 
 //dynamicSearch(searchTerm) will return filtered results object of this format : {pages: [{name:"",link:""}], services: [], articles: []} (same format as in searchDatabase.json)
 //Results is a functional React Component used to show how this data is mapped.
@@ -26,6 +26,7 @@ export const dynamicSearch = (searchTerm) => {
   ); 
 }
 
+export const searchData = data
 //Example Results Component, Not a Function!
 //Example Usage:  <Results results = {this.dynamicSearch(searchTerm)}/>
 export function Results({results}){
