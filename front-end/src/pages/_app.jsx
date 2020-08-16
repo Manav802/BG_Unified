@@ -27,7 +27,7 @@ const ChatBot = dynamic(
 import NProgress from 'nprogress'; //nprogress module
 import 'nprogress/nprogress.css'; //styles of nprogress
 
-
+//just a comment
 import config from 'react-reveal/globals';
 
 config({ ssrFadeout: true });
