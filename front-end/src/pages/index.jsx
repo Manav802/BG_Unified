@@ -18,6 +18,11 @@ class Landing extends Component {
     componentDidMount(){
         
     }
+
+    onHover(e){
+        
+    }
+
     render() {
         return (
             

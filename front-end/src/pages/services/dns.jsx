@@ -174,7 +174,7 @@ function main(props) {
                     <Fade duration={500} distance={"30%"} bottom >
                         <div className="card h-100 rounded-8">
                             <div className="card-body d-flex flex-column align-items-center">
-                                <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark ">
+                                <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark ">
                                     Scalability 
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
@@ -189,7 +189,7 @@ function main(props) {
                         <div className="card h-100 rounded-8">
                             <div className="card-body d-flex flex-column align-items-center">
                                 
-                                <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                                <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                                     Reliability 
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
@@ -204,7 +204,7 @@ function main(props) {
                         <div className="card h-100 rounded-8">
                             <div className="card-body d-flex flex-column align-items-center">
                                 
-                                <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                                <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                                     Concurrency 
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">

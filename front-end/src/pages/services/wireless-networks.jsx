@@ -175,7 +175,7 @@ function main(props) {
                     <Fade duration={500} distance={"30%"} bottom >
                         <div className="card h-100 rounded-8">
                             <div className="card-body d-flex flex-column align-items-center">
-                                <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                                <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                                     Clustering of Devices
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
@@ -191,7 +191,7 @@ function main(props) {
                         <div className="card h-100 rounded-8">
                             <div className="card-body d-flex flex-column align-items-center">
                                 
-                                <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                                <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                                     Unified and Efficient
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
@@ -206,7 +206,7 @@ function main(props) {
                         <div className="card h-100 rounded-8">
                             <div className="card-body d-flex flex-column align-items-center">
                                 
-                                <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                                <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                                     Network Security
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
@@ -225,9 +225,9 @@ function main(props) {
                     <div className="col-12 p-5 rounded-8 bg-light">
                         <h4 className="display5 py-2 mb-2 text-center">Why Us?</h4>
                         <p className="text-justify">
-                        With BG Unified Solutions Wireless as a Service, you get Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers. Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, so as to support Wireless Phones in any environment. Traffic and congestion problems reduced significantly. Unified and Efficient service, i.e. Improved operational efficiencies, Reduced communication-related delays and enhanced collaboration. Completely redundant process and efficient transmission.
-BG Unified Solutions ensure completely secure network by technologies such as NAC(Network Access Control) using ISE, SourceFire, Cisco / Palo Alto / Checkpoint / Fortinet Firewall, DDOS Protection.
-Boost up your operational efficiency. Improve your organization’s agility. Guaranteed access to a team of experts in different technologies.The key service for supporting mobile communications, wireless connections in your offices and organizations. Wireless plays an integral part in collaborating and streamlining resources of an organisation and increase productivity at a tremendous rate. 
+                            With BG Unified Solutions Wireless as a Service, you get Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers. Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, so as to support Wireless Phones in any environment. Traffic and congestion problems reduced significantly. Unified and Efficient service, i.e. Improved operational efficiencies, Reduced communication-related delays and enhanced collaboration. Completely redundant process and efficient transmission.
+                            BG Unified Solutions ensure completely secure network by technologies such as NAC(Network Access Control) using ISE, SourceFire, Cisco / Palo Alto / Checkpoint / Fortinet Firewall, DDOS Protection.
+                            Boost up your operational efficiency. Improve your organization’s agility. Guaranteed access to a team of experts in different technologies.The key service for supporting mobile communications, wireless connections in your offices and organizations. Wireless plays an integral part in collaborating and streamlining resources of an organisation and increase productivity at a tremendous rate. 
                         </p>
                     </div>
                 </div>
