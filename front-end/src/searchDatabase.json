@@ -30,11 +30,8 @@
             "tags": ["aboutus","know", "who"],
             "links": "/about"
         }
-    ]
-}
+    ],
 
-//SERVICES
-{
     "services": [
         {
             "name": "Application Development and Scalability",
@@ -172,11 +169,8 @@
             "price": "",
             "link": "./pages/services/wireless-networks"
         }
-    ]
-} 
+    ],
 
-//ARTICLES/BLOGS
-{
     "articles":[
         {
             "name": "BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW",
@@ -193,11 +187,8 @@
             "date-published": "",
             "category": ""
         }
-    ]
-} 
+    ],
 
-//NEWSROOM
-{
     "newsroom": [
         {
             "name": "BG Unified Solutions have added 7 Cisco Blade Chassis",
