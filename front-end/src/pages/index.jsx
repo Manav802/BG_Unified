@@ -10,7 +10,7 @@ import TestimonialCard from '../components/TestimonialCard/TestimonialCard'
 import ContactForm from '../components/contactForm/main'
 import {TESTIMONIALS} from '../../public/assets/data/testimonials';
 import {CASESTUDY} from '../../public/assets/data/casestudydata'
-
+import Typewriter from 'typewriter-effect';
 
 import Link from 'next/link';
 
@@ -35,9 +35,10 @@ class Landing extends Component {
                     <div className="container py-5">
                        <div className="section mt-lg-5 pb-0">
                        <div className="row">
-                            <div className="col-lg-10 offset-lg-1 mt-5 mb-5 mb-lg-0">
-                                <div className="h3 NunitoSans-ExtraBold text-center">Deploy, scale, monitor your business online with our security and reliability.</div>
-                                <div className="h6 NunitoSans-SemiBold px-5 text-center mt-3">Computing Infrastructure, Proxy Servers, Firewalls, Web Hosting, Cloud Logging, UCaaS and much more….</div>
+                            <div className="col-lg-12 mt-5 mb-5 mb-lg-0">
+                                <div className="h2 NunitoSans-Black text-center d-flex flex-wrap justify-content-center mb-0"> <Typewriter options={{strings: ['Deploy', 'Scale', 'Monitor'], autoStart: true, loop: true}}/> <div>&nbsp;your</div><div> &nbsp;business </div></div> 
+                                <div className="h2 NunitoSans-Black text-center mt-0">with our security and reliability.</div>
+                                <div className="h6 NunitoSans-SemiBold px-5 text-center text-secondary mt-3">Computing Infrastructure, Proxy Servers, Firewalls, Web Hosting, Cloud Logging, UCaaS and much more….</div>
                                 <div className="p-4 justify-content-center d-flex">
                                         <Link href="/solutions"> 
                                             <Button variant="solid" className="mx-2" variantColor="primary" size="lg">Explore Now</Button>
