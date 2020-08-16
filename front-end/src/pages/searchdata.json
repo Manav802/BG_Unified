@@ -1,0 +1,22 @@
+{
+    "pages" : [
+        {
+            "name": "Solutions",
+            "tags": ["solutions","soluchhan"]
+        },
+        {
+            "name" : "Features",
+            "tags": ["features","featureeee"]
+        }
+    ],
+    "services" : [
+        {
+            "name": "Firewall",
+            "tags": ["SastaBachav"]
+        },
+        {
+            "name" : "Features",
+            "tags": ["features","featureeee"]
+        }
+    ]
+}
