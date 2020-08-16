@@ -7,6 +7,7 @@ ModalHeader,
 ModalCloseButton
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
+import Toast from './toast';
 class GetaQuoteForm extends Component {
   constructor(props) {
     super(props)
@@ -19,6 +20,7 @@ class GetaQuoteForm extends Component {
       serviceDescription:this.props.ServiceDescription
     }
     this.baseState=this.state
+    this.response=''
     this.onChange = this.onChange.bind(this)
     this.onSubmit = this.onSubmit.bind(this)
     this.refreshForm = this.refreshForm.bind(this)
@@ -31,10 +33,12 @@ class GetaQuoteForm extends Component {
       [name]: value
     })
   }
-  refreshForm(){
+  refreshForm(res){
+    console.log(res)
+    this.response=res
     setTimeout(()=>{
       this.setState(this.baseState)
-    }, 7000)
+    }, 2000)
   }
   onSubmit(event) {
     event.preventDefault()
@@ -46,13 +50,7 @@ class GetaQuoteForm extends Component {
       },
       body: JSON.stringify(this.state)
     })
-    .then(function(response) {
-      console.log(response)
-    })
-    .catch(function(error) {
-      console.log(error)
-    })
-    this.refreshForm()
+    .then((response)=>this.refreshForm(response),(error)=>this.refreshForm(error))
   }
   render() {
     var description = this.props.serviceDescription.split(',')
@@ -142,6 +140,7 @@ class GetaQuoteForm extends Component {
                     >Submit</Button>
                 </div>
               </form>
+              {this.response&&<Toast response={this.response}/>}
           </ModalContent>        
     )
   }

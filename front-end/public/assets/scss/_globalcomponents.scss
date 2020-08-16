@@ -9,10 +9,26 @@ a{
     text-decoration: none !important;
     font-weight: 700;
     cursor: pointer;
+    transition: .3s;
 }
 a:hover{
-    color: $color-primary !important;
+    color: $color-primary;
 }
+a.no-red{
+    color: $color-dark;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+button:focus{
+    box-shadow: none !important;
+}
+button{
+    outline: none !important;
+}
+
 
 .icon-24{
     font-size: 24px !important;
@@ -136,7 +152,7 @@ a:hover{
 .page-header{
     margin-top: 80px;
     height: 256px;
-    padding-top: 48px;
+    padding-top: 128px;
     display: flex;
     align-items: center;
 }

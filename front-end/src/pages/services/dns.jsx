@@ -1,138 +1,91 @@
 import React from 'react';
-import {Button, Collapse, Image, Radio, RadioButtonGroup, NumberInput,
-    NumberInputField,
-    NumberInputStepper,
-    NumberIncrementStepper,
-    NumberDecrementStepper,
-Slider, SliderThumb, SliderTrack, SliderFilledTrack} from '@chakra-ui/core'
+import {Button,Image, Icon, Box, Tabs, TabList, Tab, TabPanel, TabPanels, Collapse, Slider, SliderThumb, SliderTrack, SliderFilledTrack, FormLabel, Switch, Flex} from '@chakra-ui/core'
 import Fade from 'react-reveal/Fade';
 import CardWithIcon from "../../components/cards/CardWithIcon"
-import {PricingCard, PricingQuote} from '../../components/cards/PricingCard'
+import {PricingCard, PricingQuote} from "../../components/cards/PricingCard"
 import Head from 'next/head'
 import Link from 'next/link'
 
-const CustomRadio = React.forwardRef((props, ref) => {
-    const { isChecked, isDisabled, value, ...rest } = props;
-    return (
-      <Button
-        ref={ref}
-        variant={isChecked ? "solid" : "outline"}
-        variantColor={isChecked ? "primary" : "gray.300"}
-        aria-checked={isChecked}
-        role="radio"
-        isDisabled={isDisabled}
-        {...rest}
-      />
-    );
-  });
-
-function main(props) {
+function DNS(props) {
     const [show, setShow] = React.useState(false);
     const openControls = () => setShow(true);
-    const [value, setValue] = React.useState(0);
-    const handleChange = value => setValue(value);
     return (
         <div>
             <Head>
-                <title>DNS Services</title>
+                <title>DNS As A Service</title>
             </Head>
-        <div className="position-absolute w-100 overflow-hidden background-svg">
-            <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
+        <div className="position-absolute w-100 overflow-hidden background-svg-dns">
+            <div className="w-100 image">
+                <img className="w-100 dns" src="/assets/images/backgrounds/domainhosting.jpg" />
+            </div>
+            <div className="w-100 divider"/>
         </div>
         <div className="page-header">
             <div className="container">
             <div className="row">
-                <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">DNS Services</h1>
+                <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
+                    <Fade duration={700} delay={300} bottom ><h1 className="display3 text-white">DNS As A Service</h1></Fade>
+                    <Fade duration={700} delay={500} bottom ><p className="h6 mt-3 text-white" style={{opacity:".7"}}>Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service with assured low latency and high availability.</p></Fade>
                 </div>
             </div>
             </div>
         </div>
         <div className="section">
             <div className="container">
-                <div className="row px-lg-5 px-3">
-                    <div className="col-lg-4 my-3">
-                        <PricingCard  title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
-                       </PricingCard>
-                    </div>
-                    <div className="col-lg-4 my-3">
-                        <PricingCard title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
-                        </PricingCard>
-                    </div>
-                    <div className="col-lg-4 my-3">
-                        <PricingCard className="hover-effect" title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
-                        </PricingCard>
-                    </div>
-                </div>
-                <div>
+                <div className="row">
+                    <div className="col-lg-10 offset-lg-1">
+                    <Tabs align="center">
+                        <TabList style={{borderBottomColor:"#ffffff22"}}>
+                            <Tab className="py-4 px-5 display6 text-white">Windows</Tab>
+                            <Tab className="py-4 px-5 display6 text-white">BIND</Tab>
+                        </TabList>
+
+                        <TabPanels>
+                        
+                            <TabPanel className="py-2">
+                            <Fade duration={500} bottom >
+                                <div className="row justify-content-center">
+                                    <div className="col-lg-5 col-sm-6 col-md-6 my-3">
+                                        <PricingCard icon="/assets/images/icons/theme/stack.svg" title="Standard DNS (BlackBox)" featureList={["Includes 5 Zones","Low Latency", "High Availabilty", "BlackBox Service", "Cost Effective"]}>
+                                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>Get a quote</Button>
+                                        </PricingCard>
+                                    </div>
+                                    <div className="col-lg-5 col-sm-6 col-md-6 my-3">
+                                    <PricingCard icon="/assets/images/icons/theme/stack.svg" title="Premium DNS (BlackBox)" featureList={["Includes 5 Zones","Low Latency", "High Availabilty", "BlackBox Service", "Cost Effective"]}>
+                                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>Get a quote</Button>
+                                        </PricingCard>
+                                    </div>
+                                </div>
+                                </Fade>
+                            </TabPanel>
+                            
+                            <TabPanel className="py-2">
+                            <Fade duration={500} bottom >
+                                <div className="row justify-content-center">
+                                    <div className="col-lg-5 col-sm-6 col-md-6 my-3">
+                                        <PricingCard icon="/assets/images/icons/theme/stack.svg" title="Standard DNS (BlackBox)" featureList={["Includes 5 Zones","Low Latency", "High Availabilty", "BlackBox Service", "Cost Effective"]}>
+                                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>Get a quote</Button>
+                                        </PricingCard>
+                                    </div>
+                                    <div className="col-lg-5 col-sm-6 col-md-6  my-3">
+                                    <PricingCard icon="/assets/images/icons/theme/stack.svg" title="Premium DNS (BlackBox)" featureList={["Includes 5 Zones","Low Latency", "High Availabilty", "BlackBox Service", "Cost Effective"]}>
+                                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>Get a quote</Button>
+                                        </PricingCard>
+                                    </div>
+                                </div>
+                                </Fade>
+                            </TabPanel>
+                        </TabPanels>
+                    </Tabs>
+                    <div>
                     <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
                         <div className="px-4 py-5 border">
-                            <div className="display5 text-center">Single Node CUCM</div>
+                            <div className="display5 text-center">Standard DNS</div>
                             <div className="row px-3">
-                                <div className="col-lg-12 mt-2">
-                                    <div className="h6">Choose a type</div>
-                                    <RadioButtonGroup defaultValue="rad2" mt={4} isInline>
-                                        <CustomRadio value="rad1">CustomRadio 1</CustomRadio>
-                                        <CustomRadio value="rad2">CustomRadio 2</CustomRadio>
-                                        <CustomRadio value="rad3">CustomRadio 3</CustomRadio>
-                                    </RadioButtonGroup>
-                                </div>
-                                <div className="col-lg-5 mt-4">
-                                    <div className="h6">Total UCaaS</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
-                                <div className="col-lg-5 offset-lg-1 mt-4">
-                                    <div className="h6">Additional Hunt Groups</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
-                                <div className="col-lg-3 mt-4">
-                                    <div className="h6">NUM-10</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
-                                <div className="col-lg-3 offset-lg-1 mt-4">
-                                    <div className="h6">NUM-50</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
-                                <div className="col-lg-3 offset-lg-1 mt-4">
-                                    <div className="h6">NUM-100</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
-                                <div className="col-lg-11 mt-4">
-                                    <div className="h6">Extra VMs</div>
-                                    <Slider color="primary" defaultValue={30} value={value} onChange={handleChange}>
+                                
+                                <div className="col-lg-12 mt-4">
+                                    <div className="h6">Extra Zones</div>
+                                    <Slider color="primary" my="24px" max={30} defaultValue={1} value={0}>
                                         <SliderTrack h="16px" borderRadius="8px" />
                                         <SliderFilledTrack h="16px" borderRadius="8px" />
                                         <SliderThumb
@@ -142,18 +95,66 @@ function main(props) {
                                                     width="auto"
                                                     padding="8px"
                                                     height="32px"
-                                                    children={value} />
+                                                    children={23} />
                                     </Slider>
                                 </div>
-                                <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                                    <PricingQuote button ></PricingQuote>
+                                <div className="my-1 col-lg-6 mt-3 d-flex justify-content-between">
+                                    <Flex py="12px" justify="center" align="center">
+                                        <Switch onChange={(e)=>{setFailOverNode(e.target.checked)}} color="primary" mb={0} id="failOverNode" />
+                                        <FormLabel mb={0} ml="12px" htmlFor="fail-over node">Include Redundant DNS</FormLabel>
+                                    </Flex>
+                                </div>
+                                <div className="my-1 col-lg-6 mt-3 d-flex justify-content-between">
+                                    <Flex py="12px" justify="center" align="center">
+                                        <Switch onChange={(e)=>{setFailOverNode(e.target.checked)}} color="primary" mb={0} id="failOverNode" />
+                                        <FormLabel mb={0} ml="12px" htmlFor="fail-over node">Add Daily Backup</FormLabel>
+                                    </Flex>
+                                </div>
+                                <div className="col-lg-12 mt-5 d-flex justify-content-center">
+                                <PricingQuote serviceName="DNS As A Service" serviceDescription="Hello" button ></PricingQuote>
                                 </div>
                             </div>
                         </div>
                     </Collapse>
                 </div>
+                    </div>
+                </div>
             </div>
         </div>
+        {/* <section className="fdb-block section">
+            <div className="container">
+                <div className="row text-center">
+                <div className="col-12">
+                    <h1 className="display4">Technologies</h1>
+                </div>
+                </div>
+                <div className="row text-center justify-content-center mt-5">
+                <div className="col-12 col-sm-6 col-lg-3">
+                    <img alt="svg" className="fdb-icon" src="/assets/images/icons/color/analytics.svg" />
+                    <h3><strong>Feature One</strong></h3>
+                    <p>Far far away, behind the word mountains, far from the countries</p>
+                </div>
+
+                <div className="col-12 col-sm-6 col-lg-3 pt-4 pt-sm-0">
+                    <img alt="svg" className="fdb-icon" src="/assets/images/icons/color/price_tag.svg" />
+                    <h3><strong>Feature Two</strong></h3>
+                    <p>Separated they live in Bookmarksgrove right at the coast</p>
+                </div>
+
+                <div className="col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0">
+                    <img alt="svg" className="fdb-icon" src="/assets/images/icons/color/secure.svg" />
+                    <h3><strong>Feature Three</strong></h3>
+                    <p>A small river named Duden flows by their place and supplies it</p>
+                </div>
+
+                <div className="col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0">
+                    <img alt="svg" className="fdb-icon" src="/assets/images/icons/color/stack.svg" />
+                    <h3><strong>Feature Four</strong></h3>
+                    <p>Duden flows by their place far far away, behind the word mountains.</p>
+                </div>
+                </div>
+            </div>
+            </section> */}
 
         <div className="section py-0">
             <div className="container">
@@ -217,25 +218,28 @@ function main(props) {
                 </div>
             </div>
         </div>
-        <div className="section py-0">
-            <div className="container">
-                <div className="row">
-                    <div className="col-12 p-5 rounded-8 bg-light">
-                        <h4 className="display5 py-2 mb-2 text-center">Why Us?</h4>
-                        <p className="text-justify">
-                        Delivering a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users.
+        <section className="fdb-block section">
+        <div className="container">
+            <div className="row">
+            <div className="col text-center">
+                <h1 className="display4">Why Us</h1>
 
+                <div className="row text-left pt-4">
+                <div className="col-12 col-md-6">
+                    <p className="lead text-justify"> Delivering a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users.
 We have a ‘can-do’ attitude with an ‘easy to work with’ culture. Our values are based around fresh thinking, delivering on our promises, showing customer respect and making a 100% commitment.
-We design a Load Balancing topology for web servers running multiple instances of TOMCAT. A couple of applications are SSL based and others are Non-SSL based. Implementation of advanced features of F5 including Application Monitoring, Intrusion Prevention, Application Inspection and dynamically powering on the VMs based on the load or other criteria’s. Involvement in the integration of Big IPs to the newly implemented DC.
-BG Solutions has gained an excellent reputation in design and implementation of IP technology and significant experience in Web Hosting services design and implementation for a number of clients and in distributed environments and locations.
+We design a Load Balancing topology for web servers running multiple instances of TOMCAT. A couple of applications are SSL based and others are Non-SSL based. Implementation of advanced features of F5 including Application Monitoring, Intrusion Prevention, Application Inspection and dynamically powering on the VMs based on the load or other criteria’s. Involvement in the integration of Big IPs to the newly implemented DC.</p>
+                </div>
+                <div className="col-12 col-md-6">
+                    <p className="lead text-justify">BG Solutions has gained an excellent reputation in design and implementation of IP technology and significant experience in Web Hosting services design and implementation for a number of clients and in distributed environments and locations.
 BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use information technology to improve their business results.
-We give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches.
-
-                        </p>
-                    </div>
+We give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches.</p>
+                </div>
                 </div>
             </div>
+            </div>
         </div>
+        </section>
         <div className="section pt-0">
             <div className="container">
                 <div className="row">
@@ -265,4 +269,4 @@ We give you the power to easily deploy, efficiently monitor, and transparently s
     );
 }
 
-export default main;
+export default DNS;

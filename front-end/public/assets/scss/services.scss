@@ -16,3 +16,25 @@
     opacity: .27;
     filter: hue-rotate(160deg);
 }
+.background-svg-dns{
+    .image{
+        // transform: translateY(-50%);
+        max-height: 394px;
+        background: $color-dark;
+        overflow: hidden;
+        img{
+            min-height: 540px !important;
+            transform: translateY(-30%);
+            filter: saturate(.4);
+            opacity: .20;
+            object-fit: cover;
+        }
+    }
+    // .divider{
+    //     height: 400px;
+    //     background: linear-gradient(0deg, rgba(250,250,252,1) 0%, rgba(252,250,250,0) 100%);
+    //     transform: translateY(-100%);
+    // }
+    opacity: 1;
+    
+}

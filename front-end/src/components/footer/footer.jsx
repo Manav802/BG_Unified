@@ -10,10 +10,11 @@ function footer(props) {
                 <div className="row pb-4">
                     <div className="col-lg-3 my-3">
                         <Image src="/assets/logo.png" className="mb-4" h="64px"></Image>
-                    
                         <p className="footer-content">Dynamic Team of Creative People, Innovators and Technical Experts. Your partner for all hosting business solutions and services.</p>
                     </div>
-                    <div className="col-lg-3 d-flex flex-column footer-content">
+                    <div className="col-lg-9 row">
+                        
+                    <div className="col-sm-4 d-flex flex-column footer-content">
                         <span className="mt-4 mb-1">
                         IT Infrastructural Services
                         </span>
@@ -39,7 +40,7 @@ function footer(props) {
                         </span>
                         <Link href="/services/disaster-recovery"><a>Disaster Recovery Management</a></Link>
                     </div>
-                    <div className="col-lg-3 d-flex flex-column footer-content">
+                    <div className="col-sm-4 d-flex flex-column footer-content">
                         <span className="mt-4 mb-1">
                             Network Services
                         </span>
@@ -56,7 +57,7 @@ function footer(props) {
                         <Link href="/services/customer-support"><a>Customer Support as a Service</a></Link>
                         <Link href="/services/architectural-consultancy"><a>Architectutral Consultancy</a></Link>
                     </div>
-                    <div className="col-lg-3 d-flex flex-column footer-content">
+                    <div className="col-sm-4 d-flex flex-column footer-content">
                         <span className="mt-4 mb-1">
                            Company
                         </span>
@@ -65,6 +66,7 @@ function footer(props) {
                         <Link href="/about"><a>About Us</a></Link>
                         <Link href="/newsroom"><a>Newsroom</a></Link>
                         <Link href="/contact"><a>Contact Us</a></Link>
+                    </div>
                     </div>
                 </div>
                 <div className="w-100 my-4 text-center">

@@ -1,10 +1,10 @@
 import React from 'react';
 import {Button, Collapse, Image, Select,
-Slider, SliderThumb, SliderTrack, SliderFilledTrack, Flex,RadioButtonGroup,NumberInput,
+Slider, SliderThumb, SliderTrack, SliderFilledTrack, FormLabel, Switch, Flex,RadioButtonGroup,NumberInput,
 NumberInputField,
 NumberInputStepper,
 NumberIncrementStepper,
-NumberDecrementStepper, FormLabel, Switch} from '@chakra-ui/core'
+NumberDecrementStepper, } from '@chakra-ui/core'
 import Fade from 'react-reveal/Fade';
 import CardWithIcon from "../../components/cards/CardWithIcon"
 import {PricingCard, PricingQuote} from '../../components/cards/PricingCard'
@@ -137,16 +137,20 @@ function main(props) {
                                 }
 
                                 { (planIndex === 2 || planIndex===3 ) && <>
-                                
-                                <div className="my-1 col-lg-6 mt-4">
-                                    <div className="h6">COMPLIANCE QM</div>
-                                    <NumberInput maxWidth="200px" min={0} max={20} value={complianceQM} onChange={setComplianceQM}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
+                                <div className="my-1 col-lg-12 mt-4">
+                                    <div className="h6">WFM</div>
+                                    <Slider color="primary" my="24px" defaultValue={0} max="64" value={wfm} onChange={setWfm}>
+                                        <SliderTrack h="16px" borderRadius="8px" />
+                                        <SliderFilledTrack h="16px" borderRadius="8px" />
+                                        <SliderThumb
+                                                    className="shadow-md" 
+                                                    fontSize="md"
+                                                    fontWeight="800"
+                                                    width="auto"
+                                                    padding="8px"
+                                                    height="32px"
+                                                    children={wfm} />
+                                    </Slider>
                                 </div>
                                 <div className="my-1 col-lg-6 mt-4">
                                     <div className="h6">ADVANCED QM</div>
@@ -158,7 +162,7 @@ function main(props) {
                                     </NumberInputStepper>
                                     </NumberInput>
                                 </div>
-                                <div className="my-1 col-lg-12 mt-4">
+                                <div className="my-1 col-lg-6 mt-4">
                                     <div className="h6">Number of Agents</div>
                                     <NumberInput maxWidth="200px" min={0} max={20} value={wfm<=complianceQM+advancedQM ? wfm:complianceQM+advancedQM} onChange={setWfm}>
                                     <NumberInputField className="bg-light" />
