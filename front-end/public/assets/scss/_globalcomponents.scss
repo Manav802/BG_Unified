@@ -11,8 +11,15 @@ a{
     cursor: pointer;
 }
 a:hover{
-    color: $color-primary !important;
+    color: $color-primary;
 }
+a.no-red{
+    color: $color-dark;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 .icon-24{
     font-size: 24px !important;

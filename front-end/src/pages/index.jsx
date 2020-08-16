@@ -57,33 +57,40 @@ class Landing extends Component {
                                 
                                 <div className="col-xl-4 col-sm-6 my-2">
                                     <Link href="/services/infra">
+                                    <a className="no-red">
                                         <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" />
+                                    </a>
                                     </Link>
                                 </div>
                                 
                                 <div className="col-xl-4 col-sm-6 my-2">
-                                    <Link href="/services/storage">
-                                        <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." />
+                                    <Link href="/services/storage-unit">
+                                    <a className="no-red">              
+                                    <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." /></a>
                                     </Link>
                                 </div>
                                 <div className="col-xl-4 col-sm-6 my-2">
                                     <Link href="/services/dns">
-                                        <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." />
+                                        <a className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." /></a>
                                     </Link>
                                 </div>
                                 <div className="col-xl-4 col-sm-6 my-2">
                                     <Link href="/services/backup">
-                                        <CardWithIcon icon="/assets/images/icons/monotone/disk.svg" title={<div>Backup <br /> as a service </div>} iconBg="#F33022" children="Clustering of Devices, Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, Cisco Wi-Fi and Aruba Wi-Fi." />
+                                        <a className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/disk.svg" title={<div>Backup <br /> as a service </div>} iconBg="#F33022" children="Clustering of Devices, Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, Cisco Wi-Fi and Aruba Wi-Fi." /></a>
                                     </Link>
                                 </div>
                                 <div className="col-xl-4 col-sm-6 my-2">
-                                    <Link href="/services/proxy">
-                                        <CardWithIcon icon="/assets/images/icons/monotone/proxy.svg" title={<div>Proxy <br /> as a service </div>} iconBg="#0D5EA5" children="Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Workforce Optimization and Quality Monitoring, N+N Redundant components." />
+                                    <Link href="/services/proxy-server">
+                                        <a className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/proxy.svg" title={<div>Proxy <br /> as a service </div>} iconBg="#0D5EA5" children="Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Workforce Optimization and Quality Monitoring, N+N Redundant components." /></a>
                                     </Link>
                                 </div>
                                 <div className="col-xl-4 col-sm-6 my-2">
                                     <Link href="/services/platform">
-                                        <CardWithIcon icon="/assets/images/icons/monotone/dashboard.svg" title={<div>Platform <br /> as a service </div>} iconBg="#19C741" children="Prototype multisite or multi-cloud DR strategies. Shortened Recovery Time.Geographically dispersed availability" />
+                                        <a className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/dashboard.svg" title={<div>Platform <br /> as a service </div>} iconBg="#19C741" children="Prototype multisite or multi-cloud DR strategies. Shortened Recovery Time.Geographically dispersed availability" /></a>
                                     </Link>
                                 </div>
                             </div>
