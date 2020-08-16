@@ -9,6 +9,7 @@ a{
     text-decoration: none !important;
     font-weight: 700;
     cursor: pointer;
+    transition: .3s;
 }
 a:hover{
     color: $color-primary !important;
