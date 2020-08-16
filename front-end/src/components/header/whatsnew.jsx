@@ -3,11 +3,10 @@ import {Image} from '@chakra-ui/core'
 
 function WhatsNew(props) {
     return (
-        <div className="row rounded-8 hover-effect p-2 mt-2">
-            <Image src={props.image} borderRadius="8px" h="48px" w="48px"></Image>
+        <div className="d-flex hover-effect rounded-8 mt-3 p-2" style={{maxWidth:"400px"}}>
+            <Image objectFit="cover" src={props.image} className="rounded-8 mt-1" height="56px" width="80px"></Image>
             <div className="col">
-    <span className="h6">{props.heading}</span>
-    <p>{props.text}</p>
+                <div className="NunitoSans-Bold py-2">{props.heading}</div>
             </div>
         </div>
     );

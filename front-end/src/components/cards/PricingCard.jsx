@@ -1,5 +1,5 @@
 import React from 'react';
-import {Modal,Image, Button, ModalOverlay, List, ListItem, ListIcon, useDisclosure} from "@chakra-ui/core"
+import {Modal,Image, Button, ModalOverlay, List, ListItem, ListIcon, useDisclosure,Spinner} from "@chakra-ui/core"
 import GetAQuote from "../../components/GetaQuote/main"
 
 
@@ -9,6 +9,12 @@ function PricingQuote(props) {
         <>
         <Modal isOpen={isOpen} onClose={onClose}>
             <ModalOverlay />
+            <Spinner
+                thickness="4px"
+                speed="1.5s"
+                color="blue.500"
+                size="xl"
+            />
             <GetAQuote serviceName={props.serviceName} serviceDescription={props.serviceDescription}></GetAQuote>
         </Modal>
         {!props.button && <div className="mt-3 w-100 px-3 d-flex justify-content-between">

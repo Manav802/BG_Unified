@@ -28,7 +28,7 @@ function main(props) {
             <div className="container">
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">Backup As A Service(BaaS)</h1>
+                    <h1 className="display3">Backup As A Service</h1>
                 </div>
             </div>
             </div>
@@ -108,7 +108,7 @@ function main(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
-                        <div className="h4 NunitoSans-ExtraBold">Why Do we need a Backup?
+                        <div className="h4 NunitoSans-ExtraBold">Backup for your Digital system
                         </div>
                         <div className="h6 mt-4 text-secondary text-justify text-dark">
                         In today’s dynamic and complex landscape, no one can afford to be idle. Whether we like it or not, data centre change is upon us. Migrating us to store confidential and information data somewhere else, for the worst-case scenarios. And with this change comes steep challenges—to migrate your legacy production application environments to next-general data centres and enable your journey to the cloud. 

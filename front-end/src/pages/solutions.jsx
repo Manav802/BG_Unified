@@ -35,16 +35,23 @@ class OurSolutions extends Component {
                         <div className="container">
                         <div className="row"> 
                                 <div className="col-lg-4  py-2">
-                                    <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Computing <br /> Infrastructure </div>} iconBg="#0D5EA5" children="Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management. Infrastructure includes more than 10000 Cores CPU, 10TB RAM." />
+                                    <a href="/services/infra" className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Computing <br /> Infrastructure </div>} iconBg="#0D5EA5" children="Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management. Infrastructure includes more than 10000 Cores CPU, 10TB RAM." />
+                                    </a>
                                 </div>
                                 <div className="col-lg-4  py-2">
-                                    <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Storage <br /> Units </div>} iconBg="#19C741" children="Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage." />
+                                <a href="/services/storage-unit" className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Storage <br /> Units </div>} iconBg="#19C741" children="Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage." />
+                                </a>
                                 </div>
                                 <div className="col-lg-4  py-2">
-                                    <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>DNS <br /> as a service </div>} iconBg="#F33022" children="Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users." />
+                                    <a href="/services/dns" className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>DNS <br /> as a service </div>} iconBg="#F33022" children="Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users." />
+                                    </a>
                                 </div>
                                 <div className="col-lg-4  py-2">
-                                    <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Backup <br /> Units </div>} iconBg="#F33022" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
+                                    <a href="/services/storage-units" className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Backup <br /> Units </div>} iconBg="#F33022" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." /></a>
                                 </div>
                                 <div className="col-lg-4  py-2">
                                     <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Proxy <br /> Servers</div>} iconBg="#0D5EA5" children="Just redirect your traffic to our Proxy Service either by DNS or other custom solution to our public Proxy Service and then create a record to reroute your traffic to your application behind the firewall." />
@@ -83,10 +90,14 @@ class OurSolutions extends Component {
                                     <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Cloud Exchange <br /> Connectivity </div>} iconBg="#F33022" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
                                 </div>
                                 <div className="col-lg-4  py-2">
-                                    <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Web Hosting <br /> Solutions </div>} iconBg="#0D5EA5" children="Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package. Load balancing can also be added as an option if required." />
+                                    <a href="/services/web-hosting" className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Web Hosting <br /> Solutions </div>} iconBg="#0D5EA5" children="Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package. Load balancing can also be added as an option if required." />
+                                    </a>
                                 </div>
                                 <div className="col-lg-4  py-2">
-                                    <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Cloud <br /> Logging </div>} iconBg="#19C741" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
+                                    <a href="/services/cloud-logging" className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Cloud <br /> Logging </div>} iconBg="#19C741" children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr." />
+                                    </a>
                                 </div>
                                     
                             </div>
