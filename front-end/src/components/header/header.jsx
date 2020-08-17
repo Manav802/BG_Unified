@@ -46,7 +46,7 @@ return (
                     <Image src="/assets/logo.png" height="45px" className="mr-3 d-sm-none"></Image>
                 </a></Link>
                 <div className="d-flex">
-                <Popover trigger="hover"><PopoverTrigger><a href="tel:1300-00-BGUS"><span className="NunitoSans-SemiBold p-2 d-none d-lg-block"> Call Us </span></a></PopoverTrigger>
+                <Popover trigger="hover"><PopoverTrigger><a href="tel:1300-00-BGUS"><span className="NunitoSans-SemiBold p-2 d-none d-lg-block"> Call Us 1300 00 BGUS</span></a></PopoverTrigger>
                 <PopoverContent zIndex={4}>
                     <PopoverArrow />
                     <PopoverHeader className="text-center"> <span  className="text-primary"> Call : </span> <span className="text-secondary"> 1300 00 BGUS </span> </PopoverHeader>
