@@ -32,9 +32,9 @@ return (
             <div className="p-3 transition-3 d-flex justify-content-between align-items-center layer-4">
                 <div className="d-flex align-items-center">
                     <Menu></Menu>
-                    <Link href="/">
-                        <Image src="/assets/logo.png" height="48px" className="d-none d-sm-block mr-3"></Image>
-                    </Link>               
+                    <Link href="/"><a>
+                        <Image src="/assets/logo.png" height="45px" className="d-none d-sm-block mr-3"></Image>
+                    </a></Link>               
 
                     <Button className="text-dark hover-effect d-none d-lg-block" variantColor="white" rightIcon="chevron-down" onClick={() => show === 1 ? setShow(0) : setShow(1)} >Solutions</Button>
                     <Button className="d-none d-lg-block text-dark hover-effect" onClick={() => show === 2 ? setShow(0) : setShow(2)} variantColor="white" rightIcon="chevron-down">Company</Button>
@@ -42,9 +42,9 @@ return (
                         <Button className="d-none d-lg-block text-dark hover-effect" variantColor="white">Our Features</Button>
                     </Link>
                 </div>
-               <Link href="/">
-                    <Image src="/assets/logo.png" height="48px" className="mr-3 d-sm-none"></Image>
-                </Link>
+               <Link href="/"><a>
+                    <Image src="/assets/logo.png" height="45px" className="mr-3 d-sm-none"></Image>
+                </a></Link>
                 <div className="d-flex">
                 <Popover trigger="hover"><PopoverTrigger><a href="tel:1300-00-BGUS"><span className="NunitoSans-SemiBold p-2 d-none d-lg-block"> Call Us </span></a></PopoverTrigger>
                 <PopoverContent zIndex={4}>
