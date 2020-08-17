@@ -78,51 +78,84 @@ return (
                             IT Infrastructural Services
                         </span>
                         <Link href="/services/infra">
-                        <a>Computing Infrastructure</a>
+                            <a>Infrastructure As A Service</a>
                         </Link>
                         <Link href="/services/storage-unit">
-                        <a>Storage Unit</a>
+                            <a>Storage As A Service</a>
                         </Link>
                         <Link href="/services/cloud-logging">
-                        <a>Cloud Logging</a>
+                            <a>Cloud Logging As A Service</a>
                         </Link>
                         <Link href="/services/platform">
-                        <a>Cloud Platform Service</a>
+                            <a>Cloud Platform As A Service</a>
                         </Link>
-                        <Link href="/services/firewall"><a>Firewalls</a></Link>
-                        <Link href="/services/application-dev"><a>Application Development</a></Link>
-                        <Link href="/services/web-hosting"><a>Web Hosting Solutions</a></Link>
-                        <Link href="/services/backup"><a>Backup Services</a></Link>
-
-
+                        <Link href="/services/firewall">
+                            <a>Firewalls As A Service</a>
+                        </Link>
+                        <Link href="/services/application-dev">
+                            <a>
+                                Application Development As A Service
+                            </a>
+                        </Link>
+                        <Link href="/services/web-hosting">
+                            <a>Web Hosting As A Service</a>
+                        </Link>
+                        <Link href="/services/backup">
+                            <a>Backup As A Service</a>
+                        </Link>
                     </div>
                     <div className="col-lg-3 col-sm-6 d-flex flex-column footer-content">
                         <span className="mt-4 mb-1">
                             Network Services
                         </span>
 
-                        <Link href="/services/sd-wan"><a>SD-WAN Optimization</a></Link>
-                        <Link href="/services/proxy-server"><a>Proxy Severs</a></Link>
-                        <Link href="/services/dns"><a>DNS</a></Link>
-                        <Link href="/services/wireless-networks"><a>Wireless Networks</a></Link>
-                        <Link href="/services/cloud-exchange"><a>Cloud Exchange Connectivity</a></Link>
-                        <Link href="/services/sip-connectivity"><a>SIP Connectivity</a>
+                        <Link href="/services/sd-wan">
+                            <a>SD-WAN As A Service</a>
                         </Link>
+                        <Link href="/services/proxy-server">
+                            <a>Proxy As A Service</a>
+                        </Link>
+                        <Link href="/services/dns">
+                            <a>DNS As A Service</a>
+                        </Link>
+                        <Link href="/services/wireless-networks">
+                            <a>Wireless As A Service</a>
+                        </Link>
+                        <Link href="/services/cloud-exchange">
+                            <a>
+                                CEX As A
+                                Service
+                            </a>
+                        </Link>
+                        <Link href="/services/sip-connectivity">
+                            <a>SIP As A Service</a>
+                        </Link>
+
                         <span className="mt-4 mb-1">
                             Disaster Recovery Services
                         </span>
-                        <Link href="/services/disaster-recovery"><a>Disaster Recovery Management</a></Link>
-
+                        <Link href="/services/disaster-recovery">
+                            <a>DR As A Service</a>
+                        </Link>
                     </div>
                     <div className="col-lg-3 d-flex flex-column footer-content">
                         <span className="mt-4 mb-1">
                             Collaborative Services
                         </span>
-                        <Link href="/services/ucaas"><a>Unified Communications</a></Link>
-                        <Link href="/services/contact-center-services"><a>Contact Center As A Service</a>
+                        <Link href="/services/ucaas">
+                            <a>
+                                Unified Communications As A Service
+                            </a>
                         </Link>
-                        <Link href="/services/architectural-consultancy"><a>Architectutral
-                            Consultancy</a></Link>
+                        <Link href="/services/customer-support">
+                            <a>Contact Center As A Service</a>
+                        </Link>
+                        <Link href="/services/architectural-consultancy">
+                            <a>
+                                Architectural Consultancy As A
+                                Service
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </div>
