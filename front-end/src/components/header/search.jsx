@@ -38,11 +38,7 @@ function search(props) {
             </a> 
             <Modal blockScrollOnMount={true} size="xl" isOpen={props.searching} onClose={props.toggle}>
                 <ModalOverlay bg="#FAFAFCFC"></ModalOverlay>
-                
                     <ModalContent bg="none" top="128px" className="shadow-none">
-                    
-                        
-                    
                         <ModalBody>
                             <Fade duration={500} top>
                             <div className="position-sticky py-3 bg-white" style={{zIndex:"1000", top: "0"}}>
