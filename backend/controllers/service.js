@@ -6,8 +6,12 @@ const { DataTypes } = require("sequelize");
 var iass_basic = require("../models/iass_basic")(sequelize, DataTypes);
 var iass_advance = require("../models/iass_advance")(sequelize, DataTypes);
 var iass_custom = require("../models/iaas_custom")(sequelize, DataTypes);
-
-
+const successMessage = {
+    success: "success"
+  }
+const errorMessage = {
+    somethingWentWorng: "Something went wrong"
+  }
 //checking request
 exports.iaasCostLicense = async (req, res) =>{
     
@@ -51,12 +55,12 @@ exports.iaasCostLicense = async (req, res) =>{
         price =price.toFixed(2)
 
         res.status(200).json({
-            type:"success",
+            type:successMessage.success,
             price: price
         })
    }
    catch(err){
-       handleError(res,err, "Something Went Wrong")
+       handleError(res,err, errorMessage.somethingWentWorng)
    }
 } 
 
@@ -103,12 +107,12 @@ exports.iaasCostCustom = async  (req, res)=>{
 
         //sending the response
         res.status(200).json({
-            type:"success",
+            type:successMessage.success,
             price: price
         })      
 
     }
     catch(err){
-        handleError(res,err, "Something Went Wrong")
+        handleError(res,err, errorMessage.somethingWentWorng)
     }
 }
