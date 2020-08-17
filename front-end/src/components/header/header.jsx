@@ -12,12 +12,13 @@ import {FaInfoCircle, FaNewspaper, FaCommentAlt, FaBriefcase} from "react-icons/
 import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
 import Link from 'next/link';
+import Router from 'next/router';
 
 function header(props) {
 const initRef = React.useRef();
 const [show, setShow] = React.useState(0);
 const [search, setSearch] = React.useState(false)
-
+Router.events.on('routeChangeComplete', () => setShow(false) ); 
 return (
 <div className="header bg-white shadow-sm">
         <div className="container">
@@ -51,7 +52,7 @@ return (
 
         {/* Menu */}
         <Collapse isOpen={show === 1}>
-        <Fade duration={800} distance={"30%"} bottom >
+        <Fade duration={700} distance={"30%"} bottom >
          <Box>
             <div className="container pb-5 pt-3">
                 <div className="row">
@@ -117,7 +118,7 @@ return (
         </Fade>
         </Collapse>
         <Collapse isOpen={show === 2}>
-        <Fade duration={800} distance={"30%"} bottom >
+        <Fade duration={700} distance={"30%"} bottom >
         <Box>
             <div className="container">
                 <div className="row">
