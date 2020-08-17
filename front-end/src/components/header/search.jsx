@@ -24,7 +24,7 @@ function search(props) {
     const [text, setText] = React.useState("")
     const handleValue = (e) => {
        setText(e.target.value)
-       setData(dynamicSearch(text))
+       setData(dynamicSearch(e.target.value))
     }
     const [data, setData] = React.useState({
         pages: [],
@@ -53,12 +53,12 @@ function search(props) {
                                 </InputGroup>
                             </div>
                             </Fade>
-                            <Fade duration={500} delay={500} top>
+                            <Fade duration={400} delay={300} top>
                                 {text === "" && <Heading size="sm" mt={6} zIndex={100} className="text-primary" textTransform="uppercase" mb={2}>Most Popular</Heading>}
                             </Fade>
                             {text === "" && searchData.services.map(service => {
                                 if(service.popular === true) return (
-                                    <Fade duration={300} distance="4%" delay={500} left>
+                                    <Fade duration={300} distance="4%" delay={300} left>
                                         <Box mt={3} p={3} className="rounded-8 border">
                                             <Heading size="md" mb={2}>{service.name}</Heading>
                                             <Text fontSize="md">
