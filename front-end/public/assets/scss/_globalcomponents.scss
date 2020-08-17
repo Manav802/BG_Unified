@@ -11,8 +11,8 @@ a{
     cursor: pointer;
     transition: .3s;
 }
-a:hover{
-    color: $color-primary;
+.link:hover{
+    color: $color-primary !important;
 }
 a.no-red{
     color: $color-dark;
@@ -104,6 +104,9 @@ button{
     transition: .3s;
     padding: 4rem 0px;
 }
+.transition-3{
+    transition: .3s;
+}
 .image-flip{
     transform: rotateY(180deg);
 }
@@ -165,4 +168,14 @@ button{
 .shadow-md{
    box-shadow: 0 .5rem 1rem hsla(0, 90, 30, 0.140) !important;
 
+}
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    opacity: .97;
 }

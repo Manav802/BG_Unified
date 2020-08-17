@@ -1,103 +1,68 @@
-import React from "react";
-import WhatsNew from "./whatsnew";
-import Menu from "./menu";
+import React from 'react';
+import WhatsNew from './whatsnew'
+import Search from './search'
+import Menu from './menu'
+import {Image,
+Box,
+Button,
+Collapse
+} from '@chakra-ui/core'
 import {
-    Image,
-    Box,
-    Button,
-    SlideIn,
-    Icon,
     Popover,
     PopoverTrigger,
     PopoverContent,
-    Collapse,
-} from "@chakra-ui/core";
+    PopoverHeader,
+    PopoverArrow
+  } from "@chakra-ui/core";
 
-import {
-    FaInfoCircle,
-    FaNewspaper,
-    FaCommentAlt,
-    FaBriefcase,
-} from "react-icons/fa";
-import Flip from "react-reveal/Flip";
-import Fade from "react-reveal/Fade";
-import Link from "next/link";
+import {FaInfoCircle, FaNewspaper, FaCommentAlt, FaBriefcase} from "react-icons/fa"
+import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
+import Link from 'next/link';
+import Router from 'next/router';
 
 function header(props) {
-    const initRef = React.useRef();
-    const [show, setShow] = React.useState(0);
+const initRef = React.useRef();
+const [show, setShow] = React.useState(0);
+const [search, setSearch] = React.useState(false)
+Router.events.on('routeChangeComplete', () => setShow(false) ); 
+return (
+<div className="header bg-white shadow-sm">
+        <div className="container">
+            <div className="p-3 transition-3 d-flex justify-content-between align-items-center layer-4">
+                <div className="d-flex align-items-center">
+                    <Menu></Menu>
+                    <Link href="/"><a>
+                        <Image src="/assets/logo.png" height="45px" className="d-none d-sm-block mr-3"></Image>
+                    </a></Link>               
 
-    return (
-        <div className="header bg-white shadow-sm">
-            <div className="container">
-                <div className="p-3 d-flex justify-content-between align-items-center layer-4">
-                    <div className="d-flex align-items-center">
-                        <Menu></Menu>
-                        <Link href="/">
-                            <Image
-                                src="/assets/logo.png"
-                                height="48px"
-                                className="d-none d-sm-block mr-3"
-                            ></Image>
-                        </Link>
-
-                        <Button
-                            className="text-dark hover-effect d-none d-lg-block"
-                            variantColor="white"
-                            rightIcon="chevron-down"
-                            onClick={() =>
-                                show === 1 ? setShow(0) : setShow(1)
-                            }
-                        >
-                            Solutions
-                        </Button>
-
-                        <Button
-                            className="d-none d-lg-block text-dark hover-effect"
-                            onClick={() =>
-                                show === 2 ? setShow(0) : setShow(2)
-                            }
-                            variantColor="white"
-                            rightIcon="chevron-down"
-                        >
-                            Company
-                        </Button>
-
-                        <Link href="/features">
-                            <Button
-                                className="d-none d-lg-block text-dark hover-effect"
-                                variantColor="white"
-                            >
-                                Our Features
-                            </Button>
-                        </Link>
-                    </div>
-                    <Link href="/">
-                        <Image
-                            src="/assets/logo.png"
-                            height="48px"
-                            className="mr-3 d-sm-none"
-                        ></Image>
+                    <Button className="text-dark hover-effect d-none d-lg-block" variantColor="white" rightIcon="chevron-down" onClick={() => show === 1 ? setShow(0) : setShow(1)} >Solutions</Button>
+                    <Button className="d-none d-lg-block text-dark hover-effect" onClick={() => show === 2 ? setShow(0) : setShow(2)} variantColor="white" rightIcon="chevron-down">Company</Button>
+                    <Link href="/features">
+                        <Button className="d-none d-lg-block text-dark hover-effect" variantColor="white">Our Features</Button>
                     </Link>
-                    <div className="d-flex">
-                        <span className="NunitoSans-SemiBold p-2 d-none d-lg-block">
-                            Call Us <b>1300 00 BGUS</b>
-                        </span>
-                        <span className="p-2 rounded-8 hover-effect">
-                            <Icon name="search" size="16px"></Icon>
-                        </span>
-                        <Link href="/contact">
-                            <Button
-                                className="mx-3 d-none d-sm-block"
-                                variant="solid"
-                                variantColor="primary"
-                            >
-                                Contact Us
-                            </Button>
-                        </Link>
-                    </div>
+                </div>
+               <Link href="/"><a>
+                    <Image src="/assets/logo.png" height="45px" className="mr-3 d-sm-none"></Image>
+                </a></Link>
+                <div className="d-flex">
+                <Popover trigger="hover"><PopoverTrigger><a href="tel:1300-00-BGUS"><span className="NunitoSans-SemiBold p-2 d-none d-lg-block"> Call Us </span></a></PopoverTrigger>
+                <PopoverContent zIndex={4}>
+                    <PopoverArrow />
+                    <PopoverHeader className="text-center"> <span  className="text-primary"> Call : </span> <span className="text-secondary"> 1300 00 BGUS </span> </PopoverHeader>
+                </PopoverContent>
+                </Popover>
+                    <Search toggle ={() => setSearch(!search)} searching={search}></Search>
+                    <Link href="/contact">
+                        <Button className="mx-3 d-none d-sm-block" variant="solid" variantColor="primary">Contact Us</Button>
+                    </Link>
                 </div>
             </div>
+        </div>
+
+
+
+        {/* Menu */}
             <Collapse isOpen={show === 1}>
                 <Fade duration={800} distance={"30%"} bottom>
                     <Box>
@@ -282,7 +247,7 @@ function header(props) {
                 </Fade>
             </Collapse>
         </div>
-    );
+    )
 }
 
 export default header;
