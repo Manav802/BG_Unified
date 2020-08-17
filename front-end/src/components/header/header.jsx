@@ -7,6 +7,13 @@ Box,
 Button,
 Collapse
 } from '@chakra-ui/core'
+import {
+    Popover,
+    PopoverTrigger,
+    PopoverContent,
+    PopoverHeader,
+    PopoverArrow
+  } from "@chakra-ui/core";
 
 import {FaInfoCircle, FaNewspaper, FaCommentAlt, FaBriefcase} from "react-icons/fa"
 import Flip from 'react-reveal/Flip';
@@ -39,7 +46,12 @@ return (
                     <Image src="/assets/logo.png" height="48px" className="mr-3 d-sm-none"></Image>
                 </Link>
                 <div className="d-flex">
-                    <span className="NunitoSans-SemiBold p-2 d-none d-lg-block">Call Us <b>1300 00 BGUS</b></span>
+                <Popover trigger="hover"><PopoverTrigger><a href="tel:1300-00-BGUS"><span className="NunitoSans-SemiBold p-2 d-none d-lg-block"> Call Us </span></a></PopoverTrigger>
+                <PopoverContent zIndex={4}>
+                    <PopoverArrow />
+                    <PopoverHeader className="text-center"> <span  className="text-primary"> Call : </span> <span className="text-secondary"> 1300 00 BGUS </span> </PopoverHeader>
+                </PopoverContent>
+                </Popover>
                     <Search toggle ={() => setSearch(!search)} searching={search}></Search>
                     <Link href="/contact">
                         <Button className="mx-3 d-none d-sm-block" variant="solid" variantColor="primary">Contact Us</Button>
