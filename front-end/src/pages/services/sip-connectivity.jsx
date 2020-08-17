@@ -8,7 +8,7 @@ function Wireless(props) {
         
         <div>
             <Head>
-                <title>SIP Connectivity</title>
+                <title>SIP As A Service(SaaS)</title>
             </Head>
             <div className="section pb-0 bg-dark">
             <div className="section">
@@ -16,7 +16,7 @@ function Wireless(props) {
                     <div className="row">
                         <div className="col-lg-12 mt-5 text-center py-5">
                             <div className="display2 text-white">
-                                SIP Connectivity 
+                                SIP As A Service(SaaS)
                             </div>
                         </div>
                     </div>

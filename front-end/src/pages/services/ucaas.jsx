@@ -49,7 +49,7 @@ function UCaaS(props) {
     return (
         <div>
             <Head>
-                <title>UCaaS</title>
+                <title>Unified Communications As A Service (UCaaS)</title>
             </Head>
         <div className="position-absolute w-100 overflow-hidden background-svg">
             <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
@@ -57,8 +57,9 @@ function UCaaS(props) {
         <div className="page-header">
             <div className="container">
             <div className="row">
-                <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">Unified Communications as a Service (UCaaS)</h1>
+                <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
+                <Fade duration={700} delay={300} bottom ><h1 className="display3">Unified Communications As A Service (UCaaS)</h1></Fade>
+                <Fade duration={700} delay={500} bottom >Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business.</Fade>
                 </div>
             </div>
             </div>
@@ -335,20 +336,38 @@ function UCaaS(props) {
                 </div>
             </div>
         </div>
-        <div className="section py-0">
+        <section className="fbd-block section">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 p-5 rounded-8 bg-light">
-                        <h4 className="display5 py-2 mb-2 text-center">Why Us?</h4>
-                        <p className="text-justify">Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business.
-We have the expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint. We bring our team of experienced collaboration experts to every engagement, and we offer business and technology assessments to help identify any barriers in order for your collaborative Goals to succeed. We structure our discovery process to consider your entire telecommunications environment, including network infrastructure, data centres, and more. Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support. We have the expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint. We structure our discovery process to consider your entire telecommunications environment, including network infrastructure, data centres, and more. Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support.
-</p>
+                <Fade duration={500} distance={"30%"} bottom>
+                    <div className="col text-center">
+                        <h1 className="display4">
+                            Why BG Unified Solutions?
+                        </h1>
+                        
+                        <div className="row text-left pt-4">
+                            <div className="col-12 col-md-6">
+                                <p className="lead text-justify"> 
+                                    Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business.
+                                    We have the expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint. We bring our team of experienced collaboration experts to every engagement, and we offer business and technology assessments to help identify any barriers in order for your collaborative Goals to succeed. We structure our discovery process to consider your entire telecommunications environment, including network infrastructure, data centres, and more.
+                                </p>
+                            </div>
+                            <div className="col-12 col-md-6">
+                                <p className="lead text-justify">
+                                Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support. We have the expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint. We structure our discovery process to consider your entire telecommunications environment, 
+                                including network infrastructure, data centres, and more. Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
+                    </Fade>
                 </div>
             </div>
-        </div>
+        </section>
         <div className="section pt-0">
             <div className="container">
+            <Fade duration={400} distance={"30%"} bottom>
                 <div className="row">
                     <div className="col-12 p-4 mb-4">
                         <h4 className="display5 py-3 text-center">Related Services</h4>
@@ -370,6 +389,7 @@ We have the expertise to address these challenges by designing and delivering co
                         </Link>
                     </div>
                 </div>
+                </Fade>
             </div>
         </div>
         </div>

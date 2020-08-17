@@ -7,7 +7,7 @@ function Arch(props) {
     return (
         <div>
             <Head>
-                <title>Architectural Consultancy</title>
+                <title>Architectural Consultancy As A Service (ACaaS)</title>
             </Head>
             <div className="section pb-0 bg-dark">
             <div className="section">
@@ -15,7 +15,7 @@ function Arch(props) {
                     <div className="row">
                         <div className="col-lg-12 mt-5 text-center py-5">
                             <div className="display2 text-white">
-                                Architectural Consultancy
+                                Architectural Consultancy As A Service (ACaaS)
                             </div>
                         </div>
                     </div>

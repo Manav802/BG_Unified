@@ -34,7 +34,7 @@ function main(props) {
     return (
         <div>
             <Head>
-                <title>Wireless as a Service</title>
+                <title>Wireless as a Service(WaaS)</title>
             </Head>
         <div className="position-absolute w-100 overflow-hidden background-svg">
             <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
@@ -42,8 +42,13 @@ function main(props) {
         <div className="page-header">
             <div className="container">
             <div className="row">
-                <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">Wireless as a Service</h1>
+                <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
+                <Fade duration={700} delay={300} bottom >
+                    <h1 className="display3">Wireless as a Service(WaaS)</h1>
+                </Fade>
+                <Fade duration={700} delay={500} bottom >
+                    Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers.
+                </Fade>
                 </div>
             </div>
             </div>
@@ -219,22 +224,37 @@ function main(props) {
                 </div>
             </div>
         </div>
-        <div className="section py-0">
+        <section className="fdb-block section">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 p-5 rounded-8 bg-light">
-                        <h4 className="display5 py-2 mb-2 text-center">Why Us?</h4>
-                        <p className="text-justify">
-                            With BG Unified Solutions Wireless as a Service, you get Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers. Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, so as to support Wireless Phones in any environment. Traffic and congestion problems reduced significantly. Unified and Efficient service, i.e. Improved operational efficiencies, Reduced communication-related delays and enhanced collaboration. Completely redundant process and efficient transmission.
-                            BG Unified Solutions ensure completely secure network by technologies such as NAC(Network Access Control) using ISE, SourceFire, Cisco / Palo Alto / Checkpoint / Fortinet Firewall, DDOS Protection.
-                            Boost up your operational efficiency. Improve your organization’s agility. Guaranteed access to a team of experts in different technologies.The key service for supporting mobile communications, wireless connections in your offices and organizations. Wireless plays an integral part in collaborating and streamlining resources of an organisation and increase productivity at a tremendous rate. 
-                        </p>
+                <Fade duration={500} distance={"30%"} bottom >
+                    <div className="col text-center">
+                        <h1 className="display4">
+                            Why BG Unified Solutions?
+                        </h1>
+
+                        <div className="row text-left pt-4">
+                            <div className="col-12 col-md-6">
+                                <p className="lead text-justify"> 
+                                    With BG Unified Solutions Wireless as a Service, you get Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers. Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, so as to support Wireless Phones in any environment. Traffic and congestion problems reduced significantly. Unified and Efficient service, i.e. Improved operational efficiencies, Reduced communication-related delays and enhanced collaboration. Completely redundant process and efficient transmission.    
+                                </p>
+                            </div>
+                            <div className="col-12 col-md-6">
+                                <p className="lead text-justify">
+                                BG Unified Solutions ensures a completely secure network by technologies such as NAC(Network Access Control) using ISE, SourceFire, Cisco / Palo Alto / Checkpoint / Fortinet Firewall, DDOS Protection.
+                                Boost up your operational efficiency. Improve your organization’s agility. Guaranteed access to a team of experts in different technologies.The key service for supporting mobile communications, wireless connections in your offices and organizations. Wireless plays an integral part in collaborating and streamlining resources of an organisation and increases productivity at a tremendous rate.
+                                </p>
+                            </div>
+                        </div>
+                        
                     </div>
+                    </Fade>
                 </div>
             </div>
-        </div>
+        </section>
         <div className="section pt-0">
             <div className="container">
+            <Fade duration={400} distance={"30%"} bottom>
                 <div className="row">
                     <div className="col-12 p-4 mb-4">
                         <h4 className="display5 py-3 text-center">Related Services</h4>
@@ -256,6 +276,7 @@ function main(props) {
                         </Link>
                     </div>
                 </div>
+                </Fade>
             </div>
         </div>
         </div>

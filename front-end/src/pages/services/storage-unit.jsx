@@ -34,7 +34,7 @@ function main(props) {
     return (
         <div>
             <Head>
-                <title>Storage As A Service</title>
+                <title>Storage As A Service(STaaS)</title>
             </Head>
         <div className="position-absolute w-100 overflow-hidden background-svg">
             <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
@@ -43,7 +43,7 @@ function main(props) {
             <div className="container">
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">Storage As A Service</h1>
+                    <h1 className="display3">Storage As A Service(STaaS)</h1>
                 </div>
             </div>
             </div>

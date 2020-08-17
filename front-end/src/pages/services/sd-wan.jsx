@@ -11,7 +11,7 @@ function SDWAN(props) {
     return (
         <div>
             <Head>
-                <title>SD-WAN</title>
+                <title>SD-WAN Optimization As A Service</title>
             </Head>
         <div className="position-absolute w-100 overflow-hidden background-svg">
             <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
@@ -19,8 +19,15 @@ function SDWAN(props) {
         <div className="page-header">
             <div className="container">
             <div className="row">
-                <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">SD-WAN Optimization As A Service</h1>
+                <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
+                <Fade duration={700} delay={300} bottom >
+                    <h1 className="display3">
+                    SD-WAN Optimization As A Service
+                    </h1>
+                </Fade>
+                <Fade duration={700} delay={500} bottom >
+                    Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.
+                </Fade>
                 </div>
             </div>
             </div>
@@ -89,7 +96,7 @@ function SDWAN(props) {
                 <div className="row">
                     <div className="col-lg-10 text-center offset-lg-1">
                         <div className="h4 NunitoSans-ExtraBold">
-                        Simple Solutions for Complex Connections.
+                            Sound Innovation
                         </div>
                         <div className="h6 mt-4 text-secondary text-justify text-dark">
                         Software-Defined Wide Area Network or famously known as SD-WAN is mainly defined as “A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. The function is centralized control. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.  
@@ -151,22 +158,38 @@ function SDWAN(props) {
                 </div>
             </div>
         </div>
-        <div className="section py-0">
+        <section className="fbd-block section">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 p-5 rounded-8 bg-light">
-                        <h4 className="display5 py-2 mb-2 text-center">Why Us?</h4>
-                        <p className="text-justify">Data Center Class WAN Optimization
-                        Top IT organizations around the globe choose Silver Peak WAN / Riverbed optimization to overcome network performance challenges and lower ongoing WAN costs. We offer the industry’s only multi-gigabit virtual WAN optimization solution and the only products that support every major hypervisor. All products are available for immediate download and free trial via our virtual marketplace. With the broadest range of physical and virtual products, we deliver cost-effective solutions for the smallest branch offices, the largest data centres, and everything in between. Silver Peak’s / Riverbed’s WAN optimization solution works on all applications, regardless of transport protocol or version — all without risk of corrupting data or altering behaviour. No plug-ins are required, which expedites deployment and saves both time and money. Fast, Reliable and Increasingly Efficient
-                        Centralizing servers and storage offer significant cost, management, security and compliance benefits. The risk is when poor WAN performance makes it difficult for remote users to effectively use hosted applications. Silver Peak / Riverbed overcome that challenge, ensuring that all centralized applications perform to their fullest potential.
-                        Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.
-                        </p>
+                <Fade duration={500} distance={"30%"} bottom>
+                    <div className="col text-center">
+                        <h1 className="display4">
+                            Why BG Unified Solutions?
+                        </h1>
+                        
+                        <div className="row text-left pt-4">
+                            <div className="col-12 col-md-6">
+                                <p className="lead text-justify"> 
+                                    Data Center Class WAN Optimization
+                                    Top IT organizations around the globe choose Silver Peak WAN / Riverbed optimization to overcome network performance challenges and lower ongoing WAN costs. We offer the industry’s only multi-gigabit virtual WAN optimization solution and the only products that support every major hypervisor. All products are available for immediate download and free trial via our virtual marketplace. With the broadest range of physical and virtual products, we deliver cost-effective solutions for the smallest branch offices, the largest data centres, and everything in between. Silver Peak’s / Riverbed’s WAN optimization solution works on all applications, regardless of transport protocol or version — all without risk of corrupting data or altering behaviour.
+                                </p>
+                            </div>
+                            <div className="col-12 col-md-6">
+                                <p className="lead text-justify">
+                                No plug-ins are required, which expedites deployment and saves both time and money. Fast, Reliable and Increasingly Efficient
+                                Centralizing servers and storage offer significant cost, management, security and compliance benefits. The risk is when poor WAN performance makes it difficult for remote users to effectively use hosted applications. Silver Peak / Riverbed overcome that challenge, ensuring that all centralized applications perform to their fullest potential.
+                                Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+                </Fade>
                 </div>
             </div>
-        </div>
+        </section>
         <div className="section pt-0">
             <div className="container">
+            <Fade duration={400} distance={"30%"} bottom>
                 <div className="row">
                     <div className="col-12 p-4 mb-4">
                         <h4 className="display5 py-3 text-center">Related Services</h4>
@@ -188,6 +211,7 @@ function SDWAN(props) {
                         </Link>
                     </div>
                 </div>
+                </Fade>
             </div>
         </div>
         </div>

@@ -224,7 +224,9 @@ function DNS(props) {
             <div className="row">
             <Fade duration={500} distance={"30%"} bottom >
             <div className="col text-center">
-                <h1 className="display4">Why Us</h1>
+                <h1 className="display4">
+                    Why BG Unified Solutions?
+                </h1>
 
                 <div className="row text-left pt-4">
                 <div className="col-12 col-md-6">

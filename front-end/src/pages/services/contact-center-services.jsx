@@ -49,7 +49,7 @@ function main(props) {
     return (
         <div>
             <Head>
-                <title>Contact Center as Service</title>
+                <title>Contact Center As A Service</title>
             </Head>
         <div className="position-absolute w-100 overflow-hidden background-svg">
             <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
@@ -58,7 +58,14 @@ function main(props) {
             <div className="container">
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">Contact Center As A Service (CCaaS)</h1>
+                <Fade duration={700} delay={300} bottom >
+                    <h1 className="display3">
+                        Contact Center As A Service (CCaaS)
+                    </h1>
+                </Fade>
+                <Fade duration={700} delay={500} bottom >
+                    BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus.
+                </Fade>
                 </div>
             </div>
             </div>
@@ -251,20 +258,36 @@ function main(props) {
                 </div>
             </div>
         </div>
-        <div className="section py-0">
+        <section className="fbd-block section">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 p-5 rounded-8 bg-light">
-                        <h4 className="display5 py-2 mb-2 text-center">Why BG Unified Solutions?</h4>
-                        <p className="text-justify">
-                        BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact centre tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus. We help organisations reduce their risks by offering solutions that of creating, sharing and storing the information,  protect, detect and respond to external and internal incidents and threats. We help organisations to develop and improve communication channels and deliver lasting customer relationships at a lower cost. Our objective is to maximize the value of information within an organization whilst minimizing the cost. We assist organisations in improving employee and partner collaboration to deliver greater employee productivity, improved information sharing and knowledge management. We help organizations who are looking for an IT Partner who is known for speed, quality and consistency of service for distributed and complex environments. As experts in a wide range of technologies, our focus is to provide competitive and affordable end-to-end solutions to our clients.
-                        </p>
+                <Fade duration={500} distance={"30%"} bottom>
+                    <div className="col text-center">
+                        <h4 className="display5">
+                            Why BG Unified Solutions?
+                        </h4>
+                        
+                        <div className="row text-left pt-4">
+                            <div className="col-12 col-md-6">
+                                <p className="lead text-justify"> 
+                                    BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact centre tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus. We help organisations reduce their risks by offering solutions for creating, sharing and storing the information, to protect, detect and respond to external and internal incidents and threats. We help organisations to develop and improve communication channels and deliver lasting customer relationships at a lower cost.
+                                </p>
+                            </div>
+                            <div className="col-12 col-md-6">
+                                <p className="lead text-justify">
+                                    Our objective is to maximize the value of information within an organization whilst minimizing the cost. We assist organisations in improving employee and partner collaboration to deliver greater employee productivity, improved information sharing and knowledge management. We help organizations who are looking for an IT Partner who is known for speed, quality and consistency of service for distributed and complex environments. As experts in a wide range of technologies, our focus is to provide competitive and affordable end-to-end solutions to our clients.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
+                </Fade>
                 </div>
             </div>
-        </div>
+        </section>
         <div className="section pt-0">
             <div className="container">
+            <Fade duration={400} distance={"30%"} bottom>
                 <div className="row">
                     <div className="col-12 p-4 mb-4">
                         <h4 className="display5 py-3 text-center">Related Services</h4>
@@ -286,6 +309,7 @@ function main(props) {
                         </Link>
                     </div>
                 </div>
+                </Fade>
             </div>
         </div>
         </div>
