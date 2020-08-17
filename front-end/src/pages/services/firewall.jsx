@@ -135,8 +135,7 @@ function Firewall(props) {
                                 Platform Diversity
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                    On-premise or cloud-based, that helps secure your IT environment quickly.
-                                    The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.
+                                    On-premise or cloud-based, that helps secure your IT environment quickly.The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.
                                 </div>
                                 <Image  height="300px" src="/assets/images/illustrations/diversity.svg"></Image>
                             </div>
@@ -152,8 +151,7 @@ function Firewall(props) {
                                 Fast and easy Deployment
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                Rapid evolvement, easily deployable with tremendous speed. 
-                                Proven deployment methodology that integrates and extends your existing security infrastructure without capex.
+                                    Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure without capex.
                                 </div>
                                 <Image  height="300px" src="/assets/images/illustrations/data_center.svg"></Image>
                             </div>
@@ -169,8 +167,7 @@ function Firewall(props) {
                                 Advance Technology Stack
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                    Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, 
-                                    User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included
+                                    Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included
                                 </div>
                                 <Image src="/assets/images/illustrations/assets.svg" className="mt-auto" height="250px"></Image>
                             </div>
@@ -184,8 +181,8 @@ function Firewall(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-12 p-5 rounded-8 bg-light">
-                        <h4 className="display5 py-2 mb-2 text-center">Why Us?</h4>
-                        <p className="text-justify">We, at BG Unified Solutions, tend to offer the best in class Security for your business around the globe. With our team of experts, the experience we’ve gained, ensure you to provide customizable security to your network, prevent any security breach, secure data flowing through your network. We offer you solutions that especially suits your business model, whether small, medium or large, we’ve got it covered. We provide Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure. BG Unified solutions provide you firewalls for a single location system, or a multi-homed network, as per your needs and requirements.  We have On-premise or cloud-based, that helps secure your IT environment quickly. The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance. Customer satisfaction and quality is our motto.  Maintaining our service is our duty. Any customer support, regarding installation, usage or fault management, consultancy services for your business, we provide extremely satisfying service, and that’s the word for us. We promise you to provide affordable, transparent and cost-efficient service fulfilling your needs. Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA. Centralized Policy Management using Panorama, Sourcefire DC. Cloud-Based or on-premise, URL filtering, SSL VPN’s inclusion.</p>
+                        <h4 className="display5 py-2 mb-2 text-center">Why BG-Unified Solutions?</h4>
+                            <p className="text-justify">We, at BG Unified Solutions, tend to offer the best in class Security for your business around the globe. With our team of experts, the experience we’ve gained, ensures you to provide customizable security to your network, prevent any security breach, secure data flowing through your network. We offer you solutions that especially suit your business model, whether small, medium or large, we’ve got it covered. We provide Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure. BG Unified solutions provide you firewalls for a single location system, or a multi-homed network, as per your needs and requirements.  We have On-premise or cloud-based, that helps secure your IT environment quickly. The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance. Customer satisfaction and quality is our motto.  Maintaining our service is our duty. Any customer support, regarding installation, usage or fault management, consultancy services for your business, we provide extremely satisfying service, and that’s the word for us. We promise you to provide affordable, transparent and cost-efficient service fulfilling your needs. Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA. Centralized Policy Management using Panorama, Sourcefire DC. Cloud-Based or on-premise, URL filtering, SSL VPN’s inclusion.</p>
                     </div>
                 </div>
             </div>

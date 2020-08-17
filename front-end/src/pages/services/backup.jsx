@@ -29,6 +29,7 @@ function main(props) {
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
                     <h1 className="display3">Backup As A Service</h1>
+                    <h2>BaaS</h2>
                 </div>
             </div>
             </div>
@@ -111,7 +112,7 @@ function main(props) {
                         <div className="h4 NunitoSans-ExtraBold">Backup for your Digital system
                         </div>
                         <div className="h6 mt-4 text-secondary text-justify text-dark">
-                        In today’s dynamic and complex landscape, no one can afford to be idle. Whether we like it or not, data centre change is upon us. Migrating us to store confidential and information data somewhere else, for the worst-case scenarios. And with this change comes steep challenges—to migrate your legacy production application environments to next-general data centres and enable your journey to the cloud. 
+                            In today’s dynamic and complex landscape, no one can afford to be idle. Whether we like it or not, data centre change is upon us. Migrating us to store confidential and information data somewhere else, for the worst-case scenarios. And with this change comes steep challenges—to migrate your legacy production application environments to next-general data centres and enable your journey to the cloud. 
                         </div>
                     </div>
                 </div>
@@ -125,11 +126,10 @@ function main(props) {
                         <div className="card h-100 rounded-8">
                             <div className="card-body d-flex flex-column align-items-center">
                                 <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
-                                Platform Diversity
+                                    Flexibility / Scalability
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                    On-premise or cloud-based, that helps secure your IT environment quickly.
-                                    The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.
+                                    For any of your organization department, our BaaS offering provides a simplified IT management and a highly scalable platform. Irrespective of the end-user, everyone gets to access to the latest and the greatest backup technology stack. Customized and tailor solutions to meet client needs with Local end-market support services and Local language capabilities
                                 </div>
                                 <Image  height="300px" src="/assets/images/illustrations/diversity.svg"></Image>
                             </div>
@@ -142,11 +142,10 @@ function main(props) {
                             <div className="card-body d-flex flex-column align-items-center">
                                 
                                 <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                                Fast and easy Deployment
+                                    Cost-Effectiveness
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                Rapid evolvement, easily deployable with tremendous speed. 
-                                Proven deployment methodology that integrates and extends your existing security infrastructure without capex.
+                                    For your business, we are offering and providing a flat billing structure. It's designed for pay as you go model that shifts your costs from capex to opex. You will have very simplified and predictable expenses and have the option of rolling any upfront or one-off expenses into your monthly payment.
                                 </div>
                                 <Image  height="300px" src="/assets/images/illustrations/data_center.svg"></Image>
                             </div>
@@ -159,11 +158,10 @@ function main(props) {
                             <div className="card-body d-flex flex-column align-items-center">
                                 
                                 <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                                Advance Technology Stack
+                                    Back it Up
                                 </div>
                                 <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                                    Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, 
-                                    User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included
+                                    Geographically sound, redundant, quick and efficient increasing your backup by 60%. Highly advanced, available and multiple data centre locations offering multiple IP types globally, in a clustered or isolated environment.
                                 </div>
                                 <Image src="/assets/images/illustrations/assets.svg" className="mt-auto" height="250px"></Image>
                             </div>
@@ -179,7 +177,7 @@ function main(props) {
                     <div className="col-12 p-5 rounded-8 bg-light">
                         <h4 className="display5 py-2 mb-2 text-center">Why BG Unified Solutions?</h4>
                         <p className="text-justify">
-                        Through our dedicated Data Center Practice, we can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today. BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams.BG Unified Solutions has the deep technology skills and proven methodologies to help you leverage leading data center solutions. From legacy production systems support to a wide technology lens and multi-vendor solutions, we can help you implement a flexible, agile architecture designed specifically to meet your unique needs. We bring a broad perspective based on demonstrated experience working with many customers in varied environments.
+                            Through our dedicated Data Center Practice, we can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today. BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams.BG Unified Solutions has the deep technology skills and proven methodologies to help you leverage leading data center solutions. From legacy production systems support to a wide technology lens and multi-vendor solutions, we can help you implement a flexible, agile architecture designed specifically to meet your unique needs. We bring a broad perspective based on demonstrated experience working with many customers in varied environments.
                         </p>
                     </div>
                 </div>

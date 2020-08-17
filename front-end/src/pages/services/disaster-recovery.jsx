@@ -4,8 +4,7 @@ import Head from 'next/head'
 
 function Disaster(props) {
     return (
-        
-        <div>
+        <>
             <Head>
                 <title>Disaster Recovery Management</title>
             </Head>
@@ -106,7 +105,7 @@ function Disaster(props) {
             </div>
         </div>
         <div className="section"></div>
-        </div>
+        </>
     );
 }
 
