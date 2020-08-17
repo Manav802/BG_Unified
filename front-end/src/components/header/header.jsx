@@ -149,7 +149,7 @@ function header(props) {
                                     </span>
 
                                     <Link href="/services/sd-wan">
-                                        <a>SD-WAN Optimization As A Service</a>
+                                        <a>SD-WAN As A Service</a>
                                     </Link>
                                     <Link href="/services/proxy-server">
                                         <a>Proxy As A Service</a>
@@ -162,7 +162,7 @@ function header(props) {
                                     </Link>
                                     <Link href="/services/cloud-exchange">
                                         <a>
-                                            Cloud Exchange Connectivity As A
+                                            CEX As A
                                             Service
                                         </a>
                                     </Link>
@@ -187,7 +187,7 @@ function header(props) {
                                         </a>
                                     </Link>
                                     <Link href="/services/customer-support">
-                                        <a>Customer Support As A Service</a>
+                                        <a>Contact Center As A Service</a>
                                     </Link>
                                     <Link href="/services/architectural-consultancy">
                                         <a>
