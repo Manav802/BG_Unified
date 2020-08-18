@@ -28,14 +28,17 @@ function main(props) {
             <div className="container">
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">Backup As A Service</h1>
-                    <h2>BaaS</h2>
+                    <Fade duration={700} delay={300} bottom >
+                        <h1 className="display3">Backup As A Service</h1>
+                        <h2 className="display4">BaaS</h2>
+                    </Fade>
                 </div>
             </div>
             </div>
         </div>
         <div className="section">
             <div className="container">
+                <Fade duration={500} bottom>
                 <div className="row px-lg-5 px-3">
                     <div className="col-lg-4 my-3">
                         <PricingCard  title="Standard" icon="/assets/images/icons/theme/stack.svg" featureList={["Single Copy", "Single Location", "Reliable & Secure", "Cost Effective"]}>
@@ -53,6 +56,7 @@ function main(props) {
                         </PricingCard>
                     </div>
                 </div>
+                </Fade>
                 <div>
                     <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
                         <div className="px-4 py-5 border">
@@ -104,7 +108,6 @@ function main(props) {
                 </div>
             </div>
         </div>
-
         <div className="section py-0">
             <div className="container">
                 <div className="row">
@@ -191,18 +194,22 @@ function main(props) {
                     </div>
                     <div className="col-xl-4 col-sm-6 my-2">
                         <Link href="/services/infra">
-                            <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" />
+                            <a className="no-red"></a><CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" />
                         </Link>
                     </div>
                     
                     <div className="col-xl-4 col-sm-6 my-2">
                         <Link href="/services/storage">
-                            <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." />
+                            <a className="no-red">
+                                <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." />
+                            </a>
                         </Link>
                     </div>
                     <div className="col-xl-4 col-sm-6 my-2">
                         <Link href="/services/dns">
-                            <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." />
+                            <a className="no-red">
+                                    <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." />
+                            </a>
                         </Link>
                     </div>
                 </div>
