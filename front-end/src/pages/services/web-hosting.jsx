@@ -31,8 +31,6 @@ const CustomRadio = React.forwardRef((props, ref) => {
 function main(props) {
     const [show, setShow] = React.useState(false);
     const openControls = () => setShow(true);
-    const [value, setValue] = React.useState(0);
-    const handleChange = value => setValue(value);
     const [plan,setPlan] = React.useState("");
     const types = [{name:"Non resilient (APACHE)",icon:""},
     {name:"Non resilient (APACHE) with MYSQL DB",icon:""},
