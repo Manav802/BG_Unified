@@ -1,14 +1,10 @@
 import React from 'react';
-import {Button, Collapse, Image, Radio, RadioButtonGroup, NumberInput,
-    NumberInputField,
-    NumberInputStepper,
-    NumberIncrementStepper,
-    NumberDecrementStepper,
+import {Button, Image, 
     Select,
 Slider, SliderThumb, SliderTrack, SliderFilledTrack} from '@chakra-ui/core'
 import Fade from 'react-reveal/Fade';
 import CardWithIcon from "../../components/cards/CardWithIcon"
-import {PricingCard, PricingQuote} from '../../components/cards/PricingCard'
+import {PricingQuote} from '../../components/cards/PricingCard'
 import Head from 'next/head'
 import Link from 'next/link'
 
@@ -95,7 +91,7 @@ function main(props) {
                                 </div>
 
                                 <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                                    <PricingQuote serviceDescription={`${verifyNotEmpty(value,"TB Storage")} ${tier} ${type}`} button ></PricingQuote>
+                                    <PricingQuote serviceName="Storage As A Service" serviceDescription={`${verifyNotEmpty(value,"TB Storage")} ${tier} ${type}`} button ></PricingQuote>
                                 </div>
                             </div>
                         </div>

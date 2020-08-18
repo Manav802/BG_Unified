@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Collapse, Image, Radio, RadioButtonGroup, NumberInput,
+import {Button, Collapse, Image, RadioButtonGroup, NumberInput,
     NumberInputField,
     NumberInputStepper,
     NumberIncrementStepper,
@@ -183,7 +183,7 @@ function main(props) {
                                 </div>
                                 
                                 <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                                    <PricingQuote serviceDescription={`${plan} ${type} ${handledailyBackups(dailyBackups)} ${handleUTMSwitch(UTMSwitch)} ${verifyNotEmpty(UTM,"Additional UTM Firewall Web Servers")} ${verifyNotEmpty(IP,"Public IPs")}`} button ></PricingQuote>
+                                    <PricingQuote serviceName="Web Hosting As A Service" serviceDescription={`${plan} ${type} ${handledailyBackups(dailyBackups)} ${handleUTMSwitch(UTMSwitch)} ${verifyNotEmpty(UTM,"Additional UTM Firewall Web Servers")} ${verifyNotEmpty(IP,"Public IPs")}`} button ></PricingQuote>
                                 </div>
                             </div>
                         </div>
