@@ -4,12 +4,14 @@ import {Button, Collapse, Image, Radio, RadioButtonGroup, NumberInput,
     NumberInputStepper,
     NumberIncrementStepper,
     NumberDecrementStepper,
-Slider, SliderThumb, SliderTrack, SliderFilledTrack} from '@chakra-ui/core'
+Slider, SliderThumb, SliderTrack, SliderFilledTrack,Switch,FormLabel} from '@chakra-ui/core'
 import Fade from 'react-reveal/Fade';
 import CardWithIcon from "../../components/cards/CardWithIcon"
 import {PricingCard, PricingQuote} from '../../components/cards/PricingCard'
 import Head from 'next/head'
 import Link from 'next/link'
+
+const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + " " + text : "");
 
 const CustomRadio = React.forwardRef((props, ref) => {
     const { isChecked, isDisabled, value, ...rest } = props;
@@ -31,6 +33,26 @@ function main(props) {
     const openControls = () => setShow(true);
     const [value, setValue] = React.useState(0);
     const handleChange = value => setValue(value);
+    const [plan,setPlan] = React.useState("");
+    const types = [{name:"Non resilient (APACHE)",icon:""},
+    {name:"Non resilient (APACHE) with MYSQL DB",icon:""},
+    {name:"Non resilient WINDOWS 2016 STD",icon:""},
+    {name:"Non resilient WINDOWS 2016 STD WITH DB ATTACHED",icon:""},
+    {name:"Resilient (APACHE)",icon:""},
+    {name:"Resilient (APACHE) with MYSQL DB",icon:""},
+    {name:"Resilient WINDOWS 2016 STD",icon:""},
+    {name:"Resilient WINDOWS 2016 STD WITH DB ATTACHED",icon:""},
+    {name:"Dedicated DB Server (Windows 2016 Standard with SQL Server) with daily backups.",icon:""},
+    {name:"Dedicated DB Server (Windows 2016 Standard with SQL Server) with hourly snapshots.",icon:""}]
+    const [type,setType] = React.useState(`,${types[1].name}`);
+    const [dailyBackups, setDailyBackups] = React.useState(false);
+    const handledailyBackups = (dailyBackups) => (dailyBackups) ? (",Enabled Daily Backups") : ("")
+    const [UTMSwitch,setUTMSwitch] = React.useState(false);
+    const handleUTMSwitch = (UTMSwitch) => (UTMSwitch) ? (",Enabled UTM Firewall Protection") : ("")
+    const [UTM,setUTM] = React.useState(0);
+    const [showUTMSlider, setShowUTMSlider] = React.useState(false);
+    const [IP,setIP] = React.useState(0);
+
     return (
         <div>
             <Head>
@@ -58,18 +80,18 @@ function main(props) {
                 <Fade duration={500} bottom>
                 <div className="row px-lg-5 px-3">
                     <div className="col-lg-4 my-3">
-                        <PricingCard  title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
+                        <PricingCard  title="Standard" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include 2vCPU", "Includes 4 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
+                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Standard")}}>View More</Button>
                        </PricingCard>
                     </div>
                     <div className="col-lg-4 my-3">
-                        <PricingCard title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
+                        <PricingCard title="Premium" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include 4vCPU", "Includes 6 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
+                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Premium")}}>View More</Button>
                         </PricingCard>
                     </div>
                     <div className="col-lg-4 my-3">
-                        <PricingCard className="hover-effect" title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
+                        <PricingCard className="hover-effect" title="Gold" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include 6vCPU", "Includes 8 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
+                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Gold")}}>View More</Button>
                         </PricingCard>
                     </div>
                 </div>
@@ -77,83 +99,93 @@ function main(props) {
                 <div>
                     <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
                         <div className="px-4 py-5 border">
-                            <div className="display5 text-center">Single Node CUCM</div>
+                            <div className="display5 text-center">{plan}</div>
                             <div className="row px-3">
                                 <div className="col-lg-12 mt-2">
-                                    <div className="h6">Choose a type</div>
-                                    <RadioButtonGroup defaultValue="rad2" mt={4} isInline>
-                                        <CustomRadio value="rad1">CustomRadio 1</CustomRadio>
-                                        <CustomRadio value="rad2">CustomRadio 2</CustomRadio>
-                                        <CustomRadio value="rad3">CustomRadio 3</CustomRadio>
+                                    <div className="h6">Choose a type : </div>
+                                    <RadioButtonGroup onChange={(value) => {
+                                                                    setType(value);
+                                                                }} defaultValue={`,${types[1].name}`} mt={4} isInline>
+                                        {types.map((x)=><CustomRadio className="my-1" value={`,${x.name}`}>{x.icon} {x.name}</CustomRadio>)}
                                     </RadioButtonGroup>
                                 </div>
-                                <div className="col-lg-5 mt-4">
-                                    <div className="h6">Total UCaaS</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
+                                <div className="col-lg-12 mt-3">
+                                    
+                                    <Switch onChange={(e) => { setDailyBackups(e.target.checked) }} color="primary" mb={0} id="daily-backups" />
+                                    <FormLabel mb={0} ml="12px" htmlFor="hourly-backup">Daily Backups</FormLabel>
+                                   
                                 </div>
-                                <div className="col-lg-5 offset-lg-1 mt-4">
-                                    <div className="h6">Additional Hunt Groups</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
+                                <div className="col-lg-12 mt-3">
+                                    
+                                    <Switch onChange={(e) => { setUTMSwitch(e.target.checked);
+                                    if(e.target.checked==false){setShowUTMSlider(false); setUTM(0);}  }} color="primary" mb={0} id="UTM-switch" />
+                                    <FormLabel mb={0} ml="12px" htmlFor="UTM-Firewall"> UTM Enabled Firewall Protection</FormLabel>
+
+                                    
+                                   
                                 </div>
-                                <div className="col-lg-3 mt-4">
-                                    <div className="h6">NUM-10</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
+                                {UTMSwitch &&
+                                <div className="col-lg-12 mt-2">
+                                <p className=" NunitoSans-Bold ">
+                                        {" "}
+                                        - This type includes maximum 2 web servers.
+                                        <a
+                                        onClick={() => {
+                                            setShowUTMSlider(!showUTMSlider); setUTM(0);
+                                        }}
+                                        >
+                                        {" "}
+                                        Add Additional Web Servers for UTM Protection?{" "}
+                                        </a>{" "}
+                                    </p>
+                                   
                                 </div>
-                                <div className="col-lg-3 offset-lg-1 mt-4">
-                                    <div className="h6">NUM-50</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
-                                <div className="col-lg-3 offset-lg-1 mt-4">
-                                    <div className="h6">NUM-100</div>
-                                    <NumberInput defaultValue={0} min={0} max={20}>
-                                    <NumberInputField className="bg-light" />
-                                    <NumberInputStepper>
-                                        <NumberIncrementStepper />
-                                        <NumberDecrementStepper />
-                                    </NumberInputStepper>
-                                    </NumberInput>
-                                </div>
-                                <div className="col-lg-11 mt-4">
-                                    <div className="h6">Extra VMs</div>
-                                    <Slider color="primary" defaultValue={30} value={value} onChange={handleChange}>
+                                }
+                                <div className="col-lg-11">
+                                    <Collapse className="mt-3" isOpen={showUTMSlider}>
+                                    <div className="h6">Additional Web Servers for UTM Protection</div>
+                                    <Slider
+                                        color="primary"
+                                        defaultValue={0}
+                                        value={UTM}
+                                        max={20}
+                                        onChange={(value) => {
+                                        setUTM(value);
+                                        }}
+                                    >
                                         <SliderTrack h="16px" borderRadius="8px" />
                                         <SliderFilledTrack h="16px" borderRadius="8px" />
                                         <SliderThumb
-                                                    className="shadow-md" 
-                                                    fontSize="md"
-                                                    fontWeight="800"
-                                                    width="auto"
-                                                    padding="8px"
-                                                    height="32px"
-                                                    children={value} />
+                                        className="shadow-md"
+                                        fontSize="md"
+                                        fontWeight="800"
+                                        width="auto"
+                                        padding="8px"
+                                        height="32px"
+                                        children={UTM}
+                                        />
                                     </Slider>
+                                    </Collapse>
                                 </div>
+
+                                <div className="col-lg-5 mt-4">
+                                    <div className="h6">Public IPs</div>
+                                    <NumberInput
+                                    onChange={(value) => setIP(value)}
+                                    defaultValue={0}
+                                    min={0}
+                                    max={20}
+                                    >
+                                    <NumberInputField className="bg-light" />
+                                    <NumberInputStepper>
+                                        <NumberIncrementStepper />
+                                        <NumberDecrementStepper />
+                                    </NumberInputStepper>
+                                    </NumberInput>
+                                </div>
+                                
                                 <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                                    <PricingQuote serviceDescription="" button ></PricingQuote>
+                                    <PricingQuote serviceDescription={`${plan} ${type} ${handledailyBackups(dailyBackups)} ${handleUTMSwitch(UTMSwitch)} ${verifyNotEmpty(UTM,"Additional UTM Firewall Web Servers")} ${verifyNotEmpty(IP,"Public IPs")}`} button ></PricingQuote>
                                 </div>
                             </div>
                         </div>
