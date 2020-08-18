@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import {
   Button,
@@ -392,3 +393,5 @@ function main(props) {
 }
 
 export default main;
+=======
+>>>>>>> Temporary changes
