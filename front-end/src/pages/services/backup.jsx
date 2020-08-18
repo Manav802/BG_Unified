@@ -28,14 +28,18 @@ function main(props) {
       <div className="page-header">
         <div className="container">
           <div className="row">
+            <Fade duration={700} delay={300} bottom>
             <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
               <h1 className="display3">Backup As A Service</h1>
+              <h1 className="display3">BaaS</h1>
             </div>
+            </Fade>
           </div>
         </div>
       </div>
       <div className="section">
         <div className="container">
+          <Fade duration={500} bottom>
           <div className="row px-lg-5 px-3">
             <div className="col-lg-4 my-3">
               <PricingCard title="Standard" icon="/assets/images/icons/theme/stack.svg" featureList={["Single Copy", "Single Location", "Reliable & Secure", "Cost Effective"]}>
@@ -49,12 +53,13 @@ function main(props) {
             </div>
             <div className="col-lg-4 my-3">
               <PricingCard title="Enterprise" icon="/assets/images/icons/theme/town.svg" featureList={["Multiple Copies", "Multiple Location", "Reliable & Secure", "Cost Effective"]}>
-                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View Options</Button>
+                  <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}><a href="#collapse-1"> View Options</a></Button>
               </PricingCard>
             </div>
           </div>
-          <div>
-            <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
+          </Fade>
+          <div id="collapse-1">
+            <Collapse className="px-lg-5 px-3" mt={12} isOpen={show}>
               <div className="px-4 py-5 border">
                 <div className="display5 text-center">Customize your plan</div>
                 <div className="row px-3">
@@ -174,18 +179,20 @@ function main(props) {
           </div>
         </div>
       </div>
+      <Fade duration={500} distance={"30%"} bottom>
       <div className="section py-0">
         <div className="container">
           <div className="row">
-            <div className="col-12 p-5 rounded-8 bg-light">
-              <h4 className="display5 py-2 mb-2 text-center">Why BG Unified Solutions?</h4>
-              <p className="text-justify">
+            <div className="col-12">
+              <p className="lead text-justify">
                 Through our dedicated Data Center Practice, we can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today. BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams.BG Unified Solutions has the deep technology skills and proven methodologies to help you leverage leading data center solutions. From legacy production systems support to a wide technology lens and multi-vendor solutions, we can help you implement a flexible, agile architecture designed specifically to meet your unique needs. We bring a broad perspective based on demonstrated experience working with many customers in varied environments.
-                        </p>
+              </p>
             </div>
-          </div>
+          </div>  
         </div>
       </div>
+      </Fade>
+      <Fade duration={400} distance={"30%"} bottom>
       <div className="section pt-0">
         <div className="container">
           <div className="row">
@@ -194,23 +201,28 @@ function main(props) {
             </div>
             <div className="col-xl-4 col-sm-6 my-2">
               <Link href="/services/infra">
+                <a className="no-red">
                 <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" />
+                </a>
               </Link>
             </div>
 
             <div className="col-xl-4 col-sm-6 my-2">
               <Link href="/services/storage">
-                <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." />
+                <a className="no-red">
+                    <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." /></a>
               </Link>
             </div>
             <div className="col-xl-4 col-sm-6 my-2">
               <Link href="/services/dns">
-                <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." />
+                <a className="no-red">
+                    <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." /></a>
               </Link>
             </div>
           </div>
         </div>
       </div>
+      </Fade>
     </div>
   );
 }

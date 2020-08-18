@@ -34,7 +34,7 @@ function main(props) {
     return (
         <div>
             <Head>
-                <title>Web Hosting As A Service</title>
+                <title>Trendsetting web hosting solutions | Web Hosting As A Service - BG Unified Solutions</title>
             </Head>
         <div className="position-absolute w-100 overflow-hidden background-svg">
             <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
@@ -46,7 +46,7 @@ function main(props) {
                     <Fade duration={700} delay={300} bottom>
                     <h1 className="display3">Web Hosting As A Service</h1>
                     <h1 className="display3">
-                                {/* insert here short form */}
+                        WHaaS
                     </h1>
                     </Fade>
                 </div>
@@ -153,7 +153,7 @@ function main(props) {
                                     </Slider>
                                 </div>
                                 <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                                    <PricingQuote button ></PricingQuote>
+                                    <PricingQuote serviceDescription="" button ></PricingQuote>
                                 </div>
                             </div>
                         </div>
@@ -223,25 +223,24 @@ function main(props) {
                 </div>
             </div>
         </div>
+        <Fade duration={500} distance={"30%"} bottom>
         <div className="section py-0">
-            <div className="container">
-                <div className="row">
-                    <div className="col-12 p-5 rounded-8 bg-light">
-                        <h4 className="display5 py-2 mb-2 text-center">Why BG-Unified Solutions?</h4>
-                        <p className="text-justify">
-                            
-                                Delivering a scalable, reliable and well-managed authoritative Web Hosting service. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users. Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package. Load balancing can also be added as an option if required.
-
-                                We have a ‘can-do’ attitude with an ‘easy to work with’ culture. Our values are based around fresh thinking, delivering on our promises, showing customer respect and making a 100% commitment.
-                                We design a Load Balancing topology for web servers running multiple instances of TOMCAT. A couple of applications are SSL based and others are Non-SSL based. Implementation of advanced features of F5 including Application Monitoring, Intrusion Prevention. We offer varied Web Hosting Solutions that include WordPress hosting, cloud hosting, dedicated server, AWS cloud, digital ocean cloud, all under one roof. Multiple data centre locations, allow access to your website anytime, anywhere. Reduced costs, pay for what you want, no hidden costs and completely transparent process. Costing and pricing discussed and negotiated at the starting of the job only.
-                                BG Solutions has gained an excellent reputation in design and implementation of IP technology and significant experience in Web Hosting services design and implementation for a number of clients and in distributed environments and locations.
-                                BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use information technology to improve their business results.
-                                We give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches.
-                        </p>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12 col-md-6">
+                                <p className="lead text-justify">                    
+                                    We design a Load Balancing topology for web servers running multiple instances of TOMCAT. A couple of applications are SSL based and others are Non-SSL based. Implementation of advanced features of F5 including Application Monitoring, Intrusion Prevention. We offer varied Web Hosting Solutions that include WordPress hosting, cloud hosting, dedicated server, AWS cloud, digital ocean cloud, all under one roof. Multiple data centre locations, allow access to your website anytime, anywhere. Reduced costs, pay for what you want, no hidden costs and completely transparent process. Costing and pricing discussed and negotiated at the starting of the job only.
+              </p>
+                            </div>
+                            <div className="col-12 col-md-6">
+                                <p className="lead text-justify">
+                    BG Solutions has gained an excellent reputation in design and implementation of IP technology and significant experience in Web Hosting services design and implementation for a number of clients and in distributed environments and locations.BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use information technology to improve their business results.We give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches.
+                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
         </div>
+        </Fade>
             <div className="section pt-0">
                 <div className="container">
                     <Fade duration={400} distance={"30%"} bottom>

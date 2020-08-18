@@ -20,7 +20,7 @@ function Firewall(props) {
   return (
     <div>
       <Head>
-        <title>Firewalls As A Service</title>
+        <title>To prevent a drastic fall, Install a Firewall | Firewalls As A Service - BG Unified Solutions</title>
       </Head>
       <div className="position-absolute w-100 overflow-hidden background-svg-firewall">
         <img className="w-100" src="/assets/images/backgrounds/firewall.png" />
@@ -29,7 +29,7 @@ function Firewall(props) {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-              <Fade>
+              <Fade duration={700} delay={300} bottom>
                 <h1 className="display3">Firewall As A Service</h1>
                 <h1 className="display3">FwaaS</h1>
               </Fade>
@@ -293,6 +293,7 @@ function Firewall(props) {
           </div>
         </div>
       </div>
+      <Fade duration={500} distance={"30%"} bottom>
       <div className="section py-0">
         <div className="container">
           <div className="row">
@@ -300,7 +301,7 @@ function Firewall(props) {
               <h4 className="display5 py-2 mb-2 text-center">
                 Why BG-Unified Solutions?
               </h4>
-              <p className="text-justify">
+              <p className="lead text-justify">
                 We, at BG Unified Solutions, tend to offer the best in class
                 Security for your business around the globe. With our team of
                 experts, the experience we’ve gained, ensures you to provide
@@ -331,6 +332,8 @@ function Firewall(props) {
           </div>
         </div>
       </div>
+      </Fade>
+      <Fade duration={500} distance={"30%"} bottom>
       <div className="section pt-0">
         <div className="container">
           <div className="row">
@@ -352,7 +355,6 @@ function Firewall(props) {
                 </a>
               </Link>
             </div>
-
             <div className="col-xl-4 col-sm-6 my-2">
               <Link href="/services/storage">
                 <a className="no-red">
@@ -388,6 +390,7 @@ function Firewall(props) {
           </div>
         </div>
       </div>
+      </Fade>
     </div>
   );
 }

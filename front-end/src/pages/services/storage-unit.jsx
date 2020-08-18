@@ -34,7 +34,7 @@ function main(props) {
     return (
         <div>
             <Head>
-                <title>Storage As A Service(STaaS)</title>
+                <title>Storage Made Simple | Storage As A Service - BG Unified Solutions</title>
             </Head>
         <div className="position-absolute w-100 overflow-hidden background-svg">
             <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
@@ -149,7 +149,7 @@ function main(props) {
                                     </Slider>
                                 </div>
                                 <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                                    <PricingQuote button ></PricingQuote>
+                                    <PricingQuote serviceDescription="" button ></PricingQuote>
                                 </div>
                             </div>
                         </div>
@@ -224,22 +224,32 @@ function main(props) {
                 </div>
             </div>
         </div>
+        <Fade duration={500} distance={"30%"} bottom>
         <div className="section py-0">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 p-5 rounded-8 bg-light">
-                        <h4 className="display5 py-2 mb-2 text-center">Why Us?</h4>
-                        <p className="text-justify">
-                        You can rely on us to help you navigate the storage landscape. Our experienced, certified storage professionals and data centre practice team are adept at helping customers manage change and transform their data centre's to enable next-generation computing models. From assessments to design, architecture, and implementation, we can help you transform your legacy application environments to “cloud-based” data centres, which provide:
-Easy provisioning of computing resources to support your diverse requirements
-Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage.
-Our staff are trained and experienced across top storage manufacturer offerings, enabling us to design complex, multi-vendor solutions. We’ll show you how to tame explosive storage capacity growth and put management products in place to support your specific virtualized computing and storage environments.
+                            <div className="col text-center">
+                                <h1 className="display4">Why BG Unified Solutions?</h1>
 
-                        </p>
-                    </div>
+                                <div className="row text-left pt-4">
+                                    <div className="col-12 col-md-6">
+                                        <p className="lead text-justify">
+                                            You can rely on us to help you navigate the storage landscape. Our experienced, certified storage professionals and data centre practice team are adept at helping customers manage change and transform their data centre's to enable next-generation computing models. From assessments to design, architecture, and implementation, we can help you transform your legacy application environments to “cloud-based” data centres, which provide:
+                                            Easy provisioning of computing resources to support your diverse requirements
+                                            Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Tier1/Tier2/Tier3 storage.
+                    </p>
+                                    </div>
+                                    <div className="col-12 col-md-6">
+                                        <p className="lead text-justify">
+                                            Our staff are trained and experienced across top storage manufacturer offerings, enabling us to design complex, multi-vendor solutions. We’ll show you how to tame explosive storage capacity growth and put management products in place to support your specific virtualized computing and storage environments.
+                    </p>
+                                    </div>
+                                </div>
+                            </div>
                 </div>
             </div>
             </div>
+            </Fade>
             <div className="section pt-0">
                 <div className="container">
                     <Fade duration={400} distance={"30%"} bottom>

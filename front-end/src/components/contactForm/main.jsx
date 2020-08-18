@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FormControl, FormLabel, Input, Button, Select } from "@chakra-ui/core";
+import { FormControl, FormLabel, Input, Button, Select, Textarea } from "@chakra-ui/core";
 import keys from "../../apiKeys";
 class ContactForm extends Component {
   constructor(props) {
@@ -41,7 +41,7 @@ class ContactForm extends Component {
   }
   render() {
     return (
-      <form className="contact-form" onSubmit={this.onSubmit}>
+      <form className="contact-form shadow-lg" onSubmit={this.onSubmit}>
         <input type="hidden" name="_redirect" value="false" />
         <FormControl className="container" isRequired>
           <FormLabel htmlFor="name">Name:</FormLabel>
@@ -92,12 +92,13 @@ class ContactForm extends Component {
         </FormControl>
         <FormControl mt={"9%"} className="container" isRequired>
           <FormLabel>Message:</FormLabel>
-          <Input
+          <Textarea
             variant="flushed"
             size="lg"
             name="message"
             value={this.state.message}
             onChange={this.onChange}
+            resize={"vertical"}
           />
         </FormControl>
         <div className="container">
