@@ -45,11 +45,11 @@ return (
                <Link href="/"><a>
                     <Image src="/assets/logo.png" height="45px" className="mr-3 d-sm-none"></Image>
                 </a></Link>
-                <div className="d-flex">
-                <Popover trigger="hover"><PopoverTrigger><a href="tel:1300-00-BGUS"><span className="NunitoSans-SemiBold p-2 d-none d-lg-block"> Call Us </span></a></PopoverTrigger>
+                <div className="d-flex align-items-center">
+                <Popover trigger="hover"><PopoverTrigger><a><span className="NunitoSans-Bold p-2 mt-1 d-none d-lg-block"> 1300 00 BGUS </span></a></PopoverTrigger>
                 <PopoverContent zIndex={4}>
                     <PopoverArrow />
-                    <PopoverHeader className="text-center"> <span  className="text-primary"> Call : </span> <span className="text-secondary"> 1300 00 BGUS </span> </PopoverHeader>
+                    <PopoverHeader className="text-center"><Button className="secondary-btn" variant="solid" >Call Now</Button> </PopoverHeader>
                 </PopoverContent>
                 </Popover>
                     <Search toggle ={() => setSearch(!search)} searching={search}></Search>
@@ -182,7 +182,7 @@ return (
                                 </div>
                                 <div className="col-lg-3 py-4 d-flex flex-column header-list">
                                     <Link href="/about">
-                                        <a className="d-flex">
+                                        <a className="d-flex link">
                                             <Box
                                                 as={FaInfoCircle}
                                                 size="20px"
@@ -192,7 +192,7 @@ return (
                                         </a>
                                     </Link>
                                     <Link href="/newsroom">
-                                        <a className="d-flex">
+                                        <a className="d-flex link">
                                             <Box
                                                 as={FaNewspaper}
                                                 size="20px"
@@ -202,7 +202,7 @@ return (
                                         </a>
                                     </Link>
                                     <Link href="/solutions">
-                                        <a className="d-flex">
+                                        <a className="d-flex link">
                                             <Box
                                                 as={FaBriefcase}
                                                 size="20px"
@@ -212,7 +212,7 @@ return (
                                         </a>
                                     </Link>
                                     <Link href="/contact">
-                                        <a className="d-flex">
+                                        <a className="d-flex link">
                                             <Box
                                                 as={FaCommentAlt}
                                                 size="20px"
