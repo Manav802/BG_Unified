@@ -20,7 +20,9 @@ function main(props) {
   return (
     <div>
       <Head>
-        <title>Backup for your Digital system | Backup As A Service - BG Unified Solutions</title>
+        <title>Cloud computing is the future | 
+        Cloud Logging as a Service
+ - BG Unified Solutions</title>
       </Head>
       <div className="position-absolute w-100 overflow-hidden background-svg">
         <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
@@ -30,8 +32,8 @@ function main(props) {
           <div className="row">
             <Fade duration={700} delay={300} bottom>
               <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                <h1 className="display3">Backup As A Service</h1>
-                <h1 className="display3">BaaS</h1>
+                <h1 className="display3">Cloud Logging as a Service</h1>
+                <h1 className="display3">CLaaS</h1>
               </div>
             </Fade>
           </div>
@@ -114,10 +116,9 @@ function main(props) {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 text-center offset-lg-1">
-              <div className="h4 NunitoSans-ExtraBold">Backup for your Digital system
+              <div className="h4 NunitoSans-ExtraBold">Cloud computing is the next future
                         </div>
-              <div className="h6 mt-4 text-secondary text-justify text-dark">
-                In today’s dynamic and complex landscape, no one can afford to be idle. Whether we like it or not, data centre change is upon us. Migrating us to store confidential and information data somewhere else, for the worst-case scenarios. And with this change comes steep challenges—to migrate your legacy production application environments to next-general data centres and enable your journey to the cloud.
+              <div className="h6 mt-4 text-secondary text-justify text-dark">Cloud Logging as a Service is a fully managed service that is performed at scale. CLoud Logging allows ingestion of system log data and applications from numerous VMs, and analyze the data in real-time. The analysis of data is done through logs, which are managed and simplified over the cloud.  
                         </div>
             </div>
           </div>
@@ -131,11 +132,10 @@ function main(props) {
                 <div className="card h-100 rounded-8">
                   <div className="card-body d-flex flex-column align-items-center">
                     <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
-                      Platform Diversity
+                      Completeness 
                                 </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                      On-premise or cloud-based, that helps secure your IT environment quickly.
-                      The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.
+                      Fully integrated service performing at scale, can ingest system log data from multiple VMs. Reduction in need for on-site storage. Download archives on-demand.
                                 </div>
                     <Image height="300px" src="/assets/images/illustrations/diversity.svg"></Image>
                   </div>
@@ -148,11 +148,10 @@ function main(props) {
                   <div className="card-body d-flex flex-column align-items-center">
 
                     <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                      Fast and easy Deployment
+                      Simplified log management 
                                 </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                      Rapid evolvement, easily deployable with tremendous speed.
-                      Proven deployment methodology that integrates and extends your existing security infrastructure without capex.
+                      Collecting and managing logs from numerous endpoints, servers and cloud-based resources with ease. Management and monitoring your logs and queries live.
                                 </div>
                     <Image height="300px" src="/assets/images/illustrations/data_center.svg"></Image>
                   </div>
@@ -165,11 +164,9 @@ function main(props) {
                   <div className="card-body d-flex flex-column align-items-center">
 
                     <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                      Advance Technology Stack
+                      Proactive Troubleshooting
                                 </div>
-                    <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                      Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering,
-                      User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included
+                    <div className="text-secondary px-4 text-justify NunitoSans-Regular">Dynamic field explorer enhancing your troubleshooting experience. Easy troubleshooting in advanced and modern environments, with appropriate tools and resources.
                                 </div>
                     <Image src="/assets/images/illustrations/assets.svg" className="mt-auto" height="250px"></Image>
                   </div>
@@ -182,16 +179,14 @@ function main(props) {
       <Fade duration={500} distance={"30%"} bottom>
         <div className="section py-0">
           <div className="container">
+            <h1 className="display4 text-center">Why BG Unified Solutions?</h1>
             <div className="row">
-              <div className="col-12 col-md-6">
-                <p className="lead text-justify">
-                  Through our dedicated Data Center Practice, we can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today. BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams.BG Unified Solutions has the deep technology skills and proven methodologies to help you leverage leading data center solutions. From legacy production systems support to a wide technology lens and multi-vendor solutions, we can help you implement a flexible, agile architecture designed specifically to meet your unique needs. We bring a broad perspective based on demonstrated experience working with many customers in varied environments.
+              <div className="col-12">
+                <p className="lead text-justify">With BG Unified Solutions Cloud Logging as a Service, Log central services over the internet. Collect, Store, and report the various data and underlying threats. Add the shield to protect your business reputation. Application and system logs ingestions. With BG Unified Solutions, manage your log in a simplified manner from a thousand of endpoints including servers and cloud-based resources.
+                BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use information technology to improve their business results.
+We give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches.
+A little buffer would also help with urgent requirements. Boost up your operational efficiency. Improve your organization’s agility. Guaranteed access to a team of experts in different technologies. 
               </p>
-              </div>
-              <div className="col-12 col-md-6">
-                <p className="lead text-justify">
-                  Through our dedicated Data Center Practice, we can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today. BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams.BG Unified Solutions has the deep technology skills and proven methodologies to help you leverage leading data center solutions. From legacy production systems support to a wide technology lens and multi-vendor solutions, we can help you implement a flexible, agile architecture designed specifically to meet your unique needs. We bring a broad perspective based on demonstrated experience working with many customers in varied environments.
-                </p>
               </div>
             </div>
           </div>

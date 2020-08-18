@@ -94,7 +94,7 @@ function DNS(props) {
                               size="lg"
                               onClick={openControls}
                             >
-                              Get a quote
+                              View Options
                             </Button>
                           </PricingCard>
                         </div>
@@ -117,7 +117,7 @@ function DNS(props) {
                               size="lg"
                               onClick={openControls}
                             >
-                              Get a quote
+                              View options
                             </Button>
                           </PricingCard>
                         </div>
@@ -146,7 +146,7 @@ function DNS(props) {
                               size="lg"
                               onClick={openControls}
                             >
-                              Get a quote
+                              View Options
                             </Button>
                           </PricingCard>
                         </div>
@@ -169,7 +169,7 @@ function DNS(props) {
                               size="lg"
                               onClick={openControls}
                             >
-                              Get a quote
+                              View Options
                             </Button>
                           </PricingCard>
                         </div>

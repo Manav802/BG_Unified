@@ -20,7 +20,7 @@ function main(props) {
   return (
     <div>
       <Head>
-        <title>Backup for your Digital system | Backup As A Service - BG Unified Solutions</title>
+        <title>Always stay aware and prepared | DR as a Service - BG Unified Solutions</title>
       </Head>
       <div className="position-absolute w-100 overflow-hidden background-svg">
         <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
@@ -30,8 +30,8 @@ function main(props) {
           <div className="row">
             <Fade duration={700} delay={300} bottom>
               <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                <h1 className="display3">Backup As A Service</h1>
-                <h1 className="display3">BaaS</h1>
+                <h1 className="display3">DR as a Service</h1>
+                <h1 className="display3">DRaaS</h1>
               </div>
             </Fade>
           </div>
@@ -114,10 +114,10 @@ function main(props) {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 text-center offset-lg-1">
-              <div className="h4 NunitoSans-ExtraBold">Backup for your Digital system
+              <div className="h4 NunitoSans-ExtraBold">Always stay aware and prepared
                         </div>
               <div className="h6 mt-4 text-secondary text-justify text-dark">
-                In today’s dynamic and complex landscape, no one can afford to be idle. Whether we like it or not, data centre change is upon us. Migrating us to store confidential and information data somewhere else, for the worst-case scenarios. And with this change comes steep challenges—to migrate your legacy production application environments to next-general data centres and enable your journey to the cloud.
+                Disaster Recovery Management as a Service is basically preparing your organization for a failure or situation that you are unable to predict. The situations may be a catastrophic failure, a natural calamity, data being lost, server not functioning properly, data centres being compromised and so on. Predicting the most unlikely events that may cause data loss, data breach and hinder the functioning of an organization, finding and installing solutions to these disasters beforehand is what Disaster Recovery Management is all about.
                         </div>
             </div>
           </div>
@@ -131,12 +131,10 @@ function main(props) {
                 <div className="card h-100 rounded-8">
                   <div className="card-body d-flex flex-column align-items-center">
                     <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
-                      Platform Diversity
+                      Simplified Deployment
                                 </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                      On-premise or cloud-based, that helps secure your IT environment quickly.
-                      The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.
-                                </div>
+                      An additional redundancy option is possible by implementing a CUBE at the client site so that in the event of any catastrophic failure in our data centre, SRST will still be able to provide basic inbound and outbound calling facilities.</div>
                     <Image height="300px" src="/assets/images/illustrations/diversity.svg"></Image>
                   </div>
                 </div>
@@ -151,9 +149,7 @@ function main(props) {
                       Fast and easy Deployment
                                 </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                      Rapid evolvement, easily deployable with tremendous speed.
-                      Proven deployment methodology that integrates and extends your existing security infrastructure without capex.
-                                </div>
+                      We’ve got it covered under all circumstances, whether natural calamities, forecasted events, unforecasted events. The time taken to restore normal conditions becomes very less, thanks to our team of experts, who take precautionary measures from the starting.</div>
                     <Image height="300px" src="/assets/images/illustrations/data_center.svg"></Image>
                   </div>
                 </div>
@@ -165,11 +161,10 @@ function main(props) {
                   <div className="card-body d-flex flex-column align-items-center">
 
                     <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                      Advance Technology Stack
+                      Flexible Solutions
                                 </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                      Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering,
-                      User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included
+                      In-place upgrades reduce downtime and maximize operational efficiencies. And you can customize how you intercept, inspect, transform, and direct inbound or outbound application traffic with powerful, flexible iRules.
                                 </div>
                     <Image src="/assets/images/illustrations/assets.svg" className="mt-auto" height="250px"></Image>
                   </div>
@@ -182,15 +177,19 @@ function main(props) {
       <Fade duration={500} distance={"30%"} bottom>
         <div className="section py-0">
           <div className="container">
+            <h1 className="display4 text-center">Why BG Unified Solutions?</h1>
             <div className="row">
               <div className="col-12 col-md-6">
                 <p className="lead text-justify">
-                  Through our dedicated Data Center Practice, we can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today. BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams.BG Unified Solutions has the deep technology skills and proven methodologies to help you leverage leading data center solutions. From legacy production systems support to a wide technology lens and multi-vendor solutions, we can help you implement a flexible, agile architecture designed specifically to meet your unique needs. We bring a broad perspective based on demonstrated experience working with many customers in varied environments.
+                  As experts in a wide range of technologies, our focus is to provide competitive and affordable end-to-end solutions to our clients. Our goal is to make our customers more competitive and achieve higher business efficiency through increased agility, cost containment and lower risk.
+                  Assist in DR strategy, evaluate threat models, select technologies, prototype multisite or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.
+                  Monitors and measures various aspects of the network environment so that overall performance can be maintained and optimised.
               </p>
               </div>
               <div className="col-12 col-md-6">
                 <p className="lead text-justify">
-                  Through our dedicated Data Center Practice, we can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today. BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams.BG Unified Solutions has the deep technology skills and proven methodologies to help you leverage leading data center solutions. From legacy production systems support to a wide technology lens and multi-vendor solutions, we can help you implement a flexible, agile architecture designed specifically to meet your unique needs. We bring a broad perspective based on demonstrated experience working with many customers in varied environments.
+                  Configures network devices, performs inventory management and software management. Determines the quality of service level delivered against service level agreements and proactively manages service components to adhere to quality standards as per
+                  customer service contracts. Our flexible IT services portfolio can easily be aligned with your specific requirements, situation and objectives. Our clients trust BG Unified Solutions as a long-term IT partner to provide a one-stop-shop for all their core infrastructure needs across data, voice and carrier services.
                 </p>
               </div>
             </div>
