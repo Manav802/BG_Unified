@@ -435,16 +435,17 @@ function DNS(props) {
                 <h4 className="display5 py-3 text-center">Related Services</h4>
               </div>
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/infra">
+                <Link href="/services/backup">
                   <a className="no-red">
                     <CardWithIcon
-                      icon="/assets/images/icons/monotone/server.svg"
+                      icon="/assets/images/icons/monotone/disk.svg"
                       title={
                         <div>
-                          Infrastructure <br /> as a service{" "}
+                          Backup <br /> As A service{" "}
                         </div>
                       }
-                      children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM"
+                      iconBg="#F33022"
+                      children="Clustering of Devices, Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, Cisco Wi-Fi and Aruba Wi-Fi."
                     />
                   </a>
                 </Link>
@@ -467,17 +468,17 @@ function DNS(props) {
                 </Link>
               </div>
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/dns">
+                <Link href="/services/platform">
                   <a className="no-red">
                     <CardWithIcon
-                      icon="/assets/images/icons/monotone/earth_ouline.svg"
+                      icon="/assets/images/icons/monotone/dashboard.svg"
                       title={
                         <div>
-                          DNS <br /> as a service{" "}
+                          Platform <br /> As A service{" "}
                         </div>
                       }
-                      iconBg="#5F1CE6"
-                      children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching."
+                      iconBg="#19C741"
+                      children="Prototype multisite or multi-cloud DR strategies. Shortened Recovery Time.Geographically dispersed availability"
                     />
                   </a>
                 </Link>

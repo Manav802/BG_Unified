@@ -72,7 +72,7 @@ function footer(props) {
               <Link href="/services/ucaas">
                 <a>Unified Communications As A Service</a>
               </Link>
-              <Link href="/services/contact-center-services">
+              <Link href="/services/contact-center">
                 <a>Customer Support As A Service</a>
               </Link>
               <Link href="/services/architectural-consultancy">

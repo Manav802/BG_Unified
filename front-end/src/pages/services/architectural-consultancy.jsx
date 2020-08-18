@@ -939,33 +939,36 @@ function DNS(props) {
                 <h4 className="display5 py-3 text-center">Related Services</h4>
               </div>
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/infra">
+                <Link href="/services/backup">
                   <a className="no-red">
                     <CardWithIcon
-                      icon="/assets/images/icons/monotone/server.svg"
+                      icon="/assets/images/icons/monotone/disk.svg"
                       title={
                         <div>
-                          Infrastructure <br /> as a service{" "}
+                          Backup <br /> As A service{" "}
                         </div>
                       }
-                      children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM"
+                      iconBg="#F33022"
+                      children="Clustering of Devices, Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, Cisco Wi-Fi and Aruba Wi-Fi."
                     />
                   </a>
                 </Link>
               </div>
 
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/storage">
+                <Link href="/services/contact-center">
                   <a className="no-red">
                     <CardWithIcon
                       icon="/assets/images/icons/monotone/cloud.svg"
                       title={
                         <div>
-                          Storage <br /> as a service{" "}
+                          Contact Center <br /> As A service{" "}
                         </div>
                       }
                       iconBg="#F3A622"
-                      children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage."
+                      children="BG Unified Solution’s CCaaS helps you provide a positive
+                  customer experience through a suite of advanced contact center
+                  tools."
                     />
                   </a>
                 </Link>
@@ -977,7 +980,7 @@ function DNS(props) {
                       icon="/assets/images/icons/monotone/earth_ouline.svg"
                       title={
                         <div>
-                          DNS <br /> as a service{" "}
+                          DNS <br /> As A service{" "}
                         </div>
                       }
                       iconBg="#5F1CE6"

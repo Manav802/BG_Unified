@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import {
   Button,
@@ -393,8 +392,3 @@ function main(props) {
 }
 
 export default main;
-<<<<<<< HEAD
-=======
->>>>>>> Temporary changes
-=======
->>>>>>> service page done - recommendation
