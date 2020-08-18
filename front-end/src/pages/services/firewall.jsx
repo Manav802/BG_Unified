@@ -60,7 +60,7 @@ function Firewall(props) {
                             </TabPanel>
                             
                             <TabPanel className="py-2">
-                            <Fade duration={500} distance={"30%"} bottom >
+                            <Fade duration={500} bottom >
                                 <div className="row justify-content-center">
                                     <div className="col-lg-5 my-3">
                                         <PricingCard icon="/assets/images/icons/theme/firewall_virtual.svg" title="Virtual 1G">
@@ -92,7 +92,7 @@ function Firewall(props) {
                             </Fade>
                             </TabPanel>
                             <TabPanel className="py-2">
-                            <Fade duration={500} distance={"30%"}  bottom >
+                            <Fade duration={500}  bottom >
                             <div className="row justify-content-center">
                                     <div className="col-lg-5 my-3">
                                         <PricingCard icon="/assets/images/icons/theme/firewall_virtual.svg" title="Make any changes">
@@ -190,34 +190,36 @@ function Firewall(props) {
                 </div>
             </div>
         </div>
-        <div className="section pt-0">
-            <div className="container">
-                <div className="row">
-                    <div className="col-12 p-4 mb-4">
-                        <h4 className="display5 py-3 text-center">Related Services</h4>
-                    </div>
-                    <div className="col-xl-4 col-sm-6 my-2">
-                        <Link href="/services/infra">
-                            <a className="no-red">
-                                    <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" /></a>
-                        </Link>
-                    </div>
-                    
-                    <div className="col-xl-4 col-sm-6 my-2">
-                        <Link href="/services/storage">
-                            <a className="no-red">
-                                    <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." /></a>
-                        </Link>
-                    </div>
-                    <div className="col-xl-4 col-sm-6 my-2">
-                        <Link href="/services/dns">
-                            <a className="no-red">
-                                    <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." /></a>
-                        </Link>
-                    </div>
+            <div className="section pt-0">
+                <div className="container">
+                    <Fade duration={400} distance={"30%"} bottom>
+                        <div className="row">
+                            <div className="col-12 p-4 mb-4">
+                                <h4 className="display5 py-3 text-center">Related Services</h4>
+                            </div>
+                            <div className="col-xl-4 col-sm-6 my-2">
+                                <Link href="/services/infra">
+                                    <a className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" />
+                                    </a>
+                                </Link>
+                            </div>
+
+                            <div className="col-xl-4 col-sm-6 my-2">
+                                <Link href="/services/storage">
+                                    <a className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." /></a>
+                                </Link>
+                            </div>
+                            <div className="col-xl-4 col-sm-6 my-2">
+                                <Link href="/services/dns">
+                                    <a className="no-red"> <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." /></a>
+                                </Link>
+                            </div>
+                        </div>
+                    </Fade>
                 </div>
             </div>
-        </div>
         </div>
     );
 }

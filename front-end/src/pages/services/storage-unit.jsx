@@ -43,7 +43,10 @@ function main(props) {
             <div className="container">
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <h1 className="display3">Storage As A Service(STaaS)</h1>
+                            <Fade duration={700} delay={300} bottom>
+                                <h1 className="display3">Storage As A Service</h1>
+                                <h1 className="display3">STaaS</h1>
+                            </Fade>
                 </div>
             </div>
             </div>
@@ -51,21 +54,21 @@ function main(props) {
         <div className="section">
             <div className="container">
                 <div className="row px-lg-5 px-3">
-                    <div className="col-lg-4 my-3">
-                        <PricingCard  title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
-                       </PricingCard>
-                    </div>
-                    <div className="col-lg-4 my-3">
-                        <PricingCard title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
-                        </PricingCard>
-                    </div>
-                    <div className="col-lg-4 my-3">
-                        <PricingCard className="hover-effect" title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
-                        </PricingCard>
-                    </div>
+                        <Fade duration={500} bottom><div className="col-lg-4 my-3">
+                            <PricingCard title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
+                                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
+                            </PricingCard>
+                        </div>
+                            <div className="col-lg-4 my-3">
+                                <PricingCard title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
+                                    <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
+                                </PricingCard>
+                            </div>
+                            <div className="col-lg-4 my-3">
+                                <PricingCard className="hover-effect" title="Single Node CUCM" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include Voicemail", "Include Presence", "Include Voicemail to Email", "Include Cisco Jabber"]}>
+                                    <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View More</Button>
+                                </PricingCard>
+                            </div></Fade>
                 </div>
                 <div>
                     <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
@@ -236,32 +239,37 @@ Our staff are trained and experienced across top storage manufacturer offerings,
                     </div>
                 </div>
             </div>
-        </div>
-        <div className="section pt-0">
-            <div className="container">
-                <div className="row">
-                    <div className="col-12 p-4 mb-4">
-                        <h4 className="display5 py-3 text-center">Related Services</h4>
-                    </div>
-                    <div className="col-xl-4 col-sm-6 my-2">
-                        <Link href="/services/infra">
-                            <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" />
-                        </Link>
-                    </div>
-                    
-                    <div className="col-xl-4 col-sm-6 my-2">
-                        <Link href="/services/storage">
-                            <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." />
-                        </Link>
-                    </div>
-                    <div className="col-xl-4 col-sm-6 my-2">
-                        <Link href="/services/dns">
-                            <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." />
-                        </Link>
-                    </div>
-                </div>
             </div>
-        </div>
+            <div className="section pt-0">
+                <div className="container">
+                    <Fade duration={400} distance={"30%"} bottom>
+                        <div className="row">
+                            <div className="col-12 p-4 mb-4">
+                                <h4 className="display5 py-3 text-center">Related Services</h4>
+                            </div>
+                            <div className="col-xl-4 col-sm-6 my-2">
+                                <Link href="/services/infra">
+                                    <a className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" />
+                                    </a>
+                                </Link>
+                            </div>
+
+                            <div className="col-xl-4 col-sm-6 my-2">
+                                <Link href="/services/storage">
+                                    <a className="no-red">
+                                        <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." /></a>
+                                </Link>
+                            </div>
+                            <div className="col-xl-4 col-sm-6 my-2">
+                                <Link href="/services/dns">
+                                    <a className="no-red"> <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." /></a>
+                                </Link>
+                            </div>
+                        </div>
+                    </Fade>
+                </div>
+            </div>            
         </div>
     );
 }
