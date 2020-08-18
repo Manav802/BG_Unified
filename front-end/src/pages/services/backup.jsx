@@ -393,5 +393,8 @@ function main(props) {
 }
 
 export default main;
+<<<<<<< HEAD
 =======
 >>>>>>> Temporary changes
+=======
+>>>>>>> service page done - recommendation

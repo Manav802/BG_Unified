@@ -532,7 +532,10 @@ function DNS(props) {
   return (
     <div>
       <Head>
-        <title>Architectural Consultancy as a Service (ACaaS)</title>
+        <title>
+          Spirit of Expertise - Architectural Consultancy As A Service (ACaaS) -
+          BG Unified Solutions
+        </title>
       </Head>
       <div className="position-absolute w-100 overflow-hidden background-svg-dns">
         <div className="w-100 image">
@@ -549,7 +552,7 @@ function DNS(props) {
             <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
               <Fade duration={700} delay={300} bottom>
                 <h1 className="display3 text-white">
-                  Architectural Consultancy as a Service (ACaaS)
+                  Architectural Consultancy As A Service (ACaaS)
                 </h1>
               </Fade>
               <Fade duration={700} delay={500} bottom>
