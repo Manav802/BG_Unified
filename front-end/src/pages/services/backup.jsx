@@ -53,12 +53,12 @@ function main(props) {
             </div>
             <div className="col-lg-4 my-3">
               <PricingCard title="Enterprise" icon="/assets/images/icons/theme/town.svg" featureList={["Multiple Copies", "Multiple Location", "Reliable & Secure", "Cost Effective"]}>
-                  <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View Options</Button>
+                  <a href="#collapse-1" className="no-red"><Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View Options</Button></a>
               </PricingCard>
             </div>
           </div>
           </Fade>
-          <div id="collapse-1">
+          <div id="collapse-1" className="collapse-target">
             <Collapse className="px-lg-5 px-3" mt={12} isOpen={show}>
               <div className="px-4 py-5 border">
                 <div className="display5 text-center">Customize your plan</div>
@@ -182,6 +182,7 @@ function main(props) {
       <Fade duration={500} distance={"30%"} bottom>
       <div className="section py-0">
         <div className="container">
+          <h1 className="display4">Why BG Unified Solutions?</h1>
           <div className="row">
             <div className="col-12">
               <p className="lead text-justify">

@@ -1,4 +1,7 @@
 $container-width: 570px;
+html{
+    scroll-behavior: smooth;
+}
 body{
     color: $color-dark;
     background: $color-light;
