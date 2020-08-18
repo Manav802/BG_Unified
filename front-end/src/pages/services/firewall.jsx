@@ -10,7 +10,7 @@ function Firewall(props) {
     return (
         <div>
             <Head>
-                <title>Firewall</title>
+                <title>Firewalls As A Service</title>
             </Head>
         <div className="position-absolute w-100 overflow-hidden background-svg-firewall">
             <img className="w-100" src="/assets/images/backgrounds/firewall.png" />

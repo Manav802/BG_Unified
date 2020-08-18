@@ -5,7 +5,7 @@ function main(props) {
     return (
         <div>
             <Head>
-                <title>Cloud Logging - BG Unified</title>
+                <title>Cloud Logging As A Service(CLaaS)</title>
 
                 <link rel="shortcut icon" href="/assets/images/icons/favicon/bg.ico" type="image/x-icon" />
             </Head>
@@ -14,7 +14,7 @@ function main(props) {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 mt-5 text-center py-5">
-                                <div className="display2 text-white">Cloud Logging</div>
+                                <div className="display2 text-white">Cloud Logging As A Service(CLaaS)</div>
                             </div>
                         </div>
                     </div>

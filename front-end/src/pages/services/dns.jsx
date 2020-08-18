@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button,Image, Icon, Box, Tabs, TabList, Tab, TabPanel, TabPanels, Collapse, Slider, SliderThumb, SliderTrack, SliderFilledTrack, FormLabel, Switch, Flex} from '@chakra-ui/core'
 import Fade from 'react-reveal/Fade';
+import Bounce from 'react-reveal/Bounce';
 import CardWithIcon from "../../components/cards/CardWithIcon"
 import {PricingCard, PricingQuote} from "../../components/cards/PricingCard"
 import Head from 'next/head'
@@ -220,8 +221,11 @@ function DNS(props) {
         <section className="fdb-block section">
         <div className="container">
             <div className="row">
+            <Fade duration={500} distance={"30%"} bottom >
             <div className="col text-center">
-                <h1 className="display4">Why Us</h1>
+                <h1 className="display4">
+                    Why BG Unified Solutions?
+                </h1>
 
                 <div className="row text-left pt-4">
                 <div className="col-12 col-md-6">
@@ -236,11 +240,13 @@ We give you the power to easily deploy, efficiently monitor, and transparently s
                 </div>
                 </div>
             </div>
+            </Fade>
             </div>
         </div>
         </section>
         <div className="section pt-0">
             <div className="container">
+            <Fade duration={400} distance={"30%"} bottom>
                 <div className="row">
                     <div className="col-12 p-4 mb-4">
                         <h4 className="display5 py-3 text-center">Related Services</h4>
@@ -265,6 +271,7 @@ We give you the power to easily deploy, efficiently monitor, and transparently s
                         </Link>
                     </div>
                 </div>
+                </Fade>
             </div>
         </div>
         </div>

@@ -19,7 +19,7 @@ function main(props) {
     return (
         <div>
             <Head>
-                <title>Backup for your Digital system | Backup As A Service - BG Unified Solutions</title>
+                <title>Backup As A Service(BaaS)</title>
             </Head>
         <div className="position-absolute w-100 overflow-hidden background-svg">
             <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
@@ -28,10 +28,14 @@ function main(props) {
             <div className="container">
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
+<<<<<<< HEAD
                     <Fade duration={700} delay={300} bottom >
                         <h1 className="display3">Backup As A Service</h1>
                         <h2 className="display4">BaaS</h2>
                     </Fade>
+=======
+                    <h1 className="display3">Backup As A Service(BaaS)</h1>
+>>>>>>> 3d8efe3de49ab6a6451e6cd8c729559445bbf69b
                 </div>
             </div>
             </div>
