@@ -1,9 +1,9 @@
 {
     "pages": [
         {
-            "name": "Solutions",
+            "name": "Our Solutions",
             "description": "We cover almost 90% technology domain required by your business.",
-            "tags": ["solutions", "fix", "infrastructure"],
+            "tags": ["solutions", "fix", "infrastructure","services"],
             "link": "/solutions"
         },
         {
@@ -39,7 +39,8 @@
             "sub-description": "Our team of technical and functional experts can help you in new Application Development, Modernizing and Supporting existing applications.",
             "tags": ["application", "app", "dev", "development", "scalability", "platform", "independence", "client", "flexibility"],
             "price": "",
-            "link": "./pages/services/application-dev"
+            "popular": true,
+            "link": "services/application-dev"
         },
         {
             "name": "Architectural Consultancy",
@@ -47,7 +48,7 @@
             "sub-description": "Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
             "tags": ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
             "price": "",
-            "link": "./pages/services/architectural-consultancy"
+            "link": "services/architectural-consultancy"
         },
         {
             "name": "Cloud Exchange Connectivity",
@@ -55,7 +56,7 @@
             "sub-description": "Advanced Solution providing private seamless, and on-demand connections to many clouds as well as networks.",
             "tags": ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
             "price": "",
-            "link": "./pages/services/cloud-exchange"
+            "link": "services/cloud-exchange"
         },
         {
             "name": "Cloud Logging",
@@ -71,7 +72,7 @@
             "sub-description": "We have deep contracts with all major Telcos including AAPT, Telstra and Optus.",
             "tags": ["customer", "Support", "CSaaS", "Customer Experience", "Productivity", "Securing", "Data"],
             "price": "",
-            "link": "./pages/services/customer-support"
+            "link": "services/customer-support"
         },
         {
             "name": "Disaster Recovery Management",
@@ -79,7 +80,7 @@
             "sub-description": "Prototype multisite or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.",
             "tags": ["Disaster", "Recovery", "Management", "Deployment", "Flexible", "Non-Disruptive"],
             "price": "",
-            "link": "./pages/services/disaster-recovery"
+            "link": "services/disaster-recovery"
         },
         {
             "name": "DNS Services",
@@ -93,9 +94,9 @@
             "name": "Firewall as a Service",
             "description": "To prevent a drastic fall, Install a Firewall",
             "sub-description": "In this digital era, when technology has proved to be a boon, small, medium and large-sized businesses are majorly dependent upon networking,connections and interactions. To help these operations get performed smoothly and efficiently, with full security, to eradicate security breach in your network. Firewalls block malicious connections being established inside a network and keeps data and information safe within a network.",
-            "tags": ["Firewall", "Service", "security", ""],
+            "tags": ["Firewall", "Security"],
             "price": "",
-            "link": "./pages/services/firewall"
+            "link": "/services/firewall"
         },
         {
             "name": "Computing Infrastructure",
@@ -103,7 +104,7 @@
             "sub-description": "Infrastructure includes more than 10000 Cores CPU, 10TB RAM.",
             "tags": ["computing", "infrastructure", "asset", "utilization", "server", "consolidation", "virtualization", "Geographical Redundant Storage"],
             "price": "",
-            "link": "./pages/services/infra"
+            "link": "services/infra"
         },
         {
             "name": "Cloud Platform Service",
@@ -111,7 +112,7 @@
             "sub-description": "Huawei 10G core switching offering a high-speed spine and leaf network.",
             "tags": ["cloud", "platform", "service", "infrastructure", "DC Interconnect"],
             "price": "",
-            "link": "./pages/services/platform"
+            "link": "services/platform"
         },
         {
             "name": "Proxy Servers",
@@ -119,7 +120,7 @@
             "sub-description": "It is a cost-effective way to make your applications and services available to your users.",
             "tags": ["proxy", "servers", "low-latency", "services"],
             "price": "",
-            "link": "./pages/services/proxy-server"
+            "link": "services/proxy-server"
         },
         {
             "name": "SD-WAN Optimization",
@@ -127,7 +128,7 @@
             "sub-description": "We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
             "tags": ["SD-WAN", "sd wan", "Optimization", " VMware VDI"],
             "price": "",
-            "link": "./pages/services/sd-wan"
+            "link": "services/sd-wan"
         },
         {
             "name": "SIP Connectivity",
@@ -135,7 +136,7 @@
             "sub-description": "Elements with 1600 SIP channels spanned across multiple DC locations with DUAL Exchange Homing.",
             "tags": ["SIP", "Connectivity", "Service Infrastructure", "cisco unified"],
             "price": "",
-            "link": "./pages/services/sip-connectivity"
+            "link": "services/sip-connectivity"
         },
         {
             "name": "Storage Blocks",
@@ -143,7 +144,7 @@
             "sub-description": "The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage.",
             "tags": ["storage", "blocks", "consolidation", "virtualization", "backup", "recovery", "archive"],
             "price": "",
-            "link": "./pages/services/storage-unit"
+            "link": "services/storage-unit"
         },
         {
             "name": "UCaaS (Unified Communications)",
@@ -151,7 +152,7 @@
             "sub-description": "N+N Redundant components fulfilling all Unified Collaboration requirements of your business.",
             "tags": ["UCaaS", "unified", "communications", "cisco", "avaya", "unity", "collaboration", "telepresence", "workforce", "optimisation"],
             "price": "",
-            "link": "./pages/services/ucaas"
+            "link": "services/ucaas"
         },
         {
             "name": "Web - Hosting Solutions",
@@ -159,7 +160,7 @@
             "sub-description": "A complete website monitoring is included in the package. Load balancing can also be added as an option if required.",
             "tags": ["web", "hosting", "host", "web server", "APACHE", "website"],
             "price": "",
-            "link": "./pages/services/web-hosting"
+            "link": "services/web-hosting"
         },
         {
             "name": "Wireless Networks",
@@ -167,7 +168,7 @@
             "sub-description": "The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers.",
             "tags": ["wireless", "wifi", "clusters", "networks"],
             "price": "",
-            "link": "./pages/services/wireless-networks"
+            "link": "services/wireless-networks"
         }
     ],
 
@@ -177,19 +178,17 @@
             "description": "BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW in the annual excellence awards. We are proud in getting recognized. We deliver what we promised to our customers. BGUS team have also successfully upgrade a cluster of SBC in IBMDC Auckland without any downtime. It’s amazing to see team’s enthusiasm…",
             "short-description": "BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW in the annual excellence awards. We are proud in getting recognized...",
             "date-published": "",
-            "category": "Achievement"
-
+            "category": "Achievement",
+            "tags":[]
         },
         {
             "name": "Cisco ASA 5520 to 5525X with FirePower Services",
             "description": "Migrating and merging of two Cisco ASA 5520 & 5505 into a new Cisco ASA 5525X with FirePower Services. Upgraded the configuration from 8.2.5 to 9.2.2(4) with FirePower Module running 6.0. Implemented the Device Center and all policies to block the Malwares, Adult Contents, Gambling and Online Gaming. Total downtime was less than 10 minutes with all remote VPN sites migrated in max 20 minutes. Client filled up the Referee Report for BG Unified Solutions to get Federal Government Clearance.",
             "short-description": "Migrating and merging of two Cisco ASA 5520 & 5505 into a new Cisco ASA 5525X with FirePower Services. Upgraded the configuration from 8.2.5 to 9.2.2(4) with FirePower Module running 6.0...",
             "date-published": "",
-            "category": ""
-        }
-    ],
-
-    "newsroom": [
+            "category": "",
+            "tags":["fierpower","cisco"]
+        },
         {
             "name": "BG Unified Solutions have added 7 Cisco Blade Chassis",
             "description": "BG Unified Solutions have added 7 Cisco Blade Chassis with fully populated B230 Blades with 40 Cores CPU and 256GB RAM along with a brand new Hitachi T1 Storage in Equinix Melbourne. We are now in the process of procuring 16 racks cage in Equinix SY3 and ME1 to become a storage hub for all of the existing BGUS members of the family and new members. These two cages will be purely assigned to storage. We have more than 16 NETAPP racks ready to go in these cages. BGUS Cloud Services will be launched very soon with the collaboration of Redhat and Cumulus Networks",
