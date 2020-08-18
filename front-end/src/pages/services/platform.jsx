@@ -25,7 +25,7 @@ import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 import Head from "next/head";
 import Link from "next/link";
 
-function DNS(props) {
+function PLATFORM(props) {
   const [show, setShow] = React.useState(false);
   const openControls = () => setShow(true);
   return (
@@ -56,8 +56,6 @@ function DNS(props) {
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
                   End-to-End DC network infrastructure encompassing server
                   switching, storage switching, and DC Interconnect Solutions.
-                  Huawei 10G core switching offering a high-speed spine and leaf
-                  network.
                 </p>
               </Fade>
             </div>
@@ -90,6 +88,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -99,6 +98,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6 my-3">
@@ -113,6 +113,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -122,6 +123,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
@@ -142,6 +144,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -151,6 +154,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6  my-3">
@@ -165,6 +169,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -174,6 +179,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
@@ -181,7 +187,7 @@ function DNS(props) {
                   </TabPanel>
                 </TabPanels>
               </Tabs>
-              <div>
+              <div id="collapse-1" className="collapse-target">
                 <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
                   <div className="px-4 py-5 border">
                     <div className="display5 text-center">Standard DNS</div>
@@ -491,4 +497,4 @@ function DNS(props) {
   );
 }
 
-export default DNS;
+export default PLATFORM;

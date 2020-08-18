@@ -25,7 +25,7 @@ import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 import Head from "next/head";
 import Link from "next/link";
 
-function DNS(props) {
+function SIP(props) {
   const [show, setShow] = React.useState(false);
   const openControls = () => setShow(true);
   return (
@@ -54,9 +54,9 @@ function DNS(props) {
               </Fade>
               <Fade duration={700} delay={500} bottom>
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
-                  SIP As A Service Infrastructure includes more than 15 Cisco
+                  SIP as a Service Infrastructure includes more than 15 Cisco
                   Unified border Elements with 1600 SIP channels spanned across
-                  multiple DC locations with DUAL Exchange Homing.
+                  multiple DC locations.
                 </p>
               </Fade>
             </div>
@@ -89,6 +89,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -98,6 +99,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6 my-3">
@@ -112,6 +114,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -121,6 +124,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
@@ -141,6 +145,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -150,6 +155,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6  my-3">
@@ -164,6 +170,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -173,6 +180,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
@@ -180,7 +188,7 @@ function DNS(props) {
                   </TabPanel>
                 </TabPanels>
               </Tabs>
-              <div>
+              <div id="collapse-1" className="collapse-target">
                 <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
                   <div className="px-4 py-5 border">
                     <div className="display5 text-center">Standard DNS</div>
@@ -499,4 +507,4 @@ function DNS(props) {
   );
 }
 
-export default DNS;
+export default SIP;

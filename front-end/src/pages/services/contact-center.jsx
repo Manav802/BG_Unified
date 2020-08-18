@@ -17,6 +17,12 @@ import {
   FormLabel,
   Switch,
   Flex,
+  RadioButtonGroup,
+    NumberInput,
+    NumberInputField,
+    NumberInputStepper,
+    NumberIncrementStepper,
+    NumberDecrementStepper,
 } from "@chakra-ui/core";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
@@ -25,14 +31,51 @@ import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 import Head from "next/head";
 import Link from "next/link";
 
-function DNS(props) {
+const CustomRadio = React.forwardRef((props, ref) => {
+  const { isChecked, isDisabled, value, ...rest } = props;
+  return (
+      <Button
+          ref={ref}
+          variant={isChecked ? "solid" : "outline"}
+          variantColor={isChecked ? "primary" : "gray.300"}
+          aria-checked={isChecked}
+          role="radio"
+          isDisabled={isDisabled}
+          {...rest}
+      />
+  );
+});
+
+function CONTACT(props) {
+  const features = [
+    "Includes 5 CSQ",
+    "Connectivity to end customer is not included in the costs",
+    "All Call Recording",
+    "On Demand Call Recording",
+    "Fully Managed Service",
+];
+const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + " " + text : "");
+
+const [planIndex, setPlanIndex] = React.useState(1);
+const [planName, setPlanName] = React.useState("");
+const [RDSType, setRDSType] = React.useState("");
+const [wfm, setWfm] = React.useState(0);
+const [complianceQM, setComplianceQM] = React.useState(0);
+const [advancedQM, setAdvancedQM] = React.useState(0);
+const [failOverNode, setFailOverNode] = React.useState(false);
+const handleFailOverNode = (failOverNode) =>
+    failOverNode ? ",Add Fail-Over Node" : "";
+const [value, setValue] = React.useState(1);
+const handleChange = (value) => setValue(value);
+const [tbSpace, setTbSpace] = React.useState(1);
+const handleTbSpace = (tbSpace) => setTbSpace(tbSpace);
   const [show, setShow] = React.useState(false);
   const openControls = () => setShow(true);
   return (
     <div>
       <Head>
         <title>
-          Innovation and Excellence - Customer Support As A Service (CSaaS) - BG
+          Innovation and Excellence - Customer Center As A Service (CCaaS) - BG
           Unified Solutions
         </title>
       </Head>
@@ -51,15 +94,14 @@ function DNS(props) {
             <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
               <Fade duration={700} delay={300} bottom>
                 <h1 className="display3 text-white">
-                  Customer Support As A Service (CSaaS)
+                  Customer Center As A Service (CSaaS)
                 </h1>
               </Fade>
               <Fade duration={700} delay={500} bottom>
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
                   BG Unified Solution’s CCaaS helps you provide a positive
                   customer experience through a suite of advanced contact center
-                  tools and we have deep contracts with all major Telcos
-                  including AAPT, Telstra and Optus.
+                  tools.
                 </p>
               </Fade>
             </div>
@@ -67,194 +109,317 @@ function DNS(props) {
         </div>
       </div>
       <div className="section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-10 offset-lg-1">
-              <Tabs align="center">
-                <TabList style={{ borderBottomColor: "#ffffff22" }}>
-                  <Tab className="py-4 px-5 display6 text-white">Windows</Tab>
-                  <Tab className="py-4 px-5 display6 text-white">BIND</Tab>
-                </TabList>
-
-                <TabPanels>
-                  <TabPanel className="py-2">
-                    <Fade duration={500} bottom>
-                      <div className="row justify-content-center">
-                        <div className="col-lg-5 col-sm-6 col-md-6 my-3">
-                          <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
-                            title="Standard DNS (BlackBox)"
-                            featureList={[
-                              "Includes 5 Zones",
-                              "Low Latency",
-                              "High Availabilty",
-                              "BlackBox Service",
-                              "Cost Effective",
-                            ]}
-                          >
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={openControls}
+                <div className="container">
+                    <div className="row px-lg-5 px-3">
+                        <div className="col-lg-4 my-3">
+                            <PricingCard
+                                title="BASE COST PER MONTH"
+                                icon="/assets/images/icons/theme/stack.svg"
+                                featureList={features}
                             >
-                              Get a quote
-                            </Button>
-                          </PricingCard>
+                            <a href="#collapse-1" className="no-red">
+                                <Button
+                                    className="mt-3"
+                                    variantColor="primary"
+                                    variant="outline"
+                                    size="lg"
+                                    onClick={() => {
+                                        openControls();
+                                        setPlanName("BASE");
+                                        setPlanIndex(1);
+                                        setWfm(0);
+                                        setAdvancedQM(0);
+                                        setComplianceQM(0);
+                                    }}
+                                >
+                                    View Options
+                                </Button>
+                                </a>
+                            </PricingCard>
                         </div>
-                        <div className="col-lg-5 col-sm-6 col-md-6 my-3">
-                          <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
-                            title="Premium DNS (BlackBox)"
-                            featureList={[
-                              "Includes 5 Zones",
-                              "Low Latency",
-                              "High Availabilty",
-                              "BlackBox Service",
-                              "Cost Effective",
-                            ]}
-                          >
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={openControls}
+                        <div className="col-lg-4 my-3">
+                            <PricingCard
+                                title="CAGENT-STD"
+                                icon="/assets/images/icons/theme/work.svg"
+                                featureList={features}
                             >
-                              Get a quote
-                            </Button>
-                          </PricingCard>
+                            <a href="#collapse-1" className="no-red">
+                                <Button
+                                    className="mt-3"
+                                    variantColor="primary"
+                                    variant="outline"
+                                    size="lg"
+                                    onClick={() => {
+                                        openControls();
+                                        setPlanName("CAGENT-STD");
+                                        setPlanIndex(2);
+                                        setRDSType("");
+                                        setValue(0);
+                                        setTbSpace(0);
+                                        setFailOverNode(false);
+                                    }}
+                                >
+                                    View Options
+                                </Button>
+                                </a>
+                            </PricingCard>
                         </div>
-                      </div>
-                    </Fade>
-                  </TabPanel>
-                  <TabPanel className="py-2">
-                    <Fade duration={500} bottom>
-                      <div className="row justify-content-center">
-                        <div className="col-lg-5 col-sm-6 col-md-6 my-3">
-                          <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
-                            title="Standard DNS (BlackBox)"
-                            featureList={[
-                              "Includes 5 Zones",
-                              "Low Latency",
-                              "High Availabilty",
-                              "BlackBox Service",
-                              "Cost Effective",
-                            ]}
-                          >
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={openControls}
+                        <div className="col-lg-4 my-3">
+                            <PricingCard
+                                title="CAGENT-PRM"
+                                icon="/assets/images/icons/theme/town.svg"
+                                featureList={features}
                             >
-                              Get a quote
-                            </Button>
-                          </PricingCard>
+                            <a href="#collapse-1" className="no-red">
+                                <Button
+                                    className="mt-3"
+                                    variantColor="primary"
+                                    variant="outline"
+                                    size="lg"
+                                    onClick={() => {
+                                        openControls();
+                                        setPlanName("CAGENT-PRM");
+                                        setPlanIndex(3);
+                                        setRDSType("");
+                                        setValue(0);
+                                        setTbSpace(0);
+                                        setFailOverNode(false);
+                                    }}
+                                >
+                                    View Options
+                                </Button>
+                                </a>
+                            </PricingCard>
                         </div>
-                        <div className="col-lg-5 col-sm-6 col-md-6  my-3">
-                          <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
-                            title="Premium DNS (BlackBox)"
-                            featureList={[
-                              "Includes 5 Zones",
-                              "Low Latency",
-                              "High Availabilty",
-                              "BlackBox Service",
-                              "Cost Effective",
-                            ]}
-                          >
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={openControls}
-                            >
-                              Get a quote
-                            </Button>
-                          </PricingCard>
-                        </div>
-                      </div>
-                    </Fade>
-                  </TabPanel>
-                </TabPanels>
-              </Tabs>
-              <div>
-                <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
-                  <div className="px-4 py-5 border">
-                    <div className="display5 text-center">Standard DNS</div>
-                    <div className="row px-3">
-                      <div className="col-lg-12 mt-4">
-                        <div className="h6">Extra Zones</div>
-                        <Slider
-                          color="primary"
-                          my="24px"
-                          max={30}
-                          defaultValue={1}
-                          value={0}
-                        >
-                          <SliderTrack h="16px" borderRadius="8px" />
-                          <SliderFilledTrack h="16px" borderRadius="8px" />
-                          <SliderThumb
-                            className="shadow-md"
-                            fontSize="md"
-                            fontWeight="800"
-                            width="auto"
-                            padding="8px"
-                            height="32px"
-                            children={23}
-                          />
-                        </Slider>
-                      </div>
-                      <div className="my-1 col-lg-6 mt-3 d-flex justify-content-between">
-                        <Flex py="12px" justify="center" align="center">
-                          <Switch
-                            onChange={(e) => {
-                              setFailOverNode(e.target.checked);
-                            }}
-                            color="primary"
-                            mb={0}
-                            id="failOverNode"
-                          />
-                          <FormLabel mb={0} ml="12px" htmlFor="fail-over node">
-                            Include Redundant DNS
-                          </FormLabel>
-                        </Flex>
-                      </div>
-                      <div className="my-1 col-lg-6 mt-3 d-flex justify-content-between">
-                        <Flex py="12px" justify="center" align="center">
-                          <Switch
-                            onChange={(e) => {
-                              setFailOverNode(e.target.checked);
-                            }}
-                            color="primary"
-                            mb={0}
-                            id="failOverNode"
-                          />
-                          <FormLabel mb={0} ml="12px" htmlFor="fail-over node">
-                            Add Daily Backup
-                          </FormLabel>
-                        </Flex>
-                      </div>
-                      <div className="col-lg-12 mt-5 d-flex justify-content-center">
-                        <PricingQuote
-                          serviceName="DNS As A Service"
-                          serviceDescription="Hello"
-                          button
-                        ></PricingQuote>
-                      </div>
                     </div>
-                  </div>
-                </Collapse>
-              </div>
+                    <div  id="collapse-1" className="collapse-target">
+                        <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
+                            <div className="px-4 py-5 border">
+                                <div className="display5 text-center">
+                                    {planName}
+                                </div>
+                                <div className="row px-3">
+                                    {planIndex === 1 && (
+                                        <>
+                                            <div className="col-lg-12 mt-4">
+                                                <div className="h6">
+                                                    Additional CSQ
+                                                </div>
+                                                <Slider
+                                                    color="primary"
+                                                    my="24px"
+                                                    max={30}
+                                                    defaultValue={1}
+                                                    value={value}
+                                                    onChange={handleChange}
+                                                >
+                                                    <SliderTrack
+                                                        h="16px"
+                                                        borderRadius="8px"
+                                                    />
+                                                    <SliderFilledTrack
+                                                        h="16px"
+                                                        borderRadius="8px"
+                                                    />
+                                                    <SliderThumb
+                                                        className="shadow-md"
+                                                        fontSize="md"
+                                                        fontWeight="800"
+                                                        width="auto"
+                                                        padding="8px"
+                                                        height="32px"
+                                                        children={value}
+                                                    />
+                                                </Slider>
+                                            </div>
+                                            <div className="col-lg-12 mt-2">
+                                                <div className="h6">
+                                                    Choose a type
+                                                </div>
+                                                <RadioButtonGroup
+                                                    onChange={(value) =>
+                                                        setRDSType(value)
+                                                    }
+                                                    mt={4}
+                                                    isInline
+                                                >
+                                                    <CustomRadio value=",RDS SERVER WITH CAD">
+                                                        RDS SERVER WITH CAD
+                                                    </CustomRadio>
+                                                    <CustomRadio value=",RDS SERVER WITH TOOLS">
+                                                        RDS SERVER WITH TOOLS
+                                                    </CustomRadio>
+                                                    <CustomRadio value=",RDS SERVER CALL RECORDING">
+                                                        RDS SERVER CALL
+                                                        RECORDING
+                                                    </CustomRadio>
+                                                </RadioButtonGroup>
+                                            </div>
+                                            <div className="col-lg-12 mt-4">
+                                                <div className="h6">
+                                                    TB Space
+                                                </div>
+                                                <Slider
+                                                    color="primary"
+                                                    my="24px"
+                                                    max={30}
+                                                    defaultValue={1}
+                                                    value={tbSpace}
+                                                    onChange={handleTbSpace}
+                                                >
+                                                    <SliderTrack
+                                                        h="16px"
+                                                        borderRadius="8px"
+                                                    />
+                                                    <SliderFilledTrack
+                                                        h="16px"
+                                                        borderRadius="8px"
+                                                    />
+                                                    <SliderThumb
+                                                        className="shadow-md"
+                                                        fontSize="md"
+                                                        fontWeight="800"
+                                                        width="auto"
+                                                        padding="8px"
+                                                        height="32px"
+                                                        children={tbSpace}
+                                                    />
+                                                </Slider>
+                                            </div>
+                                            <div className="my-1 col-lg-12 mt-3 d-flex justify-content-between">
+                                                <Flex
+                                                    py="12px"
+                                                    justify="center"
+                                                    align="center"
+                                                >
+                                                    <Switch
+                                                        onChange={(e) => {
+                                                            setFailOverNode(
+                                                                e.target.checked
+                                                            );
+                                                        }}
+                                                        color="primary"
+                                                        mb={0}
+                                                        id="failOverNode"
+                                                    />
+                                                    <FormLabel
+                                                        mb={0}
+                                                        ml="12px"
+                                                        htmlFor="fail-over node"
+                                                    >
+                                                        Add Fail-Over Node
+                                                    </FormLabel>
+                                                </Flex>
+                                            </div>
+                                        </>
+                                    )}
+
+                                    {(planIndex === 2 || planIndex === 3) && (
+                                        <>
+                                            <div className="my-1 col-lg-12 mt-4">
+                                                <div className="h6">WFM</div>
+                                                <Slider
+                                                    color="primary"
+                                                    my="24px"
+                                                    defaultValue={0}
+                                                    max="64"
+                                                    value={wfm}
+                                                    onChange={setWfm}
+                                                >
+                                                    <SliderTrack
+                                                        h="16px"
+                                                        borderRadius="8px"
+                                                    />
+                                                    <SliderFilledTrack
+                                                        h="16px"
+                                                        borderRadius="8px"
+                                                    />
+                                                    <SliderThumb
+                                                        className="shadow-md"
+                                                        fontSize="md"
+                                                        fontWeight="800"
+                                                        width="auto"
+                                                        padding="8px"
+                                                        height="32px"
+                                                        children={wfm}
+                                                    />
+                                                </Slider>
+                                            </div>
+                                            <div className="my-1 col-lg-6 mt-4">
+                                                <div className="h6">
+                                                    ADVANCED QM
+                                                </div>
+                                                <NumberInput
+                                                    maxWidth="200px"
+                                                    min={0}
+                                                    max={20}
+                                                    value={advancedQM}
+                                                    onChange={setAdvancedQM}
+                                                >
+                                                    <NumberInputField className="bg-light" />
+                                                    <NumberInputStepper>
+                                                        <NumberIncrementStepper />
+                                                        <NumberDecrementStepper />
+                                                    </NumberInputStepper>
+                                                </NumberInput>
+                                            </div>
+                                            <div className="my-1 col-lg-6 mt-4">
+                                                <div className="h6">
+                                                    Number of Agents
+                                                </div>
+                                                <NumberInput
+                                                    maxWidth="200px"
+                                                    min={0}
+                                                    max={20}
+                                                    value={
+                                                        wfm <=
+                                                        complianceQM +
+                                                            advancedQM
+                                                            ? wfm
+                                                            : complianceQM +
+                                                              advancedQM
+                                                    }
+                                                    onChange={setWfm}
+                                                >
+                                                    <NumberInputField className="bg-light" />
+                                                    <NumberInputStepper>
+                                                        <NumberIncrementStepper />
+                                                        <NumberDecrementStepper />
+                                                    </NumberInputStepper>
+                                                </NumberInput>
+                                            </div>
+                                        </>
+                                    )}
+
+                                    <div className="col-lg-12 mt-3 d-flex justify-content-center">
+                                        <PricingQuote
+                                            serviceDescription={`${planName}${verifyNotEmpty(
+                                                value,
+                                                "Additional CSQ"
+                                            )}${RDSType}${verifyNotEmpty(
+                                                tbSpace,
+                                                "TB Space"
+                                            )}${verifyNotEmpty(
+                                                wfm,
+                                                "WFM"
+                                            )}${verifyNotEmpty(
+                                                complianceQM,
+                                                "Compliance QM"
+                                            )}${verifyNotEmpty(
+                                                advancedQM,
+                                                "Advanced QM"
+                                            )}${handleFailOverNode(
+                                                failOverNode
+                                            )}`}
+                                            button
+                                        ></PricingQuote>
+                                    </div>
+                                </div>
+                            </div>
+                        </Collapse>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
       {/* <section className="fdb-block section">
             <div className="container">
                 <div className="row text-center">
@@ -493,4 +658,4 @@ function DNS(props) {
   );
 }
 
-export default DNS;
+export default CONTACT;

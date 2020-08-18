@@ -58,9 +58,7 @@ function DNS(props) {
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
                   BG Unified Solution has a team of practising
                   multi-disciplinary architects to baseline current architecture
-                  and its shortcomings, define future state architecture.
-                  Whatever be the technology stack(s) that your enterprise has
-                  adopted, we can help you future-proof it.
+                  and its shortcomings.
                 </p>
               </Fade>
             </div>
@@ -93,6 +91,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -102,6 +101,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6 my-3">
@@ -116,6 +116,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -125,6 +126,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
@@ -145,6 +147,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -154,6 +157,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                          </a>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6  my-3">
@@ -168,6 +172,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -177,6 +182,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
@@ -184,7 +190,7 @@ function DNS(props) {
                   </TabPanel>
                 </TabPanels>
               </Tabs>
-              <div>
+              <div id="collapse-1" className="collapse-target">
                 <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
                   <div className="px-4 py-5 border">
                     <div className="display5 text-center">Standard DNS</div>

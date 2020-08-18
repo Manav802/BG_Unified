@@ -42,7 +42,7 @@ const CustomRadio = React.forwardRef((props, ref) => {
   );
 });
 
-function UCaaS(props) {
+function APPDEV(props) {
   const [node, setNode] = useState("");
   const [type, setType] = useState("20-10 SIP");
   const [additionalUcaas, setadditionalUcaas] = useState(0);
@@ -94,10 +94,7 @@ function UCaaS(props) {
               <Fade duration={700} delay={500} bottom>
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
                   BG Unified Solutions provides services in the area of Web,
-                  Mobile and Enterprise Application Development. Our team of
-                  technical and functional experts can help you in new
-                  Application Development, Modernizing and Supporting existing
-                  applications.
+                  Mobile and Enterprise Application Development.
                 </p>
               </Fade>
             </div>
@@ -130,6 +127,7 @@ function UCaaS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -139,6 +137,7 @@ function UCaaS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6 my-3">
@@ -153,6 +152,7 @@ function UCaaS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -162,6 +162,7 @@ function UCaaS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
@@ -182,6 +183,7 @@ function UCaaS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -191,6 +193,7 @@ function UCaaS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6  my-3">
@@ -205,6 +208,7 @@ function UCaaS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -214,6 +218,7 @@ function UCaaS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
@@ -221,7 +226,7 @@ function UCaaS(props) {
                   </TabPanel>
                 </TabPanels>
               </Tabs>
-              <div>
+              <div id="collapse-1" className="collapse-target">
                 <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
                   <div className="px-4 py-5 border">
                     <div className="display5 text-center">Standard DNS</div>
@@ -495,4 +500,4 @@ function UCaaS(props) {
   );
 }
 
-export default UCaaS;
+export default APPDEV;
