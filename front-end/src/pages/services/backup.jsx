@@ -53,7 +53,7 @@ function main(props) {
             </div>
             <div className="col-lg-4 my-3">
               <PricingCard title="Enterprise" icon="/assets/images/icons/theme/town.svg" featureList={["Multiple Copies", "Multiple Location", "Reliable & Secure", "Cost Effective"]}>
-                  <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}><a href="#collapse-1"> View Options</a></Button>
+                  <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={openControls}>View Options</Button>
               </PricingCard>
             </div>
           </div>

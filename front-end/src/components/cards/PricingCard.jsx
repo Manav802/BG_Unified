@@ -14,30 +14,13 @@ import GetAQuote from "../../components/GetaQuote/main";
 
 function PricingQuote(props) {
   return (
-    <>
         <GetAQuote
           serviceName={props.serviceName}
           serviceDescription={props.serviceDescription}
+          button={props.button}
+          buttonStyle={props.buttonStyle}
+          title={props.title}
         ></GetAQuote>
-      {!props.button && (
-        <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-          {props.title && <p>{props.title}</p>}
-          <a className="">
-            Get a quote
-          </a>
-        </div>
-      )}
-      {props.button && (
-        <Button
-          size="lg"
-          className={props.buttonStyle}
-          variant="outline"
-          variantColor="primary"
-        >
-          Get a quote
-        </Button>
-      )}
-    </>
   );
 }
 

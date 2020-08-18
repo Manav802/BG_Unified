@@ -4,7 +4,7 @@ import {
   FormLabel, Input, Button,
   ModalContent,
   ModalHeader,
-  ModalCloseButton, Spinner, Modal, ModalOverlay
+  ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from './toast';
@@ -81,7 +81,25 @@ function GetaQuoteForm(props) {
   var description = props.serviceDescription.split(',');
   return (
     <>
-      <Button size="lg" className={props.buttonStyle} variant="outline" variantColor="primary" onClick={onOpen}>Get a quote new</Button>
+      {!props.button && (
+        <div className="mt-3 w-100 px-3 d-flex justify-content-between">
+          {props.title && <p>{props.title}</p>}
+          <a className="" onClick={onOpen}>
+            Get a quote
+          </a>
+        </div>
+      )}
+      {props.button && (
+        <Button
+          size="lg"
+          className={props.buttonStyle}
+          variant="outline"
+          variantColor="primary"
+          onClick={onOpen}
+        >
+          Get a quote
+        </Button>
+      )}
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent className="p-4" style={{ maxWidth: "600px", width: "600px" }}>
@@ -148,7 +166,8 @@ function GetaQuoteForm(props) {
             </div>
             <FormControl mt={"9%"} className="container" isRequired>
               <FormLabel>Details:</FormLabel>
-              <Input
+              <Textarea
+                resize={"vertical"}
                 variant="flushed"
                 size="lg"
                 name="message"
