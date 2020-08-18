@@ -139,7 +139,7 @@ function header(props) {
                   <span className="mt-4 mb-1">Network Services</span>
 
                   <Link href="/services/sd-wan">
-                    <a>SD-WAN Optimization As A Service</a>
+                    <a>SD-WAN As A Service</a>
                   </Link>
                   <Link href="/services/proxy-server">
                     <a>Proxy As A Service</a>
@@ -167,7 +167,7 @@ function header(props) {
                   <Link href="/services/ucaas">
                     <a>Unified Communications As A Service</a>
                   </Link>
-                  <Link href="/services/customer-support">
+                  <Link href="/services/contact-center-services">
                     <a>Customer Support As A Service</a>
                   </Link>
                   <Link href="/services/architectural-consultancy">

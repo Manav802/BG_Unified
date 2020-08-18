@@ -31,7 +31,10 @@ function DNS(props) {
   return (
     <div>
       <Head>
-        <title>SIP as a Service(SaaS)</title>
+        <title>
+          Innovation and Excellence - SIP As A Service(SaaS)- BG Unified
+          Solutions
+        </title>
       </Head>
       <div className="position-absolute w-100 overflow-hidden background-svg-dns">
         <div className="w-100 image">
@@ -47,7 +50,7 @@ function DNS(props) {
           <div className="row">
             <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
               <Fade duration={700} delay={300} bottom>
-                <h1 className="display3 text-white">SIP as a Service(SaaS)</h1>
+                <h1 className="display3 text-white">SIP As A Service(SaaS)</h1>
               </Fade>
               <Fade duration={700} delay={500} bottom>
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
