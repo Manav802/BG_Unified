@@ -20,7 +20,7 @@ function main(props) {
   return (
     <div>
       <Head>
-        <title>Backup for your Digital system | Backup As A Service - BG Unified Solutions</title>
+        <title>The cloud service at its best | Cloud Exchange Connectivity as a Service - BG Unified Solutions</title>
       </Head>
       <div className="position-absolute w-100 overflow-hidden background-svg">
         <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
@@ -30,8 +30,8 @@ function main(props) {
           <div className="row">
             <Fade duration={700} delay={300} bottom>
               <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                <h1 className="display3">Backup As A Service</h1>
-                <h1 className="display3">BaaS</h1>
+                <h1 className="display3">Cloud Exchange Connectivity as a Service</h1>
+                <h1 className="display3">CXaaS</h1>
               </div>
             </Fade>
           </div>
@@ -114,10 +114,9 @@ function main(props) {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 text-center offset-lg-1">
-              <div className="h4 NunitoSans-ExtraBold">Backup for your Digital system
+              <div className="h4 NunitoSans-ExtraBold">The cloud service at its best
                         </div>
-              <div className="h6 mt-4 text-secondary text-justify text-dark">
-                In today’s dynamic and complex landscape, no one can afford to be idle. Whether we like it or not, data centre change is upon us. Migrating us to store confidential and information data somewhere else, for the worst-case scenarios. And with this change comes steep challenges—to migrate your legacy production application environments to next-general data centres and enable your journey to the cloud.
+              <div className="h6 mt-4 text-secondary text-justify text-dark">Cloud Exchange Connectivity as a Service is a fully managed service that allows organizations or firms to set up a secure connection to cloud platforms and services or cloud providers without depending upon internet connectivity. The traffic is not sent over the internet only, rather than the exchange provider connects the exchange’s network directly to the cloud provider’s network.
                         </div>
             </div>
           </div>
@@ -131,11 +130,12 @@ function main(props) {
                 <div className="card h-100 rounded-8">
                   <div className="card-body d-flex flex-column align-items-center">
                     <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
-                      Platform Diversity
+                      Reliable and Secure
                                 </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                      On-premise or cloud-based, that helps secure your IT environment quickly.
-                      The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.
+
+                      Complete security on our end, while connecting to these cloud platforms. Improve the experience of users throughout the extended enterprise providing significant benefits and reliability.
+
                                 </div>
                     <Image height="300px" src="/assets/images/illustrations/diversity.svg"></Image>
                   </div>
@@ -148,11 +148,10 @@ function main(props) {
                   <div className="card-body d-flex flex-column align-items-center">
 
                     <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                      Fast and easy Deployment
+                      Scalable
                                 </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                      Rapid evolvement, easily deployable with tremendous speed.
-                      Proven deployment methodology that integrates and extends your existing security infrastructure without capex.
+                      Traffic increased or decreased is handled with no difficulty at all. Avoiding vendor lock-in and meeting data-sovereignty requirements. Geo-redundant for improved performance.
                                 </div>
                     <Image height="300px" src="/assets/images/illustrations/data_center.svg"></Image>
                   </div>
@@ -165,11 +164,9 @@ function main(props) {
                   <div className="card-body d-flex flex-column align-items-center">
 
                     <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                      Advance Technology Stack
+                      Integration
                                 </div>
-                    <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                      Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering,
-                      User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included
+                    <div className="text-secondary px-4 text-justify NunitoSans-Regular">Simplified usage and integration of new technology services. On-demand communication and connectivity. Multi-cloud operations with a complex structure handled easily.
                                 </div>
                     <Image src="/assets/images/illustrations/assets.svg" className="mt-auto" height="250px"></Image>
                   </div>
@@ -182,16 +179,13 @@ function main(props) {
       <Fade duration={500} distance={"30%"} bottom>
         <div className="section py-0">
           <div className="container">
+            <h1 className="display4 text-center">Why BG Unified Solutions?</h1>
             <div className="row">
-              <div className="col-12 col-md-6">
+              <div className="col-12">
                 <p className="lead text-justify">
-                  Through our dedicated Data Center Practice, we can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today. BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams.BG Unified Solutions has the deep technology skills and proven methodologies to help you leverage leading data center solutions. From legacy production systems support to a wide technology lens and multi-vendor solutions, we can help you implement a flexible, agile architecture designed specifically to meet your unique needs. We bring a broad perspective based on demonstrated experience working with many customers in varied environments.
+                  With BG Unified Solutions Cloud Exchange Connectivity as a Service, you get Express Routes to office 365, AWS, Azure. Advanced Solution provides private, seamless, and on-demand connections to many clouds as well as networks. We ensure reliability, integrity, security as well as scalability for our cloud exchange connectivity solutions. Have  DC locations including Equinix SY3, SY4.
+                  Determines quality of service level delivered against service level agreements and proactively manages service components to adhere to quality standards as per customer service contracts.We give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches.
               </p>
-              </div>
-              <div className="col-12 col-md-6">
-                <p className="lead text-justify">
-                  Through our dedicated Data Center Practice, we can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today. BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams.BG Unified Solutions has the deep technology skills and proven methodologies to help you leverage leading data center solutions. From legacy production systems support to a wide technology lens and multi-vendor solutions, we can help you implement a flexible, agile architecture designed specifically to meet your unique needs. We bring a broad perspective based on demonstrated experience working with many customers in varied environments.
-                </p>
               </div>
             </div>
           </div>
