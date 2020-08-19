@@ -432,7 +432,7 @@ function UCaaS(props) {
                         {type.slice(3)} channels.{" "}
                         <a
                           onClick={() => {
-                            setShowSIP(!showSIP);
+                            setShowSIP(!showSIP); setAddSIP(0);
                           }}
                         >
                           {" "}
@@ -520,7 +520,7 @@ function UCaaS(props) {
                   <div className="col-lg-11 mt-4">
                     <a
                       onClick={() => {
-                        setAdvancedOptions(!advancedOptions);
+                        setAdvancedOptions(!advancedOptions); setNum10(0); setNum50(0); setNum100(0); 
                       }}
                     >
                       {" "}
@@ -533,6 +533,7 @@ function UCaaS(props) {
                       <div className="col-lg-3 mt-4">
                         <div className="h6">NUM-10</div>
                         <NumberInput
+                          value={num10}
                           onChange={(value) => setNum10(value)}
                           defaultValue={0}
                           min={0}
@@ -548,6 +549,7 @@ function UCaaS(props) {
                       <div className="col-lg-3 offset-lg-1 mt-4">
                         <div className="h6">NUM-50</div>
                         <NumberInput
+                          value={num50}
                           onChange={(value) => setNum50(value)}
                           defaultValue={0}
                           min={0}
@@ -563,6 +565,7 @@ function UCaaS(props) {
                       <div className="col-lg-3 offset-lg-1 mt-4">
                         <div className="h6">NUM-100</div>
                         <NumberInput
+                          value={num100}
                           onChange={(value) => setNum100(value)}
                           defaultValue={0}
                           min={0}
