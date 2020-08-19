@@ -3,6 +3,7 @@ import {
   Button,
   Collapse,
   Image,
+  Select,
   Radio,
   RadioButtonGroup,
   NumberInput,
@@ -66,172 +67,55 @@ function main(props) {
           </div>
         </div>
       </div>
-      <div className="section">
-        <div className="container">
-          <div className="row px-lg-5 px-3">
-            <Fade duration={500} bottom>
-              <div className="col-lg-4 my-3">
-                <PricingCard
-                  title="Single Node CUCM"
-                  icon="/assets/images/icons/theme/firewall_virtual.svg"
-                  featureList={[
-                    "Include Voicemail",
-                    "Include Presence",
-                    "Include Voicemail to Email",
-                    "Include Cisco Jabber",
-                  ]}
-                >
-                  <Button
-                    className="mt-3"
-                    variantColor="primary"
-                    variant="outline"
-                    size="lg"
-                    onClick={openControls}
-                  >
-                    View More
-                  </Button>
-                </PricingCard>
-              </div>
-              <div className="col-lg-4 my-3">
-                <PricingCard
-                  title="Single Node CUCM"
-                  icon="/assets/images/icons/theme/firewall_virtual.svg"
-                  featureList={[
-                    "Include Voicemail",
-                    "Include Presence",
-                    "Include Voicemail to Email",
-                    "Include Cisco Jabber",
-                  ]}
-                >
-                  <Button
-                    className="mt-3"
-                    variantColor="primary"
-                    variant="outline"
-                    size="lg"
-                    onClick={openControls}
-                  >
-                    View More
-                  </Button>
-                </PricingCard>
-              </div>
-              <div className="col-lg-4 my-3">
-                <PricingCard
-                  className="hover-effect"
-                  title="Single Node CUCM"
-                  icon="/assets/images/icons/theme/firewall_virtual.svg"
-                  featureList={[
-                    "Include Voicemail",
-                    "Include Presence",
-                    "Include Voicemail to Email",
-                    "Include Cisco Jabber",
-                  ]}
-                >
-                  <Button
-                    className="mt-3"
-                    variantColor="primary"
-                    variant="outline"
-                    size="lg"
-                    onClick={openControls}
-                  >
-                    View More
-                  </Button>
-                </PricingCard>
-              </div>
-            </Fade>
-          </div>
-          <div>
-            <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
-              <div className="px-4 py-5 border">
-                <div className="display5 text-center">Single Node CUCM</div>
-                <div className="row px-3">
-                  <div className="col-lg-12 mt-2">
-                    <div className="h6">Choose a type</div>
-                    <RadioButtonGroup defaultValue="rad2" mt={4} isInline>
-                      <CustomRadio value="rad1">CustomRadio 1</CustomRadio>
-                      <CustomRadio value="rad2">CustomRadio 2</CustomRadio>
-                      <CustomRadio value="rad3">CustomRadio 3</CustomRadio>
-                    </RadioButtonGroup>
-                  </div>
-                  <div className="col-lg-5 mt-4">
-                    <div className="h6">Total UCaaS</div>
-                    <NumberInput defaultValue={0} min={0} max={20}>
-                      <NumberInputField className="bg-light" />
-                      <NumberInputStepper>
-                        <NumberIncrementStepper />
-                        <NumberDecrementStepper />
-                      </NumberInputStepper>
-                    </NumberInput>
-                  </div>
-                  <div className="col-lg-5 offset-lg-1 mt-4">
-                    <div className="h6">Additional Hunt Groups</div>
-                    <NumberInput defaultValue={0} min={0} max={20}>
-                      <NumberInputField className="bg-light" />
-                      <NumberInputStepper>
-                        <NumberIncrementStepper />
-                        <NumberDecrementStepper />
-                      </NumberInputStepper>
-                    </NumberInput>
-                  </div>
-                  <div className="col-lg-3 mt-4">
-                    <div className="h6">NUM-10</div>
-                    <NumberInput defaultValue={0} min={0} max={20}>
-                      <NumberInputField className="bg-light" />
-                      <NumberInputStepper>
-                        <NumberIncrementStepper />
-                        <NumberDecrementStepper />
-                      </NumberInputStepper>
-                    </NumberInput>
-                  </div>
-                  <div className="col-lg-3 offset-lg-1 mt-4">
-                    <div className="h6">NUM-50</div>
-                    <NumberInput defaultValue={0} min={0} max={20}>
-                      <NumberInputField className="bg-light" />
-                      <NumberInputStepper>
-                        <NumberIncrementStepper />
-                        <NumberDecrementStepper />
-                      </NumberInputStepper>
-                    </NumberInput>
-                  </div>
-                  <div className="col-lg-3 offset-lg-1 mt-4">
-                    <div className="h6">NUM-100</div>
-                    <NumberInput defaultValue={0} min={0} max={20}>
-                      <NumberInputField className="bg-light" />
-                      <NumberInputStepper>
-                        <NumberIncrementStepper />
-                        <NumberDecrementStepper />
-                      </NumberInputStepper>
-                    </NumberInput>
-                  </div>
-                  <div className="col-lg-11 mt-4">
-                    <div className="h6">Extra VMs</div>
-                    <Slider
-                      color="primary"
-                      defaultValue={30}
-                      value={value}
-                      onChange={handleChange}
-                    >
-                      <SliderTrack h="16px" borderRadius="8px" />
-                      <SliderFilledTrack h="16px" borderRadius="8px" />
-                      <SliderThumb
-                        className="shadow-md"
-                        fontSize="md"
-                        fontWeight="800"
-                        width="auto"
-                        padding="8px"
-                        height="32px"
-                        children={value}
-                      />
-                    </Slider>
-                  </div>
-                  <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                    <PricingQuote button serviceDescription="yoyo"></PricingQuote>
-                  </div>
+      <div className="section mt-4">
+            <div className="container mt-4">
+                
+                <div>
+                    <Fade className="px-lg-5 px-3" duration={500} bottom>
+                        <div className="px-4 py-5 border shadow">
+                            <div className="display5 text-center">Storage Options</div>
+                            <div className="row px-3 justify-content-center px-lg-4">
+
+                                <div className="col-lg-11 mt-4">
+                                    <Slider color="primary" defaultValue={10} min={1} max={200} value={value} onChange={handleChange}>
+                                        <SliderTrack h="16px" borderRadius="8px" />
+                                        <SliderFilledTrack h="16px" borderRadius="8px" />
+                                        <SliderThumb
+                                                    className="shadow-md" 
+                                                    fontSize="md"
+                                                    fontWeight="800"
+                                                    width="auto"
+                                                    padding="8px"
+                                                    height="32px"
+                                                    children={value} />
+                                    </Slider>
+                                </div>
+                                <div className="col-lg-5 mt-4">
+                                    <div className="h6">Select Tier </div>
+                                    <Select onChange={(e)=>{setTier(e.target.value)}} variant="outline"  > 
+                                    <option value=",Storage Tier One SSD Per TB">Storage Tier One SSD Per TB</option>
+                                    <option value=",Storage Tier Two Per TB">Storage Tier Two Per TB</option>
+                                    <option value=",Storage Archive Only Per TB">Storage Archive Only Per TB</option>
+                                    </Select>
+                                </div>
+                                <div className="col-lg-5 mt-4">
+                                    <div className="h6">Select Type </div>
+                                    <Select onChange={(e)=>{setType(e.target.value)}} variant="outline"  > 
+                                    <option value=",Single Copy">Single Copy</option>
+                                    <option value=",Redundant - Two Copies - Single Geo Location">Redundant - Two Copies - Single Geo Location</option>
+                                    <option value=",Redundant - Three Copies - Two Geo Locations">Redundant - Three Copies - Two Geo Locations</option>
+                                    </Select>
+                                </div>
+
+                                <div className="col-lg-12 mt-4 d-flex justify-content-center">
+                                    <PricingQuote serviceName="Storage As A Service" serviceDescription={`${verifyNotEmpty(value,"TB Storage")} ${tier} ${type}`} button ></PricingQuote>
+                                </div>
+                            </div>
+                        </div>
+                    </Fade>
                 </div>
-              </div>
-            </Collapse>
-          </div>
+            </div>
         </div>
-      </div>
 
       <div className="section py-0">
         <div className="container">
