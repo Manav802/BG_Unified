@@ -24,26 +24,12 @@ import Link from "next/link";
 
 const verifyNotEmpty = (x, text) => (x > 0 ? x + " " + text : "");
 
-const CustomRadio = React.forwardRef((props, ref) => {
-  const { isChecked, isDisabled, value, ...rest } = props;
-  return (
-    <Button
-      ref={ref}
-      variant={isChecked ? "solid" : "outline"}
-      variantColor={isChecked ? "primary" : "gray.300"}
-      aria-checked={isChecked}
-      role="radio"
-      isDisabled={isDisabled}
-      {...rest}
-    />
-  );
-});
 
 function main(props) {
-  const [show, setShow] = React.useState(false);
-  const openControls = () => setShow(true);
-  const [value, setValue] = React.useState(0);
-  const handleChange = (value) => setValue(value);
+  const [tier, setTier] = React.useState(",Storage Tier One SSD Per TB");
+    const [type, setType] = React.useState(",Single Copy");
+    const [value, setValue] = React.useState(10);
+    const handleChange = value => setValue(value);
   return (
     <div>
       <Head>
@@ -210,34 +196,32 @@ function main(props) {
           </div>
         </div>
       </div>
-      <div className="section py-0">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 p-5 rounded-8 bg-light">
-              <h4 className="display5 py-2 mb-2 text-center">Why Us?</h4>
-              <p className="text-justify">
-                You can rely on us to help you navigate the storage landscape.
-                Our experienced, certified storage professionals and data centre
-                practice team are adept at helping customers manage change and
-                transform their data centre's to enable next-generation
-                computing models. From assessments to design, architecture, and
-                implementation, we can help you transform your legacy
-                application environments to “cloud-based” data centres, which
-                provide: Easy provisioning of computing resources to support
-                your diverse requirements Storage consolidation and
-                virtualization, backup and recovery, archiving, and disaster
-                recovery and storage management. The storage infrastructure
-                includes more than 900TB of Teir1/Teir2/Teir3 storage. Our staff
-                are trained and experienced across top storage manufacturer
-                offerings, enabling us to design complex, multi-vendor
-                solutions. We’ll show you how to tame explosive storage capacity
-                growth and put management products in place to support your
-                specific virtualized computing and storage environments.
-              </p>
+      <Fade duration={500} distance={"30%"} bottom>
+        <div className="section py-0">
+            <div className="container">
+                <div className="row">
+                            <div className="col text-center">
+                                <h1 className="display4">Why BG Unified Solutions?</h1>
+
+                                <div className="row text-left pt-4">
+                                    <div className="col-12 col-md-6">
+                                        <p className="lead text-justify">
+                                            You can rely on us to help you navigate the storage landscape. Our experienced, certified storage professionals and data centre practice team are adept at helping customers manage change and transform their data centre's to enable next-generation computing models. From assessments to design, architecture, and implementation, we can help you transform your legacy application environments to “cloud-based” data centres, which provide:
+                                            Easy provisioning of computing resources to support your diverse requirements
+                                            Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. 
+                    </p>
+                                    </div>
+                                    <div className="col-12 col-md-6">
+                                        <p className="lead text-justify">The storage infrastructure includes more than 900TB of Tier1/Tier2/Tier3 storage.
+                                            Our staff are trained and experienced across top storage manufacturer offerings, enabling us to design complex, multi-vendor solutions. We’ll show you how to tame explosive storage capacity growth and put management products in place to support your specific virtualized computing and storage environments.
+                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
+            </div>
+            </Fade>
       <div className="section pt-0">
         <div className="container">
           <Fade duration={400} distance={"30%"} bottom>

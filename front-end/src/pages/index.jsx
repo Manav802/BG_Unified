@@ -191,9 +191,15 @@ class Landing extends Component {
           </div>
         </div>
         
-        <div className="section">
+        <div className="section py-3">
         <div className="container">
             <div className="row my-5">
+            <div className="col-12 text-center NunitoSans-ExtraBold text-primary text-uppercase">
+                Solutions
+              </div>
+              <div className="col-12 mt-2 mb-5 text-center text-dark display4">
+                What We Deliver?
+              </div>
               <div className="col-xl-4 col-sm-6 my-2">
                 <Link href="/services/infra">
                   <a className="no-red">
@@ -293,7 +299,7 @@ class Landing extends Component {
             </div>
           </div>
         </div>
-        <div className="section">
+        <div className="section pt-0">
           <div className="container pb-5">
               <Heading size="2xl" fontWeight="900" px="10%" fontFamily="Nexa Bold" textAlign="center">We have a ‘can do’ attitude with an ‘easy to work with’ culture.</Heading>
               <Heading size="md" fontWeight="500" px="10%" opacity={.8} textAlign="center">Our values
