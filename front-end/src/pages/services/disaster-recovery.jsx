@@ -39,7 +39,7 @@ function main(props) {
           <div className="row">
             <Fade duration={700} delay={300} bottom>
               <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                <h1 className="display3 text-white">DR as a Service</h1>
+                <h1 className="display3 text-white">DR As A Service</h1>
                 <h1 className="display3 text-white">DRaaS</h1>
               </div>
             </Fade>
@@ -259,7 +259,7 @@ function main(props) {
                     icon="/assets/images/icons/monotone/server.svg"
                     title={
                       <div>
-                        Architectural <br /> Consultancy{" "}
+                        Architectural Consultancy <br />  As A Service{" "}
                       </div>
                     }
                     iconBg="#0D5EA5"

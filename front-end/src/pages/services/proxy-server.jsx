@@ -22,18 +22,29 @@ function main(props) {
       <Head>
         <title>Proxy,Your Way | Proxy as a Service - BG Unified Solutions</title>
       </Head>
-      <div className="position-absolute w-100 overflow-hidden background-svg">
-        <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
+<div className="position-absolute w-100 overflow-hidden background-svg-dns">
+        <div className="w-100 image">
+          <img
+            className="w-100 dns"
+            src="/assets/images/backgrounds/domainhosting.jpg"
+          />
+        </div>
+        <div className="w-100 divider" />
       </div>
       <div className="page-header">
         <div className="container">
           <div className="row">
             <Fade duration={700} delay={300} bottom>
               <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                <h1 className="display3">Proxy as a Service</h1>
-                <h1 className="display3">PRaaS</h1>
+                <h1 className="display3 text-white">Proxy as a Service</h1>
+                <h1 className="display3 text-white">PRaaS</h1>
               </div>
             </Fade>
+                          <Fade duration={700} delay={500} bottom>
+                <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
+                  Just redirect your traffic to our Proxy Service either by DNS or other custom solution to our public Proxy Service and then create a record to reroute your traffic to your application behind the firewall.
+                </p>
+              </Fade>
           </div>
         </div>
       </div>

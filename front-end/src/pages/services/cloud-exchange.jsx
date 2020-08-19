@@ -22,18 +22,28 @@ function main(props) {
       <Head>
         <title>The cloud service at its best | Cloud Exchange Connectivity as a Service - BG Unified Solutions</title>
       </Head>
-      <div className="position-absolute w-100 overflow-hidden background-svg">
-        <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
+      <div className="position-absolute w-100 overflow-hidden background-svg-dns">
+        <div className="w-100 image">
+          <img
+            className="w-100 dns"
+            src="/assets/images/backgrounds/domainhosting.jpg"
+          />
+        </div>
+        <div className="w-100 divider" />
       </div>
-      <div className="page-header">
+      <div className="page-header mt-3">
         <div className="container">
           <div className="row">
+          <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
             <Fade duration={700} delay={300} bottom>
-              <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                <h1 className="display3">Cloud Exchange Connectivity as a Service</h1>
-                <h1 className="display3">CXaaS</h1>
-              </div>
+                <h1 className="display3 text-white">Cloud Exchange Connectivity as a Service</h1>
+                <h1 className="display3 text-white">CXaaS</h1>
+              
             </Fade>
+            <Fade duration={700} delay={500} bottom>
+            <p className="display5 text-white">Express Routes to office 365, AWS, Azure</p> 
+            </Fade>
+            </div> 
           </div>
         </div>
       </div>
@@ -199,23 +209,50 @@ function main(props) {
                 <h4 className="display5 py-3 text-center">Related Services</h4>
               </div>
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/infra">
+                <Link href="/services/contact-center">
                   <a className="no-red">
-                    <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" />
+                    <CardWithIcon
+                      icon="/assets/images/icons/monotone/server.svg"
+                      title={
+                        <div>
+                          Contact Center <br /> As A Service{" "}
+                        </div>
+                      }
+                      iconBg="#0D5EA5"
+                      children="BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus."
+                    />
                   </a>
                 </Link>
               </div>
 
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/storage">
+                <Link href="/services/cloud-logging">
                   <a className="no-red">
-                    <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." /></a>
+                    <CardWithIcon
+                      icon="/assets/images/icons/monotone/server.svg"
+                      title={
+                        <div>
+                          Cloud <br /> Logging As A Service{" "}
+                        </div>
+                      }
+                      iconBg="#19C741"
+                      children="Log central services over the internet. Collect, Store, and report the various data and underlying threats. Add the shield to protect your business reputation."
+                    />
+                  </a>                
                 </Link>
               </div>
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/dns">
-                  <a className="no-red">
-                    <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." /></a>
+                <Link href="/services/platform">
+                  <a className="no-red"><CardWithIcon
+                    icon="/assets/images/icons/monotone/server.svg"
+                    title={
+                      <div>
+                        Cloud Platform <br /> service{" "}
+                      </div>
+                    }
+                    iconBg="#19C741"
+                    children="End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network."
+                  /></a>
                 </Link>
               </div>
             </div>

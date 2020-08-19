@@ -35,17 +35,28 @@ function main(props) {
             <Head>
                 <title>Storage Made Simple | Storage As A Service - BG Unified Solutions</title>
             </Head>
-        <div className="position-absolute w-100 overflow-hidden background-svg">
-            <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
-        </div>
-        <div className="page-header mb-3">
+            <div className="position-absolute w-100 overflow-hidden background-svg-dns">
+                <div className="w-100 image">
+                <img
+                    className="w-100 dns"
+                    src="/assets/images/backgrounds/domainhosting.jpg"
+                />
+                </div>
+                <div className="w-100 divider" />
+            </div>
+        <div className="page-header mt-3 mb-3">
             <div className="container">
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
                             <Fade duration={700} delay={300} bottom>
-                                <h1 className="display3">Storage As A Service</h1>
-                                <h1 className="display3">STaaS</h1>
+                                <h1 className="display3 text-white">Storage As A Service</h1>
+                                <h1 className="display3 text-white">STaaS</h1>
                             </Fade>
+                                <Fade duration={700} delay={500} bottom>
+                <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
+                  Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage
+                </p>
+              </Fade>
                 </div>
             </div>
             </div>
@@ -55,7 +66,7 @@ function main(props) {
                 
                 <div>
                     <Fade className="px-lg-5 px-3" duration={500} bottom>
-                        <div className="px-4 py-5 border shadow">
+                        <div className="px-4 py-5 bg-white border shadow">
                             <div className="display5 text-center">Storage Options</div>
                             <div className="row px-3 justify-content-center px-lg-4">
 
@@ -178,12 +189,12 @@ function main(props) {
                                         <p className="lead text-justify">
                                             You can rely on us to help you navigate the storage landscape. Our experienced, certified storage professionals and data centre practice team are adept at helping customers manage change and transform their data centre's to enable next-generation computing models. From assessments to design, architecture, and implementation, we can help you transform your legacy application environments to “cloud-based” data centres, which provide:
                                             Easy provisioning of computing resources to support your diverse requirements
-                                            Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Tier1/Tier2/Tier3 storage.
+                                            Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. 
                     </p>
                                     </div>
                                     <div className="col-12 col-md-6">
                                         <p className="lead text-justify">
-                                            Our staff are trained and experienced across top storage manufacturer offerings, enabling us to design complex, multi-vendor solutions. We’ll show you how to tame explosive storage capacity growth and put management products in place to support your specific virtualized computing and storage environments.
+                                          The storage infrastructure includes more than 900TB of Tier1/Tier2/Tier3 storage. Our staff are trained and experienced across top storage manufacturer offerings, enabling us to design complex, multi-vendor solutions. We’ll show you how to tame explosive storage capacity growth and put management products in place to support your specific virtualized computing and storage environments.
                     </p>
                                     </div>
                                 </div>
@@ -202,21 +213,50 @@ function main(props) {
                             <div className="col-xl-4 col-sm-6 my-2">
                                 <Link href="/services/infra">
                                     <a className="no-red">
-                                        <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" />
+                                        <CardWithIcon
+                      icon="/assets/images/icons/monotone/server.svg"
+                      title={
+                        <div>
+                          Backup As A <br /> Service{" "}
+                        </div>
+                      }
+                      iconBg="#F33022"
+                      children="BG Unified Solution provides reliable, secure  cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data, while enabling self-service restoration capability to your teams."
+                    />
                                     </a>
                                 </Link>
                             </div>
 
                             <div className="col-xl-4 col-sm-6 my-2">
-                                <Link href="/services/storage">
+                                <Link href="/services/firewall">
                                     <a className="no-red">
-                                        <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." /></a>
+                                        <CardWithIcon
+                    icon="/assets/images/icons/monotone/server.svg"
+                    title={
+                      <div>
+                        Firewall <br /> Services{" "}
+                      </div>
+                    }
+                    iconBg="#F33022"
+                    children="Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA. Centralized Policy Management using Panorama, Sourcefire DC."
+                  /></a>
                                 </Link>
                             </div>
                             <div className="col-xl-4 col-sm-6 my-2">
-                                <Link href="/services/dns">
-                                    <a className="no-red"> <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." /></a>
-                                </Link>
+                                <Link href="/services/contact-center">
+                  <a className="no-red">
+                    <CardWithIcon
+                      icon="/assets/images/icons/monotone/server.svg"
+                      title={
+                        <div>
+                          Contact Center <br /> as a service{" "}
+                        </div>
+                      }
+                      iconBg="#0D5EA5"
+                      children="BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus."
+                    />
+                  </a>
+                </Link>
                             </div>
                         </div>
                     </Fade>
