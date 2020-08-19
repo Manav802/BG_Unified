@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Head from "next/head";
 import CardWithIcon from "../components/cards/CardWithIcon";
-import { Image } from "@chakra-ui/core";
+import { Image, Link } from "@chakra-ui/core";
 
 class OurSolutions extends Component {
   constructor(props) {
@@ -40,7 +40,8 @@ class OurSolutions extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-lg-4  py-2">
-                  <a href="/services/infra" className="no-red">
+                  <Link href="/services/infra">
+                  <a className="no-red">
                     <CardWithIcon
                       icon="/assets/images/icons/monotone/server.svg"
                       title={
@@ -52,9 +53,11 @@ class OurSolutions extends Component {
                       children="Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management. Infrastructure includes more than 10000 Cores CPU, 10TB RAM."
                     />
                   </a>
+                  </Link>
                 </div>
                 <div className="col-lg-4  py-2">
-                  <a href="/services/storage-unit" className="no-red">
+                  <Link href="/services/storage-unit">
+                  <a  className="no-red">
                     <CardWithIcon
                       icon="/assets/images/icons/monotone/server.svg"
                       title={
@@ -66,9 +69,11 @@ class OurSolutions extends Component {
                       children="Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage."
                     />
                   </a>
+                  </Link>
                 </div>
                 <div className="col-lg-4  py-2">
-                  <a href="/services/dns" className="no-red">
+                  <Link href="/services/dns">
+                  <a  className="no-red">
                     <CardWithIcon
                       icon="/assets/images/icons/monotone/server.svg"
                       title={
@@ -80,6 +85,7 @@ class OurSolutions extends Component {
                       children="Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users."
                     />
                   </a>
+                  </Link>
                 </div>
                 <div className="col-lg-4  py-2">
                   <a href="/services/storage-units" className="no-red">
@@ -172,11 +178,11 @@ class OurSolutions extends Component {
                     icon="/assets/images/icons/monotone/server.svg"
                     title={
                       <div>
-                        Customer Support <br /> as a service{" "}
+                        Contact Center <br /> as a service{" "}
                       </div>
                     }
                     iconBg="#0D5EA5"
-                    children="Lorem ipsum kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet dolor sit amet, consetetur sadipscing elitr."
+                    children="BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus."
                   />
                 </div>
                 <div className="col-lg-4  py-2">

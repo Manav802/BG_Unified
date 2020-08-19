@@ -1,10 +1,9 @@
 .contact-form
 {
-    -moz-box-shadow: 0 3px 6px rgba(12, 11, 11, 0.3);
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); 
     padding:11% 7% 11% 7%;
+    border-radius: 2%;
     .hover-color:hover{
+        box-shadow: none;
         background-color:#ce1e1e;
     }
     background-color: white;
@@ -14,6 +13,7 @@
 .getaquote-form {
     padding:11% 7% 11% 7%;
     .hover-color:hover{
+        box-shadow: none;
         background-color:#ce1e1e;
     }
 }

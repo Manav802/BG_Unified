@@ -31,7 +31,7 @@ function DNS(props) {
   return (
     <div>
       <Head>
-        <title>DNS As A Service</title>
+        <title>For a stronger web identity | DNS As A Service - BG-Unified Solutions</title>
       </Head>
       <div className="position-absolute w-100 overflow-hidden background-svg-dns">
         <div className="w-100 image">
@@ -48,6 +48,7 @@ function DNS(props) {
             <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
               <Fade duration={700} delay={300} bottom>
                 <h1 className="display3 text-white">DNS As A Service</h1>
+                <h1 className="display3 text-white">DNSaaS</h1>
               </Fade>
               <Fade duration={700} delay={500} bottom>
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
@@ -93,7 +94,7 @@ function DNS(props) {
                               size="lg"
                               onClick={openControls}
                             >
-                              Get a quote
+                              View Options
                             </Button>
                           </PricingCard>
                         </div>
@@ -116,7 +117,7 @@ function DNS(props) {
                               size="lg"
                               onClick={openControls}
                             >
-                              Get a quote
+                              View options
                             </Button>
                           </PricingCard>
                         </div>
@@ -145,7 +146,7 @@ function DNS(props) {
                               size="lg"
                               onClick={openControls}
                             >
-                              Get a quote
+                              View Options
                             </Button>
                           </PricingCard>
                         </div>
@@ -168,7 +169,7 @@ function DNS(props) {
                               size="lg"
                               onClick={openControls}
                             >
-                              Get a quote
+                              View Options
                             </Button>
                           </PricingCard>
                         </div>

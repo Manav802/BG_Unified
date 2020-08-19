@@ -13,37 +13,14 @@ import {
 import GetAQuote from "../../components/GetaQuote/main";
 
 function PricingQuote(props) {
-  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay />
-        <Spinner thickness="4px" speed="1.5s" color="blue.500" size="xl" />
         <GetAQuote
           serviceName={props.serviceName}
           serviceDescription={props.serviceDescription}
+          button={props.button}
+          buttonStyle={props.buttonStyle}
+          title={props.title}
         ></GetAQuote>
-      </Modal>
-      {!props.button && (
-        <div className="mt-3 w-100 px-3 d-flex justify-content-between">
-          {props.title && <p>{props.title}</p>}
-          <a onClick={onOpen} className="">
-            Get a quote
-          </a>
-        </div>
-      )}
-      {props.button && (
-        <Button
-          size="lg"
-          className={props.buttonStyle}
-          onClick={onOpen}
-          variant="outline"
-          variantColor="primary"
-        >
-          Get a quote
-        </Button>
-      )}
-    </>
   );
 }
 
