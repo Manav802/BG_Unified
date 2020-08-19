@@ -1,9 +1,71 @@
 .landing {
     .bg-landing{
-        // background: hsla($primary-h, $primary-s, $primary-l, .05);
-        background-image: url('/assets/images/backgrounds/dots.png');
-        background-repeat: no-repeat;
-        background-size: contain;
+        background: black;
+        color: white;
+        video{
+            width: 100vw !important;
+        }
+    }
+    &-section{
+        padding: 6rem 0;
+    }
+    &-image{
+        animation-name: blur;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes blur {
+        0%{
+            filter: opacity(0);
+            transform: scale(.9) translateX(30%);
+        }
+        6%{
+            filter: opacity(0);
+            transform: scale(.9) translateX(30%);
+        }
+        16%{
+            filter: opacity(.8);
+            transform: scale(1); 
+        }
+        92%{
+            filter: opacity(.8);
+            transform: scale(1); 
+        }
+        100%{
+            filter: opacity(0);
+            transform: scale(.9) translateX(-30%); 
+        }
+    }
+    .slider-text{
+        animation-name: sliderText;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes sliderText {
+        0%{
+            filter: opacity(0);
+            transform: translateY(30%);
+        }
+        8%{
+            filter: opacity(0);
+            transform: translateY(30%);
+        }
+        20%{
+            filter: opacity(1);
+            transform: none;
+        }
+        80%{
+            filter: opacity(1);
+            transform: none;
+        }
+        92%{
+            filter: opacity(0);
+            transform: translateY(-30%); 
+        }
+        100%{
+            filter: opacity(0);
+            transform: translateY(-30%); 
+        }
     }
     @media (max-width: 767.98px) {
         .display4 {
@@ -91,90 +153,74 @@
 
     .brands{
         overflow: hidden;
-        
-        
-        
-        .abc{
-            flex-wrap: wrap;
-        }
         img{
             height: 152px;
             padding: 1.5rem;
             mix-blend-mode: darken;
-            // opacity: 0.4;
-            // filter: grayscale(100%);
-            // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: brightness(.98);
         }
-        @media (max-width: 1080px){
-            .marquee {
-                @-moz-keyframes scroll-left {
-                    from {
-                        -moz-transform: translateX(100%);
-                    }
-                    to {
-                        -moz-transform: translateX(-100%);
-                    }
+        .marquee {
+            @-moz-keyframes scroll-left {
+                from {
+                    -moz-transform: translateX(-100%);
                 }
-                
-                @-webkit-keyframes scroll-left {
-                    from {
-                        -webkit-transform: translateX(100%);
-                    }
-                    to {
-                        -webkit-transform: translateX(-100%);
-                    }
-                }
-                
-                @keyframes scroll-left {
-                    from {
-                        -moz-transform: translateX(100%);
-                        -webkit-transform: translateX(100%);
-                        transform: translateX(100%);
-                    }
-                    to {
-                        -moz-transform: translateX(-100%);
-                        -webkit-transform: translateX(-100%);
-                        transform: translateX(-100%);
-                    }
-                }
-                .scroll {
-                    flex-wrap: nowrap;
-                    margin: 0;
-                    line-height: 50px;
-                    text-align: center;
+                to {
                     -moz-transform: translateX(100%);
-                    -webkit-transform: translateX(100%);
-                    transform: translateX(100%);
-                    -moz-animation: scroll-left 2s linear infinite;
-                    -webkit-animation: scroll-left 2s linear infinite;
-                    animation: scroll-left 20s linear infinite;
                 }
             }
             
-        }
-        
-        
+            @-webkit-keyframes scroll-left {
+                from {
+                    -webkit-transform: translateX(100%);
+                }
+                to {
+                    -webkit-transform: translateX(-100%);
+                }
+            }
+            
+            @keyframes scroll-left {
+                from {
+                    -moz-transform: translateX(0%);
+                    -webkit-transform: translateX(0%);
+                    transform: translateX(0%);
+                }
+                to {
+                    -moz-transform: translateX(-100%);
+                    -webkit-transform: translateX(-100%);
+                    transform: translateX(-100%);
+                }
+            }
+            .scroll {
+                flex-wrap: nowrap;
+                margin: 0;
+                line-height: 50px;
+                text-align: center;
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+                -moz-animation: scroll-left 2s linear infinite;
+                -webkit-animation: scroll-left 2s linear infinite;
+                animation: scroll-left 20s linear infinite;
+            }
+        }            
     }
 
-    // .globe-section {
-    //     background: $color-dark;
-
-    //     
-
-        
-
-    //     .divider-bottom {
-    //         z-index: 400;
-    //     }
-    // }
-    .globe-container {
-        display: flex;
-        flex-direction: row-reverse;
-        #globe {
-            margin-top: 32px;
-            cursor: grab !important;
+    .globe-section {
+        background: $color-dark;
+        overflow: hidden;
+        .globe-container {
+            display: flex;
+            flex-direction: row-reverse;
+            #globe {
+                margin-top: -120px;
+                opacity: .3;
+                cursor: grab !important;
+                height: 1200px;
+                width: 1200px;
+            }
         }
     }
+    
     
     &-benefits {
         .vector{

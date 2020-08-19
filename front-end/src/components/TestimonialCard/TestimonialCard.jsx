@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-flickity-component";
 // import Slider from '../ImageSlider/Slider'
-import { Box, Image, Avatar, AvatarBadge } from "@chakra-ui/core";
+import { Box, Image, Avatar, Heading, AvatarBadge } from "@chakra-ui/core";
 
 class Testimonial extends Component {
   constructor(props) {
@@ -12,46 +12,26 @@ class Testimonial extends Component {
     const TestimonialVariable = this.props.testimonialDetails.map(
       (testimonialDetails) => {
         return (
-          <div key={testimonialDetails.id} className="col-lg-7 p-2 my-3 ">
+          <div key={testimonialDetails.id} className="w-100">
             <Box
-              className="px-4 py-2 testimonialSlider"
-              rounded="lg"
-              bg="white"
-              boxShadow="md"
-              overflow="hidden"
+              className="p-4"
             >
-              <div className="ml-3 mt-4">
-                <img
-                  src={testimonialDetails.imageUrl}
-                  style={{ height: "64px" }}
-                  alt=""
-                />
-              </div>
-
-              <div className="mt-1 mr-3 ml-3">
-                <Box mt="3" className="text-justify">
+                <Heading mt={4} size="lg" fontWeight={600} lineHeight={1.5} className="text-justify">
                   {testimonialDetails.paragraph}
-                  <Box as="span" color="gray.600" fontSize="sm"></Box>
-                </Box>
-              </div>
+                </Heading>
 
-              <div className="mt-3 ml-3">
-                <Box
-                  mt="1"
-                  fontWeight="semibold"
-                  as="h4"
-                  lineHeight="tight"
-                  isTruncated
+                <Heading
+                  size="md"
+                  mt={4}
+                  fontWeight={800}
+                  className="text-primary"
                 >
                   {testimonialDetails.author}
-                </Box>
-              </div>
+                </Heading>
 
-              <div className="mb-auto ml-3 ">
-                <Box as="span" color="gray.600" fontSize="sm">
+                <Heading size="sm" mt={2} color="gray.600">
                   {testimonialDetails.CompanyName}
-                </Box>
-              </div>
+                </Heading>
             </Box>
           </div>
         );
@@ -61,14 +41,13 @@ class Testimonial extends Component {
     return (
       <Slider
         options={{
-          adaptiveHeight: false,
-          freeScroll: true,
-          pageDots: false,
-          contain: true,
-          draggable: true,
+          adaptiveHeight: true,
+          freeScroll: false,
+          prevNextButtons: false,
+          draggable: false,
+          autoPlay: 15000
         }}
       >
-        <div className="slider-offset"></div>
         {TestimonialVariable}
       </Slider>
     );

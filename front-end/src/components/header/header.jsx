@@ -5,7 +5,8 @@ import Menu from './menu'
 import {Image,
 Box,
 Button,
-Collapse
+Collapse,
+Icon
 } from '@chakra-ui/core'
 import {
     Popover,
@@ -16,6 +17,7 @@ import {
   } from "@chakra-ui/core";
 
 import {FaInfoCircle, FaNewspaper, FaCommentAlt, FaBriefcase} from "react-icons/fa"
+import {IoIosCall} from "react-icons/io"
 import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
 import Link from 'next/link';
@@ -45,17 +47,19 @@ return (
                <Link href="/"><a>
                     <Image src="/assets/logo.png" height="45px" className="mr-3 d-sm-none"></Image>
                 </a></Link>
-                <div className="d-flex align-items-center">
-                <Popover trigger="hover"><PopoverTrigger><a><span className="NunitoSans-Bold p-2 mt-1 d-none d-lg-block"> 1300 00 BGUS </span></a></PopoverTrigger>
-                <PopoverContent zIndex={4}>
-                    <PopoverArrow />
-                    <PopoverHeader className="text-center"><Button className="secondary-btn" variant="solid" >Call Now</Button> </PopoverHeader>
-                </PopoverContent>
+                <div className="d-flex">
+                <Popover trigger="hover">
+                    <PopoverTrigger>
+                        <Button variant="unstyled" leftIcon={IoIosCall} className="NunitoSans-Bold p-2 mt-1 d-none d-lg-flex"> 1300 00 BGUS </Button>
+                    </PopoverTrigger>
+                    <PopoverContent zIndex={4}>
+                        <PopoverHeader className="text-center"><Button className="secondary-btn" variant="solid" >Call Now</Button> </PopoverHeader>
+                    </PopoverContent>
                 </Popover>
-                    <Search toggle ={() => setSearch(!search)} searching={search}></Search>
-                    <Link href="/contact">
-                        <Button className="mx-3 d-none d-sm-block" variant="solid" variantColor="primary">Contact Us</Button>
-                    </Link>
+                <Search toggle ={() => setSearch(!search)} searching={search}></Search>
+                <Link href="/contact">
+                    <Button className="mx-3 d-none d-sm-block" variant="solid" variantColor="primary">Contact Us</Button>
+                </Link>
                 </div>
             </div>
         </div>

@@ -18,9 +18,9 @@ window.onload = () => {
 
     planet.loadPlugin(planetaryjs.plugins.earth({
         topojson: { file:   '/assets/js/world-110m.json' },
-        oceans:   { fill:   '#E4E5F0' },
-        land:     { fill:   '#F7F8FC' },
-        borders:  { stroke: '#F7F8FC' }
+        oceans:   { fill:   '#0F1F4D' },
+        land:     { fill:   '#1F3166' },
+        borders:  { stroke: '#1F3166' }
     }));
     // Make the planet fit well in its canvas
     planet.loadPlugin(planetaryjs.plugins.pings());
