@@ -65,7 +65,7 @@ function main(props) {
                 <div className="row px-3">
                   <div className="col-lg-12 mt-4">
                     <div className="h6">No. of Copies</div>
-                    <Slider color="primary" my="24px" max={4} defaultValue={1} value={value} onChange={handleChange}>
+                    <Slider color="primary" my="24px" min={1} max={4} defaultValue={1} value={value} onChange={handleChange}>
                       <SliderTrack h="16px" borderRadius="8px" />
                       <SliderFilledTrack h="16px" borderRadius="8px" />
                       <SliderThumb
