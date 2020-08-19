@@ -1,25 +1,22 @@
 import React, { useState } from "react";
 import {
   Button,
-  Collapse,
   Image,
-  Radio,
-  RadioButtonGroup,
-  NumberInput,
-  NumberInputField,
-  NumberInputStepper,
-  NumberIncrementStepper,
-  NumberDecrementStepper,
-  Slider,
-  SliderThumb,
-  SliderTrack,
-  SliderFilledTrack,
+  Icon,
+  Box,
   Tabs,
   TabList,
   Tab,
   TabPanel,
   TabPanels,
-  ListIcon,
+  Collapse,
+  Slider,
+  SliderThumb,
+  SliderTrack,
+  SliderFilledTrack,
+  FormLabel,
+  Switch,
+  Flex,
 } from "@chakra-ui/core";
 import Fade from "react-reveal/Fade";
 import CardWithIcon from "../../components/cards/CardWithIcon";
@@ -45,7 +42,7 @@ const CustomRadio = React.forwardRef((props, ref) => {
   );
 });
 
-function UCaaS(props) {
+function APPDEV(props) {
   const [node, setNode] = useState("");
   const [type, setType] = useState("20-10 SIP");
   const [additionalUcaas, setadditionalUcaas] = useState(0);
@@ -71,28 +68,34 @@ function UCaaS(props) {
   return (
     <div>
       <Head>
-        <title>Application Development As A Service</title>
+        <title>
+          Developing your needs - Application Development As A Service - BG
+          Unified Solutions
+        </title>
       </Head>
-      <div className="position-absolute w-100 overflow-hidden background-svg">
-        <img
-          className="w-100"
-          src="/assets/images/backgrounds/dots_circle.jpg"
-        />
+      <div className="position-absolute w-100 overflow-hidden background-svg-dns">
+        <div className="w-100 image">
+          <img
+            className="w-100 dns"
+            src="/assets/images/backgrounds/domainhosting.jpg"
+          />
+        </div>
+        <div className="w-100 divider" />
       </div>
       <div className="page-header">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
               <Fade duration={700} delay={300} bottom>
-                <h1 className="display3">
+                <h1 className="display3 text-white">
                   Application Development As A Service
                 </h1>
               </Fade>
               <Fade duration={700} delay={500} bottom>
-                BG Unified Solutions provides services in the area of Web,
-                Mobile and Enterprise Application Development. Our team of
-                technical and functional experts can help you in new Application
-                Development, Modernizing and Supporting existing applications.
+                <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
+                  BG Unified Solutions provides services in the area of Web,
+                  Mobile and Enterprise Application Development.
+                </p>
               </Fade>
             </div>
           </div>
@@ -100,287 +103,122 @@ function UCaaS(props) {
       </div>
       <div className="section">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-12">
+          <div className="row">
+            <div className="col-lg-10 offset-lg-1">
               <Tabs align="center">
-                <TabList>
-                  <Tab
-                    onClick={() => {
-                      setShow(false);
-                    }}
-                    className="p-3 px-4 display6"
-                  >
-                    Cisco
-                  </Tab>
-                  <Tab
-                    onClick={() => {
-                      setShow(false);
-                    }}
-                    className="p-3 px-4 display6"
-                  >
-                    Avaya
-                  </Tab>
-                  <Tab
-                    onClick={() => {
-                      setShow(false);
-                    }}
-                    className="p-3 px-4 display6"
-                  >
-                    3CX
-                  </Tab>
+                <TabList style={{ borderBottomColor: "#ffffff22" }}>
+                  <Tab className="py-4 px-5 display6 text-white">Windows</Tab>
+                  <Tab className="py-4 px-5 display6 text-white">BIND</Tab>
                 </TabList>
 
                 <TabPanels>
                   <TabPanel className="py-2">
-                    <Fade duration={500} distance={"30%"} bottom>
+                    <Fade duration={500} bottom>
                       <div className="row justify-content-center">
-                        <div className="col-lg-4 my-3">
+                        <div className="col-lg-5 col-sm-6 col-md-6 my-3">
                           <PricingCard
-                            title="Single Node CUCM"
-                            icon="/assets/images/icons/theme/firewall_virtual.svg"
+                            icon="/assets/images/icons/theme/stack.svg"
+                            title="Standard DNS (BlackBox)"
                             featureList={[
-                              "Include Voicemail",
-                              "Include Presence",
-                              "Include Voicemail to Email*",
-                              "Include Cisco Jabber",
+                              "Includes 5 Zones",
+                              "Low Latency",
+                              "High Availabilty",
+                              "BlackBox Service",
+                              "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
                               variant="outline"
                               size="lg"
-                              onClick={() => {
-                                openControls();
-                                setNode("Single Node CUCM");
-                                resetOnCardChange();
-                              }}
+                              onClick={openControls}
                             >
-                              View More
+                              Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
-                        <div className="col-lg-4 my-3">
+                        <div className="col-lg-5 col-sm-6 col-md-6 my-3">
                           <PricingCard
-                            title="Dual Node CUCM"
-                            icon="/assets/images/icons/theme/firewall_virtual.svg"
+                            icon="/assets/images/icons/theme/stack.svg"
+                            title="Premium DNS (BlackBox)"
                             featureList={[
-                              "Include Voicemail",
-                              "Include Presence",
-                              "Include Voicemail to Email*",
-                              "Include Cisco Jabber",
+                              "Includes 5 Zones",
+                              "Low Latency",
+                              "High Availabilty",
+                              "BlackBox Service",
+                              "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
                               variant="outline"
                               size="lg"
-                              onClick={() => {
-                                openControls();
-                                setNode("Dual Node CUCM");
-                                resetOnCardChange();
-                              }}
+                              onClick={openControls}
                             >
-                              View More
+                              Get a quote
                             </Button>
-                          </PricingCard>
-                        </div>
-                        <div className="col-lg-4 my-3">
-                          <PricingCard
-                            className="hover-effect"
-                            title="Multiple Nodes CUCM"
-                            icon="/assets/images/icons/theme/firewall_virtual.svg"
-                            featureList={[
-                              "Include Voicemail",
-                              "Include Presence",
-                              "Include Voicemail to Email*",
-                              "Include Cisco Jabber",
-                            ]}
-                          >
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={() => {
-                                openControls();
-                                setNode("Multiple Nodes CUCM");
-                                resetOnCardChange();
-                              }}
-                            >
-                              View More
-                            </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
                     </Fade>
                   </TabPanel>
                   <TabPanel className="py-2">
-                    <Fade duration={500} distance={"30%"} bottom>
+                    <Fade duration={500} bottom>
                       <div className="row justify-content-center">
-                        <div className="col-lg-4 my-3">
+                        <div className="col-lg-5 col-sm-6 col-md-6 my-3">
                           <PricingCard
-                            title="Single Node IP Office"
-                            icon="/assets/images/icons/theme/firewall_virtual.svg"
+                            icon="/assets/images/icons/theme/stack.svg"
+                            title="Standard DNS (BlackBox)"
                             featureList={[
-                              "Include Voicemail",
-                              "Include Presence",
-                              "Include Voicemail to Email*",
-                              "Include Cisco Jabber",
+                              "Includes 5 Zones",
+                              "Low Latency",
+                              "High Availabilty",
+                              "BlackBox Service",
+                              "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
                               variant="outline"
                               size="lg"
-                              onClick={() => {
-                                openControls();
-                                setNode("Single Node IP Office");
-                                resetOnCardChange();
-                              }}
+                              onClick={openControls}
                             >
-                              View More
+                              Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
-                        <div className="col-lg-4 my-3">
+                        <div className="col-lg-5 col-sm-6 col-md-6  my-3">
                           <PricingCard
-                            title="Dual Node IP Office"
-                            icon="/assets/images/icons/theme/firewall_virtual.svg"
+                            icon="/assets/images/icons/theme/stack.svg"
+                            title="Premium DNS (BlackBox)"
                             featureList={[
-                              "Include Voicemail",
-                              "Include Presence",
-                              "Include Voicemail to Email*",
-                              "Include Cisco Jabber",
+                              "Includes 5 Zones",
+                              "Low Latency",
+                              "High Availabilty",
+                              "BlackBox Service",
+                              "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
                               variant="outline"
                               size="lg"
-                              onClick={() => {
-                                openControls();
-                                setNode("Dual Node IP Office");
-                                resetOnCardChange();
-                              }}
+                              onClick={openControls}
                             >
-                              View More
+                              Get a quote
                             </Button>
-                          </PricingCard>
-                        </div>
-                        <div className="col-lg-4 my-3">
-                          <PricingCard
-                            className="hover-effect"
-                            title="Multiple Nodes IP Office"
-                            icon="/assets/images/icons/theme/firewall_virtual.svg"
-                            featureList={[
-                              "Include Voicemail",
-                              "Include Presence",
-                              "Include Voicemail to Email*",
-                              "Include Cisco Jabber",
-                            ]}
-                          >
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={() => {
-                                openControls();
-                                setNode("Multiple Nodes IP Office");
-                                resetOnCardChange();
-                              }}
-                            >
-                              View More
-                            </Button>
-                          </PricingCard>
-                        </div>
-                      </div>
-                    </Fade>
-                  </TabPanel>
-                  <TabPanel className="py-2">
-                    <Fade duration={500} distance={"30%"} bottom>
-                      <div className="row justify-content-center">
-                        <div className="col-lg-4 my-3">
-                          <PricingCard
-                            title="Single Node CX"
-                            icon="/assets/images/icons/theme/firewall_virtual.svg"
-                            featureList={[
-                              "Include Voicemail",
-                              "Include Presence",
-                              "Include Voicemail to Email*",
-                              "Include Cisco Jabber",
-                            ]}
-                          >
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={() => {
-                                openControls();
-                                setNode("Single Node CX");
-                                resetOnCardChange();
-                              }}
-                            >
-                              View More
-                            </Button>
-                          </PricingCard>
-                        </div>
-                        <div className="col-lg-4 my-3">
-                          <PricingCard
-                            title="Dual Node CX"
-                            icon="/assets/images/icons/theme/firewall_virtual.svg"
-                            featureList={[
-                              "Include Voicemail",
-                              "Include Presence",
-                              "Include Voicemail to Email*",
-                              "Include Cisco Jabber",
-                            ]}
-                          >
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={() => {
-                                openControls();
-                                setNode("Dual Node CX");
-                                resetOnCardChange();
-                              }}
-                            >
-                              View More
-                            </Button>
-                          </PricingCard>
-                        </div>
-                        <div className="col-lg-4 my-3">
-                          <PricingCard
-                            className="hover-effect"
-                            title="Multiple Nodes CX"
-                            icon="/assets/images/icons/theme/firewall_virtual.svg"
-                            featureList={[
-                              "Include Voicemail",
-                              "Include Presence",
-                              "Include Voicemail to Email*",
-                              "Include Cisco Jabber",
-                            ]}
-                          >
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={() => {
-                                openControls();
-                                setNode("Multiple Nodes CX");
-                                resetOnCardChange();
-                              }}
-                            >
-                              View More
-                            </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
@@ -388,218 +226,75 @@ function UCaaS(props) {
                   </TabPanel>
                 </TabPanels>
               </Tabs>
-            </div>
-          </div>
-          <div>
-            <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
-              <div className="px-4 py-5 border">
-                <div className="display5 text-center">{node}</div>
-                <div className="row justify-content-center px-3">
-                  <div className="mt-4 col-12"></div>
-
-                  <div className="col-lg-11 mt-2">
-                    <div className="h6">Choose a type</div>
-                    <RadioButtonGroup
-                      onChange={(value) => {
-                        setType(value);
-                        setAddSIP(0);
-                        setShowSIP(false);
-                      }}
-                      defaultValue="20-10 SIP"
-                      mt={4}
-                      isInline
-                    >
-                      <CustomRadio value="10-5 SIP">UCAAS-10-5SIP</CustomRadio>
-                      <CustomRadio value="20-10 SIP">
-                        UCAAS-20-10SIP
-                      </CustomRadio>
-                      <CustomRadio value="30-20 SIP">
-                        UCAAS-30-20SIP
-                      </CustomRadio>
-                      <CustomRadio value="50-30 SIP">
-                        UCAAS-50-30SIP
-                      </CustomRadio>
-                      <CustomRadio value="100-50 SIP">
-                        UCAAS-100-50SIP
-                      </CustomRadio>
-                    </RadioButtonGroup>
-                  </div>
-                  <div className="mt-4 col-lg-11">
-                    <div className="row">
-                      <p className=" NunitoSans-Bold ">
-                        {" "}
-                        - This type includes {type.slice(0, 2)} UCaaS users and{" "}
-                        {type.slice(3)} channels.{" "}
-                        <a
-                          onClick={() => {
-                            setShowSIP(!showSIP);
-                          }}
+              <div id="collapse-1" className="collapse-target">
+                <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
+                  <div className="px-4 py-5 border">
+                    <div className="display5 text-center">Standard DNS</div>
+                    <div className="row px-3">
+                      <div className="col-lg-12 mt-4">
+                        <div className="h6">Extra Zones</div>
+                        <Slider
+                          color="primary"
+                          my="24px"
+                          max={30}
+                          defaultValue={1}
+                          value={0}
                         >
-                          {" "}
-                          Add Additional SIP?{" "}
-                        </a>{" "}
-                      </p>
+                          <SliderTrack h="16px" borderRadius="8px" />
+                          <SliderFilledTrack h="16px" borderRadius="8px" />
+                          <SliderThumb
+                            className="shadow-md"
+                            fontSize="md"
+                            fontWeight="800"
+                            width="auto"
+                            padding="8px"
+                            height="32px"
+                            children={23}
+                          />
+                        </Slider>
+                      </div>
+                      <div className="my-1 col-lg-6 mt-3 d-flex justify-content-between">
+                        <Flex py="12px" justify="center" align="center">
+                          <Switch
+                            onChange={(e) => {
+                              setFailOverNode(e.target.checked);
+                            }}
+                            color="primary"
+                            mb={0}
+                            id="failOverNode"
+                          />
+                          <FormLabel mb={0} ml="12px" htmlFor="fail-over node">
+                            Include Redundant DNS
+                          </FormLabel>
+                        </Flex>
+                      </div>
+                      <div className="my-1 col-lg-6 mt-3 d-flex justify-content-between">
+                        <Flex py="12px" justify="center" align="center">
+                          <Switch
+                            onChange={(e) => {
+                              setFailOverNode(e.target.checked);
+                            }}
+                            color="primary"
+                            mb={0}
+                            id="failOverNode"
+                          />
+                          <FormLabel mb={0} ml="12px" htmlFor="fail-over node">
+                            Add Daily Backup
+                          </FormLabel>
+                        </Flex>
+                      </div>
+                      <div className="col-lg-12 mt-5 d-flex justify-content-center">
+                        <PricingQuote
+                          serviceName="DNS As A Service"
+                          serviceDescription="Hello"
+                          button
+                        ></PricingQuote>
+                      </div>
                     </div>
                   </div>
-                  <div className="col-lg-11">
-                    <Collapse className="mt-4" isOpen={showSIP}>
-                      <div className="h6">Additional SIP</div>
-                      <Slider
-                        color="primary"
-                        defaultValue={30}
-                        value={addSIP}
-                        onChange={(value) => {
-                          setAddSIP(value);
-                        }}
-                      >
-                        <SliderTrack h="16px" borderRadius="8px" />
-                        <SliderFilledTrack h="16px" borderRadius="8px" />
-                        <SliderThumb
-                          className="shadow-md"
-                          fontSize="md"
-                          fontWeight="800"
-                          width="auto"
-                          padding="8px"
-                          height="32px"
-                          children={addSIP}
-                        />
-                      </Slider>
-                    </Collapse>
-                  </div>
-                  <div className="col-lg-11 mt-4">
-                    <div className="h6">Extra VMs</div>
-                    <Slider
-                      color="primary"
-                      defaultValue={30}
-                      value={value}
-                      onChange={handleChange}
-                    >
-                      <SliderTrack h="16px" borderRadius="8px" />
-                      <SliderFilledTrack h="16px" borderRadius="8px" />
-                      <SliderThumb
-                        className="shadow-md"
-                        fontSize="md"
-                        fontWeight="800"
-                        width="auto"
-                        padding="8px"
-                        height="32px"
-                        children={value}
-                      />
-                    </Slider>
-                  </div>
-                  <div className="col-lg-5 mt-4">
-                    <div className="h6">Additional UCaaS</div>
-                    <NumberInput
-                      onChange={(value) => setadditionalUcaas(value)}
-                      defaultValue={0}
-                      min={0}
-                      max={20}
-                    >
-                      <NumberInputField className="bg-light" />
-                      <NumberInputStepper>
-                        <NumberIncrementStepper />
-                        <NumberDecrementStepper />
-                      </NumberInputStepper>
-                    </NumberInput>
-                  </div>
-                  <div className="col-lg-5 offset-lg-1 mt-4">
-                    <div className="h6">Additional Hunt Groups</div>
-                    <NumberInput
-                      onChange={(value) => setHunts(value)}
-                      defaultValue={0}
-                      min={0}
-                      max={20}
-                    >
-                      <NumberInputField className="bg-light" />
-                      <NumberInputStepper>
-                        <NumberIncrementStepper />
-                        <NumberDecrementStepper />
-                      </NumberInputStepper>
-                    </NumberInput>
-                  </div>
-                  <div className="col-lg-11 mt-4">
-                    <a
-                      onClick={() => {
-                        setAdvancedOptions(!advancedOptions);
-                      }}
-                    >
-                      {" "}
-                      Advanced Options{" "}
-                    </a>
-                  </div>
-
-                  <div className="col-lg-11">
-                    <Collapse className="row" isOpen={advancedOptions}>
-                      <div className="col-lg-3 mt-4">
-                        <div className="h6">NUM-10</div>
-                        <NumberInput
-                          onChange={(value) => setNum10(value)}
-                          defaultValue={0}
-                          min={0}
-                          max={20}
-                        >
-                          <NumberInputField className="bg-light" />
-                          <NumberInputStepper>
-                            <NumberIncrementStepper />
-                            <NumberDecrementStepper />
-                          </NumberInputStepper>
-                        </NumberInput>
-                      </div>
-                      <div className="col-lg-3 offset-lg-1 mt-4">
-                        <div className="h6">NUM-50</div>
-                        <NumberInput
-                          onChange={(value) => setNum50(value)}
-                          defaultValue={0}
-                          min={0}
-                          max={20}
-                        >
-                          <NumberInputField className="bg-light" />
-                          <NumberInputStepper>
-                            <NumberIncrementStepper />
-                            <NumberDecrementStepper />
-                          </NumberInputStepper>
-                        </NumberInput>
-                      </div>
-                      <div className="col-lg-3 offset-lg-1 mt-4">
-                        <div className="h6">NUM-100</div>
-                        <NumberInput
-                          onChange={(value) => setNum100(value)}
-                          defaultValue={0}
-                          min={0}
-                          max={20}
-                        >
-                          <NumberInputField className="bg-light" />
-                          <NumberInputStepper>
-                            <NumberIncrementStepper />
-                            <NumberDecrementStepper />
-                          </NumberInputStepper>
-                        </NumberInput>
-                      </div>
-                    </Collapse>
-                  </div>
-
-                  <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                    <PricingQuote
-                      button
-                      serviceName="Unified Communications As A Service"
-                      serviceDescription={`${node},${type}${verifyNotEmpty(
-                        additionalUcaas,
-                        "Additional UCaaS"
-                      )}${verifyNotEmpty(
-                        addSIP,
-                        "Additional SIP"
-                      )}${verifyNotEmpty(extraVM, "Extra VMs")}${verifyNotEmpty(
-                        hunts,
-                        "Additonal Hunts"
-                      )}${verifyNotEmpty(num10, "NUM-10")}${verifyNotEmpty(
-                        num50,
-                        "NUM-50"
-                      )}${verifyNotEmpty(num100, "NUM-100")}`}
-                    ></PricingQuote>
-                  </div>
-                </div>
+                </Collapse>
               </div>
-            </Collapse>
+            </div>
           </div>
         </div>
       </div>
@@ -751,16 +446,19 @@ function UCaaS(props) {
                 <h4 className="display5 py-3 text-center">Related Services</h4>
               </div>
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/infra">
-                  <CardWithIcon
-                    icon="/assets/images/icons/monotone/server.svg"
-                    title={
-                      <div>
-                        Infrastructure <br /> as a service{" "}
-                      </div>
-                    }
-                    children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM"
-                  />
+                <Link href="/services/platform">
+                  <a className="no-red">
+                    <CardWithIcon
+                      icon="/assets/images/icons/monotone/dashboard.svg"
+                      title={
+                        <div>
+                          Platform <br /> As A service{" "}
+                        </div>
+                      }
+                      iconBg="#19C741"
+                      children="Prototype multisite or multi-cloud DR strategies. Shortened Recovery Time.Geographically dispersed availability"
+                    />
+                  </a>
                 </Link>
               </div>
 
@@ -779,17 +477,19 @@ function UCaaS(props) {
                 </Link>
               </div>
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/dns">
-                  <CardWithIcon
-                    icon="/assets/images/icons/monotone/earth_ouline.svg"
-                    title={
-                      <div>
-                        DNS <br /> as a service{" "}
-                      </div>
-                    }
-                    iconBg="#5F1CE6"
-                    children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching."
-                  />
+                <Link href="/services/backup">
+                  <a className="no-red">
+                    <CardWithIcon
+                      icon="/assets/images/icons/monotone/disk.svg"
+                      title={
+                        <div>
+                          Backup <br /> As A service{" "}
+                        </div>
+                      }
+                      iconBg="#F33022"
+                      children="Clustering of Devices, Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, Cisco Wi-Fi and Aruba Wi-Fi."
+                    />
+                  </a>
                 </Link>
               </div>
             </div>
@@ -800,4 +500,4 @@ function UCaaS(props) {
   );
 }
 
-export default UCaaS;
+export default APPDEV;

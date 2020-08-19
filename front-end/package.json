@@ -51,8 +51,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "format": "prettier \"src/**/*.{js,html,jsx}\" --write"
+    "start": "next start"
+
   },
   "eslintConfig": {
     "extends": "react-app"

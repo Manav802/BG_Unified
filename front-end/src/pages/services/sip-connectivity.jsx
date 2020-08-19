@@ -25,13 +25,16 @@ import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 import Head from "next/head";
 import Link from "next/link";
 
-function DNS(props) {
+function SIP(props) {
   const [show, setShow] = React.useState(false);
   const openControls = () => setShow(true);
   return (
     <div>
       <Head>
-        <title>SIP as a Service(SaaS)</title>
+        <title>
+          Innovation and Excellence - SIP As A Service(SaaS)- BG Unified
+          Solutions
+        </title>
       </Head>
       <div className="position-absolute w-100 overflow-hidden background-svg-dns">
         <div className="w-100 image">
@@ -47,13 +50,13 @@ function DNS(props) {
           <div className="row">
             <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
               <Fade duration={700} delay={300} bottom>
-                <h1 className="display3 text-white">SIP as a Service(SaaS)</h1>
+                <h1 className="display3 text-white">SIP As A Service(SaaS)</h1>
               </Fade>
               <Fade duration={700} delay={500} bottom>
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
-                  SIP As A Service Infrastructure includes more than 15 Cisco
+                  SIP as a Service Infrastructure includes more than 15 Cisco
                   Unified border Elements with 1600 SIP channels spanned across
-                  multiple DC locations with DUAL Exchange Homing.
+                  multiple DC locations.
                 </p>
               </Fade>
             </div>
@@ -86,6 +89,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -95,6 +99,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6 my-3">
@@ -109,6 +114,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -118,6 +124,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
@@ -138,6 +145,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -147,6 +155,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6  my-3">
@@ -161,6 +170,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -170,6 +180,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
@@ -177,7 +188,7 @@ function DNS(props) {
                   </TabPanel>
                 </TabPanels>
               </Tabs>
-              <div>
+              <div id="collapse-1" className="collapse-target">
                 <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
                   <div className="px-4 py-5 border">
                     <div className="display5 text-center">Standard DNS</div>
@@ -440,16 +451,17 @@ function DNS(props) {
                 <h4 className="display5 py-3 text-center">Related Services</h4>
               </div>
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/infra">
+                <Link href="/services/backup">
                   <a className="no-red">
                     <CardWithIcon
-                      icon="/assets/images/icons/monotone/server.svg"
+                      icon="/assets/images/icons/monotone/disk.svg"
                       title={
                         <div>
-                          Infrastructure <br /> as a service{" "}
+                          Backup <br /> As A service{" "}
                         </div>
                       }
-                      children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM"
+                      iconBg="#F33022"
+                      children="Clustering of Devices, Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, Cisco Wi-Fi and Aruba Wi-Fi."
                     />
                   </a>
                 </Link>
@@ -472,17 +484,17 @@ function DNS(props) {
                 </Link>
               </div>
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/dns">
+                <Link href="/services/platform">
                   <a className="no-red">
                     <CardWithIcon
-                      icon="/assets/images/icons/monotone/earth_ouline.svg"
+                      icon="/assets/images/icons/monotone/dashboard.svg"
                       title={
                         <div>
-                          DNS <br /> as a service{" "}
+                          Platform <br /> As A service{" "}
                         </div>
                       }
-                      iconBg="#5F1CE6"
-                      children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching."
+                      iconBg="#19C741"
+                      children="Prototype multisite or multi-cloud DR strategies. Shortened Recovery Time.Geographically dispersed availability"
                     />
                   </a>
                 </Link>
@@ -495,4 +507,4 @@ function DNS(props) {
   );
 }
 
-export default DNS;
+export default SIP;

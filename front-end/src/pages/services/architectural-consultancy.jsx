@@ -31,7 +31,10 @@ function DNS(props) {
   return (
     <div>
       <Head>
-        <title>Architectural Consultancy as a Service (ACaaS)</title>
+        <title>
+          Spirit of Expertise - Architectural Consultancy As A Service (ACaaS) -
+          BG Unified Solutions
+        </title>
       </Head>
       <div className="position-absolute w-100 overflow-hidden background-svg-dns">
         <div className="w-100 image">
@@ -48,16 +51,14 @@ function DNS(props) {
             <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
               <Fade duration={700} delay={300} bottom>
                 <h1 className="display3 text-white">
-                  Architectural Consultancy as a Service (ACaaS)
+                  Architectural Consultancy As A Service (ACaaS)
                 </h1>
               </Fade>
               <Fade duration={700} delay={500} bottom>
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
                   BG Unified Solution has a team of practising
                   multi-disciplinary architects to baseline current architecture
-                  and its shortcomings, define future state architecture.
-                  Whatever be the technology stack(s) that your enterprise has
-                  adopted, we can help you future-proof it.
+                  and its shortcomings.
                 </p>
               </Fade>
             </div>
@@ -90,6 +91,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -99,6 +101,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6 my-3">
@@ -113,6 +116,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -122,6 +126,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
@@ -142,6 +147,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -151,6 +157,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                          </a>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6  my-3">
@@ -165,6 +172,7 @@ function DNS(props) {
                               "Cost Effective",
                             ]}
                           >
+                          <a href="#collapse-1" className="no-red">
                             <Button
                               className="mt-3"
                               variantColor="primary"
@@ -174,6 +182,7 @@ function DNS(props) {
                             >
                               Get a quote
                             </Button>
+                            </a>
                           </PricingCard>
                         </div>
                       </div>
@@ -181,7 +190,7 @@ function DNS(props) {
                   </TabPanel>
                 </TabPanels>
               </Tabs>
-              <div>
+              <div id="collapse-1" className="collapse-target">
                 <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
                   <div className="px-4 py-5 border">
                     <div className="display5 text-center">Standard DNS</div>
@@ -435,33 +444,36 @@ function DNS(props) {
                 <h4 className="display5 py-3 text-center">Related Services</h4>
               </div>
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/infra">
+                <Link href="/services/backup">
                   <a className="no-red">
                     <CardWithIcon
-                      icon="/assets/images/icons/monotone/server.svg"
+                      icon="/assets/images/icons/monotone/disk.svg"
                       title={
                         <div>
-                          Infrastructure <br /> as a service{" "}
+                          Backup <br /> As A service{" "}
                         </div>
                       }
-                      children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM"
+                      iconBg="#F33022"
+                      children="Clustering of Devices, Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, Cisco Wi-Fi and Aruba Wi-Fi."
                     />
                   </a>
                 </Link>
               </div>
 
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/storage">
+                <Link href="/services/contact-center">
                   <a className="no-red">
                     <CardWithIcon
                       icon="/assets/images/icons/monotone/cloud.svg"
                       title={
                         <div>
-                          Storage <br /> as a service{" "}
+                          Contact Center <br /> As A service{" "}
                         </div>
                       }
                       iconBg="#F3A622"
-                      children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage."
+                      children="BG Unified Solution’s CCaaS helps you provide a positive
+                  customer experience through a suite of advanced contact center
+                  tools."
                     />
                   </a>
                 </Link>
@@ -473,7 +485,7 @@ function DNS(props) {
                       icon="/assets/images/icons/monotone/earth_ouline.svg"
                       title={
                         <div>
-                          DNS <br /> as a service{" "}
+                          DNS <br /> As A service{" "}
                         </div>
                       }
                       iconBg="#5F1CE6"

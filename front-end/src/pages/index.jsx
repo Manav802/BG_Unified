@@ -281,7 +281,7 @@ class Landing extends Component {
                       icon="/assets/images/icons/monotone/dashboard.svg"
                       title={
                         <div>
-                          Cloud Platform <br /> As A service{" "}
+                          Platform <br /> As A service{" "}
                         </div>
                       }
                       iconBg="#19C741"
