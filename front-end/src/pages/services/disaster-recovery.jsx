@@ -24,26 +24,37 @@ function main(props) {
     <div>
       <Head>
         <title>Always stay aware and prepared | DR as a Service - BG Unified Solutions</title>
-      </Head>
-      <div className="position-absolute w-100 overflow-hidden background-svg">
-        <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
+      </Head>      
+      <div className="position-absolute w-100 overflow-hidden background-svg-dns">
+        <div className="w-100 image">
+          <img
+            className="w-100 dns"
+            src="/assets/images/backgrounds/domainhosting.jpg"
+          />
+        </div>
+        <div className="w-100 divider" />
       </div>
       <div className="page-header">
         <div className="container">
           <div className="row">
             <Fade duration={700} delay={300} bottom>
               <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                <h1 className="display3">DR as a Service</h1>
-                <h1 className="display3">DRaaS</h1>
+                <h1 className="display3 text-white">DR as a Service</h1>
+                <h1 className="display3 text-white">DRaaS</h1>
               </div>
+            </Fade>
+            <Fade duration={700} delay={500} bottom>
+              <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
+                Assist in DR strategy, evaluate threat models, select technologies, prototype multi-site or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.
+                </p>
             </Fade>
           </div>
         </div>
       </div>
       <div className="section">
-        <div className="container">
-          <Fade duration={500} bottom>
+        <div className="container mt-3">
             <div className="row justify-content-center px-lg-5 px-3">
+            <Fade duration={500} bottom>
               <div className="col-lg-4 my-3">
                 <PricingCard title="Two Geo Locations" icon="/assets/images/icons/theme/stack.svg" featureList={["Includes One Yearly Drill"]}>
                   <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls("Two Geo Locations")}}>View Options</Button>
@@ -54,8 +65,8 @@ function main(props) {
                   <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls("Three Geo Locations")}}>View Options</Button>
                 </PricingCard>
               </div>
+            </Fade>
             </div>
-          </Fade>
           <div>
           <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
               <div className="px-4 py-5 border">
@@ -210,23 +221,50 @@ function main(props) {
                 <h4 className="display5 py-3 text-center">Related Services</h4>
               </div>
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/infra">
+                <Link href="/services/contact-center">
                   <a className="no-red">
-                    <CardWithIcon icon="/assets/images/icons/monotone/server.svg" title={<div>Infrastructure <br /> as a service </div>} children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM" />
+                    <CardWithIcon
+                      icon="/assets/images/icons/monotone/server.svg"
+                      title={
+                        <div>
+                          Contact Center <br /> as a service{" "}
+                        </div>
+                      }
+                      iconBg="#0D5EA5"
+                      children="BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus."
+                    />
                   </a>
                 </Link>
               </div>
-
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/storage">
+                <Link href="/services/ucaas">
                   <a className="no-red">
-                    <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." /></a>
+                  <CardWithIcon
+                    icon="/assets/images/icons/monotone/server.svg"
+                    title={
+                      <div>
+                        UCaaS (Unified <br /> Communications)
+                      </div>
+                    }
+                    iconBg="#0D5EA5"
+                    children="Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business."
+                  />
+                  </a>
                 </Link>
               </div>
               <div className="col-xl-4 col-sm-6 my-2">
-                <Link href="/services/dns">
+                <Link href="/services/architectural-consultancy">
                   <a className="no-red">
-                    <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." /></a>
+                  <CardWithIcon
+                    icon="/assets/images/icons/monotone/server.svg"
+                    title={
+                      <div>
+                        Architectural <br /> Consultancy{" "}
+                      </div>
+                    }
+                    iconBg="#0D5EA5"
+                    children="BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and it’s shortcomings, define future state architecture. Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it"
+                  /></a>
                 </Link>
               </div>
             </div>

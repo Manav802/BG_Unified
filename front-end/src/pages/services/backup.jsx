@@ -19,20 +19,31 @@ function main(props) {
   const handleHourlyBackups = (hourlyBackups) => (hourlyBackups) ? (",Enabled Hourly Backups") : ("")
   return (
     <div>
+    <div className="position-absolute w-100 overflow-hidden background-svg-dns">
+        <div className="w-100 image">
+          <img
+            className="w-100 dns"
+            src="/assets/images/backgrounds/domainhosting.jpg"
+          />
+        </div>
+      </div>
       <Head>
         <title>Backup for your Digital system | Backup As A Service - BG Unified Solutions</title>
       </Head>
-      <div className="position-absolute w-100 overflow-hidden background-svg">
-        <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
-      </div>
+      
       <div className="page-header">
         <div className="container">
           <div className="row">
             <Fade duration={700} delay={300} bottom>
             <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-              <h1 className="display3">Backup As A Service</h1>
-              <h1 className="display3">BaaS</h1>
+              <h1 className="display3 text-white">Backup As A Service</h1>
+              <h1 className="display3 text-white">BaaS</h1>
             </div>
+            </Fade>
+            <Fade duration={700} delay={500} bottom>
+              <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
+                BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data.We can manage and scale your backups as per your preference.
+                </p>
             </Fade>
           </div>
         </div>
@@ -207,21 +218,40 @@ function main(props) {
                 </a>
               </Link>
             </div>
-
-            <div className="col-xl-4 col-sm-6 my-2">
-              <Link href="/services/storage">
-                <a className="no-red">
-                    <CardWithIcon icon="/assets/images/icons/monotone/cloud.svg" title={<div>Storage <br /> as a service </div>} iconBg="#F3A622" children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage." /></a>
-              </Link>
-            </div>
-            <div className="col-xl-4 col-sm-6 my-2">
-              <Link href="/services/dns">
-                <a className="no-red">
-                    <CardWithIcon icon="/assets/images/icons/monotone/earth_ouline.svg" title={<div>DNS <br /> as a service </div>} iconBg="#5F1CE6" children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching." /></a>
-              </Link>
-            </div>
-          </div>
+              <div className="col-xl-4 col-sm-6 my-2">
+                <Link href="/services/contact-center">
+                  <a className="no-red">
+                    <CardWithIcon
+                      icon="/assets/images/icons/monotone/server.svg"
+                      title={
+                        <div>
+                          Contact Center <br /> as a service{" "}
+                        </div>
+                      }
+                      iconBg="#0D5EA5"
+                      children="BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus."
+                    />
+                  </a>
+                </Link>
+              </div>
+              <div className="col-xl-4 col-sm-6 my-2">
+                <Link href="/services/ucaas">
+                  <a className="no-red">
+                  <CardWithIcon
+                    icon="/assets/images/icons/monotone/server.svg"
+                    title={
+                      <div>
+                        UCaaS (Unified <br /> Communications)
+                      </div>
+                    }
+                    iconBg="#0D5EA5"
+                    children="Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business."
+                  />
+                  </a>
+                </Link>
+              </div>
         </div>
+      </div>
       </div>
       </Fade>
     </div>

@@ -56,25 +56,36 @@ function main(props) {
             <Head>
                 <title>Trendsetting web hosting solutions | Web Hosting As A Service - BG Unified Solutions</title>
             </Head>
-        <div className="position-absolute w-100 overflow-hidden background-svg">
-            <img className="w-100" src="/assets/images/backgrounds/dots_circle.jpg" />
+      <div className="position-absolute w-100 overflow-hidden background-svg-dns">
+        <div className="w-100 image">
+          <img
+            className="w-100 dns"
+            src="/assets/images/backgrounds/domainhosting.jpg"
+          />
         </div>
+        <div className="w-100 divider" />
+      </div>
         <div className="page-header">
             <div className="container">
             <div className="row">
                 <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
                     <Fade duration={700} delay={300} bottom>
-                    <h1 className="display3">Web Hosting As A Service</h1>
-                    <h1 className="display3">
+                    <h1 className="display3 text-white">Web Hosting As A Service</h1>
+                    <h1 className="display3 text-white">
                         WHaaS
                     </h1>
                     </Fade>
+                    <Fade duration={700} delay={500} bottom>
+              <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
+                Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package.
+                </p>
+            </Fade>
                 </div>
             </div>
             </div>
         </div>
         <div className="section">
-            <div className="container">
+            <div className="container mt-3">
                 <Fade duration={500} bottom>
                 <div className="row px-lg-5 px-3">
                     <div className="col-lg-4 my-3">
