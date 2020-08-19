@@ -224,7 +224,7 @@ function main(props) {
                     </Slider>
                   </div>
                   <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                    <PricingQuote button></PricingQuote>
+                    <PricingQuote button serviceDescription="yoyo"></PricingQuote>
                   </div>
                 </div>
               </div>

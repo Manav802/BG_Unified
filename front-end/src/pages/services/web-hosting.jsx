@@ -39,59 +39,106 @@ const CustomRadio = React.forwardRef((props, ref) => {
 });
 
 function main(props) {
-    const [show, setShow] = React.useState(false);
-    const openControls = () => setShow(true);
-    const [plan,setPlan] = React.useState("");
-    const types = [{name:"Non resilient (APACHE)",icon:""},
-    {name:"Non resilient (APACHE) with MYSQL DB",icon:""},
-    {name:"Non resilient WINDOWS 2016 STD",icon:""},
-    {name:"Non resilient WINDOWS 2016 STD WITH DB ATTACHED",icon:""},
-    {name:"Resilient (APACHE)",icon:""},
-    {name:"Resilient (APACHE) with MYSQL DB",icon:""},
-    {name:"Resilient WINDOWS 2016 STD",icon:""},
-    {name:"Resilient WINDOWS 2016 STD WITH DB ATTACHED",icon:""},
-    {name:"Dedicated DB Server (Windows 2016 Standard with SQL Server) with daily backups.",icon:""},
-    {name:"Dedicated DB Server (Windows 2016 Standard with SQL Server) with hourly snapshots.",icon:""}]
-    const [type,setType] = React.useState(`,${types[1].name}`);
-    const [dailyBackups, setDailyBackups] = React.useState(false);
-    const handledailyBackups = (dailyBackups) => (dailyBackups) ? (",Enabled Daily Backups") : ("")
-    const [UTMSwitch,setUTMSwitch] = React.useState(false);
-    const handleUTMSwitch = (UTMSwitch) => (UTMSwitch) ? (",Enabled UTM Firewall Protection") : ("")
-    const [UTM,setUTM] = React.useState(0);
-    const [showUTMSlider, setShowUTMSlider] = React.useState(false);
-    const [IP,setIP] = React.useState(0);
-
-    return (
-        <div>
-            <Head>
-                <title>Trendsetting web hosting solutions | Web Hosting As A Service - BG Unified Solutions</title>
-            </Head>
-      <div className="position-absolute w-100 overflow-hidden background-svg-dns">
-        <div className="w-100 image">
-          <img
-            className="w-100 dns"
-            src="/assets/images/backgrounds/domainhosting.jpg"
-          />
-        </div>
-        <div className="w-100 divider" />
+  const [show, setShow] = React.useState(false);
+  const openControls = () => setShow(true);
+  const [value, setValue] = React.useState(0);
+  const handleChange = (value) => setValue(value);
+  return (
+    <div>
+      <Head>
+        <title>Web Hosting As A Service</title>
+      </Head>
+      <div className="position-absolute w-100 overflow-hidden background-svg">
+        <img
+          className="w-100"
+          src="/assets/images/backgrounds/dots_circle.jpg"
+        />
       </div>
-        <div className="page-header">
-            <div className="container">
-            <div className="row">
-                <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                    <Fade duration={700} delay={300} bottom>
-                    <h1 className="display3 text-white">Web Hosting As A Service</h1>
-                    <h1 className="display3 text-white">
-                        WHaaS
-                    </h1>
-                    </Fade>
-                    <Fade duration={700} delay={500} bottom>
-              <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
-                Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package.
-                </p>
-            </Fade>
-                </div>
+      <div className="page-header">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
+              <Fade duration={700} delay={300} bottom>
+                <h1 className="display3">Web Hosting As A Service</h1>
+                <h1 className="display3">{/* insert here short form */}</h1>
+              </Fade>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="section">
+        <div className="container">
+          <Fade duration={500} bottom>
+            <div className="row px-lg-5 px-3">
+              <div className="col-lg-4 my-3">
+                <PricingCard
+                  title="Single Node CUCM"
+                  icon="/assets/images/icons/theme/firewall_virtual.svg"
+                  featureList={[
+                    "Include Voicemail",
+                    "Include Presence",
+                    "Include Voicemail to Email",
+                    "Include Cisco Jabber",
+                  ]}
+                >
+                  <Button
+                    className="mt-3"
+                    variantColor="primary"
+                    variant="outline"
+                    size="lg"
+                    onClick={openControls}
+                  >
+                    View More
+                  </Button>
+                </PricingCard>
+              </div>
+              <div className="col-lg-4 my-3">
+                <PricingCard
+                  title="Single Node CUCM"
+                  icon="/assets/images/icons/theme/firewall_virtual.svg"
+                  featureList={[
+                    "Include Voicemail",
+                    "Include Presence",
+                    "Include Voicemail to Email",
+                    "Include Cisco Jabber",
+                  ]}
+                >
+                  <Button
+                    className="mt-3"
+                    variantColor="primary"
+                    variant="outline"
+                    size="lg"
+                    onClick={openControls}
+                  >
+                    View More
+                  </Button>
+                </PricingCard>
+              </div>
+              <div className="col-lg-4 my-3">
+                <PricingCard
+                  className="hover-effect"
+                  title="Single Node CUCM"
+                  icon="/assets/images/icons/theme/firewall_virtual.svg"
+                  featureList={[
+                    "Include Voicemail",
+                    "Include Presence",
+                    "Include Voicemail to Email",
+                    "Include Cisco Jabber",
+                  ]}
+                >
+                  <Button
+                    className="mt-3"
+                    variantColor="primary"
+                    variant="outline"
+                    size="lg"
+                    onClick={openControls}
+                  >
+                    View More
+                  </Button>
+                </PricingCard>
+              </div>
+            </div>
+          </Fade>
           <div>
             <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
               <div className="px-4 py-5 border">
@@ -177,7 +224,7 @@ function main(props) {
                     </Slider>
                   </div>
                   <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                    <PricingQuote button></PricingQuote>
+                    <PricingQuote button serviceDescription="standard, welcome"></PricingQuote>
                   </div>
                 </div>
               </div>
