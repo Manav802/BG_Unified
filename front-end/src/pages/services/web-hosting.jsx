@@ -139,7 +139,7 @@ function main(props) {
                                 }
                                 <div className="col-lg-10 offset-lg-1">
                                     <Collapse className="mt-3" isOpen={showUTMSlider}>
-                                    <div className="h6">Additional Web Servers for UTM Firewall Protection</div>
+                                    <FormLabel htmlFor="UTM-Firewall">Additional Web Servers for UTM Firewall Protection :</FormLabel>
                                     <Slider
                                         color="primary"
                                         defaultValue={0}
