@@ -1,28 +1,15 @@
-import React from "react";
-import {
-  Button,
-  Collapse,
-  Image,
-  Radio,
-  Switch,
-  FormLabel,
-  Flex,
-  RadioButtonGroup,
-  NumberInput,
-  NumberInputField,
-  NumberInputStepper,
-  NumberIncrementStepper,
-  NumberDecrementStepper,
-  Slider,
-  SliderThumb,
-  SliderTrack,
-  SliderFilledTrack,
-} from "@chakra-ui/core";
-import Fade from "react-reveal/Fade";
-import CardWithIcon from "../../components/cards/CardWithIcon";
-import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
-import Head from "next/head";
-import Link from "next/link";
+import React from 'react';
+import {Button, Collapse, Image, NumberInput,Select,
+    NumberInputField,
+    NumberInputStepper,
+    NumberIncrementStepper,
+    NumberDecrementStepper,
+Slider, SliderThumb, SliderTrack, SliderFilledTrack,Switch,FormLabel} from '@chakra-ui/core'
+import Fade from 'react-reveal/Fade';
+import CardWithIcon from "../../components/cards/CardWithIcon"
+import {PricingCard, PricingQuote} from '../../components/cards/PricingCard'
+import Head from 'next/head'
+import Link from 'next/link'
 
 const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + " " + text : "");
 
@@ -55,7 +42,7 @@ function main(props) {
     {name:"Resilient WINDOWS 2016 STD WITH DB ATTACHED",icon:""},
     {name:"Dedicated DB Server (Windows 2016 Standard with SQL Server) with daily backups.",icon:""},
     {name:"Dedicated DB Server (Windows 2016 Standard with SQL Server) with hourly snapshots.",icon:""}]
-    const [type,setType] = React.useState(`,${types[1].name}`);
+    const [type,setType] = React.useState(`,${types[0].name}`);
     const [dailyBackups, setDailyBackups] = React.useState(false);
     const handledailyBackups = (dailyBackups) => (dailyBackups) ? (",Enabled Daily Backups") : ("")
     const [UTMSwitch,setUTMSwitch] = React.useState(false);
@@ -112,21 +99,19 @@ function main(props) {
                         <div className="px-4 py-5 border">
                             <div className="display5 text-center">{plan}</div>
                             <div className="row px-3">
-                                <div className="col-lg-12 mt-2">
+                                <div className="col-lg-10 offset-lg-1 my-3">
                                     <div className="h6">Choose a type : </div>
-                                    <RadioButtonGroup onChange={(value) => {
-                                                                    setType(value);
-                                                                }} defaultValue={`,${types[1].name}`} mt={4} isInline>
-                                        {types.map((x)=><CustomRadio className="my-1" value={`,${x.name}`}>{x.icon} {x.name}</CustomRadio>)}
-                                    </RadioButtonGroup>
+                                    <Select onChange={(e)=>{setType(e.target.value)}} variant="outline"  > 
+                                    {types.map((x)=> <option key={x.name} value={`,${x.name}`}>{x.name}</option>)}
+                                    </Select>
                                 </div>
-                                <div className="col-lg-12 mt-3">
+                                <div className="col-lg-12 offset-lg-1 my-3">
                                     
                                     <Switch onChange={(e) => { setDailyBackups(e.target.checked) }} color="primary" mb={0} id="daily-backups" />
                                     <FormLabel mb={0} ml="12px" htmlFor="hourly-backup">Daily Backups</FormLabel>
                                    
                                 </div>
-                                <div className="col-lg-12 mt-3">
+                                <div className="col-lg-11 offset-lg-1 mt-2">
                                     
                                     <Switch onChange={(e) => { setUTMSwitch(e.target.checked);
                                     if(e.target.checked==false){setShowUTMSlider(false); setUTM(0);}  }} color="primary" mb={0} id="UTM-switch" />
@@ -136,7 +121,7 @@ function main(props) {
                                    
                                 </div>
                                 {UTMSwitch &&
-                                <div className="col-lg-12 mt-2">
+                                <div className="col-lg-11 offset-lg-1 mt-2">
                                 <p className=" NunitoSans-Bold ">
                                         {" "}
                                         - This type includes maximum 2 web servers.
@@ -146,15 +131,15 @@ function main(props) {
                                         }}
                                         >
                                         {" "}
-                                        Add Additional Web Servers for UTM Protection?{" "}
+                                        Add Additional Web Servers for UTM Firewall Protection?{" "}
                                         </a>{" "}
                                     </p>
                                    
                                 </div>
                                 }
-                                <div className="col-lg-11">
+                                <div className="col-lg-10 offset-lg-1">
                                     <Collapse className="mt-3" isOpen={showUTMSlider}>
-                                    <div className="h6">Additional Web Servers for UTM Protection</div>
+                                    <div className="h6">Additional Web Servers for UTM Firewall Protection</div>
                                     <Slider
                                         color="primary"
                                         defaultValue={0}
@@ -164,22 +149,22 @@ function main(props) {
                                         setUTM(value);
                                         }}
                                     >
-                                        <SliderTrack h="16px" borderRadius="8px" />
-                                        <SliderFilledTrack h="16px" borderRadius="8px" />
+                                        <SliderTrack h="14px" borderRadius="7px" />
+                                        <SliderFilledTrack h="14px" borderRadius="7px" />
                                         <SliderThumb
                                         className="shadow-md"
                                         fontSize="md"
                                         fontWeight="800"
                                         width="auto"
                                         padding="8px"
-                                        height="32px"
+                                        height="28px"
                                         children={UTM}
                                         />
                                     </Slider>
                                     </Collapse>
                                 </div>
 
-                                <div className="col-lg-5 mt-4">
+                                <div className="col-lg-5 offset-lg-1 mt-4 mb-2">
                                     <div className="h6">Public IPs</div>
                                     <NumberInput
                                     onChange={(value) => setIP(value)}
