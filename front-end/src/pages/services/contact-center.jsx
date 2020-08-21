@@ -71,26 +71,30 @@ function main(props) {
       <Head>
         <title>Contact Center As A Service</title>
       </Head>
-      <div className="position-absolute w-100 overflow-hidden background-svg">
-        <img
-          className="w-100"
-          src="/assets/images/backgrounds/dots_circle.jpg"
-        />
+      <div className="position-absolute w-100 overflow-hidden background-svg-dns">
+        <div className="w-100 image">
+          <img
+            className="w-100 dns"
+            src="/assets/images/backgrounds/domainhosting.jpg"
+          />
+        </div>
+        <div className="w-100 divider" />
       </div>
       <div className="page-header">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
+            <div className="col-lg-8 offset-lg-2 text-center text-white justify-content-center">
               <Fade duration={700} delay={300} bottom>
-                <h1 className="display3">
+                <h1 className="display3 text-white">
                   Contact Center As A Service (CCaaS)
                 </h1>
               </Fade>
               <Fade duration={700} delay={500} bottom>
-                BG Unified Solution’s CCaaS helps you provide a positive
+              <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
+                CCaaS helps you provide a positive
                 customer experience through a suite of advanced contact center
-                tools and we have deep contracts with all major Telcos including
-                AAPT, Telstra and Optus.
+                tools
+              </p>
               </Fade>
             </div>
           </div>

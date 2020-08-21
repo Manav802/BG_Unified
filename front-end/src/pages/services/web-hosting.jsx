@@ -55,19 +55,27 @@ function main(props) {
       <Head>
         <title>Web Hosting As A Service</title>
       </Head>
-      <div className="position-absolute w-100 overflow-hidden background-svg">
-        <img
-          className="w-100"
-          src="/assets/images/backgrounds/dots_circle.jpg"
-        />
+      <div className="position-absolute w-100 overflow-hidden background-svg-dns">
+        <div className="w-100 image">
+          <img
+            className="w-100 dns"
+            src="/assets/images/backgrounds/domainhosting.jpg"
+          />
+        </div>
+        <div className="w-100 divider" />
       </div>
       <div className="page-header">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
+            <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
               <Fade duration={700} delay={300} bottom>
-                <h1 className="display3">Web Hosting As A Service</h1>
-                <h1 className="display3">{/* insert here short form */}</h1>
+                <h1 className="display3 text-white">Web Hosting As A Service</h1>
+                <h1 className="display3 text-white">(WHaaS)</h1>
+              </Fade>
+              <Fade duration={700} delay={500} bottom>
+                <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
+                Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package. Load balancing can also be added as an option if required.
+                </p>
               </Fade>
             </div>
           </div>
@@ -124,14 +132,15 @@ function main(props) {
                                 <div className="col-lg-11 offset-lg-1 mt-2">
                                 <p className=" NunitoSans-Bold ">
                                         {" "}
-                                        - This type includes maximum 2 web servers.
+                                        This type includes maximum 2 web servers for UTM Firewall Protection.
                                         <a
+                                        className="text-primary"
                                         onClick={() => {
                                             setShowUTMSlider(!showUTMSlider); setUTM(0);
                                         }}
                                         >
-                                        {" "}
-                                        Add Additional Web Servers for UTM Firewall Protection?{" "}
+                                        {"  "}
+                                        Add Additional Web Servers{" "}
                                         </a>{" "}
                                     </p>
                                    

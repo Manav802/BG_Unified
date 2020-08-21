@@ -1,6 +1,5 @@
 import React from 'react';
 import {dynamicSearch, searchData} from "../../../public/assets/js/searchFunctions"
-import TransitionGroup from 'react-transition-group/TransitionGroup';
 import {Icon,
     Modal,
     ModalOverlay,

@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Button, Collapse, Image, Select,
-  Slider, SliderThumb, SliderTrack, SliderFilledTrack, Flex, FormLabel, Switch
+import {Image
 } from '@chakra-ui/core'
 import Fade from 'react-reveal/Fade';
 import CardWithIcon from "../../components/cards/CardWithIcon"
@@ -12,7 +10,7 @@ function main(props) {
   return (
     <div>
       <Head>
-        <title>Proxy,Your Way | Proxy as a Service - BG Unified Solutions</title>
+        <title>Proxy,Your Way - Proxy as a Service | BG Unified Solutions</title>
       </Head>
 <div className="position-absolute w-100 overflow-hidden background-svg-dns">
         <div className="w-100 image">
@@ -25,21 +23,24 @@ function main(props) {
       </div>
       <div className="page-header">
         <div className="container">
-          <div className="row">
-            <Fade duration={700} delay={300} bottom>
-              <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                <h1 className="display3 text-white">Proxy as a Service</h1>
-                <h1 className="display3 text-white">PRaaS</h1>
-              </div>
-            </Fade>
-                          <Fade duration={700} delay={500} bottom>
-                <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
-                  Just redirect your traffic to our Proxy Service either by DNS or other custom solution to our public Proxy Service and then create a record to reroute your traffic to your application behind the firewall.
-                </p>
+          <div className="row mt-4">
+            <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
+              <Fade duration={700} delay={300} bottom>
+                <h1 className="display3 text-white">
+                  Proxy As A Service (PRaaS)
+                                </h1>
               </Fade>
+              <Fade duration={700} delay={500} bottom>
+                <p
+                  className="h6 mt-3 text-white"
+                  style={{ opacity: ".7" }}
+                >Just redirect your traffic to our Proxy Service either by DNS or other custom solution to our public Proxy Service.
+                                </p>
+              </Fade>
+              </div>
           </div>
         </div>
-      </div>
+      </div>s
       <div className="section">
         <div className="container">
           <Fade duration={500} bottom>
@@ -130,14 +131,12 @@ Firewall
               <div className="col-12 col-md-6">
                 <p className="lead text-justify">
                   We ensure complete security for your proxy servers. Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA. Centralized Policy Management using Panorama, Sourcefire DC. We offer varied Proxy Solutions. Network filtering is our main feature, achieved by Multiple IP types globally, in a clustered or isolated environment. Enhanced proxy service by isolating the private network from the web, thus allowing limiting access of private network users to Internet-based resources.
-                  BG Solutions has gained an excellent reputation in design and implementation of IP technology and significant experience in Proxy services design and implementation for a number of clients and in distributed environments and locations.
+BG Solutions has gained an excellent reputation in design and implementation of IP technology and Proxy services by designing and implementing them for a number of clients and in distributed environments and locations.
               </p>
               </div>
               <div className="col-12 col-md-6">
                 <p className="lead text-justify">
-                  BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use information technology to improve their business results.
-                  We give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches.
-                 We have a ‘can-do’ attitude with an ‘easy to work with’ culture. Our values are based around fresh thinking, delivering on our promises, showing customer respect and making a 100% commitment.
+                  BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use information technology to improve their business results.We give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches.We have a ‘can-do’ attitude with an ‘easy to work with’ culture. Our values are based around fresh thinking, delivering on our promises, showing customer respect and making a 100% commitment.
                 </p>
               </div>
             </div>
@@ -206,5 +205,4 @@ Firewall
     </div>
   );
 }
-
 export default main;

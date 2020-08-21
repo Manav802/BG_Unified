@@ -222,22 +222,25 @@ function main(props) {
       <Head>
         <title>Infrastructure As A Service(IaaS)</title>
       </Head>
-      <div className="position-absolute w-100 overflow-hidden background-svg">
-        <img
-          className="w-100"
-          src="/assets/images/backgrounds/dots_circle.jpg"
-        />
+      <div className="position-absolute w-100 overflow-hidden background-svg-dns">
+        <div className="w-100 image">
+          <img
+            className="w-100 dns"
+            src="/assets/images/backgrounds/domainhosting.jpg"
+          />
+        </div>
+        <div className="w-100 divider" />
       </div>
       <div className="page-header">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-              <h1 className="display3">Infrastructure As A Service(IaaS)</h1>
+              <h1 className="display3 text-white">Infrastructure As A Service(IaaS)</h1>
             </div>
           </div>
         </div>
       </div>
-      <div className="section">
+      <div className="section mid-margin">
         <div className="container">
           <div className="row justify-content-center">
             <Button

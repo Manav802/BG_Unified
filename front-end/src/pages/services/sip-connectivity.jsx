@@ -11,6 +11,7 @@ import {
   TabPanels,
   Collapse,
   Slider,
+  Select,
   SliderThumb,
   SliderTrack,
   SliderFilledTrack,
@@ -25,14 +26,29 @@ import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 import Head from "next/head";
 import Link from "next/link";
 
+const ChannelSelector = (props) => (
+    <Select my={5} onChange={props.change} focusBorderColor="primary.500" value={props.channel}>
+      <option value="SIP-10">SIP-10</option>
+      <option value="SIP-20">SIP-20</option>
+      <option value="SIP-50">SIP-50</option>
+      <option value="SIP-100">SIP-100</option>
+      <option value="SIP-200">SIP-200</option>
+      <option value="SIP-250">SIP-250</option>
+      <option value="SIP-300">SIP-300</option>
+    </Select>
+)
+
 function SIP(props) {
-  const [show, setShow] = React.useState(false);
+  const [channel, setChannel] = React.useState("SIP-20");
+  const handleChange = (e) => {
+    setChannel(e.target.value)
+  }
   const openControls = () => setShow(true);
   return (
     <div>
       <Head>
         <title>
-          Innovation and Excellence - SIP As A Service(SaaS)- BG Unified
+          Innovation and Excellence - SIP As A Service(SIPaaS) | BG Unified
           Solutions
         </title>
       </Head>
@@ -50,7 +66,7 @@ function SIP(props) {
           <div className="row">
             <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
               <Fade duration={700} delay={300} bottom>
-                <h1 className="display3 text-white">SIP As A Service(SaaS)</h1>
+                <h1 className="display3 text-white">SIP As A Service (SIPaaS)</h1>
               </Fade>
               <Fade duration={700} delay={500} bottom>
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
@@ -69,8 +85,8 @@ function SIP(props) {
             <div className="col-lg-10 offset-lg-1">
               <Tabs align="center">
                 <TabList style={{ borderBottomColor: "#ffffff22" }}>
-                  <Tab className="py-4 px-5 display6 text-white">Windows</Tab>
-                  <Tab className="py-4 px-5 display6 text-white">BIND</Tab>
+                  <Tab className="py-4 px-5 display6 text-white">Single</Tab>
+                  <Tab className="py-4 px-5 display6 text-white">Cluster</Tab>
                 </TabList>
 
                 <TabPanels>
@@ -80,51 +96,17 @@ function SIP(props) {
                         <div className="col-lg-5 col-sm-6 col-md-6 my-3">
                           <PricingCard
                             icon="/assets/images/icons/theme/stack.svg"
-                            title="Standard DNS (BlackBox)"
+                            title="Single Cube"
                             featureList={[
-                              "Includes 5 Zones",
-                              "Low Latency",
-                              "High Availabilty",
-                              "BlackBox Service",
-                              "Cost Effective",
+                              "AU Calling Costs Included",
+                              "Fully Managed Service",
+                              "Monthly Reporting",
+                              "*Inbound Calling Costs to 1300/13 not Included",
+                              "Inbound call rates will be provided"
                             ]}
                           >
-                          <a href="#collapse-1" className="no-red">
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={openControls}
-                            >
-                              Get a quote
-                            </Button>
-                            </a>
-                          </PricingCard>
-                        </div>
-                        <div className="col-lg-5 col-sm-6 col-md-6 my-3">
-                          <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
-                            title="Premium DNS (BlackBox)"
-                            featureList={[
-                              "Includes 5 Zones",
-                              "Low Latency",
-                              "High Availabilty",
-                              "BlackBox Service",
-                              "Cost Effective",
-                            ]}
-                          >
-                          <a href="#collapse-1" className="no-red">
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={openControls}
-                            >
-                              Get a quote
-                            </Button>
-                            </a>
+                            <ChannelSelector change={handleChange} channel={channel}></ChannelSelector>
+                            <PricingQuote button serviceName="SIP As A Service" serviceDescription={"Single Cube, " + channel}></PricingQuote>
                           </PricingCard>
                         </div>
                       </div>
@@ -133,129 +115,59 @@ function SIP(props) {
                   <TabPanel className="py-2">
                     <Fade duration={500} bottom>
                       <div className="row justify-content-center">
-                        <div className="col-lg-5 col-sm-6 col-md-6 my-3">
+                      <div className="col-lg-4 col-sm-6 col-md-6 p-1 my-3">
                           <PricingCard
                             icon="/assets/images/icons/theme/stack.svg"
-                            title="Standard DNS (BlackBox)"
+                            title="Cluster Cube"
                             featureList={[
-                              "Includes 5 Zones",
-                              "Low Latency",
-                              "High Availabilty",
-                              "BlackBox Service",
-                              "Cost Effective",
+                              "AU Calling Costs Included",
+                              "Fully Managed Service",
+                              "Monthly Reporting",
+                              "*Inbound Calling Costs to 1300/13 not Included",
+                              "Inbound call rates will be provided"
                             ]}
                           >
-                          <a href="#collapse-1" className="no-red">
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={openControls}
-                            >
-                              Get a quote
-                            </Button>
-                            </a>
+                            <ChannelSelector change={handleChange} channel={channel}></ChannelSelector>
+                            <PricingQuote button serviceName="SIP As A Service" serviceDescription={"Cluster Cube, " + channel}></PricingQuote>
                           </PricingCard>
-                        </div>
-                        <div className="col-lg-5 col-sm-6 col-md-6  my-3">
+                          </div>  
+                          <div className="col-lg-4 col-sm-6 col-md-6 p-1 my-3">
                           <PricingCard
                             icon="/assets/images/icons/theme/stack.svg"
-                            title="Premium DNS (BlackBox)"
+                            title="Cluster Cube DEH"
                             featureList={[
-                              "Includes 5 Zones",
-                              "Low Latency",
-                              "High Availabilty",
-                              "BlackBox Service",
-                              "Cost Effective",
+                              "AU Calling Costs Included",
+                              "Fully Managed Service",
+                              "Monthly Reporting",
+                              "*Inbound Calling Costs to 1300/13 not Included",
+                              "Inbound call rates will be provided"
                             ]}
                           >
-                          <a href="#collapse-1" className="no-red">
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={openControls}
-                            >
-                              Get a quote
-                            </Button>
-                            </a>
+                            <ChannelSelector change={handleChange} channel={channel}></ChannelSelector>
+                            <PricingQuote button serviceName="SIP As A Service" serviceDescription={"Cluster Cube DEH, " + channel}></PricingQuote>
                           </PricingCard>
-                        </div>
+                          </div>   
+                          <div className="col-lg-4 col-sm-6 col-md-6 p-1 my-3">
+                          <PricingCard
+                            icon="/assets/images/icons/theme/stack.svg"
+                            title={<div className="text-center"> Cluster Cube DEH <br/> <small> (with Multiple DC) </small> </div>}
+                            featureList={[
+                              "AU Calling Costs Included",
+                              "Fully Managed Service",
+                              "Monthly Reporting",
+                              "*Inbound Calling Costs to 1300/13 not Included",
+                              "Inbound call rates will be provided"
+                            ]}
+                          >
+                            <ChannelSelector change={handleChange} channel={channel}></ChannelSelector>
+                            <PricingQuote button serviceName="SIP As A Service" serviceDescription={"Cluster Cube with Multiple DC, " + channel}></PricingQuote>
+                          </PricingCard>
+                          </div>                       
                       </div>
                     </Fade>
                   </TabPanel>
                 </TabPanels>
               </Tabs>
-              <div id="collapse-1" className="collapse-target">
-                <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
-                  <div className="px-4 py-5 border">
-                    <div className="display5 text-center">Standard DNS</div>
-                    <div className="row px-3">
-                      <div className="col-lg-12 mt-4">
-                        <div className="h6">Extra Zones</div>
-                        <Slider
-                          color="primary"
-                          my="24px"
-                          max={30}
-                          defaultValue={1}
-                          value={0}
-                        >
-                          <SliderTrack h="16px" borderRadius="8px" />
-                          <SliderFilledTrack h="16px" borderRadius="8px" />
-                          <SliderThumb
-                            className="shadow-md"
-                            fontSize="md"
-                            fontWeight="800"
-                            width="auto"
-                            padding="8px"
-                            height="32px"
-                            children={23}
-                          />
-                        </Slider>
-                      </div>
-                      <div className="my-1 col-lg-6 mt-3 d-flex justify-content-between">
-                        <Flex py="12px" justify="center" align="center">
-                          <Switch
-                            onChange={(e) => {
-                              setFailOverNode(e.target.checked);
-                            }}
-                            color="primary"
-                            mb={0}
-                            id="failOverNode"
-                          />
-                          <FormLabel mb={0} ml="12px" htmlFor="fail-over node">
-                            Include Redundant DNS
-                          </FormLabel>
-                        </Flex>
-                      </div>
-                      <div className="my-1 col-lg-6 mt-3 d-flex justify-content-between">
-                        <Flex py="12px" justify="center" align="center">
-                          <Switch
-                            onChange={(e) => {
-                              setFailOverNode(e.target.checked);
-                            }}
-                            color="primary"
-                            mb={0}
-                            id="failOverNode"
-                          />
-                          <FormLabel mb={0} ml="12px" htmlFor="fail-over node">
-                            Add Daily Backup
-                          </FormLabel>
-                        </Flex>
-                      </div>
-                      <div className="col-lg-12 mt-5 d-flex justify-content-center">
-                        <PricingQuote
-                          serviceName="DNS As A Service"
-                          serviceDescription="Hello"
-                          button
-                        ></PricingQuote>
-                      </div>
-                    </div>
-                  </div>
-                </Collapse>
-              </div>
             </div>
           </div>
         </div>

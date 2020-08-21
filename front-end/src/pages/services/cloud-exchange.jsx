@@ -24,19 +24,20 @@ function main(props) {
         </div>
         <div className="w-100 divider" />
       </div>
-      <div className="page-header mt-3">
+      <div className="page-header">
         <div className="container">
           <div className="row">
-          <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
-            <Fade duration={700} delay={300} bottom>
-                <h1 className="display3 text-white">Cloud Exchange Connectivity as a Service</h1>
-                <h1 className="display3 text-white">CXaaS</h1>
-              
-            </Fade>
-            <Fade duration={700} delay={500} bottom>
-            <p className="display5 text-white">Express Routes to office 365, AWS, Azure</p> 
-            </Fade>
-            </div> 
+            <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
+              <Fade duration={700} delay={300} bottom>
+                <h1 className="display3 text-white">CEX As A Service</h1>
+                <h1 className="display3 text-white">(CXaaS)</h1>
+              </Fade>
+              <Fade duration={700} delay={500} bottom>
+                <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
+                Express Routes to office 365, AWS, Azure. Advanced Solution provides private, seamless, and on-demand connections to many clouds as well as networks.
+                </p>
+              </Fade>
+            </div>
           </div>
         </div>
       </div>

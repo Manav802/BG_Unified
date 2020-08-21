@@ -50,7 +50,7 @@ function DNS(props) {
                         <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
                             <Fade duration={700} delay={300} bottom>
                                 <h1 className="display3 text-white">
-                                    SD-WAN As A Service
+                                    SD-WAN As A Service (SDaaS)
                                 </h1>
                             </Fade>
                             <Fade duration={700} delay={500} bottom>

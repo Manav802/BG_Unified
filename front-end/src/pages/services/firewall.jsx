@@ -35,10 +35,10 @@ function Firewall(props) {
       <div className="page-header">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
+            <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
               <Fade duration={700} delay={300} bottom>
                 <h1 className="display3 text-white">Firewall As A Service</h1>
-                <h1 className="display3 text-white">FwaaS</h1>
+                <h1 className="display3 text-white">(FwaaS)</h1>
               </Fade>
               <Fade duration={700} delay={500} bottom>
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>

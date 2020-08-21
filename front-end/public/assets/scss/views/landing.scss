@@ -14,6 +14,11 @@
         animation-duration: 5s;
         animation-iteration-count: infinite;
     }
+    .slider{
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
     @keyframes blur {
         0%{
             filter: opacity(0);

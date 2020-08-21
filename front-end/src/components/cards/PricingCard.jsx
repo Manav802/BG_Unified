@@ -26,7 +26,7 @@ function PricingQuote(props) {
 
 function PricingCard(props) {
   return (
-    <div className="shadow-md p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
+    <div className="shadow-md h-100 p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
       <Image src={props.icon} padding="8px" height="64px"></Image>
       <span className="mt-3 h6 NunitoSans-Bold">{props.title}</span>
       {props.featureList && (

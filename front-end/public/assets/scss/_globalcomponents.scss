@@ -61,10 +61,14 @@ button{
 .bg-primary{
     background: $color-primary !important;
 }
+.bg-disabled{
+    background: #CCC !important;
+}
 
 .outline-none{
     outline: none;
 }
+
 .box-none{
     outline: none !important;
     box-shadow: none !important;

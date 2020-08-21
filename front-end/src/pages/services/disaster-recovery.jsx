@@ -38,13 +38,13 @@ function main(props) {
         <div className="container">
           <div className="row">
             <Fade duration={700} delay={300} bottom>
-              <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-                <h1 className="display3 text-white">DR As A Service</h1>
-                <h1 className="display3 text-white">DRaaS</h1>
+              <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
+                <h1 className="display3 text-white">DR As A Service (DRaaS)</h1>
+                <h1 className="display3 text-white"></h1>
               </div>
             </Fade>
             <Fade duration={700} delay={500} bottom>
-              <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
+              <p className="h6 mt-3 text-white text-center" style={{ opacity: ".7" }}>
                 Assist in DR strategy, evaluate threat models, select technologies, prototype multi-site or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.
                 </p>
             </Fade>

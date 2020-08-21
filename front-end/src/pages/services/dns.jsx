@@ -25,9 +25,18 @@ import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 import Head from "next/head";
 import Link from "next/link";
 
+const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + " " + text : "");
+
 function DNS(props) {
   const [show, setShow] = React.useState(false);
+  const [plan, setPlan] = React.useState("");
   const openControls = () => setShow(true);
+  const [type, setType] = React.useState("Windows");
+  const [zones,setZone] = React.useState(0);
+  const [dailyBackups, setDailyBackups] = React.useState(false);
+  const handledailyBackups = (dailyBackups) => (dailyBackups) ? (",Add Daily Backups") : ("")
+  const [redundantDNS,setRedundantDNS] = React.useState(false);
+  const handleRedundantDNS = (redundantDNS) => (redundantDNS) ? (",Include Redundant DNS") : ("")
   return (
     <div>
       <Head>
@@ -48,7 +57,7 @@ function DNS(props) {
             <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
               <Fade duration={700} delay={300} bottom>
                 <h1 className="display3 text-white">DNS As A Service</h1>
-                <h1 className="display3 text-white">DNSaaS</h1>
+                <h1 className="display3 text-white">(DNSaaS)</h1>
               </Fade>
               <Fade duration={700} delay={500} bottom>
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
@@ -67,8 +76,8 @@ function DNS(props) {
             <div className="col-lg-10 offset-lg-1">
               <Tabs align="center">
                 <TabList style={{ borderBottomColor: "#ffffff22" }}>
-                  <Tab className="py-4 px-5 display6 text-white">Windows</Tab>
-                  <Tab className="py-4 px-5 display6 text-white">BIND</Tab>
+                  <Tab onClick={()=>{setShow(false); setZone(0); setType("Windows")}} className="py-4 px-5 display6 text-white">Windows</Tab>
+                  <Tab onClick={()=>{setShow(false); setZone(0); setType("BIND")}} className="py-4 px-5 display6 text-white">BIND</Tab>
                 </TabList>
 
                 <TabPanels>
@@ -92,7 +101,7 @@ function DNS(props) {
                               variantColor="primary"
                               variant="outline"
                               size="lg"
-                              onClick={openControls}
+                              onClick={()=>{openControls(); setPlan("Standard DNS (BlackBox)")}}
                             >
                               View Options
                             </Button>
@@ -115,7 +124,7 @@ function DNS(props) {
                               variantColor="primary"
                               variant="outline"
                               size="lg"
-                              onClick={openControls}
+                              onClick={()=>{openControls(); setPlan("Premium DNS (BlackBox)")}}
                             >
                               View options
                             </Button>
@@ -144,7 +153,7 @@ function DNS(props) {
                               variantColor="primary"
                               variant="outline"
                               size="lg"
-                              onClick={openControls}
+                              onClick={()=>{openControls(); setPlan("Standard DNS (BlackBox)")}}
                             >
                               View Options
                             </Button>
@@ -167,7 +176,7 @@ function DNS(props) {
                               variantColor="primary"
                               variant="outline"
                               size="lg"
-                              onClick={openControls}
+                              onClick={()=>{openControls(); setPlan("Premium DNS (BlackBox)")}}
                             >
                               View Options
                             </Button>
@@ -181,7 +190,7 @@ function DNS(props) {
               <div>
                 <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
                   <div className="px-4 py-5 border">
-                    <div className="display5 text-center">Standard DNS</div>
+                    <div className="display5 text-center">{plan}</div>
                     <div className="row px-3">
                       <div className="col-lg-12 mt-4">
                         <div className="h6">Extra Zones</div>
@@ -190,7 +199,8 @@ function DNS(props) {
                           my="24px"
                           max={30}
                           defaultValue={1}
-                          value={0}
+                          value={zones}
+                          onChange={(value)=>{setZone(value)}}
                         >
                           <SliderTrack h="16px" borderRadius="8px" />
                           <SliderFilledTrack h="16px" borderRadius="8px" />
@@ -201,7 +211,7 @@ function DNS(props) {
                             width="auto"
                             padding="8px"
                             height="32px"
-                            children={23}
+                            children={zones}
                           />
                         </Slider>
                       </div>
@@ -209,7 +219,7 @@ function DNS(props) {
                         <Flex py="12px" justify="center" align="center">
                           <Switch
                             onChange={(e) => {
-                              setFailOverNode(e.target.checked);
+                              setRedundantDNS(e.target.checked);
                             }}
                             color="primary"
                             mb={0}
@@ -224,7 +234,7 @@ function DNS(props) {
                         <Flex py="12px" justify="center" align="center">
                           <Switch
                             onChange={(e) => {
-                              setFailOverNode(e.target.checked);
+                              setDailyBackups(e.target.checked);
                             }}
                             color="primary"
                             mb={0}
@@ -238,7 +248,7 @@ function DNS(props) {
                       <div className="col-lg-12 mt-5 d-flex justify-content-center">
                         <PricingQuote
                           serviceName="DNS As A Service"
-                          serviceDescription="Hello"
+                          serviceDescription={`${type},${plan} ${verifyNotEmpty(zones,"Extra Zones")} ${handleRedundantDNS(redundantDNS)} ${handledailyBackups(dailyBackups)}`}
                           button
                         ></PricingQuote>
                       </div>
