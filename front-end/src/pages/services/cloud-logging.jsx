@@ -286,8 +286,9 @@ function main(props) {
                                             archives on-demand.
                                         </div>
                                         <Image
-                                            height="300px"
-                                            src="/assets/images/illustrations/diversity.svg"
+                                            className="mt-auto"
+                                            height="250px"
+                                            src="/assets/images/illustrations/Completeness_CloudLogging.svg"
                                         ></Image>
                                     </div>
                                 </div>
@@ -308,8 +309,9 @@ function main(props) {
                                             and queries live.
                                         </div>
                                         <Image
-                                            height="300px"
-                                            src="/assets/images/illustrations/data_center.svg"
+                                            className="mt-auto"
+                                            height="250px"
+                                            src="/assets/images/illustrations/SimplifiedLogManagment_CloudLogging.svg"
                                         ></Image>
                                     </div>
                                 </div>
@@ -330,7 +332,7 @@ function main(props) {
                                             appropriate tools and resources.
                                         </div>
                                         <Image
-                                            src="/assets/images/illustrations/assets.svg"
+                                            src="/assets/images/illustrations/ProactiveTroubleShooting_CloudLogging.svg"
                                             className="mt-auto"
                                             height="250px"
                                         ></Image>

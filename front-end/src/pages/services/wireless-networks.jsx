@@ -315,8 +315,9 @@ function WIRELESS(props) {
                       significantly.{" "}
                     </div>
                     <Image
-                      height="300px"
-                      src="/assets/images/illustrations/diversity.svg"
+                      className="mt-auto"
+                      height="250px"
+                      src="/assets/images/illustrations/ClusteringOfDevices_Wireless.svg"
                     ></Image>
                   </div>
                 </div>
@@ -335,8 +336,9 @@ function WIRELESS(props) {
                       Completely redundant and efficient transmission.{" "}
                     </div>
                     <Image
-                      height="300px"
-                      src="/assets/images/illustrations/data_center.svg"
+                      className="mt-auto"
+                      height="250px"
+                      src="/assets/images/illustrations/UnifiedAndEfficient_Wireless.svg"
                     ></Image>
                   </div>
                 </div>
@@ -356,7 +358,7 @@ function WIRELESS(props) {
                       Protection.{" "}
                     </div>
                     <Image
-                      src="/assets/images/illustrations/assets.svg"
+                      src="/assets/images/illustrations/DataProtection_Wireless.svg"
                       className="mt-auto"
                       height="250px"
                     ></Image>
