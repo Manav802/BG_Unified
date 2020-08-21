@@ -100,10 +100,10 @@ return (
                                         <a>Cloud Logging As A Service</a>
                                     </Link>
                                     <Link href="/services/platform">
-                                        <a>Cloud Platform As A Service</a>
+                                        <a>Platform As A Service</a>
                                     </Link>
                                     <Link href="/services/firewall">
-                                        <a>Firewalls As A Service</a>
+                                        <a>Firewall As A Service</a>
                                     </Link>
                                     <Link href="/services/application-dev">
                                         <a>

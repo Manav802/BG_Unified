@@ -74,7 +74,7 @@ function main(props) {
               </Fade>
               <Fade duration={700} delay={500} bottom>
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
-                Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package. Load balancing can also be added as an option if required.
+                Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package.
                 </p>
               </Fade>
             </div>

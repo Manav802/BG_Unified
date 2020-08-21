@@ -34,140 +34,157 @@
 
     "services": [
         {
-            "name": "Application Development and Scalability",
+            "name": "Application Development As A Service",
             "description": "BG Unified Solutions provides services in the area of Web, Mobile and Enterprise Application Development.",
             "sub-description": "Our team of technical and functional experts can help you in new Application Development, Modernizing and Supporting existing applications.",
             "tags": ["application", "app", "dev", "development", "scalability", "platform", "independence", "client", "flexibility"],
             "price": "",
             "popular": true,
+            "icon": "/assets/images/icons/theme/AppDev.svg",
             "link": "services/application-dev"
         },
         {
-            "name": "Architectural Consultancy",
-            "description": "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture.",
+            "name": "Architectural Consultancy As A Service",
+            "description": "BG Unified Solution has a team of practising multi-disciplinary architects to baseline current architecture and its shortcomings.",
             "sub-description": "Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
             "tags": ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
             "price": "",
+            "icon": "/assets/images/icons/theme/architectural.svg",
             "link": "services/architectural-consultancy"
         },
         {
-            "name": "Cloud Exchange Connectivity",
-            "description": "Express Routes to office 365, AWS, Azure",
+            "name": "CEX As A Service",
+            "description": "BG Unified Solution has a team of practising multi-disciplinary architects to baseline current architecture and its shortcomings.",
             "sub-description": "Advanced Solution providing private seamless, and on-demand connections to many clouds as well as networks.",
             "tags": ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
             "price": "",
+            "icon": "/assets/images/icons/theme/CEX.svg",
             "link": "services/cloud-exchange"
         },
         {
-            "name": "Cloud Logging",
-            "description": "Log central services over the internet. Collect, Store, and report the various data and underlying threats.",
+            "name": "Cloud Logging As A Service",
+            "description": "Log central services over the internet. Collect, Store, and report the various data and underlying threats. Add the shield to protect your business reputation.",
             "sub-description": "Add the shield to protect your business reputation. Application and system logs ingestions.",
             "tags": ["cloud", "logging", "log", "threats", "log management", "troubleshooting"],
             "price": "",
-            "link": ""
+            "icon": "/assets/images/icons/theme/CloudLogging.svg",
+            "link": "services/cloud-logging"
         },
         {
-            "name": "Customer Support as a Service",
-            "description": "BG Unified Solution’s CSaaS helps you provide a positive customer experience through a suite of advanced contact center tools.",
+            "name": "Contact Center As A Service",
+            "description": "CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools",
             "sub-description": "We have deep contracts with all major Telcos including AAPT, Telstra and Optus.",
             "tags": ["customer", "Support", "CSaaS", "Customer Experience", "Productivity", "Securing", "Data"],
             "price": "",
+            "icon": "/assets/images/icons/theme/ContactCenterAsAService.svg",
             "link": "services/customer-support"
         },
         {
-            "name": "Disaster Recovery Management",
-            "description": "Assist in DR strategy, evaluate threat models, select technologies.",
+            "name": "DR As A Service",
+            "description": "Assist in DR strategy, evaluate threat models, select technologies, prototype multi-site or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.",
             "sub-description": "Prototype multisite or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.",
             "tags": ["Disaster", "Recovery", "Management", "Deployment", "Flexible", "Non-Disruptive"],
             "price": "",
+            "icon": "/assets/images/icons/theme/DRAsAService.svg",
             "link": "services/disaster-recovery"
         },
         {
-            "name": "DNS Services",
-            "description": "Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service.",
+            "name": "DNS As A Service",
+            "description": "Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service with assured low latency and high availability.",
             "sub-description": "With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users.",
             "tags": ["dns", "DNS", "domain", "name", "cost", "effective", "Concurrency", "Scalability", "TLD servers"],
             "price": "",
-            "link": ""
+            "icon": "/assets/images/icons/theme/DNSasAService.svg",
+            "link": "services/dns"
         },
         {
-            "name": "Firewall as a Service",
-            "description": "To prevent a drastic fall, Install a Firewall",
+            "name": "Firewall As A Service",
+            "description": "Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA.",
             "sub-description": "In this digital era, when technology has proved to be a boon, small, medium and large-sized businesses are majorly dependent upon networking,connections and interactions. To help these operations get performed smoothly and efficiently, with full security, to eradicate security breach in your network. Firewalls block malicious connections being established inside a network and keeps data and information safe within a network.",
-            "tags": ["Firewall", "Security"],
+            "tags": ["Firewall", "Security", "protection"],
             "price": "",
+            "icon": "/assets/images/icons/theme/.svg",
             "link": "/services/firewall"
         },
         {
-            "name": "Computing Infrastructure",
+            "name": "Infrastructure As A Service",
             "description": "Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management.",
             "sub-description": "Infrastructure includes more than 10000 Cores CPU, 10TB RAM.",
             "tags": ["computing", "infrastructure", "asset", "utilization", "server", "consolidation", "virtualization", "Geographical Redundant Storage"],
             "price": "",
+            "icon": "/assets/images/icons/theme/InfrastructureIcon.svg",
             "link": "services/infra"
         },
         {
-            "name": "Cloud Platform Service",
+            "name": "Platform As A Service",
             "description": "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions.",
             "sub-description": "Huawei 10G core switching offering a high-speed spine and leaf network.",
             "tags": ["cloud", "platform", "service", "infrastructure", "DC Interconnect"],
             "price": "",
+            "icon": "/assets/images/icons/theme/PlatformAsAServiceIcon.svg",
             "link": "services/platform"
         },
         {
-            "name": "Proxy Servers",
-            "description": "With assured low latency and high availability.",
+            "name": "Proxy As A Service",
+            "description": "Just redirect your traffic to our Proxy Service either by DNS or other custom solution to our public Proxy Service.",
             "sub-description": "It is a cost-effective way to make your applications and services available to your users.",
             "tags": ["proxy", "servers", "low-latency", "services"],
             "price": "",
+            "icon": "/assets/images/icons/theme/Proxy.svg",
             "link": "services/proxy-server"
         },
         {
-            "name": "SD-WAN Optimization",
-            "description": "Next-generation WAN connectivity services.",
+            "name": "SD-WAN As A Service",
+            "description": "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange",
             "sub-description": "We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
             "tags": ["SD-WAN", "sd wan", "Optimization", " VMware VDI"],
             "price": "",
+            "icon": "/assets/images/icons/theme/SD-Wan.svg",
             "link": "services/sd-wan"
         },
         {
-            "name": "SIP Connectivity",
-            "description": "SIP As A Service Infrastructure includes more than 15 Cisco Unified border.",
+            "name": "SIP As A Service",
+            "description": "SIP as a Service Infrastructure includes more than 15 Cisco Unified border Elements with 1600 SIP channels spanned across multiple DC locations.",
             "sub-description": "Elements with 1600 SIP channels spanned across multiple DC locations with DUAL Exchange Homing.",
             "tags": ["SIP", "Connectivity", "Service Infrastructure", "cisco unified"],
             "price": "",
+            "icon": "/assets/images/icons/theme/SIP.svg",
             "link": "services/sip-connectivity"
         },
         {
-            "name": "Storage Blocks",
-            "description": "Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management",
+            "name": "Storage As A Service",
+            "description": "Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management.",
             "sub-description": "The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage.",
             "tags": ["storage", "blocks", "consolidation", "virtualization", "backup", "recovery", "archive"],
             "price": "",
+            "icon": "/assets/images/icons/theme/StorageAsAServiceIcon.svg",
             "link": "services/storage-unit"
         },
         {
-            "name": "UCaaS (Unified Communications)",
+            "name": "Unified Communications As A Service",
             "description": "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring.",
             "sub-description": "N+N Redundant components fulfilling all Unified Collaboration requirements of your business.",
             "tags": ["UCaaS", "unified", "communications", "cisco", "avaya", "unity", "collaboration", "telepresence", "workforce", "optimisation"],
             "price": "",
+            "icon": "/assets/images/icons/theme/UCAsAService.svg",
             "link": "services/ucaas"
         },
         {
-            "name": "Web - Hosting Solutions",
-            "description": "Dedicated Web Server running APACHE with full redundancy and daily backups",
+            "name": "Web Hosting As A Service",
+            "description": "Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package.",
             "sub-description": "A complete website monitoring is included in the package. Load balancing can also be added as an option if required.",
             "tags": ["web", "hosting", "host", "web server", "APACHE", "website"],
             "price": "",
+            "icon": "/assets/images/icons/theme/WebHosting.svg",
             "link": "services/web-hosting"
         },
         {
-            "name": "Wireless Networks",
-            "description": "Cisco Wi-Fi and Aruba Wi-Fi.",
+            "name": "Wireless As A Service",
+            "description": "The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers.",
             "sub-description": "The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers.",
             "tags": ["wireless", "wifi", "clusters", "networks"],
             "price": "",
+            "icon": "/assets/images/icons/theme/WirelessAsAService.svg",
             "link": "services/wireless-networks"
         }
     ],
