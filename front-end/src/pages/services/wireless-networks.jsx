@@ -14,6 +14,7 @@ import {
   SliderThumb,
   SliderTrack,
   SliderFilledTrack,
+  Checkbox,
   FormLabel,
   Switch,
   Flex,
@@ -25,9 +26,17 @@ import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 import Head from "next/head";
 import Link from "next/link";
 
+
+const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + text : "");
+
 function WIRELESS(props) {
-  const [show, setShow] = React.useState(false);
-  const openControls = () => setShow(true);
+  const [logs1, setLogs1] = React.useState(0);
+  const [logs2, setLogs2] = React.useState(0);
+  const [logs3, setLogs3] = React.useState(0);
+  const [guest1, setGuest1] = React.useState(false);
+  const [guest2, setGuest2] = React.useState(false);
+  const [guest3, setGuest3] = React.useState(false);
+  const handleGuestSwitch = (bool) => (bool) ? (",Guest-10M Included") : ("")
   return (
     <div>
       <Head>
@@ -65,203 +74,186 @@ function WIRELESS(props) {
           </div>
         </div>
       </div>
-      <div className="section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-10 offset-lg-1">
-              <Tabs align="center">
-                <TabList style={{ borderBottomColor: "#ffffff22" }}>
-                  <Tab className="py-4 px-5 display6 text-white">Windows</Tab>
-                  <Tab className="py-4 px-5 display6 text-white">BIND</Tab>
-                </TabList>
 
-                <TabPanels>
-                  <TabPanel className="py-2">
+      <div className="section">
+                <div className="container">
                     <Fade duration={500} bottom>
-                      <div className="row justify-content-center">
-                        <div className="col-lg-5 col-sm-6 col-md-6 my-3">
-                          <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
-                            title="Standard DNS (BlackBox)"
-                            featureList={[
-                              "Includes 5 Zones",
-                              "Low Latency",
-                              "High Availabilty",
-                              "BlackBox Service",
-                              "Cost Effective",
-                            ]}
-                          >
-                          <a href="#collapse-1" className="no-red">
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={openControls}
+                    <div className="row px-lg-5 px-3">
+                        <div className="col-lg-4 my-3">
+                            <PricingCard
+                                title={
+                                    "LAP-5"
+                                }
+                                icon="/assets/images/icons/theme/stack.svg"
+                                featureList={[
+                                    "Included 1 Corporate SSID",
+                                    "Cisco Wi-Fi and Aruba Wi-Fi",
+                                    "Fully Managed Service",
+                                ]}
                             >
-                              Get a quote
-                            </Button>
-                            </a>
-                          </PricingCard>
+                                <div className=" my-2 NunitoSans-Bold">
+                                    Extra SSID
+                                </div>
+                                <div className="w-100 px-3">
+                                    <Slider
+                                        color="primary"
+                                        defaultValue={0}
+                                        value={logs1}
+                                        max={20}
+                                        onChange={(value) => {
+                                            setLogs1(value);
+                                        }}
+                                    >
+                                        <SliderTrack
+                                            h="10px"
+                                            borderRadius="5px"
+                                        />
+                                        <SliderFilledTrack
+                                            h="10px"
+                                            borderRadius="5px"
+                                        />
+                                        <SliderThumb
+                                            className="shadow"
+                                            fontSize="sm"
+                                            fontWeight="500"
+                                            width="auto"
+                                            padding="7px"
+                                            height="28px"
+                                            children={logs1}
+                                        />
+                                    </Slider>
+                                </div>
+                                <Checkbox className="my-2" value={guest1} onChange={e => setGuest1(e.target.checked)} >
+                                  Guest-10M
+                                  </Checkbox> <PricingQuote
+                                    buttonStyle="mt-3"
+                                    button
+                                    serviceName="Logging As A Service"
+                                    serviceDescription={`LAP-5 ${verifyNotEmpty(
+                                        logs1,
+                                        " Extra SSID"
+                                    )} ${handleGuestSwitch(guest1)}`}
+                                ></PricingQuote>
+                            </PricingCard>
                         </div>
-                        <div className="col-lg-5 col-sm-6 col-md-6 my-3">
-                          <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
-                            title="Premium DNS (BlackBox)"
-                            featureList={[
-                              "Includes 5 Zones",
-                              "Low Latency",
-                              "High Availabilty",
-                              "BlackBox Service",
-                              "Cost Effective",
-                            ]}
-                          >
-                          <a href="#collapse-1" className="no-red">
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={openControls}
+                        <div className="col-lg-4 my-3">
+                            <PricingCard
+                                title={
+                                    "LAP-10"
+                                }
+                                icon="/assets/images/icons/theme/stack.svg"
+                                featureList={[
+                                    "Included 1 Corporate SSID",
+                                    "Cisco Wi-Fi and Aruba Wi-Fi",
+                                    "Fully Managed Service",
+                                ]}
                             >
-                              Get a quote
-                            </Button>
-                            </a>
-                          </PricingCard>
+                                <div className=" my-2 NunitoSans-Bold">
+                                    Extra SSID
+                                </div>
+                                <div className="w-100 px-3">
+                                    <Slider
+                                        color="primary"
+                                        defaultValue={0}
+                                        value={logs2}
+                                        max={20}
+                                        onChange={(value) => {
+                                            setLogs2(value);
+                                        }}
+                                    >
+                                        <SliderTrack
+                                            h="10px"
+                                            borderRadius="5px"
+                                        />
+                                        <SliderFilledTrack
+                                            h="10px"
+                                            borderRadius="5px"
+                                        />
+                                        <SliderThumb
+                                            className="shadow"
+                                            fontSize="sm"
+                                            fontWeight="500"
+                                            width="auto"
+                                            padding="7px"
+                                            height="28px"
+                                            children={logs2}
+                                        />
+                                    </Slider>
+                                </div>
+                                <Checkbox className="my-2" value={guest2} onChange={e => setGuest2(e.target.checked)} >
+                                  Guest-10M
+                                  </Checkbox> <PricingQuote
+                                    buttonStyle="mt-3"
+                                    button
+                                    serviceName="Cloud Logging As A Service"
+                                    serviceDescription={`LAP-10 ${verifyNotEmpty(
+                                        logs2,
+                                        " Extra SSID"
+                                    )} ${handleGuestSwitch(guest2)}`}
+                                ></PricingQuote>
+                            </PricingCard>
                         </div>
-                      </div>
-                    </Fade>
-                  </TabPanel>
-                  <TabPanel className="py-2">
-                    <Fade duration={500} bottom>
-                      <div className="row justify-content-center">
-                        <div className="col-lg-5 col-sm-6 col-md-6 my-3">
-                          <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
-                            title="Standard DNS (BlackBox)"
-                            featureList={[
-                              "Includes 5 Zones",
-                              "Low Latency",
-                              "High Availabilty",
-                              "BlackBox Service",
-                              "Cost Effective",
-                            ]}
-                          >
-                          <a href="#collapse-1" className="no-red">
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={openControls}
+                        <div className="col-lg-4 my-3">
+                            <PricingCard
+                                title={
+                                    "LAP-20"
+                                }
+                                icon="/assets/images/icons/theme/stack.svg"
+                                featureList={[
+                                    "Included 1 Corporate SSID",
+                                    "Cisco Wi-Fi and Aruba Wi-Fi",
+                                    "Fully Managed Service",
+                                ]}
                             >
-                              Get a quote
-                            </Button>
-                            </a>
-                          </PricingCard>
+                                <div className=" my-2 NunitoSans-Bold">
+                                    Extra SSID
+                                </div>
+                                <div className="w-100 px-3">
+                                    <Slider
+                                        color="primary"
+                                        defaultValue={0}
+                                        value={logs3}
+                                        max={20}
+                                        onChange={(value) => {
+                                            setLogs3(value);
+                                        }}
+                                    >
+                                        <SliderTrack
+                                            h="10px"
+                                            borderRadius="5px"
+                                        />
+                                        <SliderFilledTrack
+                                            h="10px"
+                                            borderRadius="5px"
+                                        />
+                                        <SliderThumb
+                                            className="shadow"
+                                            fontSize="sm"
+                                            fontWeight="500"
+                                            width="auto"
+                                            padding="7px"
+                                            height="28px"
+                                            children={logs3}
+                                        />
+                                    </Slider>
+                                </div>
+                                <Checkbox className="my-2" value={guest3} onChange={e => setGuest3(e.target.checked)} >
+                                  Guest-10M
+                                  </Checkbox> <PricingQuote
+                                    buttonStyle="mt-3"
+                                    button
+                                    serviceName="Cloud Logging As A Service"
+                                    serviceDescription={`LAP-20 ${verifyNotEmpty(
+                                        logs3,
+                                        " Extra SSID"
+                                    )} ${handleGuestSwitch(guest3)}`}
+                                ></PricingQuote>
+                            </PricingCard>
                         </div>
-                        <div className="col-lg-5 col-sm-6 col-md-6  my-3">
-                          <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
-                            title="Premium DNS (BlackBox)"
-                            featureList={[
-                              "Includes 5 Zones",
-                              "Low Latency",
-                              "High Availabilty",
-                              "BlackBox Service",
-                              "Cost Effective",
-                            ]}
-                          >
-                          <a href="#collapse-1" className="no-red">
-                            <Button
-                              className="mt-3"
-                              variantColor="primary"
-                              variant="outline"
-                              size="lg"
-                              onClick={openControls}
-                            >
-                              Get a quote
-                            </Button>
-                            </a>
-                          </PricingCard>
-                        </div>
-                      </div>
-                    </Fade>
-                  </TabPanel>
-                </TabPanels>
-              </Tabs>
-              <div id="collapse-1" className="collapse-target">
-                <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
-                  <div className="px-4 py-5 border">
-                    <div className="display5 text-center">Standard DNS</div>
-                    <div className="row px-3">
-                      <div className="col-lg-12 mt-4">
-                        <div className="h6">Extra Zones</div>
-                        <Slider
-                          color="primary"
-                          my="24px"
-                          max={30}
-                          defaultValue={1}
-                          value={0}
-                        >
-                          <SliderTrack h="16px" borderRadius="8px" />
-                          <SliderFilledTrack h="16px" borderRadius="8px" />
-                          <SliderThumb
-                            className="shadow-md"
-                            fontSize="md"
-                            fontWeight="800"
-                            width="auto"
-                            padding="8px"
-                            height="32px"
-                            children={23}
-                          />
-                        </Slider>
-                      </div>
-                      <div className="my-1 col-lg-6 mt-3 d-flex justify-content-between">
-                        <Flex py="12px" justify="center" align="center">
-                          <Switch
-                            onChange={(e) => {
-                              setFailOverNode(e.target.checked);
-                            }}
-                            color="primary"
-                            mb={0}
-                            id="failOverNode"
-                          />
-                          <FormLabel mb={0} ml="12px" htmlFor="fail-over node">
-                            Include Redundant DNS
-                          </FormLabel>
-                        </Flex>
-                      </div>
-                      <div className="my-1 col-lg-6 mt-3 d-flex justify-content-between">
-                        <Flex py="12px" justify="center" align="center">
-                          <Switch
-                            onChange={(e) => {
-                              setFailOverNode(e.target.checked);
-                            }}
-                            color="primary"
-                            mb={0}
-                            id="failOverNode"
-                          />
-                          <FormLabel mb={0} ml="12px" htmlFor="fail-over node">
-                            Add Daily Backup
-                          </FormLabel>
-                        </Flex>
-                      </div>
-                      <div className="col-lg-12 mt-5 d-flex justify-content-center">
-                        <PricingQuote
-                          serviceName="DNS As A Service"
-                          serviceDescription="Hello"
-                          button
-                        ></PricingQuote>
-                      </div>
                     </div>
-                  </div>
-                </Collapse>
-              </div>
+                    </Fade>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
       {/* <section className="fdb-block section">
             <div className="container">
                 <div className="row text-center">
