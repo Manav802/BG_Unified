@@ -248,7 +248,7 @@ function main(props) {
           </div>
         </div>
       </div>
-      <div className="section mid-margin">
+      <Box mt="74px" className="section">
         <div className="container">
           <div className="row justify-content-center">
             <Button
@@ -530,7 +530,7 @@ function main(props) {
             </Collapse>
           </div>
         </div>
-      </div>
+      </Box>
 
       <div className="section py-0">
         <div className="container">

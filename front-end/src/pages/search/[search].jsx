@@ -10,6 +10,7 @@ import {useRouter} from "next/router";
 function search(props) {
     const router = useRouter();
     var {search} = router.query;
+    console.log(search);
     const [text, setText] = React.useState("");
     const handleValue = (e) => {
         setText(e.target.value)

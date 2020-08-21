@@ -142,7 +142,7 @@ function APPDEV(props) {
                     </div>
                     <Image
                       height="300px"
-                      src="/assets/images/illustrations/diversity.svg"
+                      src="/assets/images/illustrations/PlatformIndependence_AppDev.svg"
                     ></Image>
                   </div>
                 </div>
@@ -163,7 +163,7 @@ function APPDEV(props) {
                     </div>
                     <Image
                       height="300px"
-                      src="/assets/images/illustrations/data_center.svg"
+                      src="/assets/images/illustrations/ClientSpecific_AppDev.svg"
                     ></Image>
                   </div>
                 </div>
@@ -183,7 +183,7 @@ function APPDEV(props) {
                       results.
                     </div>
                     <Image
-                      src="/assets/images/illustrations/assets.svg"
+                      src="/assets/images/illustrations/FlexibilityAndScalability_AppDev.svg"
                       className="mt-auto"
                       height="250px"
                     ></Image>

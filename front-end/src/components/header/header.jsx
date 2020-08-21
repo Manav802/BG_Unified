@@ -57,7 +57,7 @@ return (
                     </PopoverContent>
                 </Popover>
                 {/* <Search toggle ={() => setSearch(!search)} searching={search}></Search> */}
-                <Link href="/search/web">
+                <Link href={`/search/firewall`}>
                 <a className="p-2 rounded-8 hover-effect">
                     <Icon name="search" onClick={props.toggle} size="18px"></Icon>
                 </a> 
