@@ -234,8 +234,16 @@ function main(props) {
       <div className="page-header">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 offset-lg-3 text-center justify-content-center">
-              <h1 className="display3 text-white">Infrastructure As A Service(IaaS)</h1>
+            <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
+            <Fade duration={700} delay={300} bottom>
+              <h1 className="display3 text-white">Infrastructure As A Service (IaaS)</h1>
+            </Fade>
+
+            <Fade duration={700} delay={500} bottom>
+                <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
+                Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management.
+                </p>
+              </Fade>
             </div>
           </div>
         </div>

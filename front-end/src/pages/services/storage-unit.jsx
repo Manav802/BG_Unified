@@ -54,7 +54,7 @@ function main(props) {
               </Fade>
               <Fade duration={700} delay={500} bottom>
                 <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
-                  Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage.
+                  Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management.
                 </p>
               </Fade>
             </div>
