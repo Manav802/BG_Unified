@@ -128,7 +128,7 @@ function WIRELESS(props) {
                                   </Checkbox> <PricingQuote
                                     buttonStyle="mt-3"
                                     button
-                                    serviceName="Logging As A Service"
+                                    serviceName="Wireless As A Service"
                                     serviceDescription={`LAP-5 ${verifyNotEmpty(
                                         logs1,
                                         " Extra SSID"
@@ -185,7 +185,7 @@ function WIRELESS(props) {
                                   </Checkbox> <PricingQuote
                                     buttonStyle="mt-3"
                                     button
-                                    serviceName="Cloud Logging As A Service"
+                                    serviceName="Wireless As A Service"
                                     serviceDescription={`LAP-10 ${verifyNotEmpty(
                                         logs2,
                                         " Extra SSID"
@@ -242,7 +242,7 @@ function WIRELESS(props) {
                                   </Checkbox> <PricingQuote
                                     buttonStyle="mt-3"
                                     button
-                                    serviceName="Cloud Logging As A Service"
+                                    serviceName="Wireless As A Service"
                                     serviceDescription={`LAP-20 ${verifyNotEmpty(
                                         logs3,
                                         " Extra SSID"
