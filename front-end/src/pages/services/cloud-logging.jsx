@@ -117,7 +117,7 @@ function main(props) {
                                 <PricingQuote
                                     buttonStyle="mt-3"
                                     button
-                                    serviceName="Logging As A Service"
+                                    serviceName="Cloud Logging As A Service"
                                     serviceDescription={`Single Node Single DC ${verifyNotEmpty(
                                         logs1,
                                         "G Extra Logs"
