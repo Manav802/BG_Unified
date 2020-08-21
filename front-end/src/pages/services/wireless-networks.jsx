@@ -1,26 +1,13 @@
 import React from "react";
 import {
-  Button,
   Image,
-  Icon,
-  Box,
-  Tabs,
-  TabList,
-  Tab,
-  TabPanel,
-  TabPanels,
-  Collapse,
   Slider,
   SliderThumb,
   SliderTrack,
   SliderFilledTrack,
-  Checkbox,
-  FormLabel,
-  Switch,
-  Flex,
+  Checkbox
 } from "@chakra-ui/core";
 import Fade from "react-reveal/Fade";
-import Bounce from "react-reveal/Bounce";
 import CardWithIcon from "../../components/cards/CardWithIcon";
 import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 import Head from "next/head";
