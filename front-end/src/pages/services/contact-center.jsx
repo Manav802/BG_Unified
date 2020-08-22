@@ -118,7 +118,7 @@ function main(props) {
                   size="lg"
                   onClick={() => {
                     openControls();
-                    setPlanName("BASE");
+                    setPlanName("CAGENT Basic Plan");
                     setPlanIndex(1);
                     setWfm(0);
                     setAdvancedQM(0);
@@ -142,7 +142,7 @@ function main(props) {
                   size="lg"
                   onClick={() => {
                     openControls();
-                    setPlanName("CAGENT-STD");
+                    setPlanName("CAGENT Standard Plan");
                     setPlanIndex(2);
                     setRDSType("");
                     setValue(0);
@@ -167,7 +167,7 @@ function main(props) {
                   size="lg"
                   onClick={() => {
                     openControls();
-                    setPlanName("CAGENT-PRM");
+                    setPlanName("CAGENT Premium Plan");
                     setPlanIndex(3);
                     setRDSType("");
                     setValue(0);
@@ -271,7 +271,7 @@ function main(props) {
 
                   {(planIndex === 2 || planIndex === 3) && (
                     <>
-                      <div className="my-1 col-lg-12 mt-4">
+                      <div className="my-1 col-lg-8 offset-lg-2 mt-4">
                         <div className="h6">WFM</div>
                         <Slider
                           color="primary"
@@ -347,7 +347,7 @@ function main(props) {
                     </>
                   )}
 
-                  <div className="col-lg-12 mt-3 d-flex justify-content-center">
+                  <div className="col-lg-12 mt-5 d-flex justify-content-center">
                     <PricingQuote
                       serviceDescription={`${planName}${verifyNotEmpty(
                         value,

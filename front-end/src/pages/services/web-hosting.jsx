@@ -86,17 +86,17 @@ function main(props) {
                 <Fade duration={500} bottom>
                 <div className="row px-lg-5 px-3">
                     <div className="col-lg-4 my-3">
-                        <PricingCard  title="Standard" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include 2vCPU", "Includes 4 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
+                        <PricingCard  title="Standard" icon="/assets/images/icons/theme/paper-plane.svg" featureList={["Include 2vCPU", "Includes 4 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
                             <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Standard")}}>View More</Button>
                        </PricingCard>
                     </div>
                     <div className="col-lg-4 my-3">
-                        <PricingCard title="Premium" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include 4vCPU", "Includes 6 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
+                        <PricingCard title="Premium" icon="/assets/images/icons/theme/airplane.svg" featureList={["Include 4vCPU", "Includes 6 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
                             <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Premium")}}>View More</Button>
                         </PricingCard>
                     </div>
                     <div className="col-lg-4 my-3">
-                        <PricingCard className="hover-effect" title="Gold" icon="/assets/images/icons/theme/firewall_virtual.svg" featureList={["Include 6vCPU", "Includes 8 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
+                        <PricingCard className="hover-effect" title="Gold" icon="/assets/images/icons/theme/rocket.svg" featureList={["Include 6vCPU", "Includes 8 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
                             <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Gold")}}>View More</Button>
                         </PricingCard>
                     </div>

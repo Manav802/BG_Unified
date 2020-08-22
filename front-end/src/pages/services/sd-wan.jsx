@@ -94,7 +94,7 @@ function DNS(props) {
                                                 <div className="col-lg-5 my-3">
                                                     <PricingCard
                                                         featureList={features}
-                                                        icon="/assets/images/icons/theme/firewall_physical.svg"
+                                                        icon="/assets/images/icons/theme/globe.svg"
                                                         title="Single"
                                                     >
                                                         <div className="d-flex btn align-items-center">
@@ -109,7 +109,7 @@ function DNS(props) {
                                                 <div className="col-lg-5 my-3">
                                                     <PricingCard
                                                         featureList={features}
-                                                        icon="/assets/images/icons/theme/firewall_physical.svg"
+                                                        icon="/assets/images/icons/theme/globe.svg"
                                                         title="Cluster"
                                                     >
                                                         <div className="d-flex btn align-items-center">
@@ -135,7 +135,7 @@ function DNS(props) {
                                                 <div className="col-lg-5 my-3">
                                                     <PricingCard
                                                         featureList={features}
-                                                        icon="/assets/images/icons/theme/firewall_physical.svg"
+                                                        icon="/assets/images/icons/theme/globe.svg"
                                                         title="Single"
                                                     >
                                                         <div className="d-flex btn align-items-center">
@@ -150,7 +150,7 @@ function DNS(props) {
                                                 <div className="col-lg-5 my-3">
                                                     <PricingCard
                                                         featureList={features}
-                                                        icon="/assets/images/icons/theme/firewall_physical.svg"
+                                                        icon="/assets/images/icons/theme/globe.svg"
                                                         title="Cluster"
                                                     >
                                                         <div className="d-flex btn align-items-center">

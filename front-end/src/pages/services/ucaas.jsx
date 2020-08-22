@@ -143,7 +143,7 @@ function UCaaS(props) {
                                                 <div className="col-lg-4 my-3">
                                                     <PricingCard
                                                         title="Single Node CUCM"
-                                                        icon="/assets/images/icons/theme/firewall_virtual.svg"
+                                                        icon="/assets/images/icons/theme/fax.svg"
                                                         featureList={[
                                                             "Include Voicemail",
                                                             "Include Presence",
@@ -173,7 +173,7 @@ function UCaaS(props) {
                                                 <div className="col-lg-4 my-3">
                                                     <PricingCard
                                                         title="Dual Node CUCM"
-                                                        icon="/assets/images/icons/theme/firewall_virtual.svg"
+                                                        icon="/assets/images/icons/theme/fax.svg"
                                                         featureList={[
                                                             "Include Voicemail",
                                                             "Include Presence",
@@ -204,7 +204,7 @@ function UCaaS(props) {
                                                     <PricingCard
                                                         className="hover-effect"
                                                         title="Multiple Nodes CUCM"
-                                                        icon="/assets/images/icons/theme/firewall_virtual.svg"
+                                                        icon="/assets/images/icons/theme/fax.svg"
                                                         featureList={[
                                                             "Include Voicemail",
                                                             "Include Presence",

@@ -71,7 +71,7 @@ function WIRELESS(props) {
                                 title={
                                     "LAP-5"
                                 }
-                                icon="/assets/images/icons/theme/stack.svg"
+                                icon="/assets/images/icons/theme/wifi.svg"
                                 featureList={[
                                     "Included 1 Corporate SSID",
                                     "Cisco Wi-Fi and Aruba Wi-Fi",
@@ -128,7 +128,7 @@ function WIRELESS(props) {
                                 title={
                                     "LAP-10"
                                 }
-                                icon="/assets/images/icons/theme/stack.svg"
+                                icon="/assets/images/icons/theme/wifi.svg"
                                 featureList={[
                                     "Included 1 Corporate SSID",
                                     "Cisco Wi-Fi and Aruba Wi-Fi",
@@ -185,7 +185,7 @@ function WIRELESS(props) {
                                 title={
                                     "LAP-20"
                                 }
-                                icon="/assets/images/icons/theme/stack.svg"
+                                icon="/assets/images/icons/theme/wifi.svg"
                                 featureList={[
                                     "Included 1 Corporate SSID",
                                     "Cisco Wi-Fi and Aruba Wi-Fi",

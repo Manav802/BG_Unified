@@ -95,7 +95,7 @@ function SIP(props) {
                       <div className="row justify-content-center">
                         <div className="col-lg-5 col-sm-6 col-md-6 my-3">
                           <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
+                            icon="/assets/images/icons/theme/sip.svg"
                             title="Single Cube"
                             featureList={[
                               "AU Calling Costs Included",
@@ -117,7 +117,7 @@ function SIP(props) {
                       <div className="row justify-content-center">
                       <div className="col-lg-4 col-sm-6 col-md-6 p-1 my-3">
                           <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
+                            icon="/assets/images/icons/theme/sip.svg"
                             title="Cluster Cube"
                             featureList={[
                               "AU Calling Costs Included",
@@ -133,7 +133,7 @@ function SIP(props) {
                           </div>  
                           <div className="col-lg-4 col-sm-6 col-md-6 p-1 my-3">
                           <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
+                            icon="/assets/images/icons/theme/sip.svg"
                             title="Cluster Cube DEH"
                             featureList={[
                               "AU Calling Costs Included",
@@ -149,7 +149,7 @@ function SIP(props) {
                           </div>   
                           <div className="col-lg-4 col-sm-6 col-md-6 p-1 my-3">
                           <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
+                            icon="/assets/images/icons/theme/sip.svg"
                             title={<div className="text-center"> Cluster Cube DEH <br/> <small> (with Multiple DC) </small> </div>}
                             featureList={[
                               "AU Calling Costs Included",
