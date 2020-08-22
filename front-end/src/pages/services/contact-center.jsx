@@ -105,8 +105,8 @@ function main(props) {
           <div className="row px-lg-5 px-3">
             <div className="col-lg-4 my-3">
               <PricingCard
-                title="BASE COST PER MONTH"
-                icon="/assets/images/icons/theme/stack.svg"
+                title="Basic"
+                icon="/assets/images/icons/theme/origami.svg"
                 featureList={features}
               >
                 <Button
@@ -129,8 +129,8 @@ function main(props) {
             </div>
             <div className="col-lg-4 my-3">
               <PricingCard
-                title="CAGENT-STD"
-                icon="/assets/images/icons/theme/work.svg"
+                title="Standard"
+                icon="/assets/images/icons/theme/paper-plane.svg"
                 featureList={features}
               >
                 <Button
@@ -154,8 +154,8 @@ function main(props) {
             </div>
             <div className="col-lg-4 my-3">
               <PricingCard
-                title="CAGENT-PRM"
-                icon="/assets/images/icons/theme/town.svg"
+                title="Premium"
+                icon="/assets/images/icons/theme/airplane.svg"
                 featureList={features}
               >
                 <Button

@@ -56,12 +56,12 @@ function main(props) {
             <div className="row justify-content-center px-lg-5 px-3">
             <Fade duration={500} bottom>
               <div className="col-lg-4 my-3">
-                <PricingCard title="Two Geo Locations" icon="/assets/images/icons/theme/stack.svg" featureList={["Includes One Yearly Drill"]}>
+                <PricingCard title="Two Geo Locations" icon="/assets/images/icons/theme/property-2.svg" featureList={["Includes One Yearly Drill"]}>
                   <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls("Two Geo Locations")}}>View Options</Button>
                 </PricingCard>
               </div>
               <div className="col-lg-4 my-3">
-                <PricingCard title="Three Geo Locations" icon="/assets/images/icons/theme/stack.svg" featureList={["Includes One Yearly Drill"]}>
+                <PricingCard title="Three Geo Locations" icon="/assets/images/icons/theme/property-3.svg" featureList={["Includes One Yearly Drill"]}>
                   <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls("Three Geo Locations")}}>View Options</Button>
                 </PricingCard>
               </div>

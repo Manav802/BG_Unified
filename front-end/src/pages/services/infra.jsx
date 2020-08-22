@@ -70,7 +70,7 @@ const plans = [
   {
     index: 0,
     name: "Standard",
-    icon: "/assets/images/icons/theme/firewall_physical.svg",
+    icon: "/assets/images/icons/theme/origami.svg",
     feature: [
       "2vCPU",
       "80GB SSD Storage",
@@ -86,7 +86,7 @@ const plans = [
   {
     index: 1,
     name: "Premium",
-    icon: "/assets/images/icons/theme/firewall_physical.svg",
+    icon: "/assets/images/icons/theme/paper-plane.svg",
     feature: [
       "4vCPU",
       "80GB SSD Storage",
@@ -102,7 +102,7 @@ const plans = [
   {
     index: 2,
     name: "Gold",
-    icon: "/assets/images/icons/theme/firewall_physical.svg",
+    icon: "/assets/images/icons/theme/airplane.svg",
     feature: [
       "6vCPU",
       "80GB SSD Storage",
@@ -118,7 +118,7 @@ const plans = [
   {
     index: 3,
     name: "Platinum",
-    icon: "/assets/images/icons/theme/firewall_physical.svg",
+    icon: "/assets/images/icons/theme/rocket.svg",
     feature: [
       "8vCPU",
       "80GB SSD Storage",
@@ -330,7 +330,7 @@ function main(props) {
                   <div className="col-lg-4 my-3">
                     <Fade duration={500} distance={"30%"} bottom>
                       <PricingCard
-                        icon="/assets/images/icons/theme/firewall_physical.svg"
+                        icon="/assets/images/icons/theme/origami.svg"
                         title="Standard"
                         featureList={[
                           "2vCPU",
@@ -356,7 +356,7 @@ function main(props) {
                   <div className="col-lg-4 my-3">
                     <Fade duration={500} distance={"30%"} bottom>
                       <PricingCard
-                        icon="/assets/images/icons/theme/firewall_physical.svg"
+                        icon="/assets/images/icons/theme/paper-plane.svg"
                         title="Premium"
                         featureList={[
                           "4vCPU",

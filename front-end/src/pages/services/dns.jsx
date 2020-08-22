@@ -86,7 +86,7 @@ function DNS(props) {
                       <div className="row justify-content-center">
                         <div className="col-lg-5 col-sm-6 col-md-6 my-3">
                           <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
+                            icon="/assets/images/icons/theme/paper-plane.svg"
                             title="Standard DNS (BlackBox)"
                             featureList={[
                               "Includes 5 Zones",
@@ -109,7 +109,7 @@ function DNS(props) {
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6 my-3">
                           <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
+                            icon="/assets/images/icons/theme/rocket.svg"
                             title="Premium DNS (BlackBox)"
                             featureList={[
                               "Includes 5 Zones",
@@ -138,7 +138,7 @@ function DNS(props) {
                       <div className="row justify-content-center">
                         <div className="col-lg-5 col-sm-6 col-md-6 my-3">
                           <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
+                            icon="/assets/images/icons/theme/paper-plane.svg"
                             title="Standard DNS (BlackBox)"
                             featureList={[
                               "Includes 5 Zones",
@@ -161,7 +161,7 @@ function DNS(props) {
                         </div>
                         <div className="col-lg-5 col-sm-6 col-md-6  my-3">
                           <PricingCard
-                            icon="/assets/images/icons/theme/stack.svg"
+                            icon="/assets/images/icons/theme/rocket.svg"
                             title="Premium DNS (BlackBox)"
                             featureList={[
                               "Includes 5 Zones",

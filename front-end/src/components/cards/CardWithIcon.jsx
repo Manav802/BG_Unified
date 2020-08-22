@@ -23,19 +23,19 @@ function CardWithIcon(props) {
     );
   }
   return (
-    <Box pt="64px">
+    <Box pt="64px" h="100%">
       <Box className="card-with-icon shadow-lg h-100 align-items-center d-flex flex-column bg-white rounded p-3">
-      <div className="row iconbox mb-3">{iconbox}</div>
-      <div className="row display6 py-3 text-center mx-2">{props.title}</div>
-      <div className="row flex-fill cardContent py-3 mx-3 text-center">
-        {props.children}
-      </div>
-      <div className="row mx-3 my-3">
-        <Button className="p-4 action-btn" rightIcon="arrow-forward">
-          Learn More
-        </Button>
-      </div>
-    </Box>
+        <div className="row iconbox mb-3">{iconbox}</div>
+        <div className="row display6 py-3 text-center mx-2">{props.title}</div>
+        <div className="row flex-fill cardContent py-3 mx-3 text-center">
+          {props.children}
+        </div>
+        <div className="row mx-3 my-3">
+          <Button className="p-4 action-btn" rightIcon="arrow-forward">
+            Learn More
+          </Button>
+        </div>
+      </Box>
     </Box>
   );
 }

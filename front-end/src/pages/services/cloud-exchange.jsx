@@ -57,7 +57,7 @@ function main(props) {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-5 my-3">
                                         <PricingCard
-                                            icon="/assets/images/icons/theme/firewall_virtual.svg"
+                                            icon="/assets/images/icons/theme/cloud_exchange.svg"
                                             title="VC Bandwidth 100M"
                                         >
                                             <PricingQuote
@@ -74,7 +74,7 @@ function main(props) {
                                     </div>
                                     <div className="col-lg-5 my-3">
                                         <PricingCard
-                                            icon="/assets/images/icons/theme/firewall_virtual.svg"
+                                            icon="/assets/images/icons/theme/cloud_exchange.svg"
                                             title="VC Bandwidth 200M"
                                         >
                                             <PricingQuote
@@ -93,7 +93,7 @@ function main(props) {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-5 my-3">
                                         <PricingCard
-                                            icon="/assets/images/icons/theme/virtual_cluster.svg"
+                                            icon="/assets/images/icons/theme/cloud_exchange.svg"
                                             title="VC Bandwidth 500M"
                                         >
                                             <PricingQuote
@@ -110,7 +110,7 @@ function main(props) {
                                     </div>
                                     <div className="col-lg-5 my-3">
                                         <PricingCard
-                                            icon="/assets/images/icons/theme/virtual_cluster.svg"
+                                            icon="/assets/images/icons/theme/cloud_exchange.svg"
                                             title="VC Bandwidth 1G"
                                         >
                                             <PricingQuote
