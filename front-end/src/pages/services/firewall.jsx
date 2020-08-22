@@ -252,8 +252,9 @@ function Firewall(props) {
                       flow without any hindrance.
                     </div>
                     <Image
-                      height="300px"
-                      src="/assets/images/illustrations/diversity.svg"
+                      className="mt-auto"
+                      height="250px"
+                      src="/assets/images/illustrations/PlatformDiversity_Firewall.svg"
                     ></Image>
                   </div>
                 </div>
@@ -263,7 +264,7 @@ function Firewall(props) {
               <Fade duration={500} distance={"30%"} bottom>
                 <div className="card h-100 rounded-8">
                   <div className="card-body d-flex flex-column align-items-center">
-                    <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                    <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                       Fast and easy Deployment
                     </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">
@@ -272,8 +273,9 @@ function Firewall(props) {
                       your existing security infrastructure without capex.
                     </div>
                     <Image
-                      height="300px"
-                      src="/assets/images/illustrations/data_center.svg"
+                      className="mt-auto"
+                      height="250px"
+                      src="/assets/images/illustrations/FastAndEasyDevelopment_Firewall.svg"
                     ></Image>
                   </div>
                 </div>
@@ -283,7 +285,7 @@ function Firewall(props) {
               <Fade duration={500} distance={"30%"} bottom>
                 <div className="card h-100 rounded-8">
                   <div className="card-body d-flex flex-column align-items-center">
-                    <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                    <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                       Advance Technology Stack
                     </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">

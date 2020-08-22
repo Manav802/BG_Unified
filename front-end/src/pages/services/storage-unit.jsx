@@ -142,7 +142,7 @@ function main(props) {
               <Fade duration={500} distance={"30%"} bottom>
                 <div className="card h-100 rounded-8">
                   <div className="card-body d-flex flex-column align-items-center">
-                    <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                    <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                       Low pricing
                     </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">
@@ -151,8 +151,9 @@ function main(props) {
                       costing schedule. Dynamic as per your needs.
                     </div>
                     <Image
-                      height="300px"
-                      src="/assets/images/illustrations/diversity.svg"
+                      className="mt-auto"
+                      height="250px"
+                      src="/assets/images/illustrations/LowPricing_Stass.svg"
                     ></Image>
                   </div>
                 </div>
@@ -162,7 +163,7 @@ function main(props) {
               <Fade duration={500} distance={"30%"} bottom>
                 <div className="card h-100 rounded-8">
                   <div className="card-body d-flex flex-column align-items-center">
-                    <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                    <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                       Efficient and Agile
                     </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">
@@ -171,8 +172,9 @@ function main(props) {
                       storage resources.
                     </div>
                     <Image
-                      height="300px"
-                      src="/assets/images/illustrations/data_center.svg"
+                      className="mt-auto"
+                      height="250px"
+                      src="/assets/images/illustrations/EfficientAndAgile_Stass.svg"
                     ></Image>
                   </div>
                 </div>
@@ -182,7 +184,7 @@ function main(props) {
               <Fade duration={500} distance={"30%"} bottom>
                 <div className="card h-100 rounded-8">
                   <div className="card-body d-flex flex-column align-items-center">
-                    <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                    <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                       Highly available infrastructure
                     </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">
@@ -192,7 +194,7 @@ function main(props) {
                       when required.
                     </div>
                     <Image
-                      src="/assets/images/illustrations/assets.svg"
+                      src="/assets/images/illustrations/HighlyAvailaibleInfra_Stass.svg"
                       className="mt-auto"
                       height="250px"
                     ></Image>

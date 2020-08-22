@@ -173,7 +173,8 @@ function main(props) {
                                             reliability.
                                         </div>
                                         <Image
-                                            height="300px"
+                                            className="mt-auto"
+                                            height="250px"
                                             src="/assets/images/illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
                                         ></Image>
                                     </div>
@@ -184,7 +185,7 @@ function main(props) {
                             <Fade duration={500} distance={"30%"} bottom>
                                 <div className="card h-100 rounded-8">
                                     <div className="card-body d-flex flex-column align-items-center">
-                                        <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                                        <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                                             Scalable
                                         </div>
                                         <div className="text-secondary px-4 text-justify NunitoSans-Regular">
@@ -196,8 +197,9 @@ function main(props) {
                                             performance.
                                         </div>
                                         <Image
-                                            height="300px"
-                                            src="/assets/images/illustrations/data_center.svg"
+                                            className="mt-auto"
+                                            height="250px"   
+                                            src="/assets/images/illustrations/scalabilty.svg"
                                         ></Image>
                                     </div>
                                 </div>
@@ -207,7 +209,7 @@ function main(props) {
                             <Fade duration={500} distance={"30%"} bottom>
                                 <div className="card h-100 rounded-8">
                                     <div className="card-body d-flex flex-column align-items-center">
-                                        <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                                        <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                                             Integration
                                         </div>
                                         <div className="text-secondary px-4 text-justify NunitoSans-Regular">
@@ -218,7 +220,7 @@ function main(props) {
                                             complex structure handled easily.
                                         </div>
                                         <Image
-                                            src="/assets/images/illustrations/assets.svg"
+                                            src="/assets/images/illustrations/ConnectivityIntegration_CloudExchange.svg"
                                             className="mt-auto"
                                             height="250px"
                                         ></Image>

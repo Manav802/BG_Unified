@@ -239,8 +239,9 @@ function main(props) {
                       anytime, anywhere.{" "}
                     </div>
                     <Image
-                      height="300px"
-                      src="/assets/images/illustrations/WebHostingAsAService/Varied_Web_Hosting_Solutions.svg"
+                      className="mt-auto"
+                      height="250px"
+                      src="/assets/images/illustrations/Varied_Web_Hosting_Solutions.svg"
                     ></Image>
                   </div>
                 </div>
@@ -261,8 +262,9 @@ function main(props) {
                       with fast, secure and reliable hosting.{" "}
                     </div>
                     <Image
-                      height="300px"
-                      src="/assets/images/illustrations/WebHostingAsAService/Sound_and_Efficient_Planning.svg"
+                      className="mt-auto"
+                      height="250px"
+                      src="/assets/images/illustrations/Sound_and_Efficient_Planning.svg"
                     ></Image>
                   </div>
                 </div>
@@ -282,7 +284,7 @@ function main(props) {
                     </div>
                     <Image
                       className="pb-4"
-                      src="/assets/images/illustrations/WebHostingAsAService/Value_for_Money.svg"
+                      src="/assets/images/illustrations/Value_for_Money.svg"
                       className="mt-auto"
                       height="250px"
                     ></Image>
@@ -293,15 +295,19 @@ function main(props) {
           </div>
         </div>
       </div>
-      <div className="section py-0">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 p-5 rounded-8 bg-light">
-              <h4 className="display5 py-2 mb-2 text-center">
-                Why BG-Unified Solutions?
-              </h4>
-              <p className="text-justify">
-                Delivering a scalable, reliable and well-managed authoritative
+
+      <Fade duration={500} distance={"30%"} bottom>
+                <div className="section py-0 fdb-block section">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col text-center">
+                                <h1 className="display4">
+                                    Why BG Unified Solutions?
+                                </h1>
+                                <div className="row text-left">
+                                    <div className="col-12 col-md-6">
+                                        <p className="lead text-justify">
+                                        Delivering a scalable, reliable and well-managed authoritative
                 Web Hosting service. With assured low latency and high
                 availability, it is a cost-effective way to make your
                 applications and services available to your users. Dedicated Web
@@ -317,7 +323,12 @@ function main(props) {
                 features of F5 including Application Monitoring, Intrusion
                 Prevention. We offer varied Web Hosting Solutions that include
                 WordPress hosting, cloud hosting, dedicated server, AWS cloud,
-                digital ocean cloud, all under one roof. Multiple data centre
+                digital ocean cloud, all under one roof. 
+                                        </p>
+                                    </div>
+                                    <div className="col-12 col-md-6">
+                                        <p className="lead text-justify">
+                                        Multiple data centre
                 locations, allow access to your website anytime, anywhere.
                 Reduced costs, pay for what you want, no hidden costs and
                 completely transparent process. Costing and pricing discussed
@@ -333,11 +344,14 @@ function main(props) {
                 applications that your business requires to run and to interact
                 with customers and partners—while also mitigating the risk of
                 security breaches.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Fade>
       <div className="section pt-0">
         <div className="container">
           <Fade duration={400} distance={"30%"} bottom>
