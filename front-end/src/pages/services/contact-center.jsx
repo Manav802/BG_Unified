@@ -17,12 +17,14 @@ import {
   NumberInputStepper,
   NumberIncrementStepper,
   NumberDecrementStepper,
+  Popover,PopoverBody,PopoverArrow,PopoverContent,PopoverTrigger,PopoverHeader
 } from "@chakra-ui/core";
 import Fade from "react-reveal/Fade";
 import CardWithIcon from "../../components/cards/CardWithIcon";
 import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 import Head from "next/head";
 import Link from "next/link";
+import { Icon } from "@chakra-ui/core";
 
 const CustomRadio = React.forwardRef((props, ref) => {
   const { isChecked, isDisabled, value, ...rest } = props;
@@ -292,12 +294,21 @@ function main(props) {
                           />
                         </Slider>
                       </div>
-                      <div className="my-1 col-lg-6 mt-4">
-                        <div className="h6">ADVANCED QM</div>
+                      <div className="my-1 col-lg-4 offset-lg-2 mt-4">
+                        <div className="d-flex"> <div className="h6">ADVANCED QM</div> <Popover usePortal trigger="hover">
+                        <PopoverTrigger>
+                        <Icon className="m-1 ml-2 pt-1" name="question" size="28px" color="primary.500" />
+                        </PopoverTrigger>
+                          <PopoverContent zIndex={4}>
+                            <PopoverArrow />
+                            <PopoverHeader className="h6">Advanced QM</PopoverHeader>
+                            <PopoverBody>Advanced Quality Management solution gives you the tools to continuously measure and monitor agent performance, assess the quality and depth of your customer interactions, and drive constant improvement. In essence, an effective contact centre quality management program is directly connected to the success of your business.</PopoverBody>
+                          </PopoverContent>
+                        </Popover> </div>
                         <NumberInput
                           maxWidth="200px"
                           min={0}
-                          max={20}
+                          max={wfm-complianceQM}
                           value={advancedQM}
                           onChange={setAdvancedQM}
                         >
@@ -308,18 +319,23 @@ function main(props) {
                           </NumberInputStepper>
                         </NumberInput>
                       </div>
-                      <div className="my-1 col-lg-6 mt-4">
-                        <div className="h6">Number of Agents</div>
+                      <div className="my-1 col-lg-4 offset-lg-1 mt-4">
+                      <div className="d-flex"> <div className="h6">Compliance QM</div> <Popover usePortal trigger="hover">
+                        <PopoverTrigger>
+                        <Icon className="m-1 ml-2 pt-1" name="question" size="28px" color="primary.500" />
+                        </PopoverTrigger>
+                          <PopoverContent zIndex={4}>
+                            <PopoverArrow />
+                            <PopoverHeader className="h6">Compliance QM</PopoverHeader>
+                            <PopoverBody>Quality Management or Monitoring combined automatically scored calls via speech analytics; reconfigured QM evaluation; agent self-evaluation; and direct customer feedback. Customers don’t want a “managed” experience—they want a genuine experience and to speak to real people with real personalities. Call quality monitoring is all about refining agent behaviour and aligning it with business goals.</PopoverBody>
+                          </PopoverContent>
+                        </Popover> </div>
                         <NumberInput
                           maxWidth="200px"
                           min={0}
-                          max={20}
-                          value={
-                            wfm <= complianceQM + advancedQM
-                              ? wfm
-                              : complianceQM + advancedQM
-                          }
-                          onChange={setWfm}
+                          max={wfm-advancedQM}
+                          value={complianceQM}
+                          onChange={setComplianceQM}
                         >
                           <NumberInputField className="bg-light" />
                           <NumberInputStepper>
@@ -340,11 +356,11 @@ function main(props) {
                         tbSpace,
                         "TB Space"
                       )}${verifyNotEmpty(wfm, "WFM")}${verifyNotEmpty(
-                        complianceQM,
-                        "Compliance QM"
-                      )}${verifyNotEmpty(
                         advancedQM,
                         "Advanced QM"
+                      )}${verifyNotEmpty(
+                        complianceQM,
+                        "Compliance QM"
                       )}${handleFailOverNode(failOverNode)}`}
                       button
                     ></PricingQuote>
