@@ -141,7 +141,8 @@ function APPDEV(props) {
                       consideration.
                     </div>
                     <Image
-                      height="300px"
+                      className="mt-auto"
+                      height="250px"
                       src="/assets/images/illustrations/PlatformIndependence_AppDev.svg"
                     ></Image>
                   </div>
@@ -152,7 +153,7 @@ function APPDEV(props) {
               <Fade duration={500} distance={"30%"} bottom>
                 <div className="card h-100 rounded-8">
                   <div className="card-body d-flex flex-column align-items-center">
-                    <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                    <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                       Client-specific
                     </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">
@@ -162,7 +163,8 @@ function APPDEV(props) {
                       ensure to deliver every requirement expected.
                     </div>
                     <Image
-                      height="300px"
+                      className="mt-auto"
+                      height="250px"
                       src="/assets/images/illustrations/ClientSpecific_AppDev.svg"
                     ></Image>
                   </div>
@@ -173,7 +175,7 @@ function APPDEV(props) {
               <Fade duration={500} distance={"30%"} bottom>
                 <div className="card h-100 rounded-8">
                   <div className="card-body d-flex flex-column align-items-center">
-                    <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
+                    <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
                       Flexibility and Scalability
                     </div>
                     <div className="text-secondary px-4 text-justify NunitoSans-Regular">
@@ -183,7 +185,7 @@ function APPDEV(props) {
                       results.
                     </div>
                     <Image
-                      src="/assets/images/illustrations/FlexibilityAndScalability_AppDev.svg"
+                      src="/assets/images/illustrations/FlexibilityAndScalabilty_AppDev.svg"
                       className="mt-auto"
                       height="250px"
                     ></Image>
