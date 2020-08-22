@@ -356,11 +356,11 @@ function main(props) {
                         tbSpace,
                         "TB Space"
                       )}${verifyNotEmpty(wfm, "WFM")}${verifyNotEmpty(
-                        complianceQM,
-                        "Compliance QM"
-                      )}${verifyNotEmpty(
                         advancedQM,
                         "Advanced QM"
+                      )}${verifyNotEmpty(
+                        complianceQM,
+                        "Compliance QM"
                       )}${handleFailOverNode(failOverNode)}`}
                       button
                     ></PricingQuote>
