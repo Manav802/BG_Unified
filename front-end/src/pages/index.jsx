@@ -359,9 +359,9 @@ class Landing extends Component {
                   </div>
                 </Fade>
                 <Fade duration={500} cascade distance={"50%"} left>
-                  <div className="container">
-                    <div className="row justify-content-between px-5 py-2">
-                      <div className="col-sm-3 p-2">
+                  <div className="container-fluid">
+                    <div className="row justify-content-between px-5">
+                      <div className="col-md-3 col-sm-4 p-2">
                         <Box boxShadow="md" bg="white" className="hover-effect" borderRadius="sm" p={8}>
                           <div className="d-flex align-items-center flex-column">
                             <Image src="https://image.flaticon.com/icons/svg/1360/1360975.svg" size="64px"></Image>
@@ -369,7 +369,7 @@ class Landing extends Component {
                           </div>
                         </Box>
                       </div>
-                      <div className="col-sm-3 p-2">
+                      <div className="col-md-3 col-sm-4 p-2">
                         <Box boxShadow="md" bg="white" className="hover-effect" borderRadius="sm" p={8}>
                           <div className="d-flex align-items-center flex-column">
                             <Image src="https://image.flaticon.com/icons/svg/1360/1360902.svg" size="64px"></Image>
@@ -377,7 +377,7 @@ class Landing extends Component {
                           </div>
                         </Box>
                       </div>
-                      <div className="col-sm-3 p-2">
+                      <div className="col-md-3 col-sm-4 p-2">
                         <Box boxShadow="md" bg="white" className="hover-effect" borderRadius="sm" p={8}>
                           <div className="d-flex align-items-center flex-column">
                             <Image src="https://image.flaticon.com/icons/svg/1360/1360895.svg" size="64px"></Image>
