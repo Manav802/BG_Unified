@@ -21,7 +21,6 @@ function search(props) {
         articles: []
     })
     
-    console.log(router.query);
     //Set text and data
     useEffect(() => {if(search){setText(search);setData(dynamicSearch(search))}}, [search]) 
 
