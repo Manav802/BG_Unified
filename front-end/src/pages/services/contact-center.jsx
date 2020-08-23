@@ -294,6 +294,9 @@ function main(props) {
                           />
                         </Slider>
                       </div>
+                      <div className="col-12">
+                          The sum of value of Advance QM and Compliance QM cannot be greater then Wfm
+                      </div>
                       <div className="my-1 col-lg-4 offset-lg-2 mt-4">
                         <div className="d-flex"> <div className="h6">ADVANCED QM</div> <Popover usePortal trigger="hover">
                         <PopoverTrigger>
@@ -309,7 +312,7 @@ function main(props) {
                           maxWidth="200px"
                           min={0}
                           max={wfm-complianceQM}
-                          value={advancedQM}
+                          value={advancedQM % (wfm-complianceQM)}
                           onChange={setAdvancedQM}
                         >
                           <NumberInputField className="bg-light" />
