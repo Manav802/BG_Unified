@@ -51,7 +51,7 @@ class Newsroom extends Component {
               <div className="col display5 py-2 mt-2">Latest</div>
             </div>
             <div className="row my-2">
-              <Link href="/blogs/1-bg-unified-solutions-have-added-7-cisco-blade-chassis">
+              <Link href="/blogs/[bid]" as="/blogs/1-bg-unified-solutions-have-added-7-cisco-blade-chassis">
                 <div className="col-lg-4 my-2">
                   <CardWithImage
                     src="https://www.bgunifiedsolutions.net/wp-content/uploads/2016/11/blog3.png"
@@ -60,7 +60,7 @@ class Newsroom extends Component {
                   />
                 </div>
               </Link>
-              <Link href="/blogs/2-successfull-up-gradation-of-mega-cisco-call-manager-cluster-from-version-10.5.1-to-12.0.1.su1">
+              <Link href="/blogs/[bid]" as="/blogs/2-successfull-up-gradation-of-mega-cisco-call-manager-cluster-from-version-10.5.1-to-12.0.1.su1">
                 <div className="col-lg-4 my-2">
                   <CardWithImage
                     src="https://www.bgunifiedsolutions.net/wp-content/uploads/2016/11/blog5.jpg"
@@ -69,7 +69,7 @@ class Newsroom extends Component {
                   />
                 </div>
               </Link>
-              <Link href="/blogs/3-bg-unified-solutions-got-nominated-for-two-awards-under-service-and-collaboration-within-revenue-nsw">
+              <Link href="/blogs/[bid]" as="/blogs/3-bg-unified-solutions-got-nominated-for-two-awards-under-service-and-collaboration-within-revenue-nsw">
                 <div className="col-lg-4 my-2">
                   <CardWithImage
                     src="https://www.bgunifiedsolutions.net/wp-content/uploads/2016/11/blog4.jpg"
@@ -86,7 +86,7 @@ class Newsroom extends Component {
               <div className="col display5">Popular</div>
             </div>
             <div className="row my-2 ">
-              <Link href="/blogs/8-bgus-service-portfolio-update">
+              <Link href="/blogs/[bid]" as="/blogs/8-bgus-service-portfolio-update">
                 <div className="col-lg-4 my-2">
                   <CardWithImage
                     src="/assets/images/newsroom/8. Portfolio Update.png"
@@ -95,7 +95,7 @@ class Newsroom extends Component {
                   />
                 </div>
               </Link>
-              <Link href="/blogs/9-business-operations-during-covid-19">
+              <Link href="/blogs/[bid]" as="/blogs/9-business-operations-during-covid-19">
                 <div className="col-lg-4 my-2">
                   <CardWithImage
                     src="/assets/images/newsroom/coronavirus.jpg"
@@ -104,7 +104,7 @@ class Newsroom extends Component {
                   />
                 </div>
               </Link>
-              <Link href="/blogs/11-complete-vdi-rds-as-a-service">
+              <Link href="/blogs/[bid]" as="/blogs/11-complete-vdi-rds-as-a-service">
                 <div className="col-lg-4 my-2">
                   <CardWithImage
                     src="/assets/images/newsroom/11. Complete VDI.png"
