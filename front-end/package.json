@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://manav802.github.io/BG_Unified/",
   "dependencies": {
+    "-": "0.0.1",
     "@chakra-ui/core": "^0.8.0",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
@@ -19,6 +20,7 @@
     "framer-motion": "^2.4.2",
     "gh-pages": "^3.1.0",
     "install": "^0.13.0",
+    "jquery": "^1.9.1",
     "next": "^9.4.4",
     "next-images": "^1.4.0",
     "node-sass": "^4.14.1",
@@ -38,6 +40,7 @@
     "react-router": "^5.2.0",
     "react-scripts": "^3.4.3",
     "react-transition-group": "^4.4.1",
+    "typescript": "^4.0.2",
     "typewriter-effect": "^2.13.1",
     "uifx": "^2.0.7"
   },

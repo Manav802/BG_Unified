@@ -357,33 +357,29 @@ class Landing extends Component {
                   </div>
                 </Fade>
                 <Fade duration={500} cascade distance={"50%"} left>
-                  <div className="container-fluid">
-                    <div className="row justify-content-between px-5">
-                      <div className="col-md-3 col-sm-4 p-2">
-                        <Box boxShadow="md" bg="white" className="hover-effect" borderRadius="sm" p={8}>
-                          <div className="d-flex align-items-center flex-column">
-                            <Image src="https://image.flaticon.com/icons/svg/1360/1360975.svg" size="64px"></Image>
-                            <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Sydney</Heading>
-                          </div>
-                        </Box>
+                  <div className="col-md-3 col-sm-4 p-2">
+                    <Box boxShadow="md" bg="white" className="hover-effect" borderRadius="sm" p={8}>
+                      <div className="d-flex align-items-center flex-column">
+                        <Image src="https://image.flaticon.com/icons/svg/1360/1360975.svg" size="64px"></Image>
+                        <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Sydney</Heading>
                       </div>
-                      <div className="col-md-3 col-sm-4 p-2">
-                        <Box boxShadow="md" bg="white" className="hover-effect" borderRadius="sm" p={8}>
-                          <div className="d-flex align-items-center flex-column">
-                            <Image src="https://image.flaticon.com/icons/svg/1360/1360902.svg" size="64px"></Image>
-                            <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Auckland</Heading>
-                          </div>
-                        </Box>
+                    </Box>
+                  </div>
+                  <div className="col-md-3 col-sm-4 p-2">
+                    <Box boxShadow="md" bg="white" className="hover-effect" borderRadius="sm" p={8}>
+                      <div className="d-flex align-items-center flex-column">
+                        <Image src="https://image.flaticon.com/icons/svg/1360/1360902.svg" size="64px"></Image>
+                        <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Auckland</Heading>
                       </div>
-                      <div className="col-md-3 col-sm-4 p-2">
-                        <Box boxShadow="md" bg="white" className="hover-effect" borderRadius="sm" p={8}>
-                          <div className="d-flex align-items-center flex-column">
-                            <Image src="https://image.flaticon.com/icons/svg/1360/1360895.svg" size="64px"></Image>
-                            <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Melbourne</Heading>
-                          </div>
-                        </Box>
+                    </Box>
+                  </div>
+                  <div className="col-md-3 col-sm-4 p-2">
+                    <Box boxShadow="md" bg="white" className="hover-effect" borderRadius="sm" p={8}>
+                      <div className="d-flex align-items-center flex-column">
+                        <Image src="https://image.flaticon.com/icons/svg/1360/1360895.svg" size="64px"></Image>
+                        <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Melbourne</Heading>
                       </div>
-                    </div>
+                    </Box>
                   </div>
                 </Fade>
               </div>
@@ -484,8 +480,6 @@ class Landing extends Component {
             </div>
           </div>
         </div>
-
-
         <div className="section pb-0">
           <div className="container">
             <div className="my-lg-4 py-lg-3">
