@@ -27,6 +27,7 @@
     "react": "^16.13.1",
     "react-chat-widget": "^3.0.5",
     "react-chat-window": "^1.2.1",
+    "react-countup": "^4.3.3",
     "react-crossfade-image": "^1.2.0",
     "react-dom": "^16.13.1",
     "react-flickity-component": "^3.5.0",
