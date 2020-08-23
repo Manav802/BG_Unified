@@ -83,7 +83,7 @@ function main(props) {
                                 ]}
                             >
                                 <div className="w-100 px-3 text-center my-2 NunitoSans-Bold">
-                                    <Divider mb="4" borderColor="primary.500" />
+                                    <Divider mb="4" />
                                     Extra Logs
                                 </div>
                                 <div className="w-100 px-3 mb-2">
@@ -143,7 +143,7 @@ function main(props) {
                                 ]}
                             >
                                 <div className="w-100 px-3 text-center my-2 NunitoSans-Bold">
-                                    <Divider mb="4" borderColor="primary.500" />
+                                    <Divider mb="4"/>
                                     Extra Logs
                                 </div>
                                 <div className="w-100 px-3 mb-2">
@@ -203,7 +203,7 @@ function main(props) {
                                 ]}
                             >
                                 <div className="w-100 px-3 text-center my-2 NunitoSans-Bold">
-                                    <Divider mb="4" borderColor="primary.500" />
+                                    <Divider mb="4" />
                                     Extra Logs
                                 </div>
                                 <div className="w-100 px-3 mb-2">
