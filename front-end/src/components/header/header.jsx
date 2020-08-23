@@ -260,7 +260,7 @@ function header(props) {
                     </Fade>
                 </Collapse>
             </div>
-            {show && <div className="overlay" onClick={overlayClick} />}
+            {show ? <div className="overlay" onClick={overlayClick} /> : false}
         </>
     )
 }
