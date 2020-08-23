@@ -352,12 +352,7 @@ class Landing extends Component {
                     <Heading size="sm" className="text-primary" letterSpacing={1.5} textTransform="uppercase" mb={2}>Our Reach</Heading>
                     <p className="mb-2 display3 text-white">Our Data Center Locations</p>
                     <h6 className="h6 NunitoSans-SemiBold text-white text-justify">
-                      BG Unified Solution is a specialist in Hosted Solutions and
-                      Services that helps clients plan, build, support and manage
-                      their IT infrastructure. Currently, we have 6 DC locations
-                      including Equinix SY3, SY4, ME1, LD3, IBM DC Auckland and
-                      GOVDC and planned to increase to 10 POPs by end of the year
-                      2019.
+                      BG Unified Solution specializes in Hosting Solutions and Services.We help clients plan, build, support and manage their IT infrastructure. Currently, we have several DC locations including ME1, LD3, IBM. We have our Data Centre Locations spread out to locations including Auckland, Sydney and Melbourne.
                 </h6>
                   </div>
                 </Fade>
