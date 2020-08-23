@@ -747,7 +747,7 @@ function main(props) {
                       </div>
                     }
                     iconBg="#19C741"
-                    children="Prototype multisite or multi-cloud DR strategies. Shortened Recovery Time.Geographically dispersed availability"
+                    children="End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions."
                   />
                 </a>
               </Link>
