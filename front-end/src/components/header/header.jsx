@@ -63,7 +63,7 @@ function header(props) {
                             </Popover>
                             {/* <Search toggle ={() => setSearch(!search)} searching={search}></Search> */}
                             {/*propper syntax to use link with dynamic routing*/}
-                            <Link href={`/search/[search]`} as={"/search/firewall"}>
+                            <Link href={`/search?search=firewall`}>
                                 <a className="p-2 rounded-8 hover-effect">
                                     <Icon name="search" onClick={props.toggle} size="18px"></Icon>
                                 </a>

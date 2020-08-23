@@ -2,7 +2,7 @@ import React, { Component, useEffect } from "react";
 import Head from "next/head";
 import {Box, Input, InputGroup, Text, Heading, InputLeftElement, Icon} from "@chakra-ui/core"
 import Fade from "react-reveal/Fade";
-import {dynamicSearch, searchData} from "../../../public/assets/js/searchFunctions"
+import {dynamicSearch, searchData} from "../../public/assets/js/searchFunctions"
 import Link from "next/link";
 import {useRouter} from "next/router";
 

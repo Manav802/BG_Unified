@@ -100,4 +100,17 @@ function Blogs() {
   );
 }
 
+export async function getStaticPaths() {
+  return {
+    paths: BLOGS.map((x)=>({params:{bid:x.id}})),
+    fallback: false // See the "fallback" section below
+  };
+}
+export async function getStaticProps() {
+  return {
+    props: {
+    },
+  }
+}
+
 export default Blogs;
