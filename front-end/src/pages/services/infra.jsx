@@ -269,8 +269,10 @@ function main(props) {
             </Fade>
             <Fade duration={700} delay={500} bottom>
                 <ButtonGroup className="mt-3" spacing="16px">
-                  <Button variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button>
-                  <Button variant="outline" _hover={{color:"black", bg:"white"}} size="lg">Contact Sales</Button>
+                  <Button onClick={() => {
+                    window.scrollTo(0, document.getElementById("pricing").offsetTop - 80)
+                  }} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button>
+                  <Link href="/contact"><Button variant="outline" _hover={{color:"black", bg:"white"}} size="lg">Contact Sales</Button></Link>
                 </ButtonGroup>
             </Fade>
             </div>
@@ -350,7 +352,7 @@ function main(props) {
       </div>
       </div>
 
-      <Box className="bg-light" py="3rem">
+      <Box id="pricing" className="bg-light" py="3rem">
           <Heading size="xl" textAlign="center" mb={6} fontFamily="Nexa Bold">Our Pricing Plans</Heading>
           <div className="row justify-content-center">
             <Button
@@ -490,7 +492,7 @@ function main(props) {
             </TabPanels>
         </Tabs>
           <div className="container">
-            <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
+            <Collapse id="quoteForm" className="px-lg-5 px-3" mt={6} isOpen={show}>
               <div className="px-4 py-5 border">
                 <div className="display5 text-center">
                   {tabs[tabIndex].title} ({planName})
@@ -611,6 +613,7 @@ function main(props) {
 
                   <div className="col-lg-6 mt-4 py-3 d-flex justify-content-end align-items-center">
                     <PricingQuote
+                    serviceName="Infrastructure As A Service"
                       serviceDescription={`${
                         tabs[tabIndex].title
                       } (${planName})${verifyNotEmpty(
