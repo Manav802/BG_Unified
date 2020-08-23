@@ -56,7 +56,6 @@ function Firewall(props) {
                 <TabList style={{ borderBottomColor: "#ffffff22" }}>
                   <Tab className="p-3 px-4 text-white display6">Physical</Tab>
                   <Tab className="p-3 px-4 text-white display6">Virtual</Tab>
-                  <Tab className="p-3 px-4 text-white display6">Other</Tab>
                 </TabList>
                 <TabPanels>
                   <TabPanel className="py-2">
@@ -176,38 +175,7 @@ function Firewall(props) {
                       </div>
                     </Fade>
                   </TabPanel>
-                  <TabPanel className="py-2">
-                    <Fade duration={500} distance={"30%"} bottom>
-                      <div className="row justify-content-center">
-                        <div className="col-lg-5 my-3">
-                          <PricingCard
-                            icon="/assets/images/icons/theme/firewall_virtual.svg"
-                            title="Make any changes"
-                          >
-                            <PricingQuote
-                              buttonStyle="mt-4"
-                              button
-                              serviceName="Firewall As A Service"
-                              serviceDescription="Make any changes"
-                            ></PricingQuote>
-                          </PricingCard>
-                        </div>
-                        <div className="col-lg-5 my-3">
-                          <PricingCard
-                            icon="/assets/images/icons/theme/firewall_virtual.svg"
-                            title="Emergency Change"
-                          >
-                            <PricingQuote
-                              buttonStyle="mt-4"
-                              button
-                              serviceName="Firewall As A Service"
-                              serviceDescription="Emergency Change"
-                            ></PricingQuote>
-                          </PricingCard>
-                        </div>
-                      </div>
-                    </Fade>
-                  </TabPanel>
+                  
                 </TabPanels>
               </Tabs>
             </div>

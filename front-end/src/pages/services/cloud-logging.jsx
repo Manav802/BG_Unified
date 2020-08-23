@@ -4,7 +4,7 @@ import {
     Slider,
     SliderThumb,
     SliderTrack,
-    SliderFilledTrack,
+    SliderFilledTrack,Divider
 } from "@chakra-ui/core";
 import Fade from "react-reveal/Fade";
 import CardWithIcon from "../../components/cards/CardWithIcon";
@@ -82,10 +82,11 @@ function main(props) {
                                     "Fully Managed Service",
                                 ]}
                             >
-                                <div className=" my-2 NunitoSans-Bold">
+                                <div className="w-100 px-3 text-center my-2 NunitoSans-Bold">
+                                    <Divider mb="4" />
                                     Extra Logs
                                 </div>
-                                <div className="w-100 px-3">
+                                <div className="w-100 px-3 mb-2">
                                     <Slider
                                         color="primary"
                                         defaultValue={0}
@@ -141,10 +142,11 @@ function main(props) {
                                     "Fully Managed Service",
                                 ]}
                             >
-                                <div className=" my-2 NunitoSans-Bold">
+                                <div className="w-100 px-3 text-center my-2 NunitoSans-Bold">
+                                    <Divider mb="4"/>
                                     Extra Logs
                                 </div>
-                                <div className="w-100 px-3">
+                                <div className="w-100 px-3 mb-2">
                                     <Slider
                                         color="primary"
                                         defaultValue={0}
@@ -200,10 +202,11 @@ function main(props) {
                                     "Fully Managed Service",
                                 ]}
                             >
-                                <div className=" my-2 NunitoSans-Bold">
+                                <div className="w-100 px-3 text-center my-2 NunitoSans-Bold">
+                                    <Divider mb="4" />
                                     Extra Logs
                                 </div>
-                                <div className="w-100 px-3">
+                                <div className="w-100 px-3 mb-2">
                                     <Slider
                                         color="primary"
                                         defaultValue={0}
