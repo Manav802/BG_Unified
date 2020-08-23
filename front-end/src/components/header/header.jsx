@@ -28,7 +28,11 @@ const initRef = React.useRef();
 const [show, setShow] = React.useState(0);
 const [search, setSearch] = React.useState(false)
 Router.events.on('routeChangeComplete', () => setShow(false) ); 
+const overlayClick=()=>{
+    setShow(0);
+}
 return (
+    <>
 <div className="header bg-white shadow-sm">
         <div className="container">
             <div className="p-3 transition-3 d-flex justify-content-between align-items-center layer-4">
@@ -256,6 +260,7 @@ return (
                 </Fade>
             </Collapse>
         </div>
+        {show&&<div className="overlay" onClick={overlayClick}/>}</>
     )
 }
 
