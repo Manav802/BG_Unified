@@ -61,7 +61,8 @@ return (
                     </PopoverContent>
                 </Popover>
                 {/* <Search toggle ={() => setSearch(!search)} searching={search}></Search> */}
-                <Link href={`/search/firewall`}>
+                {/*propper syntax to use link with dynamic routing*/} 
+                <Link href={`/search/[search]`} as={"/search/firewall"}>
                 <a className="p-2 rounded-8 hover-effect">
                     <Icon name="search" onClick={props.toggle} size="18px"></Icon>
                 </a> 
@@ -239,20 +240,18 @@ return (
                                     <h5 className="text-primary display6">
                                         What's New
                                     </h5>
-                                    <Link href="/blogs/3-bg-unified-solutions-got-nominated-for-two-awards-under-service-and-collaboration-within-revenue-nsw">
-                                        <WhatsNew
+                                    <WhatsNew
                                             image="https://www.bgunifiedsolutions.net/wp-content/uploads/2016/11/blog4.jpg"
                                             heading="BG Unified Solutions got nominated for two awards"
                                             text="BG Unified Solutions got nomination ..."
-                                        ></WhatsNew>
-                                    </Link>
-                                    <Link href="/blogs/2-successfull-up-gradation-of-mega-cisco-call-manager-cluster-from-version-10.5.1-to-12.0.1.su1">
-                                        <WhatsNew
-                                            image="https://www.bgunifiedsolutions.net/wp-content/uploads/2016/11/blog5.jpg"
-                                            heading="Successfull upgradation Mega Cisco Call Manager"
-                                            text="BG Unified Solutions team have successfully upgraded its  ..."
-                                        ></WhatsNew>
-                                    </Link>
+                                            link="/blogs/3-bg-unified-solutions-got-nominated-for-two-awards-under-service-and-collaboration-within-revenue-nsw"
+                                        />
+                                    <WhatsNew
+                                        image="https://www.bgunifiedsolutions.net/wp-content/uploads/2016/11/blog5.jpg"
+                                        heading="Successfull upgradation Mega Cisco Call Manager"
+                                        text="BG Unified Solutions team have successfully upgraded its  ..."
+                                        link="/blogs/2-successfull-up-gradation-of-mega-cisco-call-manager-cluster-from-version-10.5.1-to-12.0.1.su1"
+                                    />
                                 </div>
                             </div>
                         </div>
