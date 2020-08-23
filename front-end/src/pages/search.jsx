@@ -2,7 +2,7 @@ import React, { Component, useEffect } from "react";
 import Head from "next/head";
 import {Box, Input, InputGroup, Text, Heading, InputLeftElement, Icon} from "@chakra-ui/core"
 import Fade from "react-reveal/Fade";
-import {dynamicSearch, searchData} from "../../../public/assets/js/searchFunctions"
+import {dynamicSearch, searchData} from "../../public/assets/js/searchFunctions"
 import Link from "next/link";
 import {useRouter} from "next/router";
 
@@ -21,6 +21,7 @@ function search(props) {
         articles: []
     })
     
+    console.log(router.query);
     //Set text and data
     useEffect(() => {if(search){setText(search);setData(dynamicSearch(search))}}, [search]) 
 
