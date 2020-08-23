@@ -412,6 +412,7 @@ function main(props) {
                     <div className="col-lg-12 mt-2">
                       <div className="h6">Choose a type</div>
                       <RadioButtonGroup
+                        value={type}
                         onChange={(value) => setType(value)}
                         mt={4}
                         isInline
