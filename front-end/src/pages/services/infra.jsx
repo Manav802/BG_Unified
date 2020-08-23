@@ -174,6 +174,7 @@ function main(props) {
   const [tabIndex, setTabIndex] = React.useState(0);
   const handleTabsChange = (index) => {
     setTabIndex(index);
+    setShow(false);
   };
 
   const [dailybackup, setDailyBackup] = React.useState(false);
@@ -183,6 +184,15 @@ function main(props) {
   const [windowLicense, setWindowLicense] = React.useState(false);
   const handleWindowLicense = (windowLicense) =>
     windowLicense ? ",I have a Windows License" : "";
+
+  const resetOnCardChange = () =>{
+    setWindowLicense(false);
+    setDailyBackup(false);
+    setType("");
+    setCPU(0);
+    setRam(0);
+  setStorage(0);
+}
 
   //Panels
   const tabPanel = (
@@ -204,6 +214,7 @@ function main(props) {
                     onClick={() => {
                       handlePlan(plan.name);
                       openControls();
+                      resetOnCardChange();
                     }}
                   >
                     Customize
@@ -311,6 +322,7 @@ function main(props) {
                       setWindowLicense(false);
                       setDailyBackup(false);
                       setType("");
+                      setShow(false);
                     }}
                     className={
                       "box-none tab display6 " +
@@ -346,7 +358,7 @@ function main(props) {
                           variantColor="primary"
                           variant="outline"
                           size="lg"
-                          onClick={openControls}
+                          onClick={()=>{openControls(); handlePlan("Standard"); resetOnCardChange();}}
                         >
                           Get a quote
                         </Button>
@@ -372,7 +384,7 @@ function main(props) {
                           variantColor="primary"
                           variant="outline"
                           size="lg"
-                          onClick={openControls}
+                          onClick={()=>{openControls(); handlePlan("Premium"); resetOnCardChange();}}
                         >
                           Get a quote
                         </Button>
@@ -414,10 +426,10 @@ function main(props) {
                     </div>
                   )}
                   <div className="col-lg-12 mt-4">
-                    <div className="h6">Extend Storage</div>
+                    <div className="h6">Extend Storage (in GB)</div>
                     <Slider
                       color="primary"
-                      my="24px"
+                      my="18px"
                       defaultValue={0}
                       min={0}
                       max={22}
@@ -433,15 +445,15 @@ function main(props) {
                         width="auto"
                         padding="8px"
                         height="32px"
-                        children={80 + storage * 8 + " GB"}
+                        children={80 + storage * 8 }
                       />
                     </Slider>
                   </div>
                   <div className="col-lg-12 mt-4">
-                    <div className="h6">Additional Memory</div>
+                    <div className="h6">Additional Memory (in GB)</div>
                     <Slider
                       color="primary"
-                      my="24px"
+                      my="18px"
                       defaultValue={0}
                       max="64"
                       value={ram}
@@ -456,14 +468,14 @@ function main(props) {
                         width="auto"
                         padding="8px"
                         height="32px"
-                        children={ram + " GB"}
+                        children={ram}
                       />
                     </Slider>
                   </div>
                   {tabIndex < 4 && (
                     <div className="col-lg-6 mt-4">
                       <div className="d-flex">
-                        <Switch
+                        <Switch color="primary"
                           onChange={(e) => {
                             setDailyBackup(e.target.checked);
                           }}
@@ -479,7 +491,7 @@ function main(props) {
                   {tabIndex < 4 && (
                     <div className="col-lg-6 mt-4">
                       <div className="d-flex">
-                        <Switch
+                        <Switch color="primary"
                           onChange={(e) => {
                             setWindowLicense(e.target.checked);
                           }}
@@ -499,7 +511,7 @@ function main(props) {
                       min={0}
                       max={20}
                       value={cpu}
-                      onChange={setCPU}
+                      onChange={(value)=>{value<=20?setCPU(value):setCPU(20)}}
                     >
                       <NumberInputField className="bg-light" />
                       <NumberInputStepper>

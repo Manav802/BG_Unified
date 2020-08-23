@@ -50,6 +50,14 @@ function main(props) {
     const [UTM,setUTM] = React.useState(0);
     const [showUTMSlider, setShowUTMSlider] = React.useState(false);
     const [IP,setIP] = React.useState(0);
+    const resetOnCardChange = () =>{
+      setIP(0);
+      setDailyBackups(false);
+      setUTM(0);
+      setType(`,${types[0].name}`);
+      setShowUTMSlider(false);
+      setUTMSwitch(false);
+  }
   return (
     <div>
       <Head>
@@ -87,17 +95,17 @@ function main(props) {
                 <div className="row px-lg-5 px-3">
                     <div className="col-lg-4 my-3">
                         <PricingCard  title="Standard" icon="/assets/images/icons/theme/paper-plane.svg" featureList={["Include 2vCPU", "Includes 4 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Standard")}}>View More</Button>
+                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Standard"); resetOnCardChange();}}>View More</Button>
                        </PricingCard>
                     </div>
                     <div className="col-lg-4 my-3">
                         <PricingCard title="Premium" icon="/assets/images/icons/theme/airplane.svg" featureList={["Include 4vCPU", "Includes 6 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Premium")}}>View More</Button>
+                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Premium"); resetOnCardChange();}}>View More</Button>
                         </PricingCard>
                     </div>
                     <div className="col-lg-4 my-3">
                         <PricingCard className="hover-effect" title="Gold" icon="/assets/images/icons/theme/rocket.svg" featureList={["Include 6vCPU", "Includes 8 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
-                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Gold")}}>View More</Button>
+                            <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Gold"); resetOnCardChange();}}>View More</Button>
                         </PricingCard>
                     </div>
                 </div>
@@ -109,19 +117,19 @@ function main(props) {
                             <div className="row px-3">
                                 <div className="col-lg-10 offset-lg-1 my-3">
                                     <div className="h6">Choose a type : </div>
-                                    <Select onChange={(e)=>{setType(e.target.value)}} variant="outline"  > 
+                                    <Select value={type} onChange={(e)=>{setType(e.target.value)}} variant="outline"  > 
                                     {types.map((x)=> <option key={x.name} value={`,${x.name}`}>{x.name}</option>)}
                                     </Select>
                                 </div>
                                 <div className="col-lg-12 offset-lg-1 my-3">
                                     
-                                    <Switch onChange={(e) => { setDailyBackups(e.target.checked) }} color="primary" mb={0} id="daily-backups" />
+                                    <Switch isChecked={dailyBackups} onChange={(e) => { setDailyBackups(e.target.checked) }} color="primary" mb={0} id="daily-backups" />
                                     <FormLabel mb={0} ml="12px" htmlFor="hourly-backup">Daily Backups</FormLabel>
                                    
                                 </div>
                                 <div className="col-lg-11 offset-lg-1 mt-2">
                                     
-                                    <Switch onChange={(e) => { setUTMSwitch(e.target.checked);
+                                    <Switch isChecked={UTMSwitch} onChange={(e) => { setUTMSwitch(e.target.checked);
                                     if(e.target.checked==false){setShowUTMSlider(false); setUTM(0);}  }} color="primary" mb={0} id="UTM-switch" />
                                     <FormLabel mb={0} ml="12px" htmlFor="UTM-Firewall"> UTM Enabled Firewall Protection</FormLabel>
 
@@ -173,10 +181,11 @@ function main(props) {
                                     </Collapse>
                                 </div>
 
-                                <div className="col-lg-5 offset-lg-1 mt-4 mb-2">
+                                <div className="col-lg-4 offset-lg-1 mt-4 mb-2">
                                     <div className="h6">Public IPs</div>
                                     <NumberInput
-                                    onChange={(value) => setIP(value)}
+                                    value={IP}
+                                    onChange={(value) => {value<=20?setIP(value):setIP(20)}}
                                     defaultValue={0}
                                     min={0}
                                     max={20}
@@ -189,7 +198,7 @@ function main(props) {
                                     </NumberInput>
                                 </div>
                                 
-                                <div className="col-lg-12 mt-4 d-flex justify-content-center">
+                                <div className="col-lg-6 mt-4 py-2 d-flex justify-content-end align-items-end">
                                     <PricingQuote serviceName="Web Hosting As A Service" serviceDescription={`${plan} ${type} ${handledailyBackups(dailyBackups)} ${handleUTMSwitch(UTMSwitch)} ${verifyNotEmpty(UTM,"Additional UTM Firewall Web Servers")} ${verifyNotEmpty(IP,"Public IPs")}`} button ></PricingQuote>
                                 </div>
                             </div>
