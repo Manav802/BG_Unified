@@ -69,7 +69,7 @@ function main(props) {
                             <div className="display5 text-center">Storage Options</div>
                             <div className="row px-3 justify-content-center px-lg-4">
 
-                                <div className="col-lg-11 mt-4">
+                                <div className="col-lg-10 mt-4">
                                     <Slider color="primary" defaultValue={10} min={1} max={200} value={value} onChange={handleChange}>
                                         <SliderTrack h="16px" borderRadius="8px" />
                                         <SliderFilledTrack h="16px" borderRadius="8px" />
@@ -80,7 +80,7 @@ function main(props) {
                                                     width="auto"
                                                     padding="8px"
                                                     height="32px"
-                                                    children={value} />
+                                                    children={value + "TB"} />
                                     </Slider>
                                 </div>
                                 <div className="col-lg-5 mt-4">

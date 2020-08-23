@@ -165,7 +165,7 @@ function main(props) {
                                 </div>
                                 <div className="row px-3">
                                     <div className="col-lg-12 mt-4">
-                                        <div className="h6">No. of Copies</div>
+                                        <div className="h6">Number of Copies</div>
                                         <Slider
                                             color="primary"
                                             my="24px"
@@ -196,8 +196,8 @@ function main(props) {
                                     </div>
                                     <div className="col-lg-5 mt-4">
                                         <div className="h6">
-                                            Specify your choice of no. of
-                                            Restore Points?
+                                      Number of
+                                            Restore Points
                                         </div>
                                         <Select
                                             onChange={(e) =>
@@ -229,8 +229,7 @@ function main(props) {
                                     </div>
                                     <div className="col-lg-5 offset-lg-1 mt-4">
                                         <div className="h6">
-                                            Set no. of Geo Locations for your
-                                            Backups?
+                                            Number of Geo-Locations
                                         </div>
                                         <Select
                                             onChange={(e) =>
