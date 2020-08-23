@@ -631,9 +631,9 @@ function main(props) {
           </div>
           <Heading textAlign="center" size="md" mt="64px" mb="2rem" opacity={.5}>Supported Operating Systems</Heading>
           <Flex justify="center">
-              <Image src="/assets/images/OS/redhat.png" mx={12} height="80px" my={6}></Image>
-              <Image src="/assets/images/OS/windows10.png" mx={12} height="80px" my={6}></Image>
-              <Image src="/assets/images/OS/windowsServer.png" mx={12} height="80px" my={6}></Image>
+              <Image src="/assets/images/os/redhat.png" mx={12} height="80px" my={6}></Image>
+              <Image src="/assets/images/os/windows10.png" mx={12} height="80px" my={6}></Image>
+              <Image src="/assets/images/os/windowsServer.png" mx={12} height="80px" my={6}></Image>
           </Flex>
       </Box>
 
