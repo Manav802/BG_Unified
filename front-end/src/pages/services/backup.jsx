@@ -161,7 +161,7 @@ function main(props) {
                         >
                             <div className="px-4 py-5 border">
                                 <div className="display5 text-center">
-                                    Customize your plan
+                                    Customize Your Enterprise Plan
                                 </div>
                                 <div className="row px-3">
                                     <div className="col-lg-12 mt-4">
