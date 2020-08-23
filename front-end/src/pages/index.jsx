@@ -45,23 +45,28 @@ const sliderInfo = [
 const processInfo = [
   {
     title: "Consult",
-    color: "green.500"
+    color: "green.500",
+    content: "From concept through business case then on to high level design"
   },
   {
     title: "Design",
-    color: "blue.500"
+    color: "blue.500",
+    content: "From high level design to detailed design ready to build"
   },
   {
     title: "Build",
-    color: "yellow.500"
+    color: "yellow.500",
+    content: "After design sign off we procure and build your tailored solution"
   },
   {
     title: "Deploy",
-    color: "red.500"
+    color: "red.500",
+    content: "Implentation services from specification time to final signoff"
   },
   {
     title: "Manage",
-    color: "purple.500"
+    color: "purple.500",
+    content: "Ongoing consulting support & operational services tailored to your needs"
   },
 ]
 
@@ -322,9 +327,7 @@ class Landing extends Component {
                     <Box className="col-lg-4" p={4} mt={12}>
                       <Heading size="xl" fontFamily="Nexa Bold" textAlign="center" color={step.color}>0{index + 1}</Heading>
                       <Heading size="lg" textAlign="center">{step.title}</Heading>
-                      <Heading size="sm" fontWeight="400" px="10%" mt={4} opacity={.8} textAlign="center">Our values
-                      are based around fresh thinking, delivering on our promises, showing
-                        customer respect and making a 100% commitment.</Heading>
+                      <Heading size="sm" fontWeight="400" px="10%" mt={4} opacity={.8} textAlign="center">{step.content}</Heading>
                     </Box>
                   ))}
                 </Box>

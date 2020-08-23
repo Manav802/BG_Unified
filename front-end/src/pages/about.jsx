@@ -50,17 +50,6 @@ class about extends Component {
             <div className="container-fluid p-0 py-5">
               <div className="row m-0">
                 <div className="slider-offset p-3"></div>
-                {/* <div className="col">
-                                <a onClick={()=>this.goToIndex(1)} className={ "p-4" + (this.state.activeYearCard==1 ? " text-primary border-bottom": "")}>2020</a>
-                                <a onClick={()=>this.goToIndex(2)} className={ "p-4" + (this.state.activeYearCard==2 ? " text-primary border-bottom": "")}>2019</a>
-                                <a onClick={()=>this.goToIndex(3)} className={ "p-4" + (this.state.activeYearCard==3 ? " text-primary border-bottom": "")}>2018</a>
-                                <a onClick={()=>this.goToIndex(4)} className={ "p-4" + (this.state.activeYearCard==4 ? " text-primary border-bottom": "")}>2017</a>
-                                <a onClick={()=>this.goToIndex(5)} className={ "p-4" + (this.state.activeYearCard==5 ? " text-primary border-bottom": "")}>2016</a>
-                                <a onClick={()=>this.goToIndex(6)} className={ "p-4" + (this.state.activeYearCard==6 ? " text-primary border-bottom": "")}>2015</a>
-                                <a onClick={()=>this.goToIndex(7)} className={ "p-4" + (this.state.activeYearCard==7 ? " text-primary border-bottom": "")}>2014</a>                              
-                                <a onClick={()=>this.goToIndex(7)} className={ "p-4" + (this.state.activeYearCard==8 ? " text-primary border-bottom": "")}>2014</a>
-                            </div> */}
-                {/* <div className="display4">BG-Unified a story of 8 years of excellence</div> */}
               </div>
 
               <Slider
