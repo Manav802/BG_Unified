@@ -5,6 +5,8 @@ import Team from "../components/cards/team";
 import { FaArrowRight } from "react-icons/fa";
 import { Box } from "@chakra-ui/core";
 import Head from "next/head";
+import Fade from 'react-reveal/Fade';
+import MyCount from "../components/Countup/main";
 
 class about extends Component {
   constructor(props) {
@@ -124,15 +126,21 @@ class about extends Component {
                 <div className="col-lg-10 offset-1">
                   <div className="row my-4">
                     <div className="col-sm-3 col-4">
-                      <span className="display4 mb-0 text-primary">250+</span>
+                      <span className="display4 mb-0 text-primary">
+                        <MyCount endPoint={40} />
+                      </span>
                       <h5>Clients</h5>
                     </div>
                     <div className="col-sm-3 col-4">
-                      <span className="display4 mb-0 text-primary">20+</span>
+                      <span className="display4 mb-0 text-primary">
+                        <MyCount endPoint={5} />
+                      </span>
                       <h5>Locations</h5>
                     </div>
                     <div className="col-sm-3 col-4">
-                      <span className="display4 mb-0 text-primary">300+</span>
+                      <span className="display4 mb-0 text-primary">
+                        <MyCount endPoint={20} />
+                      </span>
                       <h5>Projects</h5>
                     </div>
                   </div>
