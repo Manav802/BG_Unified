@@ -2,6 +2,8 @@ import React from "react";
 import { Image, Box } from "@chakra-ui/core";
 import { GrFacebookOption, GrLinkedinOption, GrTwitter } from "react-icons/gr";
 import Link from "next/link";
+import FeedbackForm from "../Feedback/main";
+import ErrorForm from "../ReportanError/main";
 
 function footer(props) {
   return (
@@ -101,7 +103,7 @@ function footer(props) {
         </div>
         <div className="w-100 my-4 text-center">
           <div className="my-2">
-            Terms | Privacy Policies | Report an error | Feedback
+            Terms | Privacy Policies | <ErrorForm /> |<FeedbackForm />
           </div>
           <div className="d-flex justify-content-center">
             <Box

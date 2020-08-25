@@ -7,7 +7,7 @@ import {
   ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
-import Toast from './toast';
+import Toast from '../Toast/main';
 import { useDisclosure } from "@chakra-ui/core";
 function GetaQuoteForm(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -65,6 +65,14 @@ function GetaQuoteForm(props) {
       }, 1000);
     }
   }
+  const formClose = () => {
+    setResponse('');
+    setName('');
+    setEmail('');
+    setMessage('');
+    setPhone('');
+    onClose();
+  }
   const onSubmit = (event) => {
     event.preventDefault()
     loadingState(true);
@@ -100,7 +108,7 @@ function GetaQuoteForm(props) {
           Get a quote
         </Button>
       )}
-      <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal isOpen={isOpen} onClose={formClose} isCentered>
         <ModalOverlay />
         <ModalContent className="p-4" style={{ maxWidth: "600px", width: "600px" }}>
           <ModalHeader><span className="display5">{props.serviceName}</span></ModalHeader>
