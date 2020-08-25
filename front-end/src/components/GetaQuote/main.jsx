@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import {
-  FormControl,
-  FormLabel, Input, Button,
-  ModalContent,
-  ModalHeader,
-  ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea
+  FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
@@ -15,7 +11,7 @@ function GetaQuoteForm(props) {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [phone, setPhone] = useState('');
-  const form = {
+  let form = {
     name: name,
     email: email,
     message: message,
@@ -118,33 +114,33 @@ function GetaQuoteForm(props) {
             )
           })}</div>
           <ModalCloseButton />
-          <form className="getaquote-form px-4" onSubmit={onSubmit}>
-            <input
-              type="hidden"
-              name="_redirect"
-              value="false"
-            />
-            <input
-              type="hidden"
-              name="serviceName"
-              value={form.serviceName}
-            />
-            <input
-              type="hidden"
-              name="serviceDescription"
-              value={form.serviceDescription}
-            />
-            <FormControl className="container" isRequired>
-              <FormLabel htmlFor="name">Name:</FormLabel>
-              <Input
-                variant="flushed"
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={onChange}
+          <div className="container">
+            <form className="getaquote-form px-4" onSubmit={onSubmit}>
+              <input
+                type="hidden"
+                name="_redirect"
+                value="false"
               />
-            </FormControl>
-            <div className="container">
+              <input
+                type="hidden"
+                name="serviceName"
+                value={form.serviceName}
+              />
+              <input
+                type="hidden"
+                name="serviceDescription"
+                value={form.serviceDescription}
+              />
+              <FormControl isRequired>
+                <FormLabel htmlFor="name">Name:</FormLabel>
+                <Input
+                  variant="flushed"
+                  type="text"
+                  name="name"
+                  value={form.name}
+                  onChange={onChange}
+                />
+              </FormControl>
               <div className="row">
                 <div className="col-md-6">
                   <FormControl mt={"14%"} isRequired>
@@ -171,37 +167,37 @@ function GetaQuoteForm(props) {
                   </FormControl>
                 </div>
               </div>
-            </div>
-            <FormControl mt={"9%"} className="container" isRequired>
-              <FormLabel>Details:</FormLabel>
-              <Textarea
-                resize={"vertical"}
-                variant="flushed"
-                size="lg"
-                name="message"
-                value={form.message}
-                onChange={onChange}
-              />
-            </FormControl>
-            <div className="container">
-              <Button
-                mt={"15%"}
-                className="hover-color shadow-md"
-                type="submit"
-                size="md"
-                height="48px"
-                width="115px"
-                backgroundColor="#F32222"
-                color="white"
-              >Submit {isLoading && <Spinner
-                thickness="4px"
-                speed="1s"
-                emptyColor="gray.200"
-                color="blue.500"
-                size="sm"
-              />}</Button>
-            </div>
-          </form>
+              <FormControl mt={"9%"} isRequired>
+                <FormLabel>Details:</FormLabel>
+                <Textarea
+                  resize={"vertical"}
+                  variant="flushed"
+                  size="lg"
+                  name="message"
+                  value={form.message}
+                  onChange={onChange}
+                />
+              </FormControl>
+              <div >
+                <Button
+                  mt={"15%"}
+                  className="hover-color shadow-md"
+                  type="submit"
+                  size="md"
+                  height="48px"
+                  width="115px"
+                  backgroundColor="#F32222"
+                  color="white"
+                >Submit {isLoading && <Spinner
+                  thickness="4px"
+                  speed="1s"
+                  emptyColor="gray.200"
+                  color="blue.500"
+                  size="sm"
+                />}</Button>
+              </div>
+            </form>
+          </div>
           {formResponse && <Toast response={formResponse} />}
         </ModalContent>
       </Modal>

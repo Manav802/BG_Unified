@@ -13,7 +13,7 @@ function FeedbackForm(props) {
     const [description, setDescription] = useState('');
     const [phone, setPhone] = useState('');
     const [rating, setRating] = useState('4');
-    const form = {
+    let form = {
         name: name,
         email: email,
         description: description,
@@ -79,7 +79,7 @@ function FeedbackForm(props) {
     const onSubmit = (event) => {
         event.preventDefault()
         loadingState(true);
-        fetch(' https://submit-form.com/' + keys.GetaQuote, {
+        fetch(' https://submit-form.com/' + keys.Feedback, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -97,46 +97,46 @@ function FeedbackForm(props) {
                 <ModalContent className="p-4" style={{ maxWidth: "600px", width: "600px" }}>
                     <ModalHeader><span className="display5">Send us your feedback!</span></ModalHeader>
                     <ModalCloseButton />
-                    <form className="feedback-form px-4" onSubmit={onSubmit}>
-                        <input
-                            type="hidden"
-                            name="_redirect"
-                            value="false"
-                        />
-                        <FormControl as="fieldset" isRequired className="container">
-                            <FormLabel as="legend">Rate your experience!</FormLabel>
-                            <RadioGroup onChange={onChange} name="rating" isInline defaultValue={form.rating} spacing={4}>
-                                <Radio size="lg" value="1">☹</Radio>
-                                <Radio size="lg" value="2">😐</Radio>
-                                <Radio size="lg" value="3">🙂</Radio>
-                                <Radio size="lg" value="4">😊</Radio>
-                            </RadioGroup>
-                            <FormHelperText>
-                                We value your feedback
+                    <div className="container">
+                        <form className="feedback-form px-4" onSubmit={onSubmit}>
+                            <input
+                                type="hidden"
+                                name="_redirect"
+                                value="false"
+                            />
+                            <FormControl as="fieldset" isRequired>
+                                <FormLabel as="legend">Rate your experience!</FormLabel>
+                                <RadioGroup onChange={onChange} name="rating" isInline defaultValue={form.rating} spacing={4}>
+                                    <Radio size="lg" value="1">☹</Radio>
+                                    <Radio size="lg" value="2">😐</Radio>
+                                    <Radio size="lg" value="3">🙂</Radio>
+                                    <Radio size="lg" value="4">😊</Radio>
+                                </RadioGroup>
+                                <FormHelperText>
+                                    We value your feedback
                             </FormHelperText>
-                        </FormControl>
-                        <FormControl mt={"6%"} className="container" isRequired>
-                            <FormLabel>Describe your experience:</FormLabel>
-                            <Textarea
-                                resize={"vertical"}
-                                variant="flushed"
-                                size="lg"
-                                name="description"
-                                value={form.description}
-                                onChange={onChange}
-                            />
-                        </FormControl>
-                        <FormControl mt={"10%"} className="container" >
-                            <FormLabel htmlFor="name">Name:</FormLabel>
-                            <Input
-                                variant="flushed"
-                                type="text"
-                                name="name"
-                                value={form.name}
-                                onChange={onChange}
-                            />
-                        </FormControl>
-                        <div className="container">
+                            </FormControl>
+                            <FormControl mt={"6%"} isRequired>
+                                <FormLabel>Describe your experience:</FormLabel>
+                                <Textarea
+                                    resize={"vertical"}
+                                    variant="flushed"
+                                    size="lg"
+                                    name="description"
+                                    value={form.description}
+                                    onChange={onChange}
+                                />
+                            </FormControl>
+                            <FormControl mt={"10%"}  >
+                                <FormLabel htmlFor="name">Name:</FormLabel>
+                                <Input
+                                    variant="flushed"
+                                    type="text"
+                                    name="name"
+                                    value={form.name}
+                                    onChange={onChange}
+                                />
+                            </FormControl>
                             <div className="row">
                                 <div className="col-md-6">
                                     <FormControl mt={"14%"} >
@@ -163,26 +163,26 @@ function FeedbackForm(props) {
                                     </FormControl>
                                 </div>
                             </div>
-                        </div>
-                        <div className="container">
-                            <Button
-                                mt={"12%"}
-                                className="hover-color shadow-md"
-                                type="submit"
-                                size="md"
-                                height="48px"
-                                width="115px"
-                                backgroundColor="#F32222"
-                                color="white"
-                            >Submit {isLoading && <Spinner
-                                thickness="4px"
-                                speed="1s"
-                                emptyColor="gray.200"
-                                color="blue.500"
-                                size="sm"
-                            />}</Button>
-                        </div>
-                    </form>
+                            <div>
+                                <Button
+                                    mt={"12%"}
+                                    className="hover-color shadow-md"
+                                    type="submit"
+                                    size="md"
+                                    height="48px"
+                                    width="115px"
+                                    backgroundColor="#F32222"
+                                    color="white"
+                                >Submit {isLoading && <Spinner
+                                    thickness="4px"
+                                    speed="1s"
+                                    emptyColor="gray.200"
+                                    color="blue.500"
+                                    size="sm"
+                                />}</Button>
+                            </div>
+                        </form>
+                    </div>
                     {formResponse && <Toast response={formResponse} />}
                 </ModalContent>
             </Modal>
