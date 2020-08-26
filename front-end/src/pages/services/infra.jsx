@@ -41,6 +41,7 @@ import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 import FeatureCard from "../../components/cards/FeatureCard"
 import Head from "next/head";
 import Link from "next/link";
+import Typewriter from 'typewriter-effect';
 
 const tabs = [
   {
@@ -259,13 +260,13 @@ function main(props) {
           <div className="row">
             <div className="col-12 text-center justify-content-center">
             <Fade duration={700} delay={100} bottom>
-              <h1 className="display2 text-white">Infrastructure As A Service (IaaS)</h1>
+              <Box fontSize={["40px", "48px", "64px"]} className="display2 text-white">Infrastructure As A Service (IaaS)</Box>
             </Fade>
 
             <Fade duration={700} delay={300} bottom>
-                <p className="h6 mt-2 text-white" style={{ opacity: ".7" }}>
+                <Text className="h6 mt-2 text-white" fontSize={["17px","20px"]}>
                 Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management.
-                </p>
+                </Text>
             </Fade>
             <Fade duration={700} delay={500} bottom>
                 <ButtonGroup className="mt-3" spacing="16px">
@@ -284,11 +285,19 @@ function main(props) {
       <div className="section">
         <div className="container">
           <div className="row">
-            <div className="col-lg-12 text-center">
-              <div className="h4 NunitoSans-ExtraBold">
-                Empowering the Internet generation
-              </div>
-              <Text fontSize="xl">
+            <div className="col-lg-12">
+            <Box fontSize={["34px","38px"]} justifyContent="center" className="d-flex flex-lg-row flex-column text-center h5 NunitoSans-ExtraBold">
+                <Typewriter
+                  options={{
+                    strings: ['Deploy', 'Store', 'Maintain'],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+                &nbsp;your data with our security and reliability
+              </Box>
+              
+              <Text textAlign={[ 'left','left', 'center' ]} fontSize="xl" className="mb-4">
               Optimizing infrastructural resources is essential to controlling the cost of data growth. The Enterprise Infrastructure Assessment provides in-depth reports and recommendations for improving storage efficiency, performance, and availability. Findings are linked to your specific risks and benefits—so you can scale your infra systems to successfully serve the growing needs of your business. We can address your heterogeneous data centre environment and provide data and recommendations across all assets.
               </Text>
 
@@ -452,7 +461,7 @@ function main(props) {
                           size="lg"
                           onClick={()=>{openControls(); handlePlan("Standard"); resetOnCardChange();}}
                         >
-                          Get a Quote
+                          Get Started
                         </Button>
                       </PricingCard>
                   </div>
@@ -477,7 +486,7 @@ function main(props) {
                           size="lg"
                           onClick={()=>{openControls(); handlePlan("Business"); resetOnCardChange();}}
                         >
-                          Get a Quote
+                          Get Started
                         </Button>
                       </PricingCard>
                     
@@ -517,7 +526,7 @@ function main(props) {
                     </div>
                   )}
                   <div className="col-lg-12 mt-4">
-                    <div className="h6">Extend Storage (in GB)</div>
+                    <div className="h6">Extend SSD Storage (in GB)</div>
                     <Slider
                       color="primary"
                       my="18px"
@@ -559,7 +568,7 @@ function main(props) {
                         width="auto"
                         padding="8px"
                         height="32px"
-                        children={ram}
+                        children={ram*2}
                       />
                     </Slider>
                   </div>
@@ -595,14 +604,15 @@ function main(props) {
                       </div>
                     </div>
                   )}
-                  <div className="col-lg-6 mt-4">
+                  <div className="col-md-6 mt-4">
                     <div className="h6">Additional vCPUs</div>
                     <NumberInput
                       maxWidth="160px"
                       min={0}
-                      max={20}
+                      max={60}
                       value={cpu}
-                      onChange={(value)=>{value<=20?setCPU(value):setCPU(20)}}
+                      onChange={(value)=>{value<=60?setCPU(value):setCPU(60)}}
+                      step={cpu<2?1:2}
                     >
                       <NumberInputField className="bg-light" />
                       <NumberInputStepper>
@@ -612,7 +622,7 @@ function main(props) {
                     </NumberInput>
                   </div>
 
-                  <div className="col-lg-6 mt-4 py-3 d-flex justify-content-end align-items-center">
+                  <div className="col-md-6 mt-4 pt-md-4 pb-1 d-flex justify-content-md-end align-items-center">
                     <PricingQuote
                     serviceName="Infrastructure As A Service"
                       serviceDescription={`${
@@ -620,7 +630,7 @@ function main(props) {
                       } (${planName})${verifyNotEmpty(
                         storage * 8,
                         "GB Additional Storage"
-                      )} ${verifyNotEmpty(ram, "GB Memory")}${handleDailyBackup(
+                      )} ${verifyNotEmpty(ram*2, "GB Memory")}${handleDailyBackup(
                         dailybackup
                       )}${handleWindowLicense(windowLicense)} ${verifyNotEmpty(
                         cpu,
@@ -634,7 +644,7 @@ function main(props) {
             </Collapse>
           </div>
           <Heading textAlign="center" size="md" mt="64px" mb="2rem" opacity={.5}>Supported Operating Systems</Heading>
-          <Flex justify="center">
+          <Flex wrap className="flex-wrap" justify="center">
               <Image src="/assets/images/os/redhat.png" mx={12} height="80px" my={6}></Image>
               <Image src="/assets/images/os/windows10.png" mx={12} height="80px" my={6}></Image>
               <Image src="/assets/images/os/windowsServer.png" mx={12} height="80px" my={6}></Image>
@@ -644,15 +654,15 @@ function main(props) {
       <div className="section">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-4 text-center my-3">
+            <div className="col-4 text-center my-3">
                 <Heading size="xl" color="primary.500" fontFamily="Nexa Bold">10,000+</Heading>
                 <Heading size="md">Core CPUs</Heading>
             </div>
-            <div className="col-md-4 text-center my-3">
-                <Heading size="xl" color="primary.500" fontFamily="Nexa Bold">9+</Heading>
+            <div className="col-4 text-center my-3">
+                <Heading size="xl" color="primary.500" fontFamily="Nexa Bold">900+</Heading>
                 <Heading size="md">TBs of Memory</Heading>
             </div>
-            <div className="col-md-4 text-center my-3">
+            <div className="col-4 text-center my-3">
                 <Heading size="xl" color="primary.500" fontFamily="Nexa Bold">250+</Heading>
                 <Heading size="md">Running Websites</Heading>
             </div>
@@ -670,7 +680,8 @@ function main(props) {
             <div className="col-lg-6 d-flex flex-column justify-content-center my-4">
                 <Flex justify="space-between" onClick={()=> {setFeature(1)}} className="hover-effect rounded-8" mt={3} p={2} w="100%">
                     <Heading size="md">Choice between On-Premises & Cloud</Heading>
-                    <Icon name={feature === 1 ? "minus" : "add"} my="8px" mr="4px"></Icon>
+                    {feature !==1 ? <Icon name="add" my="8px" mr="4px"></Icon> : "" }
+                    
                 </Flex>
                 <Collapse p={2} isOpen={feature === 1}>
                   On-premise or cloud-based, that helps secure your IT
@@ -680,7 +691,7 @@ function main(props) {
                 </Collapse>
                 <Flex justify="space-between" onClick={()=> {setFeature(2)}} className="hover-effect rounded-8" mt={3} p={2} w="100%">
                     <Heading size="md">Fast and easy Deployment</Heading>
-                    <Icon name={feature === 2 ? "minus" : "add"} my="8px" mr="4px"></Icon>
+                    {feature !==2 ? <Icon name="add" my="8px" mr="4px"></Icon> : "" }
                 </Flex>
                 <Collapse p={2} isOpen={feature === 2}>
                   Rapid evolvement, easily deployable with tremendous speed.
@@ -689,7 +700,7 @@ function main(props) {
                 </Collapse>
                 <Flex justify="space-between" onClick={()=> {setFeature(3)}} className="hover-effect rounded-8" mt={3} p={2} w="100%">
                     <Heading size="md">Advanced Technology Stack</Heading>
-                    <Icon name={feature === 3 ? "minus" : "add"} my="8px" mr="4px"></Icon>
+                    {feature !==3 ? <Icon name="add" my="8px" mr="4px"></Icon> : "" }
                 </Flex>
                 <Collapse p={2} isOpen={feature === 3}>
                     Advanced Malware Protection, Anti-Virus Detection, Uniform
@@ -698,7 +709,7 @@ function main(props) {
                 </Collapse>
                 
             </div>
-            <div className="col-lg-6 my-4">
+            <div className="col-lg-6 my-4 d-none d-lg-block">
                 {feature === 1 && <Image src="/assets/images/illustrations/Varied_Web_Hosting_Solutions.svg" className="m-auto" height="350px"></Image>} 
                 {feature === 2 && <Image src="/assets/images/illustrations/FlexibilityAndScalabilty_AppDev.svg" className="m-auto" height="350px"></Image>} 
                 {feature === 3 && <Image src="/assets/images/illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg" className="m-auto" height="350px"></Image>} 
