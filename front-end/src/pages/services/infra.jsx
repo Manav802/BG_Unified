@@ -264,9 +264,9 @@ function main(props) {
             </Fade>
 
             <Fade duration={700} delay={300} bottom>
-                <p className="h6 mt-2 text-white" style={{ opacity: ".7" }}>
+                <Text className="h6 mt-2 text-white" fontSize={["17px","20px"]}>
                 Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management.
-                </p>
+                </Text>
             </Fade>
             <Fade duration={700} delay={500} bottom>
                 <ButtonGroup className="mt-3" spacing="16px">
@@ -294,7 +294,7 @@ function main(props) {
                     loop: true,
                   }}
                 />
-                 your data with our security and reliability
+                &nbsp;your data with our security and reliability
               </Box>
               
               <Text textAlign={[ 'left','left', 'center' ]} fontSize="xl" className="mb-4">
@@ -461,7 +461,7 @@ function main(props) {
                           size="lg"
                           onClick={()=>{openControls(); handlePlan("Standard"); resetOnCardChange();}}
                         >
-                          Get a Quote
+                          Get Started
                         </Button>
                       </PricingCard>
                   </div>
@@ -486,7 +486,7 @@ function main(props) {
                           size="lg"
                           onClick={()=>{openControls(); handlePlan("Business"); resetOnCardChange();}}
                         >
-                          Get a Quote
+                          Get Started
                         </Button>
                       </PricingCard>
                     
@@ -526,7 +526,7 @@ function main(props) {
                     </div>
                   )}
                   <div className="col-lg-12 mt-4">
-                    <div className="h6">Extend Storage (in GB)</div>
+                    <div className="h6">Extend SSD Storage (in GB)</div>
                     <Slider
                       color="primary"
                       my="18px"
@@ -568,7 +568,7 @@ function main(props) {
                         width="auto"
                         padding="8px"
                         height="32px"
-                        children={ram}
+                        children={ram*2}
                       />
                     </Slider>
                   </div>
@@ -604,14 +604,15 @@ function main(props) {
                       </div>
                     </div>
                   )}
-                  <div className="col-lg-6 mt-4">
+                  <div className="col-md-6 mt-4">
                     <div className="h6">Additional vCPUs</div>
                     <NumberInput
                       maxWidth="160px"
                       min={0}
-                      max={20}
+                      max={60}
                       value={cpu}
-                      onChange={(value)=>{value<=20?setCPU(value):setCPU(20)}}
+                      onChange={(value)=>{value<=60?setCPU(value):setCPU(60)}}
+                      step={2}
                     >
                       <NumberInputField className="bg-light" />
                       <NumberInputStepper>
@@ -621,7 +622,7 @@ function main(props) {
                     </NumberInput>
                   </div>
 
-                  <div className="col-lg-6 mt-4 py-3 d-flex justify-content-end align-items-center">
+                  <div className="col-md-6 mt-4 pt-md-4 pb-1 d-flex justify-content-md-end align-items-center">
                     <PricingQuote
                     serviceName="Infrastructure As A Service"
                       serviceDescription={`${
@@ -629,7 +630,7 @@ function main(props) {
                       } (${planName})${verifyNotEmpty(
                         storage * 8,
                         "GB Additional Storage"
-                      )} ${verifyNotEmpty(ram, "GB Memory")}${handleDailyBackup(
+                      )} ${verifyNotEmpty(ram*2, "GB Memory")}${handleDailyBackup(
                         dailybackup
                       )}${handleWindowLicense(windowLicense)} ${verifyNotEmpty(
                         cpu,
@@ -653,15 +654,15 @@ function main(props) {
       <div className="section">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-4 text-center my-3">
+            <div className="col-4 text-center my-3">
                 <Heading size="xl" color="primary.500" fontFamily="Nexa Bold">10,000+</Heading>
                 <Heading size="md">Core CPUs</Heading>
             </div>
-            <div className="col-md-4 text-center my-3">
-                <Heading size="xl" color="primary.500" fontFamily="Nexa Bold">9+</Heading>
+            <div className="col-4 text-center my-3">
+                <Heading size="xl" color="primary.500" fontFamily="Nexa Bold">900+</Heading>
                 <Heading size="md">TBs of Memory</Heading>
             </div>
-            <div className="col-md-4 text-center my-3">
+            <div className="col-4 text-center my-3">
                 <Heading size="xl" color="primary.500" fontFamily="Nexa Bold">250+</Heading>
                 <Heading size="md">Running Websites</Heading>
             </div>
