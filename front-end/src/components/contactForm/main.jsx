@@ -4,7 +4,6 @@ import {
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
-import { useDisclosure } from "@chakra-ui/core";
 function ContactForm(props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -109,7 +108,8 @@ function ContactForm(props) {
               <FormControl mt={"14%"} isRequired>
                 <FormLabel htmlFor="phone">Contact No.</FormLabel>
                 <Input
-                  type="phone"
+                  type="tel"
+                  pattern="[0-9]{10}"
                   variant="flushed"
                   name="phone"
                   value={phone}

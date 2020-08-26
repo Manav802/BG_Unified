@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import {
-  FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea
+  useDisclosure, FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
-import { useDisclosure } from "@chakra-ui/core";
 function GetaQuoteForm(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [name, setName] = useState('');
@@ -158,7 +157,8 @@ function GetaQuoteForm(props) {
                   <FormControl mt={"14%"} isRequired>
                     <FormLabel htmlFor="phone">Contact No.</FormLabel>
                     <Input
-                      type="phone"
+                      type="tel"
+                      pattern="[0-9]{10}"
                       variant="flushed"
                       name="phone"
                       value={form.phone}

@@ -214,7 +214,8 @@ function ErrorForm(props) {
                                                 <FormControl  >
                                                     <FormLabel htmlFor="phone">Contact No.</FormLabel>
                                                     <Input
-                                                        type="phone"
+                                                        type="tel"
+                                                        pattern="[0-9]{10}"
                                                         variant="flushed"
                                                         name="phone"
                                                         value={form.phone}
