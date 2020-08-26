@@ -41,6 +41,7 @@ import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 import FeatureCard from "../../components/cards/FeatureCard"
 import Head from "next/head";
 import Link from "next/link";
+import Typewriter from 'typewriter-effect';
 
 const tabs = [
   {
@@ -259,7 +260,7 @@ function main(props) {
           <div className="row">
             <div className="col-12 text-center justify-content-center">
             <Fade duration={700} delay={100} bottom>
-              <h1 className="display2 text-white">Infrastructure As A Service (IaaS)</h1>
+              <Box fontSize={["40px", "48px", "64px"]} className="display2 text-white">Infrastructure As A Service (IaaS)</Box>
             </Fade>
 
             <Fade duration={700} delay={300} bottom>
@@ -284,11 +285,19 @@ function main(props) {
       <div className="section">
         <div className="container">
           <div className="row">
-            <div className="col-lg-12 text-center">
-              <div className="h4 NunitoSans-ExtraBold">
-                Empowering the Internet generation
-              </div>
-              <Text fontSize="xl">
+            <div className="col-lg-12">
+            <Box fontSize={["34px","38px"]} justifyContent="center" className="d-flex flex-lg-row flex-column text-center h5 NunitoSans-ExtraBold">
+                <Typewriter
+                  options={{
+                    strings: ['Deploy', 'Store', 'Maintain'],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+                 your data with our security and reliability
+              </Box>
+              
+              <Text textAlign={[ 'left','left', 'center' ]} fontSize="xl" className="mb-4">
               Optimizing infrastructural resources is essential to controlling the cost of data growth. The Enterprise Infrastructure Assessment provides in-depth reports and recommendations for improving storage efficiency, performance, and availability. Findings are linked to your specific risks and benefits—so you can scale your infra systems to successfully serve the growing needs of your business. We can address your heterogeneous data centre environment and provide data and recommendations across all assets.
               </Text>
 
@@ -633,7 +642,7 @@ function main(props) {
             </Collapse>
           </div>
           <Heading textAlign="center" size="md" mt="64px" mb="2rem" opacity={.5}>Supported Operating Systems</Heading>
-          <Flex justify="center">
+          <Flex wrap className="flex-wrap" justify="center">
               <Image src="/assets/images/os/redhat.png" mx={12} height="80px" my={6}></Image>
               <Image src="/assets/images/os/windows10.png" mx={12} height="80px" my={6}></Image>
               <Image src="/assets/images/os/windowsServer.png" mx={12} height="80px" my={6}></Image>
@@ -669,7 +678,8 @@ function main(props) {
             <div className="col-lg-6 d-flex flex-column justify-content-center my-4">
                 <Flex justify="space-between" onClick={()=> {setFeature(1)}} className="hover-effect rounded-8" mt={3} p={2} w="100%">
                     <Heading size="md">Choice between On-Premises & Cloud</Heading>
-                    <Icon name={feature === 1 ? "minus" : "add"} my="8px" mr="4px"></Icon>
+                    {feature !==1 ? <Icon name="add" my="8px" mr="4px"></Icon> : "" }
+                    
                 </Flex>
                 <Collapse p={2} isOpen={feature === 1}>
                   On-premise or cloud-based, that helps secure your IT
@@ -679,7 +689,7 @@ function main(props) {
                 </Collapse>
                 <Flex justify="space-between" onClick={()=> {setFeature(2)}} className="hover-effect rounded-8" mt={3} p={2} w="100%">
                     <Heading size="md">Fast and easy Deployment</Heading>
-                    <Icon name={feature === 2 ? "minus" : "add"} my="8px" mr="4px"></Icon>
+                    {feature !==2 ? <Icon name="add" my="8px" mr="4px"></Icon> : "" }
                 </Flex>
                 <Collapse p={2} isOpen={feature === 2}>
                   Rapid evolvement, easily deployable with tremendous speed.
@@ -688,7 +698,7 @@ function main(props) {
                 </Collapse>
                 <Flex justify="space-between" onClick={()=> {setFeature(3)}} className="hover-effect rounded-8" mt={3} p={2} w="100%">
                     <Heading size="md">Advanced Technology Stack</Heading>
-                    <Icon name={feature === 3 ? "minus" : "add"} my="8px" mr="4px"></Icon>
+                    {feature !==3 ? <Icon name="add" my="8px" mr="4px"></Icon> : "" }
                 </Flex>
                 <Collapse p={2} isOpen={feature === 3}>
                     Advanced Malware Protection, Anti-Virus Detection, Uniform
@@ -697,7 +707,7 @@ function main(props) {
                 </Collapse>
                 
             </div>
-            <div className="col-lg-6 my-4">
+            <div className="col-lg-6 my-4 d-none d-lg-block">
                 {feature === 1 && <Image src="/assets/images/illustrations/Varied_Web_Hosting_Solutions.svg" className="m-auto" height="350px"></Image>} 
                 {feature === 2 && <Image src="/assets/images/illustrations/FlexibilityAndScalabilty_AppDev.svg" className="m-auto" height="350px"></Image>} 
                 {feature === 3 && <Image src="/assets/images/illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg" className="m-auto" height="350px"></Image>} 
