@@ -612,7 +612,7 @@ function main(props) {
                       max={60}
                       value={cpu}
                       onChange={(value)=>{value<=60?setCPU(value):setCPU(60)}}
-                      step={2}
+                      step={cpu<2?1:2}
                     >
                       <NumberInputField className="bg-light" />
                       <NumberInputStepper>
