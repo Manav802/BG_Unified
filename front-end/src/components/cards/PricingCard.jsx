@@ -4,11 +4,15 @@ import {
   Image,
   Button,
   ModalOverlay,
+  Divider,
   List,
   ListItem,
   ListIcon,
   useDisclosure,
   Spinner,
+  Box,
+  Heading,
+  Flex,
 } from "@chakra-ui/core";
 import GetAQuote from "../../components/GetaQuote/main";
 
@@ -26,15 +30,18 @@ function PricingQuote(props) {
 
 function PricingCard(props) {
   return (
-    <div className="shadow-md h-100 p-4 d-flex justify-content-center align-items-center flex-column rounded-8 bg-white">
-      <Image src={props.icon} padding="8px" height="64px"></Image>
-      <span className="mt-3 h6 NunitoSans-Bold">{props.title}</span>
+    <Box pt="32px">
+      <Box bg="white" h="100%" mx={1} borderColor={props.popular ? "red.500" : "black.200"} boxShadow={props.popular && "xl"} borderWidth={1}>
+      <Flex align="center" direction="column" justify="center" bg={props.popular ? "primary.500" : "white"} p={8} mt="-32px" mx="32px" boxShadow="lg">
+        <Image style={{filter: props.popular && "brightness(8) saturate(0)"}} src={props.icon} padding="8px" height="64px"></Image>
+        <Heading color={props.popular && "white"} size="md" mt={4}>{props.title}</Heading>
+      </Flex>
       {props.featureList && (
         <div>
-          <List className="my-3 px-3" spacing={3}>
+          <List p={8} spacing={3}>
             {props.featureList.map((feature, index) => {
               return (
-                <ListItem className="text-center">
+                <ListItem>
                   <ListIcon icon="check" color="green.500" />
                   {feature}
                 </ListItem>
@@ -43,8 +50,11 @@ function PricingCard(props) {
           </List>
         </div>
       )}
-      {props.children}
-    </div>
+      <Box px={8} pb={8} display="flex" justifyContent="center" flexDirection="column" alignItems="center">
+        {props.children}
+      </Box>
+    </Box>
+    </Box>
   );
 }
 

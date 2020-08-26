@@ -10,6 +10,8 @@ import {
   TabPanels,
   Tab,
   TabPanel,
+  Flex,
+  Text,
   RadioButtonGroup,
   NumberInput,
   NumberInputField,
@@ -29,14 +31,17 @@ import {
   SliderTrack,
   SliderFilledTrack,
   Icon,
+  ButtonGroup,
+  Heading,
 } from "@chakra-ui/core";
 import Fade from "react-reveal/Fade";
-import { FaWindows, FaServer, FaDatabase } from "react-icons/fa";
-import { MdBuild, MdSettings } from "react-icons/md";
+import { FaWindows, FaServer, FaDatabase, FaArrowRight } from "react-icons/fa";
 import CardWithIcon from "../../components/cards/CardWithIcon";
 import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
+import FeatureCard from "../../components/cards/FeatureCard"
 import Head from "next/head";
 import Link from "next/link";
+import Typewriter from 'typewriter-effect';
 
 const tabs = [
   {
@@ -80,12 +85,13 @@ const plans = [
       "High Clustering",
     ],
     cpu: 2,
+    popular: false,
     storage: 80,
     ram: 4,
   },
   {
     index: 1,
-    name: "Premium",
+    name: "Professional",
     icon: "/assets/images/icons/theme/paper-plane.svg",
     feature: [
       "4vCPU",
@@ -95,13 +101,14 @@ const plans = [
       "High Availabilty",
       "High Clustering",
     ],
+    popular: false,
     cpu: 4,
     storage: 80,
     ram: 6,
   },
   {
     index: 2,
-    name: "Gold",
+    name: "Business",
     icon: "/assets/images/icons/theme/airplane.svg",
     feature: [
       "6vCPU",
@@ -111,13 +118,14 @@ const plans = [
       "High Availabilty",
       "High Clustering",
     ],
+    popular: true,
     cpu: 6,
     storage: 80,
     ram: 8,
   },
   {
     index: 3,
-    name: "Platinum",
+    name: "Enterprise",
     icon: "/assets/images/icons/theme/rocket.svg",
     feature: [
       "8vCPU",
@@ -127,6 +135,7 @@ const plans = [
       "High Availabilty",
       "High Clustering",
     ],
+    popular: false,
     cpu: 8,
     storage: 80,
     ram: 16,
@@ -154,6 +163,8 @@ function main(props) {
   const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + " " + text : "");
 
   const [type, setType] = React.useState("");
+
+  const [feature, setFeature] = React.useState(1);
   //Hooks
   const [planName, setPlan] = React.useState("Standard");
   const handlePlan = (name) => setPlan(name);
@@ -196,20 +207,23 @@ function main(props) {
 
   //Panels
   const tabPanel = (
-    <TabPanel className="py-2">
-      <div className="row justify-content-center">
+    <TabPanel mx="auto" width={["100%", "100%", "100%", "90%", "76%" ]} className="py-2">
+      <Fade cascade duration={500} distance={"30%"} bottom>
+      <div className="row no-gutters justify-content-center">
         {plans.map((plan) => {
           return (
-            <div key={plan.index} className="col-lg-3 col-md-6 px-1 my-3">
-              <Fade duration={500} distance={"30%"} bottom>
+            <div key={plan.index} className="col-xl-3 col-lg-4 col-sm-6 my-3">
+              
                 <PricingCard
                   icon={plan.icon}
                   title={plan.name}
+                  popular={plan.popular}
                   featureList={plan.feature}
                 >
                   <Button
-                    className="mt-3"
+                    className="mt-3 btn-block primary-btn"
                     variant="solid"
+                    size="lg"
                     variantColor="primary"
                     onClick={() => {
                       handlePlan(plan.name);
@@ -217,14 +231,16 @@ function main(props) {
                       resetOnCardChange();
                     }}
                   >
-                    Customize
+                    Get Started
                   </Button>
                 </PricingCard>
-              </Fade>
+              
             </div>
           );
         })}
+        
       </div>
+      </Fade>
     </TabPanel>
   );
 
@@ -233,34 +249,120 @@ function main(props) {
       <Head>
         <title>Infrastructure As A Service(IaaS)</title>
       </Head>
-      <div className="position-absolute w-100 overflow-hidden background-svg-dns">
-        <div className="w-100 image">
-          <img
-            className="w-100 dns"
-            src="/assets/images/backgrounds/domainhosting.jpg"
-          />
-        </div>
-        <div className="w-100 divider" />
-      </div>
-      <div className="page-header">
+      
+      <Box py="5rem" className="bg-dark page-header position-relative">
+            <Image
+              opacity=".3"
+              className="bg-image"
+              src="/assets/images/backgrounds/domainhosting.jpg"
+            />
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 offset-lg-2 text-center justify-content-center">
-            <Fade duration={700} delay={300} bottom>
-              <h1 className="display3 text-white">Infrastructure As A Service (IaaS)</h1>
+            <div className="col-12 text-center justify-content-center">
+            <Fade duration={700} delay={100} bottom>
+              <Box fontSize={["40px", "48px", "64px"]} className="display2 text-white">Infrastructure As A Service (IaaS)</Box>
             </Fade>
 
-            <Fade duration={700} delay={500} bottom>
-                <p className="h6 mt-3 text-white" style={{ opacity: ".7" }}>
+            <Fade duration={700} delay={300} bottom>
+                <p className="h6 mt-2 text-white" style={{ opacity: ".7" }}>
                 Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management.
                 </p>
-              </Fade>
+            </Fade>
+            <Fade duration={700} delay={500} bottom>
+                <ButtonGroup className="mt-3" spacing="16px">
+                  <Button onClick={() => {
+                    window.scrollTo(0, document.getElementById("pricing").offsetTop - 80)
+                  }} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button>
+                  <Link href="/contact"><Button variant="outline" _hover={{color:"black", bg:"white"}} size="lg">Contact Sales</Button></Link>
+                </ButtonGroup>
+            </Fade>
             </div>
           </div>
         </div>
-      </div>
-      <Box mt="74px" className="section">
+      </Box>
+      
+
+      <div className="section">
         <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+            <Box fontSize={["34px","38px"]} justifyContent="center" className="d-flex flex-lg-row flex-column text-center h5 NunitoSans-ExtraBold">
+                <Typewriter
+                  options={{
+                    strings: ['Deploy', 'Store', 'Maintain'],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+                 your data with our security and reliability
+              </Box>
+              
+              <Text textAlign={[ 'left','left', 'center' ]} fontSize="xl" className="mb-4">
+              Optimizing infrastructural resources is essential to controlling the cost of data growth. The Enterprise Infrastructure Assessment provides in-depth reports and recommendations for improving storage efficiency, performance, and availability. Findings are linked to your specific risks and benefits—so you can scale your infra systems to successfully serve the growing needs of your business. We can address your heterogeneous data centre environment and provide data and recommendations across all assets.
+              </Text>
+
+              <Fade duration={500} cascade distance={"30%"} bottom>
+                  <div className="row">
+                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                      <FeatureCard left
+                        title="Scale Up on Demand"
+                        icon="/assets/images/icons/color/ui.svg"
+                      >
+                        With BG Unified Solutions, you create a combination of CPU, memory, bandwidth and storage as per your requirements.
+                        Enjoy the freedom to scale up your infrastructure as and when required.
+                    </FeatureCard>
+                    </div>
+                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                      <FeatureCard left
+                        title="Stay Agile"
+                        icon="/assets/images/icons/color/agile.svg"
+                      >
+                        Resources are not bundled together and there is surely no standard server size.
+                        Combine long-term subscriptions for predictible workloads and on-time delivery with regular updates.
+                    </FeatureCard>
+                    </div>
+                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                      <FeatureCard left
+                        title="Select from Global Locations"
+                        icon="/assets/images/icons/color/globe.svg"
+                      >
+                        Choose the most appropriate and most suitable framework to run your cloud infrastructure. Give your customers the pleasure to enjoy low latency and faster loading speeds.
+                    </FeatureCard>
+                    </div>
+                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                      <FeatureCard left
+                        title="Rely on Excellent Support"
+                        icon="/assets/images/icons/color/headphones.svg"
+                      >
+                        BGUS's friendly and skilled customer support service is available24X7X365
+                      with very less response time. Our policies ensure rapid and satisfactory resolution of issues.
+                    </FeatureCard>
+                    </div>
+                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                      <FeatureCard left
+                        title="Run Your Apps Unmodified"
+                        icon="/assets/images/icons/color/api.svg"
+                      >
+                        Use our seamless live migration tool to get you up and running in the cloud without any modifications to your existing infrastructure.
+                    </FeatureCard>
+                    </div>
+                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                      <FeatureCard left
+                        title="Experience No Vendor Lock-In"
+                        icon="/assets/images/icons/color/fix.svg"
+                      >
+                        At BGUS you are able to develop or deploy your application in the cloud without being forced to use any vendor-specific tools.
+                    </FeatureCard>
+                    </div>
+                  </div>
+                </Fade>
+            </div>
+          </div>
+      </div>
+      </div>
+
+      <Box id="pricing" className="bg-light" py="3rem">
+          <Heading size="xl" textAlign="center" mb={6} fontFamily="Nexa Bold">Our Pricing Plans</Heading>
           <div className="row justify-content-center">
             <Button
               onClick={onOpen}
@@ -283,7 +385,7 @@ function main(props) {
               <DrawerOverlay />
               <DrawerContent>
                 <DrawerHeader borderBottomWidth="1px">
-                  Choose a opearing system
+                  Choose an Operating System
                 </DrawerHeader>
                 <DrawerBody>
                   {tabs.map((tab) => {
@@ -309,8 +411,7 @@ function main(props) {
               </DrawerContent>
             </Drawer>
           </div>
-        </div>
-        <Tabs align="center" index={tabIndex} onChange={handleTabsChange}>
+          <Tabs align="center" index={tabIndex} onChange={handleTabsChange}>
           <TabList>
             {tabs.map((tab) => {
               return (
@@ -335,12 +436,12 @@ function main(props) {
               );
             })}
           </TabList>
-          <div className="container">
             <TabPanels>
               <TabPanel className="py-2">
-                <div className="row justify-content-center">
-                  <div className="col-lg-4 my-3">
-                    <Fade duration={500} distance={"30%"} bottom>
+              <Fade duration={500} cascade distance={"30%"} bottom>
+                <div className="row no-gutters justify-content-center">
+                  <div className="col-xl-3 col-lg-4 col-sm-6 my-3">
+                    
                       <PricingCard
                         icon="/assets/images/icons/theme/origami.svg"
                         title="Standard"
@@ -360,16 +461,15 @@ function main(props) {
                           size="lg"
                           onClick={()=>{openControls(); handlePlan("Standard"); resetOnCardChange();}}
                         >
-                          Get a quote
+                          Get a Quote
                         </Button>
                       </PricingCard>
-                    </Fade>
                   </div>
-                  <div className="col-lg-4 my-3">
-                    <Fade duration={500} distance={"30%"} bottom>
+                  <div className="col-xl-3 col-lg-4 col-sm-6 my-3">
                       <PricingCard
                         icon="/assets/images/icons/theme/paper-plane.svg"
-                        title="Premium"
+                        title="Business"
+                        popular
                         featureList={[
                           "4vCPU",
                           "80GB SSD Storage",
@@ -384,25 +484,24 @@ function main(props) {
                           variantColor="primary"
                           variant="outline"
                           size="lg"
-                          onClick={()=>{openControls(); handlePlan("Premium"); resetOnCardChange();}}
+                          onClick={()=>{openControls(); handlePlan("Business"); resetOnCardChange();}}
                         >
-                          Get a quote
+                          Get a Quote
                         </Button>
                       </PricingCard>
-                    </Fade>
+                    
                   </div>
                 </div>
+                </Fade>
               </TabPanel>
               {tabPanel}
               {tabPanel}
               {tabPanel}
               {tabPanel}
             </TabPanels>
-          </div>
         </Tabs>
-        <div>
           <div className="container">
-            <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
+            <Collapse id="quoteForm" className="px-lg-5 px-3" mt={6} isOpen={show}>
               <div className="px-4 py-5 border">
                 <div className="display5 text-center">
                   {tabs[tabIndex].title} ({planName})
@@ -410,7 +509,7 @@ function main(props) {
                 <div className="row px-3">
                   {tabIndex === 4 && (
                     <div className="col-lg-12 mt-2">
-                      <div className="h6">Choose a type</div>
+                      <div className="h6">Choose a Type</div>
                       <RadioButtonGroup
                         value={type}
                         onChange={(value) => setType(value)}
@@ -524,6 +623,7 @@ function main(props) {
 
                   <div className="col-lg-6 mt-4 py-3 d-flex justify-content-end align-items-center">
                     <PricingQuote
+                    serviceName="Infrastructure As A Service"
                       serviceDescription={`${
                         tabs[tabIndex].title
                       } (${planName})${verifyNotEmpty(
@@ -542,159 +642,93 @@ function main(props) {
               </div>
             </Collapse>
           </div>
-        </div>
+          <Heading textAlign="center" size="md" mt="64px" mb="2rem" opacity={.5}>Supported Operating Systems</Heading>
+          <Flex wrap className="flex-wrap" justify="center">
+              <Image src="/assets/images/os/redhat.png" mx={12} height="80px" my={6}></Image>
+              <Image src="/assets/images/os/windows10.png" mx={12} height="80px" my={6}></Image>
+              <Image src="/assets/images/os/windowsServer.png" mx={12} height="80px" my={6}></Image>
+          </Flex>
       </Box>
 
-      <div className="section py-0">
+      <div className="section">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-10 text-center offset-lg-1">
-              <div className="h4 NunitoSans-ExtraBold">
-                Empowering the Internet generation
-              </div>
-              <div className="h6 mt-4 text-secondary text-justify text-dark">
-                Optimizing infrastructural resources is essential to controlling
-                the cost of data growth. The Enterprise Infrastructure
-                Assessment provides in-depth reports and recommendations for
-                improving storage efficiency, performance, and availability.
-                Findings are linked to your specific risks and benefits—so you
-                can scale your infra systems to successfully serve the growing
-                needs of your business. We can address your heterogeneous data
-                centre environment and provide data and recommendations across
-                all assets.
-              </div>
+          <div className="row justify-content-center">
+            <div className="col-md-4 text-center my-3">
+                <Heading size="xl" color="primary.500" fontFamily="Nexa Bold">10,000+</Heading>
+                <Heading size="md">Core CPUs</Heading>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="section py-5">
-        <div className="container">
-          <div className="row service-benefits">
-            <div className="col-lg-4 px-1">
-              <Fade duration={500} distance={"30%"} bottom>
-                <div className="card h-100 rounded-8">
-                  <div className="card-body d-flex flex-column align-items-center">
-                    <div className="h5 w-100 px-4 pt-4 my-0 my-lg-2 NunitoSans-Bold text-dark">
-                      Platform Diversity
-                    </div>
-                    <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                      On-premise or cloud-based, that helps secure your IT
-                      environment quickly. The mainstay of Enterprise Security.
-                      Blocks malicious traffic and allows legitimate traffic to
-                      flow without any hindrance.
-                    </div>
-                    <Image
-                      height="300px"
-                      src="/assets/images/illustrations/diversity.svg"
-                    ></Image>
-                  </div>
-                </div>
-              </Fade>
+            <div className="col-md-4 text-center my-3">
+                <Heading size="xl" color="primary.500" fontFamily="Nexa Bold">9+</Heading>
+                <Heading size="md">TBs of Memory</Heading>
             </div>
-            <div className="col-lg-4 px-1">
-              <Fade duration={500} distance={"30%"} bottom>
-                <div className="card h-100 rounded-8">
-                  <div className="card-body d-flex flex-column align-items-center">
-                    <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                      Fast and easy Deployment
-                    </div>
-                    <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                      Rapid evolvement, easily deployable with tremendous speed.
-                      Proven deployment methodology that integrates and extends
-                      your existing security infrastructure without capex.
-                    </div>
-                    <Image
-                      height="300px"
-                      src="/assets/images/illustrations/data_center.svg"
-                    ></Image>
-                  </div>
-                </div>
-              </Fade>
+            <div className="col-md-4 text-center my-3">
+                <Heading size="xl" color="primary.500" fontFamily="Nexa Bold">250+</Heading>
+                <Heading size="md">Running Websites</Heading>
             </div>
-            <div className="col-lg-4 px-1">
-              <Fade duration={500} distance={"30%"} bottom>
-                <div className="card h-100 rounded-8">
-                  <div className="card-body d-flex flex-column align-items-center">
-                    <div className="h5 px-4 pt-4 NunitoSans-Bold text-dark">
-                      Advance Technology Stack
-                    </div>
-                    <div className="text-secondary px-4 text-justify NunitoSans-Regular">
-                      Advanced Malware Protection, Anti-Virus Detection, Uniform
-                      resource Locator Filtering, User-Based Policy and Advanced
-                      Logging facilities, SSL Virtual Private Network’s included
-                    </div>
-                    <Image
-                      src="/assets/images/illustrations/assets.svg"
-                      className="mt-auto"
-                      height="250px"
-                    ></Image>
-                  </div>
-                </div>
-              </Fade>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="section py-0">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 p-5 rounded-8 bg-light">
-              <h4 className="display5 py-2 mb-2 text-center">Why Us?</h4>
-              <p className="text-justify">
+            <div className="col-12 my-3">
+              <Text fontSize="xl" className="text-justify">
                 With BG Unified Solutions Infrastructure as a Service, not only
                 do you pay only for the data storage you use when you use it but
                 we provide you with a geographical redundant storage
                 infrastructure and ready access to experts in Infrastructure
                 Technologies who will be eager to understand your storage
                 requirements. Initial setup is very quick, adding or removing
-                capacity is even faster and without any downtime. Backups are
-                geographical redundant, efficient and quick. Stop tying up
-                capital in the depreciating asset that is infrastructure — pay
-                only for the infrastructure you actually need and use, with over
-                50 geographically dispersed sites hosting 250+ separate pieces
-                of infrastructure. Server consolidation and virtualization, high
-                availability & clustering, desktop virtualization, and server
-                management. Infrastructure includes more than 10000 Cores CPU,
-                10TB RAM. Initial setup of your infrastructural requirements
-                should happen in weeks — not months — with ongoing incremental
-                needs occurring overnight. A little buffer would also help with
-                urgent requirements. Boost up your operational efficiency.
-                Improve your organization’s agility. Guaranteed access to a team
-                of experts in different technologies. Modern SAN infrastructure
-                can be expensive to procure and deploy and often requires
-                specialist skills to maintain and manage.
-              </p>
+                capacity is even faster and without any downtime.
+              </Text>
+            </div>
+            <div className="col-lg-6 d-flex flex-column justify-content-center my-4">
+                <Flex justify="space-between" onClick={()=> {setFeature(1)}} className="hover-effect rounded-8" mt={3} p={2} w="100%">
+                    <Heading size="md">Choice between On-Premises & Cloud</Heading>
+                    {feature !==1 ? <Icon name="add" my="8px" mr="4px"></Icon> : "" }
+                    
+                </Flex>
+                <Collapse p={2} isOpen={feature === 1}>
+                  On-premise or cloud-based, that helps secure your IT
+                  environment quickly. The mainstay of Enterprise Security.
+                  Blocks malicious traffic and allows legitimate traffic to
+                  flow without any hindrance.
+                </Collapse>
+                <Flex justify="space-between" onClick={()=> {setFeature(2)}} className="hover-effect rounded-8" mt={3} p={2} w="100%">
+                    <Heading size="md">Fast and easy Deployment</Heading>
+                    {feature !==2 ? <Icon name="add" my="8px" mr="4px"></Icon> : "" }
+                </Flex>
+                <Collapse p={2} isOpen={feature === 2}>
+                  Rapid evolvement, easily deployable with tremendous speed.
+                  Proven deployment methodology that integrates and extends
+                  your existing security infrastructure without capex.  
+                </Collapse>
+                <Flex justify="space-between" onClick={()=> {setFeature(3)}} className="hover-effect rounded-8" mt={3} p={2} w="100%">
+                    <Heading size="md">Advanced Technology Stack</Heading>
+                    {feature !==3 ? <Icon name="add" my="8px" mr="4px"></Icon> : "" }
+                </Flex>
+                <Collapse p={2} isOpen={feature === 3}>
+                    Advanced Malware Protection, Anti-Virus Detection, Uniform
+                    resource Locator Filtering, User-Based Policy and Advanced
+                    Logging facilities, SSL Virtual Private Network’s included. 
+                </Collapse>
+                
+            </div>
+            <div className="col-lg-6 my-4 d-none d-lg-block">
+                {feature === 1 && <Image src="/assets/images/illustrations/Varied_Web_Hosting_Solutions.svg" className="m-auto" height="350px"></Image>} 
+                {feature === 2 && <Image src="/assets/images/illustrations/FlexibilityAndScalabilty_AppDev.svg" className="m-auto" height="350px"></Image>} 
+                {feature === 3 && <Image src="/assets/images/illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg" className="m-auto" height="350px"></Image>} 
             </div>
           </div>
         </div>
       </div>
-      <div className="section pt-0">
+      <div className="section pt-4 bg-light">
         <div className="container">
           <div className="row">
-            <div className="col-12 p-4 mb-4">
+            <div className="col-12 p-3">
               <h4 className="display5 py-3 text-center">Related Services</h4>
             </div>
-            <div className="col-xl-4 col-sm-6 my-2">
-              <Link href="/services/infra">
-                <CardWithIcon
-                  icon="/assets/images/icons/monotone/server.svg"
-                  title={
-                    <div>
-                      Infrastructure <br /> as a service{" "}
-                    </div>
-                  }
-                  children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM"
-                />
-              </Link>
-            </div>
-
             <div className="col-xl-4 col-sm-6 my-2">
               <Link href="/services/storage">
                 <CardWithIcon
                   icon="/assets/images/icons/monotone/cloud.svg"
                   title={
                     <div>
-                      Storage <br /> as a service{" "}
+                      Storage <br /> As A service{" "}
                     </div>
                   }
                   iconBg="#F3A622"
@@ -708,14 +742,30 @@ function main(props) {
                   icon="/assets/images/icons/monotone/earth_ouline.svg"
                   title={
                     <div>
-                      DNS <br /> as a service{" "}
+                      DNS <br /> As A service{" "}
                     </div>
                   }
                   iconBg="#5F1CE6"
-                  children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching."
+                  children="Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability."
                 />
               </Link>
             </div>
+            <div className="col-xl-4 col-sm-6 my-2">
+            <Link href="/services/platform">
+                <a className="no-red">
+                  <CardWithIcon
+                    icon="/assets/images/icons/monotone/dashboard.svg"
+                    title={
+                      <div>
+                        Platform <br /> As A service{" "}
+                      </div>
+                    }
+                    iconBg="#19C741"
+                    children="End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions."
+                  />
+                </a>
+              </Link>
+              </div>
           </div>
         </div>
       </div>

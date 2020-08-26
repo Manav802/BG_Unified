@@ -12,5 +12,5 @@ export default {
             500: "EFB617"
         }
         
-    }
+    },
   };

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function footer(props) {
   return (
-    <div className="my-3 footer">
+    <div className="footer bg-light">
       <div className="container">
         <div className="row pb-4">
           <div className="col-lg-3 my-3">
