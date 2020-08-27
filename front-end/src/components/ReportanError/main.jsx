@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioGroup
+    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioGroup,PsuedoBox
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
@@ -15,7 +15,7 @@ function ErrorForm(props) {
     const [browser, setBrowser] = useState('');
     const [device, setDevice] = useState('');
     const [operatingsystem, setOs] = useState('');
-    const [otherinput, setOtherInput] = useState('');
+    const [othererror, setOtherInput] = useState('');
     const [isOther, setOther] = useState(false);
     let form = {
         name: name,
@@ -23,6 +23,7 @@ function ErrorForm(props) {
         description: description,
         phone: phone,
         error: error,
+        othererror:othererror,
         browser: browser,
         device: device,
         operatingsystem: operatingsystem
@@ -66,6 +67,10 @@ function ErrorForm(props) {
                 setDevice(value);
                 break;
 
+            case 'othererror':
+                setOtherInput(value);
+                break;
+
             default:
                 break;
         }
@@ -83,6 +88,8 @@ function ErrorForm(props) {
         setBrowser('');
         setOs('');
         setError('');
+        setOther(false);
+        setOtherInput('');
         if (res.status == 200) {
             setTimeout(() => {
                 onClose();
@@ -100,6 +107,8 @@ function ErrorForm(props) {
         setBrowser('');
         setOs('');
         setError('');
+        setOther(false);
+        setOtherInput('');
         onClose();
     }
     const handleOtherInput = event => {
@@ -125,7 +134,7 @@ function ErrorForm(props) {
             <a className="" onClick={onOpen}>Report an Error</a>
             <Modal isOpen={isOpen} onClose={formClose} isCentered>
                 <ModalOverlay />
-                <ModalContent className="p-4" style={{ maxWidth: "700px", minHeight: "650px" }}>
+                <ModalContent className="p-4" style={{ maxWidth: "700px", minHeight: "670px" }}>
                     <ModalHeader><span className="display5">Report an Error</span></ModalHeader>
                     <ModalCloseButton />
                     <div className="container">
@@ -135,10 +144,10 @@ function ErrorForm(props) {
                                 name="_redirect">
                             </input>
                             <Tabs isFitted>
-                                <TabList mb="1rem" style={{ borderColor: "#000000" }}>
-                                    <Tab>Type of error</Tab>
-                                    <Tab>Describe the error</Tab>
-                                    <Tab>Personal details</Tab>
+                                <TabList style={{borderBottomColor:"#000000"}}>
+                                    <Tab className="display6 tab-selected">Type of error</Tab>
+                                    <Tab className="display6 tab-selected">Describe the error</Tab>
+                                    <Tab className="display6 tab-selected">Personal details</Tab>
                                 </TabList>
                                 <TabPanels>
                                     <TabPanel>
@@ -148,10 +157,14 @@ function ErrorForm(props) {
                                                 <Radio size="lg" value="Page not responsive">Page not responsive</Radio>
                                                 <Radio size="lg" value="Component not working">Component not working</Radio>
                                                 <Radio size="lg" value="Site not loading properly">Site not loading properly</Radio>
-                                                <Radio size="lg" onClick={() => { setOther(true) }} value={otherinput}>Other</Radio>
                                             </RadioGroup>
                                         </FormControl>
-                                        {isOther && <Input variant="flushed" placeholder="Please specify the error" onChange={handleOtherInput}></Input>}
+                                        <Radio size="lg" onClick={() => { setOther(true) }}>Other</Radio>
+                                        {isOther &&
+                                            <FormControl isRequired>
+                                                <Input value={form.othererror} variant="flushed" name="othererror" placeholder="Please specify the any other error" onChange={onChange}>
+                                                </Input>
+                                            </FormControl>}
                                         <FormControl mt={"13%"} isRequired>
                                             <FormLabel>Describe the error in detail:</FormLabel>
                                             <Textarea
