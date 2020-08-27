@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box
+    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioGroup
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
@@ -15,6 +15,8 @@ function ErrorForm(props) {
     const [browser, setBrowser] = useState('');
     const [device, setDevice] = useState('');
     const [operatingsystem, setOs] = useState('');
+    const [otherinput, setOtherInput] = useState('');
+    const [isOther, setOther] = useState(false);
     let form = {
         name: name,
         email: email,
@@ -100,6 +102,11 @@ function ErrorForm(props) {
         setError('');
         onClose();
     }
+    const handleOtherInput = event => {
+        const target = event.target
+        const value = target.value
+        setOtherInput(value);
+    }
     const onSubmit = (event) => {
         event.preventDefault()
         loadingState(true);
@@ -127,64 +134,25 @@ function ErrorForm(props) {
                                 type="hidden"
                                 name="_redirect">
                             </input>
-                            <Tabs isFitted variant="enclosed">
+                            <Tabs isFitted>
                                 <TabList mb="1rem" style={{ borderColor: "#000000" }}>
+                                    <Tab>Type of error</Tab>
                                     <Tab>Describe the error</Tab>
                                     <Tab>Personal details</Tab>
                                 </TabList>
                                 <TabPanels>
                                     <TabPanel>
-                                        <div className="row">
-                                            <div className="col-md-6">
-                                                <FormControl isRequired>
-                                                    <FormLabel htmlFor="name">Type of error:</FormLabel>
-                                                    <Select name="errortype" onChange={onChange} placeholder="Select option" variant="flushed">
-                                                        <option value="Page not responsive">Page not responsive</option>
-                                                        <option value="Component not working">Component not working</option>
-                                                        <option value="Site not loading properly">Site not loading properly</option>
-                                                        <option value="Other">Other</option>
-                                                    </Select>
-                                                </FormControl>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <FormControl isRequired>
-                                                    <FormLabel htmlFor="phone">Device you were using:</FormLabel>
-                                                    <Select name="devicetype" onChange={onChange} variant="flushed" placeholder="Select option">
-                                                        <option value="Smartphone">Smartphone</option>
-                                                        <option value="Android tablet">Android tablet</option>
-                                                        <option value="PC">PC</option>
-                                                    </Select>
-                                                </FormControl>
-                                            </div>
-                                        </div>
-                                        <Box mt={"9%"}>
-                                            <div className="row">
-                                                <div className="col-md-6">
-                                                    <FormControl isRequired>
-                                                        <FormLabel htmlFor="name">Browser you were using:</FormLabel>
-                                                        <Select name="browser" onChange={onChange} variant="flushed" placeholder="Select option">
-                                                            <option value="Google Chrome">Google Chrome</option>
-                                                            <option value="Mozilla Firefox">Mozilla Firefox</option>
-                                                            <option value="Opera">Opera</option>
-                                                            <option value="Other">Other</option>
-                                                        </Select>
-                                                    </FormControl>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <FormControl isRequired>
-                                                        <FormLabel htmlFor="phone">Operating system you were using:</FormLabel>
-                                                        <Select name="operatingsystem" onChange={onChange} variant="flushed" placeholder="Select option">
-                                                            <option value="Windows">Windows</option>
-                                                            <option value="iOS">iOS</option>
-                                                            <option value="MacOS">MacOS</option>
-                                                            <option value="GNU/Linux">GNU/Linux</option>
-                                                            <option value="Android">Android</option>
-                                                        </Select>
-                                                    </FormControl>
-                                                </div>
-                                            </div>
-                                        </Box>
                                         <FormControl mt={"9%"} isRequired>
+                                            <FormLabel htmlFor="name">Type of error:</FormLabel>
+                                            <RadioGroup name="errortype" onChange={onChange} defaultValue={form.error}>
+                                                <Radio size="lg" value="Page not responsive">Page not responsive</Radio>
+                                                <Radio size="lg" value="Component not working">Component not working</Radio>
+                                                <Radio size="lg" value="Site not loading properly">Site not loading properly</Radio>
+                                                <Radio size="lg" onClick={() => { setOther(true) }} value={otherinput}>Other</Radio>
+                                            </RadioGroup>
+                                        </FormControl>
+                                        {isOther && <Input variant="flushed" placeholder="Please specify the error" onChange={handleOtherInput}></Input>}
+                                        <FormControl mt={"13%"} isRequired>
                                             <FormLabel>Describe the error in detail:</FormLabel>
                                             <Textarea
                                                 resize={"vertical"}
@@ -197,15 +165,59 @@ function ErrorForm(props) {
                                         </FormControl>
                                     </TabPanel>
                                     <TabPanel>
-                                        <div className="row">
+                                        <FormControl mt={"9%"} isRequired>
+                                            <FormLabel htmlFor="phone">Device you were using:</FormLabel>
+                                            <Select name="devicetype" onChange={onChange} variant="flushed" placeholder="Select option">
+                                                <option value="Smartphone">Smartphone</option>
+                                                <option value="Android tablet">Android tablet</option>
+                                                <option value="PC">PC</option>
+                                            </Select>
+                                        </FormControl>
+
+
+                                        <FormControl mt={"14%"} isRequired>
+                                            <FormLabel htmlFor="name">Browser you were using:</FormLabel>
+                                            <Select name="browser" onChange={onChange} variant="flushed" placeholder="Select option">
+                                                <option value="Google Chrome">Google Chrome</option>
+                                                <option value="Mozilla Firefox">Mozilla Firefox</option>
+                                                <option value="Opera">Opera</option>
+                                                <option value="Other">Other</option>
+                                            </Select>
+                                        </FormControl>
+
+                                        <FormControl mt={"14%"} isRequired>
+                                            <FormLabel htmlFor="phone">Operating system you were using:</FormLabel>
+                                            <Select name="operatingsystem" onChange={onChange} variant="flushed" placeholder="Select option">
+                                                <option value="Windows">Windows</option>
+                                                <option value="iOS">iOS</option>
+                                                <option value="MacOS">MacOS</option>
+                                                <option value="GNU/Linux">GNU/Linux</option>
+                                                <option value="Android">Android</option>
+                                            </Select>
+                                        </FormControl>
+
+
+                                    </TabPanel>
+                                    <TabPanel>
+                                        <FormControl mt={"9%"} >
+                                            <FormLabel htmlFor="name">Name:</FormLabel>
+                                            <Input
+                                                variant="flushed"
+                                                type="text"
+                                                name="name"
+                                                value={form.name}
+                                                onChange={onChange}
+                                            />
+                                        </FormControl>
+                                        <Box className="row" mt={"14%"}>
                                             <div className="col-md-6">
-                                                <FormControl>
-                                                    <FormLabel htmlFor="name">Name:</FormLabel>
+                                                <FormControl isRequired>
+                                                    <FormLabel htmlFor="email">Email:</FormLabel>
                                                     <Input
                                                         variant="flushed"
-                                                        type="text"
-                                                        name="name"
-                                                        value={form.name}
+                                                        type="email"
+                                                        name="email"
+                                                        value={form.email}
                                                         onChange={onChange}
                                                     />
                                                 </FormControl>
@@ -223,20 +235,10 @@ function ErrorForm(props) {
                                                     />
                                                 </FormControl>
                                             </div>
-                                        </div>
-                                        <FormControl mt={"14%"} >
-                                            <FormLabel htmlFor="email">Email:</FormLabel>
-                                            <Input
-                                                variant="flushed"
-                                                type="email"
-                                                name="email"
-                                                value={form.email}
-                                                onChange={onChange}
-                                            />
-                                        </FormControl>
+                                        </Box>
                                         <div>
                                             <Button
-                                                mt={"15%"}
+                                                mt={"14%"}
                                                 className="hover-color shadow-md"
                                                 type="submit"
                                                 size="md"
