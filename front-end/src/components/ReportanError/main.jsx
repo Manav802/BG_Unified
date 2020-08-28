@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioGroup,PsuedoBox
+    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioGroup,Collapse
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
@@ -11,12 +11,13 @@ function ErrorForm(props) {
     const [email, setEmail] = useState('');
     const [description, setDescription] = useState('');
     const [phone, setPhone] = useState('');
-    const [error, setError] = useState('');
+    const [error, setError] = useState('Page not responsive');
     const [browser, setBrowser] = useState('');
     const [device, setDevice] = useState('');
     const [operatingsystem, setOs] = useState('');
     const [othererror, setOtherInput] = useState('');
-    const [isOther, setOther] = useState(false);
+    const [show, setShow] = useState(false);
+    const [tabIndex, setTabIndex] = useState(0);
     let form = {
         name: name,
         email: email,
@@ -75,6 +76,9 @@ function ErrorForm(props) {
                 break;
         }
     }
+    const handleToggle = (param) => {
+        setShow(param);
+    }
     const refreshForm = (res) => {
         loadingState(false)
         console.log(res);
@@ -87,15 +91,18 @@ function ErrorForm(props) {
         setDevice('');
         setBrowser('');
         setOs('');
-        setError('');
-        setOther(false);
+        setError('Page not responsive');
         setOtherInput('');
+        setShow(false);
         if (res.status == 200) {
             setTimeout(() => {
                 onClose();
             }, 1000);
         }
     }
+    const handleTabsChange = index => {
+        setTabIndex(index);
+    };
     const formClose = () => {
         setResponse('');
         setName('');
@@ -106,15 +113,10 @@ function ErrorForm(props) {
         setDevice('');
         setBrowser('');
         setOs('');
-        setError('');
-        setOther(false);
+        setError('Page not responsive');
         setOtherInput('');
+        setShow(false);
         onClose();
-    }
-    const handleOtherInput = event => {
-        const target = event.target
-        const value = target.value
-        setOtherInput(value);
     }
     const onSubmit = (event) => {
         event.preventDefault()
@@ -134,7 +136,7 @@ function ErrorForm(props) {
             <a className="" onClick={onOpen}>Report an Error</a>
             <Modal isOpen={isOpen} onClose={formClose} isCentered>
                 <ModalOverlay />
-                <ModalContent className="p-4" style={{ maxWidth: "700px", minHeight: "670px" }}>
+                <ModalContent className="p-4" style={{ maxWidth: "700px", minHeight: "736px" }}>
                     <ModalHeader><span className="display5">Report an Error</span></ModalHeader>
                     <ModalCloseButton />
                     <div className="container">
@@ -143,42 +145,33 @@ function ErrorForm(props) {
                                 type="hidden"
                                 name="_redirect">
                             </input>
-                            <Tabs isFitted>
-                                <TabList style={{borderBottomColor:"#000000"}}>
+                            <Tabs index={tabIndex} onChange={handleTabsChange} isFitted>
+                                <TabList>
                                     <Tab className="display6 tab-selected">Type of error</Tab>
-                                    <Tab className="display6 tab-selected">Describe the error</Tab>
-                                    <Tab className="display6 tab-selected">Personal details</Tab>
+                                    <Tab className="display6 tab-selected">Device Details</Tab>
+                                    <Tab className="display6 tab-selected">Description</Tab>
                                 </TabList>
                                 <TabPanels>
                                     <TabPanel>
-                                        <FormControl mt={"9%"} isRequired>
+                                        <FormControl mt={"14%"} isRequired>
                                             <FormLabel htmlFor="name">Type of error:</FormLabel>
-                                            <RadioGroup name="errortype" onChange={onChange} defaultValue={form.error}>
-                                                <Radio size="lg" value="Page not responsive">Page not responsive</Radio>
-                                                <Radio size="lg" value="Component not working">Component not working</Radio>
-                                                <Radio size="lg" value="Site not loading properly">Site not loading properly</Radio>
+                                                <RadioGroup name="errortype" onChange={onChange} defaultValue={form.error}>
+                                                <Radio size="lg" value="Page not responsive" onClick={()=>handleToggle(false)}>Page not responsive</Radio>
+                                                <Radio size="lg" value="Component not working" onClick={()=>handleToggle(false)}>Component not working</Radio>
+                                                <Radio size="lg" value="Site not loading properly" onClick={()=>handleToggle(false)}>Site not loading properly</Radio>
+                                                <Radio size="lg" value="Some Other Error" onClick={()=>handleToggle(true)}>Other</Radio>
                                             </RadioGroup>
                                         </FormControl>
-                                        <Radio size="lg" onClick={() => { setOther(true) }}>Other</Radio>
-                                        {isOther &&
-                                            <FormControl isRequired>
-                                                <Input value={form.othererror} variant="flushed" name="othererror" placeholder="Please specify the any other error" onChange={onChange}>
+                                        {show&&<Collapse isOpen={show}>
+                                            <FormControl mt={"3%"} isRequired>
+                                                <Input value={form.othererror} variant="flushed" name="othererror" placeholder="Please specify if any other error" onChange={onChange}>
                                                 </Input>
-                                            </FormControl>}
-                                        <FormControl mt={"13%"} isRequired>
-                                            <FormLabel>Describe the error in detail:</FormLabel>
-                                            <Textarea
-                                                resize={"vertical"}
-                                                variant="flushed"
-                                                size="lg"
-                                                name="description"
-                                                value={form.description}
-                                                onChange={onChange}
-                                            />
-                                        </FormControl>
+                                            </FormControl>
+                                        </Collapse>}
+                                        <div><Button onClick={()=>setTabIndex(1)}>Next</Button></div>
                                     </TabPanel>
                                     <TabPanel>
-                                        <FormControl mt={"9%"} isRequired>
+                                        <FormControl mt={"14%"} isRequired>
                                             <FormLabel htmlFor="phone">Device you were using:</FormLabel>
                                             <Select name="devicetype" onChange={onChange} variant="flushed" placeholder="Select option">
                                                 <option value="Smartphone">Smartphone</option>
@@ -186,8 +179,6 @@ function ErrorForm(props) {
                                                 <option value="PC">PC</option>
                                             </Select>
                                         </FormControl>
-
-
                                         <FormControl mt={"14%"} isRequired>
                                             <FormLabel htmlFor="name">Browser you were using:</FormLabel>
                                             <Select name="browser" onChange={onChange} variant="flushed" placeholder="Select option">
@@ -197,7 +188,6 @@ function ErrorForm(props) {
                                                 <option value="Other">Other</option>
                                             </Select>
                                         </FormControl>
-
                                         <FormControl mt={"14%"} isRequired>
                                             <FormLabel htmlFor="phone">Operating system you were using:</FormLabel>
                                             <Select name="operatingsystem" onChange={onChange} variant="flushed" placeholder="Select option">
@@ -208,11 +198,10 @@ function ErrorForm(props) {
                                                 <option value="Android">Android</option>
                                             </Select>
                                         </FormControl>
-
-
+                                        <div><Button onClick={()=>{setTabIndex(0);}}>Prev</Button><Button onClick={()=>setTabIndex(2)}>Next</Button></div>
                                     </TabPanel>
                                     <TabPanel>
-                                        <FormControl mt={"9%"} >
+                                        <FormControl mt={"7%"} >
                                             <FormLabel htmlFor="name">Name:</FormLabel>
                                             <Input
                                                 variant="flushed"
@@ -222,7 +211,7 @@ function ErrorForm(props) {
                                                 onChange={onChange}
                                             />
                                         </FormControl>
-                                        <Box className="row" mt={"14%"}>
+                                        <Box className="row" mt={"7%"}>
                                             <div className="col-md-6">
                                                 <FormControl isRequired>
                                                     <FormLabel htmlFor="email">Email:</FormLabel>
@@ -249,9 +238,20 @@ function ErrorForm(props) {
                                                 </FormControl>
                                             </div>
                                         </Box>
+                                        <FormControl mt={"7%"} isRequired>
+                                            <FormLabel>Describe the error in detail:</FormLabel>
+                                            <Textarea
+                                                resize={"vertical"}
+                                                variant="flushed"
+                                                size="lg"
+                                                name="description"
+                                                value={form.description}
+                                                onChange={onChange}
+                                            />
+                                        </FormControl>
                                         <div>
                                             <Button
-                                                mt={"14%"}
+                                                mt={"7%"}
                                                 className="hover-color shadow-md"
                                                 type="submit"
                                                 size="md"
@@ -268,6 +268,7 @@ function ErrorForm(props) {
                                             />}
                                             </Button>
                                         </div>
+                                        <div><Button onClick={()=>{setTabIndex(1);}}>Prev</Button></div>
                                     </TabPanel>
                                 </TabPanels>
                             </Tabs>
