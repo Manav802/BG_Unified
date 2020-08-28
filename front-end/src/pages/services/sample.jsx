@@ -2,20 +2,15 @@ import React from 'react';
 import Head from "next/head"
 import Link from "next/link"
 import FeatureCard from "../../components/cards/FeatureCard"
-import {PricingQuote} from "../../components/cards/PricingCard"
-import {Image, Button, ButtonGroup, Box, Text, Heading, Collapse, Flex, Icon, Slider, Select, SliderFilledTrack, SliderTrack, SliderThumb} from "@chakra-ui/core"
+import CardWithIcon from "../../components/cards/CardWithIcon"
+import Typewriter from "typewriter-effect"
+import {Image, Button, ButtonGroup, Box, Text, Heading, Collapse, Flex, Icon} from "@chakra-ui/core"
 import Fade from "react-reveal/Fade"
-import Service from '../../components/cards/Service';
-
-const verifyNotEmpty = (x, text) => (x > 0 ? x + " " + text : "");
 
 function main(props) {
     
     const [feature, setFeature] = React.useState(1);
-    const [tier, setTier] = React.useState(",Storage Tier One SSD Per TB");
-    const [type, setType] = React.useState(",Single Copy");
-    const [value, setValue] = React.useState(10);
-    const handleChange = value => setValue(value);
+
     return (
         <div>
             <Head>
@@ -53,60 +48,82 @@ function main(props) {
                 </div>
             </Box>
             <div className="section">
-            <div className="container mt-4">
-                <div>
-                    <Fade className="px-lg-5 px-3" duration={500} bottom>
-                        <div className="px-4 py-5 border shadow">
-                            <div className="display5 text-center">Storage Options</div>
-                            <div className="row px-3 justify-content-center px-lg-4">
-
-                                <div className="col-lg-10 mt-4">
-                                    <Slider color="primary" defaultValue={10} min={1} max={200} value={value} onChange={handleChange}>
-                                        <SliderTrack h="16px" borderRadius="8px" />
-                                        <SliderFilledTrack h="16px" borderRadius="8px" />
-                                        <SliderThumb
-                                                    className="shadow-md" 
-                                                    fontSize="md"
-                                                    fontWeight="800"
-                                                    width="auto"
-                                                    padding="8px"
-                                                    height="32px"
-                                                    children={value + "TB"} />
-                                    </Slider>
-                                </div>
-                                <div className="col-lg-5 mt-4">
-                                    <div className="h6">Select Tier </div>
-                                    <Select onChange={(e)=>{setTier(e.target.value)}} variant="outline"  > 
-                                    <option value=",Storage Tier One SSD Per TB">Storage Tier One SSD Per TB</option>
-                                    <option value=",Storage Tier Two Per TB">Storage Tier Two Per TB</option>
-                                    <option value=",Storage Archive Only Per TB">Storage Archive Only Per TB</option>
-                                    </Select>
-                                </div>
-                                <div className="col-lg-5 mt-4">
-                                    <div className="h6">Select Type </div>
-                                    <Select onChange={(e)=>{setType(e.target.value)}} variant="outline"  > 
-                                    <option value=",Single Copy">Single Copy</option>
-                                    <option value=",Redundant - Two Copies - Single Geo Location">Redundant - Two Copies - Single Geo Location</option>
-                                    <option value=",Redundant - Three Copies - Two Geo Locations">Redundant - Three Copies - Two Geo Locations</option>
-                                    </Select>
-                                </div>
-
-                                <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                                    <PricingQuote serviceName="Storage As A Service" serviceDescription={`${verifyNotEmpty(value,"TB Storage")} ${tier} ${type}`} button ></PricingQuote>
-                                </div>
-                            </div>
-                        </div>
-                    </Fade>
-              <Text mt={12} textAlign={[ 'left','left', 'center' ]} fontSize="xl" className="mb-4">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+            <Box fontSize={["34px","38px"]} justifyContent="center" className="d-flex flex-lg-row flex-column text-center h5 NunitoSans-ExtraBold">
+                <Typewriter
+                  options={{
+                    strings: ['Deploy', 'Store', 'Maintain'],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+                 your data with our security and reliability
+              </Box>
+              
+              <Text textAlign={[ 'left','left', 'center' ]} fontSize="xl" className="mb-4">
               Optimizing infrastructural resources is essential to controlling the cost of data growth. The Enterprise Infrastructure Assessment provides in-depth reports and recommendations for improving storage efficiency, performance, and availability. Findings are linked to your specific risks and benefits—so you can scale your infra systems to successfully serve the growing needs of your business. We can address your heterogeneous data centre environment and provide data and recommendations across all assets.
               </Text>
+
+              <Fade duration={500} cascade distance={"30%"} bottom>
+                  <div className="row">
+                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                      <FeatureCard left
+                        title="Scale Up on Demand"
+                        icon="/assets/images/icons/color/ui.svg"
+                      >
+                        With BG Unified Solutions, you create a combination of CPU, memory, bandwidth and storage as per your requirements.
+                        Enjoy the freedom to scale up your infrastructure as and when required.
+                    </FeatureCard>
+                    </div>
+                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                      <FeatureCard left
+                        title="Stay Agile"
+                        icon="/assets/images/icons/color/agile.svg"
+                      >
+                        Resources are not bundled together and there is surely no standard server size.
+                        Combine long-term subscriptions for predictible workloads and on-time delivery with regular updates.
+                    </FeatureCard>
+                    </div>
+                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                      <FeatureCard left
+                        title="Select from Global Locations"
+                        icon="/assets/images/icons/color/globe.svg"
+                      >
+                        Choose the most appropriate and most suitable framework to run your cloud infrastructure. Give your customers the pleasure to enjoy low latency and faster loading speeds.
+                    </FeatureCard>
+                    </div>
+                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                      <FeatureCard left
+                        title="Rely on Excellent Support"
+                        icon="/assets/images/icons/color/headphones.svg"
+                      >
+                        BGUS's friendly and skilled customer support service is available24X7X365
+                      with very less response time. Our policies ensure rapid and satisfactory resolution of issues.
+                    </FeatureCard>
+                    </div>
+                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                      <FeatureCard left
+                        title="Run Your Apps Unmodified"
+                        icon="/assets/images/icons/color/api.svg"
+                      >
+                        Use our seamless live migration tool to get you up and running in the cloud without any modifications to your existing infrastructure.
+                    </FeatureCard>
+                    </div>
+                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
+                      <FeatureCard left
+                        title="Experience No Vendor Lock-In"
+                        icon="/assets/images/icons/color/fix.svg"
+                      >
+                        At BGUS you are able to develop or deploy your application in the cloud without being forced to use any vendor-specific tools.
+                    </FeatureCard>
+                    </div>
+                  </div>
+                </Fade>
+            </div>
           </div>
       </div>
-      </div>
-      <div className="section bg-dark">
-        <Heading size="lg" color="white">Why BGUS Storage Infrastructure?</Heading>
-        <Fade duration={500} cascade distance={"30%"} bottom>
-        </Fade>
       </div>
       <div className="section">
         <div className="container">
@@ -181,14 +198,49 @@ function main(props) {
               <h4 className="display5 py-3 text-center">Related Services</h4>
             </div>
             <div className="col-xl-4 col-sm-6 my-2">
-                  <Service name="Infrastructure As A Service"></Service>
+              <Link href="/services/storage">
+                <CardWithIcon
+                  icon="/assets/images/icons/monotone/cloud.svg"
+                  title={
+                    <div>
+                      Storage <br /> As A service{" "}
+                    </div>
+                  }
+                  iconBg="#F3A622"
+                  children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage."
+                />
+              </Link>
             </div>
             <div className="col-xl-4 col-sm-6 my-2">
-                  <Service name="DR As A Service"></Service>
+              <Link href="/services/dns">
+                <CardWithIcon
+                  icon="/assets/images/icons/monotone/earth_ouline.svg"
+                  title={
+                    <div>
+                      DNS <br /> As A service{" "}
+                    </div>
+                  }
+                  iconBg="#5F1CE6"
+                  children="Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability."
+                />
+              </Link>
             </div>
             <div className="col-xl-4 col-sm-6 my-2">
-                  <Service name="DNS As A Service"></Service>
-            </div>
+            <Link href="/services/platform">
+                <a className="no-red">
+                  <CardWithIcon
+                    icon="/assets/images/icons/monotone/dashboard.svg"
+                    title={
+                      <div>
+                        Platform <br /> As A service{" "}
+                      </div>
+                    }
+                    iconBg="#19C741"
+                    children="End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions."
+                  />
+                </a>
+              </Link>
+              </div>
           </div>
         </div>
       </div>

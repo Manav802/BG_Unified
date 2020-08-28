@@ -41,7 +41,7 @@
             "price": "",
             "popular": true,
             "icon": "/assets/images/icons/monotone/AppDev.svg",
-            "link": "services/application-dev"
+            "link": "/services/application-dev"
         },
         {
             "name": "Architectural Consultancy As A Service",
@@ -50,7 +50,7 @@
             "tags": ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
             "price": "",
             "icon": "/assets/images/icons/monotone/architectural.svg",
-            "link": "services/architectural-consultancy"
+            "link": "/services/architectural-consultancy"
         },
         {
             "name": "CEX As A Service",
@@ -59,7 +59,7 @@
             "tags": ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
             "price": "",
             "icon": "/assets/images/icons/monotone/CEX.svg",
-            "link": "services/cloud-exchange"
+            "link": "/services/cloud-exchange"
         },
         {
             "name": "Cloud Logging As A Service",
@@ -68,7 +68,7 @@
             "tags": ["cloud", "logging", "log", "threats", "log management", "troubleshooting"],
             "price": "",
             "icon": "/assets/images/icons/monotone/CloudLogging.svg",
-            "link": "services/cloud-logging"
+            "link": "/services/cloud-logging"
         },
         {
             "name": "Contact Center As A Service",
@@ -77,7 +77,7 @@
             "tags": ["customer", "Support", "CSaaS", "Customer Experience", "Productivity", "Securing", "Data"],
             "price": "",
             "icon": "/assets/images/icons/monotone/ContactCenterAsAService.svg",
-            "link": "services/customer-support"
+            "link": "/services/customer-support"
         },
         {
             "name": "DR As A Service",
@@ -86,7 +86,7 @@
             "tags": ["Disaster", "Recovery", "Management", "Deployment", "Flexible", "Non-Disruptive"],
             "price": "",
             "icon": "/assets/images/icons/monotone/DRAsAService.svg",
-            "link": "services/disaster-recovery"
+            "link": "/services/disaster-recovery"
         },
         {
             "name": "DNS As A Service",
@@ -95,7 +95,7 @@
             "tags": ["dns", "DNS", "domain", "name", "cost", "effective", "Concurrency", "Scalability", "TLD servers"],
             "price": "",
             "icon": "/assets/images/icons/monotone/DNSasAService.svg",
-            "link": "services/dns"
+            "link": "/services/dns"
         },
         {
             "name": "Firewall As A Service",
@@ -113,7 +113,7 @@
             "tags": ["computing", "infrastructure", "asset", "utilization", "server", "consolidation", "virtualization", "Geographical Redundant Storage"],
             "price": "",
             "icon": "/assets/images/icons/monotone/InfrastructureIcon.svg",
-            "link": "services/infra"
+            "link": "/services/infra"
         },
         {
             "name": "Platform As A Service",
@@ -122,7 +122,7 @@
             "tags": ["cloud", "platform", "service", "infrastructure", "DC Interconnect"],
             "price": "",
             "icon": "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
-            "link": "services/platform"
+            "link": "/services/platform"
         },
         {
             "name": "Proxy As A Service",
@@ -131,7 +131,7 @@
             "tags": ["proxy", "servers", "low-latency", "services"],
             "price": "",
             "icon": "/assets/images/icons/monotone/Proxy.svg",
-            "link": "services/proxy-server"
+            "link": "/services/proxy-server"
         },
         {
             "name": "SD-WAN As A Service",
@@ -140,7 +140,7 @@
             "tags": ["SD-WAN", "sd wan", "Optimization", " VMware VDI"],
             "price": "",
             "icon": "/assets/images/icons/monotone/SD-Wan.svg",
-            "link": "services/sd-wan"
+            "link": "/services/sd-wan"
         },
         {
             "name": "SIP As A Service",
@@ -149,7 +149,7 @@
             "tags": ["SIP", "Connectivity", "Service Infrastructure", "cisco unified"],
             "price": "",
             "icon": "/assets/images/icons/monotone/SIP.svg",
-            "link": "services/sip-connectivity"
+            "link": "/services/sip-connectivity"
         },
         {
             "name": "Storage As A Service",
@@ -158,7 +158,7 @@
             "tags": ["storage", "blocks", "consolidation", "virtualization", "backup", "recovery", "archive"],
             "price": "",
             "icon": "/assets/images/icons/monotone/StorageAsAServiceIcon.svg",
-            "link": "services/storage-unit"
+            "link": "/services/storage-unit"
         },
         {
             "name": "Unified Communications As A Service",
@@ -167,7 +167,7 @@
             "tags": ["UCaaS", "unified", "communications", "cisco", "avaya", "unity", "collaboration", "telepresence", "workforce", "optimisation"],
             "price": "",
             "icon": "/assets/images/icons/monotone/UCAsAService.svg",
-            "link": "services/ucaas"
+            "link": "/services/ucaas"
         },
         {
             "name": "Web Hosting As A Service",
@@ -176,7 +176,7 @@
             "tags": ["web", "hosting", "host", "web server", "APACHE", "website"],
             "price": "",
             "icon": "/assets/images/icons/monotone/WebHosting.svg",
-            "link": "services/web-hosting"
+            "link": "/services/web-hosting"
         },
         {
             "name": "Wireless As A Service",
@@ -185,7 +185,7 @@
             "tags": ["wireless", "wifi", "clusters", "networks"],
             "price": "",
             "icon": "/assets/images/icons/monotone/WirelessAsAService.svg",
-            "link": "services/wireless-networks"
+            "link": "/services/wireless-networks"
         }
     ],
 
