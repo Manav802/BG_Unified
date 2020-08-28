@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Icon, Image, Button } from "@chakra-ui/core";
-
+import Link from "next/link"
 //props.icon is an element (can be image,icon etc.)
 
 function CardWithIcon(props) {
@@ -31,9 +31,11 @@ function CardWithIcon(props) {
           {props.children}
         </div>
         <div className="row mx-3 my-3">
-          <Button className="p-4 action-btn" rightIcon="arrow-forward">
-            Learn More
-          </Button>
+          <Link href={`${props.link}`}>
+            <Button className="p-4 action-btn" rightIcon="arrow-forward">
+              Learn More
+            </Button>
+          </Link>
         </div>
       </Box>
     </Box>
