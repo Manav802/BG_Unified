@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioGroup,Collapse
+    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioGroup, Collapse
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
@@ -16,6 +16,7 @@ function ErrorForm(props) {
     const [device, setDevice] = useState('');
     const [operatingsystem, setOs] = useState('');
     const [othererror, setOtherInput] = useState('');
+    const [rend, setRend] = useState(false);
     const [show, setShow] = useState(false);
     const [tabIndex, setTabIndex] = useState(0);
     let form = {
@@ -24,7 +25,7 @@ function ErrorForm(props) {
         description: description,
         phone: phone,
         error: error,
-        othererror:othererror,
+        othererror: othererror,
         browser: browser,
         device: device,
         operatingsystem: operatingsystem
@@ -77,13 +78,17 @@ function ErrorForm(props) {
         }
     }
     const handleToggle = (param) => {
-        setShow(param);
+        setRend(param);
+        setTimeout(() => {
+            setShow(param);
+        }, 500);
     }
     const refreshForm = (res) => {
         loadingState(false)
         console.log(res);
         setResponse(res);
         setResponse('');
+        setTabIndex(0);
         setName('');
         setEmail('');
         setDescription('');
@@ -105,6 +110,7 @@ function ErrorForm(props) {
     };
     const formClose = () => {
         setResponse('');
+        setTabIndex(0);
         setName('');
         setEmail('');
         setDescription('');
@@ -155,20 +161,20 @@ function ErrorForm(props) {
                                     <TabPanel>
                                         <FormControl mt={"14%"} isRequired>
                                             <FormLabel htmlFor="name">Type of error:</FormLabel>
-                                                <RadioGroup name="errortype" onChange={onChange} defaultValue={form.error}>
-                                                <Radio size="lg" value="Page not responsive" onClick={()=>handleToggle(false)}>Page not responsive</Radio>
-                                                <Radio size="lg" value="Component not working" onClick={()=>handleToggle(false)}>Component not working</Radio>
-                                                <Radio size="lg" value="Site not loading properly" onClick={()=>handleToggle(false)}>Site not loading properly</Radio>
-                                                <Radio size="lg" value="Some Other Error" onClick={()=>handleToggle(true)}>Other</Radio>
+                                            <RadioGroup name="errortype" onChange={onChange} defaultValue={form.error}>
+                                                <Radio size="lg" value="Page not responsive" onClick={() => handleToggle(false)}>Page not responsive</Radio>
+                                                <Radio size="lg" value="Component not working" onClick={() => handleToggle(false)}>Component not working</Radio>
+                                                <Radio size="lg" value="Site not loading properly" onClick={() => handleToggle(false)}>Site not loading properly</Radio>
+                                                <Radio size="lg" value="Some Other Error" onClick={() => handleToggle(true)}>Other</Radio>
                                             </RadioGroup>
                                         </FormControl>
-                                        {show&&<Collapse isOpen={show}>
+                                        {rend && <Collapse isOpen={show}>
                                             <FormControl mt={"3%"} isRequired>
                                                 <Input value={form.othererror} variant="flushed" name="othererror" placeholder="Please specify if any other error" onChange={onChange}>
                                                 </Input>
                                             </FormControl>
                                         </Collapse>}
-                                        <div><Button onClick={()=>setTabIndex(1)}>Next</Button></div>
+                                        <Button className="next" onClick={() => setTabIndex(1)}>Next</Button>
                                     </TabPanel>
                                     <TabPanel>
                                         <FormControl mt={"14%"} isRequired>
@@ -198,7 +204,8 @@ function ErrorForm(props) {
                                                 <option value="Android">Android</option>
                                             </Select>
                                         </FormControl>
-                                        <div><Button onClick={()=>{setTabIndex(0);}}>Prev</Button><Button onClick={()=>setTabIndex(2)}>Next</Button></div>
+                                        <Button className="prev" onClick={() => { setTabIndex(0); }}>Prev</Button>
+                                        <Button className="next" onClick={() => setTabIndex(2)}>Next</Button>
                                     </TabPanel>
                                     <TabPanel>
                                         <FormControl mt={"7%"} >
@@ -268,7 +275,7 @@ function ErrorForm(props) {
                                             />}
                                             </Button>
                                         </div>
-                                        <div><Button onClick={()=>{setTabIndex(1);}}>Prev</Button></div>
+                                        <Button className="prev" onClick={() => { setTabIndex(1); }}>Prev</Button>
                                     </TabPanel>
                                 </TabPanels>
                             </Tabs>
