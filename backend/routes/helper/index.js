@@ -3,6 +3,8 @@ const  serviceRoutes = require('../service')
 const  chatRoutes = require('../chat')
 const  issueRoutes = require('../issue')
 const  ticketRoutes = require('../ticket')
+const  docuRoutes = require('../docusign')
+
 
 const express =require('express')
 const router = express.Router()
@@ -12,6 +14,7 @@ router.use("/api/service", serviceRoutes)
 router.use("/api/chat", chatRoutes)
 router.use("/api/issue", issueRoutes)
 router.use("/api/ticket", ticketRoutes)
+router.use("/api/docu", docuRoutes)
 
 const errorMessage = {
     pageNotFount: 'Page Not Found'
