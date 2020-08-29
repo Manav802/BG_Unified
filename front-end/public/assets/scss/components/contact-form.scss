@@ -31,4 +31,14 @@
     box-shadow: none;
     background-color: #ce1e1e;
   }
+  .prev {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+  }
+  .next {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+  }
 }
