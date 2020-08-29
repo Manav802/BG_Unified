@@ -10,6 +10,7 @@ import {
     Flex,
     FormLabel,
     Switch,
+    Heading
 } from "@chakra-ui/core";
 import Fade from "react-reveal/Fade";
 import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
@@ -28,6 +29,7 @@ function BackupPricing(props) {
         
     return (
             <div className="container">
+                <Heading size="xl" textAlign="center" mb={6} fontFamily="Nexa Bold">Our Pricing Plans</Heading>
                 <Fade duration={500} bottom>
                     <div className="row px-lg-5 px-3">
                         <div className="col-lg-4 my-3">
