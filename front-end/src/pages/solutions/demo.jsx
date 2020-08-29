@@ -5,6 +5,7 @@ import Title from '../../pageBuilder/Title';
 import Description from '../../pageBuilder/Description';
 import Row from '../../pageBuilder/Row';
 import Body from '../../pageBuilder/Body';
+import BackupPricing from '../../pageBuilder/pricing/BackupPricing';
 
 function demo(props) {
     return (
@@ -30,6 +31,11 @@ function demo(props) {
                                     items: ["Hollll" , "Offff ", "Fame"],
                                 }}/>
                         </Row>
+                        
+                        
+                    </Section>
+                    <Section my={1} py={1}>
+                        <Body type="pricing" data={<BackupPricing/>} />
                     </Section>
             </Box>
         </div>

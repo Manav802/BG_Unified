@@ -24,6 +24,12 @@ function Body({gap = 4, data, type, width, ...props}){
             return (
                 <ImageGroup data={data}></ImageGroup>
             )
+            case "pricing":
+            return (
+                <>
+                {data}
+                </>
+            )
         }
     }
 
