@@ -41,6 +41,7 @@
             "price": "",
             "popular": true,
             "icon": "/assets/images/icons/monotone/AppDev.svg",
+            "bgcolour": "#ED1C24", 
             "link": "/services/application-dev"
         },
         {
@@ -50,6 +51,7 @@
             "tags": ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
             "price": "",
             "icon": "/assets/images/icons/monotone/architectural.svg",
+            "bgcolour": "#235789",
             "link": "/services/architectural-consultancy"
         },
         {
@@ -59,6 +61,7 @@
             "tags": ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
             "price": "",
             "icon": "/assets/images/icons/monotone/CEX.svg",
+            "bgcolour": "#F1D302",
             "link": "/services/cloud-exchange"
         },
         {
@@ -68,6 +71,7 @@
             "tags": ["cloud", "logging", "log", "threats", "log management", "troubleshooting"],
             "price": "",
             "icon": "/assets/images/icons/monotone/CloudLogging.svg",
+            "bgcolour": "#020100",
             "link": "/services/cloud-logging"
         },
         {
@@ -77,6 +81,7 @@
             "tags": ["customer", "Support", "CSaaS", "Customer Experience", "Productivity", "Securing", "Data"],
             "price": "",
             "icon": "/assets/images/icons/monotone/ContactCenterAsAService.svg",
+            "bgcolour": "#6A041D",
             "link": "/services/customer-support"
         },
         {
@@ -86,6 +91,7 @@
             "tags": ["Disaster", "Recovery", "Management", "Deployment", "Flexible", "Non-Disruptive"],
             "price": "",
             "icon": "/assets/images/icons/monotone/DRAsAService.svg",
+            "bgcolour": "#3B3561",
             "link": "/services/disaster-recovery"
         },
         {
@@ -95,6 +101,7 @@
             "tags": ["dns", "DNS", "domain", "name", "cost", "effective", "Concurrency", "Scalability", "TLD servers"],
             "price": "",
             "icon": "/assets/images/icons/monotone/DNSasAService.svg",
+            "bgcolour": "#06BCC1",
             "link": "/services/dns"
         },
         {
@@ -104,6 +111,7 @@
             "tags": ["Firewall", "Security", "protection"],
             "price": "",
             "icon": "/assets/images/icons/monotone/.svg",
+            "bgcolour": "#6A0136",
             "link": "/services/firewall"
         },
         {
@@ -113,6 +121,7 @@
             "tags": ["computing", "infrastructure", "asset", "utilization", "server", "consolidation", "virtualization", "Geographical Redundant Storage"],
             "price": "",
             "icon": "/assets/images/icons/monotone/InfrastructureIcon.svg",
+            "bgcolour": "#51CB20",
             "link": "/services/infra"
         },
         {
@@ -122,6 +131,7 @@
             "tags": ["cloud", "platform", "service", "infrastructure", "DC Interconnect"],
             "price": "",
             "icon": "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
+            "bgcolour": "#F76F8E",
             "link": "/services/platform"
         },
         {
@@ -131,6 +141,7 @@
             "tags": ["proxy", "servers", "low-latency", "services"],
             "price": "",
             "icon": "/assets/images/icons/monotone/Proxy.svg",
+            "bgcolour": "#451F55",
             "link": "/services/proxy-server"
         },
         {
@@ -140,6 +151,7 @@
             "tags": ["SD-WAN", "sd wan", "Optimization", " VMware VDI"],
             "price": "",
             "icon": "/assets/images/icons/monotone/SD-Wan.svg",
+            "bgcolour": "#3B0086",
             "link": "/services/sd-wan"
         },
         {
@@ -149,6 +161,7 @@
             "tags": ["SIP", "Connectivity", "Service Infrastructure", "cisco unified"],
             "price": "",
             "icon": "/assets/images/icons/monotone/SIP.svg",
+            "bgcolour": "#290628",
             "link": "/services/sip-connectivity"
         },
         {
@@ -158,6 +171,7 @@
             "tags": ["storage", "blocks", "consolidation", "virtualization", "backup", "recovery", "archive"],
             "price": "",
             "icon": "/assets/images/icons/monotone/StorageAsAServiceIcon.svg",
+            "bgcolour": "#0091AD",
             "link": "/services/storage-unit"
         },
         {
@@ -167,6 +181,7 @@
             "tags": ["UCaaS", "unified", "communications", "cisco", "avaya", "unity", "collaboration", "telepresence", "workforce", "optimisation"],
             "price": "",
             "icon": "/assets/images/icons/monotone/UCAsAService.svg",
+            "bgcolour": "#B2ABF2",
             "link": "/services/ucaas"
         },
         {
@@ -176,6 +191,7 @@
             "tags": ["web", "hosting", "host", "web server", "APACHE", "website"],
             "price": "",
             "icon": "/assets/images/icons/monotone/WebHosting.svg",
+            "bgcolour": "#06D6A0",
             "link": "/services/web-hosting"
         },
         {
@@ -185,7 +201,17 @@
             "tags": ["wireless", "wifi", "clusters", "networks"],
             "price": "",
             "icon": "/assets/images/icons/monotone/WirelessAsAService.svg",
+            "bgcolour": "#E4572E",
             "link": "/services/wireless-networks"
+        },
+        {
+            "name": "Backup As A Service",
+            "description":"BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data.",
+            "tags": ["backup", "storage", "online-cloud", "cloud"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/BackupAsAService",
+            "bgcolour": "#0267C1",
+            "link": "/services/backup"
         }
     ],
 
