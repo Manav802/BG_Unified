@@ -14,11 +14,21 @@ function demo(props) {
                         <Title>Title of the section</Title>
                         <Description>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit modi quam, eligendi sit magni facilis consequuntur hic. Dolore fugiat explicabo incidunt suscipit quasi reprehenderit rerum ullam minus, voluptate necessitatibus vero!</Description>
                         <Row>
-                            <Body width={12/12} type="imageGroup" data= {
+                            <Body type="video" data= {
                                 {
-                                    images: ["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png"],
+                                    url : "https://www.youtube.com/embed/dO368WjwyFs" ,
+                                    description : "Hello I am Not What I am ",
+                                    height: "400px"
                                 }
                             }></Body>
+                            
+                        </Row>
+                        <Row>
+                            <Body type="list" data= {
+                                {
+                                    title : "Lorem Ipsum Dolor",
+                                    items: ["Hollll" , "Offff ", "Fame"],
+                                }}/>
                         </Row>
                     </Section>
             </Box>

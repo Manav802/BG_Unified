@@ -3,6 +3,7 @@ import Content from './components/Content';
 import { Box } from '@chakra-ui/core';
 import Video from './components/Video';
 import ImageGroup from './components/ImageGroup';
+import MyList from './components/MyList';
 
 function Body({gap = 4, data, type, width, ...props}){
     function giveMeComponent(){
@@ -14,6 +15,10 @@ function Body({gap = 4, data, type, width, ...props}){
             case "video":
             return (
                 <Video data={data}></Video>
+            )
+            case "list":
+            return (
+                <MyList data={data}></MyList>
             )
             case "imageGroup":
             return (

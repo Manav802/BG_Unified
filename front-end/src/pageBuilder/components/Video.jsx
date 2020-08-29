@@ -1,13 +1,12 @@
 import React from 'react';
 import { Box,Text } from '@chakra-ui/core';
 
-function Video(props) {
-    //Ex - <Video type="video" width="200px" height="200px" data={{url:"/assets/images/THE OLD WAYS.EXE.mp4", description:"Lorem  awe wdaa dwdadwa dd wa " }}/>
+function Video({data}) {
     return (
         <>
-            <video  src={props.data.url}></video>
-            <Text mt={4} textAlign={"center"} opacity="0.7">
-            {props.data.description}
+            <iframe src={data.url} width="100%" height={data.height} frameBorder="0" allow="accelerometer; fullscreen; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style={{borderRadius:"3px",border:"none"}}></iframe>
+            <Text mt={3} textAlign={"center"} opacity="0.7">
+            {data.description}
             </Text>
         </>
     );
