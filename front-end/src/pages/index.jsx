@@ -11,6 +11,7 @@ import { CASESTUDY } from "../../public/assets/data/casestudydata";
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
 import Slider from "react-flickity-component";
+import ImageGroup from "../pageBuilder/components/ImageGroup";
 
 const sliderInfo = [
   {
@@ -180,28 +181,10 @@ class Landing extends Component {
         <div className="brands">
           <div className="container-fluid" >
             <div className="">
-              <div className="justify-content-center text-center d-flex mx-xl-5 mx-0 scroll">
-                <Image src="/assets/images/brands/aapt.png" />
-                <Image src="/assets/images/brands/advanced_life.png" />
-                <Image src="/assets/images/brands/agc_plus.png" />
-                <Image src="/assets/images/brands/blueglue.png" />
-                <Image src="/assets/images/brands/cumulus.png" />
-                <Image src="/assets/images/brands/equinix.png" />
-                <Image src="/assets/images/brands/fdba.png" />
-                <Image src="/assets/images/brands/fortinet.png" />
-                <Image src="/assets/images/brands/fujitsu.png" />
-                <Image src="/assets/images/brands/halls.png" />
-                <Image src="/assets/images/brands/huawei.png" />
-                <Image src="/assets/images/brands/hutchisonports.png" />
-                <Image src="/assets/images/brands/infin_it.png" />
-                <Image src="/assets/images/brands/sabre_pacific.png" />
-                <Image src="/assets/images/brands/straintz.png" />
-                <Image src="/assets/images/brands/veeam.png" />
-              </div>
+              <ImageGroup images={["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/equinix.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png", "/assets/images/brands/fujitsu.png", "/assets/images/brands/halls.png", "/assets/images/brands/huawei.png", "/assets/images/brands/hutchisonports.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/sabre_pacific.png", "/assets/images/brands/straintz.png", "/assets/images/brands/veeam.png"]} minW={["119.5px", "135.5px", "175px", "231px", "283px"]} width="auto" />
             </div>
           </div>
         </div>
-
         <div className="section py-3">
           <div className="container">
 
