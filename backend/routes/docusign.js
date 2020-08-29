@@ -11,7 +11,7 @@ const { handleError } = require('../helpers/errorHandler')
 //Signed api  
 Router.get('/sign',async(req, res)=> {
   
-  //token valid for 8 hours
+  //token valid for 8 hours in development field 
   const accessToken =  "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY4MTg1ZmYxLTRlNTEtNGNlOS1hZjFjLTY4OTgxMjIwMzMxNyJ9.eyJUb2tlblR5cGUiOjUsIklzc3VlSW5zdGFudCI6MTU5ODcwNDgwOCwiZXhwIjoxNTk4NzMzNjA4LCJVc2VySWQiOiJlMmRlYTc1YS0zNjllLTQwOTgtOWM0MS1mZDU2NmJkZWE0NmQiLCJzaXRlaWQiOjEsInNjcCI6WyJzaWduYXR1cmUiLCJjbGljay5tYW5hZ2UiLCJvcmdhbml6YXRpb25fcmVhZCIsInJvb21fZm9ybXMiLCJncm91cF9yZWFkIiwicGVybWlzc2lvbl9yZWFkIiwidXNlcl9yZWFkIiwidXNlcl93cml0ZSIsImFjY291bnRfcmVhZCIsImRvbWFpbl9yZWFkIiwiaWRlbnRpdHlfcHJvdmlkZXJfcmVhZCIsImR0ci5yb29tcy5yZWFkIiwiZHRyLnJvb21zLndyaXRlIiwiZHRyLmRvY3VtZW50cy5yZWFkIiwiZHRyLmRvY3VtZW50cy53cml0ZSIsImR0ci5wcm9maWxlLnJlYWQiLCJkdHIucHJvZmlsZS53cml0ZSIsImR0ci5jb21wYW55LnJlYWQiLCJkdHIuY29tcGFueS53cml0ZSJdLCJhdWQiOiJmMGYyN2YwZS04NTdkLTRhNzEtYTRkYS0zMmNlY2FlM2E5NzgiLCJhenAiOiJmMGYyN2YwZS04NTdkLTRhNzEtYTRkYS0zMmNlY2FlM2E5NzgiLCJpc3MiOiJodHRwczovL2FjY291bnQtZC5kb2N1c2lnbi5jb20vIiwic3ViIjoiZTJkZWE3NWEtMzY5ZS00MDk4LTljNDEtZmQ1NjZiZGVhNDZkIiwiYXV0aF90aW1lIjoxNTk4NzA0MzQwLCJwd2lkIjoiNmJkZmJjMzgtOWU3MC00Yjc4LTg0MWMtNWU2ODRjNmUxOGU5In0.IFfNnU7sgGLVpWqJmTQ2Su5-lRx13Dm5h5B1s37bnynZXbU01G3nMnRYaI6m4MzejSYFMYd2V5kQwmAmvtGui_yy8gfb6OUGGTefGw0qHmNUXvDtTCgvVHL58nTp0aIzsPZ6_YaEU-Zkkchs8MPeOGscHtHlfstX89ggqOO6_6g7_Lsqz2nvH0VDqIfPyH--DdExhj99F9GHa5HkZKCBIfQkEN0qjf26j8bYRAaOlIawckUpBdfaqMYUmchx0_0nxtXmfJnw3EGmBLFLyZwBohkaS22JLLk8XGGVFpjFtEI_y8N7Iw0p1T0hHYK4lQ8v84DBDwIClSYSfgIK6zXd6w";
   
   //account id 
@@ -25,7 +25,7 @@ Router.get('/sign',async(req, res)=> {
   const signerEmail = "balkarsingh132211@gmail.com"
 
   //document path
-  const fileName = './1.pdf';
+  const fileName = '../static/1.pdf';
   
   //creating the applicant 
   const apiClient = new docusign.ApiClient();
@@ -75,12 +75,14 @@ Router.get('/sign',async(req, res)=> {
       // createEnvelopePromise returns a promise with the results:
     , createEnvelopePromise = promisify(envelopesApi.createEnvelope).bind(envelopesApi)
     , results
-    ;
+
 
   try {
+    
     results = await createEnvelopePromise(accountId, {'envelopeDefinition': envDef})
-  } catch  (e) {
-      console.log(e)
+    //at here we can get envelope id 
+  } catch(e) {
+      
     let body = e.response && e.response.body;
     if (body) {
       // DocuSign API exception
@@ -97,7 +99,48 @@ Router.get('/sign',async(req, res)=> {
       type: "Success",
       message:"Document sent to  user account"
     })
-}})
+  }
+})
+
+//Get status of Envelope by ID 
+Router.get('/status/:id',async(req,res)=>{
+
+    try{
+        //getting the envelope id
+        const envelopeId = req.params.id
+
+        //token valid for 8 hours in development field 
+        const accessToken =  "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY4MTg1ZmYxLTRlNTEtNGNlOS1hZjFjLTY4OTgxMjIwMzMxNyJ9.eyJUb2tlblR5cGUiOjUsIklzc3VlSW5zdGFudCI6MTU5ODcwNDgwOCwiZXhwIjoxNTk4NzMzNjA4LCJVc2VySWQiOiJlMmRlYTc1YS0zNjllLTQwOTgtOWM0MS1mZDU2NmJkZWE0NmQiLCJzaXRlaWQiOjEsInNjcCI6WyJzaWduYXR1cmUiLCJjbGljay5tYW5hZ2UiLCJvcmdhbml6YXRpb25fcmVhZCIsInJvb21fZm9ybXMiLCJncm91cF9yZWFkIiwicGVybWlzc2lvbl9yZWFkIiwidXNlcl9yZWFkIiwidXNlcl93cml0ZSIsImFjY291bnRfcmVhZCIsImRvbWFpbl9yZWFkIiwiaWRlbnRpdHlfcHJvdmlkZXJfcmVhZCIsImR0ci5yb29tcy5yZWFkIiwiZHRyLnJvb21zLndyaXRlIiwiZHRyLmRvY3VtZW50cy5yZWFkIiwiZHRyLmRvY3VtZW50cy53cml0ZSIsImR0ci5wcm9maWxlLnJlYWQiLCJkdHIucHJvZmlsZS53cml0ZSIsImR0ci5jb21wYW55LnJlYWQiLCJkdHIuY29tcGFueS53cml0ZSJdLCJhdWQiOiJmMGYyN2YwZS04NTdkLTRhNzEtYTRkYS0zMmNlY2FlM2E5NzgiLCJhenAiOiJmMGYyN2YwZS04NTdkLTRhNzEtYTRkYS0zMmNlY2FlM2E5NzgiLCJpc3MiOiJodHRwczovL2FjY291bnQtZC5kb2N1c2lnbi5jb20vIiwic3ViIjoiZTJkZWE3NWEtMzY5ZS00MDk4LTljNDEtZmQ1NjZiZGVhNDZkIiwiYXV0aF90aW1lIjoxNTk4NzA0MzQwLCJwd2lkIjoiNmJkZmJjMzgtOWU3MC00Yjc4LTg0MWMtNWU2ODRjNmUxOGU5In0.IFfNnU7sgGLVpWqJmTQ2Su5-lRx13Dm5h5B1s37bnynZXbU01G3nMnRYaI6m4MzejSYFMYd2V5kQwmAmvtGui_yy8gfb6OUGGTefGw0qHmNUXvDtTCgvVHL58nTp0aIzsPZ6_YaEU-Zkkchs8MPeOGscHtHlfstX89ggqOO6_6g7_Lsqz2nvH0VDqIfPyH--DdExhj99F9GHa5HkZKCBIfQkEN0qjf26j8bYRAaOlIawckUpBdfaqMYUmchx0_0nxtXmfJnw3EGmBLFLyZwBohkaS22JLLk8XGGVFpjFtEI_y8N7Iw0p1T0hHYK4lQ8v84DBDwIClSYSfgIK6zXd6w";
+        
+        //account id 
+        const accountId = "3c91017a-e451-4940-855f-50bc20cc8730"; 
+        //base path 
+        const basePath  = "https://demo.docusign.net/restapi"
+
+        let dsApiClient = new docusign.ApiClient();
+        dsApiClient.setBasePath(basePath)
+        dsApiClient.addDefaultHeader('Authorization', 'Bearer ' + accessToken)
+          let envelopesApi = new docusign.EnvelopesApi(dsApiClient)
+            , results = null;
+
+        results = await envelopesApi.getEnvelope(accountId, envelopeId, null)
+        if(results.status==='completed'){
+          res.status(200).json({
+            type: "Success",
+            message:"Completed"
+          })
+        }
+        else{
+          res.status(400).json({
+            type:"Failure",
+            message:"First complete E-Signature"
+          })
+        }
+    }
+    catch(error){
+      handleError(res,error,"There is an error")
+    }
+})
 
 
 module.exports = Router

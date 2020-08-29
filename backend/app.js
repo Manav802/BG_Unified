@@ -24,7 +24,7 @@ app.use(morgan('dev'))
 
 
 //database connectivity
-// connectionDB()
+connectionDB()
 
 //routes middleware
 app.use(router)
