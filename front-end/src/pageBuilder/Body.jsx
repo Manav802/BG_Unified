@@ -22,7 +22,7 @@ function Body({gap = 4, data, type, width, ...props}){
             )
             case "imageGroup":
             return (
-                <ImageGroup data={data}></ImageGroup>
+                <ImageGroup {...data}></ImageGroup>
             )
             case "pricing":
             return (
