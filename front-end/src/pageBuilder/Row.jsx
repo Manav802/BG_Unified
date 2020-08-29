@@ -1,11 +1,11 @@
 import React from 'react';
-import { SimpleGrid, Grid } from '@chakra-ui/core';
+import { Flex } from '@chakra-ui/core';
 
-function Row({spacing = "16px", ...props}) {
+function Row({justify = "center", flexWrap = "wrap", mt= 8, ...props}) {
     return (
-        <Grid width="100%" gap={spacing} {...props}>
+        <Flex mt={mt} flexWrap={flexWrap} justify={justify} {...props}>
 
-        </Grid>
+        </Flex>
     );
 }
 

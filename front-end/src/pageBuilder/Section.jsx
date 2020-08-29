@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, Flex } from '@chakra-ui/core';
 import Container from './Container';
 
-function Section({my=8, py=8, children="Section", ...props}) {
+function Section({my=8, py=20, children="Section", ...props}) {
     return (
         <Flex
             my={my} 

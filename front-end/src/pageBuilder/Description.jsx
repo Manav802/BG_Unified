@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text } from '@chakra-ui/core';
 
-function Description({mt = 4, textAlign="center", children="", ...props}) {
+function Description({mt = 4, opacity=.7, fontSize="lg",px= "8.17%", textAlign="center", children="", ...props}) {
     return (
-        <Text mt={mt} textAlign={textAlign} {...props}>
+        <Text fontSize={fontSize} px={px} mt={mt} textAlign={textAlign} opacity={opacity} {...props}>
             {children}
         </Text>
     );

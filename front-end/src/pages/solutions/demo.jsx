@@ -10,18 +10,15 @@ function demo(props) {
     return (
         <div>
             <Box mt={80} py="64px">
-                    <Section>
+                    <Section bg="dark.500" color="white">
                         <Title>Title of the section</Title>
                         <Description>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit modi quam, eligendi sit magni facilis consequuntur hic. Dolore fugiat explicabo incidunt suscipit quasi reprehenderit rerum ullam minus, voluptate necessitatibus vero!</Description>
-                        <Row columns={1} justifyContent="center">
-                            <Body width="100%" type="content" data={[
+                        <Row>
+                            <Body width={12/12} type="imageGroup" data= {
                                 {
-                                    text: "kdshbjlakr,he lkafdjerjlrghkn"
-                                },
-                                {
-                                    text: "skd,jgewhil, djghrkljl;"
+                                    images: ["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png"],
                                 }
-                            ]}></Body>
+                            }></Body>
                         </Row>
                     </Section>
             </Box>

@@ -174,10 +174,10 @@ function ErrorForm(props) {
                                                 </Input>
                                             </FormControl>
                                         </Collapse>}
-                                        <Button className="next" onClick={() => setTabIndex(1)}>Next</Button>
+                                        <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(1)}>Next</Button>
                                     </TabPanel>
                                     <TabPanel>
-                                        <FormControl mt={"14%"} isRequired>
+                                        <FormControl mt={12} isRequired>
                                             <FormLabel htmlFor="phone">Device you were using:</FormLabel>
                                             <Select name="devicetype" onChange={onChange} variant="flushed" placeholder="Select option">
                                                 <option value="Smartphone">Smartphone</option>
@@ -185,7 +185,7 @@ function ErrorForm(props) {
                                                 <option value="PC">PC</option>
                                             </Select>
                                         </FormControl>
-                                        <FormControl mt={"14%"} isRequired>
+                                        <FormControl mt={8} isRequired>
                                             <FormLabel htmlFor="name">Browser you were using:</FormLabel>
                                             <Select name="browser" onChange={onChange} variant="flushed" placeholder="Select option">
                                                 <option value="Google Chrome">Google Chrome</option>
@@ -194,7 +194,7 @@ function ErrorForm(props) {
                                                 <option value="Other">Other</option>
                                             </Select>
                                         </FormControl>
-                                        <FormControl mt={"14%"} isRequired>
+                                        <FormControl mt={8} isRequired>
                                             <FormLabel htmlFor="phone">Operating system you were using:</FormLabel>
                                             <Select name="operatingsystem" onChange={onChange} variant="flushed" placeholder="Select option">
                                                 <option value="Windows">Windows</option>
@@ -204,8 +204,7 @@ function ErrorForm(props) {
                                                 <option value="Android">Android</option>
                                             </Select>
                                         </FormControl>
-                                        <Button className="prev" onClick={() => { setTabIndex(0); }}>Prev</Button>
-                                        <Button className="next" onClick={() => setTabIndex(2)}>Next</Button>
+                                        <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(2)}>Next</Button>
                                     </TabPanel>
                                     <TabPanel>
                                         <FormControl mt={"7%"} >
@@ -275,7 +274,6 @@ function ErrorForm(props) {
                                             />}
                                             </Button>
                                         </div>
-                                        <Button className="prev" onClick={() => { setTabIndex(1); }}>Prev</Button>
                                     </TabPanel>
                                 </TabPanels>
                             </Tabs>
