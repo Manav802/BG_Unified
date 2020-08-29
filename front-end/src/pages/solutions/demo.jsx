@@ -5,7 +5,6 @@ import Title from '../../pageBuilder/Title';
 import Description from '../../pageBuilder/Description';
 import Row from '../../pageBuilder/Row';
 import Body from '../../pageBuilder/Body';
-import BackupPricing from '../../pageBuilder/pricing/BackupPricing';
 
 function demo(props) {
     return (
@@ -15,27 +14,12 @@ function demo(props) {
                         <Title>Title of the section</Title>
                         <Description>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit modi quam, eligendi sit magni facilis consequuntur hic. Dolore fugiat explicabo incidunt suscipit quasi reprehenderit rerum ullam minus, voluptate necessitatibus vero!</Description>
                         <Row>
-                            <Body type="video" data= {
+                            <Body width={12/12} type="imageGroup" data= {
                                 {
-                                    url : "https://www.youtube.com/embed/dO368WjwyFs" ,
-                                    description : "Hello I am Not What I am ",
-                                    height: "400px"
+                                    images: ["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png"],
                                 }
                             }></Body>
-                            
                         </Row>
-                        <Row>
-                            <Body type="list" data= {
-                                {
-                                    title : "Lorem Ipsum Dolor",
-                                    items: ["Hollll" , "Offff ", "Fame"],
-                                }}/>
-                        </Row>
-                        
-                        
-                    </Section>
-                    <Section my={1} py={1}>
-                        <Body type="pricing" data={<BackupPricing/>} />
                     </Section>
             </Box>
         </div>

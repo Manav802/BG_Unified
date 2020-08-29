@@ -9,7 +9,7 @@ function MyList({data}) {
                     fontSize={data.fontSize || "28px"}>
                         {data.title}
                     </Heading>
-                    <List styleType={data.styleType} spacing={2}>
+                    <List mt = {4} styleType={data.styleType} spacing={2}>
                         {data.items.map((item, index) => {
                         return (
                             <ListItem>

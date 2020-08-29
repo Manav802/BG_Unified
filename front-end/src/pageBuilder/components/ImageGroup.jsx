@@ -2,10 +2,10 @@ import React from 'react';
 import { Image, Flex } from "@chakra-ui/core";
 
 const ImageGroup = ({data}) => {
-    // data = {spacing = "16px", minW = ["119.5px", "135.5px", "175px", "231px", "283px"], styles, images}
-    const allImages = data.images.map((item, index) => <Image src={item} width="128px" key={"image-" + index} ></Image>);
+    console.log(data)
+    const allImages = data.images.map((item, index) => <Image src={item} mx={data.spacing} width="128px" maxW={data.maxW} key={"image-" + index}></Image>);
     return (
-        <Flex justify="center" textAlign="center" mx={data.spacing}>
+        <Flex justify="center" width="100%" textAlign="center">
             {allImages}
         </Flex>
     );
