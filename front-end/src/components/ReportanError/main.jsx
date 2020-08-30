@@ -88,7 +88,6 @@ function ErrorForm(props) {
         console.log(res);
         setResponse(res);
         setResponse('');
-        setTabIndex(0);
         setName('');
         setEmail('');
         setDescription('');
@@ -100,21 +99,18 @@ function ErrorForm(props) {
         setOtherInput('');
         setShow(false);
         if (res.status == 200) {
-            setTimeout(() => {
-                onClose();
-            }, 1000);
+            onClose();
         }
+        setTabIndex(0);
     }
     const handleTabsChange = index => {
         setTabIndex(index);
     };
     const formClose = () => {
         setResponse('');
-        setTabIndex(0);
         setName('');
         setEmail('');
         setDescription('');
-        setPhone('');
         setPhone('');
         setDevice('');
         setBrowser('');
@@ -123,6 +119,7 @@ function ErrorForm(props) {
         setOtherInput('');
         setShow(false);
         onClose();
+        setTabIndex(0);
     }
     const onSubmit = (event) => {
         event.preventDefault()
@@ -135,7 +132,7 @@ function ErrorForm(props) {
             },
             body: JSON.stringify(form)
         })
-            .then((response) => refreshForm(response), (error) => refreshForm(error))
+        .then((response) => refreshForm(response), (error) => refreshForm(error))
     }
     return (
         <>
@@ -159,7 +156,7 @@ function ErrorForm(props) {
                                 </TabList>
                                 <TabPanels>
                                     <TabPanel>
-                                        <FormControl mt={"14%"} isRequired>
+                                        <FormControl mt={12} isRequired>
                                             <FormLabel htmlFor="name">Type of error:</FormLabel>
                                             <RadioGroup name="errortype" onChange={onChange} defaultValue={form.error}>
                                                 <Radio size="lg" value="Page not responsive" onClick={() => handleToggle(false)}>Page not responsive</Radio>
@@ -169,7 +166,7 @@ function ErrorForm(props) {
                                             </RadioGroup>
                                         </FormControl>
                                         {rend && <Collapse isOpen={show}>
-                                            <FormControl mt={"3%"} isRequired>
+                                            <FormControl mt={3} isRequired>
                                                 <Input value={form.othererror} variant="flushed" name="othererror" placeholder="Please specify if any other error" onChange={onChange}>
                                                 </Input>
                                             </FormControl>
@@ -207,7 +204,7 @@ function ErrorForm(props) {
                                         <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(2)}>Next</Button>
                                     </TabPanel>
                                     <TabPanel>
-                                        <FormControl mt={"7%"} >
+                                        <FormControl mt={12} >
                                             <FormLabel htmlFor="name">Name:</FormLabel>
                                             <Input
                                                 variant="flushed"
@@ -217,7 +214,7 @@ function ErrorForm(props) {
                                                 onChange={onChange}
                                             />
                                         </FormControl>
-                                        <Box className="row" mt={"7%"}>
+                                        <Box className="row" mt={12}>
                                             <div className="col-md-6">
                                                 <FormControl isRequired>
                                                     <FormLabel htmlFor="email">Email:</FormLabel>
@@ -244,7 +241,7 @@ function ErrorForm(props) {
                                                 </FormControl>
                                             </div>
                                         </Box>
-                                        <FormControl mt={"7%"} isRequired>
+                                        <FormControl mt={12} isRequired>
                                             <FormLabel>Describe the error in detail:</FormLabel>
                                             <Textarea
                                                 resize={"vertical"}
@@ -257,14 +254,12 @@ function ErrorForm(props) {
                                         </FormControl>
                                         <div>
                                             <Button
-                                                mt={"7%"}
-                                                className="hover-color shadow-md"
+                                                mt={12}
                                                 type="submit"
-                                                size="md"
-                                                height="48px"
-                                                width="115px"
-                                                backgroundColor="#F32222"
-                                                color="white"
+                                                size="lg" 
+                                                variantColor="primary" 
+                                                className="primary-btn"
+                                                
                                             >Submit{isLoading && <Spinner
                                                 thickness="4px"
                                                 speed="1s"
