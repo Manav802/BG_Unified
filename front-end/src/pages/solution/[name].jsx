@@ -82,5 +82,36 @@ React.useEffect(() => {
   );
 }
 
+export async function getStaticPaths() {
+    return {
+      paths: [
+        { params: { name: 'application-dev' } },
+        { params: { name: 'architectural-consultancy' } },
+        { params: { name: 'backup' } },
+        { params: { name: 'cloud-exchange' } },
+        { params: { name: 'cloud-logging' } },
+        { params: { name: 'contact-center' } },
+        { params: { name: 'disaster-recovery' } },
+        { params: { name: 'dns' } },
+        { params: { name: 'firewall' } },
+        { params: { name: 'infra' } },
+        { params: { name: 'platform' } },
+        { params: { name: 'proxy-server' } },
+        { params: { name: 'sd-wan' } },
+        { params: { name: 'sip-connectivity' } },
+        { params: { name: 'storage-unit' } },
+        { params: { name: 'ucaas' } },
+        { params: { name: 'web-hosting' } },
+        { params: { name: 'wireless-networks' } },
+      ],
+      fallback: false // See the "fallback" section below
+    };
+  }
+  export async function getStaticProps() {
+    return {
+      props: {
+      },
+    }
+  }
 
 export default Solutions;
