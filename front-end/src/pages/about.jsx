@@ -126,6 +126,7 @@ class about extends Component {
                 <div className="col-lg-10 offset-1">
                   <div className="row my-4">
                     <div className="col-sm-3 col-4">
+<<<<<<< HEAD
                       <MyCount startingpoint={0} subtext="Clients" description="Hiii" endpoint={40} suffix="+" prefix="+" className="display4 mb-0 text-primary" />
                     </div>
                     <div className="col-sm-3 col-4">
@@ -133,6 +134,24 @@ class about extends Component {
                     </div>
                     <div className="col-sm-3 col-4">
                       <MyCount startingpoint={0} subtext="Projects" description="Hiii" endpoint={250} suffix="+" prefix="+" className="display4 mb-0 text-primary" />
+=======
+                      <span className="display4 mb-0 text-primary">
+                        <MyCount endPoint={40} suffix="+"/>
+                      </span>
+                      <h5>Clients</h5>
+                    </div>
+                    <div className="col-sm-3 col-4">
+                      <span className="display4 mb-0 text-primary">
+                        <MyCount endPoint={5} suffix="+"/>
+                      </span>
+                      <h5>Locations</h5>
+                    </div>
+                    <div className="col-sm-3 col-4">
+                      <span className="display4 mb-0 text-primary">
+                        <MyCount endPoint={20} suffix="+"/>
+                      </span>
+                      <h5>Projects</h5>
+>>>>>>> 2a798f46b6fd2a5532dc1926c511170dfe516551
                     </div>
                   </div>
                   <div className="display6 py-3">Our Mission</div>

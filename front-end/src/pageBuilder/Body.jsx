@@ -4,6 +4,10 @@ import { Box } from '@chakra-ui/core';
 import Video from './components/Video';
 import ImageGroup from './components/ImageGroup';
 import MyList from './components/MyList';
+import Feature from './components/Feature';
+import NumberCount from './components/NumberCount';
+import AccordionWithImage from './components/AccordionWithImage';
+import Service from '../components/cards/Service';
 
 function Body({gap = 4, data, type, width, ...props}){
     function giveMeComponent(){
@@ -24,6 +28,22 @@ function Body({gap = 4, data, type, width, ...props}){
             return (
                 <ImageGroup {...data}></ImageGroup>
             )
+            case "feature":
+            return (
+                <Feature {...data}></Feature>   
+            )
+            case "numberCount":
+            return(
+                <NumberCount {...data}></NumberCount>
+            )
+            case "accordion":
+            return(
+                <AccordionWithImage {...data}></AccordionWithImage>
+            )
+            case "service":
+            return(
+                <Service service={data}></Service>
+            )
             case "pricing":
             return (
                 <>
@@ -34,7 +54,7 @@ function Body({gap = 4, data, type, width, ...props}){
     }
 
     return (
-        <Box mx={gap/2} w={width} {...props}>
+        <Box px={[6, 6, gap/2]} my={4} w={width} {...props}>
             {giveMeComponent()}
         </Box>
     );
