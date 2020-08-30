@@ -26,6 +26,19 @@ const services = {
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
         conclusions: "Ready to get Storage?",
         sections: sections.storage
+    },
+    "backup": {
+        title: "Backup As A Service",
+        slogan: "Storage Made Simple.",
+        bgImage: "",
+        icon: "",
+        color: "",
+        tags: "",
+        description: "",
+        illustration: "",
+        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
+        conclusions: "",
+        sections: sections.backup
     }
 }
 
