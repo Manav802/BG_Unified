@@ -10,7 +10,7 @@ const services = {
         tags: "",
         description: "",
         illustration: "",
-        relatedService: ["Storage As A Service", "DNS As A Service", "DNS As A Service"],
+        relatedService: ["Storage As A Service", "DNS As A Service", "DR As A Service"],
         conclusions: "Ready to get started?",
         sections: sections.infra
     },
