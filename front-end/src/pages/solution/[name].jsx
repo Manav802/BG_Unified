@@ -21,7 +21,7 @@ React.useEffect(() => {
 
   return (
     <>
-        <Box py="5rem" className="bg-dark page-header position-relative">
+        <Box py="5rem" className="bg-dark position-relative">
                 <Image
                 opacity=".3"
                 className="bg-image"
