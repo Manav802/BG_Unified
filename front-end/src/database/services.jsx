@@ -29,7 +29,7 @@ const services = {
     },
     "backup": {
         title: "Backup As A Service",
-        slogan: "Storage Made Simple.",
+        slogan: "Backup for your Digital system",
         bgImage: "",
         icon: "",
         color: "",

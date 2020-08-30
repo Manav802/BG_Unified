@@ -6,7 +6,7 @@ import Description from './Description';
 import Row from './Row';
 import Body from './Body';
 
-function RenderSection({title, titleStyle, color = "dark.500", align = "center", description, containerWidth = ["100%", "540px", "720px", "960px", "1140px"], descriptionStyle, endingButton, slider, sliderOption, gap=4, rowDistance = 0, body, ...props}) {
+function RenderSection({ title, titleStyle, color = "dark.500", align = "center", description, containerWidth = ["100%", "540px", "720px", "960px", "1140px"], descriptionStyle, endingButtontitle, endingButton, slider, sliderOption, gap = 4, rowDistance = 0, body, ...props }) {
     return (
         <>
             <Section containerWidth={containerWidth} color={color} align={align} {...props}>
@@ -16,9 +16,9 @@ function RenderSection({title, titleStyle, color = "dark.500", align = "center",
                     {body && body.map((b, index) => (
                         <Body key={index} gap={gap} {...b} />
                     ))}
-                    
+
                 </Row>}
-                {endingButton && <Button {...endingButton}></Button>}
+                {endingButton && <Button {...endingButton}>{endingButtontitle}</Button>}
             </Section>
         </>
     );
