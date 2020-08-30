@@ -5,16 +5,23 @@ import {
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
 import { useDisclosure } from "@chakra-ui/core";
+import { deviceType,browserName,osName } from "react-device-detect";
+const deviceInfo={
+    browser:browserName,
+    os:osName,
+    device:deviceType
+}
+console.log(deviceInfo);
 function ErrorForm(props) {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [description, setDescription] = useState('');
     const [phone, setPhone] = useState('');
-    const [error, setError] = useState('Page not responsive');
-    const [browser, setBrowser] = useState('');
-    const [device, setDevice] = useState('');
-    const [operatingsystem, setOs] = useState('');
+    const [error, setError] = useState('');
+    const [browser, setBrowser] = useState(deviceInfo.browser);
+    const [device, setDevice] = useState(deviceInfo.device);
+    const [operatingsystem, setOs] = useState(deviceInfo.os);
     const [othererror, setOtherInput] = useState('');
     const [rend, setRend] = useState(false);
     const [show, setShow] = useState(false);
@@ -81,7 +88,7 @@ function ErrorForm(props) {
         setRend(param);
         setTimeout(() => {
             setShow(param);
-        }, 500);
+        }, 0);
     }
     const refreshForm = (res) => {
         loadingState(false)
@@ -92,10 +99,10 @@ function ErrorForm(props) {
         setEmail('');
         setDescription('');
         setPhone('');
-        setDevice('');
-        setBrowser('');
-        setOs('');
-        setError('Page not responsive');
+        setDevice(deviceInfo.device);
+        setBrowser(deviceInfo.browser);
+        setOs(deviceInfo.os);
+        setError('');
         setOtherInput('');
         setShow(false);
         if (res.status == 200) {
@@ -112,10 +119,10 @@ function ErrorForm(props) {
         setEmail('');
         setDescription('');
         setPhone('');
-        setDevice('');
-        setBrowser('');
-        setOs('');
-        setError('Page not responsive');
+        setDevice(deviceInfo.device);
+        setBrowser(deviceInfo.browser);
+        setOs(deviceInfo.os);
+        setError('');
         setOtherInput('');
         setShow(false);
         onClose();
@@ -139,7 +146,7 @@ function ErrorForm(props) {
             <a className="" onClick={onOpen}>Report an Error</a>
             <Modal isOpen={isOpen} onClose={formClose} isCentered>
                 <ModalOverlay />
-                <ModalContent className="p-4" style={{ maxWidth: "700px", minHeight: "736px" }}>
+                <ModalContent className="p-4" style={{ maxWidth: "700px", minHeight: "750px" }}>
                     <ModalHeader><span className="display5">Report an Error</span></ModalHeader>
                     <ModalCloseButton />
                     <div className="container">
@@ -156,7 +163,7 @@ function ErrorForm(props) {
                                 </TabList>
                                 <TabPanels>
                                     <TabPanel>
-                                        <FormControl mt={12} isRequired>
+                                        <FormControl mt={10} isRequired>
                                             <FormLabel htmlFor="name">Type of error:</FormLabel>
                                             <RadioGroup name="errortype" onChange={onChange} defaultValue={form.error}>
                                                 <Radio size="lg" value="Page not responsive" onClick={() => handleToggle(false)}>Page not responsive</Radio>
@@ -174,26 +181,26 @@ function ErrorForm(props) {
                                         <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(1)}>Next</Button>
                                     </TabPanel>
                                     <TabPanel>
-                                        <FormControl mt={12} isRequired>
+                                        <FormControl mt={10} isRequired>
                                             <FormLabel htmlFor="phone">Device you were using:</FormLabel>
-                                            <Select name="devicetype" onChange={onChange} variant="flushed" placeholder="Select option">
+                                            <Select name="devicetype" value={form.device} onChange={onChange} variant="flushed">
                                                 <option value="Smartphone">Smartphone</option>
-                                                <option value="Android tablet">Android tablet</option>
-                                                <option value="PC">PC</option>
+                                                <option value="Tablet">Tablet</option>
+                                                <option value="browser">PC</option>
                                             </Select>
                                         </FormControl>
-                                        <FormControl mt={8} isRequired>
+                                        <FormControl mt={10} isRequired>
                                             <FormLabel htmlFor="name">Browser you were using:</FormLabel>
-                                            <Select name="browser" onChange={onChange} variant="flushed" placeholder="Select option">
-                                                <option value="Google Chrome">Google Chrome</option>
-                                                <option value="Mozilla Firefox">Mozilla Firefox</option>
+                                            <Select name="browser" value={form.browser} onChange={onChange} variant="flushed">
+                                                <option value="Chrome">Google Chrome</option>
+                                                <option value="Firefox">Mozilla Firefox</option>
                                                 <option value="Opera">Opera</option>
                                                 <option value="Other">Other</option>
                                             </Select>
                                         </FormControl>
-                                        <FormControl mt={8} isRequired>
+                                        <FormControl mt={10} isRequired>
                                             <FormLabel htmlFor="phone">Operating system you were using:</FormLabel>
-                                            <Select name="operatingsystem" onChange={onChange} variant="flushed" placeholder="Select option">
+                                            <Select name="operatingsystem" value={form.operatingsystem} onChange={onChange} variant="flushed">
                                                 <option value="Windows">Windows</option>
                                                 <option value="iOS">iOS</option>
                                                 <option value="MacOS">MacOS</option>
@@ -204,7 +211,7 @@ function ErrorForm(props) {
                                         <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(2)}>Next</Button>
                                     </TabPanel>
                                     <TabPanel>
-                                        <FormControl mt={12} >
+                                        <FormControl mt={10} >
                                             <FormLabel htmlFor="name">Name:</FormLabel>
                                             <Input
                                                 variant="flushed"
@@ -214,7 +221,7 @@ function ErrorForm(props) {
                                                 onChange={onChange}
                                             />
                                         </FormControl>
-                                        <Box className="row" mt={12}>
+                                        <Box className="row" mt={10}>
                                             <div className="col-md-6">
                                                 <FormControl isRequired>
                                                     <FormLabel htmlFor="email">Email:</FormLabel>
@@ -241,7 +248,7 @@ function ErrorForm(props) {
                                                 </FormControl>
                                             </div>
                                         </Box>
-                                        <FormControl mt={12} isRequired>
+                                        <FormControl mt={10} isRequired>
                                             <FormLabel>Describe the error in detail:</FormLabel>
                                             <Textarea
                                                 resize={"vertical"}
@@ -254,7 +261,7 @@ function ErrorForm(props) {
                                         </FormControl>
                                         <div>
                                             <Button
-                                                mt={12}
+                                                mt={10}
                                                 type="submit"
                                                 size="lg" 
                                                 variantColor="primary" 

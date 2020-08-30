@@ -6,7 +6,7 @@ const MyCount = (props) => {
     const [viewPortEntered, setViewPortEntered] = useState(false);
     return (
         <>
-            <CountUp end={props.endPoint} start={viewPortEntered ? null : 0} delay={0.7} useEasing={false} duration={1.7} suffix={"+"}>
+            <CountUp end={props.endpoint || 100} start={viewPortEntered ? null : props.startingpoint || 0} delay={props.delay || 0.4} useEasing={false} duration={1.7} suffix={props.suffix || ""} prefix={props.prefix || ''}>
                 {({ countUpRef }) => {
                     return (
                         <VisibilitySensor
@@ -18,11 +18,13 @@ const MyCount = (props) => {
                             }}
                             delayedCall
                         >
-                            <span ref={countUpRef} />
+                            <span ref={countUpRef} className="display4 mb-0 text-primary" {...props} />
                         </VisibilitySensor>
                     );
                 }}
             </CountUp>
+            <h2 className="display6">{props.subtext || ""}</h2>
+            <p className="text-secondary">{props.description || ""}</p>
         </>
     );
 }
