@@ -1,11 +1,17 @@
 import React from 'react';
 import { Image, Flex } from "@chakra-ui/core";
 
-const ImageGroup = ({data}) => {
-    // data = {spacing = "16px", minW = ["119.5px", "135.5px", "175px", "231px", "283px"], styles, images}
-    const allImages = data.images.map((item, index) => <Image src={item} width="128px" key={"image-" + index} ></Image>);
+function ImageGroup({images, spacing, maxW, width, ...data}){
+    var allImages = <div></div>
+    if(images.length === 1){
+        allImages = images.map((item, index) => <Image src={item} width={"100%" || width} key={"image-" + index} {...data}></Image>);
+    }
+    else{
+        allImages = images.map((item, index) => <Image src={item} mx={"16px" || spacing} width={"100%" || width} maxW={["119.5px", "135.5px", "175px", "231px", "283px"] || maxW} key={"image-" + index} {...data}></Image>);
+    }
+    
     return (
-        <Flex justify="center" textAlign="center" mx={data.spacing}>
+        <Flex justify="center" flexGrow={1} textAlign="center">
             {allImages}
         </Flex>
     );

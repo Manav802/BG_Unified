@@ -181,7 +181,7 @@ class Landing extends Component {
         <div className="brands">
           <div className="container-fluid" >
             <div className="">
-              <ImageGroup images={["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/equinix.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png", "/assets/images/brands/fujitsu.png", "/assets/images/brands/halls.png", "/assets/images/brands/huawei.png", "/assets/images/brands/hutchisonports.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/sabre_pacific.png", "/assets/images/brands/straintz.png", "/assets/images/brands/veeam.png"]} minW={["119.5px", "135.5px", "175px", "231px", "283px"]} width="auto" />
+              <ImageGroup objectFit="contain" images={["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/equinix.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png", "/assets/images/brands/fujitsu.png", "/assets/images/brands/halls.png", "/assets/images/brands/huawei.png", "/assets/images/brands/hutchisonports.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/sabre_pacific.png", "/assets/images/brands/straintz.png", "/assets/images/brands/veeam.png"]} minW={["119.5px", "135.5px", "175px", "231px", "283px"]} width="auto" />
             </div>
           </div>
         </div>

@@ -14,9 +14,12 @@ function demo(props) {
                         <Title>Title of the section</Title>
                         <Description>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit modi quam, eligendi sit magni facilis consequuntur hic. Dolore fugiat explicabo incidunt suscipit quasi reprehenderit rerum ullam minus, voluptate necessitatibus vero!</Description>
                         <Row>
-                            <Body width={12/12} type="imageGroup" data= {
+                            <Body width="100%" type="imageGroup" data= {
                                 {
-                                    images: ["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png"],
+                                    images: ["/assets/images/brands/aapt.png", "/assets/images/brands/fortinet.png"],
+                                    spacing: "16px",
+                                    height: "100px",
+                                    objectFit: "contain"
                                 }
                             }></Body>
                         </Row>

@@ -1,20 +1,19 @@
 import React from 'react';
-import { Box,Text,List,ListIcon, ListItem,Heading  } from '@chakra-ui/core';
+import {List,ListIcon, ListItem,Heading  } from '@chakra-ui/core';
 
-function MyList({fontSize = "28px", ...data}) {
+function MyList({data}) {
     //Ex - <Lists title="Lorem ipsum dolor sit amet, consectetur adipiscing elit" items={["tempor incididunt u" ,"dolore magna aliqua."]}/>
             return (
                 <>
                     <Heading 
-                    mx={1}
-                    fontSize={fontSize}>
+                    fontSize={data.fontSize || "28px"}>
                         {data.title}
                     </Heading>
-                    <List p={1} spacing={2}>
+                    <List mt = {4} styleType={data.styleType} spacing={2}>
                         {data.items.map((item, index) => {
                         return (
                             <ListItem>
-                            <ListIcon icon={data.bullet ||"check"}  color={data.color || "primary.500"} />
+                                {data.styleType?"": <ListIcon icon={data.icon ||"check"}  color={data.color || "primary.500"} />}
                             {item}
                             </ListItem>
                         );
