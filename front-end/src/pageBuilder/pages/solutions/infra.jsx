@@ -15,6 +15,9 @@ export default [
             width: ["100%", 1/2, 1/3],
             type: "feature",
             data: {
+                titleSize:"md",
+                titleFont: "Nexa Bold",
+                textOpacity:"0.7",
                 image: "/assets/images/icons/color/ui.svg",
                 title: "Scale Up On Demand",
                 align: "left",
@@ -25,55 +28,72 @@ export default [
                 width: ["100%", 1/2, 1/3],
                 type: "feature",
                 data: {
-                    image: "/assets/images/icons/color/ui.svg",
+                    titleSize:"md",
+                    titleFont: "Nexa Bold",
+                    textOpacity:"0.7",
+                    image: "/assets/images/icons/color/agile.svg",
                     title: "Stay Agile",
                     align: "left",
-                    description: "With BG Unified Solutions, you create a combination of CPU, memory, bandwidth and storage as per your requirements. Enjoy the freedom to scale up your infrastructure as and when required"
-                }
+                    description: "Resources are not bundled together and there is surely no standard server size. Combine long-term subscriptions for predictible workloads and on-time delivery with regular updates."
+                    }
             },
             {
                 width: ["100%", 1/2, 1/3],
                 type: "feature",
                 data: {
-                    image: "/assets/images/icons/color/ui.svg",
-                    title: "Select from Global Locations",
+                    titleSize:"md",
+                    titleFont: "Nexa Bold",
+                    textOpacity:"0.7",
+                    image: "/assets/images/icons/color/globe.svg",
+                    title: "Scale Up On Demand",
                     align: "left",
-                    description: "With BG Unified Solutions, you create a combination of CPU, memory, bandwidth and storage as per your requirements. Enjoy the freedom to scale up your infrastructure as and when required"
-                }
+                    description: "Choose the most appropriate and most suitable framework to run your cloud infrastructure. Give your customers the pleasure to enjoy low latency and faster loading speeds."
+                    }
             },
             {
                 width: ["100%", 1/2, 1/3],
                 type: "feature",
                 data: {
-                    image: "/assets/images/icons/color/ui.svg",
-                    title: "Rely On Excellent Support",
+                    titleSize:"md",
+                    titleFont: "Nexa Bold",
+                    textOpacity:"0.7",
+                    image: "/assets/images/icons/color/headphones.svg",
+                    title: "Scale Up On Demand",
                     align: "left",
-                    description: "With BG Unified Solutions, you create a combination of CPU, memory, bandwidth and storage as per your requirements. Enjoy the freedom to scale up your infrastructure as and when required"
-                }
+                    description: "BGUS's friendly and skilled customer support service is available24X7X365 with very less response time. Our policies ensure rapid and satisfactory resolution of issues."
+                    }
             },    
             {
                 width: ["100%", 1/2, 1/3],
                 type: "feature",
                 data: {
-                    image: "/assets/images/icons/color/ui.svg",
-                    title: "Run Your Apps Unmodified",
+                    titleSize:"md",
+                    titleFont: "Nexa Bold",
+                    textOpacity:"0.7",
+                    image: "/assets/images/icons/color/api.svg",
+                    title: "Scale Up On Demand",
                     align: "left",
-                    description: "With BG Unified Solutions, you create a combination of CPU, memory, bandwidth and storage as per your requirements. Enjoy the freedom to scale up your infrastructure as and when required"
-                }
+                    description: "Use our seamless live migration tool to get you up and running in the cloud without any modifications to your existing infrastructure."
+                    }
             },
             {
                 width: ["100%", 1/2, 1/3],
                 type: "feature",
                 data: {
-                    image: "/assets/images/icons/color/ui.svg",
-                    title: "Experience No Vendor Lock-In",
+                    titleSize:"md",
+                    titleFont: "Nexa Bold",
+                    textOpacity:"0.7",
+                    image: "/assets/images/icons/color/fix.svg",
+                    title: "Scale Up On Demand",
                     align: "left",
-                    description: "With BG Unified Solutions, you create a combination of CPU, memory, bandwidth and storage as per your requirements. Enjoy the freedom to scale up your infrastructure as and when required"
-                }
+                    description: "At BGUS you are able to develop or deploy your application in the cloud without being forced to use any vendor-specific tools."
+                    }
             },
         ]
     },
-    {
+    {   
+        title : "Our Pricing Plans",
+        backgroundColor: "light.400",
         my: 0,
         containerWidth: "100%",
         gap: 0,
@@ -121,8 +141,8 @@ export default [
             width: 1/3,
             type: "numberCount",
             data:{
-                title: "Core CPUs",
-                count: 10000,
+                title: "TBs of Memory",
+                count: 900,
                 suffix: "+"
             }
         },
@@ -130,8 +150,8 @@ export default [
             width: 1/3,
             type: "numberCount",
             data:{
-                title: "Core CPUs",
-                count: 10000,
+                title: "Running Websites",
+                count: 250,
                 suffix: "+"
             }
         },    
@@ -151,21 +171,21 @@ export default [
             width: "100%",
             type: "accordion",
             data: {
-                fontSize: "lg",
+                fontSize: "md",
                 content: [{
-                    title: "Pay per Use",
-                    description: "Pay only for the storage you actually require and use, bundling it up with Data Link. Transparent pricing and costing schedule. Dynamic as per your needs.",
-                    image: "/assets/images/Illustrations/low_pricing.svg"
+                    title: "Choice between On-Premises & Cloud",
+                    description: "On-premise or cloud-based, that helps secure your IT environment quickly. The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance..",
+                    image: "/assets/images/Illustrations/Varied_Web_Hosting_Solutions.svg"
                 },
                 {
-                    title: "Efficient and Agile",
-                    description: "Boost up your operational efficiency and improve your organization’s agility. Also, Real-time monitoring of your storage resources.",
-                    image: "/assets/images/Illustrations/low_pricing.svg"
+                    title: "Fast and easy Deployment",
+                    description: "Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure without capex.",
+                    image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg"
                 },
                 {
-                    title: "Highly available infrastructure",
-                    description: "Cutting edge SAN array which intelligently uses caching, Solid State Disks(SSDs), and traditional hard disk spindles. Scaling up or down your storage capacity as and when required.",
-                    image: "/assets/images/Illustrations/low_pricing.svg"
+                    title: "Advanced Technology Stack",
+                    description: "Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included.",
+                    image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
                 },]
             }
         }]

@@ -8,7 +8,7 @@ function Service(props) {
     const [service, setService] = React.useState({})
 
     useEffect(() => {
-        var obj = services.filter(s => s.name === props.name)[0]
+        var obj = services.filter(s => s.name === props.service)[0]
         setService(obj)
     })
 

@@ -26,7 +26,6 @@ import {
   SliderThumb,
   SliderTrack,
   SliderFilledTrack,
-  Heading,
 } from "@chakra-ui/core";
 import Fade from "react-reveal/Fade";
 import { FaWindows, FaServer, FaDatabase } from "react-icons/fa";
@@ -231,8 +230,7 @@ function InfraPricing(props) {
     </TabPanel>
   );
   return (
-    <Box id="pricing" className="bg-light" py="3rem">
-    <Heading size="xl" textAlign="center" mb={6} fontFamily="Nexa Bold">Our Pricing Plans</Heading>
+    <Box id="pricing">
     <div className="row justify-content-center">
       <Button
         onClick={onOpen}
