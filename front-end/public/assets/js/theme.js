@@ -14,6 +14,10 @@ export default {
         dark:{
             500: "#051133",
             400: "#2B3244"
+        },
+        light:{
+            500: "#FAFAFC",
+            400: "#F3F3F8"
         }
         
     },

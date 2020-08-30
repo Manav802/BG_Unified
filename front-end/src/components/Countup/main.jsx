@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import CountUp from "react-countup";
 import VisibilitySensor from 'react-visibility-sensor';
 
-const MyCount = (props) => {
+const MyCount = ({endPoint, startPoint = 0, duration=1.7, ...props}) => {
     const [viewPortEntered, setViewPortEntered] = useState(false);
     return (
         <>
-            <CountUp end={props.endPoint} start={viewPortEntered ? null : 0} delay={0.7} useEasing={false} duration={1.7} suffix={"+"}>
+            <CountUp end={endPoint} start={viewPortEntered ? null : startPoint} useEasing={true} duration={duration} {...props}>
                 {({ countUpRef }) => {
                     return (
                         <VisibilitySensor
@@ -16,7 +16,6 @@ const MyCount = (props) => {
                                     setViewPortEntered(true);
                                 }
                             }}
-                            delayedCall
                         >
                             <span ref={countUpRef} />
                         </VisibilitySensor>
