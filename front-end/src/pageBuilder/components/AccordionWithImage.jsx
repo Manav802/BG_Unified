@@ -12,8 +12,8 @@ function AccordionWithImage({content, ...props}) {
                             {({ isExpanded }) => (
                             <>
                                 <AccordionHeader>
-                                <Box py={3} flex="1" textAlign="left">
-                                    <Heading size="lg">{data.title}</Heading>
+                                <Box py={2} flex="1" textAlign="left">
+                                    <Heading size="md">{data.title}</Heading>
                                 </Box>
                                 {!isExpanded && <Icon size="12px" name="add"/>}
                                 </AccordionHeader>
