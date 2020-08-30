@@ -5,7 +5,6 @@ import {
   Tab,
   TabPanel,
   TabPanels,
-  Heading
 } from "@chakra-ui/core";
 import Fade from "react-reveal/Fade";
 import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
@@ -13,7 +12,6 @@ import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 function FirewallPricing(props) {
   return (
         <div className="container">
-            <Heading size="xl" textAlign="center" mb={6} fontFamily="Nexa Bold">Our Pricing Plans</Heading>
           <div className="row">
           
             <div className="col-lg-10 offset-lg-1">
