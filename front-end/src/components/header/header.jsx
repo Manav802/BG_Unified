@@ -34,7 +34,7 @@ function header(props) {
     }
     return (
         <>
-            <div className="header bg-white shadow-sm">
+            <Box position="sticky" top="0px" bg="white" boxShadow="lg" zIndex={2000}>
                 <div className="container">
                     <div className="p-3 transition-3 d-flex justify-content-between align-items-center layer-4">
                         <div className="d-flex align-items-center">
@@ -259,7 +259,7 @@ function header(props) {
                         </Box>
                     </Fade>
                 </Collapse>
-            </div>
+            </Box>
             {show ? <div className="overlay" onClick={overlayClick} /> : ""}
         </>
     )
