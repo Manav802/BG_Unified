@@ -2,8 +2,8 @@ import InfraPricing from "../../pricing/BackupPricing";
 
 export default [
     {
-        title: "Backup for your Digital system",
-        description: "In today’s dynamic and complex landscape, no one can afford to be idle. Whether we like it or not, data centre change is upon us. Migrating us to store confidential and information data somewhere else, for the worst-case scenarios. And with this change comes steep challenges—to migrate your legacy production application environments to next-general data centres and enable your journey to the cloud.",
+        title: "Backup for your Digital Enterprise!!",
+        description: " BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today.",
         descriptionStyle: {
             fontSize: "xl",
             px: 0,
@@ -12,13 +12,13 @@ export default [
         gap: 10,
     },
     {
-        title: "Image Group",
+        title: "Single, Reliable Backup and Recovery solution",
         pb: 4,
         pt: 4,
         my: 0,
         titleStyle: {
             fontSize: "2xl",
-            opacity: .7
+            opacity: .9
         },
         bg: "light.400",
         rowDistance: 8,
@@ -28,11 +28,14 @@ export default [
             type: "imageGroup",
             data: {
                 images: ["/assets/images/os/redhat.png", "/assets/images/os/windows10.png", "/assets/images/os/windowsServer.png"],
+            
                 height: "96px",
                 width: ["128px"],
                 objectFit: "contain",
                 spacing: ["5%", "6%", "12%"]
+                  
             }
+            
         }]
     },
     {
@@ -45,8 +48,8 @@ export default [
             data: {
                 fontSize: "lg",
                 content: [{
-                    title: "Pay per Use",
-                    description: "Pay only for the storage you actually require and use, bundling it up with Data Link. Transparent pricing and costing schedule. Dynamic as per your needs.",
+                    title: "Flexible and Scalable Service",
+                    description: "For any of your organization department, our BaaS offering provides a simplified IT management and a highly scalable platform. Irrespective of the end-user, everyone gets to access to the latest and the greatest backup technology stack. Customized and tailor solutions to meet client needs with Local end-market support services and Local language capabilities",
                     image: "/assets/images/Illustrations/low_pricing.svg"
                 }]
             }
@@ -59,8 +62,8 @@ export default [
             data: {
                 fontSize: "lg",
                 content: [{
-                    title: "Pay per Use",
-                    description: "Pay only for the storage you actually require and use, bundling it up with Data Link. Transparent pricing and costing schedule. Dynamic as per your needs.",
+                    title: "Cost-Effective Solution",
+                    description: "For your business, we are offering and providing a flat billing structure. It's designed for pay as you go model that shifts your costs from capex to opex. You will have very simplified and predictable expenses and have the option of rolling any upfront or one-off expenses into your monthly payment.",
                     image: "/assets/images/Illustrations/low_pricing.svg"
                 }]
             }
@@ -73,18 +76,18 @@ export default [
             data: {
                 fontSize: "lg",
                 content: [{
-                    title: "Pay per Use",
-                    description: "Pay only for the storage you actually require and use, bundling it up with Data Link. Transparent pricing and costing schedule. Dynamic as per your needs.",
+                    title: "Back it Up ",
+                    description: "Geographically sound, redundant, quick and efficient increasing your backup by 60%. Highly advanced, available and multiple data centre locations offering multiple IP types globally, in a clustered or isolated environment.",
                     image: "/assets/images/Illustrations/low_pricing.svg"
                 }]
             }
         }]
     },
     {
-        title: "Conclusion",
-        description: "BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data.",
+        title: "Customizable Data Protection for your Business",
+        description: "Migrate your legacy production Application Environments to Next-Gen Data Centres and enable your journey to the cloud.",
         bgImage: "url(https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
         endingButton: true,
-        endingButtontitle: "Lets get It Done!"
+        endingButtontitle: "Lets get IT Done!"
     }
 ]
