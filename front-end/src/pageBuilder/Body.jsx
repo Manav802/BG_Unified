@@ -1,6 +1,6 @@
 import React from 'react';
 import Content from './components/Content';
-import { Box } from '@chakra-ui/core';
+import { Box, Flex } from '@chakra-ui/core';
 import Video from './components/Video';
 import ImageGroup from './components/ImageGroup';
 import MyList from './components/MyList';
@@ -9,9 +9,11 @@ import NumberCount from './components/NumberCount';
 import AccordionWithImage from './components/AccordionWithImage';
 import Service from '../components/cards/Service';
 import AlternateRow from './components/AlternateRow';
+import Container from './Container';
+import Row from './Row';
 
-function Body({ gap = 4, data, type, width, ...props }) {
-    function giveMeComponent() {
+function Body({ gap = 4, data, width, ...props }) {
+    function giveMeComponent(type,data) {
         switch (type) {
             case "content":
                 return (
@@ -55,12 +57,18 @@ function Body({ gap = 4, data, type, width, ...props }) {
                 return (
                     <AlternateRow {...data}></AlternateRow>
                 )
+            case "container":
+                return (
+                    <Row direction={["column","row"]}>
+                        {props.containerData.map((dat)=>(<Box px={[6, 6, gap / 2]} my={4} w={dat.width}>{giveMeComponent(dat.type,dat.data)} </Box>))}
+                    </Row>
+                )
         }
     }
 
     return (
         <Box px={[6, 6, gap / 2]} my={4} w={width} {...props}>
-            {giveMeComponent()}
+            {giveMeComponent(props.type,data)}
         </Box>
     );
 }
