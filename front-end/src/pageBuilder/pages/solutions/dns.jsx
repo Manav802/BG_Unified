@@ -11,7 +11,7 @@ export default [
             data: [{
                 textAlign: "justify",
                 fontSize: "xl",
-                text: "With BG Unified Solutions Infrastructure as a Service, not only do you pay only for the data storage you use when you use it but we provide you with a geographical redundant storage infrastructure and ready access to experts in Infrastructure Technologies who will be eager to understand your storage requirements. Initial setup is very quick, adding or removing capacity is even faster and without any downtime."
+                text: "Delivering a scalable, reliable and managed authoritative Domain Name System (DNS) As A Service. With our assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users. The main functionality of DNS is to convert domain names into IP addresses, for the web browsers to identify a website, for them to load the required resources. Domain Name System Service allows you to host the website over the web, maintain and monitor in real-time."                
             }]
         }]
     },
@@ -40,10 +40,12 @@ export default [
                 width: [1/2],
                 type: "content",
                 data: [{
-                    title: "DNSS",
+                    title: "For a stronger Web Identity",
                     textAlign: "left",
                     fontSize: "xl",
-                    text: "With BG Unified Solutions Infrastructure as a Service, not only do you pay only for the data storage you use when you use it but we provide you with a geographical redundant storage infrastructure and ready access to experts in Infrastructure Technologies who will be eager to understand your storage requirements. Initial setup is very quick, adding or removing capacity is even faster and without any downtime."
+                    
+                    text: "BG Unified Solutions give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches."
+                    
                 }]
             },
             {
@@ -52,17 +54,17 @@ export default [
                 containerData : [{
                     width: [1,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Pay Per Use"}
+                    data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Scalable Solutions"}
                 },
                 {
                     width: [1,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Rapid Elasticity"}
+                    data: {align: "center", titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Low Latency"}
                 },
                 {
                     width: [1,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg",mt: 4, title: "Ubiquitous Access"}
+                    data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg",mt: 4, title: "Authorotative"}
                 },
                 {
                     width: [1,1/2,1/3],
@@ -72,7 +74,7 @@ export default [
                 {
                     width: [1,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Dynamic Resources"}
+                    data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Security Ensured"}
                 },
                 {
                     width: [1,1/2,1/3],
@@ -85,16 +87,16 @@ export default [
     
     {
         pb: 0,
-        title : "Why BGUS",
+        title : "Hosting with Freedom Built-In",
         body: [
        
         {
             width: "100%",
             type: "content",
             data: [{
-                textAlign: "justify",
+                textAlign: "center",
                 fontSize: "xl",
-                text: "With BG Unified Solutions Infrastructure as a Service, not only do you pay only for the data storage you use when you use it but we provide you with a geographical redundant storage infrastructure and ready access to experts in Infrastructure Technologies who will be eager to understand your storage requirements. Initial setup is very quick, adding or removing capacity is even faster and without any downtime."
+                text: "BG Solutions has gained an excellent reputation in design and implementation of IP technology and significant experience in Domain Name System services design and implementation for a number of clients and in distributed environments and locations."
             }]
         }]
     },
