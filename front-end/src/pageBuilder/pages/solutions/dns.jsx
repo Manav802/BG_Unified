@@ -131,11 +131,26 @@ export default [
     {
         my:2,
         title: "Concurrent DNS Service with superior IP Technology",
+        titleStyle: {
+            color: "white",
+            fontSize: "2xl"
+        },
+        descriptionStyle: {
+            fontSize: "lg",
+            align: "left",
+            px: "0",
+            color: "light.500",
+            opacity: 1
+        },
         description: "Deploy easily, efficiently monitor, and transparently scale the applications tailored as per your business requirements!!",
         bgImage: "url(https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-        endingButton: {color: "dark.500"},
-        endingButtontitle: "Let's get Started!",
-        color: "light.500",
+        endingButton: true,
+        endingButtontitle: "Lets get Started!",
+        endingButton: {
+            bg: "primary.500",
+            variant: "lg",
+            fontSize: "lg",
+            mt: "5%"
     }
-
+    }
 ]
