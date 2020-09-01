@@ -112,9 +112,26 @@ export default [
     },
     {
         title: "Customizable Data Protection for your Business",
+        titleStyle: {
+            color: "white",
+            fontSize: "2xl"
+        },
+        descriptionStyle: {
+            fontSize: "lg",
+            align: "left",
+            px: "0",
+            color: "light.500",
+            opacity: 1
+        },
         description: "Migrate your legacy production Application Environments to Next-Gen Data Centres and enable your journey to the cloud.",
-        bgImage: "url(https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
+        bgImage: "url(/assets/images/backgrounds/domainhosting.jpg)",
         endingButton: true,
-        endingButtontitle: "Lets get IT Done!"
+        endingButtontitle: "Lets get It Done!",
+        endingButton: {
+            bg: "primary.500",
+            variant: "lg",
+            fontSize: "lg",
+            mt: "5%"
+        }
     }
 ]
