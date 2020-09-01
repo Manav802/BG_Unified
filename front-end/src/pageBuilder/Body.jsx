@@ -59,7 +59,7 @@ function Body({ gap = 4, data, width, ...props }) {
                 )
             case "container":
                 return (
-                    <Row direction={["column","row"]}>
+                    <Row>
                         {props.containerData.map((dat)=>(<Box px={[6, 6, gap / 2]} my={4} w={dat.width}>{giveMeComponent(dat.type,dat.data)} </Box>))}
                     </Row>
                 )

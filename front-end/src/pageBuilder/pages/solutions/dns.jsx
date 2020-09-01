@@ -37,9 +37,8 @@ export default [
         gap: 6,
         body: [
             {
-                py:2,
-                my:6,
-                width: [1/2],
+                my:[0,4],
+                width: ["100%","100%",1/2],
                 type: "content",
                 data: [{
                     title: "For a stronger Web Identity",
@@ -52,35 +51,35 @@ export default [
                 }]
             },
             {
-                width : [1/2],
+                width : ["100%","100%",1/2],
                 type: "container",
                 containerData : [{
-                    width: [1,1/2,1/3],
+                    width: [1/2,1/3,1/2,1/3],
                     type: "feature",
                     data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Scalable Solutions"}
                 },
                 {
-                    width: [1,1/2,1/3],
+                    width: [1/2,1/3,1/2,1/3],
                     type: "feature",
                     data: {align: "center", titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Low Latency"}
                 },
                 {
-                    width: [1,1/2,1/3],
+                    width: [1/2,1/3,1/2,1/3],
                     type: "feature",
                     data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg",mt: 4, title: "Authorotative"}
                 },
                 {
-                    width: [1,1/2,1/3],
+                    width: [1/2,1/3,1/2,1/3],
                     type: "feature",
                     data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "High Asset Utilization"}
                 },
                 {
-                    width: [1,1/2,1/3],
+                    width: [1/2,1/3,1/2,1/3],
                     type: "feature",
                     data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Security Ensured"}
                 },
                 {
-                    width: [1,1/2,1/3],
+                    width: [1/2,1/3,1/2,1/3],
                     type: "feature",
                     data: {align: "center", titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Total Interoperibility"}
                 }],
