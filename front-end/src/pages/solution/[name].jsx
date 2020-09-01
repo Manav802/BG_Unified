@@ -96,13 +96,13 @@ export async function getStaticPaths() {
         { params: { name: 'firewall' } },
         { params: { name: 'infra' } },
         { params: { name: 'platform' } },
-        { params: { name: 'proxy-server' } },
+        { params: { name: 'proxy' } },
         { params: { name: 'sd-wan' } },
-        { params: { name: 'sip-connectivity' } },
-        { params: { name: 'storage-unit' } },
+        { params: { name: 'sip' } },
+        { params: { name: 'storage' } },
         { params: { name: 'ucaas' } },
         { params: { name: 'web-hosting' } },
-        { params: { name: 'wireless-networks' } },
+        { params: { name: 'wireless' } },
       ],
       fallback: false // See the "fallback" section below
     };

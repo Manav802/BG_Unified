@@ -14,7 +14,7 @@ const services = {
         conclusions: "Ready to get started?",
         sections: sections.infra
     },
-    "storage-unit": {
+    "storage": {
         title: "Storage As A Service",
         slogan: "Storage Made Simple.",
         bgImage: "",

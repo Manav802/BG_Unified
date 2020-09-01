@@ -78,7 +78,7 @@ function index(props) {
             </Section>
             <Section mt={0} pt={0} mb={20}>
                 <Container>
-                    <Heading py="16px">What's New</Heading>
+                    <Heading py="16px">Release Notes</Heading>
                     <Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dignissimos exercitationem soluta aut dolores et esse harum aspernatur sit quidem pariatur neque sunt nesciunt, velit laudantium! Autem animi ipsam eos.</Text>
                     <Heading mt="12px" fontSize="2xl">23rd July 2020</Heading>
                     <List as="ol" fontSize="lg" fontWeight="600" spacing={3} mt="16px" px={5} stylePos="outside" styleType="disc">
