@@ -1,5 +1,4 @@
-import InfraPricing from "../../pricing/BackupPricing";
-
+import BackupPricing from "../../pricing/BackupPricing";
 export default [
     {
         title: "Backup for your Digital Enterprise!!",
@@ -27,15 +26,28 @@ export default [
             width: "100%",
             type: "imageGroup",
             data: {
-                images: ["/assets/images/os/redhat.png", "/assets/images/os/windows10.png", "/assets/images/os/windowsServer.png"],
-
+                images: [{url:"/assets/images/os/redhat.png",caption:"Hiii"}, {url:"/assets/images/os/windows10.png",caption:"Hiii"}, {url:"/assets/images/os/windowsServer.png",caption:"Hiii"}],
+                captionStyles:{
+                    fontSize:"lg",
+                    mt:"10%"
+                },
                 height: "96px",
                 width: ["128px"],
                 objectFit: "contain",
                 spacing: ["5%", "6%", "12%"]
-
             }
-
+        }]
+    },    
+    {   
+        title : "Our Pricing Plans",
+        backgroundColor: "light.400",
+        my: 0,
+        containerWidth: "100%",
+        gap: 0,
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <BackupPricing/>
         }]
     },
     {
