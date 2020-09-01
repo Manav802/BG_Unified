@@ -11,7 +11,7 @@ import Service from '../components/cards/Service';
 import AlternateRow from './components/AlternateRow';
 import Container from './Container';
 import Row from './Row';
-
+import {SimpleGrid} from '@chakra-ui/core'
 function Body({ gap = 4, data, width, ...props }) {
     function giveMeComponent(type,data) {
         switch (type) {

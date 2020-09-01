@@ -4,7 +4,7 @@ import services from "../../database/services"
 import Head from "next/head";
 import Link from "next/link";
 import RenderSection from "../../pageBuilder/RenderSection";
-import { Box, Button, ButtonGroup, Image } from "@chakra-ui/core"
+import { Box, Button, ButtonGroup, Image, } from "@chakra-ui/core"
 import Fade from "react-reveal/Fade"
 
 

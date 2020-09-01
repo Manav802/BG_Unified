@@ -4,8 +4,8 @@ export default [
         title: "Backup for your Digital Enterprise!!",
         description: " BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today.",
         descriptionStyle: {
-            fontSize: "xl",
-            px: 0,
+            fontSize:["lg"],
+            px: 2,
         },
         rowDistance: 8,
         gap: 10,
@@ -16,7 +16,6 @@ export default [
         pt: 4,
         my: 0,
         titleStyle: {
-            fontSize: "2xl",
             opacity: .9
         },
         bg: "light.400",
@@ -28,7 +27,7 @@ export default [
             data: {
                 images: [{url:"/assets/images/os/redhat.png",caption:"Hiii"}, {url:"/assets/images/os/windows10.png",caption:"Hiii"}, {url:"/assets/images/os/windowsServer.png",caption:"Hiii"}],
                 captionStyles:{
-                    fontSize:"lg",
+                    fontSize:["md","lg"],
                     mt:"10%"
                 },
                 height: "96px",
@@ -63,7 +62,7 @@ export default [
                     opacity: 0.7,
                     textAlign: "justify",
                     mr: ["0", "0", "40px"],
-                    fontSize: "lg"
+                    fontSize:"lg"
                 },
                 titleStyles: { fontSize: "xl" },
                 imageStyles: { maxWidth: ["50%", "50%", "100%"], mx: "auto", mt: "30px" },
@@ -124,12 +123,13 @@ export default [
     },
     {
         title: "Customizable Data Protection for your Business",
+        px:2,
         titleStyle: {
             color: "white",
-            fontSize: "2xl"
+            fontSize: ["xl","2xl"]
         },
         descriptionStyle: {
-            fontSize: "lg",
+            fontSize: ["md","lg"],
             align: "left",
             px: "0",
             color: "light.500",
@@ -141,8 +141,8 @@ export default [
         endingButtontitle: "Lets get It Done!",
         endingButton: {
             bg: "primary.500",
-            variant: "lg",
-            fontSize: "lg",
+            variant: ["md","lg"],
+            fontSize: ["md","lg"],
             mt: "5%"
         }
     }
