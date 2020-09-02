@@ -6,7 +6,7 @@ import Head from 'next/head';
 function NumberCount({count, digitColor = "primary.500", prefix, suffix, duration=2, title, titleSize, description, align="center", ...props}) {
     return (
         <Flex direction="column" align={align} {...props}>
-            <Heading size="xl" fontFamily="Nexa Bold" color={digitColor}>
+            <Heading fontSize={["30px","36px","40px"]} fontFamily="Nexa Bold" color={digitColor}>
                 <MyCount endPoint={count} prefix={prefix} suffix={suffix} duration={duration}></MyCount>
             </Heading>
             <Heading my={2} size={"lg" || titleSize} textAlign ={align}>{title}</Heading>

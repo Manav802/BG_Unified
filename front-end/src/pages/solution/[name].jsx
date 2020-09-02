@@ -58,21 +58,21 @@ function Solutions() {
                 title="Related Services"
                 bg="light.400"
                 my={0}
-                py={16}
+                py={[8,16]}
                 titleStyle={{ mb: 6 }}
                 body={[
                     {
-                        width: 1 / 3,
+                        width: ["100%","100%",1/2,1 / 3],
                         type: "service",
                         data: service.relatedService[0],
                     },
                     {
-                        width: 1 / 3,
+                        width: ["100%","100%",1/2,1 / 3],
                         type: "service",
                         data: service.relatedService[1],
                     },
                     {
-                        width: 1 / 3,
+                        width: ["100%","100%",1/2,1 / 3],
                         type: "service",
                         data: service.relatedService[2],
                     },

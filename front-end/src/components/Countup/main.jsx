@@ -17,7 +17,7 @@ const MyCount = ({ endPoint, startPoint = 0, duration = 1.7, ...props }) => {
                                 }
                             }}
                         >
-                            <span ref={countUpRef} className="display4 mb-0 text-primary" {...props} />
+                            <span ref={countUpRef} className="mb-0 text-primary" {...props} />
                         </VisibilitySensor>
                     );
                 }}
