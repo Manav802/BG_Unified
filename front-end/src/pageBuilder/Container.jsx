@@ -3,7 +3,7 @@ import { Box } from '@chakra-ui/core';
 
 function Container({ width, children }) {
     return (
-        <Box mx="auto" width={width || ["100%", "540px", "720px", "960px", "1140px"]}>
+        <Box mx="auto" width="auto" maxW={width || ["100%", "100%", "720px", "960px", "1140px"]}>
             {children}
         </Box>
     );
