@@ -1,21 +1,22 @@
-import BackupPricing from "../../pricing/BackupPricing";
+
 export default [
     {
         title: "Backup for your Digital Enterprise!!",
         description: " BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today.",
         descriptionStyle: {
-            fontSize:["lg"],
-            px: 2,
+            fontSize: "xl",
+            px: 0,
         },
         rowDistance: 8,
         gap: 10,
     },
     {
-        title: "Single, Reliable Backup and Recovery solution",
+        title: "Some title here",
         pb: 4,
         pt: 4,
         my: 0,
         titleStyle: {
+            fontSize: "2xl",
             opacity: .9
         },
         bg: "light.400",
@@ -27,7 +28,7 @@ export default [
             data: {
                 images: [{url:"/assets/images/os/redhat.png",caption:"Hiii"}, {url:"/assets/images/os/windows10.png",caption:"Hiii"}, {url:"/assets/images/os/windowsServer.png",caption:"Hiii"}],
                 captionStyles:{
-                    fontSize:["md","lg"],
+                    fontSize:"lg",
                     mt:"10%"
                 },
                 height: "96px",
@@ -37,19 +38,6 @@ export default [
             }
         }]
     },    
-    {   
-        title : "Our Pricing Plans",
-        backgroundColor: "light.400",
-        width: "100%",
-        containerWidth: ["100%", "540px", "720px", "960px", "1140px"],
-        my: 0,
-        gap: 0,
-        body: [{
-            width: "100%",
-            type: "pricing",
-            data: <BackupPricing/>
-        }]
-    },
     {
         title: "Why BG Unified Solutions?",
     },
@@ -63,10 +51,10 @@ export default [
                     opacity: 0.7,
                     textAlign: "justify",
                     mr: ["0", "0", "40px"],
-                    fontSize:"lg"
+                    fontSize: "lg"
                 },
                 titleStyles: { fontSize: "xl" },
-                imageStyles: { width: "100%", mx: "auto", mt: "30px" },
+                imageStyles: { maxWidth: ["50%", "50%", "100%"], mx: "auto", mt: "30px" },
                 direction: ["column", "column", "row"],
                 content: {
                     image: "/assets/images/Illustrations/low_pricing.svg",
@@ -124,13 +112,12 @@ export default [
     },
     {
         title: "Customizable Data Protection for your Business",
-        px:2,
         titleStyle: {
             color: "white",
-            fontSize: ["xl","2xl"]
+            fontSize: "2xl"
         },
         descriptionStyle: {
-            fontSize: ["md","lg"],
+            fontSize: "lg",
             align: "left",
             px: "0",
             color: "light.500",
@@ -138,12 +125,12 @@ export default [
         },
         description: "Migrate your legacy production Application Environments to Next-Gen Data Centres and enable your journey to the cloud.",
         bgImage: "url(https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-        endingButton: true,
         endingButtontitle: "Lets get Started!",
         endingButton: {
             bg: "primary.500",
-            variant: ["md","lg"],
-            fontSize: ["md","lg"],
+            variant: "lg",
+            fontSize: "lg",
+            color:"light.500",
             mt: "5%"
         }
     }

@@ -52,6 +52,19 @@ const services = {
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
         conclusions: "",
         sections: sections.dns
+    },
+    "platform": {
+        title: "Platform As A Service",
+        slogan: "Network Marketing Newly Marketed",
+        bgImage: "",
+        icon: "",
+        color: "",
+        tags: "",
+        description: "",
+        illustration: "",
+        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
+        conclusions: "",
+        sections: sections.platform
     }
 }
 
