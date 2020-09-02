@@ -1,4 +1,4 @@
-import sections from '../pageBuilder/pages/index'
+import sections from '../pageBuilder/pages/solutions/index'
 
 const services = {
     "infra": {

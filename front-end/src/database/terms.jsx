@@ -1,8 +1,16 @@
+import body from "../pageBuilder/pages/terms/index"
 
 export default [
     {
-        name: "Defination & Interpretation",
-        totalSections: 2,
-        sections: ""
-    }
+        url: "1-definitions-and-interpretation",
+        title: "Definitions & Interpretation",
+        sections: 2,
+        body: body.defination
+    },
+    {
+        url: "2-service-levels-and-orders",
+        title: "Service Levels and Service Orders",
+        sections: 3,
+        body: body.servicelevels
+    },
 ]

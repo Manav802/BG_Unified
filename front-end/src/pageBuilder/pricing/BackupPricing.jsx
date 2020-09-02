@@ -27,9 +27,9 @@ function BackupPricing(props) {
         hourlyBackups ? ",Enabled Hourly Backups" : "";
         
     return (
-            <div className="container">
+            <div>
                 <Fade duration={500} bottom>
-                    <div className="row px-lg-5 px-3">
+                    <div className="row no-gutters">
                         <div className="col-lg-4 my-3">
                             <PricingCard
                                 title="Standard"
