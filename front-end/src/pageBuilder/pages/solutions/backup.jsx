@@ -136,9 +136,9 @@ export default [
             opacity: 1
         },
         description: "Migrate your legacy production Application Environments to Next-Gen Data Centres and enable your journey to the cloud.",
-        bgImage: "url(/assets/images/backgrounds/domainhosting.jpg)",
+        bgImage: "url(https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
         endingButton: true,
-        endingButtontitle: "Lets get It Done!",
+        endingButtontitle: "Lets get Started!",
         endingButton: {
             bg: "primary.500",
             variant: ["md","lg"],

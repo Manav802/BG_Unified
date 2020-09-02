@@ -47,7 +47,7 @@ export default [
                     fontSize: "xl",
                     titleSize:"32px",
                     
-                    text: "BG Unified Solutions give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches."
+                    text: "BG Unified Solutions give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches. BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use Information Technology to improve their business results."
                     
                 }]
             },
@@ -111,31 +111,46 @@ export default [
             data: {
                 fontSize: "md",
                 content: [{
-                    title: "Choice between On-Premises & Cloud",
-                    description: "On-premise or cloud-based, that helps secure your IT environment quickly. The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance..",
+                    title: "Scalability",
+                    description: "Hierarchical nature of  DNS, making it scalable. Allows every organization to manage its authoritative and operational data effectively, even with increased resources. Maintaining compatibility as DNS servers clients run on different hardware, different operating systems.",
                     image: "/assets/images/Illustrations/Varied_Web_Hosting_Solutions.svg"
                 },
                 {
-                    title: "Fast and easy Deployment",
-                    description: "Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure without capex.",
+                    title: "Reliability",
+                    description: "The user or the end host need not dive into the technicality about root or TLD servers. Only need to know the basics of the functioning. Eliminating vulnerabilities like cache poisoning, to reach a satisfactory level of security, making our DNS service extremely reliable",
                     image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg"
                 },
                 {
-                    title: "Advanced Technology Stack",
-                    description: "Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included.",
+                    title: "Concurrency",
+                    description: "Allows and handles multiple requests simultaneously and manages data by distributing over a large number of hosts. Detects, isolates notifies and corrects faults encountered in the network.",
                     image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
                 },]
             }
         }]
     },
     {
-        my:0,
-        title: "Customizable Data Protection for your Business",
-        description: "Migrate your legacy production Application Environments to Next-Gen Data Centres and enable your journey to the cloud.",
+        my:2,
+        title: "Concurrent DNS Service with superior IP Technology",
+        titleStyle: {
+            color: "white",
+            fontSize: "2xl"
+        },
+        descriptionStyle: {
+            fontSize: "lg",
+            align: "left",
+            px: "0",
+            color: "light.500",
+            opacity: 1
+        },
+        description: "Deploy easily, efficiently monitor, and transparently scale the applications tailored as per your business requirements!!",
         bgImage: "url(https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-        endingButton: {color: "dark.500"},
-        endingButtontitle: "Lets get IT Done!",
-        color: "light.500",
+        endingButton: true,
+        endingButtontitle: "Lets get Started!",
+        endingButton: {
+            bg: "primary.500",
+            variant: "lg",
+            fontSize: "lg",
+            mt: "5%"
     }
-
+    }
 ]
