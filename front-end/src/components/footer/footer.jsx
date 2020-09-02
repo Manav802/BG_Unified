@@ -101,24 +101,9 @@ function footer(props) {
             </div>
           </div>
         </div>
-        <div className="w-100 my-4 text-center">
+        <div className="w-100 text-center">
           <div className="my-2">
             Terms | Privacy Policies | <ErrorForm /> |<FeedbackForm />
-          </div>
-          <div className="d-flex justify-content-center">
-            <Box
-              as={GrFacebookOption}
-              className="p-2"
-              size="48px"
-              color="grey.400"
-            />
-            <Box
-              as={GrLinkedinOption}
-              className="p-2"
-              size="48px"
-              color="grey.400"
-            />
-            <Box as={GrTwitter} className="p-2" size="48px" color="grey.400" />
           </div>
           <div className="my-2">
             All Rights Reserved © BG Unified Solutions 2020

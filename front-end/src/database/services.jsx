@@ -26,6 +26,32 @@ const services = {
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
         conclusions: "Ready to get Storage?",
         sections: sections.storage
+    },
+    "backup": {
+        title: "Backup As A Service",
+        slogan: "Backup for your Digital system",
+        bgImage: "",
+        icon: "",
+        color: "",
+        tags: "",
+        description: "",
+        illustration: "",
+        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
+        conclusions: "",
+        sections: sections.backup
+    },
+    "dns": {
+        title: "DNS As A Service",
+        slogan: "For a stronger web identity",
+        bgImage: "",
+        icon: "",
+        color: "",
+        tags: "",
+        description: "",
+        illustration: "",
+        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
+        conclusions: "",
+        sections: sections.dns
     }
 }
 
