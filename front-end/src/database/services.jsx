@@ -40,7 +40,7 @@ const services = {
         description: "BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data, while enabling self-service restoration capability to your teams.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "Customizable Data Protection for your Business",
         sections: sections.backup
     },
     "cex": {
@@ -207,7 +207,7 @@ const services = {
         tags: ["storage", "blocks", "consolidation", "virtualization", "backup", "recovery", "archive"],
         description: "Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
+        relatedService: ["Infrastructure As A Service", "DNS As A Service", "Backup As A Service"],
         conclusion: "Ready to get Storage?",
         sections: sections.storage
     },

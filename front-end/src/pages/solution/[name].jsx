@@ -88,7 +88,8 @@ function Solutions() {
                 title="Related Services"
                 bg="light.400"
                 my={0}
-                py={6}
+                pt={6}
+                pb={12}
                 titleStyle={{ mb: 6 }}
                 body={[
                     {

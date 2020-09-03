@@ -2,36 +2,64 @@ import StoragePricing from "../../pricing/StoragePricing"
 
 export default [
     {
-        my:0,
-        pb: 0,
-        body: [{
-            type: "content",
-            data: [{
-                textAlign: "center",
-                fontSize: "22px",
-                text: "Today’s dynamic data centre’s present some unique storage challenges. How do you best manage explosive storage capacity requirements and multiple storage silos—as well as consolidation into internal clouds to provide storage as a service? Add complex backup and recovery plans, and their integration into your disaster recovery plans and storage becomes even more complex. And while there are commonalities that allow for pre-packaged solutions, every data centre is different. Each one requires knowledgeable professionals to help define the correct solution, often across multiple manufacturers, to combine and collaborate in order to create the optimal solution for your organization."
-            }]
-        }]
-    },
-    {
-        mt:0,
+        mb:0,
+        title: "Get your Quote now!",
+        description: "Our storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage",
+        rowDistance: 4,
         body: [{
             type: "pricing",
             data: <StoragePricing/>
         }]
     },
     {
+        title: "The Storage Challenge",
+        py: 12,
+        rowDistance: 8,
+        body: [
+        {
+            width:["100%", "100%", 1/2],
+            type: "imageGroup",
+            data: {
+                images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                borderRadius: 8,
+                width: '90%',
+                height: "400px",
+                objectFit: "cover"
+            }
+        },
+        {
+            width: ["100%", "100%", 1/2],
+            type: "content",
+            data: [{
+                textAlign: "justify",
+                fontSize: "lg",
+                text: <span>Today’s dynamic data centre’s present some unique storage challenges. How do you best manage explosive storage capacity requirements and 
+                    multiple storage silos—as well as consolidation into internal clouds to provide storage as a service? Add complex backup and recovery plans, 
+                    and their integration into your disaster recovery plans and storage becomes even more complex. And while there are commonalities that allow for 
+                    pre-packaged solutions, every data centre is different. 
+                    <br/><br/>
+                    Each one requires knowledgeable professionals to help define the correct solution, often across multiple manufacturers, to combine and collaborate in order 
+                    to create the optimal solution for your organization.</span>
+            }]
+        }]
+    },
+ 
+    {
         title : "STaaS for your Business",
+        titleStyle: {
+            fontSize: "40px",
+            fontWeight: "800"
+        },
         description: "Secure, scalable, cost-effective, platform adaptive storage options customized as per your needs.",
         descriptionStyle:{
-            px: 0,
+            px: "24%",
             fontSize: "xl",
             opacity: 1,
             mt: 2
         },
         my: 0,
         py: 20,
-        bg: "gray.200",
+        bg: "gray.100",
         color: "dark.500",
         rowDistance: 12,
         gap: 8,
@@ -39,41 +67,42 @@ export default [
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", box:"/assets/images/icons/library/shopping/credit-card.svg", mt: 4, title: "Pay Per Use"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/shopping/credit-card.svg", mt: 4, title: "Pay Per Use"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center", titleSize:"md", image:"/assets/images/icons/library/design/line.svg", mt: 4, title: "Rapid Elasticity"}
+            data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/design/line.svg", mt: 4, title: "Rapid Elasticity"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", image:"/assets/images/icons/library/devices/keyboard.svg",mt: 4, title: "Ubiquitous Access"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/devices/keyboard.svg",mt: 4, title: "Ubiquitous Access"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", image:"/assets/images/icons/library/devices/diagnostics.svg", mt: 4, title: "High Asset Utilization"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/devices/diagnostics.svg", mt: 4, title: "High Asset Utilization"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", image:"/assets/images/icons/library/files/folder-cloud.svg", mt: 4, title: "Dynamic Resources"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/files/folder-cloud.svg", mt: 4, title: "Dynamic Resources"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center", titleSize:"md", image:"/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Total Interoperibility"}
+            data: {align: "center", titleSize:"md",iconColor:"red.500", svg:"/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Total Interoperibility"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", image:"/assets/images/icons/library/devices/sd-card.svg", mt: 4, title: "Multi-protocol Storage"}
+            data: {align: "center",titleSize:"md",iconColor:"red.500", svg:"/assets/images/icons/library/devices/sd-card.svg", mt: 4, title: "Multi-protocol Storage"}
         },
     ]
     },
-    {
+    {   
+        pt: 16,
         pb: 0,
         title: "Meeting your Storage needs at Affordable Prices",
         body: [{

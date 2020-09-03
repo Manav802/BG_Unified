@@ -1,6 +1,6 @@
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="24px" height="24px" viewBox="0 0 24 24"  version="1.1" fill="#000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Icon For Carrot</title>
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g stroke="none" stroke-width="1"   fill-rule="evenodd">
         <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
         <path d="M14.3724866,0.190822526 C11.3151949,5.41320416 11.3151949,9.23673357 14.3724866,11.6614108 C17.3047782,9.23673357 17.3047782,5.41320416 14.3724866,0.190822526 Z"   opacity="0.3" transform="translate(14.325612, 5.926117) scale(-1, 1) rotate(-195.000000) translate(-14.325612, -5.926117) "></path>
         <path d="M17.5544671,3.37280304 C14.4971754,8.59518468 14.4971754,12.4187141 17.5544671,14.8433913 C20.4867588,12.4187141 20.4867588,8.59518468 17.5544671,3.37280304 Z"   opacity="0.3" transform="translate(17.507592, 9.108097) rotate(-645.000000) translate(-17.507592, -9.108097) "></path>

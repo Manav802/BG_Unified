@@ -1,48 +1,43 @@
 import BackupPricing from "../../pricing/BackupPricing";
 export default [
     {
-        title: "Backup for your Digital Enterprise!!",
-        description: " BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today.",
-        descriptionStyle: {
-            fontSize:["lg"],
-            px: 2,
-        },
-        rowDistance: 8,
         gap: 10,
-    },
-    {
-        title: "Single, Reliable Backup and Recovery solution",
-        pb: 4,
-        pt: 4,
-        my: 0,
-        titleStyle: {
-            opacity: .9
-        },
-        bg: "light.400",
-        rowDistance: 8,
-        containerWidth: "100%",
-        body: [{
-            width: "100%",
+        py: 16,
+        body: [
+        {
+            width:["100%", "100%", 1/2],
             type: "imageGroup",
             data: {
-                images: [{url:"/assets/images/os/redhat.png",caption:"Hiii"}, {url:"/assets/images/os/windows10.png",caption:"Hiii"}, {url:"/assets/images/os/windowsServer.png",caption:"Hiii"}],
-                captionStyles:{
-                    fontSize:["md","lg"],
-                    mt:"10%"
-                },
-                height: "96px",
-                width: ["128px"],
-                objectFit: "contain",
-                spacing: ["5%", "6%", "12%"]
+                images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                borderRadius: 8,
+                width: '90%',
+                height: "300px",
+                objectFit: "cover"
             }
+        },
+        {
+            width: ["100%", "100%", 1/2],
+            type: "content",
+            data: [{
+                textAlign: "justify",
+                fontSize: "lg",
+                title: "Protecting your Data is New Normal!!",
+                titleSize: 32,
+                text: <span>BG Unified Solution provides reliable, secure & cost-effective managed service for backup 
+                    and recovery of all types of data. We handle protection and management for all of your structured 
+                    and unstructured data while enabling self-service restoration capability to your teams. 
+                    We’ll create a realistic roadmap and provide continual service so you can capture the 
+                    promise of tomorrow’s data centre, cloud and backup—today.erent. </span>
+            }]
         }]
-    },    
+    },
     {   
         title : "Our Pricing Plans",
         backgroundColor: "light.400",
         width: "100%",
         containerWidth: ["100%", "540px", "720px", "960px", "1140px"],
         my: 0,
+        py:16,
         gap: 0,
         body: [{
             width: "100%",
@@ -51,100 +46,35 @@ export default [
         }]
     },
     {
-        title: "Why BG Unified Solutions?",
-    },
-    {
-        body: [{
-            width: "100%",
-            type: "altrow",
-            data: {
-                textWidth: ["100%", "100%", "60%",],
-                descriptionStyles: {
-                    opacity: 0.7,
-                    textAlign: "justify",
-                    mr: ["0", "0", "40px"],
-                    fontSize:"lg"
-                },
-                titleStyles: { fontSize: "xl" },
-                imageStyles: { width: "100%", mx: "auto", mt: "30px" },
-                direction: ["column", "column", "row"],
-                content: {
-                    image: "/assets/images/Illustrations/low_pricing.svg",
+        title:"Why BG Unified Solutions?",
+        body: [
+            {
+                type: "image&text",
+                data: {
+                    image: "/assets/images/Illustrations/productivity.svg",
                     title: "Flexible and Scalable Service",
+                    flexDirection: ["column", "column", "row"],
                     description: "For any of your organization department, our BaaS offering provides a simplified IT management and a highly scalable platform. Irrespective of the end-user, everyone gets to access to the latest and the greatest backup technology stack. Customized and tailor solutions to meet client needs with Local end-market support services and Local language capabilities"
                 }
-            }
-        }]
-    },
-    {
-        body: [{
-            width: "100%",
-            type: "altrow",
-            data: {
-                textWidth: ["100%", "100%", "60%",],
-                descriptionStyles: {
-                    opacity: 0.7,
-                    textAlign: "justify",
-                    ml: ["0", "0", "40px"],
-                    fontSize: "lg"
-                },
-                titleStyles: { fontSize: "xl", ml: ["0", "0", "40px"] },
-                imageStyles: { maxWidth: ["50%", "50%", "100%"], mx: "auto", mt: "30px" },
-                direction: ["column", "column", "row-reverse"],
-                content: {
-                    image: "/assets/images/Illustrations/low_pricing.svg",
-                    title: "Cost-Effective Solution",
+            },
+            {
+                type: "image&text",
+                data: {
+                    image: "/assets/images/Illustrations/Sound_and_Efficient_Planning.svg",
+                    title: "Cost Effective Solution",
+                    flexDirection: ["column", "column", "row-reverse"],
                     description: "For your business, we are offering and providing a flat billing structure. It's designed for pay as you go model that shifts your costs from capex to opex. You will have very simplified and predictable expenses and have the option of rolling any upfront or one-off expenses into your monthly payment."
                 }
-            }
-        }]
-    },
-    {
-        body: [{
-            width: "100%",
-            type: "altrow",
-            data: {
-                textWidth: ["100%", "100%", "60%",],
-                descriptionStyles: {
-                    opacity: 0.7,
-                    textAlign: "justify",
-                    mr: ["0", "0", "40px"],
-                    fontSize: "lg"
-                },
-                titleStyles: { fontSize: "xl" },
-                imageStyles: { maxWidth: ["50%", "50%", "100%"], mx: "auto", mt: "30px" },
-                direction: ["column", "column", "row"],
-                content: {
-                    image: "/assets/images/Illustrations/low_pricing.svg",
-                    title: "Back it Up ",
+            },
+            {
+                type: "image&text",
+                data: {
+                    image: "/assets/images/Illustrations/Completeness_CloudLogging.svg",
+                    title: "Back it Up",
+                    flexDirection: ["column", "column", "row"],
                     description: "Geographically sound, redundant, quick and efficient increasing your backup by 60%. Highly advanced, available and multiple data centre locations offering multiple IP types globally, in a clustered or isolated environment."
                 }
-            }
-        }]
-    },
-    {
-        title: "Customizable Data Protection for your Business",
-        px:2,
-        titleStyle: {
-            color: "white",
-            fontSize: ["xl","2xl"]
-        },
-        descriptionStyle: {
-            fontSize: ["md","lg"],
-            align: "left",
-            px: "0",
-            color: "light.500",
-            opacity: 1
-        },
-        description: "Migrate your legacy production Application Environments to Next-Gen Data Centres and enable your journey to the cloud.",
-        bgImage: "url(https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-        endingButton: true,
-        endingButtontitle: "Lets get Started!",
-        endingButton: {
-            bg: "primary.500",
-            variant: ["md","lg"],
-            fontSize: ["md","lg"],
-            mt: "5%"
-        }
+            },
+        ]
     }
 ]

@@ -1,6 +1,6 @@
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="24px" height="24px" viewBox="0 0 24 24"  version="1.1" fill="#000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Icon For Flower#1</title>
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g stroke="none" stroke-width="1"   fill-rule="evenodd">
         <polygon opacity="0" points="0 0 24 0 24 24 0 24"></polygon>
         <path d="M9,1 C4.92361111,7.82926829 4.92361111,12.8292683 9,16 C12.9097222,12.8292683 12.9097222,7.82926829 9,1 Z"   opacity="0.3" transform="translate(8.937500, 8.500000) scale(-1, 1) rotate(-330.000000) translate(-8.937500, -8.500000) "></path>
         <path d="M15,1 C10.9236111,7.82926829 10.9236111,12.8292683 15,16 C18.9097222,12.8292683 18.9097222,7.82926829 15,1 Z"   opacity="0.3" transform="translate(14.937500, 8.500000) rotate(-330.000000) translate(-14.937500, -8.500000) "></path>

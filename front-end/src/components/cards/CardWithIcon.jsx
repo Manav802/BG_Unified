@@ -27,7 +27,7 @@ function CardWithIcon(props) {
       <Box className="card-with-icon shadow-lg align-items-center d-flex flex-column bg-white rounded p-3">
         <div className="row iconbox mb-3">{iconbox}</div>
         <div className="row display6 py-3 text-center mx-2">{props.title}</div>
-        <div className="row flex-fill cardContent py-3 mx-3 text-center">
+        <div className="row cardContent py-2 mx-3 text-center">
           {props.children}
         </div>
         <div className="row mx-3 my-3">

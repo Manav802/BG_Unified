@@ -7,22 +7,23 @@ import {
     Box,
     Button,
     Collapse,
-    Icon
-} from '@chakra-ui/core'
-import {
+    Icon,
+    Flex,
+    Text,
     Popover,
     PopoverTrigger,
     PopoverContent,
-    PopoverHeader,
-    PopoverArrow
-} from "@chakra-ui/core";
-
+    Stack,
+} from '@chakra-ui/core'
+import services from "../../database/services"
 import { FaInfoCircle, FaNewspaper, FaCommentAlt, FaBriefcase } from "react-icons/fa"
 import { IoIosCall } from "react-icons/io"
 import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
 import Link from 'next/link';
 import Router from 'next/router';
+import Container from '../../pageBuilder/Container';
+import SVG from '../svg/svg';
 
 function header(props) {
     const initRef = React.useRef();
@@ -32,9 +33,10 @@ function header(props) {
     const overlayClick = () => {
         setShow(0);
     }
+    const servicesArray = Object.entries(services)
     return (
         <>
-            <Box position="sticky" top="0px" bg="white" boxShadow="lg" zIndex={2000}>
+            <Box position="sticky" top="0px" bg="white" boxShadow="lg" zIndex={1000}>
                 <div className="container">
                     <div className="p-3 transition-3 d-flex justify-content-between align-items-center layer-4">
                         <div className="d-flex align-items-center">
@@ -78,107 +80,42 @@ function header(props) {
 
 
                 {/* Menu */}
-                <Collapse isOpen={show === 1}>
+                <Collapse display={["none", "none", "none", "block"]} isOpen={show === 1}>
                     <Fade duration={800} distance={"30%"} bottom>
-                        <Box>
-                            <div className="container pb-5 pt-3">
-                                <div className="row">
-                                    <div className="col-lg-3 py-4 pr-5 d-flex flex-column header-list">
-                                        <div className="display6 mt-2 text-primary text-uppercase">
-                                            Solutions
-                                    </div>
-                                        <div className="NunitoSans-ExtraBold text-secondary mt-2">
-                                            We cover almost 90% technology domain
-                                            required by your business.
-                                    </div>
-                                    </div>
-                                    <div className="col-lg-3 col-sm-6 d-flex flex-column footer-content">
-                                        <span className="mt-4 mb-1">
-                                            IT Infrastructural Services
-                                    </span>
-                                        <Link href="/services/infra">
-                                            <a>Infrastructure As A Service</a>
-                                        </Link>
-                                        <Link href="/services/storage-unit">
-                                            <a>Storage As A Service</a>
-                                        </Link>
-                                        <Link href="/services/cloud-logging">
-                                            <a>Cloud Logging As A Service</a>
-                                        </Link>
-                                        <Link href="/services/platform">
-                                            <a>Platform As A Service</a>
-                                        </Link>
-                                        <Link href="/services/firewall">
-                                            <a>Firewall As A Service</a>
-                                        </Link>
-                                        <Link href="/services/application-dev">
-                                            <a>
-                                                Application Development As A Service
-                                        </a>
-                                        </Link>
-                                        <Link href="/services/web-hosting">
-                                            <a>Web Hosting As A Service</a>
-                                        </Link>
-                                        <Link href="/services/backup">
-                                            <a>Backup As A Service</a>
-                                        </Link>
-                                    </div>
-                                    <div className="col-lg-3 col-sm-6 d-flex flex-column footer-content">
-                                        <span className="mt-4 mb-1">
-                                            Network Services
-                                    </span>
-
-                                        <Link href="/services/sd-wan">
-                                            <a>SD-WAN As A Service</a>
-                                        </Link>
-                                        <Link href="/services/proxy-server">
-                                            <a>Proxy As A Service</a>
-                                        </Link>
-                                        <Link href="/services/dns">
-                                            <a>DNS As A Service</a>
-                                        </Link>
-                                        <Link href="/services/wireless-networks">
-                                            <a>Wireless As A Service</a>
-                                        </Link>
-                                        <Link href="/services/cloud-exchange">
-                                            <a>
-                                                CEX As A
-                                                Service
-                                        </a>
-                                        </Link>
-                                        <Link href="/services/sip-connectivity">
-                                            <a>SIP As A Service</a>
-                                        </Link>
-
-                                        <span className="mt-4 mb-1">
-                                            Disaster Recovery Services
-                                    </span>
-                                        <Link href="/services/disaster-recovery">
-                                            <a>DR As A Service</a>
-                                        </Link>
-                                    </div>
-                                    <div className="col-lg-3 d-flex flex-column footer-content">
-                                        <span className="mt-4 mb-1">
-                                            Collaborative Services
-                                    </span>
-                                        <Link href="/services/ucaas">
-                                            <a>
-                                                Unified Communications As A Service
-                                        </a>
-                                        </Link>
-                                        <Link href="/services/contact-center">
-                                            <a>Contact Center As A Service</a>
-                                        </Link>
-                                        <Link href="/services/architectural-consultancy">
-                                            <a>
-                                                Architectural Consultancy As A
-                                                Service
-                                        </a>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </Box>
+                        <Container>
+                            <Flex pb={12} wrap="wrap" px={6}>
+                                <Box mb={4} mt={12} width={["100%", "100%", "50%", 1/3]}>
+                                    <Text my={"16px"} fontSize="lg" fontWeight="700">IT Infrastructural Services</Text>
+                                    <Stack spacing="8px" direction="column">
+                                    {servicesArray.filter(service => service[1].category === "IT Infrastructural Services").map(service => (
+                                        <Link href={"/solution/" + service[0]}><Button as="a" variant="unstyled">{service[1].title}</Button></Link>
+                                    ))}
+                                    </Stack>
+                                </Box>
+                                <Box mb={4} mt={12} width={["100%", "100%", "50%", 1/3]}>
+                                    <Text my={"16px"} fontSize="lg" fontWeight="700">Network Services</Text>
+                                    <Stack spacing="8px" direction="column">
+                                    {servicesArray.filter(service => service[1].category === "Network Services").map(service => (
+                                        <Link href={"/solution/" + service[0]}><Button as="a" variant="unstyled">{service[1].title}</Button></Link>
+                                    ))}
+                                    </Stack>
+                                </Box>
+                                <Box mb={4} mt={12} width={["100%", "100%", "50%", 1/3]}>
+                                    <Text my={"16px"} fontSize="lg" fontWeight="700">Collaborative Services</Text>
+                                    <Stack spacing="8px" direction="column">
+                                    {servicesArray.filter(service => service[1].category === "Collaborative Services").map(service => (
+                                        <Link href={"/solution/" + service[0]}><Button as="a" variant="unstyled">{service[1].title}</Button></Link>
+                                    ))}
+                                    </Stack>
+                                    <Text my={"16px"} fontSize="lg" fontWeight="700">Development Services</Text>
+                                    <Stack spacing="8px" direction="column">
+                                    {servicesArray.filter(service => service[1].category === "Development Services").map(service => (
+                                        <Link href={"/solution/" + service[0]}><Button as="a" variant="unstyled">{service[1].title}</Button></Link>
+                                    ))}
+                                    </Stack>
+                                </Box>
+                            </Flex>
+                        </Container>
                     </Fade>
                 </Collapse>
                 <Collapse isOpen={show === 2}>
@@ -238,7 +175,7 @@ function header(props) {
                                         </Link>
                                     </div>
                                     <div className="col-lg-6 py-4 d-flex flex-column header-list">
-                                        <h5 className="text-primary display6">
+                                        <h5 className="display6">
                                             What's New
                                     </h5>
                                         <WhatsNew
