@@ -42,7 +42,7 @@ function WebHostingPricing(props) {
       setUTMSwitch(false);
   }
   return (
-    <div className="container">
+    <div id="WebHostingPricing" className="container">
     <Fade duration={500} bottom>
     <div className="row px-lg-5 px-3">
         <div className="col-lg-4 my-3">

@@ -23,7 +23,7 @@ function WirelessPricing(props) {
   const handleGuestSwitch = (bool) => (bool) ? (",Guest-10M Included") : ("")
   return (
     
-                <div className="container">
+                <div id="WirelessPricing" className="container">
                     <Fade duration={500} bottom>
                     <div className="row px-lg-5 px-3">
                         <div className="col-lg-4 my-3">

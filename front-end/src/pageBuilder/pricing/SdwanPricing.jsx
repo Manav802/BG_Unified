@@ -13,7 +13,7 @@ import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 function SdwanPricing(props) {
     const features = ["High-performance routes", "Fully Managed Service"];
     return (
-                <div className="container">
+                <div id="SdwanPricing" className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-12">
                             <Tabs align="center">
@@ -34,7 +34,7 @@ function SdwanPricing(props) {
                                             distance={"30%"}
                                             bottom
                                         >
-                                            <div className="row justify-content-center">
+                                            <div className="row no-gutters justify-content-center">
                                                 <div className="col-lg-5 my-3">
                                                     <PricingCard
                                                         featureList={features}
@@ -75,7 +75,7 @@ function SdwanPricing(props) {
                                             distance={"30%"}
                                             bottom
                                         >
-                                            <div className="row justify-content-center">
+                                            <div className="row no-gutters justify-content-center">
                                                 <div className="col-lg-5 my-3">
                                                     <PricingCard
                                                         featureList={features}
