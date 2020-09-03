@@ -5,19 +5,19 @@ export default [
         my:0,
         pb: 0,
         body: [{
-            type: "pricing",
-            data: <StoragePricing/>
+            type: "content",
+            data: [{
+                textAlign: "center",
+                fontSize: "22px",
+                text: "Today’s dynamic data centre’s present some unique storage challenges. How do you best manage explosive storage capacity requirements and multiple storage silos—as well as consolidation into internal clouds to provide storage as a service? Add complex backup and recovery plans, and their integration into your disaster recovery plans and storage becomes even more complex. And while there are commonalities that allow for pre-packaged solutions, every data centre is different. Each one requires knowledgeable professionals to help define the correct solution, often across multiple manufacturers, to combine and collaborate in order to create the optimal solution for your organization."
+            }]
         }]
     },
     {
         mt:0,
         body: [{
-            type: "content",
-            data: [{
-                textAlign: "center",
-                fontSize: "xl",
-                text: "Today’s dynamic data centre’s present some unique storage challenges. How do you best manage explosive storage capacity requirements and multiple storage silos—as well as consolidation into internal clouds to provide storage as a service? Add complex backup and recovery plans, and their integration into your disaster recovery plans and storage becomes even more complex. And while there are commonalities that allow for pre-packaged solutions, every data centre is different. Each one requires knowledgeable professionals to help define the correct solution, often across multiple manufacturers, to combine and collaborate in order to create the optimal solution for your organization."
-            }]
+            type: "pricing",
+            data: <StoragePricing/>
         }]
     },
     {
@@ -30,48 +30,46 @@ export default [
             mt: 2
         },
         my: 0,
-        py: "48px",
-        bgImage: "url(https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-        blend: "overlay",
-        bg: "dark.500",
-        color: "white",
+        py: 20,
+        bg: "gray.200",
+        color: "dark.500",
         rowDistance: 12,
         gap: 8,
         body: [
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Pay Per Use"}
+            data: {align: "center",titleSize:"md", box:"/assets/images/icons/library/shopping/credit-card.svg", mt: 4, title: "Pay Per Use"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center", titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Rapid Elasticity"}
+            data: {align: "center", titleSize:"md", image:"/assets/images/icons/library/design/line.svg", mt: 4, title: "Rapid Elasticity"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg",mt: 4, title: "Ubiquitous Access"}
+            data: {align: "center",titleSize:"md", image:"/assets/images/icons/library/devices/keyboard.svg",mt: 4, title: "Ubiquitous Access"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "High Asset Utilization"}
+            data: {align: "center",titleSize:"md", image:"/assets/images/icons/library/devices/diagnostics.svg", mt: 4, title: "High Asset Utilization"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Dynamic Resources"}
+            data: {align: "center",titleSize:"md", image:"/assets/images/icons/library/files/folder-cloud.svg", mt: 4, title: "Dynamic Resources"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center", titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Total Interoperibility"}
+            data: {align: "center", titleSize:"md", image:"/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Total Interoperibility"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Multi-protocol Storage"}
+            data: {align: "center",titleSize:"md", image:"/assets/images/icons/library/devices/sd-card.svg", mt: 4, title: "Multi-protocol Storage"}
         },
     ]
     },
