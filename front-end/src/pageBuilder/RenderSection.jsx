@@ -17,7 +17,8 @@ function RenderSection({ title, typeWriter_title, titleStyle, color = "dark.500"
                     <span>{typeWriter_title.before}</span>
                     <Typewriter options={{
                         strings: typeWriter_title.typed,
-                        autoStart: true
+                        autoStart: true,
+                        loop: true
                     }}></Typewriter>
                     <span>{typeWriter_title.after}</span>
                 </Title>}
