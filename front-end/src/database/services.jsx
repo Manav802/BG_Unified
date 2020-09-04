@@ -1,7 +1,7 @@
 import sections from '../pageBuilder/pages/solutions/index'
 
 const services = {
-    "appdev":{
+    "appdev": {
         title: "Application Development As A Service",
         slogan: "Slogan Goes Here",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
@@ -213,7 +213,7 @@ const services = {
     },
     "ucaas": {
         title: "Unified Communications As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Professional Communication at your fingertips",
         bgImage: "",
         category: "Collaborative Services",
         icon: "/assets/images/icons/monotone/UCAsAService.svg",
@@ -222,7 +222,7 @@ const services = {
         description: "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support.",
         sections: sections.ucaas
     },
     "hosting": {
