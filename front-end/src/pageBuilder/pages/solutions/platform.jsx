@@ -1,13 +1,12 @@
-import BackupPricing from "../../pricing/BackupPricing";
 export default [
     {
         typeWriter_title: {
             before: "",
-            typed: ["Deploy, Run, Manage and Maintain"],
+            typed: ["Deploy", "Run", "Manage", "Maintain"],
             after: " Your Application on the Cloud"
         },
         gap: 10,
-        py: 0,
+        py: 16,
         body: [
             {
                 width: ["100%", "100%", 1 / 2],
@@ -46,8 +45,8 @@ export default [
                 type: "feature",
                 data: {
                     titleSize: "md",
-                    titleFont: "Nexa Bold",
                     textOpacity: "0.7",
+                    size: "96px",
                     image: "/assets/images/icons/theme/cloud-computing.svg",
                     title: "User Oriented Cloud Platforms",
                     description: "Solutions for  diverse range of platforms, as and what suits you the most",
@@ -59,8 +58,8 @@ export default [
                 type: "feature",
                 data: {
                     titleSize: "md",
-                    titleFont: "Nexa Bold",
                     textOpacity: "0.7",
+                    size: "96px",
                     image: "/assets/images/icons/library/devices/cpu-1.svg",
                     title: "Infinite Computing Resources",
                     description: "Delivering all the necessary resources required at minimal time and cost",
@@ -72,8 +71,8 @@ export default [
                 type: "feature",
                 data: {
                     titleSize: "md",
-                    titleFont: "Nexa Bold",
                     textOpacity: "0.7",
+                    size: "96px",
                     image: "/assets/images/icons/color/analytics.svg",
                     title: "Monitor on-the-go.",
                     description: "Maintain and monitor your application, anytime, anywhere",
@@ -83,20 +82,8 @@ export default [
         ]
     },
     {
-        title: "Our Pricing Plans",
-        backgroundColor: "light.400",
-        width: "100%",
-        containerWidth: ["100%", "100%", "720px", "960px", "1140px"],
-        py: 16,
-        gap: 0,
-        body: [{
-            width: "100%",
-            type: "pricing",
-            data: <BackupPricing />
-        }]
-    },
-    {
         title: "Why BG Unified Solutions?",
+        rowDistance: 8,
         body: [{
             width: "100%",
             type: "accordion",

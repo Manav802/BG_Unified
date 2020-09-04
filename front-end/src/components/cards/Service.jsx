@@ -9,7 +9,7 @@ function Service(props) {
 
     return (
         <div>
-            {service && <CardWithIcon title={service[1].title} iconBg={service.color} link={"/solution/" + service[0]} icon={service[1].icon}>{service[1].description}</CardWithIcon>}
+            {service && <CardWithIcon title={service[1].title} iconBg={service[1].color} link={"/solution/" + service[0]} icon={service[1].icon}>{service[1].description}</CardWithIcon>}
         </div>
     );
 }

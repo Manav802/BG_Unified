@@ -12,6 +12,10 @@ import Fade from "react-reveal/Fade";
 import Link from "next/link";
 import Slider from "react-flickity-component";
 import ImageGroup from "../pageBuilder/components/ImageGroup";
+import Section from "../pageBuilder/Section";
+import Container from "../pageBuilder/Container";
+import conclusion from "../components/footer/Conclusion";
+import Conclusion from "../components/footer/Conclusion";
 
 const sliderInfo = [
   {
@@ -120,25 +124,11 @@ class Landing extends Component {
           </video> */}
           <Slider options={{ autoPlay: 5000, prevNextButtons: false, pageDots: false, draggable: false }}>
             {sliderInfo.map((info, index) => (
-              <Box mt={80} className="w-100 landing-section">
+              <Box className="w-100 landing-section">
                 <Image src={info.imgSrc} opacity={.4} className="bg-image"></Image>
                 <div className="container py-5">
                   <div className="row">
                     <div className="col-lg-8 offset-lg-2">
-
-                      {/* <div className="h3 NunitoSans-Black d-flex flex-wrap mb-0">
-                    {" "}
-                    <Typewriter
-                      options={{
-                        strings: ["Deploy", "Scale", "Monitor"],
-                        autoStart: true,
-                        loop: true,
-                      }}
-                    />{" "}
-                    <div>&nbsp;your</div>
-                    <div>&nbsp;business</div>
-                  </div> */}
-
                       <div>
                         <div className="display3 slider-text text-center text-white mt-0">
                           {info.title}
@@ -178,13 +168,7 @@ class Landing extends Component {
           </Slider>
         </div>
 
-        <div className="brands">
-          <div className="container-fluid" >
-            <div className="">
-              <ImageGroup objectFit="contain" images={["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/equinix.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png", "/assets/images/brands/fujitsu.png", "/assets/images/brands/halls.png", "/assets/images/brands/huawei.png", "/assets/images/brands/hutchisonports.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/sabre_pacific.png", "/assets/images/brands/straintz.png", "/assets/images/brands/veeam.png"]} minW={["119.5px", "135.5px", "175px", "231px", "283px"]} width="auto" />
-            </div>
-          </div>
-        </div>
+        
         <div className="section py-3">
           <div className="container">
 
@@ -298,8 +282,8 @@ class Landing extends Component {
           </div>
         </div>
         <Fade duration={500} cascade distance={"30%"} bottom>
-          <div className="section pt-0">
-            <div className="container pb-5">
+          <div className="section py-0 py-md-4">
+            <div className="container pb-2">
               <Heading size="2xl" fontWeight="900" px="10%" fontFamily="Nexa Bold" textAlign="center">We have a ‘can do’ attitude with an ‘easy to work with’ culture.</Heading>
               <Heading size="md" fontWeight="500" px="10%" opacity={.8} textAlign="center">Our values
               are based around fresh thinking, delivering on our promises, showing
@@ -463,17 +447,11 @@ class Landing extends Component {
             </div>
           </div>
         </div>
-        <div className="section pb-0">
-          <div className="container">
-            <div className="my-lg-4 py-lg-3">
-              <CaseStudy caseStudyDetails={CASESTUDY} link="read" />
-            </div>
-          </div>
-        </div>
-        <Fade duration={500} cascade distance={"30%"} bottom>
-          <div className="section">
-            <div className="container p-0">
-
+      
+        
+          <Section bg="light.400" py={24}>
+            <div className="container">
+            <Fade duration={500} cascade distance={"30%"} bottom>
               <div className="row">
                 <div className="col-12 text-center NunitoSans-ExtraBold text-primary text-uppercase">
                   Testimonials
@@ -486,20 +464,17 @@ class Landing extends Component {
                   <Image position="absolute" top="0px" left={0} opacity={.07} src="https://image.flaticon.com/icons/svg/102/102571.svg" size="96px"></Image>
                 </div>
               </div>
+              </Fade>
             </div>
-          </div>
-        </Fade>
-        <Fade duration={300} cascade distance={"50%"} left>
-          <div className="section">
-            <div className="container">
-              <Box py={12} px={24} rounded={8} overflow="hidden" className="bg-dark position-relative">
-                <Heading size="xl" fontFamily="Nexa Bold" color="white">Let's get IT done.</Heading>
-                <Link href="/solutions"><Button variant="solid" variantColor="primary" mt={6} size="lg" >Explore Now</Button></Link>
-                <Image height="340px" position="absolute" right={0} top="-30%" src="/assets/images/vectors/ic_chip_neon.png"></Image>
-              </Box>
-            </div>
-          </div>
-        </Fade>
+            </Section>
+        
+        <Section>
+            <CaseStudy caseStudyDetails={CASESTUDY} link="read" />
+        </Section>
+        <Section containerWidth={["100%","90%"]} className="brands">
+            <ImageGroup objectFit="contain" images={["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/equinix.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png", "/assets/images/brands/fujitsu.png", "/assets/images/brands/halls.png", "/assets/images/brands/huawei.png", "/assets/images/brands/hutchisonports.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/sabre_pacific.png", "/assets/images/brands/straintz.png", "/assets/images/brands/veeam.png"]} minW={["119.5px", "135.5px", "175px", "231px", "283px"]} width="auto" />
+        </Section>
+        <Conclusion></Conclusion>
       </div>
     );
   }

@@ -192,7 +192,7 @@ function ErrorForm(props) {
                                     <TabPanel>
                                         <FormControl mt={10} isRequired>
                                             <FormLabel>Device you were using:</FormLabel>
-                                            <RadioButtonGroup name="devicetype" isInline justify="center" value={form.device} spacing={4} onChange={value => setDevice(value)}>
+                                            <RadioButtonGroup name="devicetype" isInline value={form.device} spacing={4} onChange={value => setDevice(value)}>
                                                 <CustomRadio size="lg" value="Smartphone">Smartphone </CustomRadio>
                                                 <CustomRadio size="lg" value="Tablet">Tablet</CustomRadio>
                                                 <CustomRadio size="lg" value="browser">PC</CustomRadio>

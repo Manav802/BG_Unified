@@ -7,7 +7,7 @@ function Feature({image, icon, size = "48px", title,iconColor = "dark.500" ,colo
     return (
         <Flex direction="column" align={align} {...props}>
             {svg && <SVG src={svg} color={iconColor} size={size}></SVG>}
-            {image && <Image src={image} objectFit="cover" size={"48px" || size}></Image>}
+            {image && <Image src={image} objectFit="cover" size={size}></Image>}
             {icon && <Box as={icon} size={size}></Box>}
             <Heading fontFamily={titleFont} my={4} size={titleSize} textAlign ={align}>{title}</Heading>
             <Text opacity={textOpacity} textAlign="justify" style={{textAlignLast: align}}>{description}</Text>

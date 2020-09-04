@@ -2,23 +2,16 @@ import InfraPricing from "../../pricing/InfraPricing";
 import DNSPricing from "../../pricing/DNSPricing";
 
 export default [
-    {
-        pb: 0,
-        body: [   
-        {
-            width: "100%",
-            type: "content",
-            data: [{
-                textAlign: "justify",
-                fontSize: "xl",
-                text: "Delivering a scalable, reliable and managed authoritative Domain Name System (DNS) As A Service. With our assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users. The main functionality of DNS is to convert domain names into IP addresses, for the web browsers to identify a website, for them to load the required resources. Domain Name System Service allows you to host the website over the web, maintain and monitor in real-time."                
-            }]
-        }]
-    },
     {   
-        title : "Our Pricing Plans",
-        my: 0,
-        containerWidth: "100%",
+        title : "Hosting with Freedom Built-In",
+        description: <span>Delivering a scalable, reliable and managed authoritative Domain Name System (DNS) As A Service. With our assured low latency and high availability, 
+            it is a cost-effective way to make your applications and services available to your users. <br/><br/>The main functionality of DNS is to convert domain names into IP addresses, 
+            for the web browsers to identify a website, 
+            for them to load the required resources. Domain Name System Service allows you to host the website over the web, maintain and monitor in real-time.</span>,
+        descriptionStyle: {
+            fontSize: "lg",
+            px: 6,
+        },
         gap: 0,
         body: [{
             width: "100%",
@@ -29,10 +22,10 @@ export default [
     {
         my: 0,
         py: "48px",
-        bgImage: "url(https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-        blend: "overlay",
-        bg: "dark.500",
-        color: "white",
+        bgImage: "url('/assets/images/backgrounds/network_abstract.jpg')",
+        blend: "screen",
+        bg: "light.400",
+        color: "dark.500",
         containerWidth: ["100%", "100%", "88%", "72%"],
         rowDistance: 8,
         gap: 6,
@@ -57,32 +50,32 @@ export default [
                 containerData : [{
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Scalable Solutions"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "Scalable Solutions"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Low Latency"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/code/time-schedule.svg", mt: 4, title: "Low Latency"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg",mt: 4, title: "Authorotative"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/key.svg",mt: 4, title: "Authorotative"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "High Asset Utilization"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/devices/diagnostics.svg", mt: 4, title: "High Asset Utilization"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Security Ensured"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/shield-check.svg", mt: 4, title: "Security Ensured"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Total Interoperibility"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Total Interoperibility"}
                 }],
             },
         ]   
@@ -90,7 +83,7 @@ export default [
     
     {
         pb: 0,
-        title : "Hosting with Freedom Built-In",
+        title : "Why BG Unified Solutions?",
         body: [
        
         {
@@ -128,29 +121,4 @@ export default [
             }
         }]
     },
-    {
-        my:2,
-        title: "Concurrent DNS Service with superior IP Technology",
-        titleStyle: {
-            color: "white",
-            fontSize: "2xl"
-        },
-        descriptionStyle: {
-            fontSize: "lg",
-            align: "left",
-            px: "0",
-            color: "light.500",
-            opacity: 1
-        },
-        description: "Deploy easily, efficiently monitor, and transparently scale the applications tailored as per your business requirements!!",
-        bgImage: "url(https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-        endingButton: true,
-        endingButtontitle: "Lets get Started!",
-        endingButton: {
-            bg: "primary.500",
-            variant: "lg",
-            fontSize: "lg",
-            mt: "5%"
-    }
-    }
 ]

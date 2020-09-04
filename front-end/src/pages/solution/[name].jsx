@@ -21,7 +21,7 @@ function Solutions() {
 
     return (
         <>
-            <Box py="10.5rem" color="white" className="bg-dark position-relative">
+            <Box py={["6rem","8rem","10rem"]} color="white" className="bg-dark position-relative">
                 <Image
                     opacity=".3"
                     className="bg-image"
@@ -37,7 +37,7 @@ function Solutions() {
                                 </Flex>
                             </Fade>
                             <Fade duration={700} delay={100} bottom>
-                                <Heading size={["40px", "48px", "72px"]} className="display2 text-white">{service.slogan}</Heading>
+                                <Heading fontSize={["40px", "48px","56px","64px"]} className="display2 text-white">{service.slogan}</Heading>
                             </Fade>
 
                             {/* <Fade duration={700} delay={300} bottom>
@@ -63,12 +63,12 @@ function Solutions() {
             <Box bg="light.400" mt="128px" px="16px" py={6}>
             {service.conclusion && <RenderSection 
                 title = "Get Started Now"
-                titleStyle={{fontSize:"48px"}}
-                descriptionStyle={{mt: 4, opacity: 1, fontSize: "2xl"}}
+                titleStyle={{fontSize:["36px","40px","48px"]}}
+                descriptionStyle={{mt: 4, opacity: 1, fontSize: ["lg","xl","2xl"]}}
                 color="white"
                 bg="primary.500"
                 description= {service.conclusion}
-                py={12}
+                py={[6,8,8,10]}
                 mt="-128px"
                 mx="auto"
                 width = {["100%", "100%", "720px", "960px", "1140px"]}
