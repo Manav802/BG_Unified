@@ -31,7 +31,7 @@ function DNSPricing(props) {
   const handledailyBackups = (dailyBackups) => (dailyBackups) ? (",Add Daily Backups") : ("")
   const [redundantDNS,setRedundantDNS] = React.useState(false);
   const handleRedundantDNS = (redundantDNS) => (redundantDNS) ? (",Include Redundant DNS") : ("")
-  return (<div className="container">
+  return (<div id="DNSPricing" className="container">
   <div className="row">
     <div className="col-lg-10 offset-lg-1">
       <Tabs align="center">

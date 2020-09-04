@@ -11,7 +11,7 @@ import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
 
 function FirewallPricing(props) {
   return (
-        <div className="container">
+        <div id="FirewallPricing" className="container">
           <div className="row">
           
             <div className="col-lg-10 offset-lg-1">

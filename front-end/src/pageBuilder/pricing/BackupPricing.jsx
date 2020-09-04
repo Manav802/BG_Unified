@@ -27,7 +27,7 @@ function BackupPricing(props) {
         hourlyBackups ? ",Enabled Hourly Backups" : "";
         
     return (
-            <div>
+            <div id="pricing" className="container">
                 <Fade duration={500} bottom>
                     <div className="row no-gutters">
                         <div className="col-lg-4 my-3">
