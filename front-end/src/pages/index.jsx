@@ -298,8 +298,8 @@ class Landing extends Component {
           </div>
         </div>
         <Fade duration={500} cascade distance={"30%"} bottom>
-          <div className="section pt-0">
-            <div className="container pb-5">
+          <div className="section py-0 py-md-4">
+            <div className="container pb-2">
               <Heading size="2xl" fontWeight="900" px="10%" fontFamily="Nexa Bold" textAlign="center">We have a ‘can do’ attitude with an ‘easy to work with’ culture.</Heading>
               <Heading size="md" fontWeight="500" px="10%" opacity={.8} textAlign="center">Our values
               are based around fresh thinking, delivering on our promises, showing
