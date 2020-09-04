@@ -33,54 +33,54 @@ export default [
         blend: "overlay",
         bg: "dark.500",
         color: "white",
+        containerWidth: ["100%", "100%", "88%", "72%"],
         rowDistance: 8,
         gap: 6,
         body: [
             {
-                py:2,
-                my:6,
-                width: [1/2],
+                my:[0,4],
+                width: ["100%","100%","100%",1/2, 5/12],
                 type: "content",
                 data: [{
                     title: "For a stronger Web Identity",
                     textAlign: "left",
-                    fontSize: "xl",
-                    titleSize:"32px",
+                    fontSize: "lg",
+                    titleSize: 48,
                     
-                    text: "BG Unified Solutions give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches. BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use Information Technology to improve their business results."
+                    text: "BG Unified Solutions give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches. "
                     
                 }]
             },
             {
-                width : [1/2],
+                width : ["100%","100%","100%",1/2, 7/12],
                 type: "container",
                 containerData : [{
-                    width: [1,1/2,1/3],
+                    width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
                     data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Scalable Solutions"}
                 },
                 {
-                    width: [1,1/2,1/3],
+                    width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
                     data: {align: "center", titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Low Latency"}
                 },
                 {
-                    width: [1,1/2,1/3],
+                    width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
                     data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg",mt: 4, title: "Authorotative"}
                 },
                 {
-                    width: [1,1/2,1/3],
+                    width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
                     data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "High Asset Utilization"}
                 },
                 {
-                    width: [1,1/2,1/3],
+                    width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
                     data: {align: "center",titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Security Ensured"}
                 },
                 {
-                    width: [1,1/2,1/3],
+                    width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
                     data: {align: "center", titleSize:"md", image:"/assets/images/icons/color/ui.svg", mt: 4, title: "Total Interoperibility"}
                 }],
@@ -99,7 +99,7 @@ export default [
             data: [{
                 textAlign: "center",
                 fontSize: "xl",
-                text: "BG Solutions has gained an excellent reputation in design and implementation of IP technology and significant experience in Domain Name System services design and implementation for a number of clients and in distributed environments and locations."
+                text: "BG Solutions has gained an excellent reputation in design and implementation of IP technology and significant experience in Domain Name System services design and implementation for a number of clients and in distributed environments and locations. BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use Information Technology to improve their business results."
             }]
         }]
     },

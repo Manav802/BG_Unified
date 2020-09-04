@@ -1,20 +1,15 @@
 import CardWithIcon from "./CardWithIcon"
-import { services } from "../../../public/assets/data/searchDatabase.json"
+import services from "../../database/services"
 import React, { useEffect } from 'react';
 
 
 function Service(props) {
 
-    const [service, setService] = React.useState({})
-
-    useEffect(() => {
-        var obj = services.filter(s => s.name === props.service)[0]
-        setService(obj)
-    })
+    var service = Object.entries(services).filter(s => s[1].title === props.service)[0]
 
     return (
         <div>
-            <CardWithIcon title={service.name} iconBg="#000" link={service.link} icon={service.icon}>{service.description}</CardWithIcon>
+            {service && <CardWithIcon title={service[1].title} iconBg={service.color} link={"/solution/" + service[0]} icon={service[1].icon}>{service[1].description}</CardWithIcon>}
         </div>
     );
 }

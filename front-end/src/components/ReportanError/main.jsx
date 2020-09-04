@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioGroup, Collapse
+    FormControl, FormLabel,Link, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioGroup, Collapse
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
@@ -143,7 +143,7 @@ function ErrorForm(props) {
     }
     return (
         <>
-            <a className="" onClick={onOpen}>Report an Error</a>
+            <Link mx="16px" fontSize="sm" textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
             <Modal isOpen={isOpen} onClose={formClose} isCentered>
                 <ModalOverlay />
                 <ModalContent className="p-4" style={{ maxWidth: "700px", minHeight: "750px" }}>

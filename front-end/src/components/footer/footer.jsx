@@ -1,116 +1,53 @@
 import React from "react";
-import { Image, Box } from "@chakra-ui/core";
+import { Image, Box, Flex, Heading,Button, Text } from "@chakra-ui/core";
 import { GrFacebookOption, GrLinkedinOption, GrTwitter } from "react-icons/gr";
 import Link from "next/link";
 import FeedbackForm from "../Feedback/main";
 import ErrorForm from "../ReportanError/main";
+import Container from "../../pageBuilder/Container";
+import Section from "../../pageBuilder/Section";
+import SVG from "../svg/svg";
 
 function footer(props) {
   return (
-    <div className="footer bg-light">
-      <div className="container">
-        <div className="row pb-4">
-          <div className="col-lg-3 my-3">
-            <Image src="/assets/logo.png" className="mb-4" h="64px"></Image>
-            <p className="footer-content">
-              Dynamic Team of Creative People, Innovators and Technical Experts.
-              Your partner for all hosting business solutions and services.
-            </p>
-          </div>
-          <div className="col-lg-9 row">
-            <div className="col-sm-4 d-flex flex-column footer-content">
-              <span className="mt-4 mb-1">IT Infrastructural Services</span>
-              <Link href="/services/infra">
-                <a>Infrastructure As A Service</a>
-              </Link>
-              <Link href="/services/storage-unit">
-                <a>Storage As A Service</a>
-              </Link>
-              <Link href="/services/cloud-logging">
-                <a>Cloud Logging As A Service</a>
-              </Link>
-              <Link href="/services/platform">
-                <a>Platform As A Service</a>
-              </Link>
-              <Link href="/services/firewall">
-                <a>Firewall As A Service</a>
-              </Link>
-              <Link href="/services/application-dev">
-                <a>Application Development As A Service</a>
-              </Link>
-              <Link href="/services/web-hosting">
-                <a>Web Hosting As A Service</a>
-              </Link>
-              <Link href="/services/backup">
-                <a>Backup As A Service</a>
-              </Link>
-
-              <span className="mt-4 mb-1">Disaster Recovery Services</span>
-              <Link href="/services/disaster-recovery">
-                <a>DR As A Service</a>
-              </Link>
-            </div>
-            <div className="col-sm-4 d-flex flex-column footer-content">
-              <span className="mt-4 mb-1">Network Services</span>
-              <Link href="/services/sd-wan">
-                <a>SD-WAN As A Service</a>
-              </Link>
-              <Link href="/services/proxy-server">
-                <a>Proxy As A Service</a>
-              </Link>
-              <Link href="/services/dns">
-                <a>DNS As A Service</a>
-              </Link>
-              <Link href="/services/wireless-networks">
-                <a>Wireless As A Service</a>
-              </Link>
-              <Link href="/services/cloud-exchange">
-                <a>Cloud Exchange Connectivity As A Service</a>
-              </Link>
-              <Link href="/services/sip-connectivity">
-                <a>SIP As A Service</a>
-              </Link>
-              <span className="mt-4 mb-1">Collaborative Services</span>
-              <Link href="/services/ucaas">
-                <a>Unified Communications As A Service</a>
-              </Link>
-              <Link href="/services/contact-center">
-                <a>Customer Support As A Service</a>
-              </Link>
-              <Link href="/services/architectural-consultancy">
-                <a>Architectural Consultancy As A Service</a>
-              </Link>
-            </div>
-            <div className="col-sm-4 d-flex flex-column footer-content">
-              <span className="mt-4 mb-1">Company</span>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-              <Link href="/solutions">
-                <a>Solutions</a>
-              </Link>
-              <Link href="/about">
-                <a>About Us</a>
-              </Link>
-              <Link href="/newsroom">
-                <a>Newsroom</a>
-              </Link>
-              <Link href="/contact">
-                <a>Contact Us</a>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="w-100 text-center">
-          <div className="my-2">
-            Terms | Privacy Policies | <ErrorForm /> |<FeedbackForm />
-          </div>
-          <div className="my-2">
-            All Rights Reserved © BG Unified Solutions 2020
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+   <Section my={0} py={16} bg="gray.900" color="white">
+     <Container>
+        <Flex justify="space-between">
+            <Box width={["100%","100%", "auto"]}>
+              <Image src="/assets/logo_white.png" style={{filter:"brightness(.95)"}}  h="64px"></Image>
+              <Flex mt={5} align="center">
+                    <SVG src="/assets/images/icons/library/communication/call.svg" color="light.500" size="28px"></SVG>
+                    <Heading px={2} mb={1} size="md">1300 00 BGUS</Heading>
+                </Flex>
+            </Box>
+            <Box width={["100%","100%", 1/3]}>
+              <Heading px={2} mb={3} size="sm" textTransform="uppercase" letterSpacing={1.2}>About the company</Heading>
+              <Text px={2}>BG Unified Solutions is a specialist IT services and solutions provider that helps clients plan, build, support and manage their IT infrastructures</Text>
+              <Button mt={3} variant="unstyled" variantColor="white" p={1}><SVG src="/assets/images/icons/library/social/linkedin.svg" color="light.500" size="24px"></SVG></Button>
+            </Box>
+            <Flex flexDirection="column" width={["100%","100%", 1/4]} px={4}>
+                <Link href="/"><Button variant="unstyled" variantColor="white">Home</Button></Link>
+                <Link href="/"><Button variant="unstyled" variantColor="white">Solutions</Button></Link>
+                <Link href="/"><Button variant="unstyled" variantColor="white">Our Features</Button></Link>
+                <Link href="/"><Button variant="unstyled" variantColor="white">Newsroom</Button></Link>
+                <Link href="/"><Button variant="unstyled" variantColor="white">About Us</Button></Link>
+                
+            </Flex>
+        </Flex>
+      </Container>
+   </Section>
+   <Box bg="black" color="white" py={3}>
+     <Container>
+       <Flex justify="space-between">
+       <Text>© Copyright 2019 BG Unified Solutions</Text>
+       <Box>
+          <ErrorForm/><FeedbackForm/>
+       </Box>
+       </Flex>
+     </Container>
+   </Box>
+   </>
   );
 }
 

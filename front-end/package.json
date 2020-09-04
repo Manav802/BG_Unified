@@ -40,6 +40,7 @@
     "react-reveal": "^1.2.2",
     "react-router": "^5.2.0",
     "react-scripts": "^3.4.3",
+    "react-svg": "^11.0.37",
     "react-transition-group": "^4.4.1",
     "react-visibility-sensor": "^5.1.1",
     "typescript": "^4.0.2",

@@ -1,14 +1,62 @@
 import InfraPricing from "../../pricing/InfraPricing";
 
 export default [
+  
+    {   
+        my: 0,
+        pt: 0,
+        containerWidth: "100%",
+        gap: 0,
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <InfraPricing/>
+        }]
+    },
     {
-        title: "Store your data with our security and reliability",
-        description: "Optimizing infrastructural resources is essential to controlling the cost of data growth. The Enterprise Infrastructure Assessment provides in-depth reports and recommendations for improving storage efficiency, performance, and availability. Findings are linked to your specific risks and benefits—so you can scale your infra systems to successfully serve the growing needs of your business. We can address your heterogeneous data centre environment and provide data and recommendations across all assets.",
-        descriptionStyle: {
-            fontSize: "xl",
-            px: 0
+        title: "Supported Operating System",
+        my: 0,
+        py: 16,
+        bg: "light.400",
+        titleStyle: {
+            fontSize: "2xl",
+            opacity: .7
         },
         rowDistance: 8,
+        body: [{
+            width: "100%",
+            type: "imageGroup",
+            data: {
+                images: ["/assets/images/os/redhat.png", "/assets/images/os/windows10.png", "/assets/images/os/windowsServer.png"],
+                height: "96px",
+                width: "128px",
+                objectFit: "contain"
+            }
+        }]
+    },
+    {
+        body: [{
+            type: "content",
+            data: [{
+                text: <span>Optimizing infrastructural resources is essential to controlling the cost of data growth. 
+                    The Enterprise Infrastructure Assessment provides in-depth reports and recommendations for improving storage efficiency, 
+                    performance, and availability. Findings are linked to your specific risks and benefits—so you can scale your infra 
+                    systems to successfully serve the growing needs of your business. We can address your heterogeneous data centre environment 
+                    and provide data and recommendations across all assets.</span>,
+                fontSize: "xl",
+                textAlign: "center",
+            }]
+        }],
+        pt: 10,
+        pb: 0,
+        mb: 0
+    },
+    {
+        
+        rowDistance: 8,
+        my: 0,
+        pt: 5,
+        pb: 16,
         gap: 10,
         body: [
             {
@@ -91,42 +139,12 @@ export default [
             },
         ]
     },
-    {   
-        title : "Our Pricing Plans",
-        backgroundColor: "light.400",
-        my: 0,
-        containerWidth: "100%",
-        gap: 0,
-        body: [{
-            width: "100%",
-            type: "pricing",
-            data: <InfraPricing/>
-        }]
-    },
     {
-        title: "Supported Operating System",
-        pb: 16,
-        pt: 0,
-        my: 0,
-        titleStyle: {
-            fontSize: "2xl",
-            opacity: .7
-        },
-        bg: "light.400",
-        rowDistance: 8,
-        body: [{
-            width: "100%",
-            type: "imageGroup",
-            data: {
-                images: ["/assets/images/os/redhat.png", "/assets/images/os/windows10.png", "/assets/images/os/windowsServer.png"],
-                height: "96px",
-                width: "128px",
-                objectFit: "contain"
-            }
-        }]
-    },
-    {
-        pb: 0,
+        py: 16,
+        bgImage: "url(https://images.unsplash.com/photo-1484662020986-75935d2ebc66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)",
+        bg: "#333",
+        blend: "multiply",
+        color: "white",
         body: [
         {
             width: 1/3,
@@ -155,7 +173,13 @@ export default [
                 suffix: "+"
             }
         },    
-        {
+        ]
+    },
+    {
+        pt: 10,
+        py: 0,
+        body: [
+            {
             width: "100%",
             type: "content",
             data: [{
@@ -163,11 +187,8 @@ export default [
                 fontSize: "xl",
                 text: "With BG Unified Solutions Infrastructure as a Service, not only do you pay only for the data storage you use when you use it but we provide you with a geographical redundant storage infrastructure and ready access to experts in Infrastructure Technologies who will be eager to understand your storage requirements. Initial setup is very quick, adding or removing capacity is even faster and without any downtime."
             }]
-        }]
-    },
-    {
-        py: 0,
-        body: [{
+        },
+        {
             width: "100%",
             type: "accordion",
             data: {

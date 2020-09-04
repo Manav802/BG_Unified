@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Radio, RadioGroup, FormHelperText, useDisclosure
+    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Radio, RadioGroup, FormHelperText, useDisclosure, Link
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
@@ -89,7 +89,7 @@ function FeedbackForm(props) {
     }
     return (
         <>
-            <a className="" onClick={onOpen}>Feedback</a>
+            <Link mx="16px" fontSize="sm" textTransform="uppercase" onClick={onOpen}>Send A Feedback</Link>
             <Modal isOpen={isOpen} onClose={formClose} isCentered>
                 <ModalOverlay />
                 <ModalContent className="p-4" style={{ maxWidth: "600px", width: "600px" }}>

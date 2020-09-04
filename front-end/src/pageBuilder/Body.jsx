@@ -12,7 +12,8 @@ import AlternateRow from './components/AlternateRow';
 import Container from './Container';
 import Row from './Row';
 import {SimpleGrid} from '@chakra-ui/core'
-function Body({ gap = 4, data, width, ...props }) {
+import ImageAndText from './components/ImageAndText';
+function Body({ gap = 4,type, data, width, ...props }) {
     function giveMeComponent(type,data) {
         switch (type) {
             case "content":
@@ -57,9 +58,13 @@ function Body({ gap = 4, data, width, ...props }) {
                 return (
                     <AlternateRow {...data}></AlternateRow>
                 )
+            case "image&text":
+                return (
+                    <ImageAndText {...data}></ImageAndText>
+                )
             case "container":
                 return (
-                    <Row direction={["column","row"]}>
+                    <Row>
                         {props.containerData.map((dat)=>(<Box px={[6, 6, gap / 2]} my={4} w={dat.width}>{giveMeComponent(dat.type,dat.data)} </Box>))}
                     </Row>
                 )
@@ -68,7 +73,7 @@ function Body({ gap = 4, data, width, ...props }) {
 
     return (
         <Box px={[6, 6, gap / 2]} my={4} w={width} {...props}>
-            {giveMeComponent(props.type,data)}
+            {giveMeComponent(type,data)}
         </Box>
     );
 }
