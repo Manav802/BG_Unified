@@ -125,18 +125,18 @@ export default [
             data: {
                 fontSize: "md",
                 content: [{
-                    title: "Load Balancing",
-                    description: "Meet the needs of your business—today and as you grow—with innovative, flexible and scalable load balancing solutions.Platform-oriented cloud platforms.",
-                    image: "/assets/images/Illustrations/Varied_Web_Hosting_Solutions.svg"
-                },
-                {
-                    title: "Easy execution",
-                    description: "Enabling clients to develop, run and manage business applications without the need to build authentic software infrastructure. Platform-oriented cloud platforms obtain a higher level of abstraction.",
+                    title: "Flexibility / Scalability",
+                    description: "For any of your organization departments, our UCaaS offering provides a simplified IT management and a highly scalable platform. Irrespective of the end-user, everyone gets access to the latest and the greatest collaboration tools.",
                     image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg"
                 },
                 {
-                    title: "Cost-effective scalability",
-                    description: " Scale up your project on demand by purchasing just the amount of hardware or storage you require at affordable prices. Platform as a service cloud providing you with limitless resources of computing.",
+                    title: "Cost-Effectiveness",
+                    description: "For your business, we are offering and providing a flat billing structure. It's designed for pay as you go model that shifts your costs from capex to opex. You will have very simplified and predictable expenses and have the option of rolling any upfront or one-off expenses into your monthly payment.",
+                    image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg"
+                },
+                {
+                    title: "Wide range of services",
+                    description: "Employees get access to voice and video, voicemail and integrated messaging, instant messaging and presence, web conferencing and desktop collaboration, mobility service.",
                     image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
                 },]
             }
