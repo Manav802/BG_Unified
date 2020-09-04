@@ -37,7 +37,7 @@ export default [
     },
     {
         gap: 10,
-        py: 16,
+        py: 0,
         my: 0,
         body: [
             {
@@ -84,6 +84,7 @@ export default [
     {
         title: "Why BG Unified Solutions?",
         rowDistance: 8,
+        py: 16,
         body: [{
             width: "100%",
             type: "accordion",
