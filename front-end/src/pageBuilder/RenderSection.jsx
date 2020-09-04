@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@chakra-ui/core';
+import { Button,Box } from '@chakra-ui/core';
 import Section from './Section';
 import Title from './Title';
 import Description from './Description';
@@ -14,13 +14,15 @@ function RenderSection({ title, typeWriter_title, titleStyle, color = "dark.500"
             <Section containerWidth={containerWidth} color={color} align={align} {...props}>
                 {title && <Title {...titleStyle}>{title}</Title>}
                 {typeWriter_title && <Title {...titleStyle}>
+                <Box  justifyContent="center" className="d-flex flex-lg-row flex-column text-center">
                     <span>{typeWriter_title.before}</span>
                     <Typewriter options={{
                         strings: typeWriter_title.typed,
                         autoStart: true,
                         loop: true
-                    }}></Typewriter>
-                    <span>{typeWriter_title.after}</span>
+                    }}></Typewriter>&nbsp;
+                    {typeWriter_title.after}
+                </Box>
                 </Title>}
                 {description && <Description {...descriptionStyle}>{description}</Description>}
                 {body && <Row rowDistance={rowDistance}>

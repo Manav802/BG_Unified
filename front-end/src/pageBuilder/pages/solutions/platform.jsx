@@ -3,7 +3,7 @@ export default [
     {
         typeWriter_title: {
             before: "",
-            typed: ["Deploy, Run, Manage and Maintain"],
+            typed: ["Deploy","Run","Manage","Maintain"],
             after: " your application on the cloud platform"
         },
         description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
