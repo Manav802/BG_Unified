@@ -1,137 +1,98 @@
-
+import BackupPricing from "../../pricing/BackupPricing";
 export default [
     {
-        title: "Backup for your Digital Enterprise!!",
-        description: " BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data while enabling self-service restoration capability to your teams. We’ll create a realistic roadmap and provide continual service so you can capture the promise of tomorrow’s data centre, cloud and backup—today.",
-        descriptionStyle: {
-            fontSize: "xl",
-            px: 0,
+        typeWriter_title:{
+            before:"",
+            typed:["Deploy, Run, Manage and Maintain"],
+            after:" your application on the cloud platform"
         },
-        rowDistance: 8,
-        gap: 10,
-    },
-    {
-        title: "Some title here",
-        pb: 4,
-        pt: 4,
-        my: 0,
-        titleStyle: {
-            fontSize: "2xl",
-            opacity: .9
+        description:"End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
+        titleStyle:{
+            textAlign:"justify"
         },
-        bg: "light.400",
-        rowDistance: 8,
-        containerWidth: "100%",
-        body: [{
-            width: "100%",
-            type: "imageGroup",
-            data: {
-                images: [{url:"/assets/images/os/redhat.png",caption:"Hiii"}, {url:"/assets/images/os/windows10.png",caption:"Hiii"}, {url:"/assets/images/os/windowsServer.png",caption:"Hiii"}],
-                captionStyles:{
-                    fontSize:"lg",
-                    mt:"10%"
-                },
-                height: "96px",
-                width: ["128px"],
-                objectFit: "contain",
-                spacing: ["5%", "6%", "12%"]
-            }
-        }]
-    },    
-    {
-        title: "Why BG Unified Solutions?",
-    },
-    {
-        body: [{
-            width: "100%",
-            type: "altrow",
-            data: {
-                textWidth: ["100%", "100%", "60%",],
-                descriptionStyles: {
-                    opacity: 0.7,
-                    textAlign: "justify",
-                    mr: ["0", "0", "40px"],
-                    fontSize: "lg"
-                },
-                titleStyles: { fontSize: "xl" },
-                imageStyles: { maxWidth: ["50%", "50%", "100%"], mx: "auto", mt: "30px" },
-                direction: ["column", "column", "row"],
-                content: {
-                    image: "/assets/images/Illustrations/low_pricing.svg",
-                    title: "Flexible and Scalable Service",
-                    description: "For any of your organization department, our BaaS offering provides a simplified IT management and a highly scalable platform. Irrespective of the end-user, everyone gets to access to the latest and the greatest backup technology stack. Customized and tailor solutions to meet client needs with Local end-market support services and Local language capabilities"
-                }
-            }
-        }]
-    },
-    {
-        body: [{
-            width: "100%",
-            type: "altrow",
-            data: {
-                textWidth: ["100%", "100%", "60%",],
-                descriptionStyles: {
-                    opacity: 0.7,
-                    textAlign: "justify",
-                    ml: ["0", "0", "40px"],
-                    fontSize: "lg"
-                },
-                titleStyles: { fontSize: "xl", ml: ["0", "0", "40px"] },
-                imageStyles: { maxWidth: ["50%", "50%", "100%"], mx: "auto", mt: "30px" },
-                direction: ["column", "column", "row-reverse"],
-                content: {
-                    image: "/assets/images/Illustrations/low_pricing.svg",
-                    title: "Cost-Effective Solution",
-                    description: "For your business, we are offering and providing a flat billing structure. It's designed for pay as you go model that shifts your costs from capex to opex. You will have very simplified and predictable expenses and have the option of rolling any upfront or one-off expenses into your monthly payment."
-                }
-            }
-        }]
-    },
-    {
-        body: [{
-            width: "100%",
-            type: "altrow",
-            data: {
-                textWidth: ["100%", "100%", "60%",],
-                descriptionStyles: {
-                    opacity: 0.7,
-                    textAlign: "justify",
-                    mr: ["0", "0", "40px"],
-                    fontSize: "lg"
-                },
-                titleStyles: { fontSize: "xl" },
-                imageStyles: { maxWidth: ["50%", "50%", "100%"], mx: "auto", mt: "30px" },
-                direction: ["column", "column", "row"],
-                content: {
-                    image: "/assets/images/Illustrations/low_pricing.svg",
-                    title: "Back it Up ",
-                    description: "Geographically sound, redundant, quick and efficient increasing your backup by 60%. Highly advanced, available and multiple data centre locations offering multiple IP types globally, in a clustered or isolated environment."
-                }
-            }
-        }]
-    },
-    {
-        title: "Customizable Data Protection for your Business",
-        titleStyle: {
-            color: "white",
-            fontSize: "2xl"
-        },
-        descriptionStyle: {
-            fontSize: "lg",
-            align: "left",
-            px: "0",
-            color: "light.500",
-            opacity: 1
-        },
-        description: "Migrate your legacy production Application Environments to Next-Gen Data Centres and enable your journey to the cloud.",
-        bgImage: "url(https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-        endingButtontitle: "Lets get Started!",
-        endingButton: {
-            bg: "primary.500",
-            variant: "lg",
-            fontSize: "lg",
-            color:"light.500",
-            mt: "5%"
+        descriptionStyle:{
+            textAlign:"justify"
         }
+    },
+    {
+        gap: 10,
+        py: 16,
+        body: [
+            {
+                width: ["100%", 1/2, 1/3],
+                type: "feature",
+                data: {
+                    titleSize:"md",
+                    titleFont: "Nexa Bold",
+                    textOpacity:"0.7",
+                    image: "/assets/images/icons/theme/cloud-computing.svg",
+                    title: "Platform Oriented Cloud Platforms",
+                    align: "center",
+                    }
+            },    
+            {
+                width: ["100%", 1/2, 1/3],
+                type: "feature",
+                data: {
+                    titleSize:"md",
+                    titleFont: "Nexa Bold",
+                    textOpacity:"0.7",
+                    image: "/assets/images/icons/library/devices/cpu-1.svg",
+                    title: "Infinite Computing Resources",
+                    align: "center",
+                    }
+            },    
+            {
+                width: ["100%", 1/2, 1/3],
+                type: "feature",
+                data: {
+                    titleSize:"md",
+                    titleFont: "Nexa Bold",
+                    textOpacity:"0.7",
+                    image: "/assets/images/icons/color/analytics.svg",
+                    title: "Monitor on-the-go.",
+                    align: "center",
+                    }
+            },    
+        ]
+    },
+    {   
+        title : "Our Pricing Plans",
+        backgroundColor: "light.400",
+        width: "100%",
+        containerWidth: ["100%", "540px", "720px", "960px", "1140px"],
+        my: 0,
+        py:16,
+        gap: 0,
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <BackupPricing/>
+        }]
+    },
+    {
+        title:"Why BG Unified Solutions?",
+        body: [{
+            width: "100%",
+            type: "accordion",
+            data: {
+                fontSize: "md",
+                content: [{
+                    title: "Load Balancing",
+                    description: "Meet the needs of your business—today and as you grow—with innovative, flexible and scalable load balancing solutions.Platform-oriented cloud platforms.",
+                    image: "/assets/images/Illustrations/Varied_Web_Hosting_Solutions.svg"
+                },
+                {
+                    title: "Easy execution",
+                    description: "Enabling clients to develop, run and manage business applications without the need to build authentic software infrastructure. Platform-oriented cloud platforms obtain a higher level of abstraction.",
+                    image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg"
+                },
+                {
+                    title: "Cost-effective scalability",
+                    description: " Scale up your project on demand by purchasing just the amount of hardware or storage you require at affordable prices. Platform as a service cloud providing you with limitless resources of computing.",
+                    image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
+                },]
+            }
+        }]
     }
 ]
