@@ -96,7 +96,7 @@ const services = {
         description: "Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "Try our Concurrent DNS Service with superior IP Technology.",
         sections: sections.dns
     },
     "dr": {
