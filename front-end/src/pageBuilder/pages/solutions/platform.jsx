@@ -57,20 +57,6 @@ export default [
         ]
     },
     {
-        title: "Our Pricing Plans",
-        backgroundColor: "light.400",
-        width: "100%",
-        containerWidth: ["100%", "100%", "720px", "960px", "1140px"],
-        my: 0,
-        py: 16,
-        gap: 0,
-        body: [{
-            width: "100%",
-            type: "pricing",
-            data: <BackupPricing />
-        }]
-    },
-    {
         title: "Why BG Unified Solutions?",
         body: [{
             width: "100%",
