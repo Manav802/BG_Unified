@@ -143,7 +143,7 @@ const services = {
     },
     "platform": {
         title: "Platform As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Diversified Expertise",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -152,7 +152,7 @@ const services = {
         description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "We give you the power to easily deploy, efficiently monitor, and transparently scale the applications. Boost up your operational efficiency. Improve your organization’s agility.",
         sections: sections.platform
     },
     "proxy": {
