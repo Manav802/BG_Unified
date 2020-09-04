@@ -4,19 +4,42 @@ export default [
         typeWriter_title: {
             before: "",
             typed: ["Deploy, Run, Manage and Maintain"],
-            after: " your application on the cloud platform"
+            after: " Your Application on the Cloud"
         },
-        description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
-        titleStyle: {
-            textAlign: "justify"
-        },
-        descriptionStyle: {
-            textAlign: "justify"
-        }
+        gap: 10,
+        py: 0,
+        body: [
+            {
+                width: ["100%", "100%", 1 / 2],
+                type: "imageGroup",
+                data: {
+                    images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                    borderRadius: 8,
+                    width: '90%',
+                    height: "300px",
+                    objectFit: "cover"
+                }
+            },
+            {
+                width: ["100%", "100%", 1 / 2],
+                type: "content",
+                data: [{
+                    textAlign: "justify",
+                    fontSize: "lg",
+                    text: <span>
+                        With BG Unified Solutions Platform as a Service, we provide you with End-to-End DC network
+                        infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions.
+                        Huawei 10G core switching offering a high-speed spine and leaf network.
+                        Scaling up your project has never been this easy. BGUS,
+                        PaaS  provides you with limitless resources of computing.
+                 </span>
+                }]
+            }]
     },
     {
         gap: 10,
         py: 16,
+        my: 0,
         body: [
             {
                 width: ["100%", 1 / 2, 1 / 3],
@@ -26,7 +49,8 @@ export default [
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
                     image: "/assets/images/icons/theme/cloud-computing.svg",
-                    title: "Platform Oriented Cloud Platforms",
+                    title: "User Oriented Cloud Platforms",
+                    description: "Solutions for  diverse range of platforms, as and what suits you the most",
                     align: "center",
                 }
             },
@@ -39,6 +63,7 @@ export default [
                     textOpacity: "0.7",
                     image: "/assets/images/icons/library/devices/cpu-1.svg",
                     title: "Infinite Computing Resources",
+                    description: "Delivering all the necessary resources required at minimal time and cost",
                     align: "center",
                 }
             },
@@ -51,6 +76,7 @@ export default [
                     textOpacity: "0.7",
                     image: "/assets/images/icons/color/analytics.svg",
                     title: "Monitor on-the-go.",
+                    description: "Maintain and monitor your application, anytime, anywhere",
                     align: "center",
                 }
             },
@@ -61,7 +87,6 @@ export default [
         backgroundColor: "light.400",
         width: "100%",
         containerWidth: ["100%", "100%", "720px", "960px", "1140px"],
-        my: 0,
         py: 16,
         gap: 0,
         body: [{
