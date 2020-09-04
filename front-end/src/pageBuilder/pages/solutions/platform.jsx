@@ -4,7 +4,7 @@ export default [
         typeWriter_title: {
             before: "",
             typed: ["Deploy","Run","Manage"],
-            after: " your application on the cloud platform"
+            after: " your Application on the Cloud Platform"
         },
         description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
         descriptionStyle: {
@@ -19,11 +19,11 @@ export default [
                 type: "feature",
                 data: {
                     titleSize: "md",
-                    textOpacity: "0.7",
+                    textOpacity: "0.8",
                     size: "96px",
                     image: "/assets/images/icons/theme/cloud-computing.svg",
                     title: "User Oriented Cloud Platforms",
-                    description: "Solutions for  diverse range of platforms, as and what suits you the most",
+                    description: "Solutions for  diverse range of platforms, as and what suits you the most!",
                     align: "center",
                 }
             },
@@ -32,11 +32,11 @@ export default [
                 type: "feature",
                 data: {
                     titleSize: "md",
-                    textOpacity: "0.7",
+                    textOpacity: "0.8",
                     size: "96px",
                     image: "/assets/images/icons/library/devices/cpu-1.svg",
                     title: "Infinite Computing Resources",
-                    description: "Delivering all the necessary resources required at minimal time and cost",
+                    description: "Delivering all the necessary resources required at minimal time and cost!",
                     align: "center",
                 }
             },
@@ -45,11 +45,11 @@ export default [
                 type: "feature",
                 data: {
                     titleSize: "md",
-                    textOpacity: "0.7",
+                    textOpacity: "0.8",
                     size: "96px",
                     image: "/assets/images/icons/color/analytics.svg",
-                    title: "Monitor on-the-go.",
-                    description: "Maintain and monitor your application, anytime, anywhere",
+                    title: "Monitor on-the-go",
+                    description: "Maintain, monitor and manage your application, anytime, anywhere!",
                     align: "center",
                 }
             },
