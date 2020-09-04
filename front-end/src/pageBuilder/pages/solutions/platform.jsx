@@ -22,7 +22,8 @@ export default [
                     textOpacity: "0.7",
                     size: "96px",
                     image: "/assets/images/icons/theme/cloud-computing.svg",
-                    title: "Platform Oriented Cloud Platforms",
+                    title: "User Oriented Cloud Platforms",
+                    description: "Solutions for  diverse range of platforms, as and what suits you the most",
                     align: "center",
                 }
             },
@@ -35,6 +36,7 @@ export default [
                     size: "96px",
                     image: "/assets/images/icons/library/devices/cpu-1.svg",
                     title: "Infinite Computing Resources",
+                    description: "Delivering all the necessary resources required at minimal time and cost",
                     align: "center",
                 }
             },
@@ -47,6 +49,7 @@ export default [
                     size: "96px",
                     image: "/assets/images/icons/color/analytics.svg",
                     title: "Monitor on-the-go.",
+                    description: "Maintain and monitor your application, anytime, anywhere",
                     align: "center",
                 }
             },
