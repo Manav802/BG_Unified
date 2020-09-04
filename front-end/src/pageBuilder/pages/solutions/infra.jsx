@@ -43,7 +43,7 @@ export default [
                     performance, and availability. Findings are linked to your specific risks and benefits—so you can scale your infra 
                     systems to successfully serve the growing needs of your business. We can address your heterogeneous data centre environment 
                     and provide data and recommendations across all assets.</span>,
-                fontSize: "xl",
+                fontSize: ["lg","xl"],
                 textAlign: "center",
             }]
         }],
@@ -56,10 +56,11 @@ export default [
         rowDistance: 8,
         my: 0,
         pt: 5,
-        pb: 16,
+        pb: 10,
         gap: 10,
         body: [
             {
+            py:4,
             width: ["100%", 1/2, 1/3],
             type: "feature",
             data: {
@@ -73,6 +74,7 @@ export default [
                 }
             },
             {
+                py:4,
                 width: ["100%", 1/2, 1/3],
                 type: "feature",
                 data: {
@@ -86,6 +88,7 @@ export default [
                     }
             },
             {
+                py:4,
                 width: ["100%", 1/2, 1/3],
                 type: "feature",
                 data: {
@@ -99,6 +102,7 @@ export default [
                     }
             },
             {
+                py:4,
                 width: ["100%", 1/2, 1/3],
                 type: "feature",
                 data: {
@@ -112,6 +116,7 @@ export default [
                     }
             },    
             {
+                py:4,
                 width: ["100%", 1/2, 1/3],
                 type: "feature",
                 data: {
@@ -125,6 +130,7 @@ export default [
                     }
             },
             {
+                py:4,
                 width: ["100%", 1/2, 1/3],
                 type: "feature",
                 data: {
@@ -176,7 +182,6 @@ export default [
         ]
     },
     {
-        pt: 10,
         py: 0,
         body: [
             {
@@ -184,7 +189,7 @@ export default [
             type: "content",
             data: [{
                 textAlign: "justify",
-                fontSize: "xl",
+                fontSize: ["lg","xl"],
                 text: "With BG Unified Solutions Infrastructure as a Service, not only do you pay only for the data storage you use when you use it but we provide you with a geographical redundant storage infrastructure and ready access to experts in Infrastructure Technologies who will be eager to understand your storage requirements. Initial setup is very quick, adding or removing capacity is even faster and without any downtime."
             }]
         },
