@@ -13,7 +13,7 @@ function StoragePricing(props) {
     return (        
         <div className="container">
             <Fade className="px-lg-5 px-3" duration={500} bottom>
-                <div className="px-4 py-5 border shadow">
+                <div id="pricing" className="px-4 py-5 rounded-8 shadow-lg">
                     <div className="display5 text-center">Storage Options</div>
                     <div className="row px-3 justify-content-center px-lg-4">
 

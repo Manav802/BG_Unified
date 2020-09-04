@@ -1,6 +1,5 @@
 .card-with-icon{
     transition: .3s;
-    min-height: 448px;
     .iconbox{
         transition: .3s;
         margin-top: -64px;
@@ -20,6 +19,12 @@
     .cardContent{
         font-size: $font-size-body-1;
         font-family: 'Nunito Sans Regular';
+        line-height: 1.8;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 }
 .card-with-icon:hover{

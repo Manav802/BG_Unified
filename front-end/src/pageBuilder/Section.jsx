@@ -3,17 +3,21 @@ import React from 'react';
 import { Box, Flex } from '@chakra-ui/core';
 import Container from './Container';
 
-function Section({my=8, py=20, children="Section", ...props}) {
+function Section({ my = 8, py = 8, blend, bgAttachment, containerWidth, children = "Section", ...props }) {
     return (
         <Flex
-            my={my} 
-            py={py} 
+            my={my}
+            py={py}
             width="100%"
-            align="center"
+            align={"center"}
             direction="column"
             justify="center"
+            backgroundPosition="center"
+            backgroundAttachment={bgAttachment}
+            backgroundSize="cover"
+            style={{ backgroundBlendMode: blend }}
             {...props}>
-            <Container>
+            <Container width={containerWidth}>
                 {children}
             </Container>
         </Flex>

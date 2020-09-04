@@ -1,13 +1,16 @@
 import React from "react";
-import { Image } from "@chakra-ui/core";
+import { Image, Flex } from "@chakra-ui/core";
 import Link from "next/link";
 
 function WhatsNew(props) {
   return (
-    <Link href="/blogs/[bid]" as={props.link}><a className="link">
-    <div
-      className="d-flex hover-effect rounded-8 mt-2 p-2"
-      style={{ maxWidth: "400px" }}
+    <Link href="/blogs/[bid]" as={props.link}>
+    <Flex
+      className="hover-effect"
+      p={3}
+      mt={1}
+      borderRadius="lg"
+      maxWidth="400px"
     >
       <Image
         objectFit="cover"
@@ -19,8 +22,8 @@ function WhatsNew(props) {
       <div className="col">
         <div className="NunitoSans-Bold py-2">{props.heading}</div>
       </div>
-    </div>
-    </a></Link>
+    </Flex>
+    </Link>
   );
 }
 
