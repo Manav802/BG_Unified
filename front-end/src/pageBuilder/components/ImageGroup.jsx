@@ -11,7 +11,7 @@ function ImageGroup({ images,captionStyles, spacing, maxW, width = "100%", ...da
     }
 
     return (
-        <Flex justify="center" flexGrow={1} textAlign="center">
+        <Flex justify="center" wrap="wrap" flexGrow={1} textAlign="center">
             {allImages}
         </Flex>
     );

@@ -3,18 +3,14 @@ export default [
     {
         typeWriter_title: {
             before: "",
-            typed: ["Deploy","Run","Manage","Maintain"],
+            typed: ["Deploy","Run","Manage"],
             after: " your application on the cloud platform"
         },
         description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
-        titleStyle: {
-            textAlign: "justify"
-        },
         descriptionStyle: {
-            textAlign: "justify"
-        }
-    },
-    {
+            textAlign: "center"
+        },
+        rowDistance: 8,
         gap: 10,
         py: 16,
         body: [
@@ -23,8 +19,8 @@ export default [
                 type: "feature",
                 data: {
                     titleSize: "md",
-                    titleFont: "Nexa Bold",
                     textOpacity: "0.7",
+                    size: "96px",
                     image: "/assets/images/icons/theme/cloud-computing.svg",
                     title: "Platform Oriented Cloud Platforms",
                     align: "center",
@@ -35,8 +31,8 @@ export default [
                 type: "feature",
                 data: {
                     titleSize: "md",
-                    titleFont: "Nexa Bold",
                     textOpacity: "0.7",
+                    size: "96px",
                     image: "/assets/images/icons/library/devices/cpu-1.svg",
                     title: "Infinite Computing Resources",
                     align: "center",
@@ -47,8 +43,8 @@ export default [
                 type: "feature",
                 data: {
                     titleSize: "md",
-                    titleFont: "Nexa Bold",
                     textOpacity: "0.7",
+                    size: "96px",
                     image: "/assets/images/icons/color/analytics.svg",
                     title: "Monitor on-the-go.",
                     align: "center",
@@ -57,21 +53,8 @@ export default [
         ]
     },
     {
-        title: "Our Pricing Plans",
-        backgroundColor: "light.400",
-        width: "100%",
-        containerWidth: ["100%", "100%", "720px", "960px", "1140px"],
-        my: 0,
-        py: 16,
-        gap: 0,
-        body: [{
-            width: "100%",
-            type: "pricing",
-            data: <BackupPricing />
-        }]
-    },
-    {
         title: "Why BG Unified Solutions?",
+        rowDistance: 8,
         body: [{
             width: "100%",
             type: "accordion",
