@@ -1,17 +1,17 @@
 import BackupPricing from "../../pricing/BackupPricing";
 export default [
     {
-        typeWriter_title:{
-            before:"",
-            typed:["Deploy, Run, Manage and Maintain"],
-            after:" your application on the cloud platform"
+        typeWriter_title: {
+            before: "",
+            typed: ["Deploy","Run","Manage","Maintain"],
+            after: " your application on the cloud platform"
         },
-        description:"End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
-        titleStyle:{
-            textAlign:"justify"
+        description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
+        titleStyle: {
+            textAlign: "justify"
         },
-        descriptionStyle:{
-            textAlign:"justify"
+        descriptionStyle: {
+            textAlign: "justify"
         }
     },
     {
@@ -19,59 +19,59 @@ export default [
         py: 16,
         body: [
             {
-                width: ["100%", 1/2, 1/3],
+                width: ["100%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
-                    titleSize:"md",
+                    titleSize: "md",
                     titleFont: "Nexa Bold",
-                    textOpacity:"0.7",
+                    textOpacity: "0.7",
                     image: "/assets/images/icons/theme/cloud-computing.svg",
                     title: "Platform Oriented Cloud Platforms",
                     align: "center",
-                    }
-            },    
+                }
+            },
             {
-                width: ["100%", 1/2, 1/3],
+                width: ["100%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
-                    titleSize:"md",
+                    titleSize: "md",
                     titleFont: "Nexa Bold",
-                    textOpacity:"0.7",
+                    textOpacity: "0.7",
                     image: "/assets/images/icons/library/devices/cpu-1.svg",
                     title: "Infinite Computing Resources",
                     align: "center",
-                    }
-            },    
+                }
+            },
             {
-                width: ["100%", 1/2, 1/3],
+                width: ["100%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
-                    titleSize:"md",
+                    titleSize: "md",
                     titleFont: "Nexa Bold",
-                    textOpacity:"0.7",
+                    textOpacity: "0.7",
                     image: "/assets/images/icons/color/analytics.svg",
                     title: "Monitor on-the-go.",
                     align: "center",
-                    }
-            },    
+                }
+            },
         ]
     },
-    {   
-        title : "Our Pricing Plans",
+    {
+        title: "Our Pricing Plans",
         backgroundColor: "light.400",
         width: "100%",
-        containerWidth: ["100%", "540px", "720px", "960px", "1140px"],
+        containerWidth: ["100%", "100%", "720px", "960px", "1140px"],
         my: 0,
-        py:16,
+        py: 16,
         gap: 0,
         body: [{
             width: "100%",
             type: "pricing",
-            data: <BackupPricing/>
+            data: <BackupPricing />
         }]
     },
     {
-        title:"Why BG Unified Solutions?",
+        title: "Why BG Unified Solutions?",
         body: [{
             width: "100%",
             type: "accordion",
