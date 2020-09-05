@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import MetaTags from 'react-meta-tags';
+
 
 
 import Head from "next/head";
@@ -22,7 +22,7 @@ class OurSolutions extends Component {
               href="/assets/images/icons/favicon/bg.ico"
               type="image/x-icon"
             />
-             </Head>
+          </Head>
           <div className="position-absolute w-100 overflow-hidden background-svg">
             <img
               className="w-100"
@@ -43,52 +43,50 @@ class OurSolutions extends Component {
               <div className="row">
                 <div className="col-lg-4  py-2">
                   <Link href="/services/infra">
-                  <a className="no-red">
-                    <CardWithIcon
-                      icon="/assets/images/icons/monotone/server.svg"
-                      title={
-                        <div>
-                          <MetaTags>
-                          Computing <br /> Infrastructure{" "}
-                          </MetaTags>
-                        </div>
-                      }
-                      iconBg="#0D5EA5"
-                      children="Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management. Infrastructure includes more than 10000 Cores CPU, 10TB RAM."
-                    />
-                  </a>
+                    <a className="no-red">
+                      <CardWithIcon
+                        icon="/assets/images/icons/monotone/server.svg"
+                        title={
+                          <div>
+                            Computing <br /> Infrastructure{" "}
+                          </div>
+                        }
+                        iconBg="#0D5EA5"
+                        children="Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management. Infrastructure includes more than 10000 Cores CPU, 10TB RAM."
+                      />
+                    </a>
                   </Link>
                 </div>
                 <div className="col-lg-4  py-2">
                   <Link href="/services/storage-unit">
-                  <a  className="no-red">
-                    <CardWithIcon
-                      icon="/assets/images/icons/monotone/server.svg"
-                      title={
-                        <div>
-                          Storage <br /> Units{" "}
-                        </div>
-                      }
-                      iconBg="#19C741"
-                      children="Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage."
-                    />
-                  </a>
+                    <a className="no-red">
+                      <CardWithIcon
+                        icon="/assets/images/icons/monotone/server.svg"
+                        title={
+                          <div>
+                            Storage <br /> Units{" "}
+                          </div>
+                        }
+                        iconBg="#19C741"
+                        children="Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage."
+                      />
+                    </a>
                   </Link>
                 </div>
                 <div className="col-lg-4  py-2">
                   <Link href="/services/dns">
-                  <a  className="no-red">
-                    <CardWithIcon
-                      icon="/assets/images/icons/monotone/server.svg"
-                      title={
-                        <div>
-                          DNS <br /> as a service{" "}
-                        </div>
-                      }
-                      iconBg="#F33022"
-                      children="Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users."
-                    />
-                  </a>
+                    <a className="no-red">
+                      <CardWithIcon
+                        icon="/assets/images/icons/monotone/server.svg"
+                        title={
+                          <div>
+                            DNS <br /> as a service{" "}
+                          </div>
+                        }
+                        iconBg="#F33022"
+                        children="Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users."
+                      />
+                    </a>
                   </Link>
                 </div>
                 <div className="col-lg-4  py-2">
