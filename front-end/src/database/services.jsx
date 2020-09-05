@@ -51,7 +51,7 @@ const services = {
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
         color: "#F1D302",
         tags: ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
-        description: "Express Routes to office 365, AWS, Azure",
+        description: "Express Routes to office 365, AWS, Azure. Advanced Solution provides private, seamless, and on-demand connections to many clouds as well as networks. ",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
         conclusion: "",
@@ -71,7 +71,7 @@ const services = {
         conclusion: "",
         sections: sections.logging
     },
-    "contact-center": {
+    "callcenter": {
         title: "Contact Center As A Service",
         slogan: "Service Truly Different.",
         bgImage: "",
@@ -81,8 +81,8 @@ const services = {
         tags: ["customer", "Support", "CSaaS", "Customer Experience", "Productivity", "Securing", "Data"],
         description: "BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        relatedService: ["Architectural Consultancy As A Service", "CEX As A Service", "Unified Communications As A Service"],
+        conclusion: "We help organizations who are looking for an IT Partner who is known for speed, quality and consistency of service for distributed and complex environments.",
         sections: sections.callcenter
     },
     "dns": {

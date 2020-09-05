@@ -61,7 +61,7 @@ export default [
             {
                 width: [1/2, 1/3, 1/4],
                 type: "feature",
-                data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/general/user.svg", mt: 4, title: "Experienced Team of Experts"}
+                data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/group.svg", mt: 4, title: "Experienced Team of Experts"}
             },
             {
                 width: [1/2, 1/3, 1/4],
@@ -128,5 +128,5 @@ export default [
                 },]
             }
         }]
-    },
+    }
 ]
