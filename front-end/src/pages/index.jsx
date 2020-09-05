@@ -1,4 +1,5 @@
 import React, { Component, useEffect } from "react";
+import MetaTags from 'react-meta-tags';
 import Head from "next/head";
 import { FaArrowRight } from "react-icons/fa";
 import { Image, Button, Heading, ButtonGroup, Icon, AspectRatioBox, Box, Slide } from "@chakra-ui/core";
@@ -99,9 +100,11 @@ class Landing extends Component {
   }
   render() {
     return (
+      
       <div className="landing overflow-hidden">
         <Head>
           <title>BG Unified Solutions</title>
+        
           <script
             type="text/javascript"
             src="http://d3js.org/d3.v3.min.js"

@@ -7,7 +7,7 @@ function services(props) {
       <div className="d-flex flex-column footer-content">
         <span className="mt-4 mb-1">IT Infrastructural Services</span>
         <Link href="/services/infra">
-          <a>Computing Infrastructure</a>
+          <meta> <a>Computing Infrastructure</a></meta>
         </Link>
         <Link href="/services/storage-unit">
           <a>Storage Unit</a>

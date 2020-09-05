@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import MetaTags from 'react-meta-tags';
+
+
 import Head from "next/head";
 import CardWithIcon from "../components/cards/CardWithIcon";
 import { Image, Link } from "@chakra-ui/core";
@@ -13,14 +16,13 @@ class OurSolutions extends Component {
       <>
         <div className="our-solutions layer-2">
           <Head>
-            <title>Our Solutions - BG Unified</title>
-
+            <title>Our Solutions</title>
             <link
               rel="shortcut icon"
               href="/assets/images/icons/favicon/bg.ico"
               type="image/x-icon"
             />
-          </Head>
+             </Head>
           <div className="position-absolute w-100 overflow-hidden background-svg">
             <img
               className="w-100"
@@ -46,7 +48,9 @@ class OurSolutions extends Component {
                       icon="/assets/images/icons/monotone/server.svg"
                       title={
                         <div>
+                          <MetaTags>
                           Computing <br /> Infrastructure{" "}
+                          </MetaTags>
                         </div>
                       }
                       iconBg="#0D5EA5"
