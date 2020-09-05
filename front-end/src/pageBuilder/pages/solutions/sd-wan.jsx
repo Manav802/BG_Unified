@@ -13,7 +13,9 @@ export default [
     {
         title: "How BGUS SD-WAN will improve?",
         gap: 10,
-        py: 16,
+        py: 0,
+        my: 0,
+        mt: 8,
         body: [
             {
                 py: 4,
@@ -78,6 +80,20 @@ export default [
         ]
     },
     {
-        description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. SD-WAN transforms the way a particular network supports and interacts with enterprise applications."
+        containerWidth: "100%",
+        gap: 0,
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <SdwanPricing />
+        }]
+    },
+    {
+        description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
+        descriptionStyle: {
+            textAlign: "left"
+        },
+        mt: 0,
+        pt: 0
     }
 ]
