@@ -170,8 +170,8 @@ const services = {
         sections: sections.proxy
     },
     "sd-wan": {
-        title: "SD-WAN As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        title: "BGUS SD-WAN Optimization - The Best in Business",
+        slogan: "Simple Solutions for Complex Connections!!",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/SD-Wan.svg",
@@ -180,7 +180,7 @@ const services = {
         description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
         sections: sections.sdwan
     },
     "sip": {

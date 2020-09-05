@@ -23,7 +23,7 @@ export default [
                 width: ["100%", "100%", 1 / 2],
                 type: "content",
                 data: [{
-                    textAlign: "justify",
+                    textAlign: "left",
                     fontSize: "lg",
                     text: <span>
                         With BG Unified Solutions Platform as a Service, we provide you with End-to-End DC network

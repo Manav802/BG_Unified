@@ -4,6 +4,7 @@ import dns from "./dns"
 import backup from "./backup"
 import platform from "./platform"
 import ucaas from "./ucaas"
+import sdwan from "./sd-wan"
 
 
 module.exports.storage = storage
@@ -12,3 +13,4 @@ module.exports.backup = backup
 module.exports.dns = dns
 module.exports.platform = platform
 module.exports.ucaas = ucaas
+module.exports.sdwan = sdwan

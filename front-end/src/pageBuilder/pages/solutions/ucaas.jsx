@@ -9,7 +9,7 @@ export default [
         },
         description: "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business. Expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint",
         descriptionStyle: {
-            textAlign: "justify"
+            textAlign: "left"
         },
         gap: 10,
         py: 16
