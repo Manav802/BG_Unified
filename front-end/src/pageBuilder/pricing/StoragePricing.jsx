@@ -11,7 +11,7 @@ function StoragePricing(props) {
     const [value, setValue] = React.useState(10);
     const handleChange = value => setValue(value);
     return (        
-        <div id="StoragePricing" className="container">
+        <div id="pricing" className="container">
             <Fade className="px-lg-5 px-3" duration={500} bottom>
                 <div className="px-4 py-5 rounded-8 shadow-lg">
                     <div className="display5 text-center">Storage Options</div>
