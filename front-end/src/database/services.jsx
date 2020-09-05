@@ -73,7 +73,11 @@ const services = {
     },
     "contact-center": {
         title: "Contact Center As A Service",
+<<<<<<< Updated upstream
         slogan: "Network Marketing Newly Marketed",
+=======
+        slogan: "Service Truly Different.",
+>>>>>>> Stashed changes
         bgImage: "",
         category: "Collaborative Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
