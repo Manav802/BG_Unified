@@ -15,7 +15,6 @@ window.onload = () => {
     };
 
 
-
     planet.loadPlugin(planetaryjs.plugins.earth({
         topojson: { file:   '/assets/js/world-110m.json' },
         oceans:   { fill:   '#0F1F4D' },

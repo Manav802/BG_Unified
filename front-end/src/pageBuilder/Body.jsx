@@ -14,7 +14,7 @@ import Container from './Container';
 import Row from './Row';
 import { SimpleGrid } from '@chakra-ui/core'
 import ImageAndText from './components/ImageAndText';
-function Body({ gap = 4, type, data, width, ...props }) {
+function Body({ gap = 4, type, data, width="100%", ...props }) {
     function giveMeComponent(type, data) {
         switch (type) {
             case "content":

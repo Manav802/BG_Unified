@@ -25,7 +25,7 @@ function WirelessPricing(props) {
     
                 <div id="pricing" className="container">
                     <Fade duration={500} bottom>
-                    <div className="row no-gutters px-lg-5 px-3">
+                    <div className="row no-gutters">
                         <div className="col-lg-4 my-3">
                             <PricingCard
                                 title={
