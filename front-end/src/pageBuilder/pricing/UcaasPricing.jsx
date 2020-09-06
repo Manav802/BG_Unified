@@ -64,7 +64,7 @@ function UcaasPricing(props) {
     };
     return (
        
-                <div id="UcaasPricing" className="container">
+                <div id="pricing" className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-12">
                             <Tabs align="center">
@@ -88,7 +88,7 @@ function UcaasPricing(props) {
                                             distance={"30%"}
                                             bottom
                                         >
-                                            <div className="row justify-content-center">
+                                            <div className="row no-gutters justify-content-center">
                                                 <div className="col-lg-4 my-3">
                                                     <PricingCard
                                                         title="Single Node CUCM"
@@ -189,7 +189,7 @@ function UcaasPricing(props) {
                                             distance={"30%"}
                                             bottom
                                         >
-                                            <div className="row justify-content-center">
+                                            <div className="row no-gutters justify-content-center">
                                                 <div className="col-lg-4 my-3">
                                                     <PricingCard
                                                         title="Single Node IP Office"
@@ -290,7 +290,7 @@ function UcaasPricing(props) {
                                             distance={"30%"}
                                             bottom
                                         >
-                                            <div className="row justify-content-center">
+                                            <div className="row no-gutters justify-content-center">
                                                 <div className="col-lg-4 my-3">
                                                     <PricingCard
                                                         title="Single Node CX"

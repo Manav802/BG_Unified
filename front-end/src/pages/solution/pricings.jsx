@@ -10,6 +10,10 @@ import StoragePricing from '../../pageBuilder/pricing/StoragePricing'
 import UcaasPricing from '../../pageBuilder/pricing/UcaasPricing'
 import WebHostingPricing from '../../pageBuilder/pricing/WebHostingPricing'
 import WirelessPricing from '../../pageBuilder/pricing/WirelessPricing'
+import ContactCenterPricing from '../../pageBuilder/pricing/ContactCenterPricing'
+import SipPricing from '../../pageBuilder/pricing/SipPricing'
+import CloudExchangePricing from '../../pageBuilder/pricing/CloudExchangePricing'
+import DRPricing from '../../pageBuilder/pricing/DRPricing'
 
 
 function pricings() {
@@ -21,17 +25,35 @@ function pricings() {
             type= "pricing"
             data= {<BackupPricing/>}
            />
+           CloudExchangePricing
+           <Body 
+            width= "100%"
+            type= "pricing"
+            data= {<CloudExchangePricing/>}
+           />
            CloudLoggingPricing
            <Body 
             width= "100%"
             type= "pricing"
             data= {<CloudLoggingPricing/>}
            />
+           ContactCenterPricing
+           <Body 
+            width= "100%"
+            type= "pricing"
+            data= {<ContactCenterPricing/>}
+           />
            DNSPricing
            <Body 
             width= "100%"
             type= "pricing"
             data= {<DNSPricing/>}
+           />
+           DRPricing
+           <Body 
+            width= "100%"
+            type= "pricing"
+            data= {<DRPricing/>}
            />
            FirewallPricing
            <Body 
@@ -50,6 +72,12 @@ function pricings() {
             width= "100%"
             type= "pricing"
             data= {<SdwanPricing/>}
+           />
+           SipPricing
+           <Body 
+            width= "100%"
+            type= "pricing"
+            data= {<SipPricing/>}
            />
            StoragePricing
            <Body 

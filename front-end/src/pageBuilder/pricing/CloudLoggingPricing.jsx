@@ -16,9 +16,9 @@ function CloudLoggingPricing(props) {
     const [logs2, setLogs2] = React.useState(0);
     const [logs3, setLogs3] = React.useState(0);
     return (
-        <div id="CloudLoggingPricing" className="container">
+        <div id="pricing" className="container">
             <Fade duration={500} bottom>
-            <div className="row px-lg-5 px-3">
+            <div className="row no-gutters px-lg-5 px-3">
                 <div className="col-lg-4 my-3">
                     <PricingCard
                         title={
