@@ -31,7 +31,7 @@ export default [
                         Huawei 10G core switching offering a high-speed spine and leaf network.
                         Scaling up your project has never been this easy. BGUS,
                         PaaS  provides you with limitless resources of computing.
-                 </span>
+                    </span>
                 }]
             }]
     },

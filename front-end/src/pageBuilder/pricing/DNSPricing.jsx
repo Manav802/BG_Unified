@@ -31,7 +31,9 @@ function DNSPricing(props) {
   const handledailyBackups = (dailyBackups) => (dailyBackups) ? (",Add Daily Backups") : ("")
   const [redundantDNS,setRedundantDNS] = React.useState(false);
   const handleRedundantDNS = (redundantDNS) => (redundantDNS) ? (",Include Redundant DNS") : ("")
-  return (<div id="DNSPricing" className="container">
+  
+  return (
+  <div id="pricing" className="container">
   <div className="row">
     <div className="col-lg-10 offset-lg-1">
       <Tabs align="center">
@@ -43,7 +45,7 @@ function DNSPricing(props) {
         <TabPanels>
           <TabPanel className="py-2">
             <Fade duration={500} bottom>
-              <div className="row justify-content-center">
+              <div className="row no-gutters justify-content-center">
                 <div className="col-lg-5 col-sm-6 col-md-6 my-3">
                   <PricingCard
                     icon="/assets/images/icons/theme/paper-plane.svg"
@@ -95,7 +97,7 @@ function DNSPricing(props) {
           </TabPanel>
           <TabPanel className="py-2">
             <Fade duration={500} bottom>
-              <div className="row justify-content-center">
+              <div className="row no-gutters justify-content-center">
                 <div className="col-lg-5 col-sm-6 col-md-6 my-3">
                   <PricingCard
                     icon="/assets/images/icons/theme/paper-plane.svg"

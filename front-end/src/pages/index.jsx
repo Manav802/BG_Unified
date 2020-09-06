@@ -97,11 +97,11 @@ class Landing extends Component {
   }
   render() {
     return (
-      
+
       <div className="landing overflow-hidden">
         <Head>
           <title>BG Unified Solutions</title>
-        
+
           <script
             type="text/javascript"
             src="http://d3js.org/d3.v3.min.js"
@@ -168,7 +168,7 @@ class Landing extends Component {
           </Slider>
         </div>
 
-        
+
         <div className="section py-3">
           <div className="container">
 
@@ -447,10 +447,10 @@ class Landing extends Component {
             </div>
           </div>
         </div>
-      
-        
-          <Section bg="light.400" py={24}>
-            <div className="container">
+
+
+        <Section bg="light.400" py={24}>
+          <div className="container">
             <Fade duration={500} cascade distance={"30%"} bottom>
               <div className="row">
                 <div className="col-12 text-center NunitoSans-ExtraBold text-primary text-uppercase">
@@ -464,15 +464,15 @@ class Landing extends Component {
                   <Image position="absolute" top="0px" left={0} opacity={.07} src="https://image.flaticon.com/icons/svg/102/102571.svg" size="96px"></Image>
                 </div>
               </div>
-              </Fade>
-            </div>
-            </Section>
-        
-        <Section>
-            <CaseStudy caseStudyDetails={CASESTUDY} link="read" />
+            </Fade>
+          </div>
         </Section>
-        <Section containerWidth={["100%","90%"]} className="brands">
-            <ImageGroup objectFit="contain" images={["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/equinix.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png", "/assets/images/brands/fujitsu.png", "/assets/images/brands/halls.png", "/assets/images/brands/huawei.png", "/assets/images/brands/hutchisonports.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/sabre_pacific.png", "/assets/images/brands/straintz.png", "/assets/images/brands/veeam.png"]} minW={["119.5px", "135.5px", "175px", "231px", "283px"]} width="auto" />
+
+        <Section>
+          <CaseStudy caseStudyDetails={CASESTUDY} link="read" />
+        </Section>
+        <Section containerWidth={["100%", "90%"]} className="brands">
+          <ImageGroup objectFit="contain" images={["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/equinix.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png", "/assets/images/brands/fujitsu.png", "/assets/images/brands/halls.png", "/assets/images/brands/huawei.png", "/assets/images/brands/hutchisonports.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/sabre_pacific.png", "/assets/images/brands/straintz.png", "/assets/images/brands/veeam.png"]} minW={["119.5px", "135.5px", "175px", "231px", "283px"]} width="auto" />
         </Section>
         <Conclusion></Conclusion>
       </div>
