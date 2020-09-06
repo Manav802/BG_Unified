@@ -6,7 +6,10 @@ export default [
         title: "Get your Quote now!",
         description: "Our storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage",
         rowDistance: 4,
+        gap:0,
+        containerWidth: "100%",
         body: [{
+            width: "100%",
             type: "pricing",
             data: <StoragePricing/>
         }]
@@ -17,22 +20,22 @@ export default [
         rowDistance: 8,
         body: [
         {
-            width:["100%", "100%", 1/2],
+            width:["100%", "100%","100%", 1/2],
             type: "imageGroup",
             data: {
                 images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
                 borderRadius: 8,
-                width: '90%',
-                height: "400px",
+                width : ["100%","100%",'90%'],
+                height: ["300px","300px","400px"],
                 objectFit: "cover"
             }
         },
         {
-            width: ["100%", "100%", 1/2],
+            width: ["100%", "100%","100%", 1/2],
             type: "content",
             data: [{
                 textAlign: "justify",
-                fontSize: "lg",
+                fontSize: ["md","lg"],
                 text: <span>Today’s dynamic data centre’s present some unique storage challenges. How do you best manage explosive storage capacity requirements and 
                     multiple storage silos—as well as consolidation into internal clouds to provide storage as a service? Add complex backup and recovery plans, 
                     and their integration into your disaster recovery plans and storage becomes even more complex. And while there are commonalities that allow for 
@@ -47,13 +50,13 @@ export default [
     {
         title : "STaaS for your Business",
         titleStyle: {
-            fontSize: "40px",
+            fontSize: ["32px","40px"],
             fontWeight: "800"
         },
         description: "Secure, scalable, cost-effective, platform adaptive storage options customized as per your needs.",
         descriptionStyle:{
-            px: "24%",
-            fontSize: "xl",
+            px: ["5%","10%","15%","24%"],
+            fontSize: ["lg","xl"],
             opacity: 1,
             mt: 2
         },
@@ -61,7 +64,7 @@ export default [
         py: 20,
         bg: "gray.100",
         color: "dark.500",
-        rowDistance: 12,
+        rowDistance: [4,8,12],
         gap: 8,
         body: [
         {
@@ -105,11 +108,12 @@ export default [
         pt: 16,
         pb: 0,
         title: "Meeting your Storage needs at Affordable Prices",
+        titleStyle:{fontSize:["3xl","4xl"],px:"10px"},
         body: [{
             type: "content",
             data: [{
                 textAlign: "justify",
-                fontSize: "xl",
+                fontSize: ["lg","xl"],
                 text: "With BG Unified Solutions Infrastructure as a Service, not only do you pay only for the data storage you use when you use it but we provide you with a geographical redundant storage infrastructure and ready access to experts in Infrastructure Technologies who will be eager to understand your storage requirements. Initial setup is very quick, adding or removing capacity is even faster and without any downtime."
             }]
         }]
