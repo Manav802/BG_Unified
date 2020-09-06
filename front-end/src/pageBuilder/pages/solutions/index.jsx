@@ -7,6 +7,8 @@ import ucaas from "./ucaas"
 import sdwan from "./sd-wan"
 import sip from "./sip"
 import cex from "./cex"
+import firewall from "./firewall"
+import callcenter from "./callcenter"
 
 
 module.exports.storage = storage
@@ -18,3 +20,5 @@ module.exports.ucaas = ucaas
 module.exports.sdwan = sdwan
 module.exports.sip = sip
 module.exports.cex = cex
+module.exports.firewall = firewall
+module.exports.callcenter = callcenter

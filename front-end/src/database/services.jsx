@@ -34,7 +34,7 @@ const services = {
         slogan: "Backup for your Digital system",
         category: "IT Infrastructural Services",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
-        icon: "/assets/images/icons/monotone/BackupAsAService",
+        icon: "/assets/images/icons/monotone/BackupAsAService.svg",
         color: "#0267C1",
         tags: ["backup"],
         description: "BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data, while enabling self-service restoration capability to your teams.",
@@ -51,7 +51,7 @@ const services = {
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
         color: "#F1D302",
         tags: ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
-        description: "Express Routes to office 365, AWS, Azure",
+        description: "Express Routes to office 365, AWS, Azure. Advanced Solution provides private, seamless, and on-demand connections to many clouds as well as networks. ",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
         conclusion: "Determines the quality of service level delivered against service level agreements and proactively manages service components to adhere to quality standards",
@@ -71,9 +71,9 @@ const services = {
         conclusion: "",
         sections: sections.logging
     },
-    "contact-center": {
+    "callcenter": {
         title: "Contact Center As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Service Truly Different.",
         bgImage: "",
         category: "Collaborative Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -81,8 +81,8 @@ const services = {
         tags: ["customer", "Support", "CSaaS", "Customer Experience", "Productivity", "Securing", "Data"],
         description: "BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        relatedService: ["Architectural Consultancy As A Service", "CEX As A Service", "Unified Communications As A Service"],
+        conclusion: "We help organizations who are looking for an IT Partner who is known for speed, quality and consistency of service for distributed and complex environments.",
         sections: sections.callcenter
     },
     "dns": {
@@ -115,7 +115,7 @@ const services = {
     },
     "firewall": {
         title: "Firewall As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Redefining Security Needs",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -123,8 +123,8 @@ const services = {
         tags: ["Firewall", "Security", "protection"],
         description: "Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA. Centralized Policy Management using Panorama, Sourcefire DC.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        relatedService: ["Infrastructure As A Service", "Contact Center As A Service", "Backup As A Service"],
+        conclusion: "Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA.",
         sections: sections.firewall
     },
     "infra": {
