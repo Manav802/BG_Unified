@@ -37,8 +37,9 @@ export default [
     },
     {
         gap: 10,
-        py: 0,
+        py: 12,
         my: 0,
+        bg: "light.400",
         body: [
             {
                 width: ["100%", 1 / 2, 1 / 3],

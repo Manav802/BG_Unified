@@ -11,18 +11,13 @@ export default [
         descriptionStyle: {
             textAlign: "left"
         },
-        gap: 10,
-        py: 16
-    },
-    {
-        my: 0,
-        py: 0,
+        rowDistance: 8,
         gap: 10,
         body: [
             {
                 py: 4,
                 width: ["100%", 1 / 2, 1 / 3],
-                type: "feature",
+                type: "feature2",
                 data: {
                     titleSize: "md",
                     titleFont: "Nexa Bold",
@@ -106,8 +101,8 @@ export default [
         ]
     },
     {
-        my: 0,
-        pt: 16,
+        bg: "light.400",
+        py: 16,
         gap: 0,
         body: [{
             width: "100%",

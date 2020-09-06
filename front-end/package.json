@@ -46,7 +46,6 @@
     "react-visibility-sensor": "^5.1.1",
     "typescript": "^4.0.2",
     "typewriter-effect": "^2.13.1",
-    "uifx": "^2.0.7"
   },
   "scripts-old": {
     "start": "react-scripts start",

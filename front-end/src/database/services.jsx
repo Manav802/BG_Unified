@@ -170,8 +170,9 @@ const services = {
         sections: sections.proxy
     },
     "sd-wan": {
-        title: "BGUS SD-WAN Optimization - The Best in Business",
+        title: "SD-WAN As A Service",
         slogan: "Simple Solutions for Complex Connections!!",
+        documentHeading: "Best SD-WAN Optimization",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/SD-Wan.svg",

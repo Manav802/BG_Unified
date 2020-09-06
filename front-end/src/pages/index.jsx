@@ -1,5 +1,4 @@
 import React, { Component, useEffect } from "react";
-import MetaTags from 'react-meta-tags';
 import Head from "next/head";
 import { FaArrowRight } from "react-icons/fa";
 import { Image, Button, Heading, ButtonGroup, Icon, AspectRatioBox, Box, Slide } from "@chakra-ui/core";
@@ -14,8 +13,6 @@ import Link from "next/link";
 import Slider from "react-flickity-component";
 import ImageGroup from "../pageBuilder/components/ImageGroup";
 import Section from "../pageBuilder/Section";
-import Container from "../pageBuilder/Container";
-import conclusion from "../components/footer/Conclusion";
 import Conclusion from "../components/footer/Conclusion";
 
 const sliderInfo = [
