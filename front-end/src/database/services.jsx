@@ -3,7 +3,7 @@ import sections from '../pageBuilder/pages/solutions/index'
 const services = {
     "appdev":{
         title: "Application Development As A Service",
-        slogan: "Slogan Goes Here",
+        slogan: "Developing Your Needs",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
         category: "Development Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -11,13 +11,13 @@ const services = {
         tags: ["application", "app", "dev", "development", "scalability", "platform", "independence", "client", "flexibility"],
         description: "BG Unified Solutions provides services in the area of Web, Mobile and Enterprise Application Development. Our team of technical and functional experts can help you in new Application Development, Modernizing and Supporting existing applications.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        relatedService: ["Cloud Logging As A Service", "Storage As A Service", "Infrastructure As A Service"],
+        conclusion: "User-interactivity, responsiveness, user-friendly interfaces kept into consideration.",
         sections: sections.appdev
     },
-    "architectural-consultancy": {
+    "architecture": {
         title: "Architectural Consultancy As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Spirit of Expertise",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
         category: "Collaborative Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -25,8 +25,8 @@ const services = {
         tags: ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
         description: "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture. Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        relatedService: ["Contact Center As A Service", "SIP As A Service", "Unified Communications As A Service"],
+        conclusion: "Achieve Higher Business Efficiency through increased agility, cost containment and lowered risk.",
         sections: sections.architecture
     },
     "backup": {
@@ -227,7 +227,7 @@ const services = {
     },
     "hosting": {
         title: "Web Hosting As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Trendsetting web hosting solutions",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/WebHosting.svg",
@@ -235,8 +235,8 @@ const services = {
         tags: ["web", "hosting", "host", "web server", "APACHE", "website"],
         description: "Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package. Load balancing can also be added as an option if required.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        relatedService: ["Storage As A Service", "Cloud Logging As A Service", "Backup As A Service"],
+        conclusion: "Web Hosting services design and implementation in distributed environments.",
         sections: sections.hosting
     },
     "wireless": {

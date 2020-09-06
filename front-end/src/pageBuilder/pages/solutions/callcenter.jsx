@@ -1,4 +1,4 @@
-import BackupPricing from "../../pricing/BackupPricing";
+import ContactCenterPricing from "../../pricing/ContactCenterPricing";
 export default [
     {
         
@@ -31,6 +31,19 @@ export default [
                    customer experience through a suite of advanced 
                    Contact Centre Tools.</span>
             }]
+        }]
+    },
+
+    {           
+        width: "100%",
+        containerWidth: ["100%", "540px", "720px", "960px", "1140px"],
+        my: 0,
+        py:16,
+        gap: 0,
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <ContactCenterPricing/>
         }]
     },
 
@@ -96,43 +109,36 @@ export default [
         ]   
     },
 
-    {   
-        title : "Our Pricing Plans",
-        
-        width: "100%",
-        containerWidth: ["100%", "540px", "720px", "960px", "1140px"],
-        my: 0,
-        py:16,
-        gap: 0,
-        body: [{
-            width: "100%",
-            type: "pricing",
-            data: <BackupPricing/>
-        }]
-    },
     {
-        py: 0,
-        body: [{
-            width: "100%",
-            type: "accordion",
-            data: {
-                fontSize: "lg",
-                content: [{
+        title:"Why BG Unified Solutions?",
+        body: [
+            {
+                type: "image&text",
+                data: {
                     title: "Profitable Customer Experience",
                     description: "We help organisations to develop and improve communication channels and deliver lasting customer relationships at a lower cost. Our objective is to maximize the value of information within an organization whilst minimizing the cost.",
-                    image: "/assets/images/Illustrations/PlatformDiversity_Firewall.svg"
-                },
-                {
+                    image: "/assets/images/Illustrations/PlatformDiversity_Firewall.svg",
+                    flexDirection: ["column", "column", "row"],
+                }
+            },
+            {
+                type: "image&text",
+                data: {
                     title: "Employee Productivity",
                     description: "We assist organisations in improving employee and partner collaboration to deliver greater employee productivity, improved information sharing and knowledge management",
-                    image: "/assets/images/Illustrations/FastAndEasyDevelopment_Firewall.svg"
-                },
-                {
+                    image: "/assets/images/Illustrations/FastAndEasyDevelopment_Firewall.svg",
+                    flexDirection: ["column", "column", "row-reverse"],
+                }
+            },
+            {
+                type: "image&text",
+                data: {
                     title: "Securing Data",
                     description: "We help organisations reduce their risks by offering solutions for creating, sharing and storing the information, to protect, detect and respond to external and internal incidents and threats.",
-                    image: "/assets/images/Illustrations/low_pricing.svg"
-                },]
-            }
-        }]
-    },
+                    image: "/assets/images/Illustrations/low_pricing.svg",
+                    flexDirection: ["column", "column", "row"],
+                }
+            },
+        ]
+    }
 ]

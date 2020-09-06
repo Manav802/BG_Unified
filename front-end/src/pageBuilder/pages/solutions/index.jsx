@@ -5,6 +5,9 @@ import backup from "./backup"
 import platform from "./platform"
 import firewall from "./firewall"
 import callcenter from "./callcenter"
+import architecture from "./architecture"
+import appdev from "./appdev"
+import hosting from "./hosting"
 
 
 module.exports.storage = storage
@@ -14,3 +17,6 @@ module.exports.dns = dns
 module.exports.platform = platform
 module.exports.firewall = firewall
 module.exports.callcenter = callcenter
+module.exports.architecture = architecture
+module.exports.appdev = appdev
+module.exports.hosting = hosting
