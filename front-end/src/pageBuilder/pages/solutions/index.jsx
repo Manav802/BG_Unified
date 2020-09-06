@@ -5,6 +5,8 @@ import backup from "./backup"
 import platform from "./platform"
 import ucaas from "./ucaas"
 import sdwan from "./sd-wan"
+import sip from "./sip"
+import cex from "./cex"
 
 
 module.exports.storage = storage
@@ -14,3 +16,5 @@ module.exports.dns = dns
 module.exports.platform = platform
 module.exports.ucaas = ucaas
 module.exports.sdwan = sdwan
+module.exports.sip = sip
+module.exports.cex = cex

@@ -45,7 +45,7 @@ const services = {
     },
     "cex": {
         title: "CEX As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "The Cloud Service at its Best",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -54,7 +54,7 @@ const services = {
         description: "Express Routes to office 365, AWS, Azure",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "Determines the quality of service level delivered against service level agreements and proactively manages service components to adhere to quality standards",
         sections: sections.cex
     },
     "cloud-logging": {
@@ -185,7 +185,7 @@ const services = {
     },
     "sip": {
         title: "SIP As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Innovation and Excellence",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/SIP.svg",
@@ -194,7 +194,7 @@ const services = {
         description: "SIP As A Service Infrastructure includes more than 15 Cisco Unified Border Elements with 1600 SIP channels spanned across multiple DC locations with DUAL Exchange Homing.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "SIP As A Service Infrastructure includes more than 15 Cisco Unified border Elements with 1600 SIP channels.",
         sections: sections.sip
     },
     "storage": {
