@@ -35,3 +35,18 @@ module.exports.callcenter = callcenter
 import wireless from './wireless'
 module.exports.wireless = wireless
 
+import proxy from './proxy'
+module.exports.proxy = proxy
+
+import hosting from './hosting'
+module.exports.hosting = hosting
+
+import appdev from './appdev'
+module.exports.appdev = appdev
+
+import dr from './dr'
+module.exports.dr = dr
+
+import architecture from './architecture'
+module.exports.architecture = architecture
+

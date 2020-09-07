@@ -1,8 +1,20 @@
 import CloudExchangePricing from "../../pricing/CloudExchangePricing";
+import DRPricing from "../../pricing/DRPricing";
 export default [
     {
+        mt: "-96px",
+        mb: 0,
+        py: 0,
+        gap: 0,
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <DRPricing />
+        }],
+    },
+    {
         gap: 10,
-        py: 16,
+        py: 8,
         body: [
             {
                 width: ["100%", "100%", 1 / 2],
@@ -29,24 +41,15 @@ export default [
             }]
     },
     {
-        my: 0,
-        py: 16,
-        gap: 0,
-        body: [{
-            width: "100%",
-            type: "pricing",
-            data: <CloudExchangePricing />
-        }],
-        bg: 'light.400',
-    },
-    {
         title: "Assist in DR strategy, evaluate threat models and much more...",
         titleStyle: {
+            mt: 8,
             fontSize: "40px",
             fontWeight: "800"
         },
         my: 0,
         py: 16,
+        bg: "light.400",
         color: "dark.500",
         rowDistance: 8,
         gap: 8,
