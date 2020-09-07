@@ -1,3 +1,4 @@
+import CloudExchangePricing from "../../pricing/CloudExchangePricing";
 export default [
     {
         gap: 10,
@@ -27,4 +28,101 @@ export default [
                 }]
             }]
     },
+    {
+        my: 0,
+        py: 16,
+        gap: 0,
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <CloudExchangePricing />
+        }],
+        bg: 'light.400',
+    },
+    {
+        title: "Assist in DR strategy, evaluate threat models and much more...",
+        titleStyle: {
+            fontSize: "40px",
+            fontWeight: "800"
+        },
+        my: 0,
+        py: 16,
+        color: "dark.500",
+        rowDistance: 8,
+        gap: 8,
+        body: [
+            {
+                width: [1 / 2, 1 / 3, 1 / 4],
+                type: "feature",
+                data: {
+                    align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Multisite or Multi-Cloud"
+                }
+            },
+            {
+                width: [1 / 2, 1 / 3, 1 / 4],
+                type: "feature",
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/communication/group.svg", mt: 4, title: "Robust" }
+            },
+            {
+                width: [1 / 2, 1 / 3, 1 / 4],
+                type: "feature",
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/files/upload.svg", mt: 4, title: "Regular Monitoring" }
+            },
+            {
+                width: [1 / 2, 1 / 3, 1 / 4],
+                type: "feature",
+                data: {
+                    align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/communication/shield-user.svg", mt: 4, title: "Quality Ensured"
+                }
+            },
+            {
+                width: [1 / 2, 1 / 3, 1 / 4],
+                type: "feature",
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/communication/chat-5.svg", mt: 4, title: "Scalable" }
+            },
+            {
+                width: [1 / 2, 1 / 3, 1 / 4],
+                type: "feature",
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/shopping/credit-card.svg", mt: 4, title: "Reliable" }
+            },
+            {
+                width: [1 / 2, 1 / 3, 1 / 4],
+                type: "feature",
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/code/lock-circle.svg", mt: 4, title: "Low Redundant Time" }
+            }
+        ]
+    },
+    {
+        title: "Why BG Unified Solutions?",
+        py: 12,
+        body: [
+            {
+                type: "image&text",
+                data: {
+                    image: "/assets/images/Illustrations/productivity.svg",
+                    title: "Simplified Deployment",
+                    flexDirection: ["column", "column", "row"],
+                    description: "An additional redundancy option is possible by implementing a CUBE at the client site so that in the event of any catastrophic failure in our data centre, SRST will still be able to provide basic inbound and outbound calling facilities"
+                }
+            },
+            {
+                type: "image&text",
+                data: {
+                    image: "/assets/images/Illustrations/Sound_and_Efficient_Planning.svg",
+                    title: "Non - Disruptive Testing",
+                    flexDirection: ["column", "column", "row-reverse"],
+                    description: "We’ve got it covered under all circumstances, whether natural calamities, forecasted events, unforecasted events. The time taken to restore normal conditions becomes very less, thanks to our team of experts, who take precautionary measures from the starting."
+                }
+            },
+            {
+                type: "image&text",
+                data: {
+                    image: "/assets/images/Illustrations/Completeness_CloudLogging.svg",
+                    title: "Flexible Solutions",
+                    flexDirection: ["column", "column", "row"],
+                    description: "In-place upgrades reduce downtime and maximize operational efficiencies. And you can customize how you intercept, inspect, transform, and direct inbound or outbound application traffic with powerful, flexible iRules."
+                }
+            },
+        ]
+    }
 ]
