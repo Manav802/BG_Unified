@@ -34,7 +34,7 @@ const services = {
         slogan: "Backup for your Digital system",
         category: "IT Infrastructural Services",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
-        icon: "/assets/images/icons/monotone/BackupAsAService",
+        icon: "/assets/images/icons/monotone/BackupAsAService.svg",
         color: "#0267C1",
         tags: ["backup"],
         description: "BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data, while enabling self-service restoration capability to your teams.",
