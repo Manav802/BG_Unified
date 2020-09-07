@@ -10,6 +10,12 @@ import cex from "./cex"
 import dr from "./dr"
 import proxy from "./proxy"
 import logging from "./cloud-logging"
+import firewall from "./firewall"
+import callcenter from "./callcenter"
+import architecture from "./architecture"
+import appdev from "./appdev"
+import hosting from "./hosting"
+
 
 module.exports.storage = storage
 module.exports.infra = infra
@@ -23,3 +29,8 @@ module.exports.cex = cex
 module.exports.dr = dr
 module.exports.proxy = proxy
 module.exports.logging = logging
+module.exports.firewall = firewall
+module.exports.callcenter = callcenter
+module.exports.architecture = architecture
+module.exports.appdev = appdev
+module.exports.hosting = hosting

@@ -3,7 +3,7 @@ import sections from '../pageBuilder/pages/solutions/index'
 const services = {
     "appdev": {
         title: "Application Development As A Service",
-        slogan: "Slogan Goes Here",
+        slogan: "Developing Your Needs",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
         category: "Development Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -11,13 +11,13 @@ const services = {
         tags: ["application", "app", "dev", "development", "scalability", "platform", "independence", "client", "flexibility"],
         description: "BG Unified Solutions provides services in the area of Web, Mobile and Enterprise Application Development. Our team of technical and functional experts can help you in new Application Development, Modernizing and Supporting existing applications.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        relatedService: ["Cloud Logging As A Service", "Storage As A Service", "Infrastructure As A Service"],
+        conclusion: "User-interactivity, responsiveness, user-friendly interfaces kept into consideration.",
         sections: sections.appdev
     },
-    "architectural-consultancy": {
+    "architecture": {
         title: "Architectural Consultancy As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Spirit of Expertise",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
         category: "Collaborative Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -25,8 +25,8 @@ const services = {
         tags: ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
         description: "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture. Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        relatedService: ["Contact Center As A Service", "SIP As A Service", "Unified Communications As A Service"],
+        conclusion: "Achieve Higher Business Efficiency through increased agility, cost containment and lowered risk.",
         sections: sections.architecture
     },
     "backup": {
@@ -34,7 +34,7 @@ const services = {
         slogan: "Backup for your Digital system",
         category: "IT Infrastructural Services",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
-        icon: "/assets/images/icons/monotone/BackupAsAService",
+        icon: "/assets/images/icons/monotone/BackupAsAService.svg",
         color: "#0267C1",
         tags: ["backup"],
         description: "BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data, while enabling self-service restoration capability to your teams.",
@@ -51,7 +51,7 @@ const services = {
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
         color: "#F1D302",
         tags: ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
-        description: "Express Routes to office 365, AWS, Azure",
+        description: "Express Routes to office 365, AWS, Azure. Advanced Solution provides private, seamless, and on-demand connections to many clouds as well as networks. ",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
         conclusion: "Determines the quality of service level delivered against service level agreements and proactively manages service components to adhere to quality standards",
@@ -71,9 +71,9 @@ const services = {
         conclusion: "Add the shield to protect your business reputation",
         sections: sections.logging
     },
-    "contact-center": {
+    "callcenter": {
         title: "Contact Center As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Service Truly Different.",
         bgImage: "",
         category: "Collaborative Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -81,8 +81,8 @@ const services = {
         tags: ["customer", "Support", "CSaaS", "Customer Experience", "Productivity", "Securing", "Data"],
         description: "BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        relatedService: ["Architectural Consultancy As A Service", "CEX As A Service", "Unified Communications As A Service"],
+        conclusion: "We help organizations who are looking for an IT Partner who is known for speed, quality and consistency of service for distributed and complex environments.",
         sections: sections.callcenter
     },
     "dns": {
@@ -115,7 +115,7 @@ const services = {
     },
     "firewall": {
         title: "Firewall As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Redefining Security Needs",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -123,8 +123,8 @@ const services = {
         tags: ["Firewall", "Security", "protection"],
         description: "Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA. Centralized Policy Management using Panorama, Sourcefire DC.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        relatedService: ["Infrastructure As A Service", "Contact Center As A Service", "Backup As A Service"],
+        conclusion: "Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA.",
         sections: sections.firewall
     },
     "infra": {
@@ -227,7 +227,7 @@ const services = {
     },
     "hosting": {
         title: "Web Hosting As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Trendsetting web hosting solutions",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/WebHosting.svg",
@@ -235,8 +235,8 @@ const services = {
         tags: ["web", "hosting", "host", "web server", "APACHE", "website"],
         description: "Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package. Load balancing can also be added as an option if required.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        relatedService: ["Storage As A Service", "Cloud Logging As A Service", "Backup As A Service"],
+        conclusion: "Web Hosting services design and implementation in distributed environments.",
         sections: sections.hosting
     },
     "wireless": {
