@@ -242,7 +242,7 @@ const services = {
     },
     "wireless": {
         title: "Wireless As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Wireless Technology Made Simple",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
@@ -251,7 +251,7 @@ const services = {
         description: "Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters of Cisco WLC 5508, 2504 and Aruba controllers.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "Let us make your campus wireless for you!!",
         sections: sections.wireless
     }
 }
