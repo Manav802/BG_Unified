@@ -44,8 +44,6 @@ export default [
         title: "Assist in DR strategy, evaluate threat models and much more...",
         titleStyle: {
             mt: 8,
-            fontSize: "40px",
-            fontWeight: "800"
         },
         my: 0,
         py: 16,

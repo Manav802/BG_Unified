@@ -10,7 +10,6 @@ export default [
             for the web browsers to identify a website, 
             for them to load the required resources. Domain Name System Service allows you to host the website over the web, maintain and monitor in real-time.</span>,
         descriptionStyle: {
-            fontSize: "lg",
             px: 6,
         },
         gap: 0,

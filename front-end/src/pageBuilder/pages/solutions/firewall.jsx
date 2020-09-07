@@ -2,7 +2,7 @@ import FirewallPricing from "../../pricing/FirewallPricing";
 export default [
     {
         gap: 10,
-        py: 16,
+        py: [8,16],
         body: [
         {
             width:["100%", "100%", 1/2],
@@ -35,17 +35,9 @@ export default [
     },
         {
             title : "Protect Your Network With BG Unified Solutions",
-            titleStyle: {
-                fontSize: "40px",
-                fontWeight: "800"
-            },
+            
             description: "BG Unified solutions provide you firewalls for a single location system, or a multi-homed network, as per your needs and requirements. We have On-premise or cloud-based, that helps secure your IT environment quickly.",
-            descriptionStyle:{
-                px: "20%",
-                fontSize: "xl",
-                opacity: 1,
-                mt: 2
-            },
+
             my: 0,
             py: 20,
             bg: "gray.100",
@@ -96,7 +88,7 @@ export default [
         width: "100%",
         containerWidth: ["100%", "540px", "720px", "960px", "1140px"],
         my: 0,
-        py:16,
+        pt:16,
         gap: 0,
         body: [{
             width: "100%",
@@ -105,7 +97,9 @@ export default [
         }]
     },
     {
-        py: 0,
+        title: <div className="d-block d-sm-none">We Offer</div>,
+        pt:0,
+        pb:10,
         body: [{
             width: "100%",
             type: "accordion",

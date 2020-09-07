@@ -33,7 +33,7 @@ function Solutions() {
                             <Fade duration={700} delay={1000} bottom>
                                 <Flex textAlign={["center","left"]} alignContent={["center","left"]} justifyContent={["center","left"]}  align="center" py={4}>
                                     <Image src={service.icon} size="24px"></Image>
-                                    <Heading mx={6} size="lg">{service.title}</Heading>
+                                    <Heading mx={6} fontSize={["18px","24px"]}>{service.title}</Heading>
                                 </Flex>
                             </Fade>
                             <Fade duration={700} delay={100} bottom>

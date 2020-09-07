@@ -7,6 +7,7 @@ export default [
             typed: ["Capture", "Live Stream", "Repurpose"],
             after: " Your Application on the Cloud"
         },
+        titleStyle:{fontSize:["3xl","4xl"],px:"5px"},
         description: "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business. Expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint",
         descriptionStyle: {
             textAlign: "left"
@@ -16,8 +17,8 @@ export default [
         body: [
             {
                 py: 4,
-                width: ["100%", 1 / 2, 1 / 3],
-                type: "feature2",
+                width: ["95%", 1 / 2, 1 / 3],
+                type: "feature",
                 data: {
                     titleSize: "md",
                     titleFont: "Nexa Bold",
@@ -30,7 +31,7 @@ export default [
             },
             {
                 py: 4,
-                width: ["100%", 1 / 2, 1 / 3],
+                width: ["95%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
                     titleSize: "md",
@@ -44,7 +45,7 @@ export default [
             },
             {
                 py: 4,
-                width: ["100%", 1 / 2, 1 / 3],
+                width: ["95%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
                     titleSize: "md",
@@ -58,7 +59,7 @@ export default [
             },
             {
                 py: 4,
-                width: ["100%", 1 / 2, 1 / 3],
+                width: ["95%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
                     titleSize: "md",
@@ -72,7 +73,7 @@ export default [
             },
             {
                 py: 4,
-                width: ["100%", 1 / 2, 1 / 3],
+                width: ["95%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
                     titleSize: "md",
@@ -86,7 +87,7 @@ export default [
             },
             {
                 py: 4,
-                width: ["100%", 1 / 2, 1 / 3],
+                width: ["95%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
                     titleSize: "md",
@@ -113,7 +114,7 @@ export default [
     {
         title: "Why BG Unified Solutions?",
         rowDistance: 8,
-        py: 16,
+        py: [8,16],
         body: [{
             width: "100%",
             type: "accordion",
