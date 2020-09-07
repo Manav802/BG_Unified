@@ -47,7 +47,7 @@ export default [
                 textAlign: "center",
             }]
         }],
-        pt: 10,
+        pt: 0,
         pb: 0,
         mb: 0
     },
