@@ -91,7 +91,7 @@ export default [
     },
     {
         title: "Why BG Unified Solutions?",
-        rowDistance: [4,8],
+        rowDistance: [4, 8],
         body: [{
             width: "100%",
             type: "accordion",
