@@ -59,7 +59,7 @@ const services = {
     },
     "cloud-logging": {
         title: "Cloud Logging As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Cloud computing is the future",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -68,7 +68,7 @@ const services = {
         description: "Log central services over the internet. Collect, Store, and report the various data and underlying threats. Add the shield to protect your business reputation.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "Add the shield to protect your business reputation",
         sections: sections.logging
     },
     "contact-center": {
@@ -101,7 +101,7 @@ const services = {
     },
     "dr": {
         title: "DR As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Tackle stagnancy better",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -110,7 +110,7 @@ const services = {
         description: "Assist in DR strategy, evaluate threat models, select technologies, prototype multisite or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "Detects, isolates, notifies and corrects faults encountered in the network",
         sections: sections.dr
     },
     "firewall": {

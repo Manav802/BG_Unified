@@ -7,7 +7,9 @@ import ucaas from "./ucaas"
 import sdwan from "./sd-wan"
 import sip from "./sip"
 import cex from "./cex"
-
+import dr from "./dr"
+import proxy from "./proxy"
+import logging from "./cloud-logging"
 
 module.exports.storage = storage
 module.exports.infra = infra
@@ -18,3 +20,6 @@ module.exports.ucaas = ucaas
 module.exports.sdwan = sdwan
 module.exports.sip = sip
 module.exports.cex = cex
+module.exports.dr = dr
+module.exports.proxy = proxy
+module.exports.logging = logging
