@@ -96,7 +96,7 @@ export default [
                     titleFont: "Nexa Bold",
                     textOpacity:"0.7",
                     image: "/assets/images/icons/color/globe.svg",
-                    title: "Scale Up On Demand",
+                    title: "Enjoy Superior performance",
                     align: "left",
                     description: "Choose the most appropriate and most suitable framework to run your cloud infrastructure. Give your customers the pleasure to enjoy low latency and faster loading speeds."
                     }
@@ -110,7 +110,7 @@ export default [
                     titleFont: "Nexa Bold",
                     textOpacity:"0.7",
                     image: "/assets/images/icons/color/headphones.svg",
-                    title: "Scale Up On Demand",
+                    title: "Excellent Customer Suppport",
                     align: "left",
                     description: "BGUS's friendly and skilled customer support service is available24X7X365 with very less response time. Our policies ensure rapid and satisfactory resolution of issues."
                     }
@@ -124,7 +124,7 @@ export default [
                     titleFont: "Nexa Bold",
                     textOpacity:"0.7",
                     image: "/assets/images/icons/color/api.svg",
-                    title: "Scale Up On Demand",
+                    title: "Migration made easy",
                     align: "left",
                     description: "Use our seamless live migration tool to get you up and running in the cloud without any modifications to your existing infrastructure."
                     }
@@ -138,7 +138,7 @@ export default [
                     titleFont: "Nexa Bold",
                     textOpacity:"0.7",
                     image: "/assets/images/icons/color/fix.svg",
-                    title: "Scale Up On Demand",
+                    title: "No Vendor lock-in",
                     align: "left",
                     description: "At BGUS you are able to develop or deploy your application in the cloud without being forced to use any vendor-specific tools."
                     }

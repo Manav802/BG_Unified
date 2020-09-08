@@ -21,7 +21,7 @@ export default [
             data: [{
                 textAlign: "justify",
                 fontSize: "lg",
-                title: "Your Security Needs Meets Our Expectations",
+                title: "Your Security Needs Meet Our Expertise",
                 titleSize: 32,
                 text: <span>We, at BG Unified Solutions, tend to offer the best in 
                 class Security for your business around the globe. With our team of 
@@ -105,6 +105,7 @@ export default [
         }]
     },
     {
+        title:"Why choose Us?",
         py: 0,
         body: [{
             width: "100%",

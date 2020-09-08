@@ -31,7 +31,7 @@ const services = {
     },
     "backup": {
         title: "Backup As A Service",
-        slogan: "Backup for your Digital system",
+        slogan: "Backup for your Digital System",
         category: "IT Infrastructural Services",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
         icon: "/assets/images/icons/monotone/BackupAsAService.svg",
@@ -54,12 +54,12 @@ const services = {
         description: "Express Routes to office 365, AWS, Azure. Advanced Solution provides private, seamless, and on-demand connections to many clouds as well as networks. ",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "Determines the quality of service level delivered against service level agreements and proactively manages service components to adhere to quality standards",
+        conclusion: "Proactively manages your service components to adhere to quality standards",
         sections: sections.cex
     },
     "cloud-logging": {
         title: "Cloud Logging As A Service",
-        slogan: "Cloud computing is the future",
+        slogan: "Cloud Computing is the new future",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -129,7 +129,7 @@ const services = {
     },
     "infra": {
         title: "Infrastructure As A Service",
-        slogan: "Store your data with our security and reliability.",
+        slogan: "Store your data with our Security and Reliability.",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/InfrastructureIcon.svg",
@@ -152,7 +152,7 @@ const services = {
         description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "We give you the power to easily deploy, efficiently monitor, and transparently scale the applications. Boost up your operational efficiency. Improve your organization’s agility.",
+        conclusion: "We give you the power to easily deploy, efficiently monitor, and scale the applications.",
         sections: sections.platform
     },
     "proxy": {
@@ -170,7 +170,7 @@ const services = {
         sections: sections.proxy
     },
     "sd-wan": {
-        title: "BGUS SD-WAN Optimization - The Best in Business",
+        title: "SD-WAN As A Service",
         slogan: "Simple Solutions for Complex Connections!!",
         bgImage: "",
         category: "Network Services",
@@ -227,7 +227,7 @@ const services = {
     },
     "hosting": {
         title: "Web Hosting As A Service",
-        slogan: "Trendsetting web hosting solutions",
+        slogan: "Trendsetting Web Hosting Solutions",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/WebHosting.svg",
