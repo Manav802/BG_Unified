@@ -11,7 +11,7 @@ export default [
         py: 16
     },
     {
-        title: "How BGUS SD-WAN will improve?",
+        title: "Find out How BGUS SD-WAN will improve your network:",
         gap: 10,
         py: 0,
         my: 0,
