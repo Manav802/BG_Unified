@@ -89,7 +89,7 @@ function FeedbackForm(props) {
     }
     return (
         <>
-            <Link mx="16px" fontSize="sm" textTransform="uppercase" onClick={onOpen}>Send A Feedback</Link>
+            <Link mx={["6px","10px","16px"]} fontSize={["10px","12px","14px"]} textTransform="uppercase" onClick={onOpen}>Send A Feedback</Link>
             <Modal isOpen={isOpen} onClose={formClose} isCentered>
                 <ModalOverlay />
                 <ModalContent className="p-4" style={{ maxWidth: "600px", width: "600px" }}>
