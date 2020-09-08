@@ -118,28 +118,10 @@ function Solutions() {
 }
 
 export async function getStaticPaths() {
+    const ServiceNames = Object.keys(services)
     return {
-      paths: [
-        { params: { name: 'appdev' } },
-        { params: { name: 'architectural-consultancy' } },
-        { params: { name: 'backup' } },
-        { params: { name: 'cex' } },
-        { params: { name: 'cloud-logging' } },
-        { params: { name: 'contact-center' } },
-        { params: { name: 'dr' } },
-        { params: { name: 'dns' } },
-        { params: { name: 'firewall' } },
-        { params: { name: 'infra' } },
-        { params: { name: 'platform' } },
-        { params: { name: 'proxy' } },
-        { params: { name: 'sd-wan' } },
-        { params: { name: 'sip' } },
-        { params: { name: 'storage' } },
-        { params: { name: 'ucaas' } },
-        { params: { name: 'hosting' } },
-        { params: { name: 'wireless' } },
-      ],
-      fallback: false // See the "fallback" section below
+        paths: ServiceNames.map((x)=>({params:{name:x}})),
+        fallback: false // See the "fallback" section below
     };
 }
 export async function getStaticProps() {
