@@ -1,7 +1,7 @@
 import sections from '../pageBuilder/pages/solutions/index'
 
 const services = {
-    "appdev":{
+    "appdev": {
         title: "Application Development As A Service",
         slogan: "Developing Your Needs",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
@@ -45,7 +45,7 @@ const services = {
     },
     "cex": {
         title: "CEX As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "The Cloud Service at its Best",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -54,12 +54,12 @@ const services = {
         description: "Express Routes to office 365, AWS, Azure. Advanced Solution provides private, seamless, and on-demand connections to many clouds as well as networks. ",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "Determines the quality of service level delivered against service level agreements and proactively manages service components to adhere to quality standards",
         sections: sections.cex
     },
     "cloud-logging": {
         title: "Cloud Logging As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Cloud computing is the future",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -68,7 +68,7 @@ const services = {
         description: "Log central services over the internet. Collect, Store, and report the various data and underlying threats. Add the shield to protect your business reputation.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "Add the shield to protect your business reputation",
         sections: sections.logging
     },
     "callcenter": {
@@ -101,7 +101,7 @@ const services = {
     },
     "dr": {
         title: "DR As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Tackle stagnancy better",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -110,7 +110,7 @@ const services = {
         description: "Assist in DR strategy, evaluate threat models, select technologies, prototype multisite or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "Detects, isolates, notifies and corrects faults encountered in the network",
         sections: sections.dr
     },
     "firewall": {
@@ -171,7 +171,8 @@ const services = {
     },
     "sd-wan": {
         title: "SD-WAN As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Simple Solutions for Complex Connections!!",
+        documentHeading: "Best SD-WAN Optimization",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/SD-Wan.svg",
@@ -180,12 +181,12 @@ const services = {
         description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
         sections: sections.sdwan
     },
     "sip": {
         title: "SIP As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Innovation and Excellence",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/SIP.svg",
@@ -194,7 +195,7 @@ const services = {
         description: "SIP As A Service Infrastructure includes more than 15 Cisco Unified Border Elements with 1600 SIP channels spanned across multiple DC locations with DUAL Exchange Homing.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "SIP As A Service Infrastructure includes more than 15 Cisco Unified border Elements with 1600 SIP channels.",
         sections: sections.sip
     },
     "storage": {
@@ -213,7 +214,7 @@ const services = {
     },
     "ucaas": {
         title: "Unified Communications As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Professional Communication at your fingertips",
         bgImage: "",
         category: "Collaborative Services",
         icon: "/assets/images/icons/monotone/UCAsAService.svg",
@@ -222,7 +223,7 @@ const services = {
         description: "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support.",
         sections: sections.ucaas
     },
     "hosting": {
@@ -241,7 +242,7 @@ const services = {
     },
     "wireless": {
         title: "Wireless As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Wireless Technology Made Simple",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
@@ -250,7 +251,7 @@ const services = {
         description: "Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters of Cisco WLC 5508, 2504 and Aruba controllers.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        conclusion: "Let us make your campus wireless for you!!",
         sections: sections.wireless
     }
 }

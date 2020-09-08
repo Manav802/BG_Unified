@@ -14,6 +14,7 @@ import ContactCenterPricing from '../../pageBuilder/pricing/ContactCenterPricing
 import SipPricing from '../../pageBuilder/pricing/SipPricing'
 import CloudExchangePricing from '../../pageBuilder/pricing/CloudExchangePricing'
 import DRPricing from '../../pageBuilder/pricing/DRPricing'
+import ProxyPricing from '../../pageBuilder/pricing/ProxyPricing'
 
 
 function pricings() {
@@ -66,6 +67,12 @@ function pricings() {
             width= "100%"
             type= "pricing"
             data= {<InfraPricing/>}
+           />
+           ProxyPricing
+           <Body 
+            width= "100%"
+            type= "pricing"
+            data= {<ProxyPricing/>}
            />
            SdwanPricing
            <Body 

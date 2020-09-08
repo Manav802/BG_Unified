@@ -1,15 +1,28 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel,Link, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioGroup, Collapse
+    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
 import { useDisclosure } from "@chakra-ui/core";
-import { deviceType,browserName,osName } from "react-device-detect";
-const deviceInfo={
-    browser:browserName,
-    os:osName,
-    device:deviceType
+import { deviceType, browserName, osName } from "react-device-detect";
+const CustomRadio = React.forwardRef((props, ref) => {
+    const { isChecked, ...rest } = props;
+    return (
+        <Button
+            ref={ref}
+            variantColor={isChecked ? "red" : "gray"}
+            aria-checked={isChecked}
+            role="radio"
+            width="30%"
+            {...rest}
+        />
+    );
+});
+const deviceInfo = {
+    browser: browserName,
+    os: osName,
+    device: deviceType
 }
 console.log(deviceInfo);
 function ErrorForm(props) {
@@ -70,10 +83,6 @@ function ErrorForm(props) {
 
             case 'browser':
                 setBrowser(value);
-                break;
-
-            case 'devicetype':
-                setDevice(value);
                 break;
 
             case 'othererror':
@@ -139,7 +148,7 @@ function ErrorForm(props) {
             },
             body: JSON.stringify(form)
         })
-        .then((response) => refreshForm(response), (error) => refreshForm(error))
+            .then((response) => refreshForm(response), (error) => refreshForm(error))
     }
     return (
         <>
@@ -182,15 +191,15 @@ function ErrorForm(props) {
                                     </TabPanel>
                                     <TabPanel>
                                         <FormControl mt={10} isRequired>
-                                            <FormLabel htmlFor="phone">Device you were using:</FormLabel>
-                                            <Select name="devicetype" value={form.device} onChange={onChange} variant="flushed">
-                                                <option value="Smartphone">Smartphone</option>
-                                                <option value="Tablet">Tablet</option>
-                                                <option value="browser">PC</option>
-                                            </Select>
+                                            <FormLabel>Device you were using:</FormLabel>
+                                            <RadioButtonGroup name="devicetype" isInline value={form.device} spacing={4} onChange={value => setDevice(value)}>
+                                                <CustomRadio size="lg" value="Smartphone">Smartphone </CustomRadio>
+                                                <CustomRadio size="lg" value="Tablet">Tablet</CustomRadio>
+                                                <CustomRadio size="lg" value="browser">PC</CustomRadio>
+                                            </RadioButtonGroup>
                                         </FormControl>
                                         <FormControl mt={10} isRequired>
-                                            <FormLabel htmlFor="name">Browser you were using:</FormLabel>
+                                            <FormLabel>Browser you were using:</FormLabel>
                                             <Select name="browser" value={form.browser} onChange={onChange} variant="flushed">
                                                 <option value="Chrome">Google Chrome</option>
                                                 <option value="Firefox">Mozilla Firefox</option>
@@ -199,7 +208,7 @@ function ErrorForm(props) {
                                             </Select>
                                         </FormControl>
                                         <FormControl mt={10} isRequired>
-                                            <FormLabel htmlFor="phone">Operating system you were using:</FormLabel>
+                                            <FormLabel>Operating system you were using:</FormLabel>
                                             <Select name="operatingsystem" value={form.operatingsystem} onChange={onChange} variant="flushed">
                                                 <option value="Windows">Windows</option>
                                                 <option value="iOS">iOS</option>
@@ -263,10 +272,10 @@ function ErrorForm(props) {
                                             <Button
                                                 mt={10}
                                                 type="submit"
-                                                size="lg" 
-                                                variantColor="primary" 
+                                                size="lg"
+                                                variantColor="primary"
                                                 className="primary-btn"
-                                                
+
                                             >Submit{isLoading && <Spinner
                                                 thickness="4px"
                                                 speed="1s"

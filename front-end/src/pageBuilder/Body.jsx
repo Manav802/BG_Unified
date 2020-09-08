@@ -5,16 +5,17 @@ import Video from './components/Video';
 import ImageGroup from './components/ImageGroup';
 import MyList from './components/MyList';
 import Feature from './components/Feature';
+import Feature2 from './components/Feature2';
 import NumberCount from './components/NumberCount';
 import AccordionWithImage from './components/AccordionWithImage';
 import Service from '../components/cards/Service';
 import AlternateRow from './components/AlternateRow';
 import Container from './Container';
 import Row from './Row';
-import {SimpleGrid} from '@chakra-ui/core'
+import { SimpleGrid } from '@chakra-ui/core'
 import ImageAndText from './components/ImageAndText';
-function Body({ gap = 4,type, data, width, ...props }) {
-    function giveMeComponent(type,data) {
+function Body({ gap = 4, type, data, width="100%", ...props }) {
+    function giveMeComponent(type, data) {
         switch (type) {
             case "content":
                 return (
@@ -35,6 +36,10 @@ function Body({ gap = 4,type, data, width, ...props }) {
             case "feature":
                 return (
                     <Feature {...data}></Feature>
+                )
+            case "feature2":
+                return (
+                    <Feature2 {...data}></Feature2>
                 )
             case "numberCount":
                 return (
@@ -65,7 +70,7 @@ function Body({ gap = 4,type, data, width, ...props }) {
             case "container":
                 return (
                     <Row>
-                        {props.containerData.map((dat)=>(<Box px={[6, 6, gap / 2]} my={4} w={dat.width}>{giveMeComponent(dat.type,dat.data)} </Box>))}
+                        {props.containerData.map((dat) => (<Box px={[6, 6, gap / 2]} my={4} w={dat.width}>{giveMeComponent(dat.type, dat.data)} </Box>))}
                     </Row>
                 )
         }
@@ -73,7 +78,7 @@ function Body({ gap = 4,type, data, width, ...props }) {
 
     return (
         <Box px={[6, 6, gap / 2]} my={4} w={width} {...props}>
-            {giveMeComponent(type,data)}
+            {giveMeComponent(type, data)}
         </Box>
     );
 }
