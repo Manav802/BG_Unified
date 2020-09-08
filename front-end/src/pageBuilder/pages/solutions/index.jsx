@@ -29,7 +29,7 @@ module.exports.cex = cex
 import firewall from "./firewall"
 module.exports.firewall = firewall
 
-import callcenter from "./callcenter"
+import callcenter from "./contact-center"
 module.exports.callcenter = callcenter
 
 import wireless from './wireless'
@@ -47,6 +47,6 @@ module.exports.appdev = appdev
 import dr from './dr'
 module.exports.dr = dr
 
-import architecture from './architecture'
+import architecture from './architectural-consultancy'
 module.exports.architecture = architecture
 

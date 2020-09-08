@@ -15,7 +15,7 @@ const services = {
         conclusion: "User-interactivity, responsiveness, user-friendly interfaces kept into consideration.",
         sections: sections.appdev
     },
-    "architecture": {
+    "architectural-consultancy": {
         title: "Architectural Consultancy As A Service",
         slogan: "Spirit of Expertise",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
@@ -71,7 +71,7 @@ const services = {
         conclusion: "Add the shield to protect your business reputation",
         sections: sections.logging
     },
-    "callcenter": {
+    "contact-center": {
         title: "Contact Center As A Service",
         slogan: "Service Truly Different.",
         bgImage: "",
