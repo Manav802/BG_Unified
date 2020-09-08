@@ -180,12 +180,12 @@ const services = {
         description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
+        conclusion: "SD-WAN transforms the way a network supports and interacts with enterprise applications.",
         sections: sections.sdwan
     },
     "sip": {
         title: "SIP As A Service",
-        slogan: "Innovation and Excellence",
+        slogan: "High Performance Delivered",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/SIP.svg",
@@ -194,7 +194,7 @@ const services = {
         description: "SIP As A Service Infrastructure includes more than 15 Cisco Unified Border Elements with 1600 SIP channels spanned across multiple DC locations with DUAL Exchange Homing.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "SIP As A Service Infrastructure includes more than 15 Cisco Unified border Elements with 1600 SIP channels.",
+        conclusion: "Our Infrastructure includes more than 15 Cisco Unified border Elements with 1600 SIP channels.",
         sections: sections.sip
     },
     "storage": {
