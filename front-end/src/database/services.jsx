@@ -39,7 +39,7 @@ const services = {
         tags: ["backup"],
         description: "BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data, while enabling self-service restoration capability to your teams.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
+        relatedService: ["Firewall As A Service", "Infrastructure As A Service", "Web Hosting As A Service"],
         conclusion: "Customizable Data Protection for your Business",
         sections: sections.backup
     },
