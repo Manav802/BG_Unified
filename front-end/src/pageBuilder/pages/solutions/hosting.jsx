@@ -82,7 +82,7 @@ export default [
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/weather/snow.svg", mt: 4, title: "Load Balancing"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/shopping/chart-pie.svg", mt: 4, title: "Load Balancing"}
                 }],
             },
         ]   

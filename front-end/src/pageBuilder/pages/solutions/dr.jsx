@@ -56,40 +56,40 @@ export default [
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
                 data: {
-                    align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Multisite or Multi-Cloud"
+                    align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/weather/cloudy.svg", mt: 4, title: "Multisite or Multi-Cloud"
                 }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/communication/group.svg", mt: 4, title: "Robust" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/tools/swiss-knife.svg", mt: 4, title: "Robust" }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/files/upload.svg", mt: 4, title: "Regular Monitoring" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/devices/display-1.svg", mt: 4, title: "Regular Monitoring" }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
                 data: {
-                    align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/communication/shield-user.svg", mt: 4, title: "Quality Ensured"
+                    align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/navigation/check.svg", mt: 4, title: "Quality Ensured"
                 }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/communication/chat-5.svg", mt: 4, title: "Scalable" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/general/scale.svg", mt: 4, title: "Scalable" }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/shopping/credit-card.svg", mt: 4, title: "Reliable" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/home/key.svg", mt: 4, title: "Reliable" }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/code/lock-circle.svg", mt: 4, title: "Low Redundant Time" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/code/time-schedule.svg", mt: 4, title: "Low Redundant Time" }
             }
         ]
     },

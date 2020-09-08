@@ -180,7 +180,7 @@ const services = {
         tags: ["SD-WAN", "sd wan", "Optimization", " VMware VDI"],
         description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
+        relatedService: ["Proxy As A Service", "DNS As A Service", "SIP As A Service"],
         conclusion: "SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
         sections: sections.sdwan
     },
