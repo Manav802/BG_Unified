@@ -40,7 +40,7 @@ export default [
         bg: 'light.400',
     },
     {
-        title: "Assist in DR strategy, evaluate threat models and much more...",
+        title: "Assist in DR strategy, evaluate threat models and much more!",
         titleStyle: {
             fontSize: "40px",
             fontWeight: "800"
