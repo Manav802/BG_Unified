@@ -1,10 +1,11 @@
 import ContactCenterPricing from "../../pricing/ContactCenterPricing";
 export default [
     {
-        
+        pb:0,
         body: [
         {
             width:["100%", "100%", 1/2],
+            py:[2,6,6,6,2],
             type: "imageGroup",
             data: {
                 images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
@@ -38,7 +39,7 @@ export default [
         width: "100%",
         containerWidth: ["100%", "540px", "720px", "960px", "1140px"],
         my: 0,
-        py:16,
+        py:[0,8,12],
         gap: 0,
         body: [{
             width: "100%",
@@ -49,7 +50,7 @@ export default [
 
     {
         my: 0,
-        py: "48px",
+        py: ["24px","30px","48px"],
         bgImage: "url('/assets/images/backgrounds/network_abstract.jpg')",
         blend: "screen",
         bg: "light.400",

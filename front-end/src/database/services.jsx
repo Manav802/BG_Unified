@@ -15,7 +15,7 @@ const services = {
         conclusion: "User-interactivity, responsiveness, user-friendly interfaces kept into consideration.",
         sections: sections.appdev
     },
-    "architecture": {
+    "architectural-consultancy": {
         title: "Architectural Consultancy As A Service",
         slogan: "Spirit of Expertise",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
@@ -25,7 +25,7 @@ const services = {
         tags: ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
         description: "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture. Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
         illustration: "",
-        relatedService: ["Contact Center As A Service", "SIP As A Service", "Unified Communications As A Service"],
+        relatedService: ["Contact Center As A Service", "SIP As A Service", "DR As A Service"],
         conclusion: "Achieve Higher Business Efficiency through increased agility, cost containment and lowered risk.",
         sections: sections.architecture
     },
@@ -39,7 +39,7 @@ const services = {
         tags: ["backup"],
         description: "BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data, while enabling self-service restoration capability to your teams.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
+        relatedService: ["Firewall As A Service", "Infrastructure As A Service", "Web Hosting As A Service"],
         conclusion: "Customizable Data Protection for your Business",
         sections: sections.backup
     },
@@ -53,8 +53,8 @@ const services = {
         tags: ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
         description: "Express Routes to office 365, AWS, Azure. Advanced Solution provides private, seamless, and on-demand connections to many clouds as well as networks. ",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "Proactively manages your service components to adhere to quality standards",
+        relatedService: ["Cloud Logging As A Service", "Proxy As A Service", "SIP As A Service"],
+        conclusion: "Determines the quality of service level delivered against service level agreements and proactively manages service components to adhere to quality standards",
         sections: sections.cex
     },
     "cloud-logging": {
@@ -71,7 +71,7 @@ const services = {
         conclusion: "Add the shield to protect your business reputation",
         sections: sections.logging
     },
-    "callcenter": {
+    "contact-center": {
         title: "Contact Center As A Service",
         slogan: "Service Truly Different.",
         bgImage: "",
@@ -81,7 +81,7 @@ const services = {
         tags: ["customer", "Support", "CSaaS", "Customer Experience", "Productivity", "Securing", "Data"],
         description: "BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus",
         illustration: "",
-        relatedService: ["Architectural Consultancy As A Service", "CEX As A Service", "Unified Communications As A Service"],
+        relatedService: ["Architectural Consultancy As A Service", "Application Development As A Service", "Unified Communications As A Service"],
         conclusion: "We help organizations who are looking for an IT Partner who is known for speed, quality and consistency of service for distributed and complex environments.",
         sections: sections.callcenter
     },
@@ -95,7 +95,7 @@ const services = {
         tags: ["dns", "DNS", "domain", "name", "cost", "effective", "Concurrency", "Scalability", "TLD servers"],
         description: "Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
+        relatedService: ["Web Hosting As A Service", "Cloud Logging As A Service", "Infrastructure As A Service"],
         conclusion: "Try our Concurrent DNS Service with superior IP Technology.",
         sections: sections.dns
     },
@@ -109,7 +109,7 @@ const services = {
         tags: ["Disaster", "Recovery", "Management", "Deployment", "Flexible", "Non-Disruptive"],
         description: "Assist in DR strategy, evaluate threat models, select technologies, prototype multisite or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
+        relatedService: ["Cloud Logging As A Service", "Platform As A Service", "Infrastructure As A Service"],
         conclusion: "Detects, isolates, notifies and corrects faults encountered in the network",
         sections: sections.dr
     },
@@ -151,8 +151,8 @@ const services = {
         tags: ["cloud", "platform", "service", "infrastructure", "DC Interconnect"],
         description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "We give you the power to easily deploy, efficiently monitor, and scale the applications.",
+        relatedService: ["Backup As A Service", "Infrastructure As A Service", "Storage As A Service"],
+        conclusion: "We give you the power to easily deploy, efficiently monitor, and transparently scale the applications. Boost up your operational efficiency. Improve your organization’s agility.",
         sections: sections.platform
     },
     "proxy": {
@@ -165,13 +165,14 @@ const services = {
         tags: ["proxy", "servers", "low-latency", "services"],
         description: "Just redirect your traffic to our Proxy Service either by DNS or other custom solution to our public Proxy Service and then create a record to reroute your traffic to your application behind the firewall.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
+        relatedService: ["Web Hosting As A Service", "DNS As A Service", "SD-WAN As A Service"],
         conclusion: "",
         sections: sections.proxy
     },
     "sd-wan": {
         title: "SD-WAN As A Service",
         slogan: "Simple Solutions for Complex Connections!!",
+        documentHeading: "Best SD-WAN Optimization",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/SD-Wan.svg",
@@ -193,8 +194,8 @@ const services = {
         tags: ["SIP", "Connectivity", "Service Infrastructure", "cisco unified"],
         description: "SIP As A Service Infrastructure includes more than 15 Cisco Unified Border Elements with 1600 SIP channels spanned across multiple DC locations with DUAL Exchange Homing.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "Our Infrastructure includes more than 15 Cisco Unified border Elements with 1600 SIP channels.",
+        relatedService: ["SD-WAN As A Service", "DNS As A Service", "Firewall As A Service"],
+        conclusion: "SIP As A Service Infrastructure includes more than 15 Cisco Unified border Elements with 1600 SIP channels.",
         sections: sections.sip
     },
     "storage": {
@@ -221,7 +222,7 @@ const services = {
         tags: ["UCaaS", "unified", "communications", "cisco", "avaya", "unity", "collaboration", "telepresence", "workforce", "optimisation"],
         description: "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
+        relatedService: ["Contact Center As A Service", "Infrastructure As A Service", "SIP As A Service"],
         conclusion: "Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support.",
         sections: sections.ucaas
     },
@@ -241,7 +242,7 @@ const services = {
     },
     "wireless": {
         title: "Wireless As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Wireless Technology Made Simple",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
@@ -249,8 +250,8 @@ const services = {
         tags: ["wireless", "wifi", "clusters", "networks"],
         description: "Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters of Cisco WLC 5508, 2504 and Aruba controllers.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "",
+        relatedService: ["SIP As A Service", "DNS As A Service", "DR As A Service"],
+        conclusion: "Let us make your campus wireless for you!!",
         sections: sections.wireless
     }
 }

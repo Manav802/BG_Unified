@@ -81,11 +81,22 @@ export default [
     },
     {
         containerWidth: "100%",
+        py: [0, 4],
         gap: 0,
         body: [{
             width: "100%",
             type: "pricing",
             data: <SdwanPricing />
         }]
+    },
+    {
+        description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
+        descriptionStyle: {
+            mt: 0,
+            textAlign: "left"
+        },
+        mt: 0,
+        pt: 0,
+        pb: 10
     }
 ]

@@ -1,12 +1,6 @@
 export default [
     {
-        body: [{
-            type: "content",
-            data: [{
-                title: "We help you in new Application Development, Modernizing and Supporting existing applications.",
-                titleSize: 35,
-            }]
-        }],
+        title: "We help you in new Application Development, Modernizing and Supporting existing applications.",
         pt: 10,
         pb: 0,
         mb: 0

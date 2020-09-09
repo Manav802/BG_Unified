@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "http://manav802.github.io/BG_Unified/",
   "dependencies": {
-    "-": "0.0.1",
     "@chakra-ui/core": "^0.8.0",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
@@ -44,8 +43,7 @@
     "react-transition-group": "^4.4.1",
     "react-visibility-sensor": "^5.1.1",
     "typescript": "^4.0.2",
-    "typewriter-effect": "^2.13.1",
-    "uifx": "^2.0.7"
+    "typewriter-effect": "^2.13.1"
   },
   "scripts-old": {
     "start": "react-scripts start",

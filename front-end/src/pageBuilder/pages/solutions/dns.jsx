@@ -4,13 +4,12 @@ import DNSPricing from "../../pricing/DNSPricing";
 export default [
     {   
         title : "Hosting with Freedom Built-In",
-        
+        titleStyle:{fontSize:["3xl","4xl"],px:"10px"},
         description: <span>Delivering a scalable, reliable and managed authoritative Domain Name System (DNS) As A Service. With our assured low latency and high availability, 
             it is a cost-effective way to make your applications and services available to your users. <br/><br/>The main functionality of DNS is to convert domain names into IP addresses, 
             for the web browsers to identify a website, 
             for them to load the required resources. Domain Name System Service allows you to host the website over the web, maintain and monitor in real-time.</span>,
         descriptionStyle: {
-            fontSize: "lg",
             px: 6,
         },
         gap: 0,

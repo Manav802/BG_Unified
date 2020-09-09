@@ -9,7 +9,7 @@ function NumberCount({count, digitColor = "primary.500", prefix, suffix, duratio
             <Heading fontSize={["30px","36px","40px"]} fontFamily="Nexa Bold" color={digitColor}>
                 <MyCount endPoint={count} prefix={prefix} suffix={suffix} duration={duration}></MyCount>
             </Heading>
-            <Heading my={2} size={"lg" || titleSize} textAlign ={align}>{title}</Heading>
+            <Heading my={2} fontSize={["18px","20px","22px"]} textAlign ={align}>{title}</Heading>
             <Text textAlign={align}>{description}</Text>
         </Flex>
     );

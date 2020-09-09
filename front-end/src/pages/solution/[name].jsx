@@ -31,13 +31,15 @@ function Solutions() {
                     <div className="row">
                         <div className="col-12">
                             <Fade duration={700} delay={1000} bottom>
-                                <Flex align="center" py={4}>
+                                <Flex textAlign={["center","left"]} alignContent={["center","left"]} justifyContent={["center","left"]}  align="center" py={4}>
                                     <Image src={service.icon} size="24px"></Image>
-                                    <Heading mx={6} size="lg">{service.title}</Heading>
+                                    <Heading mx={6} fontSize={["18px","24px"]}>{service.title}</Heading>
                                 </Flex>
                             </Fade>
                             <Fade duration={700} delay={100} bottom>
+                            <Flex textAlign={["center","left"]} justifyContent={["center","left"]}>
                                 <Heading fontSize={["40px", "48px","56px","64px"]} className="display2 text-white">{service.slogan}</Heading>
+                            </Flex>
                             </Fade>
 
                             {/* <Fade duration={700} delay={300} bottom>
@@ -46,12 +48,14 @@ function Solutions() {
                                 </p>
                             </Fade> */}
                             <Fade duration={700} delay={1000} top>
+                                <Flex justifyContent={["center","left"]}>
                                 <ButtonGroup mt={10} spacing="16px">
                                     <Button onClick={() => {
                                         window.scrollTo(0, document.getElementById("pricing").offsetTop - 80)
                                     }} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button>
                                     <Link href="/contact"><Button variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">Contact Sales</Button></Link>
                                 </ButtonGroup>
+                                </Flex>
                             </Fade>
                         </div>
                     </div>
@@ -64,11 +68,11 @@ function Solutions() {
             {service.conclusion && <RenderSection 
                 title = "Get Started Now"
                 titleStyle={{fontSize:["36px","40px","48px"]}}
-                descriptionStyle={{mt: 4, opacity: 1, fontSize: ["lg","xl","2xl"]}}
+                descriptionStyle={{mt: [2,4], opacity: 1, fontSize: ["lg","xl","2xl"]}}
                 color="white"
                 bg="primary.500"
                 description= {service.conclusion}
-                py={[6,8,8,10]}
+                py={[8,8,10,10]}
                 mt="-128px"
                 mx="auto"
                 width = {["100%", "100%", "720px", "960px", "1140px"]}

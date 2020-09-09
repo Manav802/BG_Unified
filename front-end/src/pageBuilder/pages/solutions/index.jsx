@@ -1,36 +1,52 @@
+
 import storage from "./storage"
-import infra from "./infra"
-import dns from "./dns"
-import backup from "./backup"
-import platform from "./platform"
-import ucaas from "./ucaas"
-import sdwan from "./sd-wan"
-import sip from "./sip"
-import cex from "./cex"
-import dr from "./dr"
-import proxy from "./proxy"
-import logging from "./cloud-logging"
-import firewall from "./firewall"
-import callcenter from "./callcenter"
-import architecture from "./architecture"
-import appdev from "./appdev"
-import hosting from "./hosting"
-
-
 module.exports.storage = storage
+
+import infra from "./infra"
 module.exports.infra = infra
+
+import backup from "./backup"
 module.exports.backup = backup
+
+import dns from "./dns"
 module.exports.dns = dns
+
+import platform from "./platform"
 module.exports.platform = platform
+
+import ucaas from "./ucaas"
 module.exports.ucaas = ucaas
+
+import sdwan from "./sd-wan"
 module.exports.sdwan = sdwan
+
+import sip from "./sip"
 module.exports.sip = sip
+
+import cex from "./cex"
 module.exports.cex = cex
-module.exports.dr = dr
-module.exports.proxy = proxy
-module.exports.logging = logging
+
+import firewall from "./firewall"
 module.exports.firewall = firewall
+
+import callcenter from "./contact-center"
 module.exports.callcenter = callcenter
-module.exports.architecture = architecture
-module.exports.appdev = appdev
+
+import wireless from './wireless'
+module.exports.wireless = wireless
+
+import proxy from './proxy'
+module.exports.proxy = proxy
+
+import hosting from './hosting'
 module.exports.hosting = hosting
+
+import appdev from './appdev'
+module.exports.appdev = appdev
+
+import dr from './dr'
+module.exports.dr = dr
+
+import architecture from './architectural-consultancy'
+module.exports.architecture = architecture
+

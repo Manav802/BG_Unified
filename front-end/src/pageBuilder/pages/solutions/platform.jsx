@@ -5,15 +5,15 @@ export default [
             typed: ["Deploy", "Run", "Manage"],
             after: " your Application on the Cloud Platform"
         },
-        titleStyle: { fontSize: ["3xl", "4xl"], px: "10px" },
+        titleStyle:{fontSize:["3xl","4xl"],px:"10px"},
         description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
         descriptionStyle: {
             textAlign: "center",
-            fontSize: ["lg", "xl"],
+            fontSize: ["lg","xl"],
         },
         rowDistance: 8,
         gap: 10,
-        py: [8, 16],
+        py: [8,16],
         body: [
             {
                 width: ["100%", "100%", 1 / 2],
@@ -44,8 +44,9 @@ export default [
     },
     {
         gap: 10,
-        py: 0,
+        py: 12,
         my: 0,
+        bg: "light.400",
         body: [
             {
                 width: ["100%", 1 / 2, 1 / 3],
@@ -90,7 +91,7 @@ export default [
     },
     {
         title: "Why BG Unified Solutions?",
-        rowDistance: [4, 8],
+        rowDistance: [4,8],
         body: [{
             width: "100%",
             type: "accordion",
