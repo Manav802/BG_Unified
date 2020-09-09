@@ -31,7 +31,7 @@ const services = {
     },
     "backup": {
         title: "Backup As A Service",
-        slogan: "Backup for your Digital system",
+        slogan: "Backup for your Digital System",
         category: "IT Infrastructural Services",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
         icon: "/assets/images/icons/monotone/BackupAsAService.svg",
@@ -59,7 +59,7 @@ const services = {
     },
     "cloud-logging": {
         title: "Cloud Logging As A Service",
-        slogan: "Cloud computing is the future",
+        slogan: "Cloud Computing is the new future",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -129,7 +129,7 @@ const services = {
     },
     "infra": {
         title: "Infrastructure As A Service",
-        slogan: "Store your data with our security and reliability.",
+        slogan: "Store your data with our Security and Reliability.",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/InfrastructureIcon.svg",
@@ -181,12 +181,12 @@ const services = {
         description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
-        conclusion: "SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
+        conclusion: "SD-WAN transforms the way a network supports and interacts with enterprise applications.",
         sections: sections.sdwan
     },
     "sip": {
         title: "SIP As A Service",
-        slogan: "Innovation and Excellence",
+        slogan: "High Performance Delivered",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/SIP.svg",
@@ -228,7 +228,7 @@ const services = {
     },
     "hosting": {
         title: "Web Hosting As A Service",
-        slogan: "Trendsetting web hosting solutions",
+        slogan: "Trendsetting Web Hosting Solutions",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/WebHosting.svg",
