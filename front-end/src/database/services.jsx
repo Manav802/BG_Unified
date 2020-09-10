@@ -253,6 +253,34 @@ const services = {
         relatedService: ["SIP As A Service", "DNS As A Service", "DR As A Service"],
         conclusion: "Let us make your campus wireless for you!!",
         sections: sections.wireless
+    },
+    "wafaas": {
+        title: "Web Application Firewall As A Service",
+        slogan: "Robust Security with a Dedicated Web App Firewall",
+        bgImage: "",
+        category: "Network Services",
+        icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
+        color: "#E4572E",
+        tags: ["wireless", "wifi", "clusters", "networks"],
+        description: " It’s easy to deploy and available at a single license, giving you simplified configuration, bot management, and holistic visibility and control with a single pane of glass.",
+        illustration: "",
+        relatedService: ["SIP As A Service", "DNS As A Service", "DR As A Service"],
+        conclusion: "Protect your web applications and use a web application firewall. Contact us and let our experts help you!",
+        sections: sections.wafaas
+    },
+    "dbaas": {
+        title: "Database As A Service",
+        slogan: "Professional Remote Database Solutions",
+        bgImage: "",
+        category: "Network Services",
+        icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
+        color: "#E4572E",
+        tags: ["wireless", "wifi", "clusters", "networks"],
+        description: " It’s easy to deploy and available at a single license, giving you simplified configuration, bot management, and holistic visibility and control with a single pane of glass.",
+        illustration: "",
+        relatedService: ["SIP As A Service", "DNS As A Service", "DR As A Service"],
+        conclusion: "Professional, FLexible and Reliable Database Services for your Business.",
+        sections: sections.dbaas
     }
 }
 

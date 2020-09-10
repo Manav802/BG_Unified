@@ -50,3 +50,8 @@ module.exports.dr = dr
 import architecture from './architectural-consultancy'
 module.exports.architecture = architecture
 
+import wafaas from './wafaas'
+module.exports.wafaas = wafaas
+
+import dbaas from './dbaas'
+module.exports.dbaas = dbaas
