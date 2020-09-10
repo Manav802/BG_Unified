@@ -134,6 +134,8 @@ const CustomRadio = React.forwardRef((props, ref) => {
   const { isChecked, isDisabled, value, ...rest } = props;
   return (
     <Button
+      className="my-1"
+      fontSize={["13px","14px","16px"]}
       ref={ref}
       variant={isChecked ? "solid" : "outline"}
       variantColor={isChecked ? "primary" : "gray.300"}
@@ -158,7 +160,7 @@ function InfraPricing(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const [show, setShow] = React.useState(false);
-  const openControls = () => setShow(true);
+  const openControls = () => {setShow(true); window.scrollTo(0, document.getElementById("collapse-1").offsetTop - 100);}
 
   const [storage, setStorage] = React.useState(0);
   const handleStorage = (storage) => setStorage(storage);
@@ -193,7 +195,7 @@ function InfraPricing(props) {
 
   //Panels
   const tabPanel = (
-    <TabPanel mx="auto" width={["100%", "100%", "100%", "90%", "76%" ]} className="py-2">
+    <TabPanel mx="auto" width={["100%", "100%", "100%", "90%", "82%" ]} className="py-2">
       <Fade cascade duration={500} distance={"30%"} bottom>
       <div className="row no-gutters justify-content-center">
         {plans.map((plan) => {
@@ -230,7 +232,7 @@ function InfraPricing(props) {
     </TabPanel>
   );
   return (
-    <Box id="pricing">
+    <div className="container-fluid" id="pricing">
     <div className="row justify-content-center">
       <Button
         onClick={onOpen}
@@ -368,7 +370,7 @@ function InfraPricing(props) {
         {tabPanel}
       </TabPanels>
   </Tabs>
-    <div className="container">
+    <div id="collapse-1" className="container">
       <Collapse id="quoteForm" className="px-lg-5 px-3" mt={6} isOpen={show}>
         <div className="px-4 py-5 border">
           <div className="display5 text-center">
@@ -511,7 +513,7 @@ function InfraPricing(props) {
         </div>
       </Collapse>
     </div>
-    </Box>
+    </div>
   )
 }
 

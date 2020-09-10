@@ -1,4 +1,3 @@
-import InfraPricing from "../../pricing/InfraPricing";
 import DNSPricing from "../../pricing/DNSPricing";
 
 export default [

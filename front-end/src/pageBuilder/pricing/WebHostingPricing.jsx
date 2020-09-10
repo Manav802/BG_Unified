@@ -13,7 +13,7 @@ const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + " " + text : "");
 
 function WebHostingPricing(props) {
   const [show, setShow] = React.useState(false);
-    const openControls = () => setShow(true);
+    const openControls = () => {setShow(true); window.scrollTo(0, document.getElementById("collapse-1").offsetTop - 100);}
     const [plan,setPlan] = React.useState("");
     const types = [{name:"Non resilient (APACHE)",icon:""},
     {name:"Non resilient (APACHE) with MYSQL DB",icon:""},
@@ -62,8 +62,8 @@ function WebHostingPricing(props) {
         </div>
     </div>
     </Fade>
-    <div>
-        <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
+    <div id="collapse-1">
+        <Collapse className="px-lg-5" mt={6} isOpen={show}>
             <div className="px-4 py-5 border">
                 <div className="display5 text-center">{plan}</div>
                 <div className="row px-3">
