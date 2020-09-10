@@ -79,7 +79,7 @@ export default [
                 containerData : [{
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/shopping/credit-card.svg", mt: 4, title: "Affordable"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/shopping/dollar.svg", mt: 4, title: "Affordable"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
@@ -104,7 +104,7 @@ export default [
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/design/magic.svg", mt: 4, title: "Optimized Agent Functions"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/code/settings-4.svg", mt: 4, title: "Optimized Agent Functions"}
                 }],
             },
         ]   

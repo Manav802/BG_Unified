@@ -11,7 +11,7 @@ export default [
         py: 16
     },
     {
-        title: "How BGUS SD-WAN will improve?",
+        title: "Find out How BGUS SD-WAN will improve your network:",
         gap: 10,
         py: 0,
         my: 0,
@@ -25,7 +25,7 @@ export default [
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/globe.svg",
+                    image: "/assets/images/icons/color/mobile.svg",
                     title: "Virtual Flexibility",
                     align: "left",
                     size: "50px",
@@ -40,7 +40,7 @@ export default [
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/headphones.svg",
+                    image: "/assets/images/icons/color/tags.svg",
                     title: "Diversifying Applications",
                     align: "left",
                     size: "50px",
@@ -55,7 +55,7 @@ export default [
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/api.svg",
+                    image: "/assets/images/icons/color/data-server.svg",
                     title: "Storage Centralization",
                     align: "left",
                     size: "50px",
@@ -70,7 +70,7 @@ export default [
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/fix.svg",
+                    image: "/assets/images/icons/color/lock.svg",
                     title: "Security Guaranteed",
                     align: "left",
                     size: "50px",
@@ -81,7 +81,7 @@ export default [
     },
     {
         containerWidth: "100%",
-        py:[0,4],
+        py: [0, 4],
         gap: 0,
         body: [{
             width: "100%",
@@ -92,11 +92,11 @@ export default [
     {
         description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
         descriptionStyle: {
-            mt:0,
+            mt: 0,
             textAlign: "left"
         },
         mt: 0,
         pt: 0,
-        pb:10
+        pb: 10
     }
 ]

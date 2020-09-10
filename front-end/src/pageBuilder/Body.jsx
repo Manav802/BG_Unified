@@ -77,6 +77,11 @@ function Body({ gap = 4, type, data, width="100%", ...props }) {
     }
 
     return (
+        type=='pricing'? 
+        <Box px={0} my={4} w={width} {...props}>
+            {giveMeComponent(type, data)}
+        </Box>
+        :
         <Box px={[6, 6, gap / 2]} my={4} w={width} {...props}>
             {giveMeComponent(type, data)}
         </Box>

@@ -2,12 +2,8 @@ import SipPricing from "../../pricing/SipPricing";
 export default [
     {
         title: 'Expertise to address challenges by designing and delivering complete collaboration solutions',
-        titleStyle: {
-            textAlign: 'justify',
-            fontSize: ['2xl', '2xl', '36px'],
-            px: 4,
-        },
-        rowDistance: 8,
+        titleStyle:{fontSize:["3xl","32px","4xl"],px:"10px"},
+        rowDistance: 10,
         body: [
             {
                 width: ["100%", 1 / 2, 1 / 3],
@@ -40,7 +36,7 @@ export default [
                     titleSize: "md",
                     textOpacity: "0.8",
                     size: "96px",
-                    image: "/assets/images/icons/color/analytics.svg",
+                    image: "/assets/images/icons/color/encryption.svg",
                     title: "100% Data Security",
                     align: "center",
                 }

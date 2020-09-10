@@ -88,7 +88,7 @@ export default [
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/tools/swiss-knife.svg", mt: 4, title: "Increased Business Efficiency"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "Increased Business Efficiency"}
                 }],
             },
         ]   

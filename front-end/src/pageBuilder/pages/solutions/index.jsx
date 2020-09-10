@@ -5,6 +5,9 @@ module.exports.storage = storage
 import infra from "./infra"
 module.exports.infra = infra
 
+import logging from './logging'
+module.exports.logging = logging
+
 import backup from "./backup"
 module.exports.backup = backup
 
@@ -48,5 +51,13 @@ import dr from './dr'
 module.exports.dr = dr
 
 import architecture from './architectural-consultancy'
+import { SimpleGrid } from "@chakra-ui/core"
 module.exports.architecture = architecture
+
+import loadBalancer from './loadBalancer'
+module.exports.loadBalancer = loadBalancer
+
+import workstation from './workstation'
+module.exports.workstation = workstation
+
 

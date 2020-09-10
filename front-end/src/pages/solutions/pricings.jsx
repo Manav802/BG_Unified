@@ -15,7 +15,7 @@ import SipPricing from '../../pageBuilder/pricing/SipPricing'
 import CloudExchangePricing from '../../pageBuilder/pricing/CloudExchangePricing'
 import DRPricing from '../../pageBuilder/pricing/DRPricing'
 import ProxyPricing from '../../pageBuilder/pricing/ProxyPricing'
-
+import VdiPricing from '../../pageBuilder/pricing/VdiPricing'
 
 function pricings() {
     return (
@@ -97,6 +97,12 @@ function pricings() {
             width= "100%"
             type= "pricing"
             data= {<UcaasPricing/>}
+           />
+           VdiPricing
+           <Body 
+            width= "100%"
+            type= "pricing"
+            data= {<VdiPricing/>}
            />
            WebHostingPricing
            <Body 

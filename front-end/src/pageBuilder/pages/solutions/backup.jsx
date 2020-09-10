@@ -24,7 +24,7 @@ export default [
                 fontSize: ["md","md","md","lg"],
                 title: "Protecting your Data is the New Normal!!",
                 titleSize: [28,28,28,32],
-                text: <span>BG Unified Solution provides reliable, secure & cost-effective managed service for backup 
+                text: <span>BG Unified Solutions provides reliable, secure & cost-effective managed service for backup 
                     and recovery of all types of data. We handle protection and management for all of your structured 
                     and unstructured data while enabling self-service restoration capability to your teams. 
                     We’ll create a realistic roadmap and provide continual service so you can capture the 

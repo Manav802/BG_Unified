@@ -155,7 +155,7 @@ function ErrorForm(props) {
     }
     return (
         <>
-            <Link mx="16px" fontSize="sm" textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
+            <Link mx={["6px","10px","16px"]} fontSize={["10px","12px","14px"]} textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
             <Modal isOpen={isOpen} onClose={formClose} isCentered>
                 <ModalOverlay />
                 <ModalContent className="p-4" style={{ maxWidth: "700px", minHeight: "750px" }}>

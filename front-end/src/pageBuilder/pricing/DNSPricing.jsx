@@ -24,7 +24,7 @@ const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + " " + text : "");
 function DNSPricing(props) {
   const [show, setShow] = React.useState(false);
   const [plan, setPlan] = React.useState("");
-  const openControls = () => setShow(true);
+  const openControls = () => {setShow(true); window.scrollTo(0, document.getElementById("collapse-1").offsetTop +850);}
   const [type, setType] = React.useState("Windows");
   const [zones,setZone] = React.useState(0);
   const [dailyBackups, setDailyBackups] = React.useState(false);
@@ -150,7 +150,8 @@ function DNSPricing(props) {
         </TabPanels>
       </Tabs>
       <div>
-        <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
+      <div id="collapse-1">
+        <Collapse className="px-lg-5" mt={6} isOpen={show}>
           <div className="px-4 py-5 border">
             <div className="display5 text-center">{plan}</div>
             <div className="row px-3">
@@ -217,6 +218,7 @@ function DNSPricing(props) {
             </div>
           </div>
         </Collapse>
+      </div>
       </div>
     </div>
   </div>
