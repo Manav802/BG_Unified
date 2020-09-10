@@ -14,6 +14,7 @@ const CustomRadio = React.forwardRef((props, ref) => {
         <Button
             ref={ref}
             variantColor={isChecked ? "red" : "gray"}
+            color={isChecked?"light.500":'black.500'}
             aria-checked={isChecked}
             role="radio"
             width={["25%", "30%", "30%"]}
@@ -42,6 +43,7 @@ function ErrorForm(props) {
     const [rend, setRend] = useState(false);
     const [show, setShow] = useState(false);
     const [tabIndex, setTabIndex] = useState(0);
+    const [activeButton,setActiveButton]=useState('');
     let form = {
         name: name,
         email: email,
@@ -195,10 +197,10 @@ function ErrorForm(props) {
                                     <TabPanel>
                                         <FormControl mt={10} isRequired>
                                             <FormLabel>Device you were using:</FormLabel>
-                                            <RadioButtonGroup name="devicetype" className="d-flex justify-content-center" isInline value={form.device} spacing={4} onChange={value => setDevice(value)}>
-                                                <CustomRadio value="Smartphone"><SVG src="/assets/images/icons/library/devices/iphone-x.svg" /></CustomRadio>
-                                                <CustomRadio value="Tablet"><SVG src="/assets/images/icons/library/devices/tablet.svg" /></CustomRadio>
-                                                <CustomRadio value="browser"><SVG src="/assets/images/icons/library/devices/imac.svg" /></CustomRadio>
+                                            <RadioButtonGroup name="devicetype" className="d-flex justify-content-center button-group" isInline value={form.device} spacing={4} onChange={value => {setDevice(value);setActiveButton(value)}}>
+                                                <CustomRadio value="Smartphone"><SVG color={activeButton==="Smartphone"?"light.500":"black.500"} src="/assets/images/icons/library/devices/iphone-x.svg" /><div>Smartphone</div></CustomRadio>
+                                                <CustomRadio value="Tablet"><SVG color={activeButton==="Tablet"?"light.500":"black.500"} src="/assets/images/icons/library/devices/tablet.svg" /><div>Tablet</div></CustomRadio>
+                                                <CustomRadio value="browser"><SVG color={activeButton==="browser"?"light.500":"black.500"} src="/assets/images/icons/library/devices/imac.svg" /><div className="d-block" >PC</div></CustomRadio>
                                             </RadioButtonGroup>
                                         </FormControl>
                                         <FormControl mt={10} isRequired>

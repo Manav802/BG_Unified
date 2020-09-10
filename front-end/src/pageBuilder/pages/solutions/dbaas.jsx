@@ -15,9 +15,9 @@ export default [
         }]
     },
     {
-        title:"BG Unified Solutions providing Databases for your Enterprise Needs :-"
+        title:"BG Unified Solutions providing Databases for your Enterprise Needs :-",
         description:"BG Unified Solutions Remote DBA service will manage your database infrastructure, no matter how big or small it may be. You’ll be able to focus more on your business while our experts manage your database platform 24 x 7."
-    }
+    },
     {
         title: "We focus on providing you with the best with :-",
         titleStyle: {
