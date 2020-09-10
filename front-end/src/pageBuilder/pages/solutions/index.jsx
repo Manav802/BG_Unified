@@ -50,3 +50,6 @@ module.exports.dr = dr
 import architecture from './architectural-consultancy'
 module.exports.architecture = architecture
 
+import logging from './cloud-logging'
+module.exports.logging = logging
+
