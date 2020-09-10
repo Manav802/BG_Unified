@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 
 import Head from "next/head";
-import CardWithIcon from "../components/cards/CardWithIcon";
+import CardWithIcon from "../../components/cards/CardWithIcon";
 import { Image, Link } from "@chakra-ui/core";
 
 class OurSolutions extends Component {

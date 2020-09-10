@@ -138,6 +138,7 @@ export async function getStaticPaths() {
         { params: { name: 'ucaas' } },
         { params: { name: 'hosting' } },
         { params: { name: 'wireless' } },
+        { params: { name: 'wafaas' } },
       ],
       fallback: false // See the "fallback" section below
     };
