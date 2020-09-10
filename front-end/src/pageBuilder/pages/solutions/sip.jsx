@@ -2,12 +2,8 @@ import SipPricing from "../../pricing/SipPricing";
 export default [
     {
         title: 'Expertise to address challenges by designing and delivering complete collaboration solutions',
-        titleStyle: {
-            textAlign: 'justify',
-            fontSize: ['2xl', '2xl', '36px'],
-            px: 4,
-        },
-        rowDistance: 8,
+        titleStyle:{fontSize:["3xl","32px","4xl"],px:"10px"},
+        rowDistance: 10,
         body: [
             {
                 width: ["100%", 1 / 2, 1 / 3],
