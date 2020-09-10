@@ -12,8 +12,8 @@ function StoragePricing(props) {
     const handleChange = value => setValue(value);
     return (        
         <div id="pricing" className="container">
-            <Fade className="px-lg-5 px-3" duration={500} bottom>
-                <div className="px-4 py-5 rounded-8 shadow-lg">
+            <Fade className="px-lg-5 " duration={500} bottom>
+                <div className="px-lg-4 py-5 rounded-8 shadow-lg">
                     <div className="display5 text-center">Storage Options</div>
                     <div className="row px-3 justify-content-center px-lg-4">
 

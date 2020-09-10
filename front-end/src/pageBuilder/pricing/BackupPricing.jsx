@@ -96,7 +96,7 @@ function BackupPricing(props) {
                 </Fade>
                 <div id="collapse-1" className="collapse-target">
                     <Collapse
-                        className="px-lg-5 px-3"
+                        className="px-lg-5"
                         mt={12}
                         isOpen={show}
                     >

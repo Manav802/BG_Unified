@@ -28,7 +28,7 @@ function SipPricing(props) {
   const handleChange = (e) => {
     setChannel(e.target.value)
   }
-  const openControls = () => setShow(true);
+  
   return (
         <div id="pricing" className="container">
           <div className="row">

@@ -12,7 +12,7 @@ const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + " " + text : "");
 function DRPricing(props) {
   const [show, setShow] = React.useState(false);
   const [plan, setPlan] = React.useState("");
-  const openControls = (name) => {setShow(true); setPlan(name)};
+  const openControls = (name) => {setShow(true); setPlan(name); window.scrollTo(0, document.getElementById("collapse-1").offsetTop - 100);};
   const [value, setValue] = React.useState(1);
   const handleChange = value => setValue(value);
   const [veeam, setVeeam] = React.useState(0);
@@ -33,8 +33,8 @@ function DRPricing(props) {
               </div>
             </Fade>
             </div>
-          <div>
-          <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
+          <div id="collapse-1">
+          <Collapse className="px-lg-5" mt={6} isOpen={show}>
               <div className="px-4 py-5 border">
                 <div className="display5 text-center">{plan}</div>
                 <div className="row justify-content-center px-3">
