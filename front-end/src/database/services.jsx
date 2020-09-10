@@ -15,6 +15,7 @@ const services = {
         conclusion: "User-interactivity, responsiveness, user-friendly interfaces kept into consideration.",
         sections: sections.appdev
     },
+
     "architectural-consultancy": {
         title: "Architectural Consultancy As A Service",
         slogan: "Spirit of Expertise",
@@ -140,6 +141,34 @@ const services = {
         relatedService: ["Storage As A Service", "DNS As A Service", "DR As A Service"],
         conclusion: "We can help if you have questions regarding Infrastructure As A Service",
         sections: sections.infra
+    },
+    "loadBalancer":{
+        title: "Load Balancer As A Service",
+        slogan: "Simplified Load Balancing",
+        bgImage: "/assets/images/backgrounds/network_abstract.jpg",
+        category: "IT Infrastructural Services",
+        icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
+        color: "#235789",
+        tags: ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
+        description: "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture. Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
+        illustration: "",
+        relatedService: ["Cloud Logging As A Service", "SIP As A Service", "DR As A Service"],
+        conclusion: "Load Balancing is the solution you’ve been looking for.",
+        sections: sections.loadBalancer
+    },
+    "workstation":{
+        title: "Workstation As A Service",
+        slogan: "Digitize your Workspace",
+        bgImage: "/assets/images/backgrounds/network_abstract.jpg",
+        category: "IT Infrastructural Services",
+        icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
+        color: "#235789",
+        tags: ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
+        description: "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture. Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
+        illustration: "",
+        relatedService: ["Cloud Logging As A Service", "SIP As A Service", "DR As A Service"],
+        conclusion: "An ideal solution for highly sensitive computing environments.",
+        sections: sections.workstation
     },
     "platform": {
         title: "Platform As A Service",

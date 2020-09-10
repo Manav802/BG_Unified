@@ -54,3 +54,8 @@ import architecture from './architectural-consultancy'
 import { SimpleGrid } from "@chakra-ui/core"
 module.exports.architecture = architecture
 
+import loadBalancer from './loadBalancer'
+module.exports.loadBalancer = loadBalancer
+
+import workstation from './workstation'
+module.exports.workstation = workstation
