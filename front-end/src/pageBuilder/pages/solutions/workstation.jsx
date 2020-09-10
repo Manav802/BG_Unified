@@ -1,3 +1,5 @@
+import VdiPricing from "../../pricing/VdiPricing";
+
 export default [
     {
         gap: 10,
@@ -34,6 +36,19 @@ export default [
             }]
         }]
     },
+
+    {
+        my: 0,
+        py: 16,
+        gap: 0,
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <VdiPricing />
+        }],
+        bg: 'light.400',
+    },
+
     {
         title : "BG Unified Solution’s Workstations",
         

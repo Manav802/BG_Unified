@@ -4,33 +4,6 @@ export default [
         gap: 10,
         py: [8, 16],
         body: [
-<<<<<<< HEAD
-        {
-            width:["100%", "100%", 1/2],
-            type: "imageGroup",
-            data: {
-                images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
-                borderRadius: 8,
-                width: '90%',
-                height: "300px",
-                objectFit: "cover"
-            }
-        },
-        {
-            width: ["100%", "100%", 1/2],
-            type: "content",
-            data: [{
-                textAlign: "justify",
-                fontSize: "lg",
-                title: "Your Security Needs Meet Our Expertise",
-                titleSize: 32,
-                text: <span>We, at BG Unified Solutions, tend to offer the best in 
-                class Security for your business around the globe. With our team of 
-                experts, the experience we’ve gained, ensures you to provide customizable 
-                security to your network, prevent any security breach, secure data 
-                flowing through your network. We offer you solutions that especially 
-                suit your business model, whether small, medium or large, we’ve got it covered.
-=======
             {
                 width: ["100%", "100%", 1 / 2],
                 type: "imageGroup",
@@ -56,7 +29,6 @@ export default [
                     security to your network, prevent any security breach, secure data
                     flowing through your network. We offer you solutions that especially
                     suit your business model, whether small, medium or large, we’ve got it covered.
->>>>>>> vineet
                 </span>
                 }]
             }]
@@ -76,11 +48,7 @@ export default [
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
-<<<<<<< HEAD
-                data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "Smooth and Efficient Performance"}
-=======
                 data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Smooth and Efficient Performance" }
->>>>>>> vineet
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
@@ -129,14 +97,9 @@ export default [
         }]
     },
     {
-<<<<<<< HEAD
-        title:"Why choose Us?",
-        py: 0,
-=======
         title: <div className="d-block d-sm-none">We Offer</div>,
         pt: 0,
         pb: 10,
->>>>>>> vineet
         body: [{
             width: "100%",
             type: "accordion",
