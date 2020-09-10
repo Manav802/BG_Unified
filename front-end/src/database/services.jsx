@@ -31,7 +31,7 @@ const services = {
     },
     "backup": {
         title: "Backup As A Service",
-        slogan: "Backup for your Digital system",
+        slogan: "Backup for your Digital System",
         category: "IT Infrastructural Services",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
         icon: "/assets/images/icons/monotone/BackupAsAService.svg",
@@ -54,12 +54,12 @@ const services = {
         description: "Express Routes to office 365, AWS, Azure. Advanced Solution provides private, seamless, and on-demand connections to many clouds as well as networks. ",
         illustration: "",
         relatedService: ["Cloud Logging As A Service", "Proxy As A Service", "SIP As A Service"],
-        conclusion: "Determines the quality of service level delivered against service level agreements and proactively manages service components to adhere to quality standards",
+        conclusion: "Proactively manages your service components to adhere to quality standards",
         sections: sections.cex
     },
-    "cloud-logging": {
+    "logging": {
         title: "Cloud Logging As A Service",
-        slogan: "Cloud computing is the future",
+        slogan: "Cloud Computing is the new future",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
@@ -67,7 +67,7 @@ const services = {
         tags: ["cloud", "logging", "log", "threats", "log management", "troubleshooting"],
         description: "Log central services over the internet. Collect, Store, and report the various data and underlying threats. Add the shield to protect your business reputation.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Infrastructure As A Service", "Infrastructure As A Service"],
+        relatedService: ["Backup As A Service", "Firewall As A Service", "Infrastructure As A Service"],
         conclusion: "Add the shield to protect your business reputation",
         sections: sections.logging
     },
@@ -129,7 +129,7 @@ const services = {
     },
     "infra": {
         title: "Infrastructure As A Service",
-        slogan: "Store your data with our security and reliability.",
+        slogan: "Store your data with our Security and Reliability.",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/InfrastructureIcon.svg",
@@ -152,7 +152,7 @@ const services = {
         description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
         illustration: "",
         relatedService: ["Backup As A Service", "Infrastructure As A Service", "Storage As A Service"],
-        conclusion: "We give you the power to easily deploy, efficiently monitor, and transparently scale the applications. Boost up your operational efficiency. Improve your organization’s agility.",
+        conclusion: "We give you the power to easily deploy, efficiently monitor, and scale the applications.",
         sections: sections.platform
     },
     "proxy": {
@@ -181,12 +181,12 @@ const services = {
         description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
         illustration: "",
         relatedService: ["Proxy As A Service", "DNS As A Service", "SIP As A Service"],
-        conclusion: "SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
+        conclusion: "SD-WAN transforms the way a network supports and interacts with enterprise applications.",
         sections: sections.sdwan
     },
     "sip": {
         title: "SIP As A Service",
-        slogan: "Innovation and Excellence",
+        slogan: "High Performance Delivered",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/SIP.svg",
@@ -195,7 +195,7 @@ const services = {
         description: "SIP As A Service Infrastructure includes more than 15 Cisco Unified Border Elements with 1600 SIP channels spanned across multiple DC locations with DUAL Exchange Homing.",
         illustration: "",
         relatedService: ["SD-WAN As A Service", "DNS As A Service", "Firewall As A Service"],
-        conclusion: "SIP As A Service Infrastructure includes more than 15 Cisco Unified border Elements with 1600 SIP channels.",
+        conclusion: "Our Infrastructure includes more than 15 Cisco Unified border Elements with 1600 SIP channels.",
         sections: sections.sip
     },
     "storage": {
@@ -228,7 +228,7 @@ const services = {
     },
     "hosting": {
         title: "Web Hosting As A Service",
-        slogan: "Trendsetting web hosting solutions",
+        slogan: "Trendsetting Web Hosting Solutions",
         bgImage: "",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/WebHosting.svg",
