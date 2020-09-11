@@ -49,37 +49,37 @@ export default [
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "High Availability"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/home/clock.svg", mt: 4, title: "High Availability"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/group.svg", mt: 4, title: "Flexibility Assured"}
+            data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/general/heart.svg", mt: 4, title: "Flexibility Assured"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/files/upload.svg",mt: 4, title: "Multiple Features"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/code/git-4.svg",mt: 4, title: "Multiple Features"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/shield-user.svg", mt: 4, title: "Personalized Support"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/devices/headphones.svg", mt: 4, title: "Personalized Support"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/chat-5.svg", mt: 4, title: "Designed for Uptime"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/navigation/up-2.svg", mt: 4, title: "Designed for Uptime"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center", titleSize:"md",iconColor:"red.500", svg:"/assets/images/icons/library/shopping/credit-card.svg", mt: 4, title: "Scalability Guaranteed"}
+            data: {align: "center", titleSize:"md",iconColor:"red.500", svg:"/assets/images/icons/library/general/size.svg", mt: 4, title: "Scalability Guaranteed"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md",iconColor:"red.500", svg:"/assets/images/icons/library/code/lock-circle.svg", mt: 4, title: "Easy Deployment"}
+            data: {align: "center",titleSize:"md",iconColor:"red.500", svg:"/assets/images/icons/library/home/chair-1.svg", mt: 4, title: "Easy Deployment"}
         }
     ]
 },

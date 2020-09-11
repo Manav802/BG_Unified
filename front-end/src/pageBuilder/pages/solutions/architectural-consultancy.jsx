@@ -95,35 +95,30 @@ export default [
     },
 
     {
-        title:"Why BG Unified Solutions for your Business?",
-        body: [
-            {
-                type: "image&text",
-                data: {
+        title: <div className="d-block d-sm-none">Why BG Unified Solutions for your Business?</div>,
+        pt: 0,
+        pb: 10,
+        body: [{
+            width: "100%",
+            type: "accordion",
+            data: {
+                fontSize: "lg",
+                content: [{
                     title: "Performance Optimized",
                     description: "Monitors and measures various aspects of the network environment so that overall performance can be maintained and optimised.",
-                    image: "/assets/images/Illustrations/PlatformDiversity_Firewall.svg",
-                    flexDirection: ["column", "column", "row"],
-                }
-            },
-            {
-                type: "image&text",
-                data: {
-                    title: "Configuration Management",
+                    image: "/assets/images/Illustrations/PlatformDiversity_Firewall.svg"
+                },
+                {
+                    title: "FConfiguration Management",
                     description: "Configures network devices, performs inventory management and software management. Local end-market support services and Local language capabilities.",
-                    image: "/assets/images/Illustrations/FastAndEasyDevelopment_Firewall.svg",
-                    flexDirection: ["column", "column", "row-reverse"],
-                }
-            },
-            {
-                type: "image&text",
-                data: {
+                    image: "/assets/images/Illustrations/FastAndEasyDevelopment_Firewall.svg"
+                },
+                {
                     title: "Wide Expert Range",
                     description: "Weather System Architecture, Technology Roadmap, or optimization solutions for your business, we’ve got it all covered. Customized and tailor solutions to meet client needs",
-                    image: "/assets/images/Illustrations/low_pricing.svg",
-                    flexDirection: ["column", "column", "row"],
-                }
-            },
-        ]
+                    image: "/assets/images/Illustrations/low_pricing.svg"
+                },]
+            }
+        }]
     }
 ]
