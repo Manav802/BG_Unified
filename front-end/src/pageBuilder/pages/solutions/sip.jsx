@@ -36,7 +36,7 @@ export default [
                     titleSize: "md",
                     textOpacity: "0.8",
                     size: "96px",
-                    image: "/assets/images/icons/color/analytics.svg",
+                    image: "/assets/images/icons/color/encryption.svg",
                     title: "100% Data Security",
                     align: "center",
                 }

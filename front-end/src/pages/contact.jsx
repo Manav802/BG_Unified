@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import ContactForm from "../components/contactForm/main";
 import Head from "next/head";
+import Section from "../pageBuilder/Section";
+import Title from "../pageBuilder/Title";
+import { Heading, Text, Box, InputGroup, InputLeftElement, Button, Icon, Input, Image, Avatar, Badge, Flex, Grid, MenuList, Menu, MenuButton } from "@chakra-ui/core";
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -21,26 +24,11 @@ class Contact extends Component {
               type="image/x-icon"
             />
           </Head>
-          <div className="position-absolute w-100 overflow-hidden background-svg">
-            <img
-              className="w-100"
-              src="/assets/images/backgrounds/dots_circle.jpg"
-            />
-          </div>
-          <div className="page-header">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-4 offset-lg-4 text-center justify-content-center">
-                  <h1 className="display3">Contact Us</h1>
-                  <p className="">
-                    Your go-to partner for all hosting business solutions and
-                    services that deliver value and enable solid business
-                    growth.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
+            <Image zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
+            <Title zIndex="100" fontSize={["44px","64px"]}>Contact Us</Title>
+            <Text zIndex="100" fontSize="xl" mt={2}>Have a question. Lets Talk!</Text>
+        </Section>
           <div className="section">
             <div className="container">
               <div className="row centered-content">

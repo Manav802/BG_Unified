@@ -5,6 +5,9 @@ module.exports.storage = storage
 import infra from "./infra"
 module.exports.infra = infra
 
+import logging from './logging'
+module.exports.logging = logging
+
 import backup from "./backup"
 module.exports.backup = backup
 
@@ -50,6 +53,21 @@ module.exports.dr = dr
 import architecture from './architectural-consultancy'
 module.exports.architecture = architecture
 
-import logging from './cloud-logging'
-module.exports.logging = logging
+import loadBalancer from './loadBalancer'
+module.exports.loadBalancer = loadBalancer
+
+import workstation from './workstation'
+module.exports.workstation = workstation
+
+import socaas from "./socaas"
+module.exports.socaas = socaas
+
+import wafaas from './wafaas'
+module.exports.wafaas = wafaas
+
+import dbaas from './dbaas'
+module.exports.dbaas = dbaas
+
+import webdev from './webdev'
+module.exports.webdev = webdev
 

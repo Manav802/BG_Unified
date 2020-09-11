@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-flickity-component";
 // import Slider from '../ImageSlider/Slider'
-import { Box, Image, Avatar, Heading, AvatarBadge } from "@chakra-ui/core";
+import { Box, Image, Avatar, Heading, AvatarBadge, Flex } from "@chakra-ui/core";
+import Container from "../../pageBuilder/Container";
 
 class Testimonial extends Component {
   constructor(props) {
@@ -13,26 +14,34 @@ class Testimonial extends Component {
       (testimonialDetails) => {
         return (
           <div key={testimonialDetails.id} className="w-100">
-            <Box
+           
+           <Box
               className="p-4"
             >
-                <Heading mt={4} size="lg" fontWeight={600} lineHeight={1.5} className="text-justify">
+              <Container>
+                <Flex justify="center" my={8}>
+                  <Image src={testimonialDetails.imageUrl} height="64px" />
+                </Flex>
+                <Heading textAlign="center" mt={4} size="lg" fontWeight={600} lineHeight={1.5}>
                   {testimonialDetails.paragraph}
                 </Heading>
 
                 <Heading
                   size="md"
-                  mt={4}
+                  mt={8}
                   fontWeight={800}
-                  className="text-primary"
+                  color="primary.500"
+                  textAlign="center"
                 >
                   {testimonialDetails.author}
                 </Heading>
 
-                <Heading size="sm" mt={2} color="gray.600">
+                <Heading textAlign="center" size="sm" mt={2} color="gray.600">
                   {testimonialDetails.CompanyName}
                 </Heading>
+                </Container>
             </Box>
+           
           </div>
         );
       }
@@ -40,10 +49,10 @@ class Testimonial extends Component {
 
     return (
       <Slider
+        className="w-100"
         options={{
           adaptiveHeight: true,
           freeScroll: false,
-          prevNextButtons: false,
           draggable: false,
           autoPlay: 15000
         }}
