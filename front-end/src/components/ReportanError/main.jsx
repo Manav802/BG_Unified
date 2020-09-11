@@ -155,13 +155,8 @@ function ErrorForm(props) {
     }
     return (
         <>
-<<<<<<< HEAD
-            <Link mx={["6px","10px","16px"]} fontSize={["10px","12px","14px"]} textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
-            <Modal isOpen={isOpen} onClose={formClose} isCentered>
-=======
             <Link mx="16px" fontSize="sm" textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
             <Modal isOpen={isOpen} onClose={formClose} isCentered >
->>>>>>> new-manav
                 <ModalOverlay />
                 <ModalContent className="p-4" maxWidth={["400px", "400px", "600px", "700px"]} style={{ minHeight: "750px" }}>
                     <ModalHeader><span className="display5">Report an Error</span></ModalHeader>

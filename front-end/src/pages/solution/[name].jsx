@@ -120,10 +120,6 @@ function Solutions() {
 export async function getStaticPaths() {
     const ServiceNames = Object.keys(services)
     return {
-<<<<<<< HEAD
-        paths: ServiceNames.map((x)=>({params:{name:x}})),
-        fallback: false // See the "fallback" section below
-=======
       paths: [
         { params: { name: 'appdev' } },
         { params: { name: 'architectural-consultancy' } },
@@ -147,7 +143,6 @@ export async function getStaticPaths() {
         {params:{name:'dbaas'}}
       ],
       fallback: false // See the "fallback" section below
->>>>>>> new-manav
     };
 }
 export async function getStaticProps() {
