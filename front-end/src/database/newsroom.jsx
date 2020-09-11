@@ -13,7 +13,6 @@ const blogs = [
         tags: ["cisco", "socaas"],
         link: "1-random-title-for-a-blog-article",
         content: content.covid19,
-        view: "horizontal",
     },
     {
         index: 2,
@@ -32,7 +31,6 @@ const blogs = [
                 text: "Hello"
             }]
         }],
-        view: "vertical",
     },
     
     
