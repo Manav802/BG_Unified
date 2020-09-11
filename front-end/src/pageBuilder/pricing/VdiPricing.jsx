@@ -8,7 +8,7 @@ Tab,
 TabPanel} from '@chakra-ui/core'
 import Fade from 'react-reveal/Fade';
 import {PricingCard, PricingQuote} from '../../components/cards/PricingCard'
-
+import { FaWindows } from "react-icons/fa";
 
 const CustomRadio = React.forwardRef((props, ref) => {
     const { isChecked, isDisabled, value, ...rest } = props;
@@ -34,7 +34,7 @@ function VdiPricing(props) {
     const [tab,setTab] = React.useState("Dedicated VDI");
     const [os,setOS] = React.useState(`,Windows 10`);
     const [goldenImage, setGoldenImage] = React.useState(false);
-    const handleGoldenImage = (goldenImage) => (goldenImage) ? (",Enable Golden Image Creation") : ("")
+    const handleGoldenImage = (goldenImage) => (goldenImage) ? (",Include Golden Image Creation") : ("")
     const [value, setValue] = React.useState(1);
     const handleChange = value => setValue(value);
     const resetOnCardChange = () =>{
@@ -104,7 +104,7 @@ function VdiPricing(props) {
         <div id="collapse-1">
         <Collapse className="px-lg-5" mt={6} isOpen={show}>
             <div className="px-4 py-5 border">
-                <div className="display5 text-center">{plan}</div>
+            <div className="display5 text-center">{tab} / {plan} Plan</div>
                 <div className="row px-3">
                     <div className="col-lg-10 offset-lg-1 my-lg-4 my-3">
                         <div className="h6">
@@ -119,10 +119,10 @@ function VdiPricing(props) {
                                 isInline
                             >
                                 <CustomRadio value=",Windows 10">
-                                    Windows 10
+                                   <FaWindows className="mr-2"/> Windows 10
                                 </CustomRadio>
                                 <CustomRadio value={",Windows 2016 Standard" + (tab=='Shared VDI' ? " + RDS CAL" : "")}>
-                                    Windows 2016 Standard {tab=='Shared VDI' && <> + RDS CAL</>}
+                                    <FaWindows className="mr-2"/> Windows 2016 Standard {tab=='Shared VDI' && <> + RDS CAL</>}
                                 </CustomRadio>
                             </RadioButtonGroup>
                     </div>
@@ -145,11 +145,11 @@ function VdiPricing(props) {
                     </div>
                     <div className="col-lg-10 offset-lg-1 my-lg-4 my-3">      
                         <Switch isChecked={goldenImage} onChange={(e) => { setGoldenImage(e.target.checked) }} color="primary" mb={0} id="golden-image-creation" />
-                        <FormLabel mb={0} ml="12px" htmlFor="golden-image-creation">Golden Image Creation</FormLabel>   
+                        <FormLabel mb={0} ml="12px" htmlFor="golden-image-creation">Include Golden Image Creation</FormLabel>   
                     </div>
                     
                     <div className="col-lg-10 offset-lg-1 text-center mt-lg-4 mt-3">
-                        <PricingQuote serviceName="Web Hosting As A Service" serviceDescription={`${tab} ,${plan} ${os} ${handleGoldenImage(goldenImage)} ,${value+"TB Shared Storage"}`} button ></PricingQuote>
+                        <PricingQuote serviceName="VDI As A Service" serviceDescription={`${tab} ,${plan} ${os} ${handleGoldenImage(goldenImage)} ,${value+"TB Shared Storage"}`} button ></PricingQuote>
                     </div>
                 </div>
             </div>
