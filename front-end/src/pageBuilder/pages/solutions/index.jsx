@@ -61,3 +61,8 @@ import workstation from './workstation'
 module.exports.workstation = workstation
 
 
+import wafaas from './wafaas'
+module.exports.wafaas = wafaas
+
+import dbaas from './dbaas'
+module.exports.dbaas = dbaas
