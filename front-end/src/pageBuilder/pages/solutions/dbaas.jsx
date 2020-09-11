@@ -110,6 +110,7 @@ export default [
         description:"We offer 24 x 7 managed database services. We’ll monitor database infrastructure, handle incidents, response to events/alarms, follow change management processes, improve overall performance and reduce vulnerabilities.",
         descriptionStyle:{
             fontSize:["lg","lg","xl"],
+            descriptionSize: 40,
             opacity:0.7,
             textAlign:"left"
         }
