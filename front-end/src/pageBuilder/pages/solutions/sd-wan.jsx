@@ -2,20 +2,30 @@ import SdwanPricing from "../../pricing/SdwanPricing";
 
 export default [
     {
-        title: "Find out Why?",
-        description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
-        descriptionStyle: {
-            textAlign: "left"
+        py: [0, 4],
+        gap: 0,
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <SdwanPricing />
         },
-        gap: 10,
-        py: 16
+        {
+            type: "content",
+            data:[{
+                text: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
+                textAlign: "center",
+                }]
+        }
+        ]
     },
     {
         title: "Find out How BGUS SD-WAN will improve your network:",
+        description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
+        descriptionStyle: {
+            px: 0
+        },
         gap: 10,
-        py: 0,
-        my: 0,
-        mt: 8,
+        rowDistance: 8,
         body: [
             {
                 py: 4,
@@ -79,24 +89,5 @@ export default [
             },
         ]
     },
-    {
-        containerWidth: "100%",
-        py: [0, 4],
-        gap: 0,
-        body: [{
-            width: "100%",
-            type: "pricing",
-            data: <SdwanPricing />
-        }]
-    },
-    {
-        description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
-        descriptionStyle: {
-            mt: 0,
-            textAlign: "left"
-        },
-        mt: 0,
-        pt: 0,
-        pb: 10
-    }
+   
 ]

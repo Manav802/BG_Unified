@@ -3,7 +3,7 @@ import VdiPricing from "../../pricing/VdiPricing";
 export default [
     {
         gap: 10,
-        py: [8,16],
+        pb: 0,
         body: [
         {
             width:["100%", "100%", 1/2],
@@ -39,7 +39,7 @@ export default [
 
     {
         my: 0,
-        py: 16,
+        pt:0,
         gap: 0,
         body: [{
             width: "100%",
@@ -98,50 +98,52 @@ export default [
     ]
 },
 {
-    body: [{
-        type: "content",
-        data: [{
-            text: <span>With BG Unified Solutions’ Workstation 
-            As A Service, we give an organization the freedom to
-             deploy virtual desktops from its own on-premises data 
-             centres. In-house IT teams are responsible for deploying 
-             the virtual desktops as well as purchasing, managing, 
-             and upgrading the infrastructure.</span>,
-            fontSize: 23,
-            textAlign: "center",
-        }]
-    }],
-    pt: 0,
-    pb: 0,
-    mb: 0
-},
-{
+    description: <span>With BG Unified Solutions’ Workstation 
+    As A Service, we give an organization the freedom to
+     deploy virtual desktops from its own on-premises data 
+     centres. In-house IT teams are responsible for deploying 
+     the virtual desktops as well as purchasing, managing, 
+     and upgrading the infrastructure.</span>,
     py: 12,
+    rowDistance: 8,
+    gap: 12,
     body: [
         {
-            type: "image&text",
+            width: ["100%"],
+            px: [6, 8, "20%"],
+            type: "feature2",
             data: {
+                align: "left",
+                size: "96px",
+                imageWidth: "128px",
                 image: "/assets/images/icons/color/agile.svg",
                 title: "Flexible migration to the cloud for Remote Desktop Services",
                 description: "Optimize your experience with affordable costs for your server desktop and apps. Get all the resources, tools and infrastructure, you need to migrate your apps.",
-                flexDirection: ["column", "column", "row"],
-            }
+            },
         },
         {
-            type: "image&text",
+            width: ["100%"],
+            px: [6, 8, "20%"],
+            type: "feature2",
             data: {
+                align: "left",
+                size: "96px",
+                imageWidth: "128px",
                 image: "/assets/images/icons/color/user-engagement.svg",
                 title: "Estimate end-user experience quality",
-                flexDirection: ["column", "column", "row-reverse"],
                 description: "Estimator used to experience or predict the quality of your end-user experience by the Virtual Desktop Infrastructure Service provided by you. Determine your bandwidth requirement and constant health checker."
             }
         },
         {
-            type: "image&text",
+            width: ["100%"],
+            px: [6, 8, "20%"],
+            type: "feature2",
             data: {
+                align: "left",
+                size: "96px",
+                imageWidth: "128px",
                 image: "/assets/images/icons/color/stack.svg",
                 title: "Virtualize both Desktops and Apps",
-                flexDirection: ["column", "column", "row"],
                 description: "Flexibility and adaptability according to your requirements, if you need to get your desktop infrastructure virtualized or virtualization of applications."
             }
         },

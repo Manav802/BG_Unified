@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  FormControl, FormLabel, Input, Button, Textarea, Spinner
+  FormControl, FormLabel, Input, Button, Textarea, Spinner, Box, Flex
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
@@ -77,60 +77,57 @@ function ContactForm(props) {
       .then((response) => refreshForm(response), (error) => refreshForm(error))
   }
   return (
-    <>
-      <div className="container">
-        <form className="contact-form shadow-lg" onSubmit={onSubmit}>
+    <Box p={5}>
+        <form onSubmit={onSubmit}>
           <input type="hidden" name="_redirect" value="false" />
-          <FormControl isRequired>
-            <FormLabel htmlFor="name">Name:</FormLabel>
+          <Flex wrap="wrap">
+          <FormControl px={2} width={"100%"} isRequired>
             <Input
-              variant="flushed"
+              placeholder="Name"
               type="text"
+              p={6}
               name="name"
               value={name}
               onChange={onChange}
             />
           </FormControl>
-          <div className="row">
-            <div className="col-md-6">
-              <FormControl mt={"14%"} isRequired>
-                <FormLabel htmlFor="email">Email:</FormLabel>
-                <Input
-                  variant="flushed"
-                  type="email"
-                  name="email"
-                  value={email}
-                  onChange={onChange}
-                />
-              </FormControl>
-            </div>
-            <div className="col-md-6">
-              <FormControl mt={"14%"} isRequired>
-                <FormLabel htmlFor="phone">Contact No.</FormLabel>
-                <Input
-                  type="tel"
-                  pattern="[0-9]{10}"
-                  variant="flushed"
-                  name="phone"
-                  value={phone}
-                  onChange={onChange}
-                />
-              </FormControl>
-            </div>
-          </div>
-          <FormControl mt={"9%"}>
-            <FormLabel>Subject:</FormLabel>
+          
+          <FormControl px={2} width={["100%","100%", "50%"]} mt={4} isRequired>
             <Input
-              variant="flushed"
+              p={6} 
+              placeholder="Email"
+              type="email"
+              name="email"
+              value={email}
+              onChange={onChange}
+            />
+          </FormControl>
+    
+          <FormControl px={2} width={["100%","100%", "50%"]} mt={4} isRequired>
+            <Input
+              p={6}
+              placeholder="Phone Number"
+              type="tel"
+              pattern="[0-9]{10}"
+              name="phone"
+              value={phone}
+              onChange={onChange}
+            />
+          </FormControl>
+         
+          <FormControl px={2} width={"100%"} mt={4}>
+            <Input
+              p={6}
+              placeholder="Subject"
               name="subject"
               value={subject}
               onChange={onChange}
             />
           </FormControl>
-          <FormControl mt={"9%"} isRequired>
-            <FormLabel>Message:</FormLabel>
+          <FormControl px={2} width={"100%"} mt={4} isRequired>
             <Textarea
-              variant="flushed"
+              p={6}
+              placeholder="Message"
               size="lg"
               name="message"
               value={message}
@@ -138,14 +135,15 @@ function ContactForm(props) {
               resize={"vertical"}
             />
           </FormControl>
-          <div>
+          
             <Button
-              mt={"12%"}
+              mt={12}
+              mx={4}
               className="hover-color shadow-md"
               type="submit"
               size="md"
               height="48px"
-              width="115px"
+              width="100%"
               backgroundColor="#F32222"
               color="white"
             >Submit {isLoading && <Spinner
@@ -155,11 +153,10 @@ function ContactForm(props) {
               color="blue.500"
               size="sm"
             />}</Button>
-          </div>
+           </Flex>
         </form>
-      </div>
       {formResponse && <Toast response={formResponse} />}
-    </>
+    </Box>
   )
 }
 export default ContactForm;

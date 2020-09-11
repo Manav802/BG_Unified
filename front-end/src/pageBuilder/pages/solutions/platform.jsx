@@ -6,11 +6,6 @@ export default [
             after: " your Application on the Cloud Platform"
         },
         titleStyle:{fontSize:["3xl","4xl"],px:"10px"},
-        description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
-        descriptionStyle: {
-            textAlign: "center",
-            fontSize: ["lg","xl"],
-        },
         rowDistance: 8,
         gap: 10,
         py: [8,16],
@@ -22,7 +17,7 @@ export default [
                     images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
                     borderRadius: 8,
                     width: '90%',
-                    height: "300px",
+                    height: "400px",
                     objectFit: "cover"
                 }
             },
@@ -31,14 +26,22 @@ export default [
                 type: "content",
                 data: [{
                     textAlign: "left",
-                    fontSize: "lg",
-                    text: <span>
+                    fontSize: "xl",
+                    opacity: .7,
+                    text: <>
+                    <span>
+                        End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions.
+                        Huawei 10G core switching offering a high-speed spine and leaf network.
+                    </span>
+                    <br/><br/>
+                    <span>
                         With BG Unified Solutions Platform as a Service, we provide you with End-to-End DC network
                         infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions.
                         Huawei 10G core switching offering a high-speed spine and leaf network.
                         Scaling up your project has never been this easy. BGUS,
                         PaaS  provides you with limitless resources of computing.
                     </span>
+                    </>
                 }]
             }]
     },
