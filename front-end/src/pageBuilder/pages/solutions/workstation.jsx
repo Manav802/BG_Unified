@@ -116,4 +116,36 @@ export default [
     pb: 0,
     mb: 0
 },
+{
+    py: 12,
+    body: [
+        {
+            type: "image&text",
+            data: {
+                image: "/assets/images/icons/color/agile.svg",
+                title: "Flexible migration to the cloud for Remote Desktop Services",
+                description: "Optimize your experience with affordable costs for your server desktop and apps. Get all the resources, tools and infrastructure, you need to migrate your apps.",
+                flexDirection: ["column", "column", "row"],
+            }
+        },
+        {
+            type: "image&text",
+            data: {
+                image: "/assets/images/icons/color/user-engagement.svg",
+                title: "Estimate end-user experience quality",
+                flexDirection: ["column", "column", "row-reverse"],
+                description: "Estimator used to experience or predict the quality of your end-user experience by the Virtual Desktop Infrastructure Service provided by you. Determine your bandwidth requirement and constant health checker."
+            }
+        },
+        {
+            type: "image&text",
+            data: {
+                image: "/assets/images/icons/color/stack.svg",
+                title: "Virtualize both Desktops and Apps",
+                flexDirection: ["column", "column", "row"],
+                description: "Flexibility and adaptability according to your requirements, if you need to get your desktop infrastructure virtualized or virtualization of applications."
+            }
+        },
+    ]
+}
 ]
