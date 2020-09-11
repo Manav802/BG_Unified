@@ -133,12 +133,12 @@ export default [
                 {
                     title: "Efficient and Agile",
                     description: "Boost up your operational efficiency and improve your organization’s agility. Also, Real-time monitoring of your storage resources.",
-                    image: "/assets/images/Illustrations/low_pricing.svg"
+                    image: "/assets/images/Illustrations/EfficientAndAgile_Stass.svg"
                 },
                 {
                     title: "Highly available infrastructure",
                     description: "Cutting edge SAN array which intelligently uses caching, Solid State Disks(SSDs), and traditional hard disk spindles. Scaling up or down your storage capacity as and when required.",
-                    image: "/assets/images/Illustrations/low_pricing.svg"
+                    image: "/assets/images/Illustrations/HighlyAvailaibleInfra_Stass.svg"
                 },]
             }
         }]

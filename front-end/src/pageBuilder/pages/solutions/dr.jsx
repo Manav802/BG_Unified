@@ -100,7 +100,7 @@ export default [
             {
                 type: "image&text",
                 data: {
-                    image: "/assets/images/Illustrations/productivity.svg",
+                    image: "/assets/images/Illustrations/deploy.svg",
                     title: "Simplified Deployment",
                     flexDirection: ["column", "column", "row"],
                     description: "An additional redundancy option is possible by implementing a CUBE at the client site so that in the event of any catastrophic failure in our data centre, SRST will still be able to provide basic inbound and outbound calling facilities"
@@ -109,7 +109,7 @@ export default [
             {
                 type: "image&text",
                 data: {
-                    image: "/assets/images/Illustrations/Sound_and_Efficient_Planning.svg",
+                    image: "/assets/images/Illustrations/Completeness_CloudLogging.svg",
                     title: "Non - Disruptive Testing",
                     flexDirection: ["column", "column", "row-reverse"],
                     description: "We’ve got it covered under all circumstances, whether natural calamities, forecasted events, unforecasted events. The time taken to restore normal conditions becomes very less, thanks to our team of experts, who take precautionary measures from the starting."
@@ -118,7 +118,7 @@ export default [
             {
                 type: "image&text",
                 data: {
-                    image: "/assets/images/Illustrations/Completeness_CloudLogging.svg",
+                    image: "/assets/images/Illustrations/ClientSpecific_AppDev.svg",
                     title: "Flexible Solutions",
                     flexDirection: ["column", "column", "row"],
                     description: "In-place upgrades reduce downtime and maximize operational efficiencies. And you can customize how you intercept, inspect, transform, and direct inbound or outbound application traffic with powerful, flexible iRules."

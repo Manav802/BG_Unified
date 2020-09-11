@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import services from "../../database/services"
 import Head from "next/head";
 import Link from "next/link";
+import Conclusion from "../../components/footer/Conclusion";
 import RenderSection from "../../pageBuilder/RenderSection";
 import { Box, Button, ButtonGroup, Image, Heading, Flex } from "@chakra-ui/core"
 import Fade from "react-reveal/Fade"
@@ -65,28 +66,7 @@ function Solutions() {
                 <RenderSection {...section}></RenderSection>
             ))}
             <Box bg="light.400" mt="128px" px="16px" py={6}>
-            {service.conclusion && <RenderSection 
-                title = "Get Started Now"
-                titleStyle={{fontSize:["36px","40px","48px"]}}
-                descriptionStyle={{mt: [2,4], opacity: 1, fontSize: ["lg","xl","2xl"]}}
-                color="white"
-                bg="primary.500"
-                description= {service.conclusion}
-                py={[8,8,10,10]}
-                mt="-128px"
-                mx="auto"
-                width = {["100%", "100%", "720px", "960px", "1140px"]}
-                borderRadius={12}
-                endingButton = {{
-                    variant: "outline",
-                    variantColor: "white",
-                    size: "lg"
-                }}
-                bgImage= 'url("/assets/images/backgrounds/network_abstract.jpg")'
-                blend="soft-light"
-                endingButtonTitle= "Contact Sales"
-                endingButtonLink = "contact"
-            />}
+            {service.conclusion && <Conclusion mt="-128px" align="center" title="Get Started Now" description={service.conclusion} explore={false} contact></Conclusion>}
             </Box>
             {service.relatedService && <RenderSection
                 title="Related Services"
