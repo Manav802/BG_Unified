@@ -7,17 +7,17 @@ export default [
             {
                 width: [1 / 3],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/communication/chat-5.svg", mt: 4, title: "MongoDB" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/custom/mongodb.svg", mt: 4, title: "MongoDB" }
             },
             {
                 width: [1 / 3],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/shopping/credit-card.svg", mt: 4, title: "MySQL" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/custom/mysql.svg", mt: 4, title: "MySQL" }
             },
             {
                 width: [1 / 3],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/code/lock-circle.svg", mt: 4, title: "AzureSQL" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/custom/sql-database.svg", mt: 4, title: "AzureSQL" }
             }
         ]
     },
@@ -68,50 +68,57 @@ export default [
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
                 data: {
-                    align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Expert Consultation"
+                    align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/devices/headphones.svg", mt: 4, title: "Expert Consultation"
                 }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/communication/group.svg", mt: 4, title: "Daily Monitoring Assured" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/devices/display-1.svg", mt: 4, title: "Daily Monitoring Assured" }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/files/upload.svg", mt: 4, title: "Backup and Install" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/files/downloaded-file.svg", mt: 4, title: "Backup and Install" }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
                 data: {
-                    align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/communication/shield-user.svg", mt: 4, title: "Server Patching"
+                    align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/devices/server.svg", mt: 4, title: "Server Patching"
                 }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/communication/chat-5.svg", mt: 4, title: "Performance Tuning" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/tools/tools.svg", mt: 4, title: "Performance Tuning" }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/shopping/credit-card.svg", mt: 4, title: "Upgrade and Migration" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/code/shift.svg", mt: 4, title: "Upgrade and Migration" }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/code/lock-circle.svg", mt: 4, title: "Server Installation" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/files/downloads-folder.svg", mt: 4, title: "Server Installation" }
             }
         ]
     },
     {
-        py: 16,
-        description:"We offer 24 x 7 managed database services. We’ll monitor database infrastructure, handle incidents, response to events/alarms, follow change management processes, improve overall performance and reduce vulnerabilities.",
-        descriptionStyle:{
-            fontSize:["lg","lg","xl"],
-            opacity:0.7,
-            textAlign:"left"
-        }
+        body: [{
+            type: "content",
+            data: [{
+                text: <span>We offer 24 x 7 managed database services. 
+                We’ll monitor database infrastructure, handle incidents, 
+                response to events/alarms, follow change management processes, 
+                improve overall performance and reduce vulnerabilities.</span>,
+                fontSize: 23,
+                textAlign: "center",
+            }]
+        }],
+        pt: 0,
+        pb: 0,
+        mb: 0
     }
 ]

@@ -89,7 +89,7 @@ export default [
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/sending.svg",mt: 4, title: "Consistent"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/thunder-move.svg",mt: 4, title: "Consistent"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],

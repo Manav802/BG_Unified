@@ -56,7 +56,7 @@ export default [
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/general/heart.svg", mt: 4, title: "Flexible"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/design/line.svg", mt: 4, title: "Flexible"}
         },
         {
             width: [1/2, 1/3, 1/4],
@@ -126,6 +126,9 @@ export default [
             px: [6, 8, "20%"],
             type: "feature2",
             data: {
+                align: "left",
+                size: "96px",
+                imageWidth: "128px",
                 image: "/assets/images/icons/color/desktop.svg",
                 maxH: 200,
                 spacing: 12,
