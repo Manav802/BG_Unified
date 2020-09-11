@@ -23,9 +23,9 @@ function WirelessPricing(props) {
   const handleGuestSwitch = (bool) => (bool) ? (",Guest-10M Included") : ("")
   return (
     
-                <div id="WirelessPricing" className="container">
+                <div id="pricing" className="container">
                     <Fade duration={500} bottom>
-                    <div className="row px-lg-5 px-3">
+                    <div className="row no-gutters px-lg-5 px-3">
                         <div className="col-lg-4 my-3">
                             <PricingCard
                                 title={

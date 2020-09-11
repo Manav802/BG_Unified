@@ -1,9 +1,8 @@
-import BackupPricing from "../../pricing/BackupPricing";
 export default [
     {
         typeWriter_title: {
             before: "",
-            typed: ["Deploy","Run","Manage"],
+            typed: ["Deploy", "Run", "Manage"],
             after: " your Application on the Cloud Platform"
         },
      description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network." ,
@@ -13,6 +12,38 @@ export default [
         rowDistance: 8,
         gap: 10,
         py: 16,
+        body: [
+            {
+                width: ["100%", "100%", 1 / 2],
+                type: "imageGroup",
+                data: {
+                    images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                    borderRadius: 8,
+                    width: '90%',
+                    height: "300px",
+                    objectFit: "cover"
+                }
+            },
+            {
+                width: ["100%", "100%", 1 / 2],
+                type: "content",
+                data: [{
+                    textAlign: "left",
+                    fontSize: "lg",
+                    text: <span>
+                        With BG Unified Solutions Platform as a Service, we provide you with End-to-End DC network
+                        infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions.
+                        Huawei 10G core switching offering a high-speed spine and leaf network.
+                        Scaling up your project has never been this easy. BGUS,
+                        PaaS  provides you with limitless resources of computing.
+                 </span>
+                }]
+            }]
+    },
+    {
+        gap: 10,
+        py: 0,
+        my: 0,
         body: [
             {
                 width: ["100%", 1 / 2, 1 / 3],
@@ -58,6 +89,7 @@ export default [
     {
         title: "Why BG Unified Solutions?",
         rowDistance: 8,
+        py: 16,
         body: [{
             width: "100%",
             type: "accordion",

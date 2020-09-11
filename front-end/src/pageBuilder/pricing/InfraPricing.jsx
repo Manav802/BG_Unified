@@ -230,7 +230,7 @@ function InfraPricing(props) {
     </TabPanel>
   );
   return (
-    <Box id="InfraPricing">
+    <Box id="pricing">
     <div className="row justify-content-center">
       <Button
         onClick={onOpen}
