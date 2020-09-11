@@ -16,6 +16,7 @@ import CloudExchangePricing from '../../pageBuilder/pricing/CloudExchangePricing
 import DRPricing from '../../pageBuilder/pricing/DRPricing'
 import ProxyPricing from '../../pageBuilder/pricing/ProxyPricing'
 import VdiPricing from '../../pageBuilder/pricing/VdiPricing'
+import WebDevPricing from '../../pageBuilder/pricing/WebDevPricing'
 
 function pricings() {
     return (
@@ -103,6 +104,12 @@ function pricings() {
             width= "100%"
             type= "pricing"
             data= {<VdiPricing/>}
+           />
+           WebDevPricing
+           <Body 
+            width= "100%"
+            type= "pricing"
+            data= {<WebDevPricing/>}
            />
            WebHostingPricing
            <Body 
