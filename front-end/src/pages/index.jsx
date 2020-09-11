@@ -6,16 +6,16 @@ import CardWithIcon from "../components/cards/CardWithIcon";
 import FeatureCard from "../components/cards/FeatureCard";
 import CaseStudy from "../components/case_study/CaseStudy";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
-import { TESTIMONIALS } from "../../public/assets/data/testimonials";
+import { TESTIMONIALS } from "../database/testimonials";
 import { CASESTUDY } from "../../public/assets/data/casestudydata";
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
 import Slider from "react-flickity-component";
 import ImageGroup from "../pageBuilder/components/ImageGroup";
 import Section from "../pageBuilder/Section";
-import Container from "../pageBuilder/Container";
-import conclusion from "../components/footer/Conclusion";
 import Conclusion from "../components/footer/Conclusion";
+import SVG from "../components/svg/svg";
+import Service from "../components/cards/Service";
 
 const sliderInfo = [
   {
@@ -184,102 +184,25 @@ class Landing extends Component {
               <Fade duration={800} cascade distance={"8%"} bottom>
                 <div className="row">
                   <div className="col-xl-4 col-sm-6 my-2">
-                    <Link href="/services/infra">
-                      <a className="no-red">
-                        <CardWithIcon
-                          icon="/assets/images/icons/monotone/server.svg"
-                          title={
-                            <div>
-                              Infrastructure <br /> As A service{" "}
-                            </div>
-                          }
-                          children="Server consolidation and virtualization, Geographical Redundant Storage, more than 10000 Cores CPU, 10TB RAM"
-                        />
-                      </a>
-                    </Link>
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Infrastructure As A Service"></Service>
                   </div>
                   <div className="col-xl-4 col-sm-6 my-2">
-                    <Link href="/services/storage-unit">
-                      <a className="no-red">
-                        <CardWithIcon
-                          icon="/assets/images/icons/monotone/cloud.svg"
-                          title={
-                            <div>
-                              Storage <br /> As A service{" "}
-                            </div>
-                          }
-                          iconBg="#F3A622"
-                          children=" Storage Virtualization, Cutting edge SAN array, Solid State Disks(SSDs), real-time visibility, More than 900TB of Tier 1/Tier 2/Tier 3 storage."
-                        />
-                      </a>
-                    </Link>
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Storage As A Service"></Service>
                   </div>
                   <div className="col-xl-4 col-sm-6 my-2">
-                    <Link href="/services/dns">
-                      <a className="no-red">
-                        <CardWithIcon
-                          icon="/assets/images/icons/monotone/earth_ouline.svg"
-                          title={
-                            <div>
-                              DNS <br /> As A service{" "}
-                            </div>
-                          }
-                          iconBg="#5F1CE6"
-                          children="Global availability with multiple data centre locations, Secure management of multi-cloud locations, Huawei 10G core switching."
-                        />
-                      </a>
-                    </Link>
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Wireless As A Service"></Service>
                   </div>
                   <div className="col-xl-4 col-sm-6 my-2">
-                    <Link href="/services/backup">
-                      <a className="no-red">
-                        <CardWithIcon
-                          icon="/assets/images/icons/monotone/disk.svg"
-                          title={
-                            <div>
-                              Backup <br /> As A service{" "}
-                            </div>
-                          }
-                          iconBg="#F33022"
-                          children="Clustering of Devices, Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, Cisco Wi-Fi and Aruba Wi-Fi."
-                        />
-                      </a>
-                    </Link>
+                    <Service className="col-xl-4 col-sm-6 my-2" service="DNS As A Service"></Service>
                   </div>
                   <div className="col-xl-4 col-sm-6 my-2">
-                    <Link href="/services/proxy-server">
-                      <a className="no-red">
-                        <CardWithIcon
-                          icon="/assets/images/icons/monotone/proxy.svg"
-                          title={
-                            <div>
-                              Proxy <br /> As A service{" "}
-                            </div>
-                          }
-                          iconBg="#0D5EA5"
-                          children="Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Workforce Optimization and Quality Monitoring, N+N Redundant components."
-                        />
-                      </a>
-                    </Link>
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Unified Communications As A Service"></Service>
                   </div>
                   <div className="col-xl-4 col-sm-6 my-2">
-                    <Link href="/services/platform">
-                      <a className="no-red">
-                        <CardWithIcon
-                          icon="/assets/images/icons/monotone/dashboard.svg"
-                          title={
-                            <div>
-                              Platform <br /> As A service{" "}
-                            </div>
-                          }
-                          iconBg="#19C741"
-                          children="Prototype multisite or multi-cloud DR strategies. Shortened Recovery Time.Geographically dispersed availability"
-                        />
-                      </a>
-                    </Link>
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Firewall As A Service"></Service>
                   </div>
-                </div>
-              </Fade>
+                  </div>
+                </Fade>
             </div>
           </div>
         </div>
@@ -451,30 +374,26 @@ class Landing extends Component {
         </div>
 
 
-        <Section bg="light.400" py={24}>
-          <div className="container">
+        <Section position="relative" overflow="hidden" containerWidth="100%" bg="light.400" py={24}>
             <Fade duration={500} cascade distance={"30%"} bottom>
-              <div className="row">
-                <div className="col-12 text-center NunitoSans-ExtraBold text-primary text-uppercase">
+                <div className="text-center NunitoSans-ExtraBold text-primary text-uppercase">
                   Testimonials
-              </div>
-                <div className="col-12 my-2 text-center text-dark display4">
-                  What they say!
-              </div>
-                <div className="col-md-10 offset-md-1 position-relative">
-                  <TestimonialCard testimonialDetails={TESTIMONIALS} />
-                  <Image position="absolute" top="0px" left={0} opacity={.07} src="https://image.flaticon.com/icons/svg/102/102571.svg" size="96px"></Image>
                 </div>
-              </div>
+                  <div className="my-2 text-center text-dark display4">
+                    What they say!
+                </div>
+                <TestimonialCard testimonialDetails={TESTIMONIALS} />
+                <Box mt="-3%"width="100%" position="absolute" top="0px">
+                    <SVG size="16%" src="https://image.flaticon.com/icons/svg/102/102571.svg" color="gray.200" ></SVG> 
+                </Box>
             </Fade>
-          </div>
         </Section>
 
         <Section>
           <CaseStudy caseStudyDetails={CASESTUDY} link="read" />
         </Section>
         <Section containerWidth={["100%", "90%"]} className="brands">
-          <ImageGroup objectFit="contain" images={["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/equinix.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png", "/assets/images/brands/fujitsu.png", "/assets/images/brands/halls.png", "/assets/images/brands/huawei.png", "/assets/images/brands/hutchisonports.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/sabre_pacific.png", "/assets/images/brands/straintz.png", "/assets/images/brands/veeam.png"]} minW={["119.5px", "135.5px", "175px", "231px", "283px"]} width="auto" />
+          <ImageGroup objectFit="contain" images={["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png",  "/assets/images/brands/huawei.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/datacom.png", "/assets/images/brands/airtrunk.png", "/assets/images/brands/microfocus.svg", "/assets/images/brands/nsw_gov.png", "/assets/images/brands/victoria.png", ]} minW={["119.5px", "135.5px", "175px", "231px", "283px"]} width="auto" />
         </Section>
         <Conclusion></Conclusion>
       </div>

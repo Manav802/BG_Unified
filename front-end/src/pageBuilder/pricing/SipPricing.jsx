@@ -28,11 +28,11 @@ function SipPricing(props) {
   const handleChange = (e) => {
     setChannel(e.target.value)
   }
-  const openControls = () => setShow(true);
+  
   return (
         <div id="pricing" className="container">
           <div className="row">
-            <div className="col-lg-10 offset-lg-1">
+            <div className="col-lg-12">
               <Tabs align="center">
                 <TabList>
                   <Tab className="py-4 px-5 display6">Single</Tab>

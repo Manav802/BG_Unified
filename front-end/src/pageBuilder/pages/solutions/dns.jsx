@@ -1,15 +1,14 @@
-import InfraPricing from "../../pricing/InfraPricing";
 import DNSPricing from "../../pricing/DNSPricing";
 
 export default [
     {   
         title : "Hosting with Freedom Built-In",
+        titleStyle:{fontSize:["3xl","4xl"],px:"10px"},
         description: <span>Delivering a scalable, reliable and managed authoritative Domain Name System (DNS) As A Service. With our assured low latency and high availability, 
             it is a cost-effective way to make your applications and services available to your users. <br/><br/>The main functionality of DNS is to convert domain names into IP addresses, 
             for the web browsers to identify a website, 
             for them to load the required resources. Domain Name System Service allows you to host the website over the web, maintain and monitor in real-time.</span>,
         descriptionStyle: {
-            fontSize: "lg",
             px: 6,
         },
         gap: 0,
@@ -31,15 +30,15 @@ export default [
         gap: 6,
         body: [
             {
-                my:[0,4],
+                my:[0,0,6,4],
                 width: ["100%","100%","100%",1/2, 5/12],
                 type: "content",
                 data: [{
                     title: "For a stronger Web Identity",
                     textAlign: "left",
-                    fontSize: "lg",
-                    titleSize: 48,
-                    
+                    fontSize: ["lg","xl"],
+                    titleSize: [40,40,48],
+                    my:[2,4,8],
                     text: "BG Unified Solutions give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches. "
                     
                 }]

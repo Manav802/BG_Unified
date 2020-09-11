@@ -14,7 +14,7 @@ function RenderSection({ title, typeWriter_title, titleStyle, color = "dark.500"
             <Section containerWidth={containerWidth} color={color} align={align} {...props}>
                 {title && <Title {...titleStyle}>{title}</Title>}
                 {typeWriter_title && <Title {...titleStyle}>
-                <Box  justifyContent="center" className="d-flex flex-lg-row flex-column text-center">
+                <Box  justifyContent={align} className="d-flex flex-lg-row flex-column text-center">
                     <span>{typeWriter_title.before}</span>
                     <Typewriter options={{
                         strings: typeWriter_title.typed,
@@ -31,7 +31,7 @@ function RenderSection({ title, typeWriter_title, titleStyle, color = "dark.500"
                     ))}
 
                 </Row>}
-                {endingButton && <Row mt="2rem"><Link href={"/" + endingButtonLink}><Button {...endingButton}>{endingButtonTitle}</Button></Link></Row>}
+                {endingButtonTitle && <Row mt="2rem"><Link href={"/" + endingButtonLink}><Button {...endingButton}>{endingButtonTitle}</Button></Link></Row>}
             </Section>
         </>
     );

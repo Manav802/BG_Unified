@@ -28,6 +28,8 @@ const CustomRadio = React.forwardRef((props, ref) => {
     const { isChecked, isDisabled, value, ...rest } = props;
     return (
         <Button
+            className="my-1"
+            fontSize={["13px","14px","16px"]}
             ref={ref}
             variant={isChecked ? "solid" : "outline"}
             variantColor={isChecked ? "primary" : "gray.300"}
@@ -49,7 +51,7 @@ function UcaasPricing(props) {
     const [num100, setNum100] = useState(0);
     const [extraVM, setExtraVM] = useState(0);
     const [show, setShow] = React.useState(false);
-    const openControls = () => setShow(true);
+    const openControls = () => {setShow(true); window.scrollTo(0, document.getElementById("collapse-1").offsetTop - 100);}
     const [value, setValue] = React.useState(0);
     const handleChange = (value) => {
         setValue(value);
@@ -389,7 +391,7 @@ function UcaasPricing(props) {
                             </Tabs>
                             <div id="collapse-1" className="collapse-target">
                                 <Collapse
-                                    className="px-lg-5 px-3"
+                                    className="px-lg-5"
                                     mt={6}
                                     isOpen={show}
                                 >

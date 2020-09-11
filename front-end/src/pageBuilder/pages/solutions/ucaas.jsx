@@ -7,27 +7,23 @@ export default [
             typed: ["Capture", "Live Stream", "Repurpose"],
             after: " Your Application on the Cloud"
         },
+        titleStyle:{fontSize:["3xl","4xl"],px:"5px"},
         description: "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business. Expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint",
         descriptionStyle: {
             textAlign: "left"
         },
-        gap: 10,
-        py: 16
-    },
-    {
-        my: 0,
-        py: 0,
+        rowDistance: 8,
         gap: 10,
         body: [
             {
                 py: 4,
-                width: ["100%", 1 / 2, 1 / 3],
+                width: ["95%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/ui.svg",
+                    image: "/assets/images/icons/color/microphone.svg",
                     title: "Voice Integration",
                     align: "left",
                     description: "Extended capability of your telephony solutions, for a better output with the same resource."
@@ -35,13 +31,13 @@ export default [
             },
             {
                 py: 4,
-                width: ["100%", 1 / 2, 1 / 3],
+                width: ["95%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/agile.svg",
+                    image: "/assets/images/icons/color/chat.svg",
                     title: "Unified Messaging",
                     align: "left",
                     description: "Different forms of media (E-Mail, SMS, video, voicemail), integrated into a single system."
@@ -49,13 +45,13 @@ export default [
             },
             {
                 py: 4,
-                width: ["100%", 1 / 2, 1 / 3],
+                width: ["95%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/globe.svg",
+                    image: "/assets/images/icons/color/learn.svg",
                     title: "Collaboration Experts",
                     align: "left",
                     description: "We offer business and technology assessments to help identify any barriers in order for your collaborative Goals to succeed."
@@ -63,13 +59,13 @@ export default [
             },
             {
                 py: 4,
-                width: ["100%", 1 / 2, 1 / 3],
+                width: ["95%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/headphones.svg",
+                    image: "/assets/images/icons/color/cloud.svg",
                     title: "Backup over Cloud",
                     align: "left",
                     description: "The business keeps on running smoothly, with everything backed up on cloud, while taking measures for potential threats."
@@ -77,13 +73,13 @@ export default [
             },
             {
                 py: 4,
-                width: ["100%", 1 / 2, 1 / 3],
+                width: ["95%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/api.svg",
+                    image: "/assets/images/icons/color/headphones.svg",
                     title: "Excellent Customer Support",
                     align: "left",
                     description: "BGUS's friendly and skilled customer support service is available 24X7X365 with very less response time. Our policies ensure rapid and satisfactory resolution of issues."
@@ -91,13 +87,13 @@ export default [
             },
             {
                 py: 4,
-                width: ["100%", 1 / 2, 1 / 3],
+                width: ["95%", 1 / 2, 1 / 3],
                 type: "feature",
                 data: {
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/fix.svg",
+                    image: "/assets/images/icons/color/user.svg",
                     title: "Hot Desking",
                     align: "left",
                     description: "Log onto any device on your personal system, and have your user profile, populate on that particular system."
@@ -106,8 +102,8 @@ export default [
         ]
     },
     {
-        my: 0,
-        pt: 16,
+        bg: "light.400",
+        py: 16,
         gap: 0,
         body: [{
             width: "100%",
@@ -118,7 +114,7 @@ export default [
     {
         title: "Why BG Unified Solutions?",
         rowDistance: 8,
-        py: 16,
+        py: [8,16],
         body: [{
             width: "100%",
             type: "accordion",

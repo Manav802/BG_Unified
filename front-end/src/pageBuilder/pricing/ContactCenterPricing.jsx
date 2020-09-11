@@ -24,6 +24,8 @@ const CustomRadio = React.forwardRef((props, ref) => {
   const { isChecked, isDisabled, value, ...rest } = props;
   return (
     <Button
+      className="my-1"
+      fontSize={["13px","14px","16px"]}
       ref={ref}
       variant={isChecked ? "solid" : "outline"}
       variantColor={isChecked ? "primary" : "gray.300"}
@@ -60,7 +62,7 @@ function ContactCenterPricing(props) {
   const handleTbSpace = (tbSpace) => setTbSpace(tbSpace);
 
   const [show, setShow] = React.useState(false);
-  const openControls = () => setShow(true);
+  const openControls = () => {setShow(true); window.scrollTo(0, document.getElementById("collapse-1").offsetTop - 100);}
 
   return (
         <div id="pricing" className="container">
@@ -141,13 +143,14 @@ function ContactCenterPricing(props) {
             </div>
           </div>
           <div>
-            <Collapse className="px-lg-5 px-3" mt={6} isOpen={show}>
+            <div id="collapse-1">
+            <Collapse className="px-lg-5" mt={6} isOpen={show}>
               <div className="px-4 py-5 border">
                 <div className="display5 text-center">{planName}</div>
                 <div className="row justify-content-between px-3">
                   {planIndex === 1 && (
                     <>
-                      <div className="col-lg-12 mt-4">
+                      <div className="col-lg-10 offset-lg-1 mt-4">
                         <div className="h6">Additional CSQ</div>
                         <Slider
                           color="primary"
@@ -170,7 +173,7 @@ function ContactCenterPricing(props) {
                           />
                         </Slider>
                       </div>
-                      <div className="col-lg-12 mt-2">
+                      <div className="col-lg-10 offset-lg-1 mt-2">
                         <div className="h6">Choose a type</div>
                         <RadioButtonGroup
                           onChange={(value) => setRDSType(value)}
@@ -188,7 +191,7 @@ function ContactCenterPricing(props) {
                           </CustomRadio>
                         </RadioButtonGroup>
                       </div>
-                      <div className="col-lg-12 mt-4">
+                      <div className="col-lg-10 offset-lg-1 mt-4">
                         <div className="h6">TB Space</div>
                         <Slider
                           color="primary"
@@ -211,7 +214,7 @@ function ContactCenterPricing(props) {
                           />
                         </Slider>
                       </div>
-                      <div className="my-1 col-lg-12 mt-3 d-flex justify-content-between">
+                      <div className="my-1 col-lg-10 offset-lg-1 mt-3 d-flex justify-content-between">
                         <Flex py="12px" justify="center" align="center">
                           <Switch
                             onChange={(e) => {
@@ -255,12 +258,12 @@ function ContactCenterPricing(props) {
                         </Slider>
                       </div>
                       <div className="col-lg-12 text-center justify-content-center text-secondary">
-                          (The sum value of Advance QM and Compliance QM cannot be greater then Wfm)
+                          (The sum value of Advance QM and Compliance QM cannot be greater than WFM)
                       </div>
                       <div className="my-1 col-lg-4 offset-lg-1 mt-4 pl-lg-4">
                         <div className="d-flex"> <div className="h6">ADVANCED QM</div> <Popover usePortal trigger="hover">
                         <PopoverTrigger>
-                        <Icon className="m-1 ml-2 pt-1" name="question" size="28px" color="primary.500" />
+                        <Icon className="ml-2 pb-1 mb-2" name="question" size="28px" color="primary.500" />
                         </PopoverTrigger>
                           <PopoverContent zIndex={4}>
                             <PopoverArrow />
@@ -285,7 +288,7 @@ function ContactCenterPricing(props) {
                       <div className="my-1 col-lg-4 mt-4 pr-lg-5">
                       <div className="d-flex"> <div className="h6">Compliance QM</div> <Popover usePortal trigger="hover">
                         <PopoverTrigger>
-                        <Icon className="m-1 ml-2 pt-1" name="question" size="28px" color="primary.500" />
+                        <Icon className="ml-2 pb-1 mb-2" name="question" size="28px" color="primary.500" />
                         </PopoverTrigger>
                           <PopoverContent zIndex={4}>
                             <PopoverArrow />
@@ -332,6 +335,7 @@ function ContactCenterPricing(props) {
               </div>
             </Collapse>
           </div>
+        </div>
         </div>
     )
 }
