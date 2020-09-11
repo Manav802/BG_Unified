@@ -6,28 +6,19 @@ export default [
             typed: ["Collect", "Store", "Report"],
             after: "the various data and underlying threats."
         },
-        gap: 10,
-        py: 16,
         description: "Cloud Logging allows ingestion of system log data and applications from numerous VMs, and analyzes the data in real-time. The analysis of data is done through logs, which are managed and simplified over the cloud.  With BG Unified Solutions Cloud Logging as a Service, Log central services over the internet. Add the shield to protect your business reputation. Application and system logs ingestions. ",
         descriptionStyle: {
             textAlign: "left"
-        }
-    },
-    {
-        my: 0,
-        py: 16,
-        gap: 0,
+        },
         body: [{
             width: "100%",
             type: "pricing",
             data: <CloudLoggingPricing />
         }],
-        bg: 'light.400',
     },
     {
         title: "Why BG Unified Solutions?",
         rowDistance: 8,
-        py: 16,
         body: [{
             width: "100%",
             type: "accordion",

@@ -35,63 +35,45 @@ export default [
 
     {
         my: 0,
+        title: "Architectural Consultancy Service - Quality Assured",
         py: "48px",
         bgImage: "url('/assets/images/backgrounds/network_abstract.jpg')",
         blend: "screen",
         bg: "light.400",
         color: "dark.500",
-        containerWidth: ["100%", "100%", "88%", "72%"],
         rowDistance: 8,
         gap: 6,
-        body: [
-            {
-                my:[0,4],
-                width: ["100%","100%","100%",1/2, 5/12],
-                type: "content",
-                data: [{
-                    title: "Architectural Consultancy Service - Quality Assured",
-                    textAlign: "left",
-                    fontSize: "lg",
-                    titleSize: 36,
-                    text: "The team we’ve built at BG Unified Solutions Pty Ltd has been carefully selected from subject matter experts in multiple technology domains such as Infrastructure, Security, Networking, and Voice. Augmenting these domains, our staff are specialised in infrastructure architecture, network optimisation, high availability implementation, disaster recovery planning, and unified communications"
-                    
-                }]
-            },
-            {
-                width : ["100%","100%","100%",1/2, 7/12],
-                type: "container",
-                containerData : [{
-                    width: [1/2,1/3,1/3,1/2,1/3],
-                    type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/tools/tools.svg", mt: 4, title: "Increase Agility"}
-                },
-                {
-                    width: [1/2,1/3,1/3,1/2,1/3],
-                    type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "High Resource Utilization"}
-                },
-                {
-                    width: [1/2,1/3,1/3,1/2,1/3],
-                    type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/chat-smile.svg",mt: 4, title: "Customer Centric"}
-                },
-                {
-                    width: [1/2,1/3,1/3,1/2,1/3],
-                    type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "Advanced Technologies"}
-                },
-                {
-                    width: [1/2,1/3,1/3,1/2,1/3],
-                    type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/flag.svg", mt: 4, title: "Competitive"}
-                },
-                {
-                    width: [1/2,1/3,1/3,1/2,1/3],
-                    type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "Increased Business Efficiency"}
-                }],
-            },
-        ]   
+        body : [{
+            width: [1/2,1/3,1/3,1/2,1/3],
+            type: "feature",
+            data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/tools/tools.svg", mt: 4, title: "Increase Agility"}
+        },
+        {
+            width: [1/2,1/3,1/3,1/2,1/3],
+            type: "feature",
+            data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "High Resource Utilization"}
+        },
+        {
+            width: [1/2,1/3,1/3,1/2,1/3],
+            type: "feature",
+            data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/chat-smile.svg",mt: 4, title: "Customer Centric"}
+        },
+        {
+            width: [1/2,1/3,1/3,1/2,1/3],
+            type: "feature",
+            data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "Advanced Technologies"}
+        },
+        {
+            width: [1/2,1/3,1/3,1/2,1/3],
+            type: "feature",
+            data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/flag.svg", mt: 4, title: "Competitive"}
+        },
+        {
+            width: [1/2,1/3,1/3,1/2,1/3],
+            type: "feature",
+            data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "Increased Business Efficiency"}
+        }],
+     
     },
 
     {

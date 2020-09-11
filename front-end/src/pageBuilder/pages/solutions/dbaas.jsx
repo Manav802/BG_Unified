@@ -22,8 +22,6 @@ export default [
         ]
     },
     {
-        title:"BG Unified Solutions providing Databases for your Enterprise Needs :-",
-        description:"BG Unified Solutions Remote DBA service will manage your database infrastructure, no matter how big or small it may be. You’ll be able to focus more on your business while our experts manage your database platform 24 x 7."
         gap: 10,
         py: [8, 16],
         body: [

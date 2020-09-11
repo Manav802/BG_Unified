@@ -200,7 +200,7 @@ const services = {
     },
     "proxy": {
         title: "Proxy As A Service",
-        slogan: "Network Marketing Newly Marketed",
+        slogan: "Our Proxy, Your Way!!",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/Proxy.svg",
@@ -208,8 +208,8 @@ const services = {
         tags: ["proxy", "servers", "low-latency", "services"],
         description: "Just redirect your traffic to our Proxy Service either by DNS or other custom solution to our public Proxy Service and then create a record to reroute your traffic to your application behind the firewall.",
         illustration: "",
-        relatedService: ["Web Hosting As A Service", "DNS As A Service", "SD-WAN As A Service"],
-        conclusion: "",
+        relatedService: ["Firewall As A Service", "DNS As A Service", "SD-WAN As A Service"],
+        conclusion: "Enhanced proxy service by isolating the private network from the web",
         sections: sections.proxy
     },
     "sd-wan": {

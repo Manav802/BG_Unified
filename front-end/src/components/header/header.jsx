@@ -99,6 +99,12 @@ function header(props) {
                                         <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" variant="unstyled">{service[1].title}</Button></Link>
                                     ))}
                                     </Stack>
+                                    <Text my={"16px"} fontSize="lg" fontWeight="700">Cyber Security Services</Text>
+                                    <Stack spacing="8px" direction="column">
+                                    {servicesArray.filter(service => service[1].category === "Cyber Security Services").map(service => (
+                                        <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" variant="unstyled">{service[1].title}</Button></Link>
+                                    ))}
+                                    </Stack>
                                 </Box>
                                 <Box mb={4} mt={12} width={["100%", "100%", "50%", 1/3]}>
                                     <Text my={"16px"} fontSize="lg" fontWeight="700">Collaborative Services</Text>
