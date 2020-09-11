@@ -2,59 +2,19 @@ import VdiPricing from "../../pricing/VdiPricing";
 
 export default [
     {
-<<<<<<< HEAD
         title: "Workstation for your Business",
         description: <span>Virtual Desktop Infrastructure is when virtual 
-=======
-        gap: 10,
-        pb: 0,
-        body: [
-        {
-            width:["100%", "100%", 1/2],
-            py:[2,6,6,6,2],
-            type: "imageGroup",
-            data: {
-                images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
-                borderRadius: 8,
-                width: '90%',
-                height: "300px",
-                objectFit: "cover"
-            }
-        },
-        {
-            width: ["100%", "100%", 1/2],
-            type: "content",
-            data: [{
-                textAlign: "justify",
-                fontSize: ["md","md","md","lg"],
-                title: "Workstation for your Business",
-                titleSize: [28,28,28,32],
-                text: <span>Virtual Desktop Infrastructure is when virtual 
->>>>>>> BGUS-v1.0
                 desktops are served through on-site technology solutions. 
                 A hardware stack is maintained by IT administrators and 
                 usually located on-site. This is how virtual desktops have 
                 traditionally been deployed. This allows IT 
                 resources to be reallocated for managing virtual desktops, 
                 clients, and applications.
-<<<<<<< HEAD
                 </span>,
         gap: 10,
         py: [8,16],
         body: [
         {
-=======
-                </span>
-            }]
-        }]
-    },
-
-    {
-        my: 0,
-        pt:0,
-        gap: 0,
-        body: [{
->>>>>>> BGUS-v1.0
             width: "100%",
             type: "pricing",
             data: <VdiPricing />
@@ -111,7 +71,6 @@ export default [
     ]
 },
 {
-<<<<<<< HEAD
     body: [{
         type: "content",
         data: [{
@@ -131,17 +90,6 @@ export default [
 },
 {
     py: 5,
-=======
-    description: <span>With BG Unified Solutions’ Workstation 
-    As A Service, we give an organization the freedom to
-     deploy virtual desktops from its own on-premises data 
-     centres. In-house IT teams are responsible for deploying 
-     the virtual desktops as well as purchasing, managing, 
-     and upgrading the infrastructure.</span>,
-    py: 12,
-    rowDistance: 8,
-    gap: 12,
->>>>>>> BGUS-v1.0
     body: [
         {
             width: ["100%"],
@@ -178,16 +126,9 @@ export default [
             px: [6, 8, "20%"],
             type: "feature2",
             data: {
-<<<<<<< HEAD
                 image: "/assets/images/icons/color/desktop.svg",
                 maxH: 200,
                 spacing: 12,
-=======
-                align: "left",
-                size: "96px",
-                imageWidth: "128px",
-                image: "/assets/images/icons/color/stack.svg",
->>>>>>> BGUS-v1.0
                 title: "Virtualize both Desktops and Apps",
                 description: "Flexibility and adaptability according to your requirements, if you need to get your desktop infrastructure virtualized or virtualization of applications."
             }
