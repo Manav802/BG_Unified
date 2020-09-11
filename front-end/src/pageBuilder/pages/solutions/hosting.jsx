@@ -118,12 +118,12 @@ export default [
                 {
                     title: "Sound and Efficient Planning",
                     description: "We can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. Migratory process of your website onto our platform is super easy with fast, secure and reliable hosting.",
-                    image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg"
+                    image: "/assets/images/Illustrations/Sound_and_Efficient_Planning.svg"
                 },
                 {
                     title: "Value for Money",
                     description: "Reduced costs, pay for what you want, no hidden costs and completely transparent process. Costing and pricing discussed and negotiated at the starting of the job only.",
-                    image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
+                    image: "/assets/images/Illustrations/Value_for_Money.svg"
                 },]
             }
         }]

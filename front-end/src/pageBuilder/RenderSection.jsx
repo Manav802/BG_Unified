@@ -6,6 +6,7 @@ import Description from './Description';
 import Row from './Row';
 import Body from './Body';
 import Link from 'next/link';
+import Fade from "react-reveal/Fade"
 import Typewriter from 'typewriter-effect';
 
 function RenderSection({ title, typeWriter_title, titleStyle, color = "dark.500", align = "center", description, containerWidth = ["100%", "100%", "720px", "960px", "1140px"], descriptionStyle, endingButtonTitle, endingButton, slider, endingButtonLink, sliderOption, gap = 4, rowDistance = 0, body, ...props }) {
@@ -25,12 +26,15 @@ function RenderSection({ title, typeWriter_title, titleStyle, color = "dark.500"
                 </Box>
                 </Title>}
                 {description && <Description {...descriptionStyle}>{description}</Description>}
-                {body && <Row rowDistance={rowDistance}>
-                    {body && body.map((b, index) => (
-                        <Body key={index} gap={gap} {...b} />
-                    ))}
-
-                </Row>}
+                {body && 
+                    <Fade duration={500} delay={200} cascade distance={"5%"} bottom>
+                        <Row rowDistance={rowDistance}>
+                            {body && body.map((b, index) => (
+                                <Body key={index} gap={gap} {...b} />
+                            ))}
+                        </Row>
+                    </Fade>
+                }
                 {endingButtonTitle && <Row mt="2rem"><Link href={"/" + endingButtonLink}><Button {...endingButton}>{endingButtonTitle}</Button></Link></Row>}
             </Section>
         </>
