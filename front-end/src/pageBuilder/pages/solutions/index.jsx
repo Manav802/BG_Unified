@@ -61,7 +61,6 @@ module.exports.workstation = workstation
 
 import socaas from "./socaas"
 module.exports.socaas = socaas
-
 import wafaas from './wafaas'
 module.exports.wafaas = wafaas
 

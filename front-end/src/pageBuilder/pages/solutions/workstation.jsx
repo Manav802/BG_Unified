@@ -46,7 +46,6 @@ export default [
             type: "pricing",
             data: <VdiPricing />
         }],
-        bg: 'light.400',
     },
 
     {
