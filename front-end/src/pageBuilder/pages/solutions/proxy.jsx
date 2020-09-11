@@ -1,22 +1,28 @@
-import DNSPricing from "../../pricing/DNSPricing";
+import ProxyPricing from "../../pricing/ProxyPricing";
 
 export default [
     {
-        title: "Hosting with Freedom Built-In",
-        description: <span>Delivering a scalable, reliable and managed authoritative Domain Name System (DNS) As A Service. With our assured low latency and high availability,
-            it is a cost-effective way to make your applications and services available to your users. <br /><br />The main functionality of DNS is to convert domain names into IP addresses,
-            for the web browsers to identify a website,
-            for them to load the required resources. Domain Name System Service allows you to host the website over the web, maintain and monitor in real-time.</span>,
-        descriptionStyle: {
-            fontSize: "lg",
-            px: 6,
-        },
+        title: "Connect with Proxy",
         gap: 0,
         body: [{
-            width: "100%",
-            type: "pricing",
-            data: <DNSPricing />
-        }]
+            type: "content",
+            data: [{
+                text: <span>
+                Proxy as a Service refers to proxy servers that act as intermediate nodes or connecting points between an end-user and the internet.
+                Proxy as a Service allows you to connect to a different server and provides you with access to web pages, files etc. 
+                Proxy servers facilitate administrative, authoritative, security issues in the enterprise world.
+                </span>,
+                fontSize: "xl",
+                textAlign:"center",
+                opacity: .7,
+                }]
+            },
+            {
+                width: "100%",
+                type: "pricing",
+                data: <ProxyPricing/>
+            },
+        ]
     },
     {
         my: 0,
@@ -25,31 +31,15 @@ export default [
         blend: "screen",
         bg: "light.400",
         color: "dark.500",
-        containerWidth: ["100%", "100%", "88%", "72%"],
-        rowDistance: 8,
         gap: 6,
         body: [
             {
-                my: [0, 4],
-                width: ["100%", "100%", "100%", 1 / 2, 5 / 12],
-                type: "content",
-                data: [{
-                    title: "For a stronger Web Identity",
-                    textAlign: "left",
-                    fontSize: "lg",
-                    titleSize: 48,
-
-                    text: "BG Unified Solutions give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches. "
-
-                }]
-            },
-            {
-                width: ["100%", "100%", "100%", 1 / 2, 7 / 12],
+                width: "100%",
                 type: "container",
                 containerData: [{
                     width: [1 / 2, 1 / 3, 1 / 3, 1 / 2, 1 / 3],
                     type: "feature",
-                    data: { align: "center", titleSize: "md", iconColor: "primary.500", svg: "/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "Scalable Solutions" }
+                    data: { align: "center", titleSize: "md", iconColor: "primary.500", svg: "/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "Secure" }
                 },
                 {
                     width: [1 / 2, 1 / 3, 1 / 3, 1 / 2, 1 / 3],
@@ -64,41 +54,40 @@ export default [
                 {
                     width: [1 / 2, 1 / 3, 1 / 3, 1 / 2, 1 / 3],
                     type: "feature",
-                    data: { align: "center", titleSize: "md", iconColor: "primary.500", svg: "/assets/images/icons/library/devices/diagnostics.svg", mt: 4, title: "High Asset Utilization" }
+                    data: { align: "center", titleSize: "md", iconColor: "primary.500", svg: "/assets/images/icons/library/devices/diagnostics.svg", mt: 4, title: "Administrative" }
                 },
                 {
                     width: [1 / 2, 1 / 3, 1 / 3, 1 / 2, 1 / 3],
                     type: "feature",
-                    data: { align: "center", titleSize: "md", iconColor: "primary.500", svg: "/assets/images/icons/library/general/shield-check.svg", mt: 4, title: "Security Ensured" }
+                    data: { align: "center", titleSize: "md", iconColor: "primary.500", svg: "/assets/images/icons/library/general/shield-check.svg", mt: 4, title: "Multi-Layered" }
                 },
                 {
                     width: [1 / 2, 1 / 3, 1 / 3, 1 / 2, 1 / 3],
                     type: "feature",
-                    data: { align: "center", titleSize: "md", iconColor: "primary.500", svg: "/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Total Interoperibility" }
+                    data: { align: "center", titleSize: "md", iconColor: "primary.500", svg: "/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Remote Connectivity" }
                 }],
             },
         ]
     },
     {
-        py: 16,
         body: [{
             width: "100%",
             type: "accordion",
             data: {
                 fontSize: "md",
                 content: [{
-                    title: "Scalability",
-                    description: "Hierarchical nature of  DNS, making it scalable. Allows every organization to manage its authoritative and operational data effectively, even with increased resources. Maintaining compatibility as DNS servers clients run on different hardware, different operating systems.",
+                    title: "Firewall ",
+                    description: "Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA. Centralized Policy Management using Panorama, Sourcefire DC",
                     image: "/assets/images/Illustrations/Varied_Web_Hosting_Solutions.svg"
                 },
                 {
-                    title: "Reliability",
-                    description: "The user or the end host need not dive into the technicality about root or TLD servers. Only need to know the basics of the functioning. Eliminating vulnerabilities like cache poisoning, to reach a satisfactory level of security, making our DNS service extremely reliable",
+                    title: "Network Filtering",
+                    description: "Multiple IP types globally, in a clustered or isolated environment. Enhanced proxy service by isolating the private network from the web, thus allowing limiting access of private network users to Internet-based resources.",
                     image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg"
                 },
                 {
-                    title: "Concurrency",
-                    description: "Allows and handles multiple requests simultaneously and manages data by distributing over a large number of hosts. Detects, isolates notifies and corrects faults encountered in the network.",
+                    title: "Fast speed with minimum bandwidth usage",
+                    description: "Use proxy servers at a faster speed and limiting the bandwidth utilization, by filtering traffic, caching files and web pages accessed. Highly advanced, available and multiple data centre locations.",
                     image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
                 },]
             }

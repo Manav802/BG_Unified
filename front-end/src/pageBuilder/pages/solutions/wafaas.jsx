@@ -42,9 +42,8 @@ export default [
             type: "imageGroup",
             data: {
                 images: ["/assets/images/vectors/wafaas.jpg"],
-                height: "96px",
-                width: "128px",
-                objectFit: "contain"
+                objectFit: "contain",
+                className: "wafaas-image"
             }
         }]
     },

@@ -46,3 +46,9 @@
   visibility: hidden; 
   pointer-events: none;
 }
+
+.wafaas-image{
+    mix-blend-mode: darken;
+    filter: hue-rotate(150deg);
+    max-width: 640px;
+}

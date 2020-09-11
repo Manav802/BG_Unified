@@ -56,11 +56,13 @@ export default [
     },
     {
         title: "Why BG Unified Solutions?",
+        rowDistance: 8,
         py: 16,
         body: [
             {
                 type: "image&text",
                 data: {
+                    spacing: 0,
                     image: "/assets/images/Illustrations/productivity.svg",
                     title: "Mobile access",
                     flexDirection: ["column", "column", "row"],
@@ -70,6 +72,7 @@ export default [
             {
                 type: "image&text",
                 data: {
+                    spacing: 0,
                     image: "/assets/images/Illustrations/Sound_and_Efficient_Planning.svg",
                     title: "Our collaborative tools",
                     flexDirection: ["column", "column", "row-reverse"],
@@ -79,6 +82,7 @@ export default [
             {
                 type: "image&text",
                 data: {
+                    spacing: 0,
                     image: "/assets/images/Illustrations/Completeness_CloudLogging.svg",
                     title: "Secure Channels",
                     flexDirection: ["column", "column", "row"],
