@@ -60,7 +60,7 @@ export default [
                 textAlign: "justify"
             },
             {
-                text: "Courtesy: datacom.com",
+                text: "Courtesy: datacom.com/au",
                 textAlign: "justify"
             },
         ]
