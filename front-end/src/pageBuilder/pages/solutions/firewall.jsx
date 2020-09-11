@@ -108,7 +108,7 @@ export default [
                 content: [{
                     title: "Platform Diversity",
                     description: "On-premise or cloud-based, that helps secure your IT environment quickly.The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.",
-                    image: "/assets/images/Illustrations/PlatformDiversity_Firewall.svg"
+                    image: "/assets/images/Illustrations/diversity.svg"
                 },
                 {
                     title: "Fast and Easy Deployment",
@@ -118,7 +118,7 @@ export default [
                 {
                     title: "Advanced Technology Stack",
                     description: "Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network included.",
-                    image: "/assets/images/Illustrations/low_pricing.svg"
+                    image: "/assets/images/Illustrations/data_protection.svg"
                 },]
             }
         }]

@@ -106,7 +106,7 @@ export default [
                 content: [{
                     title: "Load Balancing",
                     description: "Meet the needs of your business—today and as you grow—with innovative, flexible and scalable load balancing solutions.Platform-oriented cloud platforms.",
-                    image: "/assets/images/Illustrations/Varied_Web_Hosting_Solutions.svg"
+                    image: "/assets/images/Illustrations/data_points.svg"
                 },
                 {
                     title: "Easy execution",
@@ -116,7 +116,7 @@ export default [
                 {
                     title: "Cost-effective scalability",
                     description: " Scale up your project on demand by purchasing just the amount of hardware or storage you require at affordable prices. Platform as a service cloud providing you with limitless resources of computing.",
-                    image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
+                    image: "/assets/images/Illustrations/productivity.svg"
                 },]
             }
         }]

@@ -63,7 +63,7 @@ export default [
                 type: "image&text",
                 data: {
                     spacing: 0,
-                    image: "/assets/images/Illustrations/productivity.svg",
+                    image: "/assets/images/Illustrations/ClientSpecific_AppDev.svg",
                     title: "Mobile access",
                     flexDirection: ["column", "column", "row"],
                     description: "Multiple data centre locations, allows access to your website anytime, anywhere. Improved operational efficiencies, Reduced communication-related delays and enhanced collaboration."
@@ -73,7 +73,7 @@ export default [
                 type: "image&text",
                 data: {
                     spacing: 0,
-                    image: "/assets/images/Illustrations/Sound_and_Efficient_Planning.svg",
+                    image: "/assets/images/Illustrations/PlatformDiversity_Firewall.svg",
                     title: "Our collaborative tools",
                     flexDirection: ["column", "column", "row-reverse"],
                     description: "Email (MS Exchange and SMTP), file services (CIFS, FTP), document management(SharePoint), Interactive and transactional applications such as VMware VDI, and SQL."
@@ -83,7 +83,7 @@ export default [
                 type: "image&text",
                 data: {
                     spacing: 0,
-                    image: "/assets/images/Illustrations/Completeness_CloudLogging.svg",
+                    image: "/assets/images/Illustrations/DataProtection_Wireless.svg",
                     title: "Secure Channels",
                     flexDirection: ["column", "column", "row"],
                     description: "Ensuring completely secure network by technologies such as NAC(Network Access Control) using ISE, SourceFire, Cisco / Palo Alto /Checkpoint / Fortinet Firewall, DDOS Protection."

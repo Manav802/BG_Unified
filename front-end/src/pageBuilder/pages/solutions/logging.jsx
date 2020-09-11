@@ -27,17 +27,17 @@ export default [
                 content: [{
                     title: "Completeness",
                     description: "Fully integrated service performing at scale, can ingest system log data from multiple VMs. Reduction in need for on-site storage. Download archives on-demand.",
-                    image: "/assets/images/Illustrations/Varied_Web_Hosting_Solutions.svg"
+                    image: "/assets/images/Illustrations/Completeness_CloudLogging.svg"
                 },
                 {
                     title: "Simplified log management",
                     description: "Collecting and managing logs from numerous endpoints, servers and cloud-based resources with ease. Management and monitoring your logs and queries live.",
-                    image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg"
+                    image: "/assets/images/Illustrations/SimplifiedLogManagment_CloudLogging.svg"
                 },
                 {
                     title: "Proactive Troubleshooting",
                     description: "  Dynamic field explorer enhancing your troubleshooting experience. Easy troubleshooting in advanced and modern environments, with appropriate tools and resources.",
-                    image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
+                    image: "/assets/images/Illustrations/ProactiveTroubleShooting_CloudLogging.svg"
                 },]
             }
         }]
