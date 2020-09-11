@@ -51,7 +51,6 @@ import dr from './dr'
 module.exports.dr = dr
 
 import architecture from './architectural-consultancy'
-import { SimpleGrid } from "@chakra-ui/core"
 module.exports.architecture = architecture
 
 import loadBalancer from './loadBalancer'
@@ -59,6 +58,12 @@ module.exports.loadBalancer = loadBalancer
 
 import workstation from './workstation'
 module.exports.workstation = workstation
+
+import socaas from "./socaas"
+module.exports.socaas = socaas
+
+import wafaas from './wafaas'
+module.exports.wafaas = wafaas
 
 
 import wafaas from './wafaas'
@@ -69,3 +74,7 @@ module.exports.dbaas = dbaas
 
 import webdev from './webdev'
 module.exports.webdev = webdev
+
+import dbaas from './dbaas'
+module.exports.dbaas = dbaas
+
