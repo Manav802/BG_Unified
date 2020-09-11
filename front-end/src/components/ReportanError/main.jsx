@@ -3,7 +3,7 @@ import {
     FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
-import operatingsystems from '../../deviceDetect.js'
+import operatingsystems from '../../deviceDetect.js';
 import Toast from '../Toast/main';
 import { useDisclosure } from "@chakra-ui/core";
 import { deviceType, browserName, osName } from "react-device-detect";
@@ -16,7 +16,7 @@ const CustomRadio = React.forwardRef((props, ref) => {
             variantColor={isChecked ? "red" : "gray"}
             aria-checked={isChecked}
             role="radio"
-            width="30%"
+            width={["25%", "30%", "30%"]}
             height="120px"
             {...rest}
         />
@@ -155,10 +155,15 @@ function ErrorForm(props) {
     }
     return (
         <>
+<<<<<<< HEAD
             <Link mx={["6px","10px","16px"]} fontSize={["10px","12px","14px"]} textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
             <Modal isOpen={isOpen} onClose={formClose} isCentered>
+=======
+            <Link mx="16px" fontSize="sm" textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
+            <Modal isOpen={isOpen} onClose={formClose} isCentered >
+>>>>>>> new-manav
                 <ModalOverlay />
-                <ModalContent className="p-4" style={{ maxWidth: "700px", minHeight: "750px" }}>
+                <ModalContent className="p-4" maxWidth={["400px", "400px", "600px", "700px"]} style={{ minHeight: "750px" }}>
                     <ModalHeader><span className="display5">Report an Error</span></ModalHeader>
                     <ModalCloseButton />
                     <div className="container">
@@ -195,10 +200,10 @@ function ErrorForm(props) {
                                     <TabPanel>
                                         <FormControl mt={10} isRequired>
                                             <FormLabel>Device you were using:</FormLabel>
-                                            <RadioButtonGroup name="devicetype" isInline value={form.device} spacing={4} onChange={value => setDevice(value)}>
-                                                <CustomRadio size="lg" value="Smartphone"><SVG src="/assets/images/icons/library/devices/iphone-x.svg" /></CustomRadio>
-                                                <CustomRadio size="lg" value="Tablet"><SVG src="/assets/images/icons/library/devices/tablet.svg" /></CustomRadio>
-                                                <CustomRadio size="lg" value="browser"><SVG src="/assets/images/icons/library/devices/imac.svg" /></CustomRadio>
+                                            <RadioButtonGroup name="devicetype" className="d-flex justify-content-center" isInline value={form.device} spacing={4} onChange={value => setDevice(value)}>
+                                                <CustomRadio value="Smartphone"><SVG src="/assets/images/icons/library/devices/iphone-x.svg" /></CustomRadio>
+                                                <CustomRadio value="Tablet"><SVG src="/assets/images/icons/library/devices/tablet.svg" /></CustomRadio>
+                                                <CustomRadio value="browser"><SVG src="/assets/images/icons/library/devices/imac.svg" /></CustomRadio>
                                             </RadioButtonGroup>
                                         </FormControl>
                                         <FormControl mt={10} isRequired>
@@ -213,7 +218,7 @@ function ErrorForm(props) {
                                         <FormControl mt={10} isRequired>
                                             <FormLabel>Operating system you were using:</FormLabel>
                                             <Select name="operatingsystem" value={form.operatingsystem} onChange={onChange} variant="flushed">
-                                                {operatingsystems.map(item=><option value={item}>{item}</option>)}
+                                                {operatingsystems.map(item => <option value={item}>{item}</option>)}
                                             </Select>
                                         </FormControl>
                                         <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(2)}>Next</Button>

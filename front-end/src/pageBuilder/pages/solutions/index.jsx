@@ -54,6 +54,7 @@ import architecture from './architectural-consultancy'
 import { SimpleGrid } from "@chakra-ui/core"
 module.exports.architecture = architecture
 
+<<<<<<< HEAD
 import loadBalancer from './loadBalancer'
 module.exports.loadBalancer = loadBalancer
 
@@ -62,3 +63,10 @@ module.exports.workstation = workstation
 
 import socaas from "./socaas"
 module.exports.socaas = socaas
+=======
+import wafaas from './wafaas'
+module.exports.wafaas = wafaas
+
+import dbaas from './dbaas'
+module.exports.dbaas = dbaas
+>>>>>>> new-manav

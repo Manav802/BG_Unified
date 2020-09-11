@@ -120,8 +120,34 @@ function Solutions() {
 export async function getStaticPaths() {
     const ServiceNames = Object.keys(services)
     return {
+<<<<<<< HEAD
         paths: ServiceNames.map((x)=>({params:{name:x}})),
         fallback: false // See the "fallback" section below
+=======
+      paths: [
+        { params: { name: 'appdev' } },
+        { params: { name: 'architectural-consultancy' } },
+        { params: { name: 'backup' } },
+        { params: { name: 'cex' } },
+        { params: { name: 'cloud-logging' } },
+        { params: { name: 'contact-center' } },
+        { params: { name: 'dr' } },
+        { params: { name: 'dns' } },
+        { params: { name: 'firewall' } },
+        { params: { name: 'infra' } },
+        { params: { name: 'platform' } },
+        { params: { name: 'proxy' } },
+        { params: { name: 'sd-wan' } },
+        { params: { name: 'sip' } },
+        { params: { name: 'storage' } },
+        { params: { name: 'ucaas' } },
+        { params: { name: 'hosting' } },
+        { params: { name: 'wireless' } },
+        {params:{name:'wafaas'}},
+        {params:{name:'dbaas'}}
+      ],
+      fallback: false // See the "fallback" section below
+>>>>>>> new-manav
     };
 }
 export async function getStaticProps() {
