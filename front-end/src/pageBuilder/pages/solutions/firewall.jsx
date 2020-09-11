@@ -48,7 +48,7 @@ export default [
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Smooth and Efficient Performance" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/general/thunder-move.svg", mt: 4, title: "Smooth and Efficient Performance" }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
@@ -73,7 +73,7 @@ export default [
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/shopping/credit-card.svg", mt: 4, title: "Cost-Efficient Service" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/shopping/dollar.svg", mt: 4, title: "Cost-Efficient Service" }
             },
             {
                 width: [1 / 2, 1 / 3, 1 / 4],
