@@ -1,32 +1,40 @@
+import content from "../pageBuilder/pages/newsroom/index"
+
 const blogs = [
     {
         index: 1,
-        title: "Random Title for a Blog Article",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero nihil quibusdam delectus similique quae repellendus at corrupti veritatis corporis cupiditate",
-        createdOn: "23rd August 2019",
+        title: "How we are helping people during COVID-19 Pandemic",
+        description: "COVID-19 working from home taught us more lessons and even let us able to figure it out how we can be exponentially productive than just enjoying the comfort of staying at home.",
+        date: "23rd August 2020",
         by: "Saurabh Sareen",
-        avatar: "",
-        image: "/assets/images/backgrounds/vision.jpeg",
-        category: "Random",
+        avatar: "/assets/images/team/saurabh.jpg",
+        image: "/assets/images/newsroom/coronavirus.jpg",
+        category: "Updates",
         tags: ["cisco", "socaas"],
         link: "1-random-title-for-a-blog-article",
-        content: "",
+        content: content.covid19,
         view: "horizontal",
     },
     {
-        index: 1,
-        title: "Random Title for a Blog Article",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero nihil quibusdam delectus similique quae repellendus at corrupti veritatis corporis cupiditate",
-        createdOn: "23rd August 2019",
+        index: 2,
+        title: "Collaboration with DataCom and Huawei",
+        description: "It was a great morning to have a company of friends from Datacom and Huawei in one of the BG Unified Solutions DC locations.",
+        date: "23rd August 2019",
         by: "Saurabh Sareen",
-        avatar: "",
-        image: "/assets/images/backgrounds/vision.jpeg",
-        category: "Not Random",
+        avatar: "/assets/images/team/saurabh.jpg",
+        image: "/assets/images/newsroom/meet_with_datacom.jpg",
+        category: "Updates",
         tags: ["infrastructure", "iaas"],
-        link: "1-random-title-for-a-blog-article",
-        content: "",
+        link: "2-collaboration-with-datacom-and-huawei",
+        content: [{
+            type: "content",
+            data: [{
+                text: "Hello"
+            }]
+        }],
         view: "vertical",
     },
+    
     
 ]
 

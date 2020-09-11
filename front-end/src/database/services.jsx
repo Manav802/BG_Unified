@@ -86,6 +86,20 @@ const services = {
         conclusion: "We help organizations who are looking for an IT Partner who is known for speed, quality and consistency of service for distributed and complex environments.",
         sections: sections.callcenter
     },
+    "dbaas": {
+        title: "Database As A Service",
+        slogan: "Professional Remote Database Solutions",
+        bgImage: "",
+        category: "Network Services",
+        icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
+        color: "#E4572E",
+        tags: ["wireless", "wifi", "clusters", "networks"],
+        description: " It’s easy to deploy and available at a single license, giving you simplified configuration, bot management, and holistic visibility and control with a single pane of glass.",
+        illustration: "",
+        relatedService: ["SIP As A Service", "DNS As A Service", "DR As A Service"],
+        conclusion: "Professional, FLexible and Reliable Database Services for your Business.",
+        sections: sections.dbaas
+    },
     "dns": {
         title: "DNS As A Service",
         slogan: "For a stronger web identity",
@@ -269,20 +283,6 @@ const services = {
         conclusion: "Web Hosting services design and implementation in distributed environments.",
         sections: sections.hosting
     },
-    "wireless": {
-        title: "Wireless As A Service",
-        slogan: "Wireless Technology Made Simple",
-        bgImage: "",
-        category: "Network Services",
-        icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
-        color: "#E4572E",
-        tags: ["wireless", "wifi", "clusters", "networks"],
-        description: "Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters of Cisco WLC 5508, 2504 and Aruba controllers.",
-        illustration: "",
-        relatedService: ["SIP As A Service", "DNS As A Service", "DR As A Service"],
-        conclusion: "Let us make your campus wireless for you!!",
-        sections: sections.wireless
-    },
     "wafaas": {
         title: "Web Application Firewall As A Service",
         slogan: "Robust Security with a Dedicated Web App Firewall",
@@ -297,20 +297,36 @@ const services = {
         conclusion: "Protect your web applications and use a web application firewall. Contact us and let our experts help you!",
         sections: sections.wafaas
     },
-    "dbaas": {
-        title: "Database As A Service",
-        slogan: "Professional Remote Database Solutions",
+    "webdev": {
+        title: "Web Development As A Service",
+        slogan: "Design that speeds up performance",
+        bgImage: "",
+        category: "Development Services",
+        icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
+        color: "#E4572E",
+        tags: ["webdev", "web", "design", "development", "reactjs"],
+        description: "Get your website ready with high speed performance, and attractive motion + visual design.",
+        illustration: "",
+        relatedService: ["Application Development As A Service", "Storage As A Service", "DNS As A Service"],
+        conclusion: "Ready to discuss your project?",
+        sections: sections.webdev
+    },
+    "wireless": {
+        title: "Wireless As A Service",
+        slogan: "Wireless Technology Made Simple",
         bgImage: "",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
         color: "#E4572E",
         tags: ["wireless", "wifi", "clusters", "networks"],
-        description: " It’s easy to deploy and available at a single license, giving you simplified configuration, bot management, and holistic visibility and control with a single pane of glass.",
+        description: "Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters of Cisco WLC 5508, 2504 and Aruba controllers.",
         illustration: "",
         relatedService: ["SIP As A Service", "DNS As A Service", "DR As A Service"],
-        conclusion: "Professional, FLexible and Reliable Database Services for your Business.",
-        sections: sections.dbaas
-    }
+        conclusion: "Let us make your campus wireless for you!!",
+        sections: sections.wireless
+    },
+ 
+  
 }
 
 export default services

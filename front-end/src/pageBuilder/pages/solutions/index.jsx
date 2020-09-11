@@ -66,3 +66,6 @@ module.exports.wafaas = wafaas
 
 import dbaas from './dbaas'
 module.exports.dbaas = dbaas
+
+import webdev from './webdev'
+module.exports.webdev = webdev

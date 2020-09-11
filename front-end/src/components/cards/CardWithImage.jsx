@@ -9,7 +9,7 @@ function CardWithIcon({columns="auto", height="216px", ...props}) {
       <Image objectFit="cover" rounded={8} src={props.src} height={height} width="100%"></Image>
       </Box>
       <Box  py={2} px={5}>
-        <Heading size="lg" lineHeight={1.5} mb={2} letterSpacing={1} fontFamily="Nexa Bold">{props.title}</Heading>
+        <Heading fontSize={["md","2xl"]} lineHeight={1.5} mt={[2,1]} mb={[1, 2]} letterSpacing={1} fontFamily="Nexa Bold">{props.title}</Heading>
         {props.description && <Text textAlign="justify" fontSize="lg" mt={2}>{props.description}</Text>}
         {props.children}
         <ButtonGroup spacing={4}>
