@@ -241,6 +241,20 @@ const services = {
         conclusion: "Ready to get Storage?",
         sections: sections.storage
     },
+    "socaas": {
+        title: "Security Operations Centre As A Service",
+        slogan: "Cyber Security Experts",
+        bgImage: "",
+        category: "IT Infrastructural Services",
+        icon: "/assets/images/icons/monotone/StorageAsAServiceIcon.svg",
+        color: "#0091AD",
+        tags: ["storage", "blocks", "consolidation", "virtualization", "backup", "recovery", "archive"],
+        description: "Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage.",
+        illustration: "",
+        relatedService: ["Infrastructure As A Service", "DNS As A Service", "Backup As A Service"],
+        conclusion: "Win the battle against Cyber Threats with our SOCaaS",
+        sections: sections.socaas
+    },
     "ucaas": {
         title: "Unified Communications As A Service",
         slogan: "Professional Communication at your fingertips",

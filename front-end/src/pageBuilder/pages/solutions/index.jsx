@@ -60,4 +60,5 @@ module.exports.loadBalancer = loadBalancer
 import workstation from './workstation'
 module.exports.workstation = workstation
 
-
+import socaas from "./socaas"
+module.exports.socaas = socaas
