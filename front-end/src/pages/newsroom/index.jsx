@@ -14,12 +14,6 @@ function Newsroom(){
       <div className="newsroom">
         <Head>
           <title>Newsroom - BG Unified</title>
-
-          <link
-            rel="shortcut icon"
-            href="/assets/images/icons/favicon/bg.ico"
-            type="image/x-icon"
-          />
         </Head>
         <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
             <Image zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>

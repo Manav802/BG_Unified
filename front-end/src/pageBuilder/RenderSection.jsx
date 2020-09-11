@@ -31,7 +31,7 @@ function RenderSection({ title, typeWriter_title, titleStyle, color = "dark.500"
                     ))}
 
                 </Row>}
-                {endingButton && <Row mt="2rem"><Link href={"/" + endingButtonLink}><Button {...endingButton}>{endingButtonTitle}</Button></Link></Row>}
+                {endingButtonTitle && <Row mt="2rem"><Link href={"/" + endingButtonLink}><Button {...endingButton}>{endingButtonTitle}</Button></Link></Row>}
             </Section>
         </>
     );
