@@ -36,14 +36,11 @@ function DNSPricing(props) {
   <div id="pricing" className="container">
   <div className="row">
     <div className="col-lg-10 offset-lg-1">
-      <Tabs align="center">
-        <TabList>
-          <Tab onClick={()=>{setShow(false); setZone(0); setType("Windows")}} className="py-4 px-5 display6">Windows</Tab>
-          <Tab onClick={()=>{setShow(false); setZone(0); setType("BIND")}} className="py-4 px-5 display6">BIND</Tab>
-        </TabList>
-
-        <TabPanels>
-          <TabPanel className="py-2">
+          <Flex justify="center" my={4}>
+            <Button bg="light.500" rounded={0} borderBottomWidth={2} borderBottomColor={type === "Windows" ? "primary.500" : "light.400"} onClick={()=>{setShow(false); setZone(0); setType("Windows")}} className="py-4 px-5 display6">Windows</Button>
+            <Button bg="light.500" rounded={0} borderBottomWidth={2} borderBottomColor={type === "BIND" ? "primary.500" : "light.400"} onClick={()=>{setShow(false); setZone(0); setType("BIND")}} className="py-4 px-5 display6">BIND</Button>
+            <Button bg="light.500" rounded={0} borderBottomWidth={2} borderBottomColor={type === "Infoblox" ? "primary.500" : "light.400"} onClick={()=>{setShow(false); setZone(0); setType("Infoblox")}} className="py-4 px-5 display6">Infoblox</Button>
+          </Flex>
             <Fade duration={500} bottom>
               <div className="row no-gutters justify-content-center">
                 <div className="col-lg-5 col-sm-6 col-md-6 my-3">
@@ -94,61 +91,6 @@ function DNSPricing(props) {
                 </div>
               </div>
             </Fade>
-          </TabPanel>
-          <TabPanel className="py-2">
-            <Fade duration={500} bottom>
-              <div className="row no-gutters justify-content-center">
-                <div className="col-lg-5 col-sm-6 col-md-6 my-3">
-                  <PricingCard
-                    icon="/assets/images/icons/theme/paper-plane.svg"
-                    title="Standard DNS (BlackBox)"
-                    featureList={[
-                      "Includes 5 Zones",
-                      "Low Latency",
-                      "High Availabilty",
-                      "BlackBox Service",
-                      "Cost Effective",
-                    ]}
-                  >
-                    <Button
-                      className="mt-3"
-                      variantColor="primary"
-                      variant="outline"
-                      size="lg"
-                      onClick={()=>{openControls(); setPlan("Standard DNS (BlackBox)")}}
-                    >
-                      View Options
-                    </Button>
-                  </PricingCard>
-                </div>
-                <div className="col-lg-5 col-sm-6 col-md-6  my-3">
-                  <PricingCard
-                    icon="/assets/images/icons/theme/rocket.svg"
-                    title="Premium DNS (BlackBox)"
-                    featureList={[
-                      "Includes 5 Zones",
-                      "Low Latency",
-                      "High Availabilty",
-                      "BlackBox Service",
-                      "Cost Effective",
-                    ]}
-                  >
-                    <Button
-                      className="mt-3"
-                      variantColor="primary"
-                      variant="outline"
-                      size="lg"
-                      onClick={()=>{openControls(); setPlan("Premium DNS (BlackBox)")}}
-                    >
-                      View Options
-                    </Button>
-                  </PricingCard>
-                </div>
-              </div>
-            </Fade>
-          </TabPanel>
-        </TabPanels>
-      </Tabs>
       <div>
       <div id="collapse-1">
         <Collapse className="px-lg-5" mt={6} isOpen={show}>
