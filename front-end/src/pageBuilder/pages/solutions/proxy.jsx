@@ -59,7 +59,7 @@ export default [
                 {
                     width: [1 / 2, 1 / 3, 1 / 3, 1 / 2, 1 / 3],
                     type: "feature",
-                    data: { align: "center", titleSize: "md", iconColor: "primary.500", svg: "/assets/images/icons/library/general/shield-check.svg", mt: 4, title: "Multi-Layered" }
+                    data: { align: "center", titleSize: "md", iconColor: "primary.500", svg: "/assets/images/icons/library/code/stack.svg", mt: 4, title: "Multi-Layered" }
                 },
                 {
                     width: [1 / 2, 1 / 3, 1 / 3, 1 / 2, 1 / 3],
