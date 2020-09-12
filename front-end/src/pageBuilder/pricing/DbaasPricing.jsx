@@ -134,6 +134,8 @@ const CustomRadio = React.forwardRef((props, ref) => {
   const { isChecked, isDisabled, value, ...rest } = props;
   return (
     <Button
+      className="my-1"
+      fontSize={["13px","14px","16px"]}
       ref={ref}
       variant={isChecked ? "solid" : "outline"}
       variantColor={isChecked ? "primary" : "gray.300"}
@@ -145,7 +147,7 @@ const CustomRadio = React.forwardRef((props, ref) => {
   );
 });
 
-function InfraPricing(props) {
+function DbaasPricing(props) {
 
   const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + " " + text : "");
 
@@ -158,7 +160,7 @@ function InfraPricing(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const [show, setShow] = React.useState(false);
-  const openControls = () => setShow(true);
+  const openControls = () => {setShow(true); window.scrollTo(0, document.getElementById("collapse-1").offsetTop - 100);}
 
   const [storage, setStorage] = React.useState(0);
   const handleStorage = (storage) => setStorage(storage);
@@ -168,11 +170,6 @@ function InfraPricing(props) {
 
   const [cpu, setCPU] = React.useState(0);
 
-  const [tabIndex, setTabIndex] = React.useState(0);
-  const handleTabsChange = (index) => {
-    setTabIndex(index);
-    setShow(false);
-  };
 
   const [dailybackup, setDailyBackup] = React.useState(false);
   const handleDailyBackup = (dailybackup) =>
@@ -191,9 +188,10 @@ function InfraPricing(props) {
   setStorage(0);
 }
 
-  //Panels
-  const tabPanel = (
-    <TabPanel mx="auto" width={["100%", "100%", "100%", "90%", "76%" ]} className="py-2">
+  
+  return (
+    <div className="container-fluid" id="pricing">
+    <Box mx="auto" width={["100%", "100%", "100%", "90%" ]} className="py-2">
       <Fade cascade duration={500} distance={"30%"} bottom>
       <div className="row no-gutters justify-content-center">
         {plans.map((plan) => {
@@ -227,155 +225,15 @@ function InfraPricing(props) {
         
       </div>
       </Fade>
-    </TabPanel>
-  );
-  return (
-    <Box id="pricing">
-    <div className="row justify-content-center">
-      <Button
-        onClick={onOpen}
-        className="tab-dropdown"
-        size="lg"
-        py="32px"
-        mb="12px"
-        px="48px"
-        rightIcon="chevron-down"
-      >
-        <Box as={tabs[tabIndex].icon} size="32px" mr="12px"></Box>
-        {tabs[tabIndex].title}
-      </Button>
-      <Drawer
-        placement="bottom"
-        size="lg"
-        onClose={onClose}
-        isOpen={isOpen}
-      >
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">
-            Choose an Operating System
-          </DrawerHeader>
-          <DrawerBody>
-            {tabs.map((tab) => {
-              return (
-                <>
-                  <Button
-                    key={tab.index}
-                    onClick={() => {
-                      setTabIndex(tab.index);
-                      onClose();
-                    }}
-                    variantColor="white"
-                    py="32px"
-                    className="box-none text-dark justify-content-start hover-effect w-100 display6"
-                  >
-                    <Box as={tab.icon} size="32px" mr="12px"></Box>{" "}
-                    {tab.title}
-                  </Button>
-                </>
-              );
-            })}
-          </DrawerBody>
-        </DrawerContent>
-      </Drawer>
-    </div>
-    <Tabs align="center" index={tabIndex} onChange={handleTabsChange}>
-    <TabList>
-      {tabs.map((tab) => {
-        return (
-          <>
-            <Tab
-              key={tab.index}
-              onClick={() => {
-                setTabIndex(tab.index);
-                setWindowLicense(false);
-                setDailyBackup(false);
-                setType("");
-                setShow(false);
-              }}
-              className={
-                "box-none tab display6 " +
-                (tabIndex === tab.index && "tab-selected")
-              }
-            >
-              <Box as={tab.icon} size="32px" mr="12px"></Box> {tab.title}
-            </Tab>
-          </>
-        );
-      })}
-    </TabList>
-      <TabPanels>
-        <TabPanel className="py-2">
-        <Fade duration={500} cascade distance={"30%"} bottom>
-          <div className="row no-gutters justify-content-center">
-            <div className="col-xl-3 col-lg-4 col-sm-6 my-3">
-              
-                <PricingCard
-                  icon="/assets/images/icons/theme/origami.svg"
-                  title="Standard"
-                  featureList={[
-                    "2vCPU",
-                    "80GB SSD Storage",
-                    "4GB RAM",
-                    "Desktop Virtualization",
-                    "High Availabilty",
-                    "High Clustering",
-                  ]}
-                >
-                  <Button
-                    className="mt-3"
-                    variantColor="primary"
-                    variant="outline"
-                    size="lg"
-                    onClick={()=>{openControls(); handlePlan("Standard"); resetOnCardChange();}}
-                  >
-                    Get Started
-                  </Button>
-                </PricingCard>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6 my-3">
-                <PricingCard
-                  icon="/assets/images/icons/theme/paper-plane.svg"
-                  title="Business"
-                  popular
-                  featureList={[
-                    "4vCPU",
-                    "80GB SSD Storage",
-                    "6GB RAM",
-                    "Desktop Virtualization",
-                    "High Availabilty",
-                    "High Clustering",
-                  ]}
-                >
-                  <Button
-                    className="mt-3"
-                    variantColor="primary"
-                    variant="outline"
-                    size="lg"
-                    onClick={()=>{openControls(); handlePlan("Business"); resetOnCardChange();}}
-                  >
-                    Get Started
-                  </Button>
-                </PricingCard>
-              
-            </div>
-          </div>
-          </Fade>
-        </TabPanel>
-        {tabPanel}
-        {tabPanel}
-        {tabPanel}
-        {tabPanel}
-      </TabPanels>
-  </Tabs>
-    <div className="container">
+    </Box>
+    <div id="collapse-1" className="container">
       <Collapse id="quoteForm" className="px-lg-5 px-3" mt={6} isOpen={show}>
         <div className="px-4 py-5 border">
           <div className="display5 text-center">
-            {tabs[tabIndex].title} ({planName})
+            Customize Your {planName} Plan
           </div>
           <div className="row px-3">
-            {tabIndex === 4 && (
+            
               <div className="col-lg-12 mt-2">
                 <div className="h6">Choose a Type</div>
                 <RadioButtonGroup
@@ -392,7 +250,7 @@ function InfraPricing(props) {
                   </CustomRadio>
                 </RadioButtonGroup>
               </div>
-            )}
+            
             <div className="col-lg-12 mt-4">
               <div className="h6">Extend SSD Storage (in GB)</div>
               <Slider
@@ -440,38 +298,8 @@ function InfraPricing(props) {
                 />
               </Slider>
             </div>
-            {tabIndex < 4 && (
-              <div className="col-lg-6 mt-4">
-                <div className="d-flex">
-                  <Switch color="primary"
-                    onChange={(e) => {
-                      setDailyBackup(e.target.checked);
-                    }}
-                    isChecked={dailybackup}
-                    id="daily-backups"
-                  />
-                  <FormLabel ml="12px" htmlFor="daily-bakups">
-                    Enable Daily Backups
-                  </FormLabel>
-                </div>
-              </div>
-            )}
-            {tabIndex < 4 && (
-              <div className="col-lg-6 mt-4">
-                <div className="d-flex">
-                  <Switch color="primary"
-                    onChange={(e) => {
-                      setWindowLicense(e.target.checked);
-                    }}
-                    isChecked={windowLicense}
-                    id="license"
-                  />
-                  <FormLabel ml="12px" htmlFor="license">
-                    I have a Windows license
-                  </FormLabel>
-                </div>
-              </div>
-            )}
+            
+            
             <div className="col-md-6 mt-4">
               <div className="h6">Additional vCPUs</div>
               <NumberInput
@@ -492,18 +320,16 @@ function InfraPricing(props) {
 
             <div className="col-md-6 mt-4 pt-md-4 pb-1 d-flex justify-content-md-end align-items-center">
               <PricingQuote
-              serviceName="Infrastructure As A Service"
-                serviceDescription={`${
-                  tabs[tabIndex].title
-                } (${planName})${verifyNotEmpty(
+              serviceName="Database As A Service"
+                serviceDescription={`${planName} ${type} ${verifyNotEmpty(
                   storage * 8,
                   "GB Additional Storage"
-                )} ${verifyNotEmpty(ram*2, "GB Memory")}${handleDailyBackup(
-                  dailybackup
-                )}${handleWindowLicense(windowLicense)} ${verifyNotEmpty(
+                )} ${verifyNotEmpty(ram*2, "GB Memory")}
+                
+                ${verifyNotEmpty(
                   cpu,
                   "Additional vCPUs"
-                )}${type}`}
+                )}`}
                 button
               ></PricingQuote>
             </div>
@@ -511,8 +337,8 @@ function InfraPricing(props) {
         </div>
       </Collapse>
     </div>
-    </Box>
+    </div>
   )
 }
 
-export default InfraPricing;
+export default DbaasPricing;
