@@ -100,7 +100,7 @@ export default [
         ]
     },
     {
-        title:"Application Development as a Service allows you to get your application built on the platform of your choice, and maintain and monitor it in real-time.",
+        title:"Application built on the Platform of your choice, maintained and monitored in real-time.",
         body: [
             {
                 type: "image&text",

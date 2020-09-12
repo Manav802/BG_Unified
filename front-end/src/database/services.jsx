@@ -11,7 +11,7 @@ const services = {
         tags: ["application", "app", "dev", "development", "scalability", "platform", "independence", "client", "flexibility"],
         description: "BG Unified Solutions provides services in the area of Web, Mobile and Enterprise Application Development. Our team of technical and functional experts can help you in new Application Development, Modernizing and Supporting existing applications.",
         illustration: "",
-        relatedService: ["Logging Cloud Connect As A Service", "Storage As A Service", "Infrastructure As A Service"],
+        relatedService: ["Web Development As A Service", "Contact Center As A Service", "Architectural Consultancy As A Service"],
         conclusion: "User-interactivity, responsiveness, user-friendly interfaces kept into consideration.",
         sections: sections.appdev
     },
@@ -26,7 +26,7 @@ const services = {
         tags: ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
         description: "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture. Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
         illustration: "",
-        relatedService: ["Contact Center As A Service", "SIP As A Service", "DR As A Service"],
+        relatedService: ["Contact Center As A Service", "Application Development As A Service", "DR As A Service"],
         conclusion: "Achieve Higher Business Efficiency through increased agility, cost containment and lowered risk.",
         sections: sections.architecture
     },
@@ -40,7 +40,7 @@ const services = {
         tags: ["backup"],
         description: "BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data. We handle protection and management for all of your structured and unstructured data, while enabling self-service restoration capability to your teams.",
         illustration: "",
-        relatedService: ["Firewall As A Service", "Infrastructure As A Service", "Web Hosting As A Service"],
+        relatedService: ["Database As A Service", "Storage As A Service", "DR As A Service"],
         conclusion: "Customizable Data Protection for your Business",
         sections: sections.backup
     },
@@ -68,7 +68,7 @@ const services = {
         tags: ["cloud", "logging", "log", "threats", "log management", "troubleshooting"],
         description: "Log central services over the internet. Collect, Store, and report the various data and underlying threats. Add the shield to protect your business reputation.",
         illustration: "",
-        relatedService: ["Backup As A Service", "Firewall As A Service", "Infrastructure As A Service"],
+        relatedService: ["Platform As A Service", "Backup As A Service", "CEX As A Service"],
         conclusion: "Add the shield to protect your business reputation",
         sections: sections.logging
     },
@@ -96,7 +96,7 @@ const services = {
         tags: ["wireless", "wifi", "clusters", "networks"],
         description: " It’s easy to deploy and available at a single license, giving you simplified configuration, bot management, and holistic visibility and control with a single pane of glass.",
         illustration: "",
-        relatedService: ["SIP As A Service", "DNS As A Service", "DR As A Service"],
+        relatedService: ["Backup As A Service", "Storage As A Service", "DR As A Service"],
         conclusion: "Professional, Flexible and Reliable Database Services for your Business.",
         sections: sections.dbaas
     },
@@ -124,7 +124,7 @@ const services = {
         tags: ["Disaster", "Recovery", "Management", "Deployment", "Flexible", "Non-Disruptive"],
         description: "Assist in DR strategy, evaluate threat models, select technologies, prototype multisite or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.",
         illustration: "",
-        relatedService: ["Logging Cloud Connect As A Service", "Platform As A Service", "Infrastructure As A Service"],
+        relatedService: ["Backup As A Service", "Storage As A Service", "Infrastructure As A Service"],
         conclusion: "Detects, isolates, notifies and corrects faults encountered in the network",
         sections: sections.dr
     },
@@ -280,7 +280,7 @@ const services = {
         description: "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business.",
         illustration: "",
         relatedService: ["Contact Center As A Service", "Infrastructure As A Service", "SIP As A Service"],
-        conclusion: "Once we determine your key business drivers and needs, we tailor a solution with best-in-class products and technologies from top manufacturers with expert service and support.",
+        conclusion: "We tailor a solution with best products and technologies from top firms with expert service.",
         sections: sections.ucaas
     },
     "hosting": {
@@ -321,7 +321,7 @@ const services = {
         tags: ["webdev", "web", "design", "development", "reactjs"],
         description: "Get your website ready with high speed performance, and attractive motion + visual design.",
         illustration: "",
-        relatedService: ["Application Development As A Service", "Web-Hosting As A Service", "DNS As A Service"],
+        relatedService: ["Application Development As A Service", "Web Hosting As A Service", "DNS As A Service"],
         conclusion: "Ready to discuss your project?",
         sections: sections.webdev
     },
