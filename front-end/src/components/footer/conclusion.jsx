@@ -8,6 +8,7 @@ import Link from "next/link"
 function Conclusion({align="left", title="Let's get IT done.", description, explore=true, contact=false, ...props}) {
     return (
         <Fade duration={300} cascade distance={"5%"} left>
+          {/* hek */}
           <Section {...props}>
               <Flex direction="column" align={align} py={12} px={[8,16,24]} rounded={8} overflow="hidden" bg="dark.500" pos="relative">
                 <Image height="340px" zIndex="0" position="absolute" right={0} top="-10%" src="/assets/images/vectors/ic_chip_neon.png"></Image>
