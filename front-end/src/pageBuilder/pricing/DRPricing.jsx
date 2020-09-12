@@ -38,7 +38,7 @@ function DRPricing(props) {
               <div className="px-4 py-5 border">
                 <div className="display5 text-center">{plan}</div>
                 <div className="row justify-content-center px-3">
-                  <div className="col-lg-11 mt-4">
+                  <div className="col-lg-10 mt-4">
                     <div className="h6">No. of VMs</div>
                     <Slider color="primary" my="24px" max={20} defaultValue={1} value={value} onChange={handleChange}>
                       <SliderTrack h="16px" borderRadius="8px" />

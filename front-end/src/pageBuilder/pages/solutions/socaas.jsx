@@ -47,27 +47,27 @@ export default [
         gap: 8,
         body: [
         {
-            width: [1/1, 1/2, 1/3],
+            width: ["100%", 1/2, 1/3],
             type: "feature",
             data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/general/visible.svg", mt: 4, title: "In-depth risk visibility"}
         },
         {
-            width: [1/1, 1/2, 1/3],
+            width: ["100%", 1/2, 1/3],
             type: "feature",
             data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/design/magic.svg", mt: 4, title: "Compliance Demonstrated"}
         },
         {
-            width: [1/1, 1/2, 1/3],
+            width: ["100%", 1/2, 1/3],
             type: "feature",
             data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/files/numbered-information.svg",mt: 4, title: "Prioritizing issues resolution"}
         },
         {
-            width: [1/1, 1/2, 1/3],
+            width: ["100%", 1/2, 1/3],
             type: "feature",
             data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "Rapid Response"}
         },
         {
-            width: [1/1, 1/2, 1/3],
+            width: ["100%", 1/2, 1/3],
             type: "feature",
             data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/general/shield-check.svg", mt: 4, title: "Next-gen Managed Firewall"}
         },
@@ -83,7 +83,7 @@ export default [
             Our Security Engineers use analytic software to 
             conduct the deep analysis required to provide you
              with actionable remediation recommendations.</span>,
-            fontSize: 23,
+            fontSize:["lg","lg","xl"],
             textAlign: "center",
         }]
     }],

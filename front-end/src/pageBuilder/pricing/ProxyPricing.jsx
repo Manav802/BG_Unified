@@ -4,7 +4,7 @@ import { PricingCard, PricingQuote } from '../../components/cards/PricingCard'
 
 function ProxyPricing(props) {
   return (
-        <div className="container">
+        <div id="pricing" className="container">
           <Fade duration={500} bottom>
             <div className="row no-gutters justify-content-center px-lg-2">
               <div className="col-lg-4 my-3">
