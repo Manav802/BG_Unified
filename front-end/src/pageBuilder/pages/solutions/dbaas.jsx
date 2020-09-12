@@ -1,29 +1,30 @@
+import DbaaSPricing from "../../pricing/DbaasPricing"
+
 export default [
     {
-        title:"Supported data platforms",
-        py: 16,
-       rowDistance: 8,
+        mt:0,
+        py: 0,
+        containerWidth: "100%",
         body: [
             {
-                width: [1 / 3],
-                type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/custom/mongodb.svg", mt: 4, title: "MongoDB" }
+                type: "pricing",
+                data: <DbaaSPricing></DbaaSPricing>
             },
             {
-                width: [1 / 3],
-                type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/custom/mysql.svg", mt: 4, title: "MySQL" }
+                width: ["100%"],
+                mt: 8,
+                type: "imageGroup",
+                data: {
+                    images: ["/assets/images/icons/brands/mongodb.svg", "/assets/images/icons/brands/MySQL-Logo.png", "/assets/images/icons/brands/azure_sql_server_posted.svg"],
+                    px: 3,
+                    height: "80px",
+                    objectFit: "contain"
+                },
             },
-            {
-                width: [1 / 3],
-                type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/custom/sql-database.svg", mt: 4, title: "AzureSQL" }
-            }
         ]
     },
     {
         gap: 10,
-        py: [8, 16],
         body: [
             {
                 width: ["100%", "100%", 1 / 2],
@@ -106,19 +107,12 @@ export default [
         ]
     },
     {
-        body: [{
-            type: "content",
-            data: [{
-                text: <span>We offer 24 x 7 managed database services. 
-                We’ll monitor database infrastructure, handle incidents, 
-                response to events/alarms, follow change management processes, 
-                improve overall performance and reduce vulnerabilities.</span>,
-                fontSize: 23,
-                textAlign: "center",
-            }]
-        }],
-        pt: 0,
-        pb: 0,
-        mb: 0
+        py: 16,
+        description:"We offer 24 x 7 managed database services. We’ll monitor database infrastructure, handle incidents, response to events/alarms, follow change management processes, improve overall performance and reduce vulnerabilities.",
+        descriptionStyle:{
+            fontSize:["lg","lg","xl"],
+            opacity:0.7,
+            textAlign:"left"
+        }
     }
 ]

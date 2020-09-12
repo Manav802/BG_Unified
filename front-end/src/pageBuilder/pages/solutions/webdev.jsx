@@ -1,7 +1,13 @@
-import { LightMode } from "@chakra-ui/core";
+import WebDevPricing from "../../pricing/WebDevPricing";
 
 export default [
-    
+    {
+        py: 0,
+        body: [{
+            type: "pricing",
+            data: <WebDevPricing></WebDevPricing>
+        }]
+    },
     {
         title: "Build your brand online",
         description: "We have the right team to develop to turn any kind of business into an online tycoon.",

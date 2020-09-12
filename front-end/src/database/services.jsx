@@ -97,7 +97,7 @@ const services = {
         description: " It’s easy to deploy and available at a single license, giving you simplified configuration, bot management, and holistic visibility and control with a single pane of glass.",
         illustration: "",
         relatedService: ["SIP As A Service", "DNS As A Service", "DR As A Service"],
-        conclusion: "Professional, FLexible and Reliable Database Services for your Business.",
+        conclusion: "Professional, Flexible and Reliable Database Services for your Business.",
         sections: sections.dbaas
     },
     "dns": {
@@ -139,7 +139,7 @@ const services = {
         description: "Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA. Centralized Policy Management using Panorama, Sourcefire DC.",
         illustration: "",
         relatedService: ["Infrastructure As A Service", "Contact Center As A Service", "Backup As A Service"],
-        conclusion: "Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA.",
+        conclusion: "Multi-Layered Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA.",
         sections: sections.firewall
     },
     "infra": {
@@ -172,7 +172,7 @@ const services = {
     },
     "workstation":{
         title: "Workstation As A Service",
-        slogan: "Digitize your Workspace",
+        slogan: "Digitalize your Workspace",
         bgImage: "/assets/images/backgrounds/network_abstract.jpg",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/workstation.svg",

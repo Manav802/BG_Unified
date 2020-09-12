@@ -145,7 +145,7 @@ const CustomRadio = React.forwardRef((props, ref) => {
   );
 });
 
-function InfraPricing(props) {
+function main(props) {
 
   const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + " " + text : "");
 
@@ -515,4 +515,4 @@ function InfraPricing(props) {
   )
 }
 
-export default InfraPricing;
+export default  main;

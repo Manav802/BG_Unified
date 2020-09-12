@@ -7,12 +7,14 @@ import Conclusion from "../../components/footer/Conclusion";
 import RenderSection from "../../pageBuilder/RenderSection";
 import { Box, Button, ButtonGroup, Image, Heading, Flex } from "@chakra-ui/core"
 import Fade from "react-reveal/Fade"
+import SVG from "../../components/svg/svg";
 
 
 function Solutions() {
     const router = useRouter();
     const { name } = router.query;
     const [service, setService] = React.useState({})
+    const [pricing, setPricing] = React.useState(false)
 
     React.useEffect(() => {
         if (name && services) {
@@ -20,9 +22,18 @@ function Solutions() {
         }
     }, [name])
 
+    React.useEffect(() => {
+        if(document){
+            setPricing(document.getElementById('pricing'))
+        }
+    })
+
     return (
         <>
             <Box py={["6rem","8rem","10rem"]} color="white" className="bg-dark position-relative">
+                <Head>
+                <title>{service.slogan} - {service.title} | BG Unified Solutions</title>
+                </Head>
                 <Image
                     opacity=".3"
                     className="bg-image"
@@ -33,7 +44,7 @@ function Solutions() {
                         <div className="col-12">
                             <Fade duration={700} delay={1000} bottom>
                                 <Flex textAlign={["center","left"]} alignContent={["center","left"]} justifyContent={["center","left"]}  align="center" py={4}>
-                                    <Image src={service.icon} size="24px"></Image>
+                                    <SVG src={service.icon} color="light.400" size="24px"></SVG>
                                     <Heading mx={6} fontSize={["18px","24px"]}>{service.title}</Heading>
                                 </Flex>
                             </Fade>
@@ -51,9 +62,9 @@ function Solutions() {
                             <Fade duration={700} delay={1000} top>
                                 <Flex justifyContent={["center","left"]}>
                                 <ButtonGroup mt={10} spacing="16px">
-                                    <Button onClick={() => {
+                                    {pricing && <Button onClick={() => {
                                         window.scrollTo(0, document.getElementById("pricing").offsetTop - 80)
-                                    }} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button>
+                                    }} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button>}
                                     <Link href="/contact"><Button variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">Contact Sales</Button></Link>
                                 </ButtonGroup>
                                 </Flex>

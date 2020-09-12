@@ -88,17 +88,17 @@ export default [
                 content: [{
                     title: "Performance Optimized",
                     description: "Monitors and measures various aspects of the network environment so that overall performance can be maintained and optimised.",
-                    image: "/assets/images/Illustrations/PlatformDiversity_Firewall.svg"
+                    image: "/assets/images/Illustrations/analytics.svg"
                 },
                 {
-                    title: "FConfiguration Management",
+                    title: "Configuration Management",
                     description: "Configures network devices, performs inventory management and software management. Local end-market support services and Local language capabilities.",
-                    image: "/assets/images/Illustrations/FastAndEasyDevelopment_Firewall.svg"
+                    image: "/assets/images/Illustrations/SimplifiedLogManagment_CloudLogging.svg"
                 },
                 {
                     title: "Wide Expert Range",
                     description: "Weather System Architecture, Technology Roadmap, or optimization solutions for your business, we’ve got it all covered. Customized and tailor solutions to meet client needs",
-                    image: "/assets/images/Illustrations/low_pricing.svg"
+                    image: "/assets/images/Illustrations/infrastructure_city.svg"
                 },]
             }
         }]

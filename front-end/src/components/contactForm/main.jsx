@@ -78,9 +78,9 @@ function ContactForm(props) {
   }
   return (
     <Box p={5}>
-        <form onSubmit={onSubmit}>
-          <input type="hidden" name="_redirect" value="false" />
-          <Flex wrap="wrap">
+      <form onSubmit={onSubmit}>
+        <input type="hidden" name="_redirect" value="false" />
+        <Flex wrap="wrap">
           <FormControl px={2} width={"100%"} isRequired>
             <Input
               placeholder="Name"
@@ -91,10 +91,10 @@ function ContactForm(props) {
               onChange={onChange}
             />
           </FormControl>
-          
-          <FormControl px={2} width={["100%","100%", "50%"]} mt={4} isRequired>
+
+          <FormControl px={2} width={["100%", "100%", "50%"]} mt={4} isRequired>
             <Input
-              p={6} 
+              p={6}
               placeholder="Email"
               type="email"
               name="email"
@@ -102,8 +102,8 @@ function ContactForm(props) {
               onChange={onChange}
             />
           </FormControl>
-    
-          <FormControl px={2} width={["100%","100%", "50%"]} mt={4} isRequired>
+
+          <FormControl px={2} width={["100%", "100%", "50%"]} mt={4} isRequired>
             <Input
               p={6}
               placeholder="Phone Number"
@@ -114,7 +114,7 @@ function ContactForm(props) {
               onChange={onChange}
             />
           </FormControl>
-         
+
           <FormControl px={2} width={"100%"} mt={4}>
             <Input
               p={6}
@@ -135,26 +135,24 @@ function ContactForm(props) {
               resize={"vertical"}
             />
           </FormControl>
-          
-            <Button
-              mt={12}
-              mx={4}
-              className="hover-color shadow-md"
-              type="submit"
-              size="md"
-              height="48px"
-              width="100%"
-              backgroundColor="#F32222"
-              color="white"
-            >Submit {isLoading && <Spinner
-              thickness="4px"
-              speed="1s"
-              emptyColor="gray.200"
-              color="blue.500"
-              size="sm"
-            />}</Button>
-           </Flex>
-        </form>
+
+          <Button
+            mt={10}
+            type="submit"
+            size="lg"
+            variantColor="primary"
+            className="primary-btn"
+            width="100%"
+          >Submit{isLoading && <Spinner
+            thickness="4px"
+            speed="1s"
+            emptyColor="gray.200"
+            color="blue.500"
+            size="sm"
+          />}
+          </Button>
+        </Flex>
+      </form>
       {formResponse && <Toast response={formResponse} />}
     </Box>
   )

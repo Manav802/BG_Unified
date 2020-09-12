@@ -1,7 +1,8 @@
 import React, { Component, useEffect } from "react";
 import Head from "next/head";
-import { FaArrowRight } from "react-icons/fa";
-import { Image, Button, Heading, ButtonGroup, Icon, AspectRatioBox, Box, Slide } from "@chakra-ui/core";
+
+import { FaArrowRight, FaPercent } from "react-icons/fa";
+import { Image, Button, Heading, ButtonGroup, Icon, AspectRatioBox, Box, Slide, Flex, Text, CloseButton } from "@chakra-ui/core";
 import CardWithIcon from "../components/cards/CardWithIcon";
 import FeatureCard from "../components/cards/FeatureCard";
 import CaseStudy from "../components/case_study/CaseStudy";
@@ -16,6 +17,9 @@ import Section from "../pageBuilder/Section";
 import Conclusion from "../components/footer/Conclusion";
 import SVG from "../components/svg/svg";
 import Service from "../components/cards/Service";
+import Container from "../pageBuilder/Container";
+import Title from "../pageBuilder/Title";
+import Offer from "../components/cards/Offer";
 
 const sliderInfo = [
   {
@@ -169,8 +173,7 @@ class Landing extends Component {
             ))}
           </Slider>
         </div>
-
-
+        <Offer></Offer>
         <div className="section py-3">
           <div className="container">
 
