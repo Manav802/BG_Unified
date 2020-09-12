@@ -11,7 +11,7 @@ const services = {
         tags: ["application", "app", "dev", "development", "scalability", "platform", "independence", "client", "flexibility"],
         description: "BG Unified Solutions provides services in the area of Web, Mobile and Enterprise Application Development. Our team of technical and functional experts can help you in new Application Development, Modernizing and Supporting existing applications.",
         illustration: "",
-        relatedService: ["Logging Cloud Connect As A Service", "Storage As A Service", "Infrastructure As A Service"],
+        relatedService: ["Logging Cloud Connect", "Storage As A Service", "Infrastructure As A Service"],
         conclusion: "User-interactivity, responsiveness, user-friendly interfaces kept into consideration.",
         sections: sections.appdev
     },
@@ -54,7 +54,7 @@ const services = {
         tags: ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
         description: "Express Routes to office 365, AWS, Azure. Advanced Solution provides private, seamless, and on-demand connections to many clouds as well as networks. ",
         illustration: "",
-        relatedService: ["Logging Cloud Connect As A Service", "Proxy As A Service", "SIP As A Service"],
+        relatedService: ["Logging Cloud Connect", "Proxy As A Service", "SIP As A Service"],
         conclusion: "Proactively manages your service components to adhere to quality standards",
         sections: sections.cex
     },
@@ -110,7 +110,7 @@ const services = {
         tags: ["dns", "DNS", "domain", "name", "cost", "effective", "Concurrency", "Scalability", "TLD servers"],
         description: "Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users.",
         illustration: "",
-        relatedService: ["Web Hosting As A Service", "Logging Cloud Connect As A Service", "Infrastructure As A Service"],
+        relatedService: ["Web Hosting As A Service", "Logging Cloud Connect", "Infrastructure As A Service"],
         conclusion: "Try our Concurrent DNS Service with superior IP Technology.",
         sections: sections.dns
     },
@@ -124,7 +124,7 @@ const services = {
         tags: ["Disaster", "Recovery", "Management", "Deployment", "Flexible", "Non-Disruptive"],
         description: "Assist in DR strategy, evaluate threat models, select technologies, prototype multisite or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.",
         illustration: "",
-        relatedService: ["Logging Cloud Connect As A Service", "Platform As A Service", "Infrastructure As A Service"],
+        relatedService: ["Logging Cloud Connect", "Platform As A Service", "Infrastructure As A Service"],
         conclusion: "Detects, isolates, notifies and corrects faults encountered in the network",
         sections: sections.dr
     },
@@ -180,7 +180,7 @@ const services = {
         tags: ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
         description: "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture. Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
         illustration: "",
-        relatedService: ["Logging Cloud Connect As A Service", "SIP As A Service", "Firewall As A Service"],
+        relatedService: ["Logging Cloud Connect", "SIP As A Service", "Firewall As A Service"],
         conclusion: "An ideal solution for highly sensitive computing environments.",
         sections: sections.workstation
     },
@@ -293,7 +293,7 @@ const services = {
         tags: ["web", "hosting", "host", "web server", "APACHE", "website"],
         description: "Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package. Load balancing can also be added as an option if required.",
         illustration: "",
-        relatedService: ["Storage As A Service", "Logging Cloud Connect As A Service", "Backup As A Service"],
+        relatedService: ["Storage As A Service", "Logging Cloud Connect", "Backup As A Service"],
         conclusion: "Web Hosting services design and implementation in distributed environments.",
         sections: sections.hosting
     },
