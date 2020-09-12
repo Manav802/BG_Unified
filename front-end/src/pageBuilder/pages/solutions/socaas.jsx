@@ -59,7 +59,7 @@ export default [
         {
             width: [1/1, 1/2, 1/3],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/files/upload.svg",mt: 4, title: "Prioritizing issues resolution"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/files/numbered-information.svg",mt: 4, title: "Prioritizing issues resolution"}
         },
         {
             width: [1/1, 1/2, 1/3],

@@ -83,7 +83,7 @@ export default [
                     titleSize: "md",
                     textOpacity: "0.8",
                     size: "96px",
-                    image: "/assets/images/icons/color/analytics.svg",
+                    image: "/assets/images/icons/color/pie-chart.svg",
                     title: "Monitor on-the-go",
                     description: "Maintain, monitor and manage your application, anytime, anywhere!",
                     align: "center",
