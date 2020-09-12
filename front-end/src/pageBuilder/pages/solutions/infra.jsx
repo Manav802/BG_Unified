@@ -174,7 +174,7 @@ export default [
             width: 1/3,
             type: "numberCount",
             data:{
-                title: "Running Websites",
+                title: "Infrastructural Components",
                 count: 250,
                 suffix: "+"
             }
