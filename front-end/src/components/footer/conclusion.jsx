@@ -9,7 +9,7 @@ function Conclusion({align="left", title="Let's get IT done.", description, expl
     return (
         <Fade duration={300} cascade distance={"5%"} left>
           <Section {...props}>
-              <Flex direction="column" align={align} py={12} px={24} rounded={8} overflow="hidden" bg="dark.500" pos="relative">
+              <Flex direction="column" align={align} py={12} px={[8,16,24]} rounded={8} overflow="hidden" bg="dark.500" pos="relative">
                 <Image height="340px" zIndex="0" position="absolute" right={0} top="-10%" src="/assets/images/vectors/ic_chip_neon.png"></Image>
                 <Heading zIndex="100" mx={2} size="xl" textAlign={align} fontFamily="Nexa Bold" color="white">{title}</Heading>
                 {description && <Text zIndex="100" color="white" mt={3} fontSize="xl">{description}</Text>}
