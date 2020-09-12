@@ -90,7 +90,7 @@ const services = {
         title: "Database As A Service",
         slogan: "Professional Remote Database Solutions",
         bgImage: "",
-        category: "Network Services",
+        category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/dbaas.svg",
         color: "#E4572E",
         tags: ["wireless", "wifi", "clusters", "networks"],
