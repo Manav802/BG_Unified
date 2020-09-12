@@ -27,7 +27,7 @@ function Newsroom(){
               </InputGroup>
               {search && <Flex pos="absolute" mt={4} justifyContent="center" width="100%">
                   <Box bg="white" width={["100%","100%","520px"]} boxShadow="lg">
-                    {newsroom.filter(blog => blog.tags.includes(search)).map(blog => <Link href={"/newsroom" + blog.link}>
+                    {newsroom.filter(blog => blog.tags.includes(search)).map(blog => <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}>
                     <Heading size="md" textAlign="left" className="hover-effect" p={3}>{blog.title}</Heading>
                     </Link>)}
                   </Box>
@@ -44,7 +44,7 @@ function Newsroom(){
               </Box>
               <Box width="100%" px={3}>
                 {newsroom.map(blog =>{if(blog.category === category || category === "All") return(
-                <Link href={"/newsroom/" + blog.link}><Box as="a" fontWeight="500">
+                <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}><Box as="a" fontWeight="500">
                   <CardWithImage
                   src={blog.image}
                   title={blog.title}
