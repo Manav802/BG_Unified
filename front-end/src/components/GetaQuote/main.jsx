@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  useDisclosure, FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, ModalBody
+  useDisclosure, FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, ModalBody, Box
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
@@ -105,16 +105,16 @@ function GetaQuoteForm(props) {
       )}
       <Modal isOpen={isOpen} onClose={formClose} isCentered scrollBehavior="inside">
         <ModalOverlay />
-        <ModalContent maxWidth={["400px", "400px", "600px"]}>
+        <ModalContent maxWidth={["400px", "400px", "600px"]} maxHeight="700px">
           <ModalBody>
-            <ModalHeader><span className="display5">{props.serviceName}</span></ModalHeader>
+            <ModalHeader mt={4}><span className="display5">{props.serviceName}</span></ModalHeader>
             <div className="d-flex flex-wrap px-3">{description.map((service, index) => {
               return (
                 <div className="rounded-8 hover-effect bg-light m-2 py-2 px-3" key={index}>{service}</div>
               )
             })}</div>
             <ModalCloseButton />
-            <div className="container">
+            <Box m={2} className="container contact-form">
               <form onSubmit={onSubmit}>
                 <input
                   type="hidden"
@@ -195,7 +195,7 @@ function GetaQuoteForm(props) {
                   />}</Button>
                 </div>
               </form>
-            </div>
+            </Box>
             {formResponse && <Toast response={formResponse} />}
           </ModalBody>
         </ModalContent>
