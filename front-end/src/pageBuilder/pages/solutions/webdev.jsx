@@ -1,4 +1,3 @@
-import { LightMode } from "@chakra-ui/core";
 import WebDevPricing from "../../pricing/WebDevPricing";
 
 export default [

@@ -5,10 +5,6 @@ export default [
             typed: ["Deploy", "Run", "Manage"],
             after: " your Application on the Cloud Platform"
         },
-     description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network." ,
-        descriptionStyle: {
-            textAlign: "center"
-        },
         rowDistance: 8,
         gap: 10,
         py: [8,16],

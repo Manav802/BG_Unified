@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Radio, RadioGroup, FormHelperText, useDisclosure, Link
+    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Radio, RadioGroup, FormHelperText, useDisclosure, Link, ModalBody
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
@@ -89,100 +89,100 @@ function FeedbackForm(props) {
     }
     return (
         <>
-            <Link mx={["6px","10px","16px"]} fontSize={["10px","12px","14px"]} textTransform="uppercase" onClick={onOpen}>Send A Feedback</Link>
-            <Modal isOpen={isOpen} onClose={formClose} isCentered>
+            <Link mx={["6px", "10px", "16px"]} fontSize={["10px", "12px", "14px"]} textTransform="uppercase" onClick={onOpen}>Send A Feedback</Link>
+            <Modal isOpen={isOpen} onClose={formClose} isCentered scrollBehavior="inside">
                 <ModalOverlay />
-                <ModalContent className="p-4" style={{ maxWidth: "600px", width: "600px" }}>
-                    <ModalHeader><span className="display5">Send us your feedback!</span></ModalHeader>
-                    <ModalCloseButton />
-                    <div className="container">
-                        <form className="feedback-form px-4" onSubmit={onSubmit}>
-                            <input
-                                type="hidden"
-                                name="_redirect"
-                                value="false"
-                            />
-                            <FormControl as="fieldset" isRequired>
-                                <FormLabel>Rate your experience!</FormLabel>
-                                <RadioGroup onChange={onChange} name="rating" isInline defaultValue={form.rating} spacing={4}>
-                                    <Radio size="lg" value="1">☹</Radio>
-                                    <Radio size="lg" value="2">😐</Radio>
-                                    <Radio size="lg" value="3">🙂</Radio>
-                                    <Radio size="lg" value="4">😊</Radio>
-                                </RadioGroup>
-                                <FormHelperText>
-                                    We value your feedback
+                <ModalContent py="2" maxWidth={["400px", "400px", "600px"]}>
+                    <ModalBody>
+                        <ModalHeader><span className="display5">Send us your feedback!</span></ModalHeader>
+                        <ModalCloseButton />
+                        <div className="container">
+                            <form className="feedback-form px-4" onSubmit={onSubmit}>
+                                <input
+                                    type="hidden"
+                                    name="_redirect"
+                                    value="false"
+                                />
+                                <FormControl as="fieldset" isRequired>
+                                    <FormLabel>Rate your experience!</FormLabel>
+                                    <RadioGroup onChange={onChange} name="rating" isInline defaultValue={form.rating} spacing={4}>
+                                        <Radio size="lg" value="1">☹</Radio>
+                                        <Radio size="lg" value="2">😐</Radio>
+                                        <Radio size="lg" value="3">🙂</Radio>
+                                        <Radio size="lg" value="4">😊</Radio>
+                                    </RadioGroup>
+                                    <FormHelperText>
+                                        We value your feedback
                             </FormHelperText>
-                            </FormControl>
-                            <FormControl mt={"6%"} isRequired>
-                                <FormLabel>Describe your experience:</FormLabel>
-                                <Textarea
-                                    resize={"vertical"}
-                                    variant="flushed"
-                                    size="lg"
-                                    name="description"
-                                    value={form.description}
-                                    onChange={onChange}
-                                />
-                            </FormControl>
-                            <FormControl mt={"10%"}  >
-                                <FormLabel htmlFor="name">Name:</FormLabel>
-                                <Input
-                                    variant="flushed"
-                                    type="text"
-                                    name="name"
-                                    value={form.name}
-                                    onChange={onChange}
-                                />
-                            </FormControl>
-                            <div className="row">
-                                <div className="col-md-6">
-                                    <FormControl mt={"14%"} >
-                                        <FormLabel htmlFor="email">Email:</FormLabel>
-                                        <Input
-                                            variant="flushed"
-                                            type="email"
-                                            name="email"
-                                            value={form.email}
-                                            onChange={onChange}
-                                        />
-                                    </FormControl>
+                                </FormControl>
+                                <FormControl mt={"6%"} isRequired>
+                                    <FormLabel>Describe your experience:</FormLabel>
+                                    <Textarea
+                                        resize={"vertical"}
+                                        variant="flushed"
+                                        size="lg"
+                                        name="description"
+                                        value={form.description}
+                                        onChange={onChange}
+                                    />
+                                </FormControl>
+                                <FormControl mt={"10%"}  >
+                                    <FormLabel htmlFor="name">Name:</FormLabel>
+                                    <Input
+                                        variant="flushed"
+                                        type="text"
+                                        name="name"
+                                        value={form.name}
+                                        onChange={onChange}
+                                    />
+                                </FormControl>
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <FormControl mt={"14%"} >
+                                            <FormLabel htmlFor="email">Email:</FormLabel>
+                                            <Input
+                                                variant="flushed"
+                                                type="email"
+                                                name="email"
+                                                value={form.email}
+                                                onChange={onChange}
+                                            />
+                                        </FormControl>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <FormControl mt={"14%"} >
+                                            <FormLabel htmlFor="phone">Contact No.</FormLabel>
+                                            <Input
+                                                type="tel"
+                                                pattern="[0-9]{10}"
+                                                variant="flushed"
+                                                name="phone"
+                                                value={form.phone}
+                                                onChange={onChange}
+                                            />
+                                        </FormControl>
+                                    </div>
                                 </div>
-                                <div className="col-md-6">
-                                    <FormControl mt={"14%"} >
-                                        <FormLabel htmlFor="phone">Contact No.</FormLabel>
-                                        <Input
-                                            type="tel"
-                                            pattern="[0-9]{10}"
-                                            variant="flushed"
-                                            name="phone"
-                                            value={form.phone}
-                                            onChange={onChange}
-                                        />
-                                    </FormControl>
+                                <div>
+                                    <Button
+                                        mt={10}
+                                        type="submit"
+                                        size="lg"
+                                        variantColor="primary"
+                                        className="primary-btn"
+                                    >Submit{isLoading && <Spinner
+                                        thickness="4px"
+                                        speed="1s"
+                                        emptyColor="gray.200"
+                                        color="blue.500"
+                                        size="sm"
+                                    />}
+                                    </Button>
                                 </div>
-                            </div>
-                            <div>
-                                <Button
-                                    mt={"12%"}
-                                    className="hover-color shadow-md"
-                                    type="submit"
-                                    size="md"
-                                    height="48px"
-                                    width="115px"
-                                    backgroundColor="#F32222"
-                                    color="white"
-                                >Submit {isLoading && <Spinner
-                                    thickness="4px"
-                                    speed="1s"
-                                    emptyColor="gray.200"
-                                    color="blue.500"
-                                    size="sm"
-                                />}</Button>
-                            </div>
-                        </form>
-                    </div>
-                    {formResponse && <Toast response={formResponse} />}
+                            </form>
+                        </div>
+                        {formResponse && <Toast response={formResponse} />}
+                    </ModalBody>
                 </ModalContent>
             </Modal>
         </>
