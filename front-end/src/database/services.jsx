@@ -138,7 +138,7 @@ const services = {
         tags: ["Firewall", "Security", "protection"],
         description: "Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA. Centralized Policy Management using Panorama, Sourcefire DC.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "Contact Center As A Service", "Backup As A Service"],
+        relatedService: ["Proxy As A Service", "SOC As A Service", "WAF As A Service"],
         conclusion: "Multi-Layered Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA.",
         sections: sections.firewall
     },
@@ -152,7 +152,7 @@ const services = {
         tags: ["computing", "infrastructure", "asset", "utilization", "server", "consolidation", "virtualization", "Geographical Redundant Storage"],
         description: "Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management. Infrastructure includes more than 10000 Cores CPU, 10TB RAM.",
         illustration: "",
-        relatedService: ["Storage As A Service", "DNS As A Service", "DR As A Service"],
+        relatedService: ["Storage As A Service", "Platform As A Service", "Workstation As A Service"],
         conclusion: "We can help if you have questions regarding Infrastructure As A Service",
         sections: sections.infra
     },
@@ -166,7 +166,7 @@ const services = {
         tags: ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
         description: "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture. Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
         illustration: "",
-        relatedService: ["Wireless As A Service", "SIP As A Service", "DR As A Service"],
+        relatedService: ["Backup As A Service", "Database As A Service", "DR As A Service"],
         conclusion: "Load Balancing is the solution you’ve been looking for.",
         sections: sections.loadBalancer
     },
@@ -180,7 +180,7 @@ const services = {
         tags: ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
         description: "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture. Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
         illustration: "",
-        relatedService: ["Logging Cloud Connect As A Service", "SIP As A Service", "Firewall As A Service"],
+        relatedService: ["Logging Cloud Connect ", "Infrastructure As A Service", "Platform As A Service"],
         conclusion: "An ideal solution for highly sensitive computing environments.",
         sections: sections.workstation
     },
@@ -194,7 +194,7 @@ const services = {
         tags: ["cloud", "platform", "service", "infrastructure", "DC Interconnect"],
         description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network.",
         illustration: "",
-        relatedService: ["Backup As A Service", "Infrastructure As A Service", "Storage As A Service"],
+        relatedService: ["Workstation As A Service", "Infrastructure As A Service", "Storage As A Service"],
         conclusion: "We give you the power to easily deploy, efficiently monitor, and scale the applications.",
         sections: sections.platform
     },
@@ -208,7 +208,7 @@ const services = {
         tags: ["proxy", "servers", "low-latency", "services"],
         description: "Just redirect your traffic to our Proxy Service either by DNS or other custom solution to our public Proxy Service and then create a record to reroute your traffic to your application behind the firewall.",
         illustration: "",
-        relatedService: ["Firewall As A Service", "DNS As A Service", "SD-WAN As A Service"],
+        relatedService: ["Firewall As A Service", "WAF As A Service", "SOC As A Service"],
         conclusion: "Enhanced proxy service by isolating the private network from the web",
         sections: sections.proxy
     },
@@ -223,7 +223,7 @@ const services = {
         tags: ["SD-WAN", "sd wan", "Optimization", " VMware VDI"],
         description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
         illustration: "",
-        relatedService: ["Proxy As A Service", "DNS As A Service", "SIP As A Service"],
+        relatedService: ["Wireless As A Service", "DNS As A Service", "SIP As A Service"],
         conclusion: "SD-WAN transforms the way a network supports and interacts with enterprise applications.",
         sections: sections.sdwan
     },
@@ -237,7 +237,7 @@ const services = {
         tags: ["SIP", "Connectivity", "Service Infrastructure", "cisco unified"],
         description: "SIP As A Service Infrastructure includes more than 15 Cisco Unified Border Elements with 1600 SIP channels spanned across multiple DC locations with DUAL Exchange Homing.",
         illustration: "",
-        relatedService: ["SD-WAN As A Service", "DNS As A Service", "Firewall As A Service"],
+        relatedService: ["SD-WAN As A Service", "DNS As A Service", "Wireless As A Service"],
         conclusion: "Our Infrastructure includes more than 15 Cisco Unified border Elements with 1600 SIP channels.",
         sections: sections.sip
     },
@@ -251,7 +251,7 @@ const services = {
         tags: ["storage", "blocks", "consolidation", "virtualization", "backup", "recovery", "archive"],
         description: "Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "DNS As A Service", "Backup As A Service"],
+        relatedService: ["Infrastructure As A Service", "Database As A Service", "Backup As A Service"],
         conclusion: "Ready to get Storage?",
         sections: sections.storage
     },
@@ -265,7 +265,7 @@ const services = {
         tags: ["storage", "blocks", "consolidation", "virtualization", "backup", "recovery", "archive"],
         description: "Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management. The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage.",
         illustration: "",
-        relatedService: ["Infrastructure As A Service", "DNS As A Service", "Backup As A Service"],
+        relatedService: ["Proxy As A Service", "Firewall As A Service", "WAF As A Service"],
         conclusion: "Win the battle against Cyber Threats with our SOCaaS",
         sections: sections.socaas
     },
@@ -293,7 +293,7 @@ const services = {
         tags: ["web", "hosting", "host", "web server", "APACHE", "website"],
         description: "Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package. Load balancing can also be added as an option if required.",
         illustration: "",
-        relatedService: ["Storage As A Service", "Logging Cloud Connect As A Service", "Backup As A Service"],
+        relatedService: ["DNS As A Service", "Logging Cloud Connect", "Backup As A Service"],
         conclusion: "Web Hosting services design and implementation in distributed environments.",
         sections: sections.hosting
     },
@@ -307,7 +307,7 @@ const services = {
         tags: ["wireless", "wifi", "clusters", "networks"],
         description: " It’s easy to deploy and available at a single license, giving you simplified configuration, bot management, and holistic visibility and control with a single pane of glass.",
         illustration: "",
-        relatedService: ["SIP As A Service", "DNS As A Service", "DR As A Service"],
+        relatedService: ["SOC As A Service", "Firewall As A Service", "DR As A Service"],
         conclusion: "Protect your web applications and use a web application firewall. Contact us and let our experts help you!",
         sections: sections.wafaas
     },
@@ -321,7 +321,7 @@ const services = {
         tags: ["webdev", "web", "design", "development", "reactjs"],
         description: "Get your website ready with high speed performance, and attractive motion + visual design.",
         illustration: "",
-        relatedService: ["Application Development As A Service", "Storage As A Service", "DNS As A Service"],
+        relatedService: ["Application Development As A Service", "Web-Hosting As A Service", "DNS As A Service"],
         conclusion: "Ready to discuss your project?",
         sections: sections.webdev
     },
@@ -335,7 +335,7 @@ const services = {
         tags: ["wireless", "wifi", "clusters", "networks"],
         description: "Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters of Cisco WLC 5508, 2504 and Aruba controllers.",
         illustration: "",
-        relatedService: ["SIP As A Service", "DNS As A Service", "DR As A Service"],
+        relatedService: ["SIP As A Service", "DNS As A Service", "SD-WAN As A Service"],
         conclusion: "Let us make your campus wireless for you!!",
         sections: sections.wireless
     },
