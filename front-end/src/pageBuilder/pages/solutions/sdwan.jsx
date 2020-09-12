@@ -2,20 +2,27 @@ import SdwanPricing from "../../pricing/SdwanPricing";
 
 export default [
     {
+        body: [
+            {
+                type: "image&text",
+                data: {
+                    image: "/assets/images/Illustrations/ClientSpecific_AppDev.svg",
+                    title: "Connect with SD-WAN",
+                    flexDirection: ["column", "column", "row-reverse"],
+                    description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. SD-WAN transforms the way a particular network supports and interacts with enterprise applications."
+                }
+            },
+        ]
+    },
+    {
         py: [0, 4],
-        gap: 0,
+        gap: 0, mt: 0,
+        bg: "light.400",
         body: [{
             width: "100%",
             type: "pricing",
             data: <SdwanPricing />
         },
-        {
-            type: "content",
-            data:[{
-                text: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
-                textAlign: "center",
-                }]
-        }
         ]
     },
     {
@@ -89,5 +96,5 @@ export default [
             },
         ]
     },
-   
+
 ]
