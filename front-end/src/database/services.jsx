@@ -11,11 +11,7 @@ const services = {
         tags: ["application", "app", "dev", "development", "scalability", "platform", "independence", "client", "flexibility"],
         description: "BG Unified Solutions provides services in the area of Web, Mobile and Enterprise Application Development. Our team of technical and functional experts can help you in new Application Development, Modernizing and Supporting existing applications.",
         illustration: "",
-<<<<<<< HEAD
-        relatedService: ["Logging Cloud Connect", "Storage As A Service", "Infrastructure As A Service"],
-=======
         relatedService: ["Web Development As A Service", "Contact Center As A Service", "Architectural Consultancy As A Service"],
->>>>>>> 54e238bce80007da83f1815d7eb3b70e23175d59
         conclusion: "User-interactivity, responsiveness, user-friendly interfaces kept into consideration.",
         sections: sections.appdev
     },
