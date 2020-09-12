@@ -11,10 +11,7 @@ export default [
                 text: "BG Unified Solutions has now upgraded all of the VPNHEADEND firewalls, where all of the remote users / remote phones / any other secure remote connectivity terminates into 10G Firewalls with each firewall having a capacity of 2 million concurrent connections.",
                 textAlign: "justify"
             },
-            {
-                text: "We have noticed a big jump in the number of remote users from 20 or 30 on average to 275 as per the latest reports.",
-                textAlign: "justify"
-            },
+            
             {
                 text: "We have increased our firewalls capacity to 10G firewalls in all DC locations. Now we have PaloAlto 5K, Fortinet 3700D’s and ASA 5585X with full UTM capabilities to provide you with a secure internet access.",
                 textAlign: "justify"
