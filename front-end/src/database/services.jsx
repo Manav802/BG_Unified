@@ -54,12 +54,12 @@ const services = {
         tags: ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
         description: "Express Routes to office 365, AWS, Azure. Advanced Solution provides private, seamless, and on-demand connections to many clouds as well as networks. ",
         illustration: "",
-        relatedService: ["Logging Cloud Connect As A Service", "Proxy As A Service", "SIP As A Service"],
+        relatedService: ["Logging Cloud Connect", "Proxy As A Service", "SIP As A Service"],
         conclusion: "Proactively manages your service components to adhere to quality standards",
         sections: sections.cex
     },
     "logging": {
-        title: "Logging Cloud Connect As A Service",
+        title: "Logging Cloud Connect",
         slogan: "Cloud Computing is the new future",
         bgImage: "",
         category: "IT Infrastructural Services",
@@ -110,7 +110,7 @@ const services = {
         tags: ["dns", "DNS", "domain", "name", "cost", "effective", "Concurrency", "Scalability", "TLD servers"],
         description: "Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users.",
         illustration: "",
-        relatedService: ["Web Hosting As A Service", "Logging Cloud Connect As A Service", "Infrastructure As A Service"],
+        relatedService: ["Web Hosting As A Service", "Logging Cloud Connect", "Infrastructure As A Service"],
         conclusion: "Try our Concurrent DNS Service with superior IP Technology.",
         sections: sections.dns
     },

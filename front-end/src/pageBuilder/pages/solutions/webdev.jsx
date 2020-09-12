@@ -1,4 +1,3 @@
-import { LightMode } from "@chakra-ui/core";
 import WebDevPricing from "../../pricing/WebDevPricing";
 
 export default [
@@ -84,8 +83,8 @@ export default [
         gap: 6,
         body: [
             {
-                my:[0,0,6,4],
-                width: ["100%","100%","100%", 1/3],
+                my:[0,0,4,4],
+                width: ["70%","60%","60%", 1/3],
                 type: "imageGroup",
                 data: {
                     images: ["/assets/images/icons/color/user-engagement.svg"],
@@ -93,13 +92,13 @@ export default [
                 }
             },
             {
-                my:[0,0,6,4],
+                my:[0,0,4,4],
                 width: ["100%","100%","100%", 2/3],
                 type: "content",
                 data: [{
                     title: "We build great experiences.",
                     fontSize: ["lg","xl"],
-                    titleSize: [40,40,48],
+                    titleSize: [32,36,40,48],
                     my:[2,4,8],
                     text:   <>
                             <span>We not only build great websites, but we focus on how the user interacts too. And that is where new business comes. If your website is old-fashioned, or out-to-date that will throw out your customers in less than 5 seconds.</span><br/><br/>
@@ -127,22 +126,22 @@ export default [
         rowDistance: 4,
         body: [
             {
-                width: ["100%", 1/2, 1/3, 1/4],
+                width: ["80%", 1/2, 1/3, 1/4],
                 type: "feature",
                 data: {svg: "/assets/images/icons/library/tools/tools.svg", size:"80px", title: "Regular Website Maintainence Plans", titleSize: "md" }
             },
             {
-                width: ["100%", 1/2, 1/3, 1/4],
+                width: ["80%", 1/2, 1/3, 1/4],
                 type: "feature",
                 data: {svg: "/assets/images/icons/library/design/pen-tool-vector.svg", size:"80px", title: "Logo Creation & Branding Design", titleSize: "md" }
             },
             {
-                width: ["100%", 1/2, 1/3, 1/4],
+                width: ["80%", 1/2, 1/3, 1/4],
                 type: "feature",
                 data: {svg: "/assets/images/icons/library/general/shield-protected.svg", size:"80px", title: "Website Security & Protection Plans", titleSize: "md" }
             },
             {
-                width: ["100%", 1/2, 1/3, 1/4],
+                width: ["80%", 1/2, 1/3, 1/4],
                 type: "feature",
                 data: {svg: "/assets/images/icons/library/home/picture.svg", size:"80px", title: "Ads, Brochure, Posters and many more...", titleSize: "md" }
             },

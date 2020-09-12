@@ -43,13 +43,13 @@ function Solutions() {
                     <div className="row">
                         <div className="col-12">
                             <Fade duration={700} delay={1000} bottom>
-                                <Flex textAlign={["center","left"]} alignContent={["center","left"]} justifyContent={["center","left"]}  align="center" py={4}>
+                                <Flex textAlign={["center","center","left"]} alignContent={["center","center","left"]} justifyContent={["center","center","left"]}  align="center" py={4}>
                                     <SVG src={service.icon} color="light.400" size="24px"></SVG>
                                     <Heading mx={6} fontSize={["18px","24px"]}>{service.title}</Heading>
                                 </Flex>
                             </Fade>
                             <Fade duration={700} delay={100} bottom>
-                            <Flex textAlign={["center","left"]} justifyContent={["center","left"]}>
+                            <Flex textAlign={["center","center","left"]} justifyContent={["center","center","left"]}>
                                 <Heading fontSize={["40px", "48px","56px","64px"]} className="display2 text-white">{service.slogan}</Heading>
                             </Flex>
                             </Fade>
@@ -60,7 +60,7 @@ function Solutions() {
                                 </p>
                             </Fade> */}
                             <Fade duration={700} delay={1000} top>
-                                <Flex justifyContent={["center","left"]}>
+                                <Flex justifyContent={["center","center","left"]}>
                                 <ButtonGroup mt={10} spacing="16px">
                                     {pricing && <Button onClick={() => {
                                         window.scrollTo(0, document.getElementById("pricing").offsetTop - 80)

@@ -1,49 +1,53 @@
+import DbaaSPricing from "../../pricing/DbaasPricing"
+
 export default [
     {
-        title:"Supported data platforms",
-        py: 16,
-       rowDistance: 8,
+        mt:0,
+        py: 0,
+        containerWidth: "100%",
         body: [
             {
-                width: [1 / 3],
-                type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/custom/mongodb.svg", mt: 4, title: "MongoDB" }
+                type: "pricing",
+                data: <DbaaSPricing></DbaaSPricing>
             },
             {
-                width: [1 / 3],
-                type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/custom/mysql.svg", mt: 4, title: "MySQL" }
+                width: ["100%"],
+                mt: 8,
+                type: "imageGroup",
+                data: {
+                    images: ["/assets/images/icons/brands/mongodb.svg", "/assets/images/icons/brands/MySQL-Logo.png", "/assets/images/icons/brands/azure_sql_server_posted.svg"],
+                    px: 3,
+                    height: "80px",
+                    objectFit: "contain",
+                    maxW:["135.5px", "175px", "231px", "283px"]
+                },
             },
-            {
-                width: [1 / 3],
-                type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/custom/sql-database.svg", mt: 4, title: "AzureSQL" }
-            }
         ]
     },
     {
         gap: 10,
-        py: [8, 16],
         body: [
             {
                 width: ["100%", "100%", 1 / 2],
                 type: "imageGroup",
+                my:[0,2],
                 data: {
                     images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
                     borderRadius: 8,
-                    width: '90%',
+                    width: ['100%',"100%","90%"],
                     height: "300px",
                     objectFit: "cover"
                 }
             },
             {
+                mt:[0,3],
                 width: ["100%", "100%", 1 / 2],
                 type: "content",
                 data: [{
                     textAlign: "justify",
-                    fontSize: "lg",
+                    fontSize: ["md","md","md","lg"],
                     title: "Managed databases for your Businesses -",
-                    titleSize: 32,
+                    titleSize: [28,28,28,32],
                     text: <span>Database-as-a-Service (DBaaS) refers to software that enables users to set up, operate and scale databases using a common set of abstractions (primitives), without having to either know or care about the exact implementations of those abstractions for the specific database. </span>
                 }]
             }]
@@ -106,7 +110,7 @@ export default [
         ]
     },
     {
-        py: 16,
+        py: [8,12],
         description:"We offer 24 x 7 managed database services. We’ll monitor database infrastructure, handle incidents, response to events/alarms, follow change management processes, improve overall performance and reduce vulnerabilities.",
         descriptionStyle:{
             fontSize:["lg","lg","xl"],

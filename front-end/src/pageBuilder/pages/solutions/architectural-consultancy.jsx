@@ -8,7 +8,7 @@ export default [
             data: {
                 images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
                 borderRadius: 8,
-                width: '90%',
+                width: ['100%',"100%","90%"],
                 height: "300px",
                 objectFit: "cover"
             }
@@ -18,9 +18,8 @@ export default [
             type: "content",
             data: [{
                 textAlign: "justify",
-                fontSize: "lg",
                 title: "Achieve Higher Business Efficiency with BG Unified Solutions",
-                titleSize: 32,
+                titleSize: [30,32],
                 text: <span>Architectural Consultancy Services, as the name suggests, 
                 is accessing the needs of the users, about their organization, and 
                 providing them with the best solutions tailored according to their requirements. 
@@ -88,17 +87,17 @@ export default [
                 content: [{
                     title: "Performance Optimized",
                     description: "Monitors and measures various aspects of the network environment so that overall performance can be maintained and optimised.",
-                    image: "/assets/images/Illustrations/PlatformDiversity_Firewall.svg"
+                    image: "/assets/images/Illustrations/analytics.svg"
                 },
                 {
-                    title: "FConfiguration Management",
+                    title: "Configuration Management",
                     description: "Configures network devices, performs inventory management and software management. Local end-market support services and Local language capabilities.",
-                    image: "/assets/images/Illustrations/FastAndEasyDevelopment_Firewall.svg"
+                    image: "/assets/images/Illustrations/SimplifiedLogManagment_CloudLogging.svg"
                 },
                 {
                     title: "Wide Expert Range",
                     description: "Weather System Architecture, Technology Roadmap, or optimization solutions for your business, we’ve got it all covered. Customized and tailor solutions to meet client needs",
-                    image: "/assets/images/Illustrations/low_pricing.svg"
+                    image: "/assets/images/Illustrations/infrastructure_city.svg"
                 },]
             }
         }]

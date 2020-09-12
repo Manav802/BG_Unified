@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  useDisclosure, FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea
+  useDisclosure, FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, ModalBody, Box
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
@@ -103,102 +103,101 @@ function GetaQuoteForm(props) {
           Get a quote
         </Button>
       )}
-      <Modal isOpen={isOpen} onClose={formClose} isCentered>
+      <Modal isOpen={isOpen} onClose={formClose} isCentered scrollBehavior="inside">
         <ModalOverlay />
-        <ModalContent className="p-4" style={{ maxWidth: "600px", width: "600px" }}>
-          <ModalHeader><span className="display5">{props.serviceName}</span></ModalHeader>
-          <div className="d-flex flex-wrap px-3">{description.map((service, index) => {
-            return (
-              <div className="rounded-8 hover-effect bg-light m-2 py-2 px-3" key={index}>{service}</div>
-            )
-          })}</div>
-          <ModalCloseButton />
-          <div className="container">
-            <form className="getaquote-form px-4" onSubmit={onSubmit}>
-              <input
-                type="hidden"
-                name="_redirect"
-                value="false"
-              />
-              <input
-                type="hidden"
-                name="serviceName"
-                value={form.serviceName}
-              />
-              <input
-                type="hidden"
-                name="serviceDescription"
-                value={form.serviceDescription}
-              />
-              <FormControl isRequired>
-                <FormLabel htmlFor="name">Name:</FormLabel>
-                <Input
-                  variant="flushed"
-                  type="text"
-                  name="name"
-                  value={form.name}
-                  onChange={onChange}
+        <ModalContent maxWidth={["400px", "400px", "600px"]} maxHeight="700px">
+          <ModalBody>
+            <ModalHeader mt={4}><span className="display5">{props.serviceName}</span></ModalHeader>
+            <div className="d-flex flex-wrap px-3">{description.map((service, index) => {
+              return (
+                <div className="rounded-8 hover-effect bg-light m-2 py-2 px-3" key={index}>{service}</div>
+              )
+            })}</div>
+            <ModalCloseButton />
+            <Box m={2} className="container contact-form">
+              <form onSubmit={onSubmit}>
+                <input
+                  type="hidden"
+                  name="_redirect"
+                  value="false"
                 />
-              </FormControl>
-              <div className="row">
-                <div className="col-md-6">
-                  <FormControl mt={"14%"} isRequired>
-                    <FormLabel htmlFor="email">Email:</FormLabel>
-                    <Input
-                      variant="flushed"
-                      type="email"
-                      name="email"
-                      value={form.email}
-                      onChange={onChange}
-                    />
-                  </FormControl>
-                </div>
-                <div className="col-md-6">
-                  <FormControl mt={"14%"} isRequired>
-                    <FormLabel htmlFor="phone">Contact No.</FormLabel>
-                    <Input
-                      type="tel"
-                      pattern="[0-9]{10}"
-                      variant="flushed"
-                      name="phone"
-                      value={form.phone}
-                      onChange={onChange}
-                    />
-                  </FormControl>
-                </div>
-              </div>
-              <FormControl mt={"9%"} isRequired>
-                <FormLabel>Details:</FormLabel>
-                <Textarea
-                  resize={"vertical"}
-                  variant="flushed"
-                  size="lg"
-                  name="message"
-                  value={form.message}
-                  onChange={onChange}
+                <input
+                  type="hidden"
+                  name="serviceName"
+                  value={form.serviceName}
                 />
-              </FormControl>
-              <div >
-                <Button
-                  mt={"15%"}
-                  className="hover-color shadow-md"
-                  type="submit"
-                  size="md"
-                  height="48px"
-                  width="115px"
-                  backgroundColor="#F32222"
-                  color="white"
-                >Submit {isLoading && <Spinner
-                  thickness="4px"
-                  speed="1s"
-                  emptyColor="gray.200"
-                  color="blue.500"
-                  size="sm"
-                />}</Button>
-              </div>
-            </form>
-          </div>
-          {formResponse && <Toast response={formResponse} />}
+                <input
+                  type="hidden"
+                  name="serviceDescription"
+                  value={form.serviceDescription}
+                />
+                <FormControl isRequired>
+                  <FormLabel htmlFor="name">Name:</FormLabel>
+                  <Input
+                    variant="flushed"
+                    type="text"
+                    name="name"
+                    value={form.name}
+                    onChange={onChange}
+                  />
+                </FormControl>
+                <div className="row">
+                  <div className="col-md-6">
+                    <FormControl mt={"14%"} isRequired>
+                      <FormLabel htmlFor="email">Email:</FormLabel>
+                      <Input
+                        variant="flushed"
+                        type="email"
+                        name="email"
+                        value={form.email}
+                        onChange={onChange}
+                      />
+                    </FormControl>
+                  </div>
+                  <div className="col-md-6">
+                    <FormControl mt={"14%"} isRequired>
+                      <FormLabel htmlFor="phone">Contact No.</FormLabel>
+                      <Input
+                        type="tel"
+                        pattern="[0-9]{10}"
+                        variant="flushed"
+                        name="phone"
+                        value={form.phone}
+                        onChange={onChange}
+                      />
+                    </FormControl>
+                  </div>
+                </div>
+                <FormControl mt={"9%"} isRequired>
+                  <FormLabel>Details:</FormLabel>
+                  <Textarea
+                    resize={"vertical"}
+                    variant="flushed"
+                    size="lg"
+                    name="message"
+                    value={form.message}
+                    onChange={onChange}
+                  />
+                </FormControl>
+                <div >
+                  <Button
+                    mt={10}
+                    type="submit"
+                    size="lg"
+                    variantColor="primary"
+                    className="primary-btn"
+                  >Submit{isLoading && <Spinner
+                    thickness="4px"
+                    speed="1s"
+                    emptyColor="gray.200"
+                    color="blue.500"
+                    size="sm"
+                  />}</Button>
+                </div>
+              </form>
+            </Box>
+            {formResponse && <Toast response={formResponse} />}
+          </ModalBody>
         </ModalContent>
       </Modal>
     </>

@@ -5,10 +5,6 @@ export default [
             typed: ["Deploy", "Run", "Manage"],
             after: " your Application on the Cloud Platform"
         },
-     description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network." ,
-        descriptionStyle: {
-            textAlign: "center"
-        },
         rowDistance: 8,
         gap: 10,
         py: [8,16],
@@ -19,7 +15,7 @@ export default [
                 data: {
                     images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
                     borderRadius: 8,
-                    width: '90%',
+                    width: ['100%',"100%","90%"],
                     height: "400px",
                     objectFit: "cover"
                 }
@@ -87,7 +83,7 @@ export default [
                     titleSize: "md",
                     textOpacity: "0.8",
                     size: "96px",
-                    image: "/assets/images/icons/color/analytics.svg",
+                    image: "/assets/images/icons/color/pie-chart.svg",
                     title: "Monitor on-the-go",
                     description: "Maintain, monitor and manage your application, anytime, anywhere!",
                     align: "center",

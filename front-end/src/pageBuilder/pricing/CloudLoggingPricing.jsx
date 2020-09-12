@@ -71,7 +71,7 @@ function CloudLoggingPricing(props) {
                         <PricingQuote
                             buttonStyle="mt-3"
                             button
-                            serviceName="Cloud Logging As A Service"
+                            serviceName="Logging Cloud Connect"
                             serviceDescription={`Single Node Single DC ${verifyNotEmpty(
                                 logs1,
                                 "G Extra Logs"
@@ -131,7 +131,7 @@ function CloudLoggingPricing(props) {
                         <PricingQuote
                             buttonStyle="mt-3"
                             button
-                            serviceName="Cloud Logging As A Service"
+                            serviceName="Logging Cloud Connect"
                             serviceDescription={`Multiple Nodes Single DC ${verifyNotEmpty(
                                 logs2,
                                 "G Extra Logs"
@@ -191,7 +191,7 @@ function CloudLoggingPricing(props) {
                         <PricingQuote
                             buttonStyle="mt-3"
                             button
-                            serviceName="Cloud Logging As A Service"
+                            serviceName="Logging Cloud Connect"
                             serviceDescription={`Multiple Nodes Multiple DC ${verifyNotEmpty(
                                 logs3,
                                 "G Extra Logs"
