@@ -59,7 +59,7 @@ const services = {
         sections: sections.cex
     },
     "logging": {
-        title: "Logging Cloud Connect As A Service",
+        title: "Logging Cloud Connect",
         slogan: "Cloud Computing is the new future",
         bgImage: "",
         category: "IT Infrastructural Services",
@@ -68,7 +68,7 @@ const services = {
         tags: ["cloud", "logging", "log", "threats", "log management", "troubleshooting"],
         description: "Log central services over the internet. Collect, Store, and report the various data and underlying threats. Add the shield to protect your business reputation.",
         illustration: "",
-        relatedService: ["Backup As A Service", "Firewall As A Service", "Infrastructure As A Service"],
+        relatedService: ["Backup As A Service", "CEX As A Service", "Infrastructure As A Service"],
         conclusion: "Add the shield to protect your business reputation",
         sections: sections.logging
     },
