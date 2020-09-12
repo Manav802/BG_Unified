@@ -49,12 +49,12 @@ export default [
         {
             width: [1/1, 1/2, 1/3],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "In-depth risk visibility"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/general/visible.svg", mt: 4, title: "In-depth risk visibility"}
         },
         {
             width: [1/1, 1/2, 1/3],
             type: "feature",
-            data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/group.svg", mt: 4, title: "Compliance Demonstrated"}
+            data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/design/magic.svg", mt: 4, title: "Compliance Demonstrated"}
         },
         {
             width: [1/1, 1/2, 1/3],
@@ -64,22 +64,31 @@ export default [
         {
             width: [1/1, 1/2, 1/3],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/shield-user.svg", mt: 4, title: "Rapid Response"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "Rapid Response"}
         },
         {
             width: [1/1, 1/2, 1/3],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/chat-5.svg", mt: 4, title: "Next-gen Managed Firewall"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/general/shield-check.svg", mt: 4, title: "Next-gen Managed Firewall"}
         },
     ]
 },
 {
-    py: 16,
-    bgImage: "url(https://images.unsplash.com/photo-1484662020986-75935d2ebc66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)",
-    bg: "#333",
-    blend: "multiply",
-    color: "white",
-    title : "Why Choose our SOCaaS?",
-    description: "Our SOC solution goes beyond simply installing a SIEM product and sending your team members an overwhelming number of alerts to review. Our Security Engineers use analytic software to conduct the deep analysis required to provide you with actionable remediation recommendations.",
+    body: [{
+        type: "content",
+        data: [{
+            text: <span>Our SOC solution goes beyond simply 
+            installing a SIEM product and sending your team 
+            members an overwhelming number of alerts to review. 
+            Our Security Engineers use analytic software to 
+            conduct the deep analysis required to provide you
+             with actionable remediation recommendations.</span>,
+            fontSize: 23,
+            textAlign: "center",
+        }]
+    }],
+    pt: 0,
+    pb: 0,
+    mb: 0
 },
 ]

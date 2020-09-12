@@ -128,12 +128,12 @@ export default [
                 {
                     title: "Cost-Effectiveness",
                     description: "For your business, we are offering and providing a flat billing structure. It's designed for pay as you go model that shifts your costs from capex to opex. You will have very simplified and predictable expenses and have the option of rolling any upfront or one-off expenses into your monthly payment.",
-                    image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg"
+                    image: "/assets/images/Illustrations/Value_for_Money.svg"
                 },
                 {
                     title: "Wide range of services",
                     description: "Employees get access to voice and video, voicemail and integrated messaging, instant messaging and presence, web conferencing and desktop collaboration, mobility service.",
-                    image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
+                    image: "/assets/images/Illustrations/platforms.svg"
                 },]
             }
         }]

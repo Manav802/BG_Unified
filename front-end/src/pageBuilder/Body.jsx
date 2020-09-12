@@ -12,6 +12,7 @@ import Service from '../components/cards/Service';
 import AlternateRow from './components/AlternateRow';
 import Container from './Container';
 import Row from './Row';
+import Fade from "react-reveal/Fade"
 import { SimpleGrid } from '@chakra-ui/core'
 import ImageAndText from './components/ImageAndText';
 function Body({ gap = 4, type, data, width="100%", ...props }) {
@@ -68,7 +69,7 @@ function Body({ gap = 4, type, data, width="100%", ...props }) {
             case "service":
                 return (
                     <Box px={[3, 3, gap / 2]} my={4} w={width} {...props}>
-                    <Service service={data}></Service>
+                        <Service service={data}></Service>
                     </Box>
                 )
             case "pricing":
@@ -100,7 +101,7 @@ function Body({ gap = 4, type, data, width="100%", ...props }) {
 
     return (
         <>
-            {giveMeComponent(type, data)}
+        {giveMeComponent(type, data)}
         </>
     );
 }

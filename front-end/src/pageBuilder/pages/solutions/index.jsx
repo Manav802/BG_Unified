@@ -17,18 +17,6 @@ module.exports.dns = dns
 import platform from "./platform"
 module.exports.platform = platform
 
-import ucaas from "./ucaas"
-module.exports.ucaas = ucaas
-
-import sdwan from "./sd-wan"
-module.exports.sdwan = sdwan
-
-import sip from "./sip"
-module.exports.sip = sip
-
-import cex from "./cex"
-module.exports.cex = cex
-
 import firewall from "./firewall"
 module.exports.firewall = firewall
 

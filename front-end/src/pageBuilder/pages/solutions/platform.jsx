@@ -5,7 +5,10 @@ export default [
             typed: ["Deploy", "Run", "Manage"],
             after: " your Application on the Cloud Platform"
         },
-        titleStyle:{fontSize:["3xl","4xl"],px:"10px"},
+     description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching offering a high-speed spine and leaf network." ,
+        descriptionStyle: {
+            textAlign: "center"
+        },
         rowDistance: 8,
         gap: 10,
         py: [8,16],
@@ -103,7 +106,7 @@ export default [
                 content: [{
                     title: "Load Balancing",
                     description: "Meet the needs of your business—today and as you grow—with innovative, flexible and scalable load balancing solutions.Platform-oriented cloud platforms.",
-                    image: "/assets/images/Illustrations/Varied_Web_Hosting_Solutions.svg"
+                    image: "/assets/images/Illustrations/data_points.svg"
                 },
                 {
                     title: "Easy execution",
@@ -113,7 +116,7 @@ export default [
                 {
                     title: "Cost-effective scalability",
                     description: " Scale up your project on demand by purchasing just the amount of hardware or storage you require at affordable prices. Platform as a service cloud providing you with limitless resources of computing.",
-                    image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
+                    image: "/assets/images/Illustrations/productivity.svg"
                 },]
             }
         }]

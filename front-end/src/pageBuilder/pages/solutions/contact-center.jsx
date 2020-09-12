@@ -89,7 +89,7 @@ export default [
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/sending.svg",mt: 4, title: "Consistent"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/thunder-move.svg",mt: 4, title: "Consistent"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
@@ -118,7 +118,7 @@ export default [
                 data: {
                     title: "Profitable Customer Experience",
                     description: "We help organisations to develop and improve communication channels and deliver lasting customer relationships at a lower cost. Our objective is to maximize the value of information within an organization whilst minimizing the cost.",
-                    image: "/assets/images/Illustrations/PlatformDiversity_Firewall.svg",
+                    image: "/assets/images/Illustrations/analytics.svg",
                     flexDirection: ["column", "column", "row"],
                 }
             },
@@ -127,7 +127,7 @@ export default [
                 data: {
                     title: "Employee Productivity",
                     description: "We assist organisations in improving employee and partner collaboration to deliver greater employee productivity, improved information sharing and knowledge management",
-                    image: "/assets/images/Illustrations/FastAndEasyDevelopment_Firewall.svg",
+                    image: "/assets/images/Illustrations/productivity.svg",
                     flexDirection: ["column", "column", "row-reverse"],
                 }
             },
@@ -136,7 +136,7 @@ export default [
                 data: {
                     title: "Securing Data",
                     description: "We help organisations reduce their risks by offering solutions for creating, sharing and storing the information, to protect, detect and respond to external and internal incidents and threats.",
-                    image: "/assets/images/Illustrations/low_pricing.svg",
+                    image: "/assets/images/Illustrations/security_lock_firewall.svg",
                     flexDirection: ["column", "column", "row"],
                 }
             },

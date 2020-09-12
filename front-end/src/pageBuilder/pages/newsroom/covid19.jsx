@@ -8,7 +8,7 @@ export default [
                 textAlign: "justify"
             },
             {
-                text: "BG Unified Solutions have now upgraded all of the VPNHEADEND firewalls, where all of the remote users / remote phones / any other secure remote connectivity terminates into 10G Firewalls with each firewall having a capacity of 2 million concurrent connections.",
+                text: "BG Unified Solutions has now upgraded all of the VPNHEADEND firewalls, where all of the remote users / remote phones / any other secure remote connectivity terminates into 10G Firewalls with each firewall having a capacity of 2 million concurrent connections.",
                 textAlign: "justify"
             },
             {
