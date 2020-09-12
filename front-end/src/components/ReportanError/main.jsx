@@ -161,11 +161,11 @@ function ErrorForm(props) {
             <Link mx={["6px", "10px", "16px"]} fontSize={["10px", "12px", "14px"]} textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
             <Modal isOpen={isOpen} onClose={formClose} isCentered scrollBehavior="inside">
                 <ModalOverlay />
-                <ModalContent maxWidth={["400px", "400px", "600px", "700px"]}>
+                <ModalContent maxWidth={["400px", "400px", "600px", "700px"]} maxHeight="820px">
                     <ModalBody>
                         <ModalHeader><span className="display5">Report an Error</span></ModalHeader>
                         <ModalCloseButton />
-                        <div className="container">
+                        <Box className="container reportanerror">
                             <form onSubmit={onSubmit}>
                                 <input
                                     type="hidden"
@@ -287,7 +287,7 @@ function ErrorForm(props) {
                                     </TabPanels>
                                 </Tabs>
                             </form>
-                        </div>
+                        </Box>
                         {formResponse && <Toast response={formResponse} />}
                     </ModalBody>
                 </ModalContent>

@@ -2,29 +2,34 @@ import SdwanPricing from "../../pricing/SdwanPricing";
 
 export default [
     {
+        px: 2,
+        body: [
+            {
+                type: "image&text",
+                data: {
+                    image: "/assets/images/Illustrations/ClientSpecific_AppDev.svg",
+                    title: "Secure Connectivity with SD-WAN",
+                    flexDirection: ["column", "column", "row-reverse"],
+                    description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. SD-WAN transforms the way a particular network supports and interacts with enterprise applications."
+                }
+            },
+        ]
+    },
+    {
         py: [0, 4],
-        gap: 0,
+        gap: 0, mt: 0,
+        bg: "light.400",
         body: [{
             width: "100%",
             type: "pricing",
             data: <SdwanPricing />
         },
-        {
-            type: "content",
-            data:[{
-                text: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
-                textAlign: "center",
-                opacity: 0.7,
-                }]
-        }
         ]
     },
     {
+        px: 2,
         title: "Find out How BGUS SD-WAN will improve your network:",
         description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
-        descriptionStyle: {
-            px: "10px",
-        },
         gap: 10,
         rowDistance: 8,
         body: [
@@ -90,5 +95,5 @@ export default [
             },
         ]
     },
-   
+
 ]
