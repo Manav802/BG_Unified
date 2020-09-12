@@ -10,8 +10,8 @@ function Feature2({ image, icon, size = "48px", title, imageWidth="96px", iconCo
             {image && <Image src={image} objectFit="cover" size={size}></Image>}
             {icon && <Box as={icon} size={size}></Box>}
             <Box>
-                <Heading fontFamily={titleFont} size={titleSize} textAlign={align}>{title}</Heading>
-                <Text opacity={textOpacity} mt={2} textAlign="justify" style={{ textAlignLast: align }}>{description}</Text>
+                <Heading fontFamily={titleFont} fontSize={props.titleFontSize} size={titleSize} textAlign={align}>{title}</Heading>
+                <Text fontSize={props.textSize} opacity={textOpacity} mt={2} textAlign="justify" style={{ textAlignLast: align }}>{description}</Text>
             </Box>
         </Grid>
     );

@@ -80,7 +80,7 @@ export default [
              centres. In-house IT teams are responsible for deploying 
              the virtual desktops as well as purchasing, managing, 
              and upgrading the infrastructure.</span>,
-            fontSize: 23,
+            fontSize: ["lg","lg","xl"],
             textAlign: "center",
         }]
     }],
@@ -97,6 +97,8 @@ export default [
             type: "feature2",
             data: {
                 align: "left",
+                titleFontSize:["18px","18px","20px","24px"],
+                textSize:["14px","14px","16px"],
                 size: "96px",
                 imageWidth: "128px",
                 image: "/assets/images/icons/color/agile.svg",
@@ -112,6 +114,8 @@ export default [
             type: "feature2",
             data: {
                 align: "left",
+                titleFontSize:["18px","18px","20px","24px"],
+                textSize:["14px","14px","16px"],
                 size: "96px",
                 imageWidth: "128px",
                 image: "/assets/images/icons/color/user-engagement.svg",
@@ -127,6 +131,8 @@ export default [
             type: "feature2",
             data: {
                 align: "left",
+                titleFontSize:["18px","18px","20px","24px"],
+                textSize:["14px","14px","16px"],
                 size: "96px",
                 imageWidth: "128px",
                 image: "/assets/images/icons/color/desktop.svg",

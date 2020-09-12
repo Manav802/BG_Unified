@@ -93,7 +93,7 @@ export default [
              a number of web servers, commonly known as a farm, 
              need to be implemented and a method to route traffic
               across them in a balanced way.</span>,
-            fontSize: 23,
+            fontSize: ["lg","lg","xl"],
             textAlign: "center",
         }]
     }],

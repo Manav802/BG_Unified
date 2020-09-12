@@ -42,9 +42,9 @@ export default [
                 type: "content",
                 data: [{
                     textAlign: "justify",
-                    fontSize: "lg",
+                    fontSize: ["md","md","md","lg"],
                     title: "Managed databases for your Businesses -",
-                    titleSize: 32,
+                    titleSize: [28,28,28,32],
                     text: <span>Database-as-a-Service (DBaaS) refers to software that enables users to set up, operate and scale databases using a common set of abstractions (primitives), without having to either know or care about the exact implementations of those abstractions for the specific database. </span>
                 }]
             }]
@@ -107,7 +107,7 @@ export default [
         ]
     },
     {
-        py: 16,
+        py: [8,12],
         description:"We offer 24 x 7 managed database services. We’ll monitor database infrastructure, handle incidents, response to events/alarms, follow change management processes, improve overall performance and reduce vulnerabilities.",
         descriptionStyle:{
             fontSize:["lg","lg","xl"],

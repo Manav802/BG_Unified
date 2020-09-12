@@ -12,7 +12,7 @@ export default [
                 Proxy as a Service allows you to connect to a different server and provides you with access to web pages, files etc. 
                 Proxy servers facilitate administrative, authoritative, security issues in the enterprise world.
                 </span>,
-                fontSize: "xl",
+                fontSize: ["lg","lg","xl"],
                 textAlign:"center",
                 opacity: .7,
                 }]
