@@ -5,22 +5,23 @@ export default [
         {
             width:["100%", "100%", 1/2],
             type: "imageGroup",
-            data: {
-                images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
-                borderRadius: 8,
-                width: '90%',
-                height: "300px",
-                objectFit: "cover"
-            }
-        },
-        {
+                my:[0,2],
+                data: {
+                    images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                    borderRadius: 8,
+                    width: ['100%',"100%","90%"],
+                    height: "300px",
+                    objectFit: "cover"
+                }
+            },
+            {
+                mt:[0,3],
             width: ["100%", "100%", 1/2],
             type: "content",
             data: [{
                 textAlign: "justify",
-                fontSize: "lg",
                 title: "Achieve Higher Business Efficiency with BG Unified Solutions",
-                titleSize: 32,
+                titleSize: [30,32],
                 text: <span>Architectural Consultancy Services, as the name suggests, 
                 is accessing the needs of the users, about their organization, and 
                 providing them with the best solutions tailored according to their requirements. 
