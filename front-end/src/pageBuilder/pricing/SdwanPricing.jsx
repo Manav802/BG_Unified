@@ -44,7 +44,7 @@ function SdwanPricing(props) {
                                                         <div className="d-flex btn align-items-center">
                                                             <PricingQuote
                                                                 button
-                                                                serviceName="SD-WAN Optimizations As A Service"
+                                                                serviceName="SD-WAN As A Service"
                                                                 serviceDescription="Physical, Single"
                                                             ></PricingQuote>
                                                         </div>
@@ -59,7 +59,7 @@ function SdwanPricing(props) {
                                                         <div className="d-flex btn align-items-center">
                                                             <PricingQuote
                                                                 button
-                                                                serviceName="SD-WAN Optimizations As A Service"
+                                                                serviceName="SD-WAN As A Service"
                                                                 serviceDescription="Physical, Cluster"
                                                             ></PricingQuote>
                                                         </div>
@@ -85,7 +85,7 @@ function SdwanPricing(props) {
                                                         <div className="d-flex btn align-items-center">
                                                             <PricingQuote
                                                                 button
-                                                                serviceName="SD-WAN Optimizations As A Service"
+                                                                serviceName="SD-WAN As A Service"
                                                                 serviceDescription="Virtual, Single"
                                                             ></PricingQuote>
                                                         </div>
@@ -100,7 +100,7 @@ function SdwanPricing(props) {
                                                         <div className="d-flex btn align-items-center">
                                                             <PricingQuote
                                                                 button
-                                                                serviceName="SD-WAN Optimizations As A Service"
+                                                                serviceName="SD-WAN As A Service"
                                                                 serviceDescription="Virtual, Cluster"
                                                             ></PricingQuote>
                                                         </div>

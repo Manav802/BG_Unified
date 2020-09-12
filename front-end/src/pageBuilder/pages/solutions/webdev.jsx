@@ -9,8 +9,8 @@ export default [
         }]
     },
     {
-        title: "Build your brand online",
-        description: "We have the right team to develop to turn any kind of business into an online tycoon.",
+        title: "Establish your Brand Online",
+        description: "We have the right team, with expertise in thier respective domains to develop and turn any kind of business into an online giant.",
         rowDistance: 4,
         gap: 4,
         body: [
@@ -38,7 +38,7 @@ export default [
 
     },
     {
-        title: "Our Process",
+        title: "Our Development Process",
         description: "We follow the popular UX Design Process for designing and developing interfaces.",
         rowDistance: 8,
         body: [
@@ -83,8 +83,8 @@ export default [
         gap: 6,
         body: [
             {
-                my:[0,0,6,4],
-                width: ["100%","100%","100%", 1/3],
+                my:[0,0,4,4],
+                width: ["70%","60%","60%", 1/3],
                 type: "imageGroup",
                 data: {
                     images: ["/assets/images/icons/color/user-engagement.svg"],
@@ -92,25 +92,25 @@ export default [
                 }
             },
             {
-                my:[0,0,6,4],
+                my:[0,0,4,4],
                 width: ["100%","100%","100%", 2/3],
                 type: "content",
                 data: [{
                     title: "We build great experiences.",
                     fontSize: ["lg","xl"],
-                    titleSize: [40,40,48],
+                    titleSize: [32,36,40,48],
                     my:[2,4,8],
                     text:   <>
-                            <span>We not only build great websites, but we focus on how the user interacts too. And that is where new business comes. If your website is old-fashioned, or out-to-date that will throw out your customers in less than 5 seconds.</span><br/><br/>
-                            <span> But we have solution to that:- A completely customized website designed strategically, regularly updated and maintained. That just converts you website into a valuable asset for your business.</span>,
+                            <span>We not only build great websites, but focus on user interactivity as well. This is where new business comes. If your website is old-fashioned,or outdated, you tend to loose your customers within 5 seconds.</span><br/><br/>
+                            <span> We are the solution to this problem:- A completely customized website designed strategically, regularly updated and maintained. This is how you can convert your website into a valuable asset for your business.</span>,
                             </>    
                 },
                 {   
                     list: [
-                        "Built for fast load times.",
-                        "Functional on every device.",
-                        "Easy to Update and Maitain.",
-                        "Highly Optimised Content."
+                        "Built for fast loading speeds.",
+                        "Platform Independence is a necessity.",
+                        "Easy to Update, Manage and Maintain.",
+                        "Highly Optimized Content."
                     ],
                     spacing: 2,
                     styleType: "none",
@@ -126,24 +126,24 @@ export default [
         rowDistance: 4,
         body: [
             {
-                width: ["100%", 1/2, 1/3, 1/4],
+                width: ["80%", 1/2, 1/3, 1/4],
                 type: "feature",
                 data: {svg: "/assets/images/icons/library/tools/tools.svg", size:"80px", title: "Regular Website Maintainence Plans", titleSize: "md" }
             },
             {
-                width: ["100%", 1/2, 1/3, 1/4],
+                width: ["80%", 1/2, 1/3, 1/4],
                 type: "feature",
                 data: {svg: "/assets/images/icons/library/design/pen-tool-vector.svg", size:"80px", title: "Logo Creation & Branding Design", titleSize: "md" }
             },
             {
-                width: ["100%", 1/2, 1/3, 1/4],
+                width: ["80%", 1/2, 1/3, 1/4],
                 type: "feature",
                 data: {svg: "/assets/images/icons/library/general/shield-protected.svg", size:"80px", title: "Website Security & Protection Plans", titleSize: "md" }
             },
             {
-                width: ["100%", 1/2, 1/3, 1/4],
+                width: ["80%", 1/2, 1/3, 1/4],
                 type: "feature",
-                data: {svg: "/assets/images/icons/library/home/picture.svg", size:"80px", title: "Ads, Brochure, Posters and many more...", titleSize: "md" }
+                data: {svg: "/assets/images/icons/library/home/picture.svg", size:"80px", title: "Ads, Brochures, Posters and much more...", titleSize: "md" }
             },
         ],
     }

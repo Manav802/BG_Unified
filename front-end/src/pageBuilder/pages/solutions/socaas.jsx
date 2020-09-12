@@ -7,15 +7,17 @@ export default [
             width:["100%", "100%", 1/2],
             py:[2,6,6,6,2],
             type: "imageGroup",
-            data: {
-                images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
-                borderRadius: 8,
-                width: '90%',
-                height: "300px",
-                objectFit: "cover"
-            }
-        },
-        {
+                my:[0,2],
+                data: {
+                    images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                    borderRadius: 8,
+                    width: ['100%',"100%","90%"],
+                    height: "300px",
+                    objectFit: "cover"
+                }
+            },
+            {
+                mt:[0,3],
             width: ["100%", "100%", 1/2],
             type: "content",
             data: [{
@@ -47,27 +49,27 @@ export default [
         gap: 8,
         body: [
         {
-            width: [1/1, 1/2, 1/3],
+            width: ["100%", 1/2, 1/3],
             type: "feature",
             data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/general/visible.svg", mt: 4, title: "In-depth risk visibility"}
         },
         {
-            width: [1/1, 1/2, 1/3],
+            width: ["100%", 1/2, 1/3],
             type: "feature",
             data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/design/magic.svg", mt: 4, title: "Compliance Demonstrated"}
         },
         {
-            width: [1/1, 1/2, 1/3],
+            width: ["100%", 1/2, 1/3],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/files/upload.svg",mt: 4, title: "Prioritizing issues resolution"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/files/numbered-information.svg",mt: 4, title: "Prioritizing issues resolution"}
         },
         {
-            width: [1/1, 1/2, 1/3],
+            width: ["100%", 1/2, 1/3],
             type: "feature",
             data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "Rapid Response"}
         },
         {
-            width: [1/1, 1/2, 1/3],
+            width: ["100%", 1/2, 1/3],
             type: "feature",
             data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/general/shield-check.svg", mt: 4, title: "Next-gen Managed Firewall"}
         },
@@ -83,7 +85,7 @@ export default [
             Our Security Engineers use analytic software to 
             conduct the deep analysis required to provide you
              with actionable remediation recommendations.</span>,
-            fontSize: 23,
+            fontSize:["lg","lg","xl"],
             textAlign: "center",
         }]
     }],

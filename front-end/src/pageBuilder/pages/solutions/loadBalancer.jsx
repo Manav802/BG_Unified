@@ -7,15 +7,17 @@ export default [
             width:["100%", "100%", 1/2],
             py:[2,6,6,6,2],
             type: "imageGroup",
-            data: {
-                images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
-                borderRadius: 8,
-                width: '90%',
-                height: "300px",
-                objectFit: "cover"
-            }
-        },
-        {
+                my:[0,2],
+                data: {
+                    images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                    borderRadius: 8,
+                    width: ['100%',"100%","90%"],
+                    height: "300px",
+                    objectFit: "cover"
+                }
+            },
+            {
+                mt:[0,3],
             width: ["100%", "100%", 1/2],
             type: "content",
             data: [{
@@ -49,7 +51,7 @@ export default [
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/home/clock.svg", mt: 4, title: "High Availability"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/shopping/chart-line-1.svg", mt: 4, title: "High Availability"}
         },
         {
             width: [1/2, 1/3, 1/4],
@@ -69,7 +71,7 @@ export default [
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/navigation/up-2.svg", mt: 4, title: "Designed for Uptime"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/home/clock.svg", mt: 4, title: "Designed for Uptime"}
         },
         {
             width: [1/2, 1/3, 1/4],
@@ -93,7 +95,7 @@ export default [
              a number of web servers, commonly known as a farm, 
              need to be implemented and a method to route traffic
               across them in a balanced way.</span>,
-            fontSize: 23,
+            fontSize: ["lg","lg","xl"],
             textAlign: "center",
         }]
     }],

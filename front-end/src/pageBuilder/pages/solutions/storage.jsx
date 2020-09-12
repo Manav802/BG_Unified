@@ -70,7 +70,7 @@ export default [
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/shopping/credit-card.svg", mt: 4, title: "Pay Per Use"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/shopping/dollar.svg", mt: 4, title: "Pay Per Use"}
         },
         {
             width: [1/2, 1/3, 1/4],

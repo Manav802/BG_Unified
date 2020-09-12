@@ -18,7 +18,8 @@ export default [
                     images: ["/assets/images/icons/brands/mongodb.svg", "/assets/images/icons/brands/MySQL-Logo.png", "/assets/images/icons/brands/azure_sql_server_posted.svg"],
                     px: 3,
                     height: "80px",
-                    objectFit: "contain"
+                    objectFit: "contain",
+                    maxW:["135.5px", "175px", "231px", "283px"]
                 },
             },
         ]
@@ -29,22 +30,24 @@ export default [
             {
                 width: ["100%", "100%", 1 / 2],
                 type: "imageGroup",
+                my:[0,2],
                 data: {
                     images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
                     borderRadius: 8,
-                    width: '90%',
+                    width: ['100%',"100%","90%"],
                     height: "300px",
                     objectFit: "cover"
                 }
             },
             {
+                mt:[0,3],
                 width: ["100%", "100%", 1 / 2],
                 type: "content",
                 data: [{
                     textAlign: "justify",
-                    fontSize: "lg",
+                    fontSize: ["md","md","md","lg"],
                     title: "Managed databases for your Businesses -",
-                    titleSize: 32,
+                    titleSize: [28,28,28,32],
                     text: <span>Database-as-a-Service (DBaaS) refers to software that enables users to set up, operate and scale databases using a common set of abstractions (primitives), without having to either know or care about the exact implementations of those abstractions for the specific database. </span>
                 }]
             }]
@@ -107,7 +110,7 @@ export default [
         ]
     },
     {
-        py: 16,
+        py: [8,12],
         description:"We offer 24 x 7 managed database services. We’ll monitor database infrastructure, handle incidents, response to events/alarms, follow change management processes, improve overall performance and reduce vulnerabilities.",
         descriptionStyle:{
             fontSize:["lg","lg","xl"],
