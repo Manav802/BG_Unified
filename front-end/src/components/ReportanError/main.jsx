@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse
+    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse, ModalBody
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
-import operatingsystems from '../../deviceDetect.js';
+import deviceList from '../../deviceDetect.js';
 import Toast from '../Toast/main';
 import { useDisclosure } from "@chakra-ui/core";
 import { deviceType, browserName, osName } from "react-device-detect";
@@ -14,10 +14,9 @@ const CustomRadio = React.forwardRef((props, ref) => {
         <Button
             ref={ref}
             variantColor={isChecked ? "red" : "gray"}
-            color={isChecked?"light.500":'black.500'}
+            color={isChecked ? "light.500" : 'black.500'}
             aria-checked={isChecked}
             role="radio"
-            width={["25%", "30%", "30%"]}
             height="120px"
             {...rest}
         />
@@ -43,7 +42,7 @@ function ErrorForm(props) {
     const [rend, setRend] = useState(false);
     const [show, setShow] = useState(false);
     const [tabIndex, setTabIndex] = useState(0);
-    const [activeButton,setActiveButton]=useState('');
+    const [activeButton, setActiveButton] = useState(deviceInfo.device);
     let form = {
         name: name,
         email: email,
@@ -116,6 +115,7 @@ function ErrorForm(props) {
         setDevice(deviceInfo.device);
         setBrowser(deviceInfo.browser);
         setOs(deviceInfo.os);
+        setActiveButton(deviceInfo.device);
         setError('');
         setOtherInput('');
         setShow(false);
@@ -136,6 +136,7 @@ function ErrorForm(props) {
         setDevice(deviceInfo.device);
         setBrowser(deviceInfo.browser);
         setOs(deviceInfo.os);
+        setActiveButton(deviceInfo.device);
         setError('');
         setOtherInput('');
         setShow(false);
@@ -157,141 +158,138 @@ function ErrorForm(props) {
     }
     return (
         <>
-            <Link mx={["6px","10px","16px"]} fontSize={["10px","12px","14px"]} textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
-            <Modal isOpen={isOpen} onClose={formClose} isCentered>
+            <Link mx={["6px", "10px", "16px"]} fontSize={["10px", "12px", "14px"]} textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
+            <Modal isOpen={isOpen} onClose={formClose} isCentered scrollBehavior="inside">
                 <ModalOverlay />
-                <ModalContent className="p-4" maxWidth={["400px", "400px", "600px", "700px"]} style={{ minHeight: "750px" }}>
-                    <ModalHeader><span className="display5">Report an Error</span></ModalHeader>
-                    <ModalCloseButton />
-                    <div className="container">
-                        <form className="reporterror-form px-3" onSubmit={onSubmit}>
-                            <input
-                                type="hidden"
-                                name="_redirect">
-                            </input>
-                            <Tabs index={tabIndex} onChange={handleTabsChange} isFitted>
-                                <TabList>
-                                    <Tab className="display6 tab-selected">Type of error</Tab>
-                                    <Tab className="display6 tab-selected">Device Details</Tab>
-                                    <Tab className="display6 tab-selected">Description</Tab>
-                                </TabList>
-                                <TabPanels>
-                                    <TabPanel>
-                                        <FormControl mt={10} isRequired>
-                                            <FormLabel htmlFor="name">Type of error:</FormLabel>
-                                            <RadioGroup name="errortype" onChange={onChange} defaultValue={form.error}>
-                                                <Radio size="lg" value="Page not responsive" onClick={() => handleToggle(false)}>Page not responsive</Radio>
-                                                <Radio size="lg" value="Component not working" onClick={() => handleToggle(false)}>Component not working</Radio>
-                                                <Radio size="lg" value="Site not loading properly" onClick={() => handleToggle(false)}>Site not loading properly</Radio>
-                                                <Radio size="lg" value="Some Other Error" onClick={() => handleToggle(true)}>Other</Radio>
-                                            </RadioGroup>
-                                        </FormControl>
-                                        {rend && <Collapse isOpen={show}>
-                                            <FormControl mt={3} isRequired>
-                                                <Input value={form.othererror} variant="flushed" name="othererror" placeholder="Please specify if any other error" onChange={onChange}>
-                                                </Input>
+                <ModalContent maxWidth={["400px", "400px", "600px", "700px"]}>
+                    <ModalBody>
+                        <ModalHeader><span className="display5">Report an Error</span></ModalHeader>
+                        <ModalCloseButton />
+                        <div className="container">
+                            <form onSubmit={onSubmit}>
+                                <input
+                                    type="hidden"
+                                    name="_redirect">
+                                </input>
+                                <Tabs index={tabIndex} onChange={handleTabsChange} isFitted>
+                                    <TabList>
+                                        <Tab className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Type of error</div> </Tab>
+                                        <Tab className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Device Details</div></Tab>
+                                        <Tab className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Description</div></Tab>
+                                    </TabList>
+                                    <TabPanels>
+                                        <TabPanel>
+                                            <FormControl mt={10} isRequired>
+                                                <FormLabel htmlFor="name">Type of error:</FormLabel>
+                                                <RadioGroup name="errortype" onChange={onChange} defaultValue={form.error}>
+                                                    <Radio size="lg" value="Page not responsive" onClick={() => handleToggle(false)}>Page not responsive</Radio>
+                                                    <Radio size="lg" value="Component not working" onClick={() => handleToggle(false)}>Component not working</Radio>
+                                                    <Radio size="lg" value="Site not loading properly" onClick={() => handleToggle(false)}>Site not loading properly</Radio>
+                                                    <Radio size="lg" value="Some Other Error" onClick={() => handleToggle(true)}>Other</Radio>
+                                                </RadioGroup>
                                             </FormControl>
-                                        </Collapse>}
-                                        <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(1)}>Next</Button>
-                                    </TabPanel>
-                                    <TabPanel>
-                                        <FormControl mt={10} isRequired>
-                                            <FormLabel>Device you were using:</FormLabel>
-                                            <RadioButtonGroup name="devicetype" className="d-flex justify-content-center button-group" isInline value={form.device} spacing={4} onChange={value => {setDevice(value);setActiveButton(value)}}>
-                                                <CustomRadio value="Smartphone"><SVG color={activeButton==="Smartphone"?"light.500":"black.500"} src="/assets/images/icons/library/devices/iphone-x.svg" /><div>Smartphone</div></CustomRadio>
-                                                <CustomRadio value="Tablet"><SVG color={activeButton==="Tablet"?"light.500":"black.500"} src="/assets/images/icons/library/devices/tablet.svg" /><div>Tablet</div></CustomRadio>
-                                                <CustomRadio value="browser"><SVG color={activeButton==="browser"?"light.500":"black.500"} src="/assets/images/icons/library/devices/imac.svg" /><div className="d-block" >PC</div></CustomRadio>
-                                            </RadioButtonGroup>
-                                        </FormControl>
-                                        <FormControl mt={10} isRequired>
-                                            <FormLabel>Browser you were using:</FormLabel>
-                                            <Select name="browser" value={form.browser} onChange={onChange} variant="flushed">
-                                                <option value="Chrome">Google Chrome</option>
-                                                <option value="Firefox">Mozilla Firefox</option>
-                                                <option value="Opera">Opera</option>
-                                                <option value="Other">Other</option>
-                                            </Select>
-                                        </FormControl>
-                                        <FormControl mt={10} isRequired>
-                                            <FormLabel>Operating system you were using:</FormLabel>
-                                            <Select name="operatingsystem" value={form.operatingsystem} onChange={onChange} variant="flushed">
-                                                {operatingsystems.map(item => <option value={item}>{item}</option>)}
-                                            </Select>
-                                        </FormControl>
-                                        <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(2)}>Next</Button>
-                                    </TabPanel>
-                                    <TabPanel>
-                                        <FormControl mt={10} >
-                                            <FormLabel htmlFor="name">Name:</FormLabel>
-                                            <Input
-                                                variant="flushed"
-                                                type="text"
-                                                name="name"
-                                                value={form.name}
-                                                onChange={onChange}
-                                            />
-                                        </FormControl>
-                                        <Box className="row" mt={10}>
-                                            <div className="col-md-6">
-                                                <FormControl isRequired>
-                                                    <FormLabel htmlFor="email">Email:</FormLabel>
-                                                    <Input
-                                                        variant="flushed"
-                                                        type="email"
-                                                        name="email"
-                                                        value={form.email}
-                                                        onChange={onChange}
-                                                    />
+                                            {rend && <Collapse isOpen={show}>
+                                                <FormControl mt={3} isRequired>
+                                                    <Input value={form.othererror} variant="flushed" name="othererror" placeholder="Please specify if any other error" onChange={onChange}>
+                                                    </Input>
                                                 </FormControl>
+                                            </Collapse>}
+                                            <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(1)}>Next</Button>
+                                        </TabPanel>
+                                        <TabPanel>
+                                            <FormControl mt={10} isRequired>
+                                                <FormLabel>Device you were using:</FormLabel>
+                                                <RadioButtonGroup className="row justify-content-around" name="devicetype" value={form.device} onChange={value => { setDevice(value); setActiveButton(value) }}>
+                                                    <CustomRadio className="col-sm-3" value="mobile"><div className="d-flex flex-column"><SVG color={activeButton === "mobile" ? "light.500" : "black.500"} src="/assets/images/icons/library/devices/iphone-x.svg" /><div>Phone</div></div></CustomRadio>
+                                                    <CustomRadio className="col-sm-3" value="tablet"><div className="d-flex flex-column"><SVG color={activeButton === "tablet" ? "light.500" : "black.500"} src="/assets/images/icons/library/devices/tablet.svg" /><div>Tablet</div></div></CustomRadio>
+                                                    <CustomRadio className="col-sm-3" value="browser"><div className="d-flex flex-column"><SVG color={activeButton === "browser" ? "light.500" : "black.500"} src="/assets/images/icons/library/devices/imac.svg" /><div>PC</div></div></CustomRadio>
+                                                </RadioButtonGroup>
+                                            </FormControl>
+                                            <FormControl mt={10} isRequired>
+                                                <FormLabel>Browser you were using:</FormLabel>
+                                                <Select name="browser" value={form.browser} onChange={onChange} variant="flushed">                     {deviceList.browsers.map(item => <option value={item}>{item}</option>)}
+                                                </Select>
+                                            </FormControl>
+                                            <FormControl mt={10} isRequired>
+                                                <FormLabel>Operating system you were using:</FormLabel>
+                                                <Select name="operatingsystem" value={form.operatingsystem} onChange={onChange} variant="flushed">
+                                                    {deviceList.os.map(item => <option value={item}>{item}</option>)}
+                                                </Select>
+                                            </FormControl>
+                                            <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(2)}>Next</Button>
+                                        </TabPanel>
+                                        <TabPanel>
+                                            <FormControl mt={10} >
+                                                <FormLabel htmlFor="name">Name:</FormLabel>
+                                                <Input
+                                                    variant="flushed"
+                                                    type="text"
+                                                    name="name"
+                                                    value={form.name}
+                                                    onChange={onChange}
+                                                />
+                                            </FormControl>
+                                            <Box className="row" mt={10}>
+                                                <div className="col-md-6">
+                                                    <FormControl isRequired>
+                                                        <FormLabel htmlFor="email">Email:</FormLabel>
+                                                        <Input
+                                                            variant="flushed"
+                                                            type="email"
+                                                            name="email"
+                                                            value={form.email}
+                                                            onChange={onChange}
+                                                        />
+                                                    </FormControl>
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <FormControl  >
+                                                        <FormLabel htmlFor="phone">Contact No.</FormLabel>
+                                                        <Input
+                                                            type="tel"
+                                                            pattern="[0-9]{10}"
+                                                            variant="flushed"
+                                                            name="phone"
+                                                            value={form.phone}
+                                                            onChange={onChange}
+                                                        />
+                                                    </FormControl>
+                                                </div>
+                                            </Box>
+                                            <FormControl mt={10} isRequired>
+                                                <FormLabel>Describe the error in detail:</FormLabel>
+                                                <Textarea
+                                                    resize={"vertical"}
+                                                    variant="flushed"
+                                                    size="lg"
+                                                    name="description"
+                                                    value={form.description}
+                                                    onChange={onChange}
+                                                />
+                                            </FormControl>
+                                            <div>
+                                                <Button
+                                                    mt={10}
+                                                    type="submit"
+                                                    size="lg"
+                                                    variantColor="primary"
+                                                    className="primary-btn"
+                                                >Submit{isLoading && <Spinner
+                                                    thickness="4px"
+                                                    speed="1s"
+                                                    emptyColor="gray.200"
+                                                    color="blue.500"
+                                                    size="sm"
+                                                />}
+                                                </Button>
                                             </div>
-                                            <div className="col-md-6">
-                                                <FormControl  >
-                                                    <FormLabel htmlFor="phone">Contact No.</FormLabel>
-                                                    <Input
-                                                        type="tel"
-                                                        pattern="[0-9]{10}"
-                                                        variant="flushed"
-                                                        name="phone"
-                                                        value={form.phone}
-                                                        onChange={onChange}
-                                                    />
-                                                </FormControl>
-                                            </div>
-                                        </Box>
-                                        <FormControl mt={10} isRequired>
-                                            <FormLabel>Describe the error in detail:</FormLabel>
-                                            <Textarea
-                                                resize={"vertical"}
-                                                variant="flushed"
-                                                size="lg"
-                                                name="description"
-                                                value={form.description}
-                                                onChange={onChange}
-                                            />
-                                        </FormControl>
-                                        <div>
-                                            <Button
-                                                mt={10}
-                                                type="submit"
-                                                size="lg"
-                                                variantColor="primary"
-                                                className="primary-btn"
-
-                                            >Submit{isLoading && <Spinner
-                                                thickness="4px"
-                                                speed="1s"
-                                                emptyColor="gray.200"
-                                                color="blue.500"
-                                                size="sm"
-                                            />}
-                                            </Button>
-                                        </div>
-                                    </TabPanel>
-                                </TabPanels>
-                            </Tabs>
-                        </form>
-                    </div>
-                    {formResponse && <Toast response={formResponse} />}
+                                        </TabPanel>
+                                    </TabPanels>
+                                </Tabs>
+                            </form>
+                        </div>
+                        {formResponse && <Toast response={formResponse} />}
+                    </ModalBody>
                 </ModalContent>
             </Modal>
         </>
