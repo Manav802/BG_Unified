@@ -18,7 +18,8 @@ export default [
                     images: ["/assets/images/icons/brands/mongodb.svg", "/assets/images/icons/brands/MySQL-Logo.png", "/assets/images/icons/brands/azure_sql_server_posted.svg"],
                     px: 3,
                     height: "80px",
-                    objectFit: "contain"
+                    objectFit: "contain",
+                    maxW:["135.5px", "175px", "231px", "283px"]
                 },
             },
         ]
@@ -29,15 +30,17 @@ export default [
             {
                 width: ["100%", "100%", 1 / 2],
                 type: "imageGroup",
+                my:[0,2],
                 data: {
                     images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
                     borderRadius: 8,
-                    width: '90%',
+                    width: ['100%',"100%","90%"],
                     height: "300px",
                     objectFit: "cover"
                 }
             },
             {
+                mt:[0,3],
                 width: ["100%", "100%", 1 / 2],
                 type: "content",
                 data: [{
