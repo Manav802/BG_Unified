@@ -310,7 +310,7 @@ const services = {
         description: " It’s easy to deploy and available at a single license, giving you simplified configuration, bot management, and holistic visibility and control with a single pane of glass.",
         illustration: "",
         relatedService: ["SOC As A Service", "Firewall As A Service", "DR As A Service"],
-        conclusion: "Protect your web applications and use a web application firewall. Contact us and let our experts help you!",
+        conclusion: "Protect your web applications with our web application firewall.",
         sections: sections.wafaas
     },
     "webdev": {

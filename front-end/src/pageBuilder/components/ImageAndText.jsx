@@ -5,7 +5,7 @@ function ImageAndText({image, maxH = "280px",spacing="24px", description, title,
     return (
         <Flex my={spacing} width="100%" align="center" {...props}>
             <Image padding={["20px","15px","12px"]} width={["100%", "100%", 1/2]} maxH={maxH} src={image} {...imageProps}></Image>
-            <Box width={["100%", "100%", 1/2]}>
+            <Box width={["100%", "100%", 1/2]} px={["10px","10px","0"]}>
                 <Heading mb="16px" fontFamily="Nexa Bold" {...titleStyle}>{title}</Heading>
                 <Text textAlign="justify" fontSize="lg" {...descriptionStyle}>{description}</Text>
             </Box>
