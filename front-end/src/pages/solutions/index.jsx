@@ -59,7 +59,7 @@ function OurSolutions(){
             <Text zIndex="100" fontSize="xl" mt={2}>We cover 90% of the technology domains.</Text>
         </Section>
         <Section mt={0} pt={0}>
-        <div className="d-flex mt-2 justify-content-center">
+        <div className="d-flex mt-3 justify-content-center">
       <Button
         onClick={onOpen}
         className="tab-dropdown"
@@ -121,8 +121,8 @@ function OurSolutions(){
               <Row>
                 {Object.entries(solutions).filter(service => service[1].category === "IT Infrastructural Services").map(service => (
                     <Box width={["100%","100%","50%"]} p={5}>
-                      <Flex my={5} bg="white" boxShadow="lg" height="100%" rounded={8} overflow="hidden">
-                        <Flex minW="160px" justify="center" align="center" bg={service[1].color}>
+                      <Flex my={5} bg="white" boxShadow="lg" height="100%" direction={["column","row"]} rounded={8} overflow="hidden">
+                        <Flex minH="100px" minW="160px" justify="center" align="center" bg={service[1].color}>
                             <SVG src={service[1].icon} size="48px"></SVG>
                         </Flex>
                         <Box p={8}>
@@ -139,8 +139,8 @@ function OurSolutions(){
               <Row>
                 {Object.entries(solutions).filter(service => service[1].category === "Network Services").map(service => (
                     <Box width={["100%","100%","50%"]} p={5}>
-                      <Flex my={5} bg="white" boxShadow="lg" height="100%" rounded={8} overflow="hidden">
-                        <Flex minW="160px" justify="center" align="center" bg={service[1].color}>
+                      <Flex my={5} bg="white" boxShadow="lg" height="100%" direction={["column","row"]} rounded={8} overflow="hidden">
+                        <Flex minH="100px" minW="160px" justify="center" align="center" bg={service[1].color}>
                             <SVG src={service[1].icon} size="48px"></SVG>
                         </Flex>
                         <Box p={8}>
@@ -157,8 +157,8 @@ function OurSolutions(){
               <Row>
               {Object.entries(solutions).filter(service => service[1].category === "Cyber Security Services").map(service => (
                     <Box width={["100%","100%","50%"]} p={5}>
-                      <Flex my={5} bg="white" boxShadow="lg" height="100%" rounded={8} overflow="hidden">
-                        <Flex minW="160px" justify="center" align="center" bg={service[1].color}>
+                      <Flex my={5} bg="white" boxShadow="lg" height="100%" direction={["column","row"]} rounded={8} overflow="hidden">
+                        <Flex minH="100px" minW="160px" justify="center" align="center" bg={service[1].color}>
                             <SVG src={service[1].icon} size="48px"></SVG>
                         </Flex>
                         <Box p={8}>
@@ -175,8 +175,8 @@ function OurSolutions(){
               <Row>
               {Object.entries(solutions).filter(service => service[1].category === "Collaborative Services").map(service => (
                     <Box width={["100%","100%","50%"]} p={5}>
-                      <Flex my={5} bg="white" boxShadow="lg" height="100%" rounded={8} overflow="hidden">
-                        <Flex minW="160px" justify="center" align="center" bg={service[1].color}>
+                      <Flex my={5} bg="white" boxShadow="lg" height="100%" direction={["column","row"]} rounded={8} overflow="hidden">
+                        <Flex minH="100px" minW="160px" justify="center" align="center" bg={service[1].color}>
                             <SVG src={service[1].icon} size="48px"></SVG>
                         </Flex>
                         <Box p={8}>
@@ -193,8 +193,8 @@ function OurSolutions(){
               <Row>
               {Object.entries(solutions).filter(service => service[1].category === "Development Services").map(service => (
                     <Box width={["100%","100%","50%"]} p={5}>
-                      <Flex my={5} bg="white" boxShadow="lg" height="100%" rounded={8} overflow="hidden">
-                        <Flex minW="160px" justify="center" align="center" bg={service[1].color}>
+                      <Flex my={5} bg="white" boxShadow="lg" height="100%" direction={["column","row"]} rounded={8} overflow="hidden">
+                        <Flex minH="100px" minW="160px" justify="center" align="center" bg={service[1].color}>
                             <SVG src={service[1].icon} size="48px"></SVG>
                         </Flex>
                         <Box p={8}>
