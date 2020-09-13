@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse, ModalBody, Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    MenuGroup,
-    MenuDivider,
-    MenuOptionGroup,
-    MenuItemOption
+    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse, ModalBody,
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import deviceList from '../../deviceDetect.js';
@@ -55,8 +48,7 @@ function ErrorForm(props) {
         email: email,
         description: description,
         phone: phone,
-        error: error,
-        othererror: othererror,
+        error: othererror ? othererror : error,
         browser: browser,
         device: device,
         operatingsystem: operatingsystem
@@ -105,10 +97,9 @@ function ErrorForm(props) {
         }
     }
     const handleToggle = (param) => {
+        setShow(param);
         setRend(param);
-        setTimeout(() => {
-            setShow(param);
-        }, 0);
+        setOtherInput('');
     }
     const refreshForm = (res) => {
         loadingState(false)
