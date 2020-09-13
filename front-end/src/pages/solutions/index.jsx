@@ -5,12 +5,48 @@ import Head from "next/head";
 import Link from "next/link";
 import Section from "../../pageBuilder/Section";
 import Title from "../../pageBuilder/Title";
-import { Heading, Text, Box, InputGroup, InputLeftElement, Button, Image, Flex,  Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/core";
+import { Heading, Text, Box, Drawer,
+  DrawerBody,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,useDisclosure, InputGroup, InputLeftElement, Button, Image, Flex,  Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/core";
 import Service from "../../components/cards/Service";
 import Row from "../../pageBuilder/Row";
-import SVG from "../../components/svg/svg";
+import SVG from "../../components/svg/SVG";
+
+const tabs = [
+  {
+    index: 0,
+    title: "IT & Infrastructure",
+  },
+  {
+    index: 1,
+    title: "Network",
+  },
+  {
+    index: 2,
+    title: "Cyber Security",
+  },
+  {
+    index: 3,
+    title: "Collaborative",
+
+  },
+  {
+    index: 4,
+    title: "Development",
+
+  },
+];
 
 function OurSolutions(){
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  
+  const [tabIndex, setTabIndex] = React.useState(0);
+  const handleTabsChange = (index) => {
+    setTabIndex(index);
+  };
+  
     return (
       <>
           <Head>
@@ -23,22 +59,70 @@ function OurSolutions(){
             <Text zIndex="100" fontSize="xl" mt={2}>We cover 90% of the technology domains.</Text>
         </Section>
         <Section mt={0} pt={0}>
-          <Tabs align="center" variantColor="red.500">
+        <div className="d-flex mt-3 justify-content-center">
+      <Button
+        onClick={onOpen}
+        className="tab-dropdown"
+        size="lg"
+        py="32px"
+        mb="12px"
+        px="48px"
+        rightIcon="chevron-down"
+      >
+        <Box as={tabs[tabIndex].icon} size="32px" mr="12px"></Box>
+        {tabs[tabIndex].title}
+      </Button>
+      <Drawer
+        placement="bottom"
+        size="lg"
+        onClose={onClose}
+        isOpen={isOpen}
+      >
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerHeader borderBottomWidth="1px">
+            Choose an Operating System
+          </DrawerHeader>
+          <DrawerBody>
+            {tabs.map((tab) => {
+              return (
+                <>
+                  <Button
+                    key={tab.index}
+                    onClick={() => {
+                      setTabIndex(tab.index);
+                      onClose();
+                    }}
+                    variantColor="white"
+                    py="32px"
+                    className="box-none text-dark justify-content-start hover-effect w-100 display6"
+                  >
+                    <Box as={tab.icon} size="32px" mr="12px"></Box>{" "}
+                    {tab.title}
+                  </Button>
+                </>
+              );
+            })}
+          </DrawerBody>
+        </DrawerContent>
+      </Drawer>
+    </div>
+          <Tabs index={tabIndex} align="center" onChange={handleTabsChange} variantColor="red.500">
             <TabList fontFamily="Nexa Bold">
-              <Tab p={6}>IT & Infrastructure</Tab>
-              <Tab p={6}>Network</Tab>
-              <Tab p={6}>Cyber Security</Tab>
-              <Tab p={6}>Collaborative</Tab>
-              <Tab p={6}>Development</Tab>
+              <Tab className="box-none tab" p={6}>IT & Infrastructure</Tab>
+              <Tab className="box-none tab" p={6}>Network</Tab>
+              <Tab className="box-none tab" p={6}>Cyber Security</Tab>
+              <Tab className="box-none tab" p={6}>Collaborative</Tab>
+              <Tab className="box-none tab" p={6}>Development</Tab>
             </TabList>
 
             <TabPanels>
               <TabPanel>
               <Row>
                 {Object.entries(solutions).filter(service => service[1].category === "IT Infrastructural Services").map(service => (
-                    <Box width="50%" p={5}>
-                      <Flex my={5} bg="white" boxShadow="lg" height="100%" rounded={8} overflow="hidden">
-                        <Flex minW="160px" justify="center" align="center" bg={service[1].color}>
+                    <Box width={["100%","100%","50%"]} p={5}>
+                      <Flex my={5} bg="white" boxShadow="lg" height="100%" direction={["column","row"]} rounded={8} overflow="hidden">
+                        <Flex minH="100px" minW="160px" justify="center" align="center" bg={service[1].color}>
                             <SVG src={service[1].icon} size="48px"></SVG>
                         </Flex>
                         <Box p={8}>
@@ -54,9 +138,9 @@ function OurSolutions(){
               <TabPanel>
               <Row>
                 {Object.entries(solutions).filter(service => service[1].category === "Network Services").map(service => (
-                    <Box width="50%" p={5}>
-                      <Flex my={5} bg="white" boxShadow="lg" height="100%" rounded={8} overflow="hidden">
-                        <Flex minW="160px" justify="center" align="center" bg={service[1].color}>
+                    <Box width={["100%","100%","50%"]} p={5}>
+                      <Flex my={5} bg="white" boxShadow="lg" height="100%" direction={["column","row"]} rounded={8} overflow="hidden">
+                        <Flex minH="100px" minW="160px" justify="center" align="center" bg={service[1].color}>
                             <SVG src={service[1].icon} size="48px"></SVG>
                         </Flex>
                         <Box p={8}>
@@ -72,9 +156,9 @@ function OurSolutions(){
               <TabPanel>
               <Row>
               {Object.entries(solutions).filter(service => service[1].category === "Cyber Security Services").map(service => (
-                    <Box width="50%" p={5}>
-                      <Flex my={5} bg="white" boxShadow="lg" height="100%" rounded={8} overflow="hidden">
-                        <Flex minW="160px" justify="center" align="center" bg={service[1].color}>
+                    <Box width={["100%","100%","50%"]} p={5}>
+                      <Flex my={5} bg="white" boxShadow="lg" height="100%" direction={["column","row"]} rounded={8} overflow="hidden">
+                        <Flex minH="100px" minW="160px" justify="center" align="center" bg={service[1].color}>
                             <SVG src={service[1].icon} size="48px"></SVG>
                         </Flex>
                         <Box p={8}>
@@ -90,9 +174,9 @@ function OurSolutions(){
               <TabPanel>
               <Row>
               {Object.entries(solutions).filter(service => service[1].category === "Collaborative Services").map(service => (
-                    <Box width="50%" p={5}>
-                      <Flex my={5} bg="white" boxShadow="lg" height="100%" rounded={8} overflow="hidden">
-                        <Flex minW="160px" justify="center" align="center" bg={service[1].color}>
+                    <Box width={["100%","100%","50%"]} p={5}>
+                      <Flex my={5} bg="white" boxShadow="lg" height="100%" direction={["column","row"]} rounded={8} overflow="hidden">
+                        <Flex minH="100px" minW="160px" justify="center" align="center" bg={service[1].color}>
                             <SVG src={service[1].icon} size="48px"></SVG>
                         </Flex>
                         <Box p={8}>
@@ -108,9 +192,9 @@ function OurSolutions(){
               <TabPanel>
               <Row>
               {Object.entries(solutions).filter(service => service[1].category === "Development Services").map(service => (
-                    <Box width="50%" p={5}>
-                      <Flex my={5} bg="white" boxShadow="lg" height="100%" rounded={8} overflow="hidden">
-                        <Flex minW="160px" justify="center" align="center" bg={service[1].color}>
+                    <Box width={["100%","100%","50%"]} p={5}>
+                      <Flex my={5} bg="white" boxShadow="lg" height="100%" direction={["column","row"]} rounded={8} overflow="hidden">
+                        <Flex minH="100px" minW="160px" justify="center" align="center" bg={service[1].color}>
                             <SVG src={service[1].icon} size="48px"></SVG>
                         </Flex>
                         <Box p={8}>
