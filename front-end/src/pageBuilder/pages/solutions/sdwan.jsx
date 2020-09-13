@@ -3,17 +3,12 @@ import SdwanPricing from "../../pricing/SdwanPricing";
 export default [
     {
         px: 2,
-        body: [
-            {
-                type: "image&text",
-                data: {
-                    image: "/assets/images/Illustrations/ClientSpecific_AppDev.svg",
-                    title: "Secure Connectivity with SD-WAN",
-                    flexDirection: ["column", "column", "row-reverse"],
-                    description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. SD-WAN transforms the way a particular network supports and interacts with enterprise applications."
-                }
-            },
-        ]
+        title: "Secure Connectivity with SD-WAN",
+        description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
+        descriptionStyle: {
+            fontSize: ["xl", "lg"],
+            opacity: 0.7
+        }
     },
     {
         py: [0, 4],
