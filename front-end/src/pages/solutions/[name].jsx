@@ -7,7 +7,7 @@ import Conclusion from "../../components/footer/conclusion"
 import RenderSection from "../../pageBuilder/RenderSection";
 import { Box, Button, ButtonGroup, Image, Heading, Flex } from "@chakra-ui/core"
 import Fade from "react-reveal/Fade"
-import SVG from "../../components/svg/svg";
+import SVG from "../../components/svg/SVG";
 
 
 function Solutions() {
