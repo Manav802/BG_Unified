@@ -47,7 +47,8 @@ class CaseStudy extends React.Component {
           <div className="content text-justify text-secondary mt-2">
             {this.props.caseStudyDetails[this.state.i].content}
           </div>
-          <a href="" className="mt-4  link">Read More</a>
+          <Link href="/newsroom/[bid]" as={"/newsroom/"+this.props.caseStudyDetails[this.state.i].link}><a className="mt-4 link">Read More</a>
+          </Link>
         </Box>
         <Box size="64px" onClick={this.prev} className={this.state.i==0 ? "left-nav bg-disabled" : "left-nav bg-primary primary-btn"} mt="-32px" position="absolute" top="50%" p="20px" left="-32px"><Icon name="arrow-back" color="white" size="24px"></Icon></Box>
         <Box size="64px" onClick={this.next} className={this.state.i==this.props.caseStudyDetails.length-1 ? "right-nav bg-disabled" : "right-nav bg-primary primary-btn"} mt="-32px" position="absolute" top="50%" p="20px" right="-32px"><Icon name="arrow-forward" color="white" size="24px"></Icon></Box>

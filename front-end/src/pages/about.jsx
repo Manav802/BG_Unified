@@ -51,7 +51,7 @@ class about extends Component {
             <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Know More</Heading>
             <Title zIndex="100" fontSize={["44px","64px"]}>About Us</Title>
         </Section>
-            <div className="container-fluid p-0 py-5">
+            <div className="container-fluid p-0 pt-5 pb-2 pt-lg-5 pb-lg-5">
               <Slider
                 className="timeline"
                 flickityRef={(c) => (this.flkty = c)}

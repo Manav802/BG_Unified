@@ -124,9 +124,9 @@ class Landing extends Component {
                   <div className="row">
                     <div className="col-lg-8 offset-lg-2">
                       <div>
-                        <div className="display3 slider-text text-center text-white mt-0">
+                        <Box fontSize={["4xl","4xl","5xl"]} className="Nexa-Bold slider-text text-center text-white mt-0">
                           {info.title}
-                        </div>
+                        </Box>
                         <div className="h6 text-center slider-text NunitoSans-SemiBold mt-3">
                           {info.subTitle}
                         </div>
@@ -173,7 +173,7 @@ class Landing extends Component {
                 What We Deliver?
               </div>
               <Fade duration={800} cascade distance={"8%"} bottom>
-                <div className="row">
+                <div className="row mx-2">
                   <div className="col-xl-4 col-sm-6 my-2">
                     <Service className="col-xl-4 col-sm-6 my-2" service="Infrastructure As A Service"></Service>
                   </div>
@@ -227,10 +227,10 @@ class Landing extends Component {
                 <Fade duration={500} cascade distance={"30%"} bottom>
                   <div className="col-lg-12 py-5 d-flex flex-column justify-content-center">
                     <Heading size="sm" className="text-primary" letterSpacing={1.5} textTransform="uppercase" mb={2}>Our Reach</Heading>
-                    <p className="mb-2 display3 text-white">Our Data Center Locations</p>
-                    <h6 className="h6 NunitoSans-SemiBold text-white text-justify">
+                    <Box fontSize={["4xl","4xl","5xl"]} className="mb-2 display3 text-white">Our Data Center Locations</Box>
+                    <Box fontSize={["16px","18px","2opx"]} className="h6 NunitoSans-SemiBold text-white text-justify">
                       BG Unified Solution specializes in Hosting Solutions and Services. We help clients plan, build, support and manage their IT infrastructure. Currently, we have several DC locations including ME1, LD3, IBM. We have our Data Centre Locations spread out to locations including Auckland, Sydney and Melbourne.
-                </h6>
+                </Box>
                   </div>
                 </Fade>
                 <Fade duration={500} cascade distance={"50%"} left>
@@ -335,7 +335,7 @@ class Landing extends Component {
                         Disaster Management.
                     </FeatureCard>
                     </div>
-                    <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-end py-3">
+                    <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-center align-items-lg-end py-3">
                       <span className="display6 text-dark">Not Convinced?</span>
                       <Link href="/features">
                         <a className="text-primary d-flex my-2" href="">
