@@ -1,7 +1,11 @@
-    window.__be = window.__be || {};
-    window.__be.id = "5f33b3639413eb0007ca8f83";
-    (function() {
-        var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
-        be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
-    })();
+window.watsonAssistantChatOptions = {
+    integrationID: "094470f4-bbc5-405b-a348-fb7f2d25dee2", // The ID of this integration.
+    region: "eu-gb", // The region your integration is hosted in.
+    serviceInstanceID: "a9e348ca-f848-400f-be29-9b8b7e5ef613", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+setTimeout(function(){
+  const t=document.createElement('script');
+  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+  document.head.appendChild(t);
+});

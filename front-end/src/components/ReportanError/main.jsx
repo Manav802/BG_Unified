@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse, ModalBody
+    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse, ModalBody, List
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import deviceList from '../../deviceDetect.js';
@@ -48,8 +48,7 @@ function ErrorForm(props) {
         email: email,
         description: description,
         phone: phone,
-        error: error,
-        othererror: othererror,
+        error: othererror ? othererror : error,
         browser: browser,
         device: device,
         operatingsystem: operatingsystem
@@ -98,10 +97,9 @@ function ErrorForm(props) {
         }
     }
     const handleToggle = (param) => {
+        setShow(param);
         setRend(param);
-        setTimeout(() => {
-            setShow(param);
-        }, 0);
+        setOtherInput('');
     }
     const refreshForm = (res) => {
         loadingState(false)
@@ -161,7 +159,7 @@ function ErrorForm(props) {
             <Link mx={["6px", "10px", "16px"]} fontSize={["10px", "12px", "14px"]} textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
             <Modal isOpen={isOpen} onClose={formClose} isCentered scrollBehavior="inside">
                 <ModalOverlay />
-                <ModalContent maxWidth={["400px", "400px", "600px", "700px"]} maxHeight="820px">
+                <ModalContent maxWidth={["400px", "400px", "600px", "700px"]}>
                     <ModalBody>
                         <ModalHeader><span className="display5">Report an Error</span></ModalHeader>
                         <ModalCloseButton />
@@ -199,10 +197,10 @@ function ErrorForm(props) {
                                         <TabPanel>
                                             <FormControl mt={10} isRequired>
                                                 <FormLabel>Device you were using:</FormLabel>
-                                                <RadioButtonGroup className="row justify-content-around" name="devicetype" value={form.device} onChange={value => { setDevice(value); setActiveButton(value) }}>
-                                                    <CustomRadio className="col-sm-3" value="mobile"><div className="d-flex flex-column"><SVG color={activeButton === "mobile" ? "light.500" : "black.500"} src="/assets/images/icons/library/devices/iphone-x.svg" /><div>Phone</div></div></CustomRadio>
-                                                    <CustomRadio className="col-sm-3" value="tablet"><div className="d-flex flex-column"><SVG color={activeButton === "tablet" ? "light.500" : "black.500"} src="/assets/images/icons/library/devices/tablet.svg" /><div>Tablet</div></div></CustomRadio>
-                                                    <CustomRadio className="col-sm-3" value="browser"><div className="d-flex flex-column"><SVG color={activeButton === "browser" ? "light.500" : "black.500"} src="/assets/images/icons/library/devices/imac.svg" /><div>PC</div></div></CustomRadio>
+                                                <RadioButtonGroup isInline spacing={4} name="devicetype" value={form.device} onChange={value => { setDevice(value); setActiveButton(value) }}>
+                                                    <CustomRadio mt={[2, 2, 0]} className="col-sm-3 " value="mobile"><div className="d-flex flex-column"><SVG color={activeButton === "mobile" ? "light.500" : "black.500"} src="/assets/images/icons/library/devices/iphone-x.svg" /><div>Phone</div></div></CustomRadio>
+                                                    <CustomRadio mt={[2, 2, 0]} className="col-sm-3 " value="tablet"><div className="d-flex flex-column"><SVG color={activeButton === "tablet" ? "light.500" : "black.500"} src="/assets/images/icons/library/devices/tablet.svg" /><div>Tablet</div></div></CustomRadio>
+                                                    <CustomRadio mt={[2, 2, 0]} className="col-sm-3 " value="browser"><div className="d-flex flex-column"><SVG color={activeButton === "browser" ? "light.500" : "black.500"} src="/assets/images/icons/library/devices/imac.svg" /><div>PC</div></div></CustomRadio>
                                                 </RadioButtonGroup>
                                             </FormControl>
                                             <FormControl mt={10} isRequired>
@@ -212,9 +210,11 @@ function ErrorForm(props) {
                                             </FormControl>
                                             <FormControl mt={10} isRequired>
                                                 <FormLabel>Operating system you were using:</FormLabel>
-                                                <Select name="operatingsystem" value={form.operatingsystem} onChange={onChange} variant="flushed">
-                                                    {deviceList.os.map(item => <option value={item}>{item}</option>)}
-                                                </Select>
+                                                <Input list="os" listStylePos="inside" name="operatingsystem" value={form.operatingsystem} onChange={onChange} variant="flushed"></Input>
+                                                <datalist id="os">
+                                                    {deviceList.os.map(item => <option value={item}></option>)}
+                                                </datalist>
+
                                             </FormControl>
                                             <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(2)}>Next</Button>
                                         </TabPanel>

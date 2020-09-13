@@ -144,9 +144,9 @@ class about extends Component {
                     name="Jingyi Li"
                     img="https://www.bgunifiedsolutions.net/wp-content/uploads/2019/02/JingyiLi.png"
                   >
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Provident, iure sed. Nobis dolore labore nam rerum sequi?
-                    Nemo enim totam exercitationem atque!
+                   CPA and Master of Accounting.
+                   the financial specialist, started up this company back in 2014. Responsible personality,
+                   expert when it comes to finance and accounts.
                   </Team>
                 </div>
                 <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
@@ -155,9 +155,9 @@ class about extends Component {
                     name="Saurabh Sareen"
                     img="https://www.bgunifiedsolutions.net/wp-content/uploads/2019/01/Closeup.jpg"
                   >
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Provident, iure sed. Nobis dolore labore nam rerum sequi?
-                    Nemo enim totam exercitationem atque!
+                    Managing Director / Owner at BG Unified Solutions Limited, AU and NZ. 
+                    Hardworking, Cloud Services and Hosting Solutions Specialist,
+                    completely driven by customers satisfaction and deliverability.
                   </Team>
                 </div>
                 <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-end py-3">
