@@ -44,7 +44,7 @@ const levels = [
             https://www.bgunifiedsolutions.net/ blog posts. BG Unified Solutions Pty. Ltd. only discloses 
             logged in user and commenter IP addresses under the same circumstances that it uses and discloses 
             personally-identifying information as described below.
-    </span>
+            </span>
            ],
         styleType: "upper-alpha",
         as: "ol"
@@ -172,7 +172,7 @@ const levels = [
 ]
 
 
-export default servicelevels.map((block) => {
+export default levels.map((block) => {
     block.fontSize = "md"
     return block
 })

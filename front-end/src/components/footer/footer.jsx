@@ -28,7 +28,7 @@ function footer(props) {
                 <Link href="/features"><Button mx={4} variant="unstyled" variantColor="white">Our Features</Button></Link>
                 <Link href="/newsroom"><Button mx={4} variant="unstyled" variantColor="white">Newsroom</Button></Link>
                 <Link href="/about"><Button mx={4} variant="unstyled" variantColor="white">About Us</Button></Link>
-                <Link href="/about"><Button mx={4} variant="unstyled" variantColor="white">Privacy Policies</Button></Link>
+                <Link href="/about"><Button mx={4} variant="unstyled" variantColor="white">Privacy Policy</Button></Link>
             </Flex>
             <Flex py={5}>
             © Copyright 2020 BG Unified Solutions
@@ -42,9 +42,9 @@ function footer(props) {
    </Section>
    <Box bg="black" color="white" py={3}>
      <Container>
-       <Flex fontSize={["10px","12px","14px"]} justify="space-between">
-       <Text>Website developed and maintained by <Button variant="unstyled" fontSize="md" as="a" color="primary">Peppershades</Button></Text>
-       <Flex justify="space-between">
+       <Flex fontSize={["10px","12px","14px"]} wrap="wrap" justify="space-between">
+       <Text textAlign={["center", "center", "left"]} my={[3,3,0]} width={["100%","100%",1/2]}>Website developed and maintained by <Button variant="unstyled" fontSize="md" as="a" color="primary">Peppershades</Button></Text>
+       <Flex justify={["center","center","flex-end"]} width={["100%","100%",1/2]}>
           <ErrorForm/><FeedbackForm/>
         </Flex>
        </Flex>

@@ -147,10 +147,7 @@ export default [
     },
     {
         py: 16,
-        bgImage: "url(https://images.unsplash.com/photo-1484662020986-75935d2ebc66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)",
-        bg: "#333",
-        blend: "multiply",
-        color: "white",
+        bg:"light.400",
         body: [
         {
             width: 1/3,

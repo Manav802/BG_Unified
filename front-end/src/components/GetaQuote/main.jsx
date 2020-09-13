@@ -113,7 +113,7 @@ function GetaQuoteForm(props) {
                 <div className="rounded-8 hover-effect bg-light m-2 py-2 px-3" key={index}>{service}</div>
               )
             })}</div>
-            <ModalCloseButton />
+            <ModalCloseButton zIndex="100" />
             <Box m={2} className="container contact-form">
               <form onSubmit={onSubmit}>
                 <input
