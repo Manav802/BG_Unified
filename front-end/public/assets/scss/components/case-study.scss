@@ -12,14 +12,22 @@
   .case-box{
     padding: 2rem 5rem;
     width: 50%;
-    @media (max-width: 1080px) {
-      padding: 4rem;
-      left: 10%;
-      width: 80%;
-      top: 300px;
-      height: fit-content;
+    // @media (max-width: 1080px) {
+    //   padding: 4rem;
+    //   left: 10%;
+    //   width: 80%;
+    //   top: 300px;
+    //   height: fit-content;
+    // }
+    @media (max-width: 400px) {
+      position: relative;
+      top: 0px;
+      padding: 2rem;
+      left: 0px !important;
+      width: 100% !important;
+      
     }
-    @media (max-width: 880px) {
+    @media (max-width: 1080px) and (min-width: 400px) {
       position: relative;
       top: 0px;
       padding: 4rem;
@@ -28,22 +36,25 @@
       
     }
   }
+  // @media (max-width: 1080px) {
+  //   padding-left: 0%;
+  //   margin-bottom: 40%;
+  // }
   @media (max-width: 1080px) {
-    padding-left: 0%;
-    margin-bottom: 40%;
-  }
-  @media (max-width: 880px) {
     padding-left: 0%;
     margin-bottom: 60%;
     box-shadow: none;
     margin-bottom: 0%;
   }
   .image{
-    @media (max-width: 1080px) {
+    @media (max-width: 880px) {
       height: 360px;
       padding: 0px !important;
+      margin: 0px !important;
     }
-    @media (max-width: 880px) {
+    @media (max-width: 1080px) and (min-width: 880px) {
+      height: 400px;
+      padding: 0px !important;
       margin: 0px !important;
     }
   }
