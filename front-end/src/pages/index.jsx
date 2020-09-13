@@ -128,7 +128,7 @@ class Landing extends Component {
           <source src="/assets/videos/dots.webm" type="video/webm">
             </source>
           </video> */}
-          <Slider options={{ autoPlay: 5000, prevNextButtons: false, pageDots: false, draggable: false }}>
+          <Slider options={{ autoPlay: 5000, prevNextButtons: false, pageDots: false, draggable: false,pauseAutoPlayOnHover: false,wrapAround: true }}>
             {sliderInfo.map((info, index) => (
               <Box className="w-100 landing-section">
                 <Image src={info.imgSrc} opacity={.4} className="bg-image"></Image>
