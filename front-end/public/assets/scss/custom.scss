@@ -22,3 +22,10 @@
         color: white !important;
     }
 }
+
+.truncate-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  

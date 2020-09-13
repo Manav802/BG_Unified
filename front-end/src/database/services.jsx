@@ -51,7 +51,7 @@ const services = {
         category: "Network Services",
         icon: "/assets/images/icons/monotone/CEX.svg",
         color: "#F1D302",
-        tags: ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
+        tags: ["cloud exchange connectivity", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
         description: "Express Routes to office 365, AWS, Azure. Advanced Solution provides private, seamless, and on-demand connections to many clouds as well as networks. ",
         illustration: "",
         relatedService: ["Logging Cloud Connect", "Proxy As A Service", "SIP As A Service"],
@@ -98,7 +98,8 @@ const services = {
         illustration: "",
         relatedService: ["Backup As A Service", "Storage As A Service", "DR As A Service"],
         conclusion: "Professional, Flexible and Reliable Database Services for your Business.",
-        sections: sections.dbaas
+        sections: sections.dbaas,
+        popular: true
     },
     "dns": {
         title: "DNS As A Service",
@@ -168,7 +169,8 @@ const services = {
         illustration: "",
         relatedService: ["Backup As A Service", "Database As A Service", "DR As A Service"],
         conclusion: "Load Balancing is the solution you’ve been looking for.",
-        sections: sections.loadBalancer
+        sections: sections.loadBalancer,
+        popular: true,
     },
     "workstation":{
         title: "Workstation As A Service",

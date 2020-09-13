@@ -1,27 +1,62 @@
 import { Stack, Box } from "@chakra-ui/core";
 import Link from 'next/link';
 import data from '../data/searchDatabase.json';
+import services from '../../../src/database/services';
+import blogs from '../../../src/database/newsroom';
 
 //dynamicSearch(searchTerm) will return filtered results object of this format : {pages: [{name:"",link:""}], services: [], articles: []} (same format as in searchDatabase.json)
 //Results is a functional React Component used to show how this data is mapped.
+const servicesArray = Object.entries(services);
 
 const Matcher = (name,searchTerm) =>{
+  //Searching in title
+  const title = name.title
+  let k = Math.min(title.length, searchTerm.length);
+    for(var i=0; i<k; i++) {
+      if( title.toLowerCase().charAt(i) == searchTerm.toLowerCase().charAt(i) && title.toLowerCase().includes(searchTerm.toLowerCase())) return(true);
+    }
+
+  //Searching in tags array
   for(const tag of name.tags){
     let l = Math.min(tag.length, searchTerm.length);
     for(var i=0; i<l; i++) {
       if( tag.toLowerCase().charAt(i) == searchTerm.toLowerCase().charAt(i) && tag.toLowerCase().includes(searchTerm.toLowerCase())) return(true);
     }
   }
+
+  //Not found then
+  return(false);
+}
+
+const ServiceMatcher = (name,searchTerm) =>{
+
+  //Searching in title
+  const title = name[1].title
+  let k = Math.min(title.length, searchTerm.length);
+    for(var i=0; i<k; i++) {
+      if( title.toLowerCase().charAt(i) == searchTerm.toLowerCase().charAt(i) && title.toLowerCase().includes(searchTerm.toLowerCase())) return(true);
+    }
+
+  //Searching in tags array
+  for(const tag of name[1].tags){
+    let l = Math.min(tag.length, searchTerm.length);
+    for(var i=0; i<l; i++) {
+      if( tag.toLowerCase().charAt(i) == searchTerm.toLowerCase().charAt(i) && tag.toLowerCase().includes(searchTerm.toLowerCase())) return(true);
+    }
+  }
+
+  //Not found then
   return(false);
 }
 
 export const dynamicSearch = (searchTerm) => {
+  searchTerm = searchTerm.trim();
   if(searchTerm == '') return({pages:[],services:[],articles:[]}) 
   else return( //Return object of resultant arrays.
     { 
-      pages: data.pages.filter( page => Matcher(page,searchTerm)) , //filter pages
-      services: data.services.filter( service => Matcher(service,searchTerm)), //filter services
-      articles: data.articles.filter( article => Matcher(article,searchTerm)) //filter services
+      // pages: data.pages.filter( page => Matcher(page,searchTerm)) , //filter pages
+      services: servicesArray.filter( service => ServiceMatcher(service,searchTerm)), //filter services
+      articles: blogs.filter( article => Matcher(article,searchTerm)) //filter services
     }
   ); 
 }

@@ -5,15 +5,17 @@ export default [
         {
             width:["100%", "100%", 1/2],
             type: "imageGroup",
-            data: {
-                images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
-                borderRadius: 8,
-                width: ['100%',"100%","90%"],
-                height: "300px",
-                objectFit: "cover"
-            }
-        },
-        {
+                my:[0,2],
+                data: {
+                    images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                    borderRadius: 8,
+                    width: ['100%',"100%","90%"],
+                    height: "300px",
+                    objectFit: "cover"
+                }
+            },
+            {
+                mt:[0,3],
             width: ["100%", "100%", 1/2],
             type: "content",
             data: [{

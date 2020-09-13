@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function WhatsNew(props) {
   return (
-    <Link href="/blogs/[bid]" as={props.link}>
+    <Link href="/newsroom/[bid]" as={props.link}>
     <Flex
       className="hover-effect"
       p={3}
