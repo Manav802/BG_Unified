@@ -43,7 +43,7 @@ function menu(props) {
               onClick={handleToggle}
             >
               <div className="d-flex justify-content-between align-items-center w-100">
-                <span className="display6">Services</span>
+                <span className="display6">Our Solutions</span>
                 <Icon
                   name={services ? "chevron-up" : "chevron-down"}
                   size="16px"

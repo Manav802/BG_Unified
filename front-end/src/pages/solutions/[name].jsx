@@ -62,10 +62,10 @@ function Solutions() {
                             <Fade duration={700} delay={1000} top>
                                 <Flex justifyContent={["center","center","left"]}>
                                 <ButtonGroup mt={10} spacing="16px">
-                                    {pricing && <Button onClick={() => {
+                                    {pricing && <Button fontSize={["14px","18px"]} onClick={() => {
                                         window.scrollTo(0, document.getElementById("pricing").offsetTop - 80)
-                                    }} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button>}
-                                    <Link href="/contact"><Button variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">Contact Sales</Button></Link>
+                                    }} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button>}
+                                    <Link href="/contact"><Button padding={["20px","24px"]} fontSize={["14px","18px"]} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">Contact Sales</Button></Link>
                                 </ButtonGroup>
                                 </Flex>
                             </Fade>

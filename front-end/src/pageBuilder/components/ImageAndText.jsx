@@ -1,9 +1,9 @@
 import React from 'react';
 import { Flex, Image, Box, Heading, Text } from '@chakra-ui/core';
 
-function ImageAndText({image, maxH = "280px",spacing="24px", description, title, titleStyle, descriptionStyle, imageProps, ...props}) {
+function ImageAndText({image, maxH = "280px",spacing="24px",px="16px", description, title, titleStyle, descriptionStyle, imageProps, ...props}) {
     return (
-        <Flex my={spacing} width="100%" align="center" {...props}>
+        <Flex px={px} my={spacing} width="100%" align="center" {...props}>
             <Image padding={["20px","15px","12px"]} width={["100%", "100%", 1/2]} maxH={maxH} src={image} {...imageProps}></Image>
             <Box width={["100%", "100%", 1/2]}>
                 <Heading mb="16px" fontFamily="Nexa Bold" {...titleStyle}>{title}</Heading>

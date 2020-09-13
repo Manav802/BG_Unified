@@ -65,12 +65,12 @@ function header(props) {
                             {/* <Search toggle ={() => setSearch(!search)} searching={search}></Search> */}
                             {/*propper syntax to use link with dynamic routing*/}
                             <Link href={`/search?search=`}>
-                                <a className="p-2 rounded-8 hover-effect">
-                                    <Icon name="search" onClick={props.toggle} size="18px"></Icon>
-                                </a>
+                                <Button p={2} rounded={4} bg="white" onClick={props.toggle}>
+                                    <Icon name="search" size="18px"></Icon>
+                                </Button>
                             </Link>
                             <Link href="/contact">
-                                <Button className="mx-3 d-none d-sm-block" variant="solid" variantColor="primary">Contact Us</Button>
+                                <Button className="mx-3 d-none d-sm-block primary-btn"  variant="solid" variantColor="primary">Contact Us</Button>
                             </Link>
                         </div>
                     </div>

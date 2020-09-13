@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component,useEffect } from "react";
 import Head from "next/head";
 import CardWithImage from "../../components/cards/CardWithImage";
 import newsroom from "../../database/newsroom"
@@ -6,10 +6,20 @@ import Link from "next/link";
 import Section from "../../pageBuilder/Section";
 import Title from "../../pageBuilder/Title";
 import { Heading, Text, Box, InputGroup, InputLeftElement, Button, Icon, Input, Image, Avatar, Badge, Flex, Grid, MenuList, Menu, MenuButton } from "@chakra-ui/core";
+import {dynamicSearch} from "../../../public/assets/js/searchFunctions"
 
 function Newsroom(){
     const [category, setCategory] = React.useState("All")
     const [search, setSearch] = React.useState("")
+    const [data, setData] = React.useState({
+      pages: [],
+      services: [],
+      articles: []
+    })
+    const handleValue = (e) => {
+      setSearch(e.target.value)
+      setData(dynamicSearch(e.target.value))
+    }
     return (
       <div className="newsroom">
         <Head>
@@ -23,13 +33,13 @@ function Newsroom(){
             <Box display={["none", "block"]} pos="relative" px={4}>
               <InputGroup mx="auto" mt={8} width={["100%","100%","520px"]}>
                 <InputLeftElement m="6px"><Icon name="search" size="14px" color="dark.500"></Icon></InputLeftElement>
-                <Input boxShadow="xl" py={6} focusBorderColor="primary.500" pl={12} value={search} onChange={(e) => setSearch(e.target.value)} color="dark.500" fontSize="xl" placeholder="Search here..."></Input>
+                <Input boxShadow="xl" py={6} focusBorderColor="primary.500" pl={12} onChange={handleValue} value={search}  color="dark.500" fontSize="xl" placeholder="Search here..."></Input>
               </InputGroup>
               {search && <Flex pos="absolute" mt={4} justifyContent="center" width="100%">
                   <Box bg="white" width={["100%","100%","520px"]} boxShadow="lg">
-                    {newsroom.filter(blog => blog.tags.includes(search)).map(blog => <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}>
+                    {data.articles.length > 0 && data.articles.map(blog => (  <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}>
                     <Heading size="md" textAlign="left" className="hover-effect" p={3}>{blog.title}</Heading>
-                    </Link>)}
+                    </Link> ) )}
                   </Box>
               </Flex>}
             </Box>
