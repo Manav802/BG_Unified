@@ -64,8 +64,8 @@ function Solutions() {
                                 <ButtonGroup mt={10} spacing="16px">
                                     {pricing && <Button fontSize={["14px","18px"]} onClick={() => {
                                         window.scrollTo(0, document.getElementById("pricing").offsetTop - 80)
-                                    }} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button>}
-                                    <Link href="/contact"><Button fontSize={"14px"} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">Contact Sales</Button></Link>
+                                    }} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button>}
+                                    <Link href="/contact"><Button padding={["20px","24px"]} fontSize={["14px","18px"]} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">Contact Sales</Button></Link>
                                 </ButtonGroup>
                                 </Flex>
                             </Fade>
