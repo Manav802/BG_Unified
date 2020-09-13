@@ -10,7 +10,7 @@ export default [
                 data: {
                     images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
                     borderRadius: 8,
-                    width: ['100%',"100%","90%"],
+                    width: ['100%', "100%", "90%"],
                     height: "300px",
                     objectFit: "cover"
                 }
@@ -32,6 +32,26 @@ export default [
                 </span>
                 }]
             }]
+    },
+    {
+        title: "Firewall Technologies",
+        mt: 0,
+        py: 0,
+        containerWidth: "100%",
+        body: [
+            {
+                width: ["100%"],
+                mt: 8,
+                type: "imageGroup",
+                data: {
+                    images: ["/assets/images/icons/brands/mongodb.svg", "/assets/images/icons/brands/firewall.svg", "/assets/images/icons/brands/firewall__1_.svg"],
+                    px: 3,
+                    height: "90px",
+                    objectFit: "contain",
+                    maxW: ["175px", "231px", "283px"]
+                },
+            },
+        ]
     },
     {
         title: "Protect Your Network With BG Unified Solutions",
@@ -108,17 +128,17 @@ export default [
                 content: [{
                     title: "Platform Diversity",
                     description: "On-premise or cloud-based, that helps secure your IT environment quickly.The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.",
-                    image: "/assets/images/Illustrations/diversity.svg"
+                    image: "/assets/images/illustrations/diversity.svg"
                 },
                 {
                     title: "Fast and Easy Deployment",
                     description: "Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure without capex.",
-                    image: "/assets/images/Illustrations/FastAndEasyDevelopment_Firewall.svg"
+                    image: "/assets/images/illustrations/FastAndEasyDevelopment_Firewall.svg"
                 },
                 {
                     title: "Advanced Technology Stack",
                     description: "Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network included.",
-                    image: "/assets/images/Illustrations/data_protection.svg"
+                    image: "/assets/images/illustrations/data_protection.svg"
                 },]
             }
         }]
