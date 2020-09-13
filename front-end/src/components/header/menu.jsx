@@ -75,26 +75,30 @@ function menu(props) {
             >
               <div className="d-flex flex-column header-list">
                 <Link href="/about">
-                  <a>About Us</a>
+                  <a className="py-1">About Us</a>
                 </Link>
                 <Link href="/newsroom">
-                  <a>Newsroom</a>
+                  <a className="py-1">Newsroom</a>
                 </Link>
                 <Link href="/solutions">
-                  <a> Solutions</a>
+                  <a className="py-1"> Solutions</a>
                 </Link>
               </div>
             </Collapse>
+            <Link href="/features">
             <Button className="btn-block btn my-2" bg="white" py="24px">
               <div className="d-flex justify-content-between align-items-center w-100">
                 <span className="display6">Our Features</span>
               </div>
             </Button>
-            <Button className="btn-block btn my-2" bg="white" py="24px">
+            </Link>
+            <Link href="/contact">
+            <Button as="a" className="btn-block btn my-2" bg="white" py="24px">
               <div className="d-flex justify-content-between align-items-center w-100">
                 <span className="display6">Contact</span>
               </div>
             </Button>
+            </Link>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
