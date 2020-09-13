@@ -144,7 +144,7 @@ function features() {
         alt=""
       />
       <Section my={0}>
-        <div className="row p-3 p-md-0">
+        <div className="row px-3 p-md-0">
           <div className="col-md-7 pl-0 position-relative d-md-none">
             <Image
             my={2}
