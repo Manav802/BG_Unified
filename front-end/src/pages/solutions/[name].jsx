@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import services from "../../database/services"
 import Head from "next/head";
 import Link from "next/link";
-import Conclusion from "../../components/footer/Conclusion";
+import Conclusion from "../../components/footer/conclusion"
 import RenderSection from "../../pageBuilder/RenderSection";
 import { Box, Button, ButtonGroup, Image, Heading, Flex } from "@chakra-ui/core"
 import Fade from "react-reveal/Fade"
