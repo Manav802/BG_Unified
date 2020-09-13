@@ -65,7 +65,7 @@ function WebDevPricing(props) {
             {page == 1 &&    
                 <div className="px-lg-4 py-5 rounded-8 shadow-lg">
                     <Fade className="px-lg-5 " duration={500} bottom>
-                    <div className="display5 text-center">Choose Your Phase</div>
+                    <div className="display5 text-center">Project Phase?</div>
                     <div className="row px-3 justify-content-center px-lg-4">
                         <div className="col-lg-10 my-3">
                             <RadioButtonGroup
@@ -112,7 +112,7 @@ function WebDevPricing(props) {
 {page == 2 &&
                 <div className="px-lg-4 py-5 rounded-8 shadow-lg">
                     <Fade className="px-lg-5 " duration={500} right >
-                    <div className="display5 text-center">Choose Your Domains</div>
+                    <div className="display5 text-center">Choose Project Domain</div>
                     <div className="row px-3 justify-content-center px-lg-4">
                         <div className="col-lg-10 my-3">
                             <div className="row justify-content-center">
@@ -241,10 +241,10 @@ function WebDevPricing(props) {
 {page == 4 &&
                 <div className="px-lg-4 py-5 rounded-8 shadow-lg">
                     <Fade className="px-lg-5 " duration={500} right >
-                    <div className="display5 mt-3 text-center">Title</div>
+                    <div className="display5 mt-3 text-center">Your Idea, Our Execution!!</div>
                         <div className="row px-3 justify-content-center px-lg-4">
                            
-                            <Description my={5} children="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat repellat deleniti tenetur hic cumque, pariatur ab eum. Cum eligendi est facere enim a illo voluptatibus perspiciatis nesciunt dolor libero!"/>
+                            <Description my={5} children="Share your ideas with us, then sit back and relax. Let us transform your idea into your desired end-product, specifically tailored and designed according to your needs and specifications. Experts in our domains, we are committed to client-satisfaction and deliverability."/>
                             
                         <div className="col-lg-12 d-flex justify-content-center mb-3 mt-4">
                             <PricingQuote serviceName="Web Development As A Service" serviceDescription={`${phase}, ${mobile?" Mobile":""} ${web?" Web":""} ${ai?" AI&ML":""} ${(functionalities.length>1)?",Functionalities : "+functionalities.slice(1,).join(";"):""} ${industry} `} button ></PricingQuote>
