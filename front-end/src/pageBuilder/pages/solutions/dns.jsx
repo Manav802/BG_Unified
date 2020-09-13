@@ -34,7 +34,7 @@ export default [
                 width: ["100%","100%","100%",1/2, 5/12],
                 type: "content",
                 data: [{
-                    title: "For a stronger Web Identity",
+                    title: "Mark your Presence over the Web",
                     textAlign: "left",
                     fontSize: ["lg","xl"],
                     titleSize: [40,40,48],
