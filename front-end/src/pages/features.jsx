@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { Image } from "@chakra-ui/core";
+import { Heading, Image, Text } from "@chakra-ui/core";
 function features() {
   return (
     <div className="features overflow-hidden">
@@ -24,15 +24,7 @@ function features() {
         <div className="container mt-md-5 pt-md-5 pt-3 mt-3">
           <div className="row p-3">
             <div className="col-md-5">
-              <div className="display3">Our Features</div>
-              <p
-                className="NunitoSans-SemiBold mr-1 pr-5"
-                style={({ fontsize: "20px" }, { opacity: 0.8 })}
-              >
-                Your go-to partner for all hosting business solutions and
-                services that deliver value and enable solid corporate growth.
-              </p>
-              <div className="display5 mt-lg-5" style={{ paddingTop: 120 }}>
+              <div className="display5">
                 <span className="badge badge-pill my-2 badge-danger">1</span>{" "}
                 <br />
                 Efficient Infrastructure
@@ -50,8 +42,8 @@ function features() {
                 when required.
               </p>
             </div>
-            <div className="col-lg-5 col-md-6 offset-lg-1 mt-lg-5 pt-lg-0 mt-5 pt-5 d-none d-md-block">
-              <Image src="/assets/images/features/vectors/network_design.png" />
+            <div className="col-lg-5 col-md-6 offset-lg-1  d-none d-md-block">
+              <Image height="448px" src="/assets/images/features/vectors/network_design.png" />
             </div>
           </div>
         </div>
@@ -90,20 +82,15 @@ function features() {
       <div className="container my-lg-5 py-lg-5 my-md-4 py-md-4 pt-2 mt-2">
         <div className="row no-gutters p-3">
           <div className="col-md-5 align-self-end">
-            <div className="display5 ">
-              <span className="badge badge-pill my-2 badge-danger">3</span>{" "}
-              <br />
+            <Heading fontFamily="Nexa Bold" size="2xl" mb={4}>
               Multiple Data Center Locations
-            </div>
-            <p
-              className="NunitoSans-SemiBold mt-1 pr-lg-5"
-              style={({ fontsize: "20px" }, { opacity: 0.8 })}
-            >
+            </Heading>
+            <Text fontSize="lg" fontWeight="600" opacity=".7">
               7 to be precise including Equinix SY3, SY4, ME1, LD3, Solarix,
               Auckland, Airtrunk SYD/ME and GovDC.End-to-End DC network
               infrastructure encompassing server switching. Server consolidation
               and virtualization, high availability & clustering.
-            </p>
+              </Text>
           </div>
           <div className="col mt-lg-5 pt-lg-0 mt-5 pt-5 d-none d-md-block">
             <Image
