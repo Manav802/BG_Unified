@@ -23,9 +23,9 @@ import Offer from "../components/cards/Offer";
 
 const sliderInfo = [
   {
-    title: "Deploy, Scale your business with our security and reliability",
+    title: "Deploy, Scale your Business with our Security and Reliability",
     imgSrc: "/assets/images/backgrounds/data_servers.jpg",
-    subTitle: "Your go-to partner for all hosting business solutions and services that deliver value and enable solid corporate growth.",
+    subTitle: "Your go-to partner for all hosting solutions and services that deliver value and enable solid corporate growth.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
     btnPrimaryLink: "/solutions",
@@ -34,7 +34,7 @@ const sliderInfo = [
   {
     title: "Best Enterprise Services around the globe",
     imgSrc: "/assets/images/backgrounds/world.webp",
-    subTitle: "Your go-to partner for all hosting business solutions and services that deliver value and enable solid corporate growth.",
+    subTitle: "Fast, friendly and delivery oriented services, driven by our commitment to deliver.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
     btnPrimaryLink: "/solutions",
@@ -43,7 +43,7 @@ const sliderInfo = [
   {
     title: "Our Infrastructure on Multiple Goverment Panels",
     imgSrc: "/assets/images/backgrounds/data_center.png",
-    subTitle: "Your go-to partner for all hosting business solutions and services that deliver value and enable solid corporate growth.",
+    subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
     btnPrimaryLink: "/solutions",
@@ -247,7 +247,7 @@ class Landing extends Component {
                     <Heading size="sm" className="text-primary" letterSpacing={1.5} textTransform="uppercase" mb={2}>Our Reach</Heading>
                     <p className="mb-2 display3 text-white">Our Data Center Locations</p>
                     <h6 className="h6 NunitoSans-SemiBold text-white text-justify">
-                      BG Unified Solution specializes in Hosting Solutions and Services.We help clients plan, build, support and manage their IT infrastructure. Currently, we have several DC locations including ME1, LD3, IBM. We have our Data Centre Locations spread out to locations including Auckland, Sydney and Melbourne.
+                      BG Unified Solution specializes in Hosting Solutions and Services. We help clients plan, build, support and manage their IT infrastructure. Currently, we have several DC locations including ME1, LD3, IBM. We have our Data Centre Locations spread out to locations including Auckland, Sydney and Melbourne.
                 </h6>
                   </div>
                 </Fade>
