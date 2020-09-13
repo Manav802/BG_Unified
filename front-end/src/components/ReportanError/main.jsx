@@ -229,9 +229,9 @@ function ErrorForm(props) {
                                                     onChange={onChange}
                                                 />
                                             </FormControl>
-                                            <Box className="row" mt={10}>
+                                            <Box className="row" >
                                                 <div className="col-md-6">
-                                                    <FormControl isRequired>
+                                                    <FormControl isRequired mt={10}>
                                                         <FormLabel htmlFor="email">Email:</FormLabel>
                                                         <Input
                                                             variant="flushed"
@@ -243,7 +243,7 @@ function ErrorForm(props) {
                                                     </FormControl>
                                                 </div>
                                                 <div className="col-md-6">
-                                                    <FormControl  >
+                                                    <FormControl  isRequired mt={10} >
                                                         <FormLabel htmlFor="phone">Contact No.</FormLabel>
                                                         <Input
                                                             type="tel"

@@ -44,7 +44,7 @@ export default [
                 mt: 8,
                 type: "imageGroup",
                 data: {
-                    images: ["/assets/images/icons/brands/mongodb.svg", "/assets/images/icons/brands/firewall.svg", "/assets/images/icons/brands/firewall__1_.svg"],
+                    images: ["/assets/images/icons/brands/cisco_asa.svg", "/assets/images/icons/brands/fortinet.svg", "/assets/images/icons/brands/paoloalto.svg"],
                     px: 3,
                     height: "90px",
                     objectFit: "contain",

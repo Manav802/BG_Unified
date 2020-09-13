@@ -310,7 +310,7 @@ const services = {
         description: " Protect your Web Application with our Web Application Firewall Services, protecting your enterprise online with full durability....",
         illustration: "",
         relatedService: ["SOC As A Service", "Firewall As A Service", "DR As A Service"],
-        conclusion: "Protect your web applications and use a web application firewall. Contact us and let our experts help you!",
+        conclusion: "Protect your web applications with our web application firewall.",
         sections: sections.wafaas
     },
     "webdev": {
