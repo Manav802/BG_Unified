@@ -24,25 +24,25 @@ const Globe = <canvas className="ml-auto mr-auto d-block" id="globe" width="1200
 
 const sliderInfo = [
   {
-    title: "Deploy, Scale your Business with our Security and Reliability",
+    title: "Welcome to BG Unified Solutions",
     imgSrc: "/assets/images/backgrounds/data_servers.jpg",
-    subTitle: "Your go-to partner for all hosting solutions and services that deliver value and enable solid corporate growth.",
+    subTitle: "Your go-to partner for all IT solutions and services that deliver value and enable solid corporate growth.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
     btnPrimaryLink: "/solutions",
     btnSecondaryLink: "/contact"
   },
   {
-    title: "Best Enterprise Services around the globe",
+    title: "Protecting Online Presence of your Business",
     imgSrc: "/assets/images/backgrounds/world.webp",
-    subTitle: "Fast, friendly and delivery oriented services, driven by our commitment to deliver.",
+    subTitle: "Fast, friendly and delivery oriented web services, driven by our commitment of customer satisfaction.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
     btnPrimaryLink: "/solutions",
     btnSecondaryLink: "/contact"
   },
   {
-    title: "Our Infrastructure for Multiple Government Panels",
+    title: "Geographical Redundant Infrastructre at diverse Geo-Locations",
     imgSrc: "/assets/images/backgrounds/data_center.png",
     subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
     btnPrimaryText: "Explore Now",
