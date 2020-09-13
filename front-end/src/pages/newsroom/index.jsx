@@ -7,6 +7,7 @@ import Section from "../../pageBuilder/Section";
 import Title from "../../pageBuilder/Title";
 import { Heading, Text, Box, InputGroup, InputLeftElement, Button, Icon, Input, Image, Avatar, Badge, Flex, Grid, MenuList, Menu, MenuButton } from "@chakra-ui/core";
 import {dynamicSearch} from "../../../public/assets/js/searchFunctions"
+import { Divider } from "@chakra-ui/core";
 
 function Newsroom(){
     const [category, setCategory] = React.useState("All")
@@ -53,7 +54,8 @@ function Newsroom(){
                 <Button width="100%" bg="light.500" color={category === "Updates" ? "primary.500" : "dark.500"} justifyContent="start" onClick={() => setCategory("Updates")}>Updates</Button>
               </Box>
               <Box width="100%" px={3}>
-                {newsroom.map(blog =>{if(blog.category === category || category === "All") return(
+                {newsroom.map(blog =>{if(blog.category === category || category === "All") return(<>
+                  <Divider />
                 <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}><Box as="a" fontWeight="500">
                   <CardWithImage
                   src={blog.image}
@@ -74,7 +76,11 @@ function Newsroom(){
                 </CardWithImage>
                 </Box>
                 </Link>
+                
+                </>
+
                 )})}
+                <Divider />
               </Box>
               </Grid>
         </Section>
