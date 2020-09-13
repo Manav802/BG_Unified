@@ -1,6 +1,6 @@
 const definations = [
     {
-        title: "Definations",
+        title: "Definitions",
         titleSize: "lg",
         text: "In this agreement unless the context otherwise requires:",
     },
