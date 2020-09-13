@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse, ModalBody,
+    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse, ModalBody, List
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import deviceList from '../../deviceDetect.js';
@@ -210,9 +210,11 @@ function ErrorForm(props) {
                                             </FormControl>
                                             <FormControl mt={10} isRequired>
                                                 <FormLabel>Operating system you were using:</FormLabel>
-                                                <Select name="operatingsystem" value={form.operatingsystem} onChange={onChange} variant="flushed">
-                                                    {deviceList.os.map(item => <option value={item}>{item}</option>)}
-                                                </Select>
+                                                <Input list="os" listStylePos="inside" name="operatingsystem" value={form.operatingsystem} onChange={onChange} variant="flushed"></Input>
+                                                <datalist id="os">
+                                                    {deviceList.os.map(item => <option value={item}></option>)}
+                                                </datalist>
+
                                             </FormControl>
                                             <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(2)}>Next</Button>
                                         </TabPanel>
