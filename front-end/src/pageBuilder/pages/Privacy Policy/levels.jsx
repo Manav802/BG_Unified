@@ -1,4 +1,4 @@
-const servicelevels = [
+const levels = [
     {
         title: "1.1 Your Privacy is importnat to Us ",
         titleSize: "lg",
