@@ -11,7 +11,7 @@
     }
     &-image{
         animation-name: blur;
-        animation-duration: 5s;
+        animation-duration: 8s;
         animation-iteration-count: infinite;
     }
     .slider{
@@ -43,7 +43,7 @@
     }
     .slider-text{
         animation-name: sliderText;
-        animation-duration: 5s;
+        animation-duration: 10s;
         animation-iteration-count: infinite;
     }
     @keyframes sliderText {
