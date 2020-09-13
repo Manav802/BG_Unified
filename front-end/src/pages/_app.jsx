@@ -68,6 +68,7 @@ export default class MyApp extends App {
       <ThemeProvider theme={customTheme}>
         <Head>
           <script type="text/javascript" src="/assets/js/chatbot.js"></script>
+          
           <link
             rel="shortcut icon"
             href="/assets/images/icons/favicon/bg.ico"

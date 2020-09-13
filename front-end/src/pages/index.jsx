@@ -3,7 +3,6 @@ import Head from "next/head";
 
 import { FaArrowRight, FaPercent } from "react-icons/fa";
 import { Image, Button, Heading, ButtonGroup, Icon, AspectRatioBox, Box, Slide, Flex, Text, CloseButton } from "@chakra-ui/core";
-import CardWithIcon from "../components/cards/CardWithIcon";
 import FeatureCard from "../components/cards/FeatureCard";
 import CaseStudy from "../components/case_study/CaseStudy";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
@@ -20,6 +19,8 @@ import Service from "../components/cards/Service";
 import Container from "../pageBuilder/Container";
 import Title from "../pageBuilder/Title";
 import Offer from "../components/cards/Offer";
+
+const Globe = <canvas className="ml-auto mr-auto d-block" id="globe" width="1200px" height="1200px"></canvas>
 
 const sliderInfo = [
   {
@@ -42,7 +43,7 @@ const sliderInfo = [
   },
   {
     title: "Our Infrastructure for Multiple Government Panels",
-    imgSrc: "/assets/images/backgrounds/infra.jpg",
+    imgSrc: "/assets/images/backgrounds/data_center.png",
     subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
@@ -90,6 +91,7 @@ class Landing extends Component {
       () => this.tick(),
       5000
     );
+    // document.getElementById('globe-box').innerHTML = `<canvas className="ml-auto mr-auto d-block" id="globe" width="1200px" height="1200px"></canvas>`
   }
 
   componentWillUnmount() {
@@ -107,20 +109,6 @@ class Landing extends Component {
       <div className="landing overflow-hidden">
         <Head>
           <title>BG Unified Solutions</title>
-
-          <script
-            type="text/javascript"
-            src="http://d3js.org/d3.v3.min.js"
-          ></script>
-          <script
-            type="text/javascript"
-            src="http://d3js.org/topojson.v1.min.js"
-          ></script>
-          <script
-            type="text/javascript"
-            src="/assets/js/planetaryjs.min.js"
-          ></script>
-          <script type="text/javascript" src="/assets/js/globe.js"></script>
         </Head>
         <div className="bg-landing bg-dark position-relative">
           {/*  */}
@@ -230,17 +218,11 @@ class Landing extends Component {
             </div>
           </div>
         </Fade>
-        <div className="container-fluid py-5 my-5 position-relative globe-section">
-          <Box top={0} className="globe-container position-absolute">
-            <canvas
-              className="ml-auto mr-auto d-block"
-              id="globe"
-              width="1200px"
-              height="1200px"
-            ></canvas>
-          </Box>
-          <Box className="section">
-            <div className="container">
+        <Section bg="dark.500" py={20}>
+          {/* <Box id="globe-box" top={0} className="globe-container position-absolute">
+            <DynamicComponent></DynamicComponent>
+          </Box> */}
+     
               <div className="row layer-1">
                 <Fade duration={500} cascade distance={"30%"} bottom>
                   <div className="col-lg-12 py-5 d-flex flex-column justify-content-center">
@@ -253,7 +235,7 @@ class Landing extends Component {
                 </Fade>
                 <Fade duration={500} cascade distance={"50%"} left>
                   <div className="col-md-3 col-sm-4 p-2">
-                    <Box boxShadow="md" bg="white" className="hover-effect" borderRadius="sm" p={8}>
+                    <Box boxShadow="md" bg="white" borderRadius="sm" p={8}>
                       <div className="d-flex align-items-center flex-column">
                         <Image src="https://image.flaticon.com/icons/svg/1360/1360975.svg" size="64px"></Image>
                         <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Sydney</Heading>
@@ -261,7 +243,7 @@ class Landing extends Component {
                     </Box>
                   </div>
                   <div className="col-md-3 col-sm-4 p-2">
-                    <Box boxShadow="md" bg="white" className="hover-effect" borderRadius="sm" p={8}>
+                    <Box boxShadow="md" bg="white"  borderRadius="sm" p={8}>
                       <div className="d-flex align-items-center flex-column">
                         <Image src="https://image.flaticon.com/icons/svg/1360/1360902.svg" size="64px"></Image>
                         <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Auckland</Heading>
@@ -269,7 +251,7 @@ class Landing extends Component {
                     </Box>
                   </div>
                   <div className="col-md-3 col-sm-4 p-2">
-                    <Box boxShadow="md" bg="white" className="hover-effect" borderRadius="sm" p={8}>
+                    <Box boxShadow="md" bg="white" borderRadius="sm" p={8}>
                       <div className="d-flex align-items-center flex-column">
                         <Image src="https://image.flaticon.com/icons/svg/1360/1360895.svg" size="64px"></Image>
                         <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Melbourne</Heading>
@@ -278,9 +260,7 @@ class Landing extends Component {
                   </div>
                 </Fade>
               </div>
-            </div>
-          </Box>
-        </div>
+        </Section>
         <div className="landing-benefits pt-5 justify-content-center">
           <div className="col-12 p-0">
             <div className="container p-0">
