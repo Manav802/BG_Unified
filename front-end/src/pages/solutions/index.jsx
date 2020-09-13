@@ -8,7 +8,7 @@ import Title from "../../pageBuilder/Title";
 import { Heading, Text, Box, InputGroup, InputLeftElement, Button, Image, Flex,  Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/core";
 import Service from "../../components/cards/Service";
 import Row from "../../pageBuilder/Row";
-import SVG from "../../components/svg/svg";
+import SVG from "../../components/svg/SVG";
 
 function OurSolutions(){
     return (

@@ -30,14 +30,14 @@ const Matcher = (name,searchTerm) =>{
 
 const ServiceMatcher = (name,searchTerm) =>{
 
-  //Searching in title
+  // Searching whole term in title
   const title = name[1].title
   let k = Math.min(title.length, searchTerm.length);
     for(var i=0; i<k; i++) {
       if( title.toLowerCase().charAt(i) == searchTerm.toLowerCase().charAt(i) && title.toLowerCase().includes(searchTerm.toLowerCase())) return(true);
     }
 
-  //Searching in tags array
+  // Searching whole term in tags
   for(const tag of name[1].tags){
     let l = Math.min(tag.length, searchTerm.length);
     for(var i=0; i<l; i++) {
@@ -45,6 +45,25 @@ const ServiceMatcher = (name,searchTerm) =>{
     }
   }
 
+  //Breaking search term and searching in tags array
+  const searchArray = searchTerm.split(" ")
+  var flag =false;
+  var flagArray = []
+  for(const searchTerm of searchArray){
+    flag = false;
+    
+    //Searching in tags array
+    for(const tag of name[1].tags){
+      let l = Math.min(tag.length, searchTerm.length);
+      for(var i=0; i<l; i++) {
+        if( tag.toLowerCase().charAt(i) == searchTerm.toLowerCase().charAt(i) && tag.toLowerCase().includes(searchTerm.toLowerCase())) {flag= true;}
+      }
+    }
+
+    flagArray.push(flag);
+  }
+
+  if(flagArray.every((x)=>x==true)){return(true)}
   //Not found then
   return(false);
 }

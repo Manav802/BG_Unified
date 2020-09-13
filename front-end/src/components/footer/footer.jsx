@@ -6,7 +6,7 @@ import FeedbackForm from "../Feedback/main";
 import ErrorForm from "../ReportanError/main";
 import Container from "../../pageBuilder/Container";
 import Section from "../../pageBuilder/Section";
-import SVG from "../svg/svg";
+import SVG from "../svg/SVG";
 
 function footer(props) {
   return (
