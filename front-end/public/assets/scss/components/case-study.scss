@@ -49,8 +49,10 @@
   .image{
     @media (max-width: 880px) {
       height: 360px;
+      padding: 0px !important;
+      margin: 0px !important;
     }
-    @media (max-width: 1080px) {
+    @media (max-width: 1080px) and (min-width: 880px) {
       height: 400px;
       padding: 0px !important;
       margin: 0px !important;
