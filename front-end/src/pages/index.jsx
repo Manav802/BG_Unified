@@ -376,7 +376,13 @@ class Landing extends Component {
           <CaseStudy caseStudyDetails={CASESTUDY} link="read" />
         </Section>
         <Section containerWidth={["100%", "90%"]} className="brands">
-          <ImageGroup objectFit="contain" images={["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png",  "/assets/images/brands/huawei.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/datacom.png", "/assets/images/brands/airtrunk.png", "/assets/images/brands/microfocus.svg", "/assets/images/brands/nsw_gov.png", "/assets/images/brands/victoria.png", ]} minW={["119.5px", "135.5px", "175px", "231px", "283px"]} width="auto" />
+          <Flex wrap="wrap" justify="center">
+          {["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png",  "/assets/images/brands/huawei.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/datacom.png", "/assets/images/brands/airtrunk.png", "/assets/images/brands/microfocus.svg", "/assets/images/brands/nsw_gov.png", "/assets/images/brands/victoria.png", ].map(image => (
+            <>
+              <Image src={image} width="192px" height="96px" mx={12} my={6} objectFit="contain"></Image>
+            </>
+          ))}
+          </Flex>
         </Section>
         <Conclusion></Conclusion>
       </div>
