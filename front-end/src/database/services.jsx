@@ -205,7 +205,7 @@ const services = {
         slogan: "Our Proxy, Your Way!!",
         bgImage: "",
         category: "Cyber Security Services",
-        icon: "/assets/images/icons/monotone/Proxy.svg",
+        icon: "/assets/images/icons/monotone/proxy.svg",
         color: "#451F55",
         tags: ["proxy", "servers", "low-latency", "services"],
         description: "Just redirect your traffic to our Proxy Service either by DNS or other custom solution to our public Proxy Service and then create a record to reroute your traffic to your application behind the firewall.",
