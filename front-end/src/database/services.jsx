@@ -318,7 +318,7 @@ const services = {
         slogan: "Design that speeds up performance",
         bgImage: "",
         category: "Development Services",
-        icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
+        icon: "/assets/images/icons/monotone/webdev.svg",
         color: "#E4572E",
         tags: ["webdev", "web", "design", "development", "reactjs"],
         description: "Get your website ready with high speed performance, and attractive motion + visual design.",
