@@ -1,0 +1,26 @@
+
+.newsroom {
+    
+    .page-content {
+        text-align: center;
+
+        .centered-content {
+            width: 1440px;
+            margin: auto;
+            text-align: justify;
+
+            @media screen and (max-width:1560px) {
+                width: 1024px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                width: 100%;
+            }
+
+            @media (max-width:992px) and (min-width:700px) {
+                width: 698px;
+            }
+        }
+        margin-top: 100px;
+    }
+}

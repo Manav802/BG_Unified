@@ -41,7 +41,7 @@ function search(props) {
                     <div className="col-xl-10 offset-xl-1">
                         <InputGroup>
                             <InputLeftElement p={[8,12]}  children={<Icon name="search" color="gray.300" size={["20px","24px"]} />} />
-                            <Input type="text" py={[8,12]}  onChange={handleValue} value={text}  variant="flushed" focusBorderColor="primary.500" color="primary.500" fontWeight="700" fontSize={["2xl","32px"]} pl={24} placeholder="Search" />
+                            <Input type="text" py={[8,12]}  onChange={handleValue} value={text}  variant="flushed" focusBorderColor="primary.500" color="primary.500" fontWeight="700" fontSize={["2xl","32px"]} pl={[16,24]} placeholder="Search" />
                         </InputGroup>
                     </div>
                 </div>

@@ -1,0 +1,308 @@
+{
+    "pages": [
+        {
+            "name": "Our Solutions",
+            "description": "We cover almost 90% technology domain required by your business.",
+            "tags": ["solutions", "fix", "infrastructure","services"],
+            "link": "/solutions"
+        },
+        {
+            "name": "Newsroom",
+            "description": "",
+            "tags": ["articles","news", "newsroom", "popular", "latest"],
+            "link":"/newsroom"
+        },
+        {
+            "name": "Our Features",
+            "description": "Your go-to partner for all hosting business solutions and services that deliver value and enable solid corporate growth.",
+            "tags": ["features","new", "infrastructure", "secure", "enteprise", "data", "center"],
+            "link": "/features"
+        },
+        {
+            "name": "Contact Us",
+            "description": "Your go-to partner for all hosting business solutions and services that deliver value and enable solid business growth.",
+            "tags": ["help","contact", "howtocontact", "email", "phone", "address"],
+            "link": "/contact"
+        },
+        {
+            "name": "About Us",
+            "description": "BG Unified Solutions Pty Ltd Team consists of experts in different technologies like Security, Voice and a broad range of additional skills including F5 Load Balancers, WAN Optimization, WAN, Cloud Technologies and Cisco Technologies...",
+            "tags": ["aboutus","know", "who"],
+            "links": "/about"
+        }
+    ],
+
+    "services": [
+        {
+            "name": "Application Development As A Service",
+            "description": "BG Unified Solutions provides services in the area of Web, Mobile and Enterprise Application Development.",
+            "sub-description": "Our team of technical and functional experts can help you in new Application Development, Modernizing and Supporting existing applications.",
+            "tags": ["application", "app", "dev", "development", "scalability", "platform", "independence", "client", "flexibility"],
+            "price": "",
+            "popular": true,
+            "icon": "/assets/images/icons/monotone/AppDev.svg",
+            "bgcolour": "#ED1C24", 
+            "link": "/services/application-dev"
+        },
+        {
+            "name": "Architectural Consultancy As A Service",
+            "description": "BG Unified Solution has a team of practising multi-disciplinary architects to baseline current architecture and its shortcomings.",
+            "sub-description": "Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
+            "tags": ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/architectural.svg",
+            "bgcolour": "#235789",
+            "link": "/services/architectural-consultancy"
+        },
+        {
+            "name": "CEX As A Service",
+            "description": "BG Unified Solution has a team of practising multi-disciplinary architects to baseline current architecture and its shortcomings.",
+            "sub-description": "Advanced Solution providing private seamless, and on-demand connections to many clouds as well as networks.",
+            "tags": ["cloud", "exchange", "connectivity", "express routes", "office 365", "AWS", "azure"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/CEX.svg",
+            "bgcolour": "#F1D302",
+            "link": "/services/cloud-exchange"
+        },
+        {
+            "name": "Cloud Logging As A Service",
+            "description": "Log central services over the internet. Collect, Store, and report the various data and underlying threats. Add the shield to protect your business reputation.",
+            "sub-description": "Add the shield to protect your business reputation. Application and system logs ingestions.",
+            "tags": ["cloud", "logging", "log", "threats", "log management", "troubleshooting"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/CloudLogging.svg",
+            "bgcolour": "#020100",
+            "link": "/services/cloud-logging"
+        },
+        {
+            "name": "Contact Center As A Service",
+            "description": "CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools",
+            "sub-description": "We have deep contracts with all major Telcos including AAPT, Telstra and Optus.",
+            "tags": ["customer", "Support", "CSaaS", "Customer Experience", "Productivity", "Securing", "Data"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/ContactCenterAsAService.svg",
+            "bgcolour": "#6A041D",
+            "link": "/services/customer-support"
+        },
+        {
+            "name": "DR As A Service",
+            "description": "Assist in DR strategy, evaluate threat models, select technologies, prototype multi-site or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.",
+            "sub-description": "Prototype multisite or multi-cloud DR strategies. Test rollback mechanisms and measure robustness using failure driven tests.",
+            "tags": ["Disaster", "Recovery", "Management", "Deployment", "Flexible", "Non-Disruptive"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/DRAsAService.svg",
+            "bgcolour": "#3B3561",
+            "link": "/services/disaster-recovery"
+        },
+        {
+            "name": "DNS As A Service",
+            "description": "Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service with assured low latency and high availability.",
+            "sub-description": "With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users.",
+            "tags": ["dns", "DNS", "domain", "name", "cost", "effective", "Concurrency", "Scalability", "TLD servers"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/DNSasAService.svg",
+            "bgcolour": "#06BCC1",
+            "link": "/services/dns"
+        },
+        {
+            "name": "Firewall As A Service",
+            "description": "Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA.",
+            "sub-description": "In this digital era, when technology has proved to be a boon, small, medium and large-sized businesses are majorly dependent upon networking,connections and interactions. To help these operations get performed smoothly and efficiently, with full security, to eradicate security breach in your network. Firewalls block malicious connections being established inside a network and keeps data and information safe within a network.",
+            "tags": ["Firewall", "Security", "protection"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/.svg",
+            "bgcolour": "#6A0136",
+            "link": "/services/firewall"
+        },
+        {
+            "name": "Infrastructure As A Service",
+            "description": "Server consolidation and virtualization, high availability & clustering, desktop virtualization, and server management.",
+            "sub-description": "Infrastructure includes more than 10000 Cores CPU, 10TB RAM.",
+            "tags": ["computing", "infrastructure", "asset", "utilization", "server", "consolidation", "virtualization", "Geographical Redundant Storage"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/InfrastructureIcon.svg",
+            "bgcolour": "#51CB20",
+            "link": "/services/infra"
+        },
+        {
+            "name": "Platform As A Service",
+            "description": "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions.",
+            "sub-description": "Huawei 10G core switching offering a high-speed spine and leaf network.",
+            "tags": ["cloud", "platform", "service", "infrastructure", "DC Interconnect"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
+            "bgcolour": "#F76F8E",
+            "link": "/services/platform"
+        },
+        {
+            "name": "Proxy As A Service",
+            "description": "Just redirect your traffic to our Proxy Service either by DNS or other custom solution to our public Proxy Service.",
+            "sub-description": "It is a cost-effective way to make your applications and services available to your users.",
+            "tags": ["proxy", "servers", "low-latency", "services"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/Proxy.svg",
+            "bgcolour": "#451F55",
+            "link": "/services/proxy-server"
+        },
+        {
+            "name": "SD-WAN As A Service",
+            "description": "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange",
+            "sub-description": "We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
+            "tags": ["SD-WAN", "sd wan", "Optimization", " VMware VDI"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/SD-Wan.svg",
+            "bgcolour": "#3B0086",
+            "link": "/services/sd-wan"
+        },
+        {
+            "name": "SIP As A Service",
+            "description": "SIP as a Service Infrastructure includes more than 15 Cisco Unified border Elements with 1600 SIP channels spanned across multiple DC locations.",
+            "sub-description": "Elements with 1600 SIP channels spanned across multiple DC locations with DUAL Exchange Homing.",
+            "tags": ["SIP", "Connectivity", "Service Infrastructure", "cisco unified"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/SIP.svg",
+            "bgcolour": "#290628",
+            "link": "/services/sip-connectivity"
+        },
+        {
+            "name": "Storage As A Service",
+            "description": "Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management.",
+            "sub-description": "The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage.",
+            "tags": ["storage", "blocks", "consolidation", "virtualization", "backup", "recovery", "archive"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/StorageAsAServiceIcon.svg",
+            "bgcolour": "#0091AD",
+            "link": "/services/storage-unit"
+        },
+        {
+            "name": "Unified Communications As A Service",
+            "description": "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring.",
+            "sub-description": "N+N Redundant components fulfilling all Unified Collaboration requirements of your business.",
+            "tags": ["UCaaS", "unified", "communications", "cisco", "avaya", "unity", "collaboration", "telepresence", "workforce", "optimisation"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/UCAsAService.svg",
+            "bgcolour": "#B2ABF2",
+            "link": "/services/ucaas"
+        },
+        {
+            "name": "Web Hosting As A Service",
+            "description": "Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package.",
+            "sub-description": "A complete website monitoring is included in the package. Load balancing can also be added as an option if required.",
+            "tags": ["web", "hosting", "host", "web server", "APACHE", "website"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/WebHosting.svg",
+            "bgcolour": "#06D6A0",
+            "link": "/services/web-hosting"
+        },
+        {
+            "name": "Wireless As A Service",
+            "description": "The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers.",
+            "sub-description": "The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers.",
+            "tags": ["wireless", "wifi", "clusters", "networks"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/WirelessAsAService.svg",
+            "bgcolour": "#E4572E",
+            "link": "/services/wireless-networks"
+        },
+        {
+            "name": "Backup As A Service",
+            "description":"BG Unified Solution provides reliable, secure & cost-effective managed service for backup and recovery of all types of data.",
+            "tags": ["backup", "storage", "online-cloud", "cloud"],
+            "price": "",
+            "icon": "/assets/images/icons/monotone/BackupAsAService",
+            "bgcolour": "#0267C1",
+            "link": "/services/backup"
+        }
+    ],
+
+    "articles":[
+        {
+            "name": "BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW",
+            "description": "BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW in the annual excellence awards. We are proud in getting recognized. We deliver what we promised to our customers. BGUS team have also successfully upgrade a cluster of SBC in IBMDC Auckland without any downtime. It’s amazing to see team’s enthusiasm…",
+            "short-description": "BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW in the annual excellence awards. We are proud in getting recognized...",
+            "date-published": "",
+            "category": "Achievement",
+            "tags":[]
+        },
+        {
+            "name": "Cisco ASA 5520 to 5525X with FirePower Services",
+            "description": "Migrating and merging of two Cisco ASA 5520 & 5505 into a new Cisco ASA 5525X with FirePower Services. Upgraded the configuration from 8.2.5 to 9.2.2(4) with FirePower Module running 6.0. Implemented the Device Center and all policies to block the Malwares, Adult Contents, Gambling and Online Gaming. Total downtime was less than 10 minutes with all remote VPN sites migrated in max 20 minutes. Client filled up the Referee Report for BG Unified Solutions to get Federal Government Clearance.",
+            "short-description": "Migrating and merging of two Cisco ASA 5520 & 5505 into a new Cisco ASA 5525X with FirePower Services. Upgraded the configuration from 8.2.5 to 9.2.2(4) with FirePower Module running 6.0...",
+            "date-published": "",
+            "category": "",
+            "tags":["fierpower","cisco"]
+        },
+        {
+            "name": "BG Unified Solutions have added 7 Cisco Blade Chassis",
+            "description": "BG Unified Solutions have added 7 Cisco Blade Chassis with fully populated B230 Blades with 40 Cores CPU and 256GB RAM along with a brand new Hitachi T1 Storage in Equinix Melbourne. We are now in the process of procuring 16 racks cage in Equinix SY3 and ME1 to become a storage hub for all of the existing BGUS members of the family and new members. These two cages will be purely assigned to storage. We have more than 16 NETAPP racks ready to go in these cages. BGUS Cloud Services will be launched very soon with the collaboration of Redhat and Cumulus Networks",
+            "short-description:": "BG Unified Solutions have added 7 Cisco Blade Chassis with fully populated B230 Blades with 40 Cores CPU and 256GB RAM along with a brand new Hitachi T1 Storage in Equinix Melbourne...",
+            "date-published": "",
+            "category": "Latest",
+            "link": "",
+            "tags":[]
+        },
+        {
+            "name": "Successfull up gradation of Mega Cisco Call Manager cluster from version 10.5.1 to 12.0.1.SU1",
+            "description": "BG Unified Solutions team have successfully upgraded its mega Cisco Call Manager cluster from version 10.5.1 to 12.0.1.SU1. This was not an easy job. With so many dependencies/clients, making it happen without any downtime to any of the end users. All UCCX applications, CUC and CUPS integrations tested. CDR reporting is working absolutely normal. Informacast is working perfectly fine. Such an amazing job. The whole solution got backed up before and after upgrade to handle any catastrophic issues after the upgrade. Well done team ! ! ! !",
+            "short-description:": "BG Unified Solutions team have successfully upgraded its mega Cisco Call Manager cluster from version 10.5.1 to 12.0.1.SU1. This was not an easy job...",
+            "date-published": "",
+            "category": "Latest",
+            "link": "",
+            "tags":[]
+        },
+        {
+            "name": "BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW",
+            "description": "",
+            "short-description:": "",
+            "date-published": "",
+            "category": "Latest",
+            "link": "",
+            "tags":[]
+        },
+        {
+            "name": "BGUS Service Portfolio Update",
+            "description": "We have added few more services in our portfolio recently. 3CXaaS - **3cx.bgunifiedsolutions.net** : Another UCaaS platform in addition to Cisco and Avaya - which offers all advantages of 3CX platform to the BGUS end customers. The team is working with the 3CX Gold Partners to containerize the 3CXaaS offering to make it highly scalable. We are offering Fanvil C400/C600 video handsets as a standard offering to the end customer. The solution provides all collaboration functionalities as offered by Cisco and Avaya. ARCaaS - Logging Cloud Connect : A remote logging facility to the BGUS end customers to save their logs over the internet to the highly secured storage platform within the BGUS data centers. The solution is offered using MicroFocus ArcSight and is the first step towards offering SOCaaS. A highly available solution to the end customers and taking their pain away for storing their critical logs.",
+            "short-description:": "We have added few more services in our portfolio recently. 3CXaaS - **3cx.bgunifiedsolutions.net** : Another UCaaS platform in addition to Cisco and Avaya...",
+            "date-published": "",
+            "category": "Popular",
+            "link": "",
+            "tags":[]
+        },
+        {
+            "name": "Business Operations during COVID-19",
+            "description": "The difficult COVID-19 era has also brought out how strong partnerships create lasting value. BG Unified Solutions and Huawei Australia have been working collaboratively to provide all Australians with solid and comprehensive IT solutions, keeping business operations running efficiently during the most challenging times. We are here to help in this tough time. Please do not hesitate to ask for help, whether you need VDI, UC, Storage, Managed Firewall or anything that will help you to keep carrying on your work remotely and keep you & your family safe in this time! ! !",
+            "short-description:": "The difficult COVID-19 era has also brought out how strong partnerships create lasting value. BG Unified Solutions and Huawei Australia have been working collaboratively...",
+            "date-published": "",
+            "category": "Popular",
+            "link": "",
+            "tags":[]
+        },
+        {
+            "name": "Complete VDI/RDS As A Service",
+            "description": "We feel proud in announcing ConstantVDI service offering, which will offer you a complete VDI/RDS As A Service Solution using VMWARE, Parallels and Acronis Cyber Infrastructure. The solution will be tailored to your requirements. We have done an extensive POC using Parallels and VMWARE using different clients including Windows 10, iPhone, iPAD and Android from different locations in Australia, NZ, UAE and China. SOE engineers will work with you to create a golden image for VDI deployment. Session based RDS will be deployed using high performance RDS servers (24vCPU's / 128GB RAM / 10G Network Connectivity). Daily / Hourly backups using Acronis will give you a peace of mind. Solution is fully integrated with other Microsoft Office products like teams and office 365.",
+            "short-description:": "We feel proud in announcing ConstantVDI service offering, which will offer you a complete VDI/RDS As A Service Solution using VMWARE, Parallels and Acronis Cyber Infrastructure...",
+            "date-published": "",
+            "category": "Popular",
+            "link": "",
+            "tags":[]
+        },
+        {
+            "name": "",
+            "description": "",
+            "short-description:": "",
+            "date-published": "",
+            "category": "",
+            "link": "",
+            "tags":[]
+        },
+        {
+            "name": "",
+            "description": "",
+            "short-description:": "",
+            "date-published": "",
+            "category": "",
+            "link": "",
+            "tags":[]
+        }
+    ]
+} 
