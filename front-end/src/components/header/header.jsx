@@ -18,12 +18,11 @@ import {
 import services from "../../database/services"
 import { FaInfoCircle, FaNewspaper, FaCommentAlt, FaBriefcase } from "react-icons/fa"
 import { IoIosCall } from "react-icons/io"
-import Flip from 'react-reveal/Flip';
+import newsroom from "../../database/newsroom"
 import Fade from 'react-reveal/Fade';
 import Link from 'next/link';
 import Router from 'next/router';
 import Container from '../../pageBuilder/Container';
-import SVG from '../svg/svg';
 
 function header(props) {
     const initRef = React.useRef();
@@ -60,7 +59,7 @@ function header(props) {
                                     <Button variant="unstyled" leftIcon={IoIosCall} className="NunitoSans-Bold link p-2 mt-1 d-none d-lg-flex"> <a href="tel:1300002487" className="link">1300 00 BGUS</a> </Button>
                                 </PopoverTrigger>
                                 <PopoverContent zIndex={4} p={6}>
-                                    <Image src="/assets/images/animations/phone-dial.gif" className="phone-dial"></Image>
+                                    <Image src="/assets/images/animations/phone-dial.gif" style={{filter:"brightness(1.1) hue-rotate(200deg)"}}></Image>
                                 </PopoverContent>
                             </Popover>
                             {/* <Search toggle ={() => setSearch(!search)} searching={search}></Search> */}
@@ -185,16 +184,14 @@ function header(props) {
                                             What's New
                                     </h5>
                                         <WhatsNew
-                                            image="https://www.bgunifiedsolutions.net/wp-content/uploads/2016/11/blog4.jpg"
-                                            heading="BG Unified Solutions got nominated for two awards"
-                                            text="BG Unified Solutions got nomination ..."
-                                            link="/blogs/3-bg-unified-solutions-got-nominated-for-two-awards-under-service-and-collaboration-within-revenue-nsw"
+                                            image={newsroom[0].image}
+                                            heading={newsroom[0].title}
+                                            link={newsroom[0].link}
                                         />
                                         <WhatsNew
-                                            image="https://www.bgunifiedsolutions.net/wp-content/uploads/2016/11/blog5.jpg"
-                                            heading="Successfull upgradation Mega Cisco Call Manager"
-                                            text="BG Unified Solutions team have successfully upgraded its  ..."
-                                            link="/blogs/2-successfull-up-gradation-of-mega-cisco-call-manager-cluster-from-version-10.5.1-to-12.0.1.su1"
+                                            image={newsroom[1].image}
+                                            heading={newsroom[1].title}
+                                            link={newsroom[1].link}
                                         />
                                     </div>
                                 </div>

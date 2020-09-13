@@ -3,10 +3,23 @@ import Slider from "react-flickity-component";
 import CardWithAction from "../components/cards/CardWithAction";
 import Team from "../components/cards/team";
 import { FaArrowRight } from "react-icons/fa";
-import { Box } from "@chakra-ui/core";
+import { Box, Flex, Heading, Text, Image } from "@chakra-ui/core";
 import Head from "next/head";
 import Fade from 'react-reveal/Fade';
+import Section from "../pageBuilder/Section";
+import Title from "../pageBuilder/Title";
 import MyCount from "../components/Countup/main";
+
+const timeline = {
+  2013: "Founded and BG Unified Solutions Pty Ltd as a team providing IT solutions to the clients focusing on customer satisfaction and deliverability.",
+  2014: "F5 Authorized Partners, CISCO Premier Partner, CISCO Advanced Collaboration, Architecture Specialized Partner, Palo Alto Authorized Partners.",
+  2015: "Nimble Storage Partners, NetAPP Partner, GENESYS Collaboration",
+  2016: "Technology migration to Next-Generation Firewalls, UCaaS, Wireless, Telepresence and Storage.",
+  2017: "Presence in London, offering all the services in our portfolio including, UCaaS, SaaS, IaaS, WiaaS and FaaS",
+  2018: "Received BTS Excellence Award in recognition of Excellent Service by the NSW Government.",
+  2019: "Built our own Logging Cloud Connect Product, Newly deployed RDS/VDIaaS Solution into its portfolio as Workstation Service.",
+  2020: "DNS As A Service using a hybrid Windows, Red Hat Linux andInfoblox DNS Servers",
+}
 
 class about extends Component {
   constructor(props) {
@@ -33,94 +46,45 @@ class about extends Component {
               type="image/x-icon"
             />
           </Head>
-          <div className="position-absolute w-100 overflow-hidden background-svg">
-            <img
-              className="w-100"
-              src="/assets/images/backgrounds/dots_circle.jpg"
-            />
-          </div>
-          <div className="page-header">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-4 offset-lg-4 text-center justify-content-center">
-                  <h1 className="display3">About Us</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="section pt-0">
+          <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
+            <Image zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
+            <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Know More</Heading>
+            <Title zIndex="100" fontSize={["44px","64px"]}>About Us</Title>
+        </Section>
             <div className="container-fluid p-0 py-5">
-              <div className="row m-0">
-                <div className="slider-offset p-3"></div>
-              </div>
-
               <Slider
                 className="timeline"
                 flickityRef={(c) => (this.flkty = c)}
                 options={{
                   freeScroll: true,
                   pageDots: false,
+                  prevNextButtons: false,
                   contain: true,
                   draggable: true,
-                  adaptiveHeight: false,
                 }}
               >
-                <div className="slider-offset"></div>
-                <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
-                  <CardWithAction title="2020">
-                    DNS As A Service using a hybrid Windows, Red Hat Linux and
-                    Infoblox DNS Servers
-                  </CardWithAction>
+                <div className="slider-offset">
+                  <Flex justify="center" align="center" height="96px"><Box width="100%" height="4px" bg="gray.200"></Box></Flex>
                 </div>
-                <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
-                  <CardWithAction title="2019">
-                    Built our own Logging Cloud Connect Product, Newly deployed
-                    RDS/VDIaaS Solution into its portfolio as Workstation
-                    Service.
-                  </CardWithAction>
-                </div>
-                <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
-                  <CardWithAction title="2018">
-                    Received BTS Excellence Award in recognition of Excellent
-                    Service by the NSW Government.
-                  </CardWithAction>
-                </div>
-                <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
-                  <CardWithAction title="2017">
-                    Presence in London, offering all the services in our
-                    portfolio including, UCaaS, SaaS, IaaS, WiaaS and FaaS
-                  </CardWithAction>
-                </div>
-                <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
-                  <CardWithAction title="2016">
-                    Technology migration to Next-Generation Firewalls, UCaaS,
-                    Wireless, Telepresence and Storage.
-                  </CardWithAction>
-                </div>
-                <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
-                  <CardWithAction title="2015">
-                    Nimble Storage Partners, NetAPP Partner, GENESYS
-                    Collaboration
-                  </CardWithAction>
-                </div>
-                <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
-                  <CardWithAction title="2014">
-                    F5 Authorized Partners, CISCO Premier Partner, CISCO
-                    Advanced Collaboration, Architecture Specialized Partner,
-                    Palo Alto Authorized Partners.{" "}
-                  </CardWithAction>
-                </div>
-                <div className="col-xl-3 col-lg-4 col-md-7 p-3 my-3">
-                  <CardWithAction title="2013">
-                    Founded and BG Unified Solutions Pty Ltd as a team providing
-                    IT solutions to the clients focusing on customer
-                    satisfaction and deliverability.{" "}
-                  </CardWithAction>
+                {Object.entries(timeline).reverse().map(notes => (<Box pos="relative">
+                  <Flex h="300px">
+                    <Flex justify="center" align="center" width="160px" height="96px"><Box width="100%" height="4px" bg="gray.200"></Box></Flex>
+                    <Flex justify="center" align="center" rounded="50%" borderWidth={5} borderWidthColor="gray.200" size="96px" color="white" bg="primary.500">
+                      <Heading size="md" fontFamily="Nexa Bold">{notes[0]}</Heading>
+                    </Flex>
+                    <Flex justify="center" align="center" width="160px" height="96px"><Box width="100%" height="4px" bg="gray.200"></Box></Flex>
+                  </Flex>
+                  <Box pos="absolute" top="96px" width="100%" px={6} mt={8}>
+                      <Text fontSize="lg" textAlign="center">
+                      {notes[1]}
+                      </Text>
+                  </Box>
+                </Box>))}
+                <div className="slider-offset">
+                  <Flex justify="center" align="center" height="96px"><Box width="100%" height="4px" bg="gray.200"></Box></Flex>
                 </div>
               </Slider>
             </div>
-          </div>
-          <div className="section pt-0">
             <div className="container">
               <div className="row">
                 <div className="col-lg-10 offset-1">
@@ -145,7 +109,7 @@ class about extends Component {
                     </div>
                   </div>
                   <div className="display6 py-3">Our Mission</div>
-                  <p className="">
+                  <Text fontSize="xl">
                     BG Unified Solutions Pty Ltd Team consists of experts in
                     different technologies like Security, Voice and a broad
                     range of additional skills including F5 Load Balancers, WAN
@@ -153,8 +117,8 @@ class about extends Component {
                     Technologies. As experts in different technologies, our
                     focus is to provide competitive and affordable Unified
                     Solutions to our clients.
-                  </p>
-                  <p>
+                    </Text>
+                    <Text fontSize="xl" mt={3}>
                     We majorly deal with Cisco Voice / Video Projects, WAN
                     Implementations, DC Design and Implementation. Our goal is
                     to make our customers more competitive and achieve higher
@@ -163,11 +127,10 @@ class about extends Component {
                     founded in 2013, provides national and international IT
                     Services to some of Australia's leading companies, who use
                     information technology to improve their business results.
-                  </p>
+                    </Text>
                 </div>
               </div>
             </div>
-          </div>
           <div className="section">
             <div className="container">
               <div className="p-3 text-center d-flex flex-column">
