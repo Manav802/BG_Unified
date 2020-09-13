@@ -1,0 +1,31 @@
+.max-height1{
+    max-height:360px;
+}
+.max-height2 {
+    max-height: 320px;
+}
+
+.rcw-launcher{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: $color-primary !important;
+}
+
+.rcw-conversation-container > .rcw-header {
+    background: $color-primary !important;
+  }
+  
+.rcw-client{
+    .rcw-message-text{
+        background: $color-primary !important;   
+        color: white !important;
+    }
+}
+
+.truncate-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  

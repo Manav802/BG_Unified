@@ -30,9 +30,11 @@ const CustomRadio = React.forwardRef((props, ref) => {
         <Button
             className="my-1"
             flexDirection="column"
-            padding={10}
+            padding={16}
+            color={isChecked ? "white" : "gray.400"}
             fontSize={["13px", "14px", "16px"]}
             ref={ref}
+            borderRadius={12}
             variant={isChecked ? "solid" : "outline"}
             variantColor={isChecked ? "primary" : "gray.300"}
             aria-checked={isChecked}
@@ -58,7 +60,7 @@ function WebDevPricing(props) {
 
     
     return (
-        <div id="pricing" className="container">
+        <Box overflow="hidden" boxShadow="xl" rounded={12} id="pricing">
 
             {page == 1 &&    
                 <div className="px-lg-4 py-5 rounded-8 shadow-lg">
@@ -78,19 +80,19 @@ function WebDevPricing(props) {
                             >
                                 <CustomRadio value="Planning">
                                     <span className="d-flex pb-2 justify-content-center text-center">
-                                <FaPencilRuler size="24px"/>
+                                    <Box as={FaPencilRuler} size="48px"></Box>
                                 </span>
                                 Planning
                                     </CustomRadio>
                                 <CustomRadio value={"Design"}>
                                     <span className="d-flex pb-2 justify-content-center text-center">
-                                <FaDrawPolygon size="24px"/>
+                                <FaDrawPolygon size="48px"/>
                                 </span>
                                 Design
                                     </CustomRadio>
                                 <CustomRadio value={"Development"}>
                                     <span className="d-flex pb-2 justify-content-center text-center">
-                                <FaCode size="24px"/>
+                                <FaCode size="48px"/>
                                 </span>
                                 Development
                                     </CustomRadio>
@@ -115,8 +117,11 @@ function WebDevPricing(props) {
                         <div className="col-lg-10 my-3">
                             <div className="row justify-content-center">
                         <Button
-                            className="my-1 p-5 mx-2"
+                            className="my-1 mx-2"
+                            p={16}
                             flexDirection="column"
+                            rounded={12}
+                            color={mobile ? "white" : "gray.400"}
                             fontSize={["13px", "14px", "16px"]}
                             onClick={() => {setMobile(!mobile)}}
                             variant={mobile ? "solid" : "outline"}
@@ -125,13 +130,16 @@ function WebDevPricing(props) {
                         >
                             
                                 <span className="d-flex pb-2 justify-content-center text-center">
-                                <FaMobileAlt size="24px"/>
+                                <FaMobileAlt size="48px"/>
                                 </span>
                                 Mobile
                             </Button>
                             <Button
-                            className="my-1 p-5 mx-2"
+                            className="my-1 mx-2"
+                            p={16}
                             flexDirection="column"
+                            rounded={12}
+                            color={web ? "white" : "gray.400"}
                             fontSize={["13px", "14px", "16px"]}
                             onClick={() => {setWeb(!web)}}
                             variant={web ? "solid" : "outline"}
@@ -139,21 +147,24 @@ function WebDevPricing(props) {
                             aria-checked={web}
                         >
                             <span className="d-flex pb-2 justify-content-center text-center">
-                                <FaGlobe size="24px"/>
+                                <FaGlobe size="48px"/>
                                 </span>
                                 Web
                             </Button>
                             <Button
-                            className="my-1 p-5 mx-2"
+                            className="my-1 mx-2"
+                            p={16}
                             flexDirection="column"
+                            color={ai ? "white" : "gray.400"}
+                            rounded={12}
+                            variant={ai ? "solid" : "outline"}
                             fontSize={["13px", "14px", "16px"]}
                             onClick={() => {setAi(!ai)}}
-                            variant={ai ? "solid" : "outline"}
                             variantColor={ai ? "primary" : "gray.300"}
                             aria-checked={ai}
                         >
                             <span className="d-flex pb-2 justify-content-center text-center">
-                                <FaRobot size="24px"/>
+                                <FaRobot size="48px"/>
                                 </span>
                                 AI/ML
                             </Button>
@@ -243,7 +254,7 @@ function WebDevPricing(props) {
                 </div>
             }
 
-        </div>
+        </Box>
     )
 }
 
