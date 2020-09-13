@@ -41,7 +41,7 @@ const sliderInfo = [
     btnSecondaryLink: "/contact"
   },
   {
-    title: "Our Infrastructure on Multiple Goverment Panels",
+    title: "Our Infrastructure for Multiple Government Panels",
     imgSrc: "/assets/images/backgrounds/infra.jpg",
     subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
     btnPrimaryText: "Explore Now",
