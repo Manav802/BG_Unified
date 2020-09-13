@@ -51,7 +51,7 @@ class Contact extends Component {
                 </Box>
               </Flex>
               <Flex m={[4,0]} width={["100%","33.33%"]} align="center" direction={["row","column"]}>
-                <Image src="/assets/images/vectors/phone.png" objectFit="contain" size="64px" />
+                <Image src="/assets/images/vectors/247.svg" objectFit="contain" size="64px" />
                 <Box mt={3} ml={[6,0]} textAlign={["left","center"]}>
                   <Text fontWeight="bold">
                     Have a chat!
