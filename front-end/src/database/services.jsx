@@ -182,7 +182,7 @@ const services = {
         tags: ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
         description: "BG Unified Solution has a team of practicing multi-disciplinary architects to baseline current architecture and its shortcomings, define future state architecture. Whatever be the technology stack(s) that your enterprise has adopted, we can help you future-proof it.",
         illustration: "",
-        relatedService: ["Logging Cloud Connect ", "Infrastructure As A Service", "Platform As A Service"],
+        relatedService: ["Logging Cloud Connect", "Infrastructure As A Service", "Platform As A Service"],
         conclusion: "An ideal solution for highly sensitive computing environments.",
         sections: sections.workstation
     },

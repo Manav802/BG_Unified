@@ -6,6 +6,7 @@ import Title from "../pageBuilder/Title";
 import { Heading, Text, Box, Icon, Image, Flex} from "@chakra-ui/core";
 import Row from "../pageBuilder/Row";
 import Description from "../pageBuilder/Description";
+import Shapes from '../components/Shapes/Shapes'
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +33,7 @@ class Contact extends Component {
             <Text zIndex="100" fontSize="xl" mt={2}>Have a question. Lets Talk!</Text>
             <Row mt={16} mb={4}>
               <Flex m={[4,0]} width={["100%","33.33%"]} align="center" direction={["row","column"]}>
-                <Image src="/assets/images/vectors/phone.png" objectFit="contain" size="64px" />
+                <Image src="/assets/images/vectors/phone.svg" objectFit="contain" size="64px" />
                 <Box mt={3} ml={[6,0]} textAlign={["left","center"]}>
                   <Text fontWeight="bold">
                     Call Us
@@ -41,7 +42,7 @@ class Contact extends Component {
                 </Box>
               </Flex>
               <Flex m={[4,0]} width={["100%","33.33%"]} align="center" direction={["row","column"]}>
-                <Image src="/assets/images/vectors/mail.png" objectFit="contain" size="64px" />
+                <Image src="/assets/images/vectors/mail.svg" objectFit="contain" size="64px" />
                 <Box mt={3} ml={[6,0]} textAlign={["left","center"]}>
                   <Text fontWeight="bold">
                     Email
