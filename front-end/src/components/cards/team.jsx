@@ -1,3 +1,4 @@
+import { Heading } from "@chakra-ui/core";
 import React from "react";
 
 function team(props) {
@@ -7,7 +8,7 @@ function team(props) {
         <img src={props.img} alt="" />
         <div className="col d-flex p-4 flex-column">
           <span className="display5 mt-4 text-dark">{props.name}</span>
-          <span className="h6 text-primary text-secondary">{props.title}</span>
+          <Heading size="sm" fontWeight="500" color="primary.500">{props.title}</Heading>
           <p className="mt-3">{props.children}</p>
         </div>
       </div>
