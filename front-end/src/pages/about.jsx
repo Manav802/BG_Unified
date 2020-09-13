@@ -11,7 +11,7 @@ import Title from "../pageBuilder/Title";
 import MyCount from "../components/Countup/main";
 
 const timeline = {
-  2013: "Founded and BG Unified Solutions Pty Ltd as a team providing IT solutions to the clients focusing on customer satisfaction and deliverability.",
+  2013: "Founded BG Unified Solutions Pvt Ltd, a team providing IT solutions to the clients focusing on customer satisfaction and deliverability.",
   2014: "F5 Authorized Partners, CISCO Premier Partner, CISCO Advanced Collaboration, Architecture Specialized Partner, Palo Alto Authorized Partners.",
   2015: "Nimble Storage Partners, NetAPP Partner, GENESYS Collaboration",
   2016: "Technology migration to Next-Generation Firewalls, UCaaS, Wireless, Telepresence and Storage.",
