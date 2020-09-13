@@ -42,7 +42,7 @@ const sliderInfo = [
   },
   {
     title: "Our Infrastructure on Multiple Goverment Panels",
-    imgSrc: "/assets/images/backgrounds/data_center.png",
+    imgSrc: "/assets/images/backgrounds/infra.jpg",
     subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
