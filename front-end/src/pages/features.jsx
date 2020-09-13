@@ -17,7 +17,8 @@ function features() {
           <Title zIndex="100" fontSize={["44px","64px"]}>Our Features</Title>
       </Section>
       <RenderSection
-        mt={0}
+        py={0}
+        my={0}
         body={[
           {
             width: ["100%", 1/3],
@@ -142,8 +143,15 @@ function features() {
         width="40%"
         alt=""
       />
-      <Section mb={32}>
+      <Section my={0}>
         <div className="row p-3 p-md-0">
+          <div className="col-md-7 pl-0 position-relative d-md-none">
+            <Image
+            my={2}
+            paddingX={10}
+              src="/assets/images/features/vectors/sip.svg"
+            />
+          </div>
           <div className="col-md-7 pl-0 position-relative d-none d-md-block">
             <Image
               transform="translateX(-15%)"
@@ -166,9 +174,17 @@ function features() {
           </div>
         </div>
         </Section>
-        <div className="container">
-        <div className="row no-gutters p-3">
-          <div className="col-md-5 align-self-center">
+
+        <Section my={0}>
+        <div className="row p-3 p-md-0">
+          <div className="col-md-7 pl-0 position-relative d-md-none">
+            <Image
+            my={2}
+            paddingX={10}
+            src="/assets/images/features/vectors/map.svg"
+            />
+          </div>
+          <div className="col-md-5 mt-lg-5 align-self-center">
             <Heading fontFamily="Nexa Bold" size="2xl" mt={6} mb={4}>
               Multiple Data Center Locations
             </Heading>
@@ -179,7 +195,7 @@ function features() {
               and virtualization, high availability & clustering.
               </Text>
           </div>
-          <div className="col d-none d-md-block">
+          <div className="col-md-7 pl-0 position-relative d-none d-md-block">
             <Image
               px={8}
               minWidth="900px"
@@ -188,7 +204,7 @@ function features() {
             />
           </div>
         </div>
-      </div>
+        </Section>
 
       <Conclusion></Conclusion>
     </div>

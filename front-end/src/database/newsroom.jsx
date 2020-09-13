@@ -11,7 +11,7 @@ const blogs = [
         image: "/assets/images/newsroom/businessop.jpg",
         category: "Updates",
         tags: ["Huawei", "virtual desktop" , "bare metal" , "VM" , "VCS" , "free services" , "Remote Phone System" , "Contact Centre", "DC" , "RDSaaS" , "ConstantEFG" , "Uplink" , "E-mail Filtering"],
-        link: "1-random-title-for-a-blog-article",
+        link: "1-businessop-during-covid",
         content: content.businessop,
     },
     {
@@ -24,7 +24,7 @@ const blogs = [
         image: "/assets/images/newsroom/coronavirus.jpg",
         category: "Updates",
         tags: ["B2B" , "VPNHEADEND" , "Firewall" , "10G" , "Paloalto" , "Fortinet" , "ASA" , "UTM" , "ALLFLASH" , "RDSaaS" , "Workstation" , "Cisco", "UCaaS", "Avaya"],
-        link: "2-random-title-for-a-blog-article",
+        link: "2-helping-hands-during-covid",
         content: content.covid19,
     },
     {
@@ -50,7 +50,7 @@ const blogs = [
             image: "/assets/images/newsroom/it-infra.jpg",
             category: "Updates",
             tags: ["cisco", "DID" , "Firewall" , "WLC" , "Apllication Server" , "Backup", "Paloalto", "NOC" , "CPU", "RAM" , "SQL", "Backup", "Storage" , "Warranty"],
-            link: "4-Infra for medium businesses",
+            link: "4-Infra-for-medium-businesses",
             content: content.itInfra,
         },
         {
@@ -63,7 +63,7 @@ const blogs = [
             image: "/assets/images/newsroom/complete_vdi.jpg",
             category: "Updates",
             tags: ["RDS", "VDI", "POC", "SOE" , "Office 365" , "ConstantVDI" , "VMWARE" , "Acronis" , "Backup", "Microsoft"],
-            link: "5-VDI as a Service",
+            link: "5-VDI-as-a-Service",
             content: content.vdiaas,
         },
         {
@@ -76,7 +76,7 @@ const blogs = [
             image: "/assets/images/newsroom/complete_vdi.jpg",
             category: "Case-Study",
             tags: ["Network", "Complexity", "Security", "Architecture" , "vendor" , "throughput" , "flexible architecture" , "Cisco IPS" , "Cisco L3", "AIP-SSM"],
-            link: "6-Network Infrastructure Redesign",
+            link: "6-Network-Infrastructure-Redesign",
             content: content.networkinfra,
         },
         {
@@ -89,7 +89,7 @@ const blogs = [
             image: "/assets/images/newsroom/complete_vdi.jpg",
             category: "Case-Study",
             tags: ["dispersed sites", "infrastructure", "dual-site", "dual-core" , "network topology" , "Enterprsie" , "Storage Assesment" , "data center" , "Palo Alto", "Huawei 10G"],
-            link: "7-Data Center Design and Implementation",
+            link: "7-Data-Center-Design-and-Implementation",
             content: content.dcdesign,
         },
         {
@@ -102,7 +102,7 @@ const blogs = [
             image: "/assets/images/newsroom/complete_vdi.jpg",
             category: "Case-Study",
             tags: ["Nimble", "WLC", "Nexus", "SourceFire" , "Cisco ASA" , "DC" , "VMWARE" , "ESX" , "UCS", "NEXTDC", "NetApp" , "SPLUNK" , "CUBE" , "SRST" , "UC"],
-            link: "8-BG Unified Solutions Hosted UC Solution",
+            link: "8-BG-Unified-Solutions-Hosted-UC-Solution",
             content: content.hosteduc,
         },
         {
@@ -115,7 +115,7 @@ const blogs = [
             image: "/assets/images/newsroom/complete_vdi.jpg",
             category: "Case-Study",
             tags: ["ASM" , "PCI", "iApps", "TOMCAT", "IPs" , "POOLS" , "IRULES" , "Load Balancer" , "F5" , "routers", "WAN"],
-            link: "9-F5 Topology Redesign",
+            link: "9-F5-Topology-Redesign",
             content: content.f5top,
         }
         

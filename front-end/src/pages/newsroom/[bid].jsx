@@ -37,8 +37,8 @@ function Blogs() {
       </Head>
 
       
-     <Section mb={6} pb={0} mt={32}>
-      <Title mb={8} fontSize="48px" textAlign="left">{blog.title}</Title>
+     <Section mb={6} pb={0} mt={4}>
+      <Title mb={8} fontSize={["4xl","4xl","5xl"]} textAlign="left">{blog.title}</Title>
       <Image
           src={blog.image}
           objectFit="cover"

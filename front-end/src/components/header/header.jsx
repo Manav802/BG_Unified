@@ -186,12 +186,12 @@ function header(props) {
                                         <WhatsNew
                                             image={newsroom[0].image}
                                             heading={newsroom[0].title}
-                                            link={newsroom[0].link}
+                                            link={"/newsroom/"+newsroom[0].link}
                                         />
                                         <WhatsNew
                                             image={newsroom[1].image}
                                             heading={newsroom[1].title}
-                                            link={newsroom[1].link}
+                                            link={"/newsroom/"+newsroom[1].link}
                                         />
                                     </div>
                                 </div>

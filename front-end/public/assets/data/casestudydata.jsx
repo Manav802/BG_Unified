@@ -11,7 +11,8 @@ export const CASESTUDY = [
         list_item_6: "Performance – Optimising network performance throughput.",
         content: "From legacy production systems support to a wide technology lens and multi-vendor solutions, we did help them implement a flexible, agile architecture designed specifically to meet their unique needs. Technologies involved - Cisco ASA 5585 + ASA 5510 with AIP-SSM-10 Cisco IPS 4260 Big IP F5 3900 Cisco L3 Switches Project Deliverables were: High Availability Reduced Network Complexity Optimized Performance-Optimised Routing PCI Compliance Designed the whole solution to reduce the overall complexity and remove bottlenecks. We worked cohesively with our in-house team and brought great technical skills & expertise on Cisco switches, routers, firewalls, content switches, IPS etc.",
         iconImg: "",
-        imglg: ""
+        imglg: "",
+        link: "6-Network-Infrastructure-Redesign",
     },
     {
         id: 2,
@@ -25,7 +26,8 @@ export const CASESTUDY = [
         list_item_3: "Cisco 5508 WLC",
         list_item_4: "F5 Viprion LTM(s)",
         iconImg: "",
-        imglg: ""
+        imglg: "",
+        link: "7-Data-Center-Design-and-Implementation",
     },
     {
         id: 3,
@@ -35,7 +37,8 @@ export const CASESTUDY = [
         content_p5: "An additional redundancy option is possible by implementing a CUBE at the client site so that in the event of any catastrophic failure in our data centre, SRST will still be able to provide basic inbound and outbound calling facilities. This option is not included in the proposal costs but can be quoted if required.",
         content_p6: "Any of the networking infrastructure currently deployed in production, have a cold standby in stock with BG Unified Solutions and its supplier.",
         iconImg: "",
-        imglg: ""
+        imglg: "",
+        link: "8-BG-Unified-Solutions-Hosted-UC-Solution",
     },
     {
         id: 4,
@@ -47,6 +50,7 @@ export const CASESTUDY = [
         content_p6: "F5 application-centric load balancing solutions ensured that our customers and partners have access to the applications they need—whenever they need them—by monitoring the health and performance of individual servers in real-time.",
         content_p7: "Implementation of PCI Compliance and configuration of ASM to protect applications from different attacks.",
         iconImg: "",
-        imglg: ""
+        imglg: "",
+        link: "9-F5-Topology-Redesign",
     }
 ]
