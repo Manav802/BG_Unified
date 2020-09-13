@@ -8,6 +8,7 @@ import CaseStudy from "../components/case_study/CaseStudy";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import { TESTIMONIALS } from "../database/testimonials";
 import { CASESTUDY } from "../../public/assets/data/casestudydata";
+import newsroom from "../database/newsroom"
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
 import Slider from "react-flickity-component";
@@ -25,7 +26,7 @@ const Globe = <canvas className="ml-auto mr-auto d-block" id="globe" width="1200
 const sliderInfo = [
   {
     title: "Deploy, Scale your Business with our Security and Reliability",
-    imgSrc: "/assets/images/backgrounds/data_servers.jpg",
+    imgSrc: "/assets/images/backgrounds/globe.jpg",
     subTitle: "Your go-to partner for all hosting solutions and services that deliver value and enable solid corporate growth.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
@@ -34,7 +35,7 @@ const sliderInfo = [
   },
   {
     title: "Best Enterprise Services around the globe",
-    imgSrc: "/assets/images/backgrounds/world.webp",
+    imgSrc: "/assets/images/backgrounds/cyber_security.jpg",
     subTitle: "Fast, friendly and delivery oriented services, driven by our commitment to deliver.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
@@ -373,7 +374,7 @@ class Landing extends Component {
         </Section>
 
         <Section>
-          <CaseStudy caseStudyDetails={CASESTUDY} link="read" />
+          <CaseStudy caseStudyDetails={newsroom.filter(news => news.category === "Case Study")} link="read" />
         </Section>
         <Section containerWidth={["100%", "90%"]} className="brands">
           <Flex wrap="wrap" justify="center">

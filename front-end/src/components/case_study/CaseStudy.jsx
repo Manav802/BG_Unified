@@ -36,7 +36,7 @@ class CaseStudy extends React.Component {
           contain: true,
         }}>
           {this.props.caseStudyDetails.map((caseStudy, index) => (
-            <Image key={index} src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" py={12} height={600} objectFit="cover" className="image w-100 my-3"></Image>
+            <Image key={index} src={this.props.caseStudyDetails[this.state.i].image} py={12} height={600} objectFit="cover" className="image w-100 my-3"></Image>
           ))}
         </Slider>
         <Box boxShadow="lg" bottom={0} top={0} minWidth="50%" height="100%" left="10%" bg="white" position="absolute" className="case-box d-flex align-items-center justify-content-center flex-column">
@@ -44,8 +44,8 @@ class CaseStudy extends React.Component {
           <div className="display5 text-center title mt-3">
             <h6>{this.props.caseStudyDetails[this.state.i].title}</h6>
           </div>
-          <div className="content text-justify text-secondary mt-2">
-            {this.props.caseStudyDetails[this.state.i].content}
+          <div className="content text-center text-secondary mt-2">
+            {this.props.caseStudyDetails[this.state.i].description}
           </div>
           <Link href="/newsroom/[bid]" as={"/newsroom/"+this.props.caseStudyDetails[this.state.i].link}><a className="mt-4 link">Read More</a>
           </Link>
