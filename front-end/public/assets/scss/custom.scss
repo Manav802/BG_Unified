@@ -29,3 +29,17 @@
     text-overflow: ellipsis;
   }
   
+  @media (max-width: 1200px) {
+    
+  .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    
+  }
+  .flickity-prev-next-button.previous {
+    left: -6px;
+  }
+  .flickity-prev-next-button.next {
+    right: -6px;
+  }
+}

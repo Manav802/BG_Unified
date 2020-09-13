@@ -335,7 +335,7 @@ class Landing extends Component {
                         Disaster Management.
                     </FeatureCard>
                     </div>
-                    <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-end py-3">
+                    <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-center align-items-lg-end py-3">
                       <span className="display6 text-dark">Not Convinced?</span>
                       <Link href="/features">
                         <a className="text-primary d-flex my-2" href="">
