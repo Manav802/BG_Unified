@@ -31,7 +31,7 @@ function CardWithIcon(props) {
           {props.children}
         </div>
         <div className="row mx-3 my-3">
-          <Link href={`${props.link}`}>
+          <Link href="/solutions/[name]" as={`${props.link}`}>
             <Button py={8} px={12} bg="dark.500" color="white" _hover={{color:"white", bg:"dark.400"}} borderRadius="0px 12px" rightIcon="arrow-forward">
               Learn More
             </Button>
