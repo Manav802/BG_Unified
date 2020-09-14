@@ -66,7 +66,7 @@ function ContactCenterPricing(props) {
 
   return (
         <div id="pricing" className="container">
-          <div className="row no-gutters px-lg-5 px-3">
+          <div className="row no-gutters px-lg-5">
             <div className="col-lg-4 my-3">
               <PricingCard
                 title="Basic"

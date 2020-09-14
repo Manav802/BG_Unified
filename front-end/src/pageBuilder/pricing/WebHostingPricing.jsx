@@ -44,7 +44,7 @@ function WebHostingPricing(props) {
   return (
     <div id="pricing" className="container">
     <Fade duration={500} bottom>
-    <div className="row no-gutters px-lg-5 px-3">
+    <div className="row no-gutters px-lg-5">
         <div className="col-lg-4 my-3">
             <PricingCard  title="Standard" icon="/assets/images/icons/theme/paper-plane.svg" featureList={["Include 2vCPU", "Includes 4 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
                 <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Standard"); resetOnCardChange();}}>View More</Button>
