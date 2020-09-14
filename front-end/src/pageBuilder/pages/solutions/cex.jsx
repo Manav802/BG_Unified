@@ -41,7 +41,7 @@ export default [
                 },
                 {
                     title: "Integration",
-                    description: "Simplified usage and integration of new technology services. On-demand communication and connectivity. Multi-cloud operations with a complex structure handled easily.",
+                    description: "Simplified usage and integration of new technology services. On-demand communication and connectivity. Multi-cloud operations with a complex structure are handled easily.",
                     image: "/assets/images/illustrations/sip.svg"
                 }]
             }
