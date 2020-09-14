@@ -108,6 +108,7 @@ const services = {
         bgImage: "/assets/images/services/dns.jpg",
         icon: "/assets/images/icons/monotone/DNSasAService.svg",
         color: "#06BCC1",
+        popluar : true,
         tags: ["dns", "DNS", "domain", "name", "cost", "effective", "Concurrency", "Scalability", "TLD servers"],
         description: "Deliver a scalable, reliable and managed authoritative Domain Name System (DNS) service. With assured low latency and high availability....",
         illustration: "",
@@ -170,7 +171,7 @@ const services = {
         relatedService: ["Backup As A Service", "Database As A Service", "DR As A Service"],
         conclusion: "Load Balancing is the solution you’ve been looking for.",
         sections: sections.loadBalancer,
-        popular: true,
+        popular: true
     },
     "workstation":{
         title: "Workstation As A Service",
@@ -184,7 +185,8 @@ const services = {
         illustration: "",
         relatedService: ["Logging Cloud Connect", "Infrastructure As A Service", "Platform As A Service"],
         conclusion: "An ideal solution for highly sensitive computing environments.",
-        sections: sections.workstation
+        sections: sections.workstation,
+        popular:true,
     },
     "platform": {
         title: "Platform As A Service",
@@ -270,7 +272,8 @@ const services = {
         illustration: "",
         relatedService: ["Proxy As A Service", "Firewall As A Service", "WAF As A Service"],
         conclusion: "Win the battle against Cyber Threats with our SOCaaS",
-        sections: sections.socaas
+        sections: sections.socaas,
+        popluar: true
     },
     "ucaas": {
         title: "Unified Communications As A Service",
@@ -326,7 +329,8 @@ const services = {
         illustration: "",
         relatedService: ["Application Development As A Service", "Web Hosting As A Service", "DNS As A Service"],
         conclusion: "Ready to discuss your project?",
-        sections: sections.webdev
+        sections: sections.webdev,
+        popluar: true
     },
     "wireless": {
         title: "Wireless As A Service",
