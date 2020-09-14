@@ -128,6 +128,7 @@ function ContactForm(props) {
             <Textarea
               p={6}
               placeholder="Message"
+              height="220px"
               size="lg"
               name="message"
               value={message}

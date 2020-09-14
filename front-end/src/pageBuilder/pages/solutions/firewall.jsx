@@ -36,7 +36,6 @@ export default [
     {
         title: "Firewall Technologies",
         mt: 0,
-        py: 0,
         containerWidth: "100%",
         body: [
             {
@@ -44,7 +43,7 @@ export default [
                 mt: 8,
                 type: "imageGroup",
                 data: {
-                    images: ["/assets/images/icons/brands/cisco_asa-01.svg", "/assets/images/icons/brands/fortinet-01.svg", "/assets/images/icons/brands/paoloalto-01.svg"],
+                    images: ["/assets/images/brands/cisco.png", "/assets/images/brands/fortinet.png", "/assets/images/brands/paloalto.png"],
                     px: 3,
                     height: "90px",
                     objectFit: "contain",

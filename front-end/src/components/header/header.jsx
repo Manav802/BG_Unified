@@ -23,6 +23,7 @@ import Fade from 'react-reveal/Fade';
 import Link from 'next/link';
 import Router from 'next/router';
 import Container from '../../pageBuilder/Container';
+import CookieNotice from './CookieNotice';
 
 function header(props) {
     const initRef = React.useRef();
@@ -35,6 +36,7 @@ function header(props) {
     const servicesArray = Object.entries(services)
     return (
         <>
+            <CookieNotice></CookieNotice>
             <Box position="sticky" top="0px" bg="white" boxShadow="lg" zIndex={1000}>
                 <div className="container">
                     <div className="p-3 transition-3 d-flex justify-content-between align-items-center layer-4">

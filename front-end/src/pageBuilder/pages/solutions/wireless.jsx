@@ -27,8 +27,8 @@ export default [
         },
         my: 0,
         py: 20,
-        // bg: "gray.100",
-        // color: "dark.500",
+        bg: "gray.100",
+        color: "dark.500",
         rowDistance: [4,8,12],
         gap: 8,
         body: [
@@ -68,8 +68,6 @@ export default [
         title: "Why BG Unified Solutions?",
         description: "Wireless plays an integral part in collaborating and streamlining resources of an organisation and increases productivity at a tremendous rate.",
         rowDistance: 8,
-        bg: "gray.100",
-        color: "dark.500",
         mb:0,
         py:45,
         body: [{
