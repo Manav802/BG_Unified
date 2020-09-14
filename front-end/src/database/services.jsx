@@ -156,7 +156,8 @@ const services = {
         illustration: "",
         relatedService: ["Storage As A Service", "Platform As A Service", "Workstation As A Service"],
         conclusion: "We can help if you have questions regarding Infrastructure As A Service",
-        sections: sections.infra
+        sections: sections.infra,
+        popular: true,
     },
     "load-balancer":{
         title: "Load Balancer As A Service",
@@ -205,7 +206,7 @@ const services = {
     "proxy": {
         title: "Proxy As A Service",
         slogan: "Our Proxy, Your Way!!",
-        bgImage: "/assets/images/services/cex.jpg",
+        bgImage: "/assets/images/services/proxy.jpg",
         popular: true,
         category: "Cyber Security Services",
         icon: "/assets/images/icons/monotone/Proxy.svg",
@@ -273,7 +274,7 @@ const services = {
         relatedService: ["Proxy As A Service", "Firewall As A Service", "WAF As A Service"],
         conclusion: "Win the battle against Cyber Threats with our SOCaaS",
         sections: sections.socaas,
-        popluar: true
+        popular: true
     },
     "ucaas": {
         title: "Unified Communications As A Service",
@@ -306,7 +307,7 @@ const services = {
     "wafaas": {
         title: "WAF As A Service",
         slogan: "Robust Security with a Dedicated Web App Firewall",
-        bgImage: "/assets/images/services/cex.jpg",
+        bgImage: "/assets/images/services/wafaas.jpg",
         category: "Cyber Security Services",
         icon: "/assets/images/icons/monotone/app.svg",
         color: "#E4572E",
@@ -330,7 +331,7 @@ const services = {
         relatedService: ["Application Development As A Service", "Web Hosting As A Service", "DNS As A Service"],
         conclusion: "Ready to discuss your project?",
         sections: sections.webdev,
-        popluar: true
+        popular: true
     },
     "wireless": {
         title: "Wireless As A Service",

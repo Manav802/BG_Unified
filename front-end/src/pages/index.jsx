@@ -219,7 +219,7 @@ class Landing extends Component {
             </div>
           </div>
         </Fade>
-        <Section bg="dark.500" py={20}>
+        <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.jpg')" blend="multiply" py={20}>
           {/* <Box id="globe-box" top={0} className="globe-container position-absolute">
             <DynamicComponent></DynamicComponent>
           </Box> */}
@@ -229,8 +229,8 @@ class Landing extends Component {
                   <div className="col-lg-12 py-5 d-flex flex-column justify-content-center">
                     <Heading size="sm" className="text-primary" letterSpacing={1.5} textTransform="uppercase" mb={2}>Our Reach</Heading>
                     <Box fontSize={["4xl","4xl","5xl"]} className="mb-2 display3 text-white">Our Data Center Locations</Box>
-                    <Box fontSize={["16px","18px","2opx"]} className="h6 NunitoSans-SemiBold text-white text-justify">
-                      BG Unified Solution specializes in Hosting Solutions and Services. We help clients plan, build, support and manage their IT infrastructure. Currently, we have several DC locations including ME1, LD3, IBM. We have our Data Centre Locations spread out to locations including Auckland, Sydney and Melbourne.
+                    <Box fontSize={["16px","18px","20px"]} lineHeight={1.5} className="h6 NunitoSans-SemiBold text-white text-justify">
+                      BG Unified Solution specializes in Hosting Solutions and Services. We help clients plan, build, support and manage their IT infrastructure. Currently, we have several DC locations including IBM. We have our Data Centre Locations spread out to locations including Auckland, Sydney and Melbourne.
                 </Box>
                   </div>
                 </Fade>

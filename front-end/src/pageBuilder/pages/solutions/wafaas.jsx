@@ -6,9 +6,8 @@ export default [
             width: "100%",
             type: "imageGroup",
             data: {
-                images: ["/assets/images/vectors/wafaas.jpg"],
+                images: ["/assets/images/vectors/waf.svg"],
                 objectFit: "contain",
-                className: "wafaas-image"
             }
         }]
     },

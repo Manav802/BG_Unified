@@ -11,7 +11,7 @@ import Title from "../pageBuilder/Title";
 import MyCount from "../components/Countup/main";
 
 const timeline = {
-  2013: "Founded BG Unified Solutions Pvt Ltd, a team providing IT solutions to the clients focusing on customer satisfaction and deliverability.",
+  2013: "Founded BG Unified Solutions Pty Ltd, a team providing IT solutions to the clients focusing on customer satisfaction and deliverability.",
   2014: "F5 Authorized Partners, CISCO Premier Partner, CISCO Advanced Collaboration, Architecture Specialized Partner, Palo Alto Authorized Partners.",
   2015: "Nimble Storage Partners, NetAPP Partner, GENESYS Collaboration",
   2016: "Technology migration to Next-Generation Firewalls, UCaaS, Wireless, Telepresence and Storage.",
@@ -39,12 +39,6 @@ class about extends Component {
         <div className="about">
           <Head>
             <title>More About Us - BG Unified</title>
-
-            <link
-              rel="shortcut icon"
-              href="/assets/images/icons/favicon/bg.ico"
-              type="image/x-icon"
-            />
           </Head>
           <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
             <Image zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
