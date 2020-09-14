@@ -80,17 +80,17 @@ export default [
                 content: [{
                     title: "Clustering of Devices",
                     description: "Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, so as to support Wireless Phones in any environment. Traffic and congestion problems reduced significantly.",
-                    image: "/assets/images/illustrations/ClusteringOfDevices_Wireless.svg"
+                    image: "/assets/images/Illustrations/ClusteringOfDevices_Wireless.svg"
                 },
                 {
                     title: "Unified and Efficient",
                     description: "Improved operational efficiencies, Reduced communication-related delays and enhanced collaboration. Completely redundant and efficient transmission.",
-                    image: "/assets/images/illustrations/unified_and_efficient.svg"
+                    image: "/assets/images/Illustrations/unified_and_efficient.svg"
                 },
                 {
                     title: "Network Security",
                     description: "Ensuring a completely secure network by technologies such as NAC(Network Access Control) using ISE, SourceFire, Cisco / Palo Alto / Checkpoint / Fortinet Firewall, DDOS Protection.",
-                    image: "/assets/images/illustrations/security_lock_firewall.svg"
+                    image: "/assets/images/Illustrations/security_lock_firewall.svg"
                 },]
             }
         }]

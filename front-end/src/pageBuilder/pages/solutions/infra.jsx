@@ -198,17 +198,17 @@ export default [
                 content: [{
                     title: "Choice between On-Premises & Cloud",
                     description: "On-premise or cloud-based, that helps secure your IT environment quickly. The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance..",
-                    image: "/assets/images/illustrations/Varied_Web_Hosting_Solutions.svg"
+                    image: "/assets/images/Illustrations/Varied_Web_Hosting_Solutions.svg"
                 },
                 {
                     title: "Fast and easy Deployment",
                     description: "Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure without capex.",
-                    image: "/assets/images/illustrations/FlexibilityAndScalabilty_AppDev.svg"
+                    image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg"
                 },
                 {
                     title: "Advanced Technology Stack",
                     description: "Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included.",
-                    image: "/assets/images/illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
+                    image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
                 },]
             }
         }]

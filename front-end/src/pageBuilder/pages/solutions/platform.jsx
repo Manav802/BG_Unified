@@ -102,17 +102,17 @@ export default [
                 content: [{
                     title: "Load Balancing",
                     description: "Meet the needs of your business—today and as you grow—with innovative, flexible and scalable load balancing solutions.Platform-oriented cloud platforms.",
-                    image: "/assets/images/illustrations/data_points.svg"
+                    image: "/assets/images/Illustrations/data_points.svg"
                 },
                 {
                     title: "Easy execution",
                     description: "Enabling clients to develop, run and manage business applications without the need to build authentic software infrastructure. Platform-oriented cloud platforms obtain a higher level of abstraction.",
-                    image: "/assets/images/illustrations/FlexibilityAndScalabilty_AppDev.svg"
+                    image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg"
                 },
                 {
                     title: "Cost-effective scalability",
                     description: " Scale up your project on demand by purchasing just the amount of hardware or storage you require at affordable prices. Platform as a service cloud providing you with limitless resources of computing.",
-                    image: "/assets/images/illustrations/productivity.svg"
+                    image: "/assets/images/Illustrations/productivity.svg"
                 },]
             }
         }]

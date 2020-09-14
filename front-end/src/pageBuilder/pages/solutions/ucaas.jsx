@@ -123,17 +123,17 @@ export default [
                 content: [{
                     title: "Flexibility / Scalability",
                     description: "For any of your organization departments, our UCaaS offering provides a simplified IT management and a highly scalable platform. Irrespective of the end-user, everyone gets access to the latest and the greatest collaboration tools.",
-                    image: "/assets/images/illustrations/FlexibilityAndScalabilty_AppDev.svg"
+                    image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg"
                 },
                 {
                     title: "Cost-Effectiveness",
                     description: "For your business, we are offering and providing a flat billing structure. It's designed for pay as you go model that shifts your costs from capex to opex. You will have very simplified and predictable expenses and have the option of rolling any upfront or one-off expenses into your monthly payment.",
-                    image: "/assets/images/illustrations/Value_for_Money.svg"
+                    image: "/assets/images/Illustrations/Value_for_Money.svg"
                 },
                 {
                     title: "Wide range of services",
                     description: "Employees get access to voice and video, voicemail and integrated messaging, instant messaging and presence, web conferencing and desktop collaboration, mobility service.",
-                    image: "/assets/images/illustrations/platforms.svg"
+                    image: "/assets/images/Illustrations/platforms.svg"
                 },]
             }
         }]
