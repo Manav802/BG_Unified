@@ -36,7 +36,7 @@ export default [
         title: "Our Pricing Plans",
         backgroundColor: "light.400",
         width: "100%",
-        containerWidth: ["100%", "540px", "720px", "960px", "1140px"],
+         
         my: 0,
         py: 16,
         gap: 0,

@@ -105,7 +105,7 @@ export default [
         title: "Our Pricing Plans",
 
         width: "100%",
-        containerWidth: ["100%", "540px", "720px", "960px", "1140px"],
+         
         my: 0,
         pt: 16,
         gap: 0,
