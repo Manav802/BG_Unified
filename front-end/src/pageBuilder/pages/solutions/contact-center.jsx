@@ -39,7 +39,7 @@ export default [
 
     {           
         width: "100%",
-        containerWidth: ["100%", "540px", "720px", "960px", "1140px"],
+         
         my: 0,
         py:[0,8,12],
         gap: 0,
