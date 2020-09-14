@@ -1,6 +1,6 @@
 const levels = [
     {
-        title: "1.1 Your Privacy is importnat to Us ",
+        title: "1.1 Your Privacy is important to Us ",
         titleSize: "lg",
         spacing: "16px",
         list: [
@@ -32,7 +32,7 @@ const levels = [
                 Like most website operators, BG Unified Solutions Pty. Ltd. collects non-personally-identifying 
                 information of the sort that web browsers and servers typically make available, such as the 
                 browser type, language preference, referring site, and the date and time of each visitor 
-                request.BG Unified Solutions Pty. Ltd.'s purpose in collecting non-personally identifying information 
+                request. BG Unified Solutions Pty. Ltd.'s purpose in collecting non-personally identifying information 
                 is to better understand how BG Unified Solutions Pty. Ltd.'s visitors use its website. 
                 From time to time, BG Unified Solutions Pty. Ltd. may release non-personally-identifying information in 
                 the aggregate, e.g., by publishing a report on trends in the usage of its website.
@@ -70,7 +70,7 @@ const levels = [
             </span>
     },
     {
-        title: "1.5 Advertisments",
+        title: "1.5 Advertisements",
         titleSize: "lg",
         text: <span>Ads appearing on our website may be delivered to users by advertising partners, who may set cookies. 
             These cookies allow the ad server to recognize your computer each time they send you an online advertisement 
