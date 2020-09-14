@@ -1,4 +1,17 @@
 export default [
+    {
+        title:"Web Application Firewall:How it works?",
+       rowDistance: 8,
+        body: [{
+            width: "100%",
+            type: "imageGroup",
+            data: {
+                images: ["/assets/images/vectors/wafaas.jpg"],
+                objectFit: "contain",
+                className: "wafaas-image"
+            }
+        }]
+    },
  {
         my: 0,
         py: "48px",
