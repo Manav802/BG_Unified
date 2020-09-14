@@ -19,13 +19,7 @@ class Contact extends Component {
       <>
         <div className="contact">
           <Head>
-            <title>Contact us - BG Unified</title>
-
-            <link
-              rel="shortcut icon"
-              href="/assets/images/icons/favicon/bg.ico"
-              type="image/x-icon"
-            />
+            <title>Contact us - BG Unified Solutions</title>
           </Head>
           <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} pb={4} pt={[16, 32]} my={0}>
             <Image zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>

@@ -113,17 +113,17 @@ export default [
                 content: [{
                     title: "Varied Web Hosting Solutions",
                     description: "WordPress hosting, cloud hosting, dedicated server, AWS cloud, digital ocean cloud, all under one roof. Multiple data centre locations allow access to your website anytime, anywhere.",
-                    image: "/assets/images/Illustrations/Varied_Web_Hosting_Solutions.svg"
+                    image: "/assets/images/illustrations/Varied_Web_Hosting_Solutions.svg"
                 },
                 {
                     title: "Sound and Efficient Planning",
                     description: "We can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. Migratory process of your website onto our platform is super easy with fast, secure and reliable hosting.",
-                    image: "/assets/images/Illustrations/Sound_and_Efficient_Planning.svg"
+                    image: "/assets/images/illustrations/Sound_and_Efficient_Planning.svg"
                 },
                 {
                     title: "Value for Money",
                     description: "Reduced costs, pay for what you want, no hidden costs and completely transparent process. Costing and pricing discussed and negotiated at the starting of the job only.",
-                    image: "/assets/images/Illustrations/Value_for_Money.svg"
+                    image: "/assets/images/illustrations/Value_for_Money.svg"
                 },]
             }
         }]
