@@ -149,7 +149,7 @@ function VdiPricing(props) {
                     </div>
                     
                     <div className="col-lg-10 offset-lg-1 text-center mt-lg-4 mt-3">
-                        <PricingQuote serviceName="VDI As A Service" serviceDescription={`${tab} ,${plan} ${os} ${handleGoldenImage(goldenImage)} ,${value+"TB Shared Storage"}`} button ></PricingQuote>
+                        <PricingQuote serviceName="Workstation As A Service" serviceDescription={`${tab} ,${plan} ${os} ${handleGoldenImage(goldenImage)} ,${value+"TB Shared Storage"}`} button ></PricingQuote>
                     </div>
                 </div>
             </div>
