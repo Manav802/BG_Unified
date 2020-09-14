@@ -8,6 +8,7 @@ import CaseStudy from "../components/case_study/CaseStudy";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import { TESTIMONIALS } from "../database/testimonials";
 import { CASESTUDY } from "../../public/assets/data/casestudydata";
+import newsroom from "../database/newsroom"
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
 import Slider from "react-flickity-component";
@@ -24,26 +25,26 @@ const Globe = <canvas className="ml-auto mr-auto d-block" id="globe" width="1200
 
 const sliderInfo = [
   {
-    title: "Deploy, Scale your Business with our Security and Reliability",
-    imgSrc: "/assets/images/backgrounds/data_servers.jpg",
-    subTitle: "Your go-to partner for all hosting solutions and services that deliver value and enable solid corporate growth.",
+    title: <span>Welcome to BG Unified Solutions</span>,
+    imgSrc: "/assets/images/backgrounds/globe.jpg",
+    subTitle: "Your go-to partner for all IT solutions and services that deliver value and enable solid corporate growth.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
     btnPrimaryLink: "/solutions",
     btnSecondaryLink: "/contact"
   },
   {
-    title: "Best Enterprise Services around the globe",
-    imgSrc: "/assets/images/backgrounds/world.webp",
-    subTitle: "Fast, friendly and delivery oriented services, driven by our commitment to deliver.",
+    title: "Protecting Online Presence of your Business",
+    imgSrc: "/assets/images/backgrounds/cyber_security.jpg",
+    subTitle: "Fast, friendly and delivery oriented web services, driven by our commitment of customer satisfaction.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
     btnPrimaryLink: "/solutions",
     btnSecondaryLink: "/contact"
   },
   {
-    title: "Our Infrastructure for Multiple Government Panels",
-    imgSrc: "/assets/images/backgrounds/data_center.png",
+    title: "Geographical Redundant Infrastructre at diverse Geo-Locations",
+    imgSrc: "/assets/images/backgrounds/map.jpg",
     subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
@@ -89,7 +90,7 @@ class Landing extends Component {
   componentDidMount() {
     this.timerID = setInterval(
       () => this.tick(),
-      5000
+      10000
     );
     // document.getElementById('globe-box').innerHTML = `<canvas className="ml-auto mr-auto d-block" id="globe" width="1200px" height="1200px"></canvas>`
   }
@@ -116,21 +117,21 @@ class Landing extends Component {
           <source src="/assets/videos/dots.webm" type="video/webm">
             </source>
           </video> */}
-          <Slider options={{ autoPlay: 5000, prevNextButtons: false, pageDots: false, draggable: false,pauseAutoPlayOnHover: false,wrapAround: true }}>
+          <Slider options={{ autoPlay: 10000, adaptiveHeight:true, pageDots: false, draggable: false,pauseAutoPlayOnHover: false,wrapAround: true }}>
             {sliderInfo.map((info, index) => (
               <Box className="w-100 landing-section">
-                <Image src={info.imgSrc} opacity={.4} className="bg-image"></Image>
+                <Image src={info.imgSrc} opacity={.4} height="100%" className="bg-image"></Image>
                 <div className="container py-5">
                   <div className="row">
-                    <div className="col-lg-8 offset-lg-2">
+                    <div className="col-lg-10 offset-lg-1">
                       <div>
-                        <Box fontSize={["4xl","4xl","5xl"]} className="Nexa-Bold slider-text text-center text-white mt-0">
+                        <Box fontSize={["4xl","4xl","5xl"]} className="Nexa-Bold text-center text-white mt-0">
                           {info.title}
                         </Box>
-                        <div className="h6 text-center slider-text NunitoSans-SemiBold mt-3">
+                        <div className="h6 text-center NunitoSans-SemiBold mt-3">
                           {info.subTitle}
                         </div>
-                        <div className="py-4 d-flex slider-text justify-content-center">
+                        <div className="py-4 d-flex justify-content-center">
                           <Link href={info.btnPrimaryLink}>
                             <Button
                               variant="solid"
@@ -218,7 +219,7 @@ class Landing extends Component {
             </div>
           </div>
         </Fade>
-        <Section bg="dark.500" py={20}>
+        <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.jpg')" blend="multiply" py={20}>
           {/* <Box id="globe-box" top={0} className="globe-container position-absolute">
             <DynamicComponent></DynamicComponent>
           </Box> */}
@@ -228,8 +229,8 @@ class Landing extends Component {
                   <div className="col-lg-12 py-5 d-flex flex-column justify-content-center">
                     <Heading size="sm" className="text-primary" letterSpacing={1.5} textTransform="uppercase" mb={2}>Our Reach</Heading>
                     <Box fontSize={["4xl","4xl","5xl"]} className="mb-2 display3 text-white">Our Data Center Locations</Box>
-                    <Box fontSize={["16px","18px","2opx"]} className="h6 NunitoSans-SemiBold text-white text-justify">
-                      BG Unified Solution specializes in Hosting Solutions and Services. We help clients plan, build, support and manage their IT infrastructure. Currently, we have several DC locations including ME1, LD3, IBM. We have our Data Centre Locations spread out to locations including Auckland, Sydney and Melbourne.
+                    <Box fontSize={["16px","18px","20px"]} lineHeight={1.5} className="h6 NunitoSans-SemiBold text-white text-justify">
+                      BG Unified Solution specializes in Hosting Solutions and Services. We help clients plan, build, support and manage their IT infrastructure. Currently, we have several DC locations including IBM. We have our Data Centre Locations spread out to locations including Auckland, Sydney and Melbourne.
                 </Box>
                   </div>
                 </Fade>
@@ -373,10 +374,16 @@ class Landing extends Component {
         </Section>
 
         <Section>
-          <CaseStudy caseStudyDetails={CASESTUDY} link="read" />
+          <CaseStudy caseStudyDetails={newsroom.filter(news => news.category === "Case Study")} link="read" />
         </Section>
         <Section containerWidth={["100%", "90%"]} className="brands">
-          <ImageGroup objectFit="contain" images={["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png",  "/assets/images/brands/huawei.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/datacom.png", "/assets/images/brands/airtrunk.png", "/assets/images/brands/microfocus.svg", "/assets/images/brands/nsw_gov.png", "/assets/images/brands/victoria.png", ]} minW={["119.5px", "135.5px", "175px", "231px", "283px"]} width="auto" />
+          <Flex wrap="wrap" justify="center">
+          {["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png",  "/assets/images/brands/huawei.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/datacom.png", "/assets/images/brands/airtrunk.png", "/assets/images/brands/microfocus.svg", "/assets/images/brands/nsw_gov.png", "/assets/images/brands/victoria.png", ].map(image => (
+            <>
+              <Image src={image} width="192px" height="96px" mx={12} my={6} objectFit="contain"></Image>
+            </>
+          ))}
+          </Flex>
         </Section>
         <Conclusion></Conclusion>
       </div>

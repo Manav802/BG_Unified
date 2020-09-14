@@ -23,7 +23,7 @@ export default [
             width:["100%", "100%","100%", 1/2],
             type: "imageGroup",
             data: {
-                images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                images: ["/assets/images/services/storage_challenge.jpg"],
                 borderRadius: 8,
                 width : ["100%","100%",'90%'],
                 height: ["300px","300px","400px"],
@@ -128,17 +128,17 @@ export default [
                 content: [{
                     title: "Pay per Use",
                     description: "Pay only for the storage you actually require and use, bundling it up with Data Link. Transparent pricing and costing schedule. Dynamic as per your needs.",
-                    image: "/assets/images/illustrations/low_pricing.svg"
+                    image: "/assets/images/Illustrations/low_pricing.svg"
                 },
                 {
                     title: "Efficient and Agile",
                     description: "Boost up your operational efficiency and improve your organization’s agility. Also, Real-time monitoring of your storage resources.",
-                    image: "/assets/images/illustrations/EfficientAndAgile_Stass.svg"
+                    image: "/assets/images/Illustrations/EfficientAndAgile_Stass.svg"
                 },
                 {
                     title: "Highly available infrastructure",
                     description: "Cutting edge SAN array which intelligently uses caching, Solid State Disks(SSDs), and traditional hard disk spindles. Scaling up or down your storage capacity as and when required.",
-                    image: "/assets/images/illustrations/HighlyAvailaibleInfra_Stass.svg"
+                    image: "/assets/images/Illustrations/HighlyAvailaibleInfra_Stass.svg"
                 },]
             }
         }]

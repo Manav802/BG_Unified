@@ -1,51 +1,13 @@
 export default [
     {
-        gap: 10,
-        py: [8,16],
-        body: [
-        {
-            width:["100%", "100%", 1/2],
-            py:[2,6,6,6,2],
-            type: "imageGroup",
-                my:[0,2],
-                data: {
-                    images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
-                    borderRadius: 8,
-                    width: ['100%',"100%","90%"],
-                    height: "300px",
-                    objectFit: "cover"
-                }
-            },
-            {
-                mt:[0,3],
-            width: ["100%", "100%", 1/2],
-            type: "content",
-            data: [{
-                textAlign: "justify",
-                fontSize: ["md","md","md","lg"],
-                title: "BGUS Web Application Firewall",
-                titleSize: [28,28,28,32],
-                text: <span>Our Dedicated Web App Firewall uses 
-                a single code base, for you can consistently apply
-                 and enforce security policies across any environment.
-                  It’s easy to deploy and available at a single 
-                  license, giving you simplified configuration, 
-                  bot management, and holistic visibility and 
-                  control with a single pane of glass.
-                </span>
-            }]
-        }]
-    },
-    {
         title:"Web Application Firewall:How it works?",
        rowDistance: 8,
         body: [{
             width: "100%",
             type: "imageGroup",
             data: {
-                images: ["/assets/images/vectors/wafaas.jpg"],
+                images: ["/assets/images/vectors/waf.svg"],
                 objectFit: "contain",
-                className: "wafaas-image"
             }
         }]
     },
@@ -110,4 +72,12 @@ export default [
             },
         ]   
     },
+    {
+        description:"Our Dedicated Web App Firewall uses a single code base, for you can consistently apply and enforce security policies across any environment. It’s easy to deploy and available at a single license, giving you simplified configuration, bot management, and holistic visibility and control with a single pane of glass.",
+        descriptionStyle:{
+            fontSize:["lg","lg","xl"],
+            opacity:0.7,
+            px:"10px"
+        }
+    }
 ]

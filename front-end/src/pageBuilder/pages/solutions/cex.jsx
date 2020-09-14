@@ -32,17 +32,17 @@ export default [
                 content: [{
                     title: "Reliable and Secure",
                     description: "Complete security on our end, while connecting to these cloud platforms. Improve the experience of users throughout the extended enterprise providing significant benefits and reliability.",
-                    image: "/assets/images/illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
+                    image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
                 },
                 {
                     title: "Scalable",
                     description: "Traffic increased or decreased is handled with no difficulty at all. Avoiding vendor lock-in and meeting data-sovereignty requirements. Geo-redundant for improved performance.",
-                    image: "/assets/images/illustrations/scalabilty.svg"
+                    image: "/assets/images/Illustrations/scalabilty.svg"
                 },
                 {
                     title: "Integration",
                     description: "Simplified usage and integration of new technology services. On-demand communication and connectivity. Multi-cloud operations with a complex structure handled easily.",
-                    image: "/assets/images/illustrations/sip.svg"
+                    image: "/assets/images/Illustrations/sip.svg"
                 }]
             }
         }]

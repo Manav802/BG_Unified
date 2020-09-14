@@ -9,7 +9,7 @@ export default [
             type: "imageGroup",
                 my:[0,2],
                 data: {
-                    images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                    images: ["/assets/images/services/contact-center.jpg"],
                     borderRadius: 8,
                     width: ['100%',"100%","90%"],
                     height: "300px",
@@ -120,7 +120,7 @@ export default [
                 data: {
                     title: "Profitable Customer Experience",
                     description: "We help organisations to develop and improve communication channels and deliver lasting customer relationships at a lower cost. Our objective is to maximize the value of information within an organization whilst minimizing the cost.",
-                    image: "/assets/images/illustrations/analytics.svg",
+                    image: "/assets/images/Illustrations/analytics.svg",
                     flexDirection: ["column", "column", "row"],
                 }
             },
@@ -129,7 +129,7 @@ export default [
                 data: {
                     title: "Employee Productivity",
                     description: "We assist organisations in improving employee and partner collaboration to deliver greater employee productivity, improved information sharing and knowledge management",
-                    image: "/assets/images/illustrations/productivity.svg",
+                    image: "/assets/images/Illustrations/productivity.svg",
                     flexDirection: ["column", "column", "row-reverse"],
                 }
             },
@@ -138,7 +138,7 @@ export default [
                 data: {
                     title: "Securing Data",
                     description: "We help organisations reduce their risks by offering solutions for creating, sharing and storing the information, to protect, detect and respond to external and internal incidents and threats.",
-                    image: "/assets/images/illustrations/security_lock_firewall.svg",
+                    image: "/assets/images/Illustrations/security_lock_firewall.svg",
                     flexDirection: ["column", "column", "row"],
                 }
             },

@@ -8,7 +8,7 @@ export default [
                 width: ["100%", "100%", 1 / 2],
                 type: "imageGroup",
                 data: {
-                    images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                    images: ["/assets/images/services/firewall.jpg"],
                     borderRadius: 8,
                     width: ['100%', "100%", "90%"],
                     height: "300px",
@@ -44,7 +44,7 @@ export default [
                 mt: 8,
                 type: "imageGroup",
                 data: {
-                    images: ["/assets/images/icons/brands/mongodb.svg", "/assets/images/icons/brands/firewall.svg", "/assets/images/icons/brands/firewall__1_.svg"],
+                    images: ["/assets/images/icons/brands/cisco_asa-01.svg", "/assets/images/icons/brands/fortinet-01.svg", "/assets/images/icons/brands/paoloalto-01.svg"],
                     px: 3,
                     height: "90px",
                     objectFit: "contain",
@@ -128,17 +128,17 @@ export default [
                 content: [{
                     title: "Platform Diversity",
                     description: "On-premise or cloud-based, that helps secure your IT environment quickly.The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.",
-                    image: "/assets/images/illustrations/diversity.svg"
+                    image: "/assets/images/Illustrations/diversity.svg"
                 },
                 {
                     title: "Fast and Easy Deployment",
                     description: "Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure without capex.",
-                    image: "/assets/images/illustrations/FastAndEasyDevelopment_Firewall.svg"
+                    image: "/assets/images/Illustrations/FastAndEasyDevelopment_Firewall.svg"
                 },
                 {
                     title: "Advanced Technology Stack",
                     description: "Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network included.",
-                    image: "/assets/images/illustrations/data_protection.svg"
+                    image: "/assets/images/Illustrations/data_protection.svg"
                 },]
             }
         }]

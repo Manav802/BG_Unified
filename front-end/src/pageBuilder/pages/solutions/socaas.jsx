@@ -9,7 +9,7 @@ export default [
             type: "imageGroup",
                 my:[0,2],
                 data: {
-                    images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                    images: ["/assets/images/services/socaas.jpg"],
                     borderRadius: 8,
                     width: ['100%',"100%","90%"],
                     height: "300px",

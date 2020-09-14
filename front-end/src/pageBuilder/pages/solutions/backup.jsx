@@ -9,7 +9,7 @@ export default [
                 py: [2, 6, 6, 6, 2],
                 type: "imageGroup",
                 data: {
-                    images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                    images: ["/assets/images/services/backup-2.jpg"],
                     borderRadius: 8,
                     width: '90%',
                     height: "300px",
@@ -52,7 +52,7 @@ export default [
             {
                 type: "image&text",
                 data: {
-                    image: "/assets/images/illustrations/productivity.svg",
+                    image: "/assets/images/Illustrations/productivity.svg",
                     title: "Flexible and Scalable Service",
                     flexDirection: ["column", "column", "row"],
                     description: "For any  department of your organization, our BaaS offering provides a simplified IT management and a highly scalable platform. Irrespective of the end-user, everyone gets access to the latest and the greatest backup technology stack. Customized and tailor-made solutions to meet client needs with Local end-market support services and Local language capabilities"
@@ -61,7 +61,7 @@ export default [
             {
                 type: "image&text",
                 data: {
-                    image: "/assets/images/illustrations/Sound_and_Efficient_Planning.svg",
+                    image: "/assets/images/Illustrations/Sound_and_Efficient_Planning.svg",
                     title: "Cost Effective Solution",
                     flexDirection: ["column", "column", "row-reverse"],
                     description: "For your business, we are offering and providing a flat billing structure. It's designed for pay as you go model that shifts your costs from capex to opex. You will have very simplified and predictable expenses and have the option of rolling any upfront or one-off expenses into your monthly payment."
@@ -70,7 +70,7 @@ export default [
             {
                 type: "image&text",
                 data: {
-                    image: "/assets/images/illustrations/Completeness_CloudLogging.svg",
+                    image: "/assets/images/Illustrations/Completeness_CloudLogging.svg",
                     title: "Back it Up",
                     flexDirection: ["column", "column", "row"],
                     description: "Geographically sound, quick and efficient increasing your backup by 60%. Highly advanced, available and multiple data centre locations offering multiple IP types globally, in a clustered or isolated environment."

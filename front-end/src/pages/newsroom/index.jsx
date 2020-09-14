@@ -52,6 +52,7 @@ function Newsroom(){
               <Box p={4} display={["none","none", "block"]}>
                 <Button width="100%" bg="light.500" color={category === "All" ? "primary.500" : "dark.500"} justifyContent="start" onClick={() => setCategory("All")}>All</Button>
                 <Button width="100%" bg="light.500" color={category === "Updates" ? "primary.500" : "dark.500"} justifyContent="start" onClick={() => setCategory("Updates")}>Updates</Button>
+                <Button width="100%" bg="light.500" color={category === "Case Study" ? "primary.500" : "dark.500"} justifyContent="start" onClick={() => setCategory("Case Study")}>Case Studies</Button>
               </Box>
               <Box width="100%" px={3}>
                 {newsroom.map(blog =>{if(blog.category === category || category === "All") return(<>

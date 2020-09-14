@@ -47,24 +47,29 @@ function Blogs() {
           width="100%"
           height="320px"
         ></Image>
-        <Flex mt={6}>
-        <Avatar src={blog.avatar} />
-          <Box ml="3">
-            <Text fontWeight="bold">
-              {"by " + blog.by || "Team"}
-            </Text>
-            <Text fontSize="sm">Posted On {blog.date}</Text>
-          </Box>
-        </Flex>
+        
      </Section>
-     <Section  my={6} pt={0} pb={6}>
+     <Section  mt={6} py={0} >
         <Box width={["100%","100%","72%"]}>
         {blog.content && blog.content.map((body, index) => (
             <Body {...body}></Body>
         ))}
         </Box>  
       </Section>         
-            
+      <Section pt={0} pb={6}>
+        <Flex width={["100%","100%","72%"]}>
+        <Flex >
+            <Avatar src={blog.avatar} />
+            <Box ml="3">
+              <Text fontWeight="bold">
+                by <br></br> {blog.by || "Team"}
+              </Text>
+              
+            </Box>
+          </Flex>
+          <Text ml="auto"  fontSize="md">Posted On <br></br> <b>{blog.date}</b></Text>
+          </Flex>
+      </Section>
     </div>
   );
 }

@@ -37,7 +37,7 @@ function Solutions() {
                 <Image
                     opacity=".3"
                     className="bg-image"
-                    src="/assets/images/backgrounds/network_abstract.jpg"
+                    src={service.bgImage}
                 />
                 <div className="container">
                     <div className="row">

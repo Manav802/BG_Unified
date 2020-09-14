@@ -147,10 +147,7 @@ export default [
     },
     {
         py: 16,
-        bgImage: "url(https://images.unsplash.com/photo-1484662020986-75935d2ebc66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)",
-        bg: "#333",
-        blend: "multiply",
-        color: "white",
+        bg:"light.400",
         body: [
         {
             width: 1/3,
@@ -201,17 +198,17 @@ export default [
                 content: [{
                     title: "Choice between On-Premises & Cloud",
                     description: "On-premise or cloud-based, that helps secure your IT environment quickly. The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance..",
-                    image: "/assets/images/illustrations/Varied_Web_Hosting_Solutions.svg"
+                    image: "/assets/images/Illustrations/Varied_Web_Hosting_Solutions.svg"
                 },
                 {
                     title: "Fast and easy Deployment",
                     description: "Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure without capex.",
-                    image: "/assets/images/illustrations/FlexibilityAndScalabilty_AppDev.svg"
+                    image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg"
                 },
                 {
                     title: "Advanced Technology Stack",
                     description: "Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included.",
-                    image: "/assets/images/illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
+                    image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
                 },]
             }
         }]

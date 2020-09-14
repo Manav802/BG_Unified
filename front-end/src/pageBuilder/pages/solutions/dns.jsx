@@ -34,7 +34,7 @@ export default [
                 width: ["100%","100%","100%",1/2, 5/12],
                 type: "content",
                 data: [{
-                    title: "For a stronger Web Identity",
+                    title: "Mark your Presence over the Web",
                     textAlign: "left",
                     fontSize: ["lg","xl"],
                     titleSize: [40,40,48],
@@ -105,17 +105,17 @@ export default [
                 content: [{
                     title: "Scalability",
                     description: "Hierarchical nature of  DNS, making it scalable. Allows every organization to manage its authoritative and operational data effectively, even with increased resources. Maintaining compatibility as DNS servers clients run on different hardware, different operating systems.",
-                    image: "/assets/images/illustrations/scalabilty.svg"
+                    image: "/assets/images/Illustrations/scalabilty.svg"
                 },
                 {
                     title: "Reliability",
                     description: "The user or the end host need not dive into the technicality about root or TLD servers. Only need to know the basics of the functioning. Eliminating vulnerabilities like cache poisoning, to reach a satisfactory level of security, making our DNS service extremely reliable",
-                    image: "/assets/images/illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
+                    image: "/assets/images/Illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
                 },
                 {
                     title: "Concurrency",
                     description: "Allows and handles multiple requests simultaneously and manages data by distributing over a large number of hosts. Detects, isolates notifies and corrects faults encountered in the network.",
-                    image: "/assets/images/illustrations/ConnectivityIntegration_CloudExchange.svg"
+                    image: "/assets/images/Illustrations/ConnectivityIntegration_CloudExchange.svg"
                 },]
             }
         }]

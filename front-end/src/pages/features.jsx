@@ -189,7 +189,7 @@ function features() {
               Multiple Data Center Locations
             </Heading>
             <Text fontSize="lg" fontWeight="600" opacity=".7">
-              7 to be precise including Equinix SY3, SY4, ME1, LD3, Solarix,
+              7 to be precise including Solarix,
               Auckland, Airtrunk SYD/ME and GovDC.End-to-End DC network
               infrastructure encompassing server switching. Server consolidation
               and virtualization, high availability & clustering.

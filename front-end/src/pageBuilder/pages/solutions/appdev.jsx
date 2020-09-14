@@ -107,7 +107,7 @@ export default [
                 data: {
                     title: "Platform Independence",
                     description: "Build applications for a range of digital platforms like mobile, desktop, smartwatch, AR etc. User-interactivity, responsiveness, user-friendly interfaces kept into consideration.",
-                    image: "/assets/images/illustrations/diversity.svg",
+                    image: "/assets/images/Illustrations/diversity.svg",
                     flexDirection: ["column", "column", "row"],
                 }
             },
@@ -116,7 +116,7 @@ export default [
                 data: {
                     title: "Client Specific",
                     description: "Highly talented team of professionals and technology experts, to build customized solutions as per the client’s needs. Customer satisfaction is the prime motto, and we ensure to deliver every requirement expected.",
-                    image: "/assets/images/illustrations/ClientSpecific_AppDev.svg",
+                    image: "/assets/images/Illustrations/ClientSpecific_AppDev.svg",
                     flexDirection: ["column", "column", "row-reverse"],
                 }
             },
@@ -125,7 +125,7 @@ export default [
                 data: {
                     title: "Flexibility and Scalability",
                     description: "Digital transformation, App modernization and up-gradation, and Application Integration Services. Agile software development model followed to provide better results.",
-                    image: "/assets/images/illustrations/FlexibilityAndScalabilty_AppDev.svg",
+                    image: "/assets/images/Illustrations/FlexibilityAndScalabilty_AppDev.svg",
                     flexDirection: ["column", "column", "row"],
                 }
             },

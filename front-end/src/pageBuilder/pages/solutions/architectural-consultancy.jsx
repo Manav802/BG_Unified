@@ -7,7 +7,7 @@ export default [
             type: "imageGroup",
                 my:[0,2],
                 data: {
-                    images: ["https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"],
+                    images: ["/assets/images/services/arch_consul.jpg"],
                     borderRadius: 8,
                     width: ['100%',"100%","90%"],
                     height: "300px",
@@ -89,17 +89,17 @@ export default [
                 content: [{
                     title: "Performance Optimized",
                     description: "Monitors and measures various aspects of the network environment so that overall performance can be maintained and optimised.",
-                    image: "/assets/images/illustrations/analytics.svg"
+                    image: "/assets/images/Illustrations/analytics.svg"
                 },
                 {
                     title: "Configuration Management",
                     description: "Configures network devices, performs inventory management and software management. Local end-market support services and Local language capabilities.",
-                    image: "/assets/images/illustrations/SimplifiedLogManagment_CloudLogging.svg"
+                    image: "/assets/images/Illustrations/SimplifiedLogManagment_CloudLogging.svg"
                 },
                 {
                     title: "Wide Expert Range",
                     description: "Weather System Architecture, Technology Roadmap, or optimization solutions for your business, we’ve got it all covered. Customized and tailor solutions to meet client needs",
-                    image: "/assets/images/illustrations/infrastructure_city.svg"
+                    image: "/assets/images/Illustrations/infrastructure_city.svg"
                 },]
             }
         }]

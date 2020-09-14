@@ -100,6 +100,9 @@ function menu(props) {
             </Button>
             </Link>
           </DrawerBody>
+          <DrawerFooter justifyContent="start">
+             <Button leftIcon="arrow-back" bg="white" onClick={onClose} color="primary.500">Go Back</Button>
+          </DrawerFooter>
         </DrawerContent>
       </Drawer>
     </div>
