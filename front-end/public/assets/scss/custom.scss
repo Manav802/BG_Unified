@@ -43,3 +43,14 @@
     right: -6px;
   }
 }
+
+
+#nprogress .bar {
+  background: #F32222 !important;
+  height: 3px !important; 
+  }
+
+#nprogress .peg {
+  box-shadow: 0 0 10px  #F32222, 0 0 5px  #F32222 !important;
+}
+  
