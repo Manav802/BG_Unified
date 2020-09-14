@@ -78,17 +78,17 @@ export default [
                 content: [{
                     title: "Firewall ",
                     description: "Multi-Layered Hosted Firewall Solution with Dedicated / Shared Firewall using Palo Alto, Fortinet, and Cisco ASA. Centralized Policy Management using Panorama, Sourcefire DC",
-                    image: "/assets/images/Illustrations/firewall.svg"
+                    image: "/assets/images/illustrations/firewall.svg"
                 },
                 {
                     title: "Network Filtering",
                     description: "Multiple IP types globally, in a clustered or isolated environment. Enhanced proxy service by isolating the private network from the web, thus allowing limiting access of private network users to Internet-based resources.",
-                    image: "/assets/images/Illustrations/security_lock_firewall.svg"
+                    image: "/assets/images/illustrations/security_lock_firewall.svg"
                 },
                 {
                     title: "Fast speed with minimum bandwidth usage",
                     description: "Use proxy servers at a faster speed and limiting the bandwidth utilization, by filtering traffic, caching files and web pages accessed. Highly advanced, available and multiple data centre locations.",
-                    image: "/assets/images/Illustrations/sip.svg"
+                    image: "/assets/images/illustrations/sip.svg"
                 },]
             }
         }]

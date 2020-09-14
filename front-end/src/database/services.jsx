@@ -206,7 +206,7 @@ const services = {
     "proxy": {
         title: "Proxy As A Service",
         slogan: "Our Proxy, Your Way!!",
-        bgImage: "/assets/images/services/proxy.jpg",
+        bgImage: "/assets/images/services/Proxy.jpg",
         popular: true,
         category: "Cyber Security Services",
         icon: "/assets/images/icons/monotone/Proxy.svg",
