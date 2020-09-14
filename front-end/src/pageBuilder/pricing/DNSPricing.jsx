@@ -50,9 +50,9 @@ function DNSPricing(props) {
                     featureList={[
                       "Includes 5 Zones",
                       "Low Latency",
-                      "High Availabilty",
+                      "High Availability",
                       "BlackBox Service",
-                      "Cost Effective",
+                      "Cost-Effective",
                     ]}
                   >
                     <Button
@@ -73,9 +73,9 @@ function DNSPricing(props) {
                     featureList={[
                       "Includes 5 Zones",
                       "Low Latency",
-                      "High Availabilty",
+                      "High Availability",
                       "BlackBox Service",
-                      "Cost Effective",
+                      "Cost-Effective",
                     ]}
                   >
                     <Button
