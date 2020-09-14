@@ -209,7 +209,7 @@ const services = {
         bgImage: "/assets/images/services/Proxy.jpg",
         popular: true,
         category: "Cyber Security Services",
-        icon: "/assets/images/icons/monotone/Proxy.svg",
+        icon: "/assets/images/icons/monotone/proxy.svg",
         color: "#451F55",
         tags: ["proxy", "servers", "low-latency", "services"],
         description: "Just redirect your traffic to our Proxy Service either by DNS or other custom solution to our public Proxy....",
