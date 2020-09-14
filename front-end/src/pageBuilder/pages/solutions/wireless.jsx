@@ -66,7 +66,7 @@ export default [
     },
     {
         title: "Why BG Unified Solutions?",
-        description: "Wireless plays an integral part in collaborating and streamlining resources of an organisation and increases productivity at a tremendous rate.",
+        description: "Wireless plays an integral part in collaborating and streamlining resources of an organization and increases productivity at a tremendous rate.",
         rowDistance: 8,
         mb:0,
         py:45,
@@ -77,12 +77,12 @@ export default [
                 fontSize: "md",
                 content: [{
                     title: "Clustering of Devices",
-                    description: "Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, so as to support Wireless Phones in any environment. Traffic and congestion problems reduced significantly.",
+                    description: "Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, to support Wireless Phones in any environment. Traffic and congestion problems were reduced significantly.",
                     image: "/assets/images/illustrations/ClusteringOfDevices_Wireless.svg"
                 },
                 {
                     title: "Unified and Efficient",
-                    description: "Improved operational efficiencies, Reduced communication-related delays and enhanced collaboration. Completely redundant and efficient transmission.",
+                    description: "Improved operational efficiencies, Reduced communication-related delays, and enhanced collaboration. Completely redundant and efficient transmission.",
                     image: "/assets/images/illustrations/unified_and_efficient.svg"
                 },
                 {
