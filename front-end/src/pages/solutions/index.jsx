@@ -199,7 +199,7 @@ function OurSolutions(){
                         </Flex>
                         <Box p={8}>
                             <Heading size="lg" fontFamily="Nexa Bold">{service[1].title}</Heading>
-                            <Text mt={2} >{service[1].conclusion}</Text>
+                            <Text mt={2} >{service[1].description}</Text>
                             <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" mt={3} px={0} bg="white" className="link" _hover={{color:"primary.500", bg:"white"}} rightIcon="arrow-forward">Learn More</Button></Link>
                         </Box>
                     </Flex>
