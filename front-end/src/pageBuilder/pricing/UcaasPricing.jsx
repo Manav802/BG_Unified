@@ -61,6 +61,9 @@ function UcaasPricing(props) {
     const [addSIP, setAddSIP] = useState(0);
     const [advancedOptions, setAdvancedOptions] = useState(false);
     const resetOnCardChange = () => {
+        setNum10(0);
+        setNum50(0);
+        setNum100(0);
         setAddSIP(0);
         setShowSIP(false);
     };
@@ -350,7 +353,7 @@ function UcaasPricing(props) {
                                                         >
                                                             View More
                                                         </Button>
-                                                        /</a>
+                                                        </a>
                                                     </PricingCard>
                                                 </div>
                                                 <div className="col-lg-4 my-3">
@@ -525,12 +528,8 @@ function UcaasPricing(props) {
                                                     Additional UCaaS
                                                 </div>
                                                 <NumberInput
-                                                    onChange={(value) =>
-                                                        setadditionalUcaas(
-                                                            value
-                                                        )
-                                                    }
-                                                    defaultValue={0}
+                                                    onChange={(value)=>{value<=20?setadditionalUcaas(value):setadditionalUcaas(20)}}
+                                                    value={additionalUcaas}
                                                     min={0}
                                                     max={20}
                                                 >
@@ -546,10 +545,8 @@ function UcaasPricing(props) {
                                                     Additional Hunt Groups
                                                 </div>
                                                 <NumberInput
-                                                    onChange={(value) =>
-                                                        setHunts(value)
-                                                    }
-                                                    defaultValue={0}
+                                                    onChange={(value)=>{value<=20?setHunts(value):setHunts(20)}}
+                                                    value={hunts}
                                                     min={0}
                                                     max={20}
                                                 >
@@ -561,7 +558,7 @@ function UcaasPricing(props) {
                                                 </NumberInput>
                                             </div>
                                             <div className="col-lg-11 mt-4">
-                                                <a
+                                                <a className="link"
                                                     onClick={() => {
                                                         setAdvancedOptions(
                                                             !advancedOptions
@@ -583,10 +580,8 @@ function UcaasPricing(props) {
                                                             NUM-10
                                                         </div>
                                                         <NumberInput
-                                                            onChange={(value) =>
-                                                                setNum10(value)
-                                                            }
-                                                            defaultValue={0}
+                                                            onChange={(value)=>{value<=20?setNum10(value):setNum10(20)}}
+                                                            value={num10}
                                                             min={0}
                                                             max={20}
                                                         >
@@ -602,10 +597,8 @@ function UcaasPricing(props) {
                                                             NUM-50
                                                         </div>
                                                         <NumberInput
-                                                            onChange={(value) =>
-                                                                setNum50(value)
-                                                            }
-                                                            defaultValue={0}
+                                                            onChange={(value)=>{value<=20?setNum50(value):setNum50(20)}}
+                                                            value={num50}
                                                             min={0}
                                                             max={20}
                                                         >
@@ -621,10 +614,8 @@ function UcaasPricing(props) {
                                                             NUM-100
                                                         </div>
                                                         <NumberInput
-                                                            onChange={(value) =>
-                                                                setNum100(value)
-                                                            }
-                                                            defaultValue={0}
+                                                            onChange={(value)=>{value<=20?setNum100(value):setNum100(20)}}
+                                                            value={num100}
                                                             min={0}
                                                             max={20}
                                                         >

@@ -10,7 +10,7 @@ export default [
     },
     {
         title: "Establish your Brand Online",
-        description: "We have the right team, with expertise in thier respective domains to develop and turn any kind of business into an online giant.",
+        description: "We have the right team, with expertise in their respective domains to develop and turn any kind of business into an online giant.",
         rowDistance: 4,
         gap: 4,
         body: [
@@ -101,15 +101,15 @@ export default [
                     titleSize: [32,36,40,48],
                     my:[2,4,8],
                     text:   <>
-                            <span>We not only build great websites, but focus on user interactivity as well. This is where new business comes. If your website is old-fashioned,or outdated, you tend to loose your customers within 5 seconds.</span><br/><br/>
-                            <span> We are the solution to this problem:- A completely customized website designed strategically, regularly updated and maintained. This is how you can convert your website into a valuable asset for your business.</span>,
+                            <span>We not only build great websites but focus on user interactivity as well. This is where new business comes. If your website is old-fashioned or outdated, you tend to lose your customers within 5 seconds.</span><br/><br/>
+                            <span> We are the solution to this problem:- A completely customized website designed strategically, regularly updated, and maintained. This is how you can convert your website into a valuable asset for your business.</span>,
                             </>    
                 },
                 {   
                     list: [
                         "Built for fast loading speeds.",
                         "Platform Independence is a necessity.",
-                        "Easy to Update, Manage and Maintain.",
+                        "Easy to Update, Manage, and Maintain.",
                         "Highly Optimized Content."
                     ],
                     spacing: 2,

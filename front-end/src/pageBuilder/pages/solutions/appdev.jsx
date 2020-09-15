@@ -1,6 +1,6 @@
 export default [
     {
-        title: "We help you in new Application Development, Modernizing and Supporting existing applications.",
+        title: "We help you in new Application Development, Modernizing, and Supporting existing applications.",
         pt: 10,
         pb: 0,
         mb: 0
@@ -24,7 +24,7 @@ export default [
                 image: "/assets/images/icons/color/world-wide-web.svg",
                 title: "Diversified Domains",
                 align: "left",
-                description: "We help you build applications for a wide domain - We help you build applications for a wide range of platforms and domains, including mobile, web, enterprise, startups and much more."
+                description: "We help you build applications for a wide domain - We help you build applications for a wide range of platforms and domains, including mobile, web, enterprise, startups, and much more."
                 }
             },
             {
@@ -80,7 +80,7 @@ export default [
                     image: "/assets/images/icons/color/turn.svg",
                     title: "Low Turn-Around Time",
                     align: "left",
-                    description: "We plan, design, start and deliver without wasting any single second. Delivering the results before the deadlines, always."
+                    description: "We plan, design, start, and deliver without wasting any single second. Delivering the results before the deadlines, always."
                     }
             },
             {
@@ -106,7 +106,7 @@ export default [
                 type: "image&text",
                 data: {
                     title: "Platform Independence",
-                    description: "Build applications for a range of digital platforms like mobile, desktop, smartwatch, AR etc. User-interactivity, responsiveness, user-friendly interfaces kept into consideration.",
+                    description: "Build applications for a range of digital platforms like mobile, desktop, smartwatch, AR, etc. User-interactivity, responsiveness, user-friendly interfaces kept into consideration.",
                     image: "/assets/images/illustrations/diversity.svg",
                     flexDirection: ["column", "column", "row"],
                 }

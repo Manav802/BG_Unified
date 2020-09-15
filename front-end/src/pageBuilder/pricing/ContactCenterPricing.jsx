@@ -315,6 +315,7 @@ function ContactCenterPricing(props) {
 
                   <div className="col-lg-12 mt-5 d-flex justify-content-center">
                     <PricingQuote
+                      serviceName="Contact Center As A Service"
                       serviceDescription={`${planName}${verifyNotEmpty(
                         value,
                         "Additional CSQ"
