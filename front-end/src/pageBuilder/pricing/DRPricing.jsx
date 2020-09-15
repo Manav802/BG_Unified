@@ -19,7 +19,7 @@ function DRPricing(props) {
   const [IP,setIP] = React.useState(0);
   return (
         <div id="pricing" className="container">
-            <div className="row justify-content-center px-lg-5 px-3">
+            <div className="row justify-content-center px-lg-5">
             <Fade duration={500} bottom>
               <div className="col-lg-4 my-3">
                 <PricingCard title={<div className="text-center"> Two <br/> Geo Locations </div>} icon="/assets/images/icons/theme/property-2.svg" featureList={["Includes One Yearly Drill"]}>

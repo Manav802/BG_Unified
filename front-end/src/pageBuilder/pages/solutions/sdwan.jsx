@@ -24,7 +24,7 @@ export default [
     {
         px: 2,
         title: "Find out How BGUS SD-WAN will improve your network:",
-        description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure and AWS.",
+        description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure, and AWS.",
         descriptionStyle: {
             px: "10px",
         },
@@ -73,7 +73,7 @@ export default [
                     title: "Storage Centralization",
                     align: "left",
                     size: "50px",
-                    description: " Fast, Reliable and Increasingly efficient centralizing servers and storage offers significant cost, management, security and compliance benefits. Detects, isolates notifies and corrects faults encountered in the network."
+                    description: " Fast, Reliable and Increasingly efficient centralizing servers and storage offer significant cost, management, security, and compliance benefits. Detects, isolates notifies, and corrects faults encountered in the network."
                 }
             },
             {
@@ -88,7 +88,7 @@ export default [
                     title: "Security Guaranteed",
                     align: "left",
                     size: "50px",
-                    description: "All without risk of corrupting data or altering behaviour. No plug-ins are required, which expedites deployment and saves both time and money. Fast, Reliable and Increasingly Efficient."
+                    description: "All without risk of corrupting data or altering behavior. No plug-ins are required, which expedites deployment and saves both time and money. Fast, Reliable, and Increasingly Efficient."
                 }
             },
         ]

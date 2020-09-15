@@ -4,7 +4,7 @@ export default [
     {   
         title : "Hosting with Freedom Built-In",
         titleStyle:{fontSize:["3xl","4xl"],px:"10px"},
-        description: <span>Delivering a scalable, reliable and managed authoritative Domain Name System (DNS) As A Service. With our assured low latency and high availability, 
+        description: <span>Delivering a scalable, reliable, and managed authoritative Domain Name System (DNS) As A Service. With our assured low latency and high availability, 
             it is a cost-effective way to make your applications and services available to your users. <br/><br/>The main functionality of DNS is to convert domain names into IP addresses, 
             for the web browsers to identify a website, 
             for them to load the required resources. Domain Name System Service allows you to host the website over the web, maintain and monitor in real-time.</span>,
@@ -59,7 +59,7 @@ export default [
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/key.svg",mt: 4, title: "Authorotative"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/key.svg",mt: 4, title: "Authoritative"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
@@ -91,7 +91,7 @@ export default [
             data: [{
                 textAlign: "center",
                 fontSize: "xl",
-                text: "BG Solutions has gained an excellent reputation in design and implementation of IP technology and significant experience in Domain Name System services design and implementation for a number of clients and in distributed environments and locations. BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use Information Technology to improve their business results."
+                text: "BG Solutions has gained an excellent reputation in the design and implementation of IP technology and significant experience in Domain Name System services design and implementation for several clients and distributed environments and locations. BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use Information Technology to improve their business results."
             }]
         }]
     },
@@ -114,7 +114,7 @@ export default [
                 },
                 {
                     title: "Concurrency",
-                    description: "Allows and handles multiple requests simultaneously and manages data by distributing over a large number of hosts. Detects, isolates notifies and corrects faults encountered in the network.",
+                    description: "Allows and handles multiple requests simultaneously and manages data by distributing over a large number of hosts. Detects, isolates notifies, and corrects faults encountered in the network.",
                     image: "/assets/images/illustrations/ConnectivityIntegration_CloudExchange.svg"
                 },]
             }
