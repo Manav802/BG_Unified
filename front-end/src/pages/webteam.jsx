@@ -13,7 +13,7 @@ const team = [
     { name: "Vineet Yadav", username: "vineet", designation: "Product Engineer"},
     { name: "Vishu Chhabra", username: "vishu", designation: "Product Engineer"},
     { name: "Keysang Yonthan", username: "keysang", designation: "Web Designer"},
-    { name: "Sparsh Gupta", username: "yuvraj", designation: "Graphic Designer & Illustrator"},
+    { name: "Sparsh Gupta", username: "sparsh", designation: "Graphic Designer & Illustrator"},
 ]
 
 function webteam(props) {
@@ -31,7 +31,7 @@ function webteam(props) {
                 <Flex wrap="wrap">
                 {team.map(member => (
                     <Flex direction="column" px={3} my={3} width={["100%", "100%","50%", 1/3]}>
-                        <Image src="/assets/images/team/profile.jpg" rounded={12} height="360px" objectFit="cover"></Image>
+                        <Image src={"/assets/images/team/" + member.username +".jpg"} rounded={12} height="360px" objectFit="cover"></Image>
                         <Title size="lg" textAlign="left" mt={4}>{member.name}</Title>
                         <Text fontSize="md" mx={2} opacity=".7" fontWeight="600">{member.designation}</Text>
                     </Flex>
