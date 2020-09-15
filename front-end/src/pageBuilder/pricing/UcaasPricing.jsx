@@ -203,7 +203,7 @@ function UcaasPricing(props) {
                                                             "Include Voicemail",
                                                             "Include Presence",
                                                             "Include Voicemail to Email*",
-                                                            "Include Cisco Jabber",
+                                                            
                                                         ]}
                                                     >
                                                     <a href="#collapse-1" className="no-red">
@@ -233,7 +233,7 @@ function UcaasPricing(props) {
                                                             "Include Voicemail",
                                                             "Include Presence",
                                                             "Include Voicemail to Email*",
-                                                            "Include Cisco Jabber",
+                                                            
                                                         ]}
                                                     >
                                                     <a href="#collapse-1" className="no-red">
@@ -264,7 +264,7 @@ function UcaasPricing(props) {
                                                             "Include Voicemail",
                                                             "Include Presence",
                                                             "Include Voicemail to Email*",
-                                                            "Include Cisco Jabber",
+                                                            
                                                         ]}
                                                     >
                                                     <a href="#collapse-1" className="no-red">
@@ -304,7 +304,7 @@ function UcaasPricing(props) {
                                                             "Include Voicemail",
                                                             "Include Presence",
                                                             "Include Voicemail to Email*",
-                                                            "Include Cisco Jabber",
+                                                            
                                                         ]}
                                                     >
                                                     <a href="#collapse-1" className="no-red">
@@ -334,7 +334,7 @@ function UcaasPricing(props) {
                                                             "Include Voicemail",
                                                             "Include Presence",
                                                             "Include Voicemail to Email*",
-                                                            "Include Cisco Jabber",
+                                                            
                                                         ]}
                                                     >
                                                     <a href="#collapse-1" className="no-red">
@@ -365,7 +365,7 @@ function UcaasPricing(props) {
                                                             "Include Voicemail",
                                                             "Include Presence",
                                                             "Include Voicemail to Email*",
-                                                            "Include Cisco Jabber",
+                                                            
                                                         ]}
                                                     >
                                                     <a href="#collapse-1" className="no-red">
