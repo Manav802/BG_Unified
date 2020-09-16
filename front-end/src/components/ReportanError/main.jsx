@@ -171,19 +171,19 @@ function ErrorForm(props) {
                                 </input>
                                 <Tabs index={tabIndex} onChange={handleTabsChange} isFitted>
                                     <TabList>
-                                        <Tab className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Type of error</div> </Tab>
-                                        <Tab className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Device Details</div></Tab>
-                                        <Tab className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Description</div></Tab>
+                                        <Tab paddingX={["2px","4px","16px"]} fontSize={["sm","md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Type of error</div> </Tab>
+                                        <Tab paddingX={["2px","8px","16px"]} fontSize={["sm","md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Device Details</div></Tab>
+                                        <Tab paddingX={["2px","4px","16px"]} fontSize={["sm","md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Description</div></Tab>
                                     </TabList>
                                     <TabPanels>
                                         <TabPanel>
                                             <FormControl mt={10} isRequired>
                                                 <FormLabel htmlFor="name">Type of error:</FormLabel>
                                                 <RadioGroup name="errortype" onChange={onChange} defaultValue={form.error}>
-                                                    <Radio size="lg" value="Page not responsive" onClick={() => handleToggle(false)}>Page not responsive</Radio>
-                                                    <Radio size="lg" value="Component not working" onClick={() => handleToggle(false)}>Component not working</Radio>
-                                                    <Radio size="lg" value="Site not loading properly" onClick={() => handleToggle(false)}>Site not loading properly</Radio>
-                                                    <Radio size="lg" value="Some Other Error" onClick={() => handleToggle(true)}>Other</Radio>
+                                                    <Radio value="Page not responsive" onClick={() => handleToggle(false)}><Box fontSize={["md","lg"]}>Page not responsive</Box></Radio>
+                                                    <Radio value="Component not working" onClick={() => handleToggle(false)}><Box fontSize={["md","lg"]}>Component not working</Box></Radio>
+                                                    <Radio value="Site not loading properly" onClick={() => handleToggle(false)}><Box fontSize={["md","lg"]}>Site not loading properly</Box></Radio>
+                                                    <Radio value="Some Other Error" onClick={() => handleToggle(true)}><Box fontSize={["md","lg"]}>Other</Box></Radio>
                                                 </RadioGroup>
                                             </FormControl>
                                             {rend && <Collapse isOpen={show}>
