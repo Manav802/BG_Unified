@@ -19,7 +19,7 @@ const services = {
     "architectural-consultancy": {
         title: "Architectural Consultancy As A Service",
         slogan: "Spirit of Expertise",
-        bgImage: "/assets/images/services/arch.jpg",
+        bgImage: "/assets/images/services/arch.webp",
         category: "Collaborative Services",
         icon: "/assets/images/icons/monotone/architectural.svg",
         color: "#235789",
@@ -34,7 +34,7 @@ const services = {
         title: "Backup As A Service",
         slogan: "Backup for your Digital System",
         category: "IT Infrastructural Services",
-        bgImage: "/assets/images/services/backup.jpg",
+        bgImage: "/assets/images/services/backup.webp",
         icon: "/assets/images/icons/monotone/BackupAsAService.svg",
         color: "#0267C1",
         tags: ["backup"],
@@ -61,7 +61,7 @@ const services = {
     "logging": {
         title: "Logging Cloud Connect",
         slogan: "Cloud Computing is the new future",
-        bgImage: "/assets/images/services/logging.jpg",
+        bgImage: "/assets/images/services/logging.webp",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/CloudLogging.svg",
         color: "#020100",
@@ -75,7 +75,7 @@ const services = {
     "contact-center": {
         title: "Contact Center As A Service",
         slogan: "Service Truly Different.",
-        bgImage: "/assets/images/services/support.jpg",
+        bgImage: "/assets/images/services/support.webp",
         category: "Collaborative Services",
         icon: "/assets/images/icons/monotone/ContactCenterAsAService.svg",
         color: "#6A041D",
@@ -89,7 +89,7 @@ const services = {
     "dbaas": {
         title: "Database As A Service",
         slogan: "Professional Remote Database Solutions",
-        bgImage: "/assets/images/services/database.jpg",
+        bgImage: "/assets/images/services/database.webp",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/dbaas.svg",
         color: "#E4572E",
@@ -105,7 +105,7 @@ const services = {
         title: "DNS As A Service",
         slogan: "For a stronger Web Identity",
         category: "Network Services",
-        bgImage: "/assets/images/services/dns.jpg",
+        bgImage: "/assets/images/services/dns.webp",
         icon: "/assets/images/icons/monotone/DNSasAService.svg",
         color: "#06BCC1",
         popluar : true,
@@ -119,7 +119,7 @@ const services = {
     "dr": {
         title: "DR As A Service",
         slogan: "Tackle stagnancy better",
-        bgImage: "/assets/images/services/backup.jpg",
+        bgImage: "/assets/images/services/backup.webp",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/DRAsAService.svg",
         color: "#3B3561",
@@ -133,7 +133,7 @@ const services = {
     "firewall": {
         title: "Firewall As A Service",
         slogan: "Redefining Security Needs",
-        bgImage: "/assets/images/services/firewall-2.jpg",
+        bgImage: "/assets/images/services/firewall-2.webp",
         category: "Cyber Security Services",
         icon: "/assets/images/icons/monotone/Firewall.svg",
         color: "#6A0136",
@@ -147,7 +147,7 @@ const services = {
     "infra": {
         title: "Infrastructure As A Service",
         slogan: "Store your data with our Security and Reliability.",
-        bgImage: "/assets/images/services/infra.jpg",
+        bgImage: "/assets/images/services/infra.webp",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/InfrastructureIcon.svg",
         color: "#51CB20",
@@ -206,7 +206,7 @@ const services = {
     "proxy": {
         title: "Proxy As A Service",
         slogan: "Our Proxy, Your Way!!",
-        bgImage: "/assets/images/services/Proxy.jpg",
+        bgImage: "/assets/images/services/proxy.webp",
         popular: true,
         category: "Cyber Security Services",
         icon: "/assets/images/icons/monotone/proxy.svg",
@@ -222,7 +222,7 @@ const services = {
         title: "SD-WAN As A Service",
         slogan: "Simple Solutions for Complex Connections!!",
         documentHeading: "Best SD-WAN Optimization",
-        bgImage: "/assets/images/services/sdwan.jpg",
+        bgImage: "/assets/images/services/sdwan.webp",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/SD-Wan.svg",
         color: "#3B0086",
@@ -250,7 +250,7 @@ const services = {
     "storage": {
         title: "Storage As A Service",
         slogan: "Storage Made Simple.",
-        bgImage: "/assets/images/services/storage.jpg",
+        bgImage: "/assets/images/services/storage.webp",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/StorageAsAServiceIcon.svg",
         color: "#0091AD",
@@ -264,7 +264,7 @@ const services = {
     "socaas": {
         title: "SOC As A Service",
         slogan: "Cyber Security Experts",
-        bgImage: "/assets/images/services/soc.jpg",
+        bgImage: "/assets/images/services/soc.webp",
         category: "Cyber Security Services",
         icon: "/assets/images/icons/monotone/security.svg",
         color: "#0091AD",
@@ -279,7 +279,7 @@ const services = {
     "ucaas": {
         title: "Unified Communications As A Service",
         slogan: "Professional Communication at your fingertips",
-        bgImage: "/assets/images/services/ucaas_cover.jpg",
+        bgImage: "/assets/images/services/ucaas_cover.webp",
         category: "Collaborative Services",
         icon: "/assets/images/icons/monotone/UCAsAService.svg",
         color: "#B2ABF2",
@@ -293,7 +293,7 @@ const services = {
     "hosting": {
         title: "Web Hosting As A Service",
         slogan: "Trendsetting Web Hosting Solutions",
-        bgImage: "/assets/images/services/webhosting.jpg",
+        bgImage: "/assets/images/services/webhosting.webp",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/WebHosting.svg",
         color: "#06D6A0",
@@ -307,7 +307,7 @@ const services = {
     "wafaas": {
         title: "WAF As A Service",
         slogan: "Robust Security with a Dedicated Web App Firewall",
-        bgImage: "/assets/images/services/wafaas.jpg",
+        bgImage: "/assets/images/services/wafaas.webp",
         category: "Cyber Security Services",
         icon: "/assets/images/icons/monotone/app.svg",
         color: "#E4572E",
@@ -321,7 +321,7 @@ const services = {
     "webdev": {
         title: "Web Development As A Service",
         slogan: "Design that speeds up performance",
-        bgImage: "/assets/images/services/webdev.jpg",
+        bgImage: "/assets/images/services/webdev.webp",
         category: "Development Services",
         icon: "/assets/images/icons/monotone/webdev.svg",
         color: "#E4572E",
@@ -336,7 +336,7 @@ const services = {
     "wireless": {
         title: "Wireless As A Service",
         slogan: "Wireless Technology Made Simple",
-        bgImage: "/assets/images/services/wireless.jpg",
+        bgImage: "/assets/images/services/wireless.webp",
         category: "Network Services",
         icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
         color: "#E4572E",

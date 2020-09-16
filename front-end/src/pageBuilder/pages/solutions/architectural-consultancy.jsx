@@ -7,7 +7,7 @@ export default [
             type: "imageGroup",
                 my:[0,2],
                 data: {
-                    images: ["/assets/images/services/arch_consul.jpg"],
+                    images: ["/assets/images/services/arch_consul.webp"],
                     borderRadius: 8,
                     width: ['100%',"100%","90%"],
                     height: "300px",
@@ -38,7 +38,7 @@ export default [
         my: 0,
         title: "Architectural Consultancy Service - Quality Assured",
         py: "48px",
-        bgImage: "url('/assets/images/backgrounds/network_abstract.jpg')",
+        bgImage: "url('/assets/images/backgrounds/network_abstract.webp')",
         blend: "screen",
         bg: "light.400",
         color: "dark.500",

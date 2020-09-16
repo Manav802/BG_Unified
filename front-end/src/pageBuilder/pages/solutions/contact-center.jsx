@@ -53,7 +53,7 @@ export default [
     {
         my: 0,
         py: ["24px","30px","48px"],
-        bgImage: "url('/assets/images/backgrounds/network_abstract.jpg')",
+        bgImage: "url('/assets/images/backgrounds/network_abstract.webp')",
         blend: "screen",
         bg: "light.400",
         color: "dark.500",
