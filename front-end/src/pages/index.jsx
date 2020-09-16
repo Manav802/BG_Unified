@@ -1,7 +1,7 @@
-import React, { Component, useEffect } from "react";
+import React, { Component } from "react";
 import Head from "next/head";
-import { FaArrowRight, FaPercent } from "react-icons/fa";
-import { Image, Button, Heading, ButtonGroup, Icon, AspectRatioBox, Box, Slide, Flex, Text, CloseButton } from "@chakra-ui/core";
+import { FaArrowRight} from "react-icons/fa";
+import { Image, Button, Heading,  Box,  Flex,  } from "@chakra-ui/core";
 import FeatureCard from "../components/cards/FeatureCard";
 import CaseStudy from "../components/case_study/CaseStudy";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
