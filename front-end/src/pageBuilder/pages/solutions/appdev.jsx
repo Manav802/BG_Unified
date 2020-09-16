@@ -1,6 +1,6 @@
 export default [
     {
-        title: "We help you in new Application Development, Modernizing, and Supporting existing applications.",
+        title: "We help you in new Application Development, Modernizing, and to Support existing applications.",
         pt: 10,
         pb: 0,
         mb: 0
