@@ -37,7 +37,7 @@ function header(props) {
     return (
         <>
             <CookieNotice></CookieNotice>
-            <Box position="sticky" top="0px" bg="white" boxShadow="lg" zIndex={1000}>
+            <Box className="headerBox" top="0px" bg="white" boxShadow="lg" zIndex={1000}>
                 <div className="container">
                     <div className="p-3 transition-3 d-flex justify-content-between align-items-center layer-4">
                         <div className="d-flex align-items-center">
