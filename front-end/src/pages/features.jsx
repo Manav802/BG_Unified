@@ -64,7 +64,7 @@ function features() {
                   opacity: .7,
                   textAlign: "left"
                 },
-                image: "/assets/images/features/vectors/network_design.png",
+                image: "/assets/images/features/vectors/network_design.webp",
                 maxH: "400px",
                 imageProps:{
                   objectFit: "contain"
@@ -94,7 +94,7 @@ function features() {
                   opacity: .7,
                   textAlign: "left"
                 },
-                image: "/assets/images/features/vectors/data_protection.png",
+                image: "/assets/images/features/vectors/data_protection.webp",
                 maxH: "400px",
                 description: <span>
                   Connectivity to the highly secured infrastructure using multiple

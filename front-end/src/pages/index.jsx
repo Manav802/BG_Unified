@@ -1,27 +1,21 @@
 import React, { Component, useEffect } from "react";
 import Head from "next/head";
-
 import { FaArrowRight, FaPercent } from "react-icons/fa";
 import { Image, Button, Heading, ButtonGroup, Icon, AspectRatioBox, Box, Slide, Flex, Text, CloseButton } from "@chakra-ui/core";
 import FeatureCard from "../components/cards/FeatureCard";
 import CaseStudy from "../components/case_study/CaseStudy";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import { TESTIMONIALS } from "../database/testimonials";
-import { CASESTUDY } from "../../public/assets/data/casestudydata";
 import newsroom from "../database/newsroom"
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
 import Slider from "react-flickity-component";
-import ImageGroup from "../pageBuilder/components/ImageGroup";
 import Section from "../pageBuilder/Section";
 import Conclusion from "../components/footer/conclusion";
 import SVG from "../components/svg/SVG";
 import Service from "../components/cards/Service";
-import Container from "../pageBuilder/Container";
-import Title from "../pageBuilder/Title";
-import Offer from "../components/cards/Offer";
 
-const Globe = <canvas className="ml-auto mr-auto d-block" id="globe" width="1200px" height="1200px"></canvas>
+import Offer from "../components/cards/Offer";
 
 const sliderInfo = [
   {
@@ -219,7 +213,7 @@ class Landing extends Component {
             </div>
           </div>
         </Fade>
-        <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.webp')" blend="multiply" py={20}>
+        <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.jpg')" blend="multiply" py={20}>
           {/* <Box id="globe-box" top={0} className="globe-container position-absolute">
             <DynamicComponent></DynamicComponent>
           </Box> */}

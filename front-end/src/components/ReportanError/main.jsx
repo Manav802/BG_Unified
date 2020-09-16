@@ -27,7 +27,7 @@ const deviceInfo = {
     os: osName,
     device: deviceType
 }
-console.log(deviceInfo);
+
 function ErrorForm(props) {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [name, setName] = useState('');
