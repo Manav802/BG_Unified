@@ -60,3 +60,15 @@
   position: sticky;
   position: -webkit-sticky;
 }
+
+.headerMenu{
+  &-content{
+      span{
+          color: $color-dark;
+      }
+      a{
+          margin: .3rem 0px !important;
+          font-family: Nunito Sans Regular;
+      }
+  }
+}

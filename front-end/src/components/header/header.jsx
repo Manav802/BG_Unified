@@ -89,7 +89,7 @@ function header(props) {
                                     <Text my={"16px"} fontSize="lg" fontWeight="700">IT Infrastructural Services</Text>
                                     <Stack spacing="8px" direction="column">
                                     {servicesArray.filter(service => service[1].category === "IT Infrastructural Services").map(service => (
-                                        <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" variant="unstyled">{service[1].title}</Button></Link>
+                                        <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button className="link" as="a" variant="unstyled">{service[1].title}</Button></Link>
                                     ))}
                                     </Stack>
                                 </Box>
@@ -97,13 +97,13 @@ function header(props) {
                                     <Text my={"16px"} fontSize="lg" fontWeight="700">Network Services</Text>
                                     <Stack spacing="8px" direction="column">
                                     {servicesArray.filter(service => service[1].category === "Network Services").map(service => (
-                                        <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" variant="unstyled">{service[1].title}</Button></Link>
+                                        <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" className="link" variant="unstyled">{service[1].title}</Button></Link>
                                     ))}
                                     </Stack>
                                     <Text my={"16px"} fontSize="lg" fontWeight="700">Cyber Security Services</Text>
                                     <Stack spacing="8px" direction="column">
                                     {servicesArray.filter(service => service[1].category === "Cyber Security Services").map(service => (
-                                        <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" variant="unstyled">{service[1].title}</Button></Link>
+                                        <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" className="link" variant="unstyled">{service[1].title}</Button></Link>
                                     ))}
                                     </Stack>
                                 </Box>
@@ -111,13 +111,13 @@ function header(props) {
                                     <Text my={"16px"} fontSize="lg" fontWeight="700">Collaborative Services</Text>
                                     <Stack spacing="8px" direction="column">
                                     {servicesArray.filter(service => service[1].category === "Collaborative Services").map(service => (
-                                        <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" variant="unstyled">{service[1].title}</Button></Link>
+                                        <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" className="link" variant="unstyled">{service[1].title}</Button></Link>
                                     ))}
                                     </Stack>
                                     <Text my={"16px"} fontSize="lg" fontWeight="700">Development Services</Text>
                                     <Stack spacing="8px" direction="column">
                                     {servicesArray.filter(service => service[1].category === "Development Services").map(service => (
-                                        <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" variant="unstyled">{service[1].title}</Button></Link>
+                                        <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" className="link" variant="unstyled">{service[1].title}</Button></Link>
                                     ))}
                                     </Stack>
                                 </Box>
