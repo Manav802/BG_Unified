@@ -37,7 +37,7 @@ const sliderInfo = [
     btnSecondaryLink: "/contact"
   },
   {
-    title: "Geographical Redundant Infrastructre at diverse Geo-Locations",
+    title: "Geographical Redundant Infrastructre",
     imgSrc: "/assets/images/backgrounds/map.webp",
     subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
     btnPrimaryText: "Explore Now",
@@ -111,25 +111,25 @@ class Landing extends Component {
           <source src="/assets/videos/dots.webm" type="video/webm">
             </source>
           </video> */}
-          <Slider options={{ autoPlay: 10000, adaptiveHeight:true, pageDots: false, draggable: true,pauseAutoPlayOnHover: false,wrapAround: true }}>
+          <Slider options={{ autoPlay: 10000, adaptiveHeight:true,imagesLoaded: true, pageDots: false, draggable: true,pauseAutoPlayOnHover: false,wrapAround: true }}>
             {sliderInfo.map((info, index) => (
-              <Box className="w-100 landing-section">
-                <Image src={info.imgSrc} opacity={.4} height="100%" className="bg-image"></Image>
+              <Box maxHeight={["562px","562px","600px","528px"]} className="w-100 landing-section">
+                <Image src={info.imgSrc} opacity={.4} height="100%"  className="bg-image"></Image>
                 <div className="container py-5">
                   <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                       <div>
-                        <Box fontSize={["4xl","4xl","5xl"]} className="Nexa-Bold text-center text-white mt-0">
+                        <Box fontSize={["3xl","4xl","5xl"]} className="Nexa-Bold text-center text-white mt-0">
                           {info.title}
                         </Box>
-                        <div className="h6 text-center NunitoSans-SemiBold mt-3">
+                        <Box fontSize={["lg","xl"]} className="h6 text-center NunitoSans-SemiBold mt-3">
                           {info.subTitle}
-                        </div>
-                        <div className="py-4 d-flex justify-content-center">
+                        </Box>
+                        <div className="py-4 d-flex text-center justify-content-center">
                           <Link href={info.btnPrimaryLink}>
                             <Button
                               variant="solid"
-                              className="mr-3 btn btn-outline primary-btn"
+                              className="mx-1 mx-lg-2 btn btn-outline primary-btn"
                               variantColor="primary"
                               size="lg"
                             >
@@ -139,7 +139,7 @@ class Landing extends Component {
                           <Link href={info.btnSecondaryLink}>
                             <Button
                               variant="outline"
-                              className="mr-3 btn btn-outline secondary-btn"
+                              className="mx-1 mx-lg-2 btn btn-outline secondary-btn"
                               size="lg"
                             >
                               {info.btnSecondaryText}
