@@ -4,7 +4,7 @@ export default [
     {
         mb:0,
         title: "Get your Quote now!",
-        description: "Our storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage",
+        description: "Our storage infrastructure includes more than 900TB of Tier1/Tier2/Tier3 storage",
         rowDistance: 4,
         gap:0,
         containerWidth: "100%",

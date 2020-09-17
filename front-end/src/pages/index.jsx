@@ -111,7 +111,7 @@ class Landing extends Component {
           <source src="/assets/videos/dots.webm" type="video/webm">
             </source>
           </video> */}
-          <Slider options={{ autoPlay: 10000, adaptiveHeight:true, pageDots: false, draggable: false,pauseAutoPlayOnHover: false,wrapAround: true }}>
+          <Slider options={{ autoPlay: 10000, adaptiveHeight:true, pageDots: false, draggable: true,pauseAutoPlayOnHover: false,wrapAround: true }}>
             {sliderInfo.map((info, index) => (
               <Box className="w-100 landing-section">
                 <Image src={info.imgSrc} opacity={.4} height="100%" className="bg-image"></Image>
@@ -213,7 +213,7 @@ class Landing extends Component {
             </div>
           </div>
         </Fade>
-        <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.jpg')" blend="multiply" py={20}>
+        <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.webp')" blend="multiply" py={20}>
           {/* <Box id="globe-box" top={0} className="globe-container position-absolute">
             <DynamicComponent></DynamicComponent>
           </Box> */}
@@ -372,7 +372,7 @@ class Landing extends Component {
         </Section>
         <Section containerWidth={["100%", "90%"]} className="brands">
           <Flex wrap="wrap" justify="center">
-          {["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png",  "/assets/images/brands/huawei.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/datacom.png", "/assets/images/brands/airtrunk.png", "/assets/images/brands/microfocus.svg", "/assets/images/brands/nsw_gov.png", "/assets/images/brands/victoria.png", ].map(image => (
+          {["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.webp", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png",  "/assets/images/brands/huawei.webp", "/assets/images/brands/infin_it.png", "/assets/images/brands/datacom.png", "/assets/images/brands/airtrunk.png", "/assets/images/brands/microfocus.svg", "/assets/images/brands/nsw_gov.webp", "/assets/images/brands/victoria.webp", ].map(image => (
             <>
               <Image src={image} width="192px" height="96px" mx={12} my={6} objectFit="contain"></Image>
             </>
