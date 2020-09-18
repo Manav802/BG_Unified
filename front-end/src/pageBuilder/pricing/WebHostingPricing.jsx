@@ -51,13 +51,13 @@ function WebHostingPricing(props) {
            </PricingCard>
         </div>
         <div className="col-lg-4 my-3">
-            <PricingCard title="Premium" icon="/assets/images/icons/theme/airplane.svg" featureList={["Include 4vCPU", "Includes 6 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
-                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Premium"); resetOnCardChange();}}>View More</Button>
+            <PricingCard title="Professional" icon="/assets/images/icons/theme/airplane.svg" featureList={["Include 4vCPU", "Includes 6 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
+                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Professional"); resetOnCardChange();}}>View More</Button>
             </PricingCard>
         </div>
         <div className="col-lg-4 my-3">
-            <PricingCard className="hover-effect" title="Gold" icon="/assets/images/icons/theme/rocket.svg" featureList={["Include 6vCPU", "Includes 8 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
-                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Gold"); resetOnCardChange();}}>View More</Button>
+            <PricingCard className="hover-effect" title="Business" icon="/assets/images/icons/theme/rocket.svg" featureList={["Include 6vCPU", "Includes 8 GB RAM", "Include 80 GB Storage", "Complete website monitoring"]}>
+                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Business"); resetOnCardChange();}}>View More</Button>
             </PricingCard>
         </div>
     </div>

@@ -50,8 +50,8 @@ function VdiPricing(props) {
                                     <Tab onClick={()=>{setTab('Dedicated VDI'); setShow(false); resetOnCardChange();}} className="py-4 px-5 display6 ">
                                         Dedicated VDI
                                     </Tab>
-                                    <Tab onClick={()=>{setTab('Shared VDI'); setShow(false); resetOnCardChange();}} className="py-4 px-5 display6">
-                                        Shared VDI
+                                    <Tab onClick={()=>{setTab('RDS'); setShow(false); resetOnCardChange();}} className="py-4 px-5 display6">
+                                        RDS
                                     </Tab>
                                 </TabList>
 
@@ -65,13 +65,13 @@ function VdiPricing(props) {
            </PricingCard>
         </div>
         <div className="col-lg-4 my-3">
-            <PricingCard title="Premium" popular icon="/assets/images/icons/theme/airplane.svg" featureList={["Include 4vCPU", "Includes 6 GB RAM", "Include 80 GB Storage"]}>
-                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Premium"); resetOnCardChange();}}>View More</Button>
+            <PricingCard title="Professional" popular icon="/assets/images/icons/theme/airplane.svg" featureList={["Include 4vCPU", "Includes 6 GB RAM", "Include 80 GB Storage"]}>
+                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Professional"); resetOnCardChange();}}>View More</Button>
             </PricingCard>
         </div>
         <div className="col-lg-4 my-3">
-            <PricingCard title="Gold" icon="/assets/images/icons/theme/rocket.svg" featureList={["Include 6vCPU", "Includes 8 GB RAM", "Include 80 GB Storage"]}>
-                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Gold"); resetOnCardChange();}}>View More</Button>
+            <PricingCard title="Business" icon="/assets/images/icons/theme/rocket.svg" featureList={["Include 6vCPU", "Includes 8 GB RAM", "Include 80 GB Storage"]}>
+                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Business"); resetOnCardChange();}}>View More</Button>
             </PricingCard>
         </div>
     </div>
@@ -81,18 +81,18 @@ function VdiPricing(props) {
     <Fade duration={500} bottom>
     <div className="row no-gutters px-lg-5 px-3">
         <div className="col-lg-4 my-3">
-            <PricingCard  title="Standard" icon="/assets/images/icons/theme/paper-plane.svg" featureList={["Include 2vCPU", "Includes 4 GB RAM", "Include 80 GB Storage"]}>
-                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Standard"); resetOnCardChange();}}>View More</Button>
+            <PricingCard  title="Professional" icon="/assets/images/icons/theme/paper-plane.svg" featureList={["Include 8vCPU", "Includes 16 GB RAM", "Include 500 GB Storage"]}>
+                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Professional"); resetOnCardChange();}}>View More</Button>
            </PricingCard>
         </div>
         <div className="col-lg-4 my-3">
-            <PricingCard title="Premium" popular icon="/assets/images/icons/theme/airplane.svg" featureList={["Include 4vCPU", "Includes 6 GB RAM", "Include 80 GB Storage"]}>
-                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Premium"); resetOnCardChange();}}>View More</Button>
+            <PricingCard title="Business" popular icon="/assets/images/icons/theme/airplane.svg" featureList={["Include 16vCPU", "Includes 32 GB RAM", "Include 1TB Storage"]}>
+                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Business"); resetOnCardChange();}}>View More</Button>
             </PricingCard>
         </div>
         <div className="col-lg-4 my-3">
-            <PricingCard title="Gold" icon="/assets/images/icons/theme/rocket.svg" featureList={["Include 6vCPU", "Includes 8 GB RAM", "Include 80 GB Storage"]}>
-                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Gold"); resetOnCardChange();}}>View More</Button>
+            <PricingCard title="Enterprise" icon="/assets/images/icons/theme/rocket.svg" featureList={["Include 32vCPU", "Includes 64 GB RAM", "Include 2TB Storage"]}>
+                <Button className="mt-3" variantColor="primary" variant="outline" size="lg" onClick={()=>{openControls(); setPlan("Enterprise"); resetOnCardChange();}}>View More</Button>
             </PricingCard>
         </div>
     </div>
@@ -121,8 +121,8 @@ function VdiPricing(props) {
                                 <CustomRadio value=",Windows 10">
                                    <FaWindows className="mr-2"/> Windows 10
                                 </CustomRadio>
-                                <CustomRadio value={",Windows 2016 Standard" + (tab=='Shared VDI' ? " + RDS CAL" : "")}>
-                                    <FaWindows className="mr-2"/> Windows 2016 Standard {tab=='Shared VDI' && <> + RDS CAL</>}
+                                <CustomRadio value={",Windows 2016 Standard" + (tab=='RDS' ? " + RDS CAL" : "")}>
+                                    <FaWindows className="mr-2"/> Windows 2016 Standard {tab=='RDS' && <> + RDS CAL</>}
                                 </CustomRadio>
                             </RadioButtonGroup>
                     </div>
