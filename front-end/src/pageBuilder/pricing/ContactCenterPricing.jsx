@@ -69,7 +69,7 @@ function ContactCenterPricing(props) {
           <div className="row no-gutters px-lg-5">
             <div className="col-lg-4 my-3">
               <PricingCard
-                title="Basic"
+                title="Standard"
                 icon="/assets/images/icons/theme/origami.svg"
                 featureList={features}
               >
@@ -80,7 +80,7 @@ function ContactCenterPricing(props) {
                   size="lg"
                   onClick={() => {
                     openControls();
-                    setPlanName("CAGENT Basic Plan");
+                    setPlanName("CAGENT Standard Plan");
                     setPlanIndex(1);
                     setWfm(0);
                     setAdvancedQM(0);
@@ -93,7 +93,7 @@ function ContactCenterPricing(props) {
             </div>
             <div className="col-lg-4 my-3">
               <PricingCard
-                title="Standard"
+                title="Professional"
                 icon="/assets/images/icons/theme/paper-plane.svg"
                 featureList={features}
               >
@@ -104,7 +104,7 @@ function ContactCenterPricing(props) {
                   size="lg"
                   onClick={() => {
                     openControls();
-                    setPlanName("CAGENT Standard Plan");
+                    setPlanName("CAGENT Professional Plan");
                     setPlanIndex(2);
                     setRDSType("");
                     setValue(0);
@@ -118,7 +118,7 @@ function ContactCenterPricing(props) {
             </div>
             <div className="col-lg-4 my-3">
               <PricingCard
-                title="Premium"
+                title="Business"
                 icon="/assets/images/icons/theme/airplane.svg"
                 featureList={features}
               >
@@ -129,7 +129,7 @@ function ContactCenterPricing(props) {
                   size="lg"
                   onClick={() => {
                     openControls();
-                    setPlanName("CAGENT Premium Plan");
+                    setPlanName("CAGENT Business Plan");
                     setPlanIndex(3);
                     setRDSType("");
                     setValue(0);
