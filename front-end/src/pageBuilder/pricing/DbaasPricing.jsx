@@ -215,7 +215,7 @@ function DbaasPricing(props) {
       </Fade>
     </Box>
     <div id="collapse-1" className="container">
-      <Collapse id="quoteForm" className="px-lg-5 px-3" mt={6} isOpen={show}>
+      <Collapse id="quoteForm" className="px-lg-5" mt={6} isOpen={show}>
         <div className="px-4 py-5 border">
           <div className="display5 text-center">
             Customize Your {planName} Plan
