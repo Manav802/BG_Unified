@@ -160,8 +160,8 @@ function ErrorForm(props) {
             <Modal isOpen={isOpen} onClose={formClose} isCentered scrollBehavior="inside">
                 <ModalOverlay />
                 <ModalContent maxWidth={["400px", "400px", "600px", "700px"]}>
+                <ModalHeader position="sticky"><span className="display5">Report an Error</span></ModalHeader>
                     <ModalBody>
-                        <ModalHeader><span className="display5">Report an Error</span></ModalHeader>
                         <ModalCloseButton />
                         <Box className="container reportanerror">
                             <form onSubmit={onSubmit}>
