@@ -13,7 +13,8 @@ const dotenv = require('dotenv').config()
 const {connectionDB} = require('./config/db')
 
 //routes
-const router = require('./routes/helper/index');
+const router = require('./routes/index');
+
 
 //using basic middlwares
 app.use(bodyParser.json())
@@ -23,6 +24,8 @@ app.use(cors());
 app.use(morgan('dev'))
 
 
+
+
 //database connectivity
 connectionDB()
 
@@ -30,4 +33,5 @@ connectionDB()
 app.use(router)
 
 //exporting the file 
+
 module.exports =app 

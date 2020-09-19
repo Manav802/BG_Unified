@@ -33,8 +33,6 @@ var userSchema = new mongoose.Schema(
       type:String,
       required:true
     },
-    //for storing the salt
-    salt: String,
     //define admin and simple user
     role: {
       type: Number,
@@ -49,8 +47,6 @@ userSchema
   .virtual("password")
   .set(function(password) {
     this._password = password;
-    //storing the salt
-    this.salt = uuidv1();
     this.encry_password = this.securePassword(password);
   })
   .get(function() {
@@ -66,7 +62,7 @@ userSchema.methods = {
     if (!plainpassword) return "";
     try {
       return crypto
-        .createHmac("sha256", this.salt)
+        .createHmac(process.env.Algo, process.env.Salt)
         .update(plainpassword)
         .digest("hex");
     } catch (err) {

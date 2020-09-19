@@ -1,9 +1,9 @@
-const  userRoutes = require('../user')
-const  serviceRoutes = require('../service')
-const  chatRoutes = require('../chat')
-const  issueRoutes = require('../issue')
-const  ticketRoutes = require('../ticket')
-const  docuRoutes = require('../docusign')
+const  userRoutes = require('./user')
+const  serviceRoutes = require('./service')
+const  chatRoutes = require('./chat')
+const  issueRoutes = require('./issue')
+const  ticketRoutes = require('./ticket')
+const  docuRoutes = require('./e_sign')
 
 
 const express =require('express')
