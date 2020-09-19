@@ -10,23 +10,16 @@ import Fade from "react-reveal/Fade"
 import SVG from "../../components/svg/SVG";
 
 
-function Solutions() {
-    const router = useRouter();
-    const { name } = router.query;
-    const [service, setService] = React.useState({})
+function Solutions(props) {
+    const service = services[props.name];
     const [pricing, setPricing] = React.useState(false)
-
-    React.useEffect(() => {
-        if (name && services) {
-            setService(services[name])
-        }
-    }, [name])
 
     React.useEffect(() => {
         if(document){
             setPricing(document.getElementById('pricing'))
         }
     })
+
 
     return (
         <>
@@ -108,16 +101,19 @@ function Solutions() {
     );
 }
 
-export async function getStaticPaths() {
-    const ServiceNames = Object.keys(services)
-    return {
-        paths: ServiceNames.map((x)=>({params:{name:x}})),
-        fallback: false // See the "fallback" section below
-    };
-}
-export async function getStaticProps() {
+// export async function getStaticPaths() {
+//     const ServiceNames = Object.keys(services)
+//     return {
+//         paths: ServiceNames.map((x)=>({params:{name:x}})),
+//         fallback: false // See the "fallback" section below
+//     };
+// }
+export async function getServerSideProps({query}) {
+    const { name } = query;
+
     return {
         props: {
+            name
         },
     }
 }
