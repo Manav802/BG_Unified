@@ -318,6 +318,20 @@ const services = {
         conclusion: "Protect your web applications with our web application firewall.",
         sections: sections.wafaas
     },
+        "sdaas": {
+        title: "Service Desk As A Service",
+        slogan: "The Perfect Customer Service",
+        bgImage: "/assets/images/services/wafaas.webp",
+        category: "Cyber Security Services",
+        icon: "/assets/images/icons/monotone/app.svg",
+        color: "#E4572E",
+        tags: ["wireless", "wifi", "clusters", "networks"],
+        description: " Protect your Web Application with our Web Application Firewall Services, protecting your enterprise online with full durability....",
+        illustration: "",
+        relatedService: ["Contact Center As A Service", "Unified Communications As A Service", "CEX As A Service"],
+        conclusion: " Only Expert Solutions for you. Service With Answers",
+        sections: sections.sdaas
+    },
     "webdev": {
         title: "Web Development As A Service",
         slogan: "Design that speeds up performance",
