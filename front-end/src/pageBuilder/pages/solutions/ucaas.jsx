@@ -8,7 +8,7 @@ const sliderInfo = [
     },
     {
         title: <span>Cisco 8845</span>,
-        imgSrc: "/assets/images/cisco/8845/8845.png",
+        imgSrc: "/assets/images/cisco/8845/8845.jpg",
     },
     {
         title: <span>Cisco 9951</span>,
