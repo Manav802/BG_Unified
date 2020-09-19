@@ -128,6 +128,7 @@ class Landing extends Component {
                         <div className="py-4 d-flex text-center justify-content-center">
                           <Link href={info.btnPrimaryLink}>
                             <Button
+                            zIndex={100}
                               variant="solid"
                               className="mx-1 mx-lg-2 btn btn-outline primary-btn"
                               variantColor="primary"
@@ -138,6 +139,7 @@ class Landing extends Component {
                           </Link>
                           <Link href={info.btnSecondaryLink}>
                             <Button
+                            zIndex={100}
                               variant="outline"
                               className="mx-1 mx-lg-2 btn btn-outline secondary-btn"
                               size="lg"
