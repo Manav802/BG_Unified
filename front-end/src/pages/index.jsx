@@ -66,13 +66,13 @@ function main(props) {
     return (
         <>
         <Box zIndex="-1" pos="absolute" left={0} top={0} width="100%" overflow="hidden">
-        <Image src="/assets/images/backgrounds/hero-shot.png" height="1200px" objectFit="cover" width="100vw" ></Image>
+        <Image src="/assets/images/backgrounds/hero-shot.webp" height="1200px" objectFit="cover" width="100vw" ></Image>
         </Box>
         <Section pos="relative" color="white" m={0} py={40}>
-            <Box px={100/6 + "%"} textAlign="center">
+            <Box zIndex={100} px={100/6 + "%"} textAlign="center">
                 <Title fontSize="64px">Serving Technology for an Effortless Business</Title>
                 <Heading textAlign="center" mt={4} fontFamily="Nexa Light" size="md">Partner for IT solutions, delivering values and ensuring corporate growth.</Heading>
-                <Link href={"/contact"}><Button p={8} className="btn btn-outline primary-btn" variantColor="primary" fontSize="20px" mt={8}>Request a Quote</Button></Link>
+                <Link href={"/contact"}><Button zIndex={100} p={8} className="btn btn-outline primary-btn" variantColor="primary" fontSize="20px" mt={8}>Request a Quote</Button></Link>
             </Box>
         </Section>  
         <Section>
