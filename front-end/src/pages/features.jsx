@@ -12,7 +12,7 @@ function features() {
         <title>Our Features - BG Unified</title>
       </Head>
       <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
-          <Image zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.webp"></Image>
+          <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.webp"></Image>
           <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" my={4} textTransform="uppercase">Why Choose Us</Heading>
           <Title zIndex="100" fontSize={["44px","64px"]}>Our Features</Title>
       </Section>
@@ -137,8 +137,7 @@ function features() {
         ]}
       ></RenderSection>
 
-      <Image
-        src="/assets/images/backgrounds/left_navy_triangle.svg"
+      <Image alt=""        src="/assets/images/backgrounds/left_navy_triangle.svg"
         className="position-absolute left-navy-triangle d-none d-md-block"
         width="40%"
         alt=""
@@ -146,15 +145,13 @@ function features() {
       <Section my={0}>
         <div className="row px-3 p-md-0">
           <div className="col-md-7 pl-0 position-relative d-md-none">
-            <Image
-            my={2}
+            <Image alt=""            my={2}
             paddingX={10}
               src="/assets/images/features/vectors/sip.svg"
             />
           </div>
           <div className="col-md-7 pl-0 position-relative d-none d-md-block">
-            <Image
-              transform="translateX(-15%)"
+            <Image alt=""              transform="translateX(-15%)"
               src="/assets/images/features/vectors/sip.svg"
             />
           </div>
@@ -178,8 +175,7 @@ function features() {
         <Section my={0}>
         <div className="row p-3 p-md-0">
           <div className="col-md-7 pl-0 position-relative d-md-none">
-            <Image
-            my={2}
+            <Image alt=""            my={2}
             paddingX={10}
             src="/assets/images/features/vectors/map.svg"
             />
@@ -196,8 +192,7 @@ function features() {
               </Text>
           </div>
           <div className="col-md-7 pl-0 position-relative d-none d-md-block">
-            <Image
-              px={8}
+            <Image alt=""              px={8}
               minWidth="900px"
               transform="translateX()"
               src="/assets/images/features/vectors/map.svg"

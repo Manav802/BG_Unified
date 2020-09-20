@@ -8,7 +8,7 @@ function Feature2({ image, icon, size = "48px", title, imageWidth="96px", iconCo
         <Grid align={align} templateColumns={[`${imageWidth} auto`]} {...props}>
             {svg && <SVG src={svg} color={iconColor} size={size}></SVG>}
             <Flex textAlign="right" justifyContent={["start","start","center"]}>
-            {image && <Image src={image} objectFit="cover" size={size}></Image>}
+            {image && <Image alt="" src={image} objectFit="cover" size={size}></Image>}
             </Flex>
             {icon && <Box as={icon} size={size}></Box>}
             <Box>

@@ -6,7 +6,7 @@ function Feature3({children, icon, color="white", bg="dark.500", ...rest }) {
         
             <Box my={6} rounded={8} bg={bg} overflow="hidden" color={color} {...rest}>
                 {children}
-                <Image ml="auto" mb="-12px" mt={4} src={icon}></Image>
+                <Image alt="" ml="auto" mb="-12px" mt={4} src={icon}></Image>
             </Box>
         
     );

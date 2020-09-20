@@ -20,7 +20,7 @@ class Testimonial extends Component {
             >
               <Container>
                 <Flex justify="center" my={8}>
-                  <Image src={testimonialDetails.imageUrl} height="64px" />
+                  <Image alt="" src={testimonialDetails.imageUrl} height="64px" />
                 </Flex>
                 <Heading textAlign="center" mt={4} size="lg" fontWeight={600} lineHeight={1.5}>
                   {testimonialDetails.paragraph}

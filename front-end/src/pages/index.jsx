@@ -114,7 +114,7 @@ class Landing extends Component {
           <Slider options={{ autoPlay: 10000, adaptiveHeight:true,imagesLoaded: true, pageDots: false, draggable: true,pauseAutoPlayOnHover: false,wrapAround: true }}>
             {sliderInfo.map((info, index) => (
               <Box maxHeight={["562px","562px","600px","528px"]} className="w-100 landing-section">
-                <Image src={info.imgSrc} opacity={.4} height="100%"  className="bg-image"></Image>
+                <Image alt="" src={info.imgSrc} opacity={.4} height="100%"  className="bg-image"></Image>
                 <div className="container py-5">
                   <div className="row">
                     <div className="col-lg-10 offset-lg-1">
@@ -234,7 +234,7 @@ class Landing extends Component {
                   <div className="col-md-3 col-sm-4 p-2">
                     <Box boxShadow="md" bg="white" borderRadius="sm" p={8}>
                       <div className="d-flex align-items-center flex-column">
-                        <Image src="/assets/images/icons/cities/sydney.svg" size="64px"></Image>
+                        <Image alt="" src="/assets/images/icons/cities/sydney.svg" size="64px"></Image>
                         <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Sydney</Heading>
                       </div>
                     </Box>
@@ -242,7 +242,7 @@ class Landing extends Component {
                   <div className="col-md-3 col-sm-4 p-2">
                     <Box boxShadow="md" bg="white"  borderRadius="sm" p={8}>
                       <div className="d-flex align-items-center flex-column">
-                        <Image src="/assets/images/icons/cities/auckland.svg" size="64px"></Image>
+                        <Image alt="" src="/assets/images/icons/cities/auckland.svg" size="64px"></Image>
                         <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Auckland</Heading>
                       </div>
                     </Box>
@@ -250,7 +250,7 @@ class Landing extends Component {
                   <div className="col-md-3 col-sm-4 p-2">
                     <Box boxShadow="md" bg="white" borderRadius="sm" p={8}>
                       <div className="d-flex align-items-center flex-column">
-                        <Image src="/assets/images/icons/cities/melbourne.svg" size="64px"></Image>
+                        <Image alt="" src="/assets/images/icons/cities/melbourne.svg" size="64px"></Image>
                         <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Melbourne</Heading>
                       </div>
                     </Box>
@@ -376,7 +376,7 @@ class Landing extends Component {
           <Flex wrap="wrap" justify="center">
           {["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.webp", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png",  "/assets/images/brands/huawei.webp", "/assets/images/brands/infin_it.png", "/assets/images/brands/datacom.png", "/assets/images/brands/airtrunk.png", "/assets/images/brands/microfocus.svg", "/assets/images/brands/nsw_gov.webp", "/assets/images/brands/victoria.webp", ].map(image => (
             <>
-              <Image src={image} width="192px" height="96px" mx={12} my={6} objectFit="contain"></Image>
+              <Image alt="" src={image} width="192px" height="96px" mx={12} my={6} objectFit="contain"></Image>
             </>
           ))}
           </Flex>

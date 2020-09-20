@@ -10,8 +10,7 @@ function WhatsNew(props) {
       align="center"
       borderRadius="lg"
     >
-      <Image
-        objectFit="cover"
+      <Image alt=""        objectFit="cover"
         src={props.image}
         className="rounded-8 mt-1"
         height="56px"

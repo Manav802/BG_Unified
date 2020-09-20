@@ -11,7 +11,7 @@ function Conclusion({align="left", title="Let's get IT done.", description, expl
           {/* hek */}
           <Section {...props}>
               <Flex direction="column" align={align} py={12} px={[6,16,24]} rounded={8} overflow="hidden" bg="dark.500" pos="relative">
-                <Image height="340px" zIndex="0" position="absolute" right={0} top="-10%" src="/assets/images/vectors/ic_chip_neon.webp"></Image>
+                <Image alt="" height="340px" zIndex="0" position="absolute" right={0} top="-10%" src="/assets/images/vectors/ic_chip_neon.webp"></Image>
                 <Heading zIndex="100" mx={2} size="xl" textAlign={align} fontFamily="Nexa Bold" color="white">{title}</Heading>
                 {description && <Text textAlign="center" zIndex="100" color="white" mt={3} fontSize={["lg","xl"]}>{description}</Text>}
                 <Flex>

@@ -39,8 +39,7 @@ function Blogs() {
       
      <Section mb={6} pb={0} mt={4}>
       <Title mb={8} fontSize={["4xl","4xl","5xl"]} textAlign="left">{blog.title}</Title>
-      <Image
-          src={blog.image}
+      <Image alt=""          src={blog.image}
           objectFit="cover"
           rounded={8}
           boxShadow="xl"

@@ -8,7 +8,7 @@ function AlternateRow({ align, justify, wrap, rowDistance, direction, content, i
             <Box maxWidth={textWidth}><Box {...titleStyles}>{content.title}</Box>
                 <Box {...descriptionStyles}>{content.description}</Box>
             </Box>
-            <Image {...imageStyles} src={content.image}></Image>
+            <Image alt="" {...imageStyles} src={content.image}></Image>
         </Flex>
     );
 }

@@ -8,7 +8,7 @@ function FeatureCard(props) {
       <div className="card-body p-2">
         {props.icon && (
           <div className={"row iconbox " + (props.left ? "justify-content-start" : "justify-content-center")}>
-            <Image src={props.icon} size="48px" color={props.iconColor} />
+            <Image alt="" src={props.icon} size="48px" color={props.iconColor} />
           </div>
         )}
         <div className={"row display6 mt-3 " + (props.left ? "justify-content-start" : "justify-content-center")}>{props.title}</div>

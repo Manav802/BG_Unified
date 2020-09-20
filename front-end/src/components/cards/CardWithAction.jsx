@@ -9,7 +9,7 @@ function CardWithIcon(props) {
     >
       {props.icon && (
         <div className="row iconbox">
-          <Image src={props.icon} size="48px" color={props.iconColor} />
+          <Image alt="" src={props.icon} size="48px" color={props.iconColor} />
         </div>
       )}
       <div className="row display6 mt-2 mx-3">{props.title}</div>

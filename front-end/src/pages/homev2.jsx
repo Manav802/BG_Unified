@@ -65,8 +65,11 @@ function main(props) {
   };
     return (
         <>
+        <Head>
+          <title>BG Unified Solutions</title>
+        </Head>
         <Box zIndex="-1" pos="absolute" left={0} top={0} width="100%" overflow="hidden">
-        <Image src="/assets/images/backgrounds/hero-shot.webp" height="1200px" objectFit="cover" width="100vw" ></Image>
+        <Image alt="" src="/assets/images/backgrounds/hero-shot.webp" height="1200px" objectFit="cover" width="100vw" ></Image>
         </Box>
         <Section pos="relative" color="white" m={0} py={40}>
             <Box zIndex={100} px={100/6 + "%"} textAlign="center">
@@ -77,7 +80,7 @@ function main(props) {
         </Section>  
         <Section>
             <Grid templateColumns="256px auto" p={12} rounded={12} bg="white" boxShadow="xl">
-                <Image src="/assets/images/vectors/covid.svg" width={["100%","40%","256px"]}></Image>
+                <Image alt="" src="/assets/images/vectors/covid.svg" width={["100%","40%","256px"]}></Image>
                 <Flex direction="column" justify="center" px={12}>
                     <a className="link"><Heading size="lg" fontFamily="Nexa Bold">Free Services* for 3 months for Healthy and Safety related Businesses. <Icon name="chevron-right"></Icon></Heading></a>
                     <Text mt={3} opacity={.7}>Let us help you if you have limited budgets and because of COVID your current infrastructure can't handle the load. Dial our direct line +61 2 9095 0000. We will get things in motion very quickly.</Text>
@@ -162,7 +165,7 @@ function main(props) {
                                 </Link>
                                 </Box>
                                 <Box width={["100%","100%",1/2]}>
-                                    <Image src="/assets/images/illustrations/itandinfra.svg"></Image>
+                                    <Image alt="" src="/assets/images/illustrations/itandinfra.svg"></Image>
                                 </Box>
                             </Row>
                         </TabPanel>
@@ -184,7 +187,7 @@ function main(props) {
                             </Link>
                             </Box>
                             <Box width={["100%","100%",1/2]}>
-                                <Image mt={12} src="/assets/images/illustrations/network.svg"></Image>
+                                <Image alt="" mt={12} src="/assets/images/illustrations/network.svg"></Image>
                             </Box>
                         </Row>
                         </TabPanel>
@@ -205,7 +208,7 @@ function main(props) {
                             </Link>
                             </Box>
                             <Box width={["100%","100%",1/2]}>
-                                <Image my={12} ml={12} maxH="460px" src="/assets/images/illustrations/security-blue.svg"></Image>
+                                <Image alt="" my={12} ml={12} maxH="460px" src="/assets/images/illustrations/security-blue.svg"></Image>
                             </Box>
                         </Row>
                         </TabPanel>
@@ -225,7 +228,7 @@ function main(props) {
                             </Link>
                             </Box>
                             <Box width={["100%","100%",1/2]}>
-                                <Image mt={6} src="/assets/images/illustrations/collaborative.svg"></Image>
+                                <Image alt="" mt={6} src="/assets/images/illustrations/collaborative.svg"></Image>
                             </Box>
                         </Row>
                         </TabPanel>
@@ -244,7 +247,7 @@ function main(props) {
                                 </Link>
                             </Box>
                             <Box width={["100%","100%",1/2]}>
-                                <Image mt={6} src="/assets/images/illustrations/development.svg"></Image>
+                                <Image alt="" mt={6} src="/assets/images/illustrations/development.svg"></Image>
                             </Box>
                         </Row>
                         </TabPanel>
@@ -289,7 +292,7 @@ function main(props) {
                 </Flex>
             </Row>       
         </Section>
-        <Image width="100%" src="/assets/images/dividers/divider_circle.svg"></Image>
+        <Image alt="" width="100%" src="/assets/images/dividers/divider_circle.svg"></Image>
         
         <Section overflow="hidden" mt={0}>
         <div className="row p-3 p-md-0">
@@ -332,7 +335,7 @@ function main(props) {
          
           </div>
           <div className="col-md-7 pl-0 position-relative d-none d-md-block">
-            <Image
+            <Image alt=""            
               px={8}
               minWidth="900px"
               transform="translateX()"
@@ -353,7 +356,7 @@ function main(props) {
                 autoPlay: 3000,
             }}>
                 {array.map((n, index) => <Box width="auto" pr={16}>
-                    <Image src={`/assets/images/partners/partners (${index}).png`} maxW="256px" objectFit="contain" height="64px"></Image>
+                    <Image alt="" src={`/assets/images/partners/partners (${index}).png`} maxW="256px" objectFit="contain" height="64px"></Image>
                 </Box>)}
             </Slider>
             <Divider mb={8} mt={16} borderWidth={2}></Divider>

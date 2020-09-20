@@ -27,8 +27,7 @@ function Solutions(props) {
                 <Head>
                 <title>{service.slogan} - {service.title} | BG Unified Solutions</title>
                 </Head>
-                <Image
-                    opacity=".3"
+                <Image alt=""                    opacity=".3"
                     className="bg-image"
                     src={service.bgImage}
                 />

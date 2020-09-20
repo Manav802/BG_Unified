@@ -36,7 +36,7 @@ class CaseStudy extends React.Component {
           contain: true,
         }}>
           {this.props.caseStudyDetails.map((caseStudy, index) => (
-            <Image key={index} src={caseStudy.image} py={12} height={600} objectFit="cover" className="image w-100 my-3"></Image>
+            <Image alt="" key={index} src={caseStudy.image} py={12} height={600} objectFit="cover" className="image w-100 my-3"></Image>
           ))}
         </Slider>
         <Box boxShadow="lg" bottom={0} top={0} minWidth="50%" height="100%" left="10%" bg="white" position="absolute" className="case-box d-flex align-items-center justify-content-center flex-column">
