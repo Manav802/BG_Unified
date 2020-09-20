@@ -354,6 +354,7 @@ const services = {
         category: "Network Services",
         icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
         color: "#E4572E",
+        popular: true,
         tags: ["wireless", "wifi", "clusters", "networks"],
         description: "Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters of Cisco WLC 5508....",
         illustration: "",
