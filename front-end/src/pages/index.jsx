@@ -130,7 +130,7 @@ class Landing extends Component {
                             <Button
                             zIndex={100}
                               variant="solid"
-                              className="mx-1 mx-lg-2 btn btn-outline primary-btn"
+                              className="mx-1 mx-lg-2"
                               variantColor="primary"
                               size="lg"
                             >
@@ -141,7 +141,7 @@ class Landing extends Component {
                             <Button
                             zIndex={100}
                               variant="outline"
-                              className="mx-1 mx-lg-2 btn btn-outline secondary-btn"
+                              className="mx-1 mx-lg-2"
                               size="lg"
                             >
                               {info.btnSecondaryText}
