@@ -12,6 +12,8 @@ import Title from '../pageBuilder/Title';
 import Row from "../pageBuilder/Row";
 import Link from "next/link";
 import Feature3 from "../pageBuilder/components/Feature3";
+import RenderSection from "../pageBuilder/RenderSection";
+import Body from "../pageBuilder/Body";
 var array = [0,0,0,0,0,0,0,0,0,0,0,0];
 
 const tabs = [
@@ -80,7 +82,7 @@ function main(props) {
             </Grid>
         </Section>
         <Section my="6rem">
-            <Title fontSize="56px" mb={8} opacity={.7}>Fast. friendly and delivery oriented IT services driven by
+            <Title fontSize="40px" mb={8} opacity={.7}>Fast. friendly and delivery oriented IT services driven by
             our commitment to customer satisfaction
             </Title>
             <Button
@@ -298,6 +300,33 @@ function main(props) {
               infrastructure encompassing server switching. Server consolidation
               and virtualization, high availability & clustering.
               </Text>
+              <Row rowDistance={8}>
+                  <Body  width={1/3} type="numberCount" data={{
+                    count: 1600,
+                    align:"left",
+                    suffix: "+",
+                    title: "SIP Channels",
+                    fontSize: "30px",
+                    titleSize:"18px"
+                    }} />
+                    <Body width={1/3} type="numberCount" data={{
+                    count: 1600,
+                    align:"left",
+                    suffix: "+",
+                    title: "SIP Channels",
+                    fontSize: "30px",
+                    titleSize:"18px"
+                    }} />
+                    <Body width={1/3} type="numberCount" data={{
+                    count: 1600,
+                    align:"left",
+                    suffix: "+",
+                    title: "SIP Channels",
+                    fontSize: "30px",
+                    titleSize:"18px"
+                    }} />
+              </Row>
+         
           </div>
           <div className="col-md-7 pl-0 position-relative d-none d-md-block">
             <Image
