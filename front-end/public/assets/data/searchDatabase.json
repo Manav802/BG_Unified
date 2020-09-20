@@ -167,7 +167,7 @@
         {
             "name": "Storage As A Service",
             "description": "Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management.",
-            "sub-description": "The storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage.",
+            "sub-description": "The storage infrastructure includes more than 900TB of Tier1/Tier2/Tier3 storage.",
             "tags": ["storage", "blocks", "consolidation", "virtualization", "backup", "recovery", "archive"],
             "price": "",
             "icon": "/assets/images/icons/monotone/StorageAsAServiceIcon.svg",

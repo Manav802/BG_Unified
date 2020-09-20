@@ -71,3 +71,5 @@ module.exports.dbaas = dbaas
 import webdev from './webdev'
 module.exports.webdev = webdev
 
+import sdaas from './sdaas'
+module.exports.sdaas = sdaas

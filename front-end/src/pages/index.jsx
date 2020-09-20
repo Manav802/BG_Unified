@@ -1,32 +1,26 @@
-import React, { Component, useEffect } from "react";
+import React, { Component } from "react";
 import Head from "next/head";
-
-import { FaArrowRight, FaPercent } from "react-icons/fa";
-import { Image, Button, Heading, ButtonGroup, Icon, AspectRatioBox, Box, Slide, Flex, Text, CloseButton } from "@chakra-ui/core";
+import { FaArrowRight} from "react-icons/fa";
+import { Image, Button, Heading,  Box,  Flex,  } from "@chakra-ui/core";
 import FeatureCard from "../components/cards/FeatureCard";
 import CaseStudy from "../components/case_study/CaseStudy";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import { TESTIMONIALS } from "../database/testimonials";
-import { CASESTUDY } from "../../public/assets/data/casestudydata";
 import newsroom from "../database/newsroom"
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
 import Slider from "react-flickity-component";
-import ImageGroup from "../pageBuilder/components/ImageGroup";
 import Section from "../pageBuilder/Section";
 import Conclusion from "../components/footer/conclusion";
 import SVG from "../components/svg/SVG";
 import Service from "../components/cards/Service";
-import Container from "../pageBuilder/Container";
-import Title from "../pageBuilder/Title";
-import Offer from "../components/cards/Offer";
 
-const Globe = <canvas className="ml-auto mr-auto d-block" id="globe" width="1200px" height="1200px"></canvas>
+import Offer from "../components/cards/Offer";
 
 const sliderInfo = [
   {
     title: <span>Welcome to BG Unified Solutions</span>,
-    imgSrc: "/assets/images/backgrounds/globe.jpg",
+    imgSrc: "/assets/images/backgrounds/globe.webp",
     subTitle: "Your go-to partner for all IT solutions and services that deliver value and enable solid corporate growth.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
@@ -35,7 +29,7 @@ const sliderInfo = [
   },
   {
     title: "Protecting Online Presence of your Business",
-    imgSrc: "/assets/images/backgrounds/cyber_security.jpg",
+    imgSrc: "/assets/images/backgrounds/cyber_security.webp",
     subTitle: "Fast, friendly and delivery oriented web services, driven by our commitment of customer satisfaction.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
@@ -43,8 +37,8 @@ const sliderInfo = [
     btnSecondaryLink: "/contact"
   },
   {
-    title: "Geographical Redundant Infrastructre at diverse Geo-Locations",
-    imgSrc: "/assets/images/backgrounds/map.jpg",
+    title: "Geographical Redundant Infrastructre",
+    imgSrc: "/assets/images/backgrounds/map.webp",
     subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
@@ -117,25 +111,26 @@ class Landing extends Component {
           <source src="/assets/videos/dots.webm" type="video/webm">
             </source>
           </video> */}
-          <Slider options={{ autoPlay: 10000, adaptiveHeight:true, pageDots: false, draggable: false,pauseAutoPlayOnHover: false,wrapAround: true }}>
+          <Slider options={{ autoPlay: 10000, adaptiveHeight:true,imagesLoaded: true, pageDots: false, draggable: true,pauseAutoPlayOnHover: false,wrapAround: true }}>
             {sliderInfo.map((info, index) => (
-              <Box className="w-100 landing-section">
-                <Image src={info.imgSrc} opacity={.4} height="100%" className="bg-image"></Image>
+              <Box maxHeight={["562px","562px","600px","528px"]} className="w-100 landing-section">
+                <Image src={info.imgSrc} opacity={.4} height="100%"  className="bg-image"></Image>
                 <div className="container py-5">
                   <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                       <div>
-                        <Box fontSize={["4xl","4xl","5xl"]} className="Nexa-Bold text-center text-white mt-0">
+                        <Box fontSize={["3xl","4xl","5xl"]} className="Nexa-Bold text-center text-white mt-0">
                           {info.title}
                         </Box>
-                        <div className="h6 text-center NunitoSans-SemiBold mt-3">
+                        <Box fontSize={["lg","xl"]} className="h6 text-center NunitoSans-SemiBold mt-3">
                           {info.subTitle}
-                        </div>
-                        <div className="py-4 d-flex justify-content-center">
+                        </Box>
+                        <div className="py-4 d-flex text-center justify-content-center">
                           <Link href={info.btnPrimaryLink}>
                             <Button
+                            zIndex={100}
                               variant="solid"
-                              className="mr-3 btn btn-outline primary-btn"
+                              className="mx-1 mx-lg-2 btn btn-outline primary-btn"
                               variantColor="primary"
                               size="lg"
                             >
@@ -144,8 +139,9 @@ class Landing extends Component {
                           </Link>
                           <Link href={info.btnSecondaryLink}>
                             <Button
+                            zIndex={100}
                               variant="outline"
-                              className="mr-3 btn btn-outline secondary-btn"
+                              className="mx-1 mx-lg-2 btn btn-outline secondary-btn"
                               size="lg"
                             >
                               {info.btnSecondaryText}
@@ -219,7 +215,7 @@ class Landing extends Component {
             </div>
           </div>
         </Fade>
-        <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.jpg')" blend="multiply" py={20}>
+        <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.webp')" blend="multiply" py={20}>
           {/* <Box id="globe-box" top={0} className="globe-container position-absolute">
             <DynamicComponent></DynamicComponent>
           </Box> */}
@@ -378,7 +374,7 @@ class Landing extends Component {
         </Section>
         <Section containerWidth={["100%", "90%"]} className="brands">
           <Flex wrap="wrap" justify="center">
-          {["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.png", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png",  "/assets/images/brands/huawei.png", "/assets/images/brands/infin_it.png", "/assets/images/brands/datacom.png", "/assets/images/brands/airtrunk.png", "/assets/images/brands/microfocus.svg", "/assets/images/brands/nsw_gov.png", "/assets/images/brands/victoria.png", ].map(image => (
+          {["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.webp", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png",  "/assets/images/brands/huawei.webp", "/assets/images/brands/infin_it.png", "/assets/images/brands/datacom.png", "/assets/images/brands/airtrunk.png", "/assets/images/brands/microfocus.svg", "/assets/images/brands/nsw_gov.webp", "/assets/images/brands/victoria.webp", ].map(image => (
             <>
               <Image src={image} width="192px" height="96px" mx={12} my={6} objectFit="contain"></Image>
             </>

@@ -4,7 +4,7 @@ export default [
     {
         mb:0,
         title: "Get your Quote now!",
-        description: "Our storage infrastructure includes more than 900TB of Teir1/Teir2/Teir3 storage",
+        description: "Our storage infrastructure includes more than 900TB of Tier1/Tier2/Tier3 storage",
         rowDistance: 4,
         gap:0,
         containerWidth: "100%",
@@ -23,7 +23,7 @@ export default [
             width:["100%", "100%","100%", 1/2],
             type: "imageGroup",
             data: {
-                images: ["/assets/images/services/storage_challenge.jpg"],
+                images: ["/assets/images/services/storage_challenge.webp"],
                 borderRadius: 8,
                 width : ["100%","100%",'90%'],
                 height: ["300px","300px","400px"],

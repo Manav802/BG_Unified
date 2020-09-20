@@ -15,11 +15,11 @@ function CookieNotice(props) {
         {notice === "0" && <Collapse isOpen={notice === "0"}>
             <Box width="100%" borderBottomWidth={1} borderBottomColor="gray.200" bg="white" zIndex="1000" p={3}>
             <Container>
-                <Text>We use cookies to personalize your experience. By continuing to visit the website you agree to our use of cookies. <Link href="/policies"><a className="text-primary">Read our Privacy Policy</a></Link></Text>
-                <Button pos="absolute" top="4px" right="16px" onClick={() => {
+                <Text fontSize={["xs","sm","md"]} pr={3}>We use cookies to personalize your experience. By continuing to visit the website you agree to our use of cookies. <Link href="/policies"><a className="text-primary">Read our Privacy Policy</a></Link></Text>
+                <Button pos="absolute" top="4px" right="10px" onClick={() => {
                     cookie.save('notice', '1')
                     setNotice("1")
-                }} variant="unstyled" leftIcon="close"></Button>
+                }} variant="unstyled" rightIcon="close"></Button>
             </Container>
             </Box>
         </Collapse>}

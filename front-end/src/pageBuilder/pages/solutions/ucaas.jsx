@@ -1,4 +1,32 @@
 import UcaasPricing from "../../pricing/UcaasPricing";
+import SliderC from "../../components/Slider"
+
+const sliderInfo = [
+    {
+      title: <span>Cisco 7965G</span>,
+      imgSrc: "/assets/images/cisco/7965G/7965G.jpg",
+    },
+    {
+        title: <span>Cisco 8845</span>,
+        imgSrc: "/assets/images/cisco/8845/8845.jpg",
+    },
+    {
+        title: <span>Cisco 9951</span>,
+        imgSrc: "/assets/images/cisco/9951/9951.jpg",
+    },
+    {
+        title: <span>Cisco DX70</span>,
+        imgSrc: "/assets/images/cisco/DX70/DX70.jpg",
+    },
+    {
+        title: <span>Cisco DX80</span>,
+        imgSrc: "/assets/images/cisco/DX80/DX80.jpg",
+    },
+    {
+        title: <span>Cisco DX650</span>,
+        imgSrc: "/assets/images/cisco/DX650/DX650.jpg",
+    },
+  ]
 
 export default [
     {
@@ -100,6 +128,15 @@ export default [
                 }
             },
         ]
+    },
+    {
+        py: 8,
+        gap: 0,
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <SliderC sliderInfo={sliderInfo} />
+        }]
     },
     {
         bg: "light.400",

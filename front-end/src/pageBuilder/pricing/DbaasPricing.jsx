@@ -215,7 +215,7 @@ function DbaasPricing(props) {
       </Fade>
     </Box>
     <div id="collapse-1" className="container">
-      <Collapse id="quoteForm" className="px-lg-5 px-3" mt={6} isOpen={show}>
+      <Collapse id="quoteForm" className="px-lg-5" mt={6} isOpen={show}>
         <div className="px-4 py-5 border">
           <div className="display5 text-center">
             Customize Your {planName} Plan
@@ -246,7 +246,7 @@ function DbaasPricing(props) {
                 my="18px"
                 defaultValue={0}
                 min={0}
-                max={22}
+                max={256-80}
                 value={storage}
                 onChange={handleStorage}
               >
@@ -259,7 +259,7 @@ function DbaasPricing(props) {
                   width="auto"
                   padding="8px"
                   height="32px"
-                  children={80 + storage * 8 }
+                  children={80 + storage }
                 />
               </Slider>
             </div>
@@ -310,9 +310,9 @@ function DbaasPricing(props) {
               <PricingQuote
               serviceName="Database As A Service"
                 serviceDescription={`${planName} ${type} ${verifyNotEmpty(
-                  storage * 8,
+                  storage,
                   "GB Additional Storage"
-                )} ${verifyNotEmpty(ram*2, "GB Memory")}
+                )} ${verifyNotEmpty(ram*2, "GB Additional Memory")}
                 
                 ${verifyNotEmpty(
                   cpu,

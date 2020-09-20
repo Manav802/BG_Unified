@@ -36,7 +36,7 @@ export default [
                 width: ["100%", "100%", 1 / 2],
                 type: "feature2",
                 data: {
-                    titleSize: "md",
+                    titleFontSize: ["lg","xl"],
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
                     image: "/assets/images/icons/color/mobile.svg",
@@ -51,7 +51,7 @@ export default [
                 width: ["100%", "100%", 1 / 2],
                 type: "feature2",
                 data: {
-                    titleSize: "md",
+                    titleFontSize: ["lg","xl"],
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
                     image: "/assets/images/icons/color/tags.svg",
@@ -66,7 +66,7 @@ export default [
                 width: ["100%", "100%", 1 / 2],
                 type: "feature2",
                 data: {
-                    titleSize: "md",
+                    titleFontSize: ["lg","xl"],
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
                     image: "/assets/images/icons/color/data-server.svg",
@@ -81,7 +81,7 @@ export default [
                 width: ["100%", "100%", 1 / 2],
                 type: "feature2",
                 data: {
-                    titleSize: "md",
+                    titleFontSize: ["lg","xl"],
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
                     image: "/assets/images/icons/color/lock.svg",

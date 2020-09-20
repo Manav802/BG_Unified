@@ -27,7 +27,7 @@ export const BLOGS = [
         WE ARE HERE TO HELP!!!
         `,
         date: "21st March 2020",
-        image: "/assets/images/newsroom/coronavirus.jpg"
+        image: "/assets/images/newsroom/coronavirus.webp"
     },
 
     {
@@ -48,7 +48,7 @@ export const BLOGS = [
         id:"3-bg-unified-solutions-got-nominated-for-two-awards-under-service-and-collaboration-within-revenue-nsw",
         title: "BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW",
         content: `BG Unified Solutions got nominated for two awards under Service and Collaboration within Revenue NSW in the annual excellence awards. We are proud in getting recognized. We deliver what we promised to our customers. BGUS team have also successfully upgrade a cluster of SBC in IBMDC Auckland without any downtime. It’s amazing to see team’s enthusiasm…`,
-        image: "/assets/images/newsroom/3. Award Nomination.png"
+        image: "/assets/images/newsroom/3. Award Nomination.webp"
     },
 
     {
@@ -131,7 +131,7 @@ export const BLOGS = [
         We are here to help in this tough time. Please do not hesitate to ask for help, whether you need VDI, UC, Storage, Managed Firewall or anything that will help you to keep carrying on your work remotely and keep you & your family safe in this time! ! !
         
         `,
-        image: "/assets/images/newsroom/coronavirus.jpg"
+        image: "/assets/images/newsroom/coronavirus.webp"
         
     },
 

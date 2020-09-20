@@ -371,7 +371,7 @@ function InfraPricing(props) {
       </TabPanels>
   </Tabs>
     <div id="collapse-1" className="container">
-      <Collapse id="quoteForm" className="px-lg-5 px-3" mt={6} isOpen={show}>
+      <Collapse id="quoteForm" className="px-lg-5" mt={6} isOpen={show}>
         <div className="px-4 py-5 border">
           <div className="display5 text-center">
             {tabs[tabIndex].title} ({planName})
@@ -402,7 +402,7 @@ function InfraPricing(props) {
                 my="18px"
                 defaultValue={0}
                 min={0}
-                max={22}
+                max={256-80}
                 value={storage}
                 onChange={handleStorage}
               >
@@ -415,7 +415,7 @@ function InfraPricing(props) {
                   width="auto"
                   padding="8px"
                   height="32px"
-                  children={80 + storage * 8 }
+                  children={80 + storage }
                 />
               </Slider>
             </div>
@@ -498,9 +498,9 @@ function InfraPricing(props) {
                 serviceDescription={`${
                   tabs[tabIndex].title
                 } (${planName})${verifyNotEmpty(
-                  storage * 8,
+                  storage,
                   "GB Additional Storage"
-                )} ${verifyNotEmpty(ram*2, "GB Memory")}${handleDailyBackup(
+                )} ${verifyNotEmpty(ram*2, "GB Additional Memory")}${handleDailyBackup(
                   dailybackup
                 )}${handleWindowLicense(windowLicense)} ${verifyNotEmpty(
                   cpu,

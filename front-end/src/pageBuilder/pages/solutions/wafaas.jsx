@@ -9,16 +9,17 @@ export default [
                 images: ["/assets/images/vectors/waf.svg"],
                 objectFit: "contain",
             }
-        }]
+        }],
+        containerWidth: ["100%", "100%", "88%", "80%"],
     },
  {
         my: 0,
         py: "48px",
-        bgImage: "url('/assets/images/backgrounds/network_abstract.jpg')",
+        bgImage: "url('/assets/images/backgrounds/network_abstract.webp')",
         blend: "screen",
         bg: "light.400",
         color: "dark.500",
-        containerWidth: ["100%", "100%", "88%", "72%"],
+        containerWidth: ["100%", "100%", "88%", "80%"],
         rowDistance: 8,
         gap: 6,
         body: [

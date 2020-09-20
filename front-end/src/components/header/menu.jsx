@@ -70,18 +70,18 @@ function menu(props) {
             <Collapse
               px="16px"
               mb={4}
-              className="footer-content"
+              className="headerMenu-content"
               isOpen={company}
             >
               <div className="d-flex flex-column header-list">
                 <Link href="/about">
-                  <a className="py-1">About Us</a>
+                  <a className="link py-1">About Us</a>
                 </Link>
                 <Link href="/newsroom">
-                  <a className="py-1">Newsroom</a>
+                  <a className="link py-1">Newsroom</a>
                 </Link>
                 <Link href="/solutions">
-                  <a className="py-1"> Solutions</a>
+                  <a className="link py-1"> Solutions</a>
                 </Link>
               </div>
             </Collapse>

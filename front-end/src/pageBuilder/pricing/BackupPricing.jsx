@@ -51,7 +51,7 @@ function BackupPricing(props) {
                         </div>
                         <div className="col-lg-4 my-3">
                             <PricingCard
-                                title="Corporate"
+                                title="Professional"
                                 icon="/assets/images/icons/theme/work.svg"
                                 featureList={[
                                     "Multiple Copies",
@@ -64,13 +64,13 @@ function BackupPricing(props) {
                                     buttonStyle="mt-3"
                                     button
                                     serviceName="Backup As A Service"
-                                    serviceDescription="Corporate, Multiple Copies, Single Location"
+                                    serviceDescription="Professional, Multiple Copies, Single Location"
                                 ></PricingQuote>
                             </PricingCard>
                         </div>
                         <div className="col-lg-4 my-3">
                             <PricingCard
-                                title="Enterprise"
+                                title="Business"
                                 icon="/assets/images/icons/theme/town.svg"
                                 featureList={[
                                     "Multiple Copies",
@@ -102,7 +102,7 @@ function BackupPricing(props) {
                     >
                         <div className="px-4 py-5 border">
                             <div className="display5 text-center">
-                                Customize Your Enterprise Plan
+                                Customize Your Business Plan
                             </div>
                             <div className="row px-3">
                                 <div className="col-lg-12 mt-4">
