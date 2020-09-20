@@ -318,12 +318,12 @@ const services = {
         conclusion: "Protect your web applications with our web application firewall.",
         sections: sections.wafaas
     },
-        "sdaas": {
+    "sdaas": {
         title: "Service Desk As A Service",
         slogan: "The Perfect Customer Service",
         bgImage: "/assets/images/services/wafaas.webp",
-        category: "Cyber Security Services",
-        icon: "/assets/images/icons/monotone/app.svg",
+        category: "Collaborative Services",
+        icon: "/assets/images/icons/monotone/serviceDesk.svg",
         color: "#E4572E",
         tags: ["wireless", "wifi", "clusters", "networks"],
         description: " Protect your Web Application with our Web Application Firewall Services, protecting your enterprise online with full durability....",

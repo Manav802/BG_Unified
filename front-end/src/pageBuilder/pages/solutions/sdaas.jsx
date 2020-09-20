@@ -64,12 +64,12 @@ export default [
                 containerData : [{
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/code/lock-circle.svg", mt: 4, title: "Single Point of Contact"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/code/commit.svg", mt: 4, title: "Single Point of Contact"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/design/line.svg", mt: 4, title: "Expert Management"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/clipboard-check.svg", mt: 4, title: "Expert Management"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
@@ -79,17 +79,17 @@ export default [
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/thunder-move.svg", mt: 4, title: "Responsive, Reliable team"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/group.svg", mt: 4, title: "Responsive, Reliable team"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/devices/diagnostics.svg", mt: 4, title: "Priced Per Ticket"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/shopping/dollar.svg", mt: 4, title: "Priced Per Ticket"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Rapid Service Delivery"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/thunder-move.svg", mt: 4, title: "Rapid Service Delivery"}
                 }],
             },
         ]   
@@ -100,17 +100,17 @@ export default [
             {
                 width: [1 / 2, 1 / 3],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/tools/tools.svg", mt: 4, title: "Complete Australian Support and Helpdesk Staff" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/communication/dial-numbers.svg", mt: 4, title: "Complete Australian Support and Helpdesk Staff" }
             },
             {
                 width: [1 / 2, 1 / 3],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/code/shift.svg", mt: 4, title: "Location Independent Help Desk Solution" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/map/marker-1.svg", mt: 4, title: "Location Independent Help Desk Solution" }
             },
             {
                 width: [1 / 2, 1 / 3],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/files/downloads-folder.svg", mt: 4, title: "24X7 Highly Available Service Desk" }
+                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/home/clock.svg", mt: 4, title: "24X7 Highly Available Service Desk" }
             }
         ]
     },
