@@ -8,11 +8,13 @@ body{
 }
 //Anchor Tag
 a{
-    color: $color-dark;
-    text-decoration: none !important;
-    font-weight: 700;
     cursor: pointer;
     transition: .3s;
+}
+.link{
+    font-weight: 700;
+    color: $color-dark;
+    text-decoration: none !important;
 }
 .link:hover{
     color: $color-primary !important;

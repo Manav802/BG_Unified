@@ -85,7 +85,7 @@ export default [
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
                     image: "/assets/images/icons/color/lock.svg",
-                    title: "Security Guaranteed",
+                    title: "Endpoint Security",
                     align: "left",
                     size: "50px",
                     description: "All without risk of corrupting data or altering behavior. No plug-ins are required, which expedites deployment and saves both time and money. Fast, Reliable, and Increasingly Efficient."
