@@ -13,7 +13,7 @@ import {
     Popover,
     PopoverTrigger,
     PopoverContent,
-    Stack, Link, Heading, Grid, Divider
+    Stack, Link, Heading, Grid, Divider, useDisclosure
 } from '@chakra-ui/core'
 import services from "../../database/services"
 import { FaInfoCircle, FaNewspaper, FaCommentAlt, FaBriefcase } from "react-icons/fa"
@@ -37,6 +37,10 @@ function header(props) {
         setShow(0);
     }
     const servicesArray = Object.entries(services)
+    const { isOpen, onOpen, onClose } = useDisclosure();
+    const [isOpen2,setIsOpen2] = React.useState(false);
+    const onOpen2 = () => setIsOpen2(true);
+    const onClose2 = () => setIsOpen2(false);
     return (
         <>
             <CookieNotice></CookieNotice>
@@ -49,20 +53,20 @@ function header(props) {
                                 <Image src="/assets/logo.png" height="45px" className="d-none d-sm-block mr-3"></Image>
                             </a></Hyperlink>
 
-                            <Popover trigger="hover" placement="bottom-start">
+                            <Popover onClose={onClose2} onOpen={onOpen2} isOpen={isOpen2} trigger="hover" placement="bottom-start">
                                 <PopoverTrigger>
                                     <Link display={["none", "none","none","flex"]} mx={3} fontWeight="500" mx={3} fontSize="md" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>Solutions</Link>
                                 </PopoverTrigger>
                                 <PopoverContent _focus={{outline:"none"}} maxW="auto" bg="transperant" borderWidth={0} boxShadow="none" zIndex={4} width="100%" right={0} left={0} pt={6}>
                                     <Container>
-                                        <Fade duration={300} distance={"5%"}>
+                                        <Fade duration={300} distance={"5%"} top>
                                         <Box rounded={4} boxShadow="xl" bg="white" p={10}>
                                             <Flex wrap="wrap" px={6}>
                                                 <Box my={4} width={["100%", "100%", "50%", 1/3]}>
                                                     <Text my={"12px"} fontSize="md" fontWeight="700">IT & Infrastructure Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "IT Infrastructural Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" className="link" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                 </Box>
@@ -70,13 +74,13 @@ function header(props) {
                                                 <Text my={"12px"} fontSize="md" fontWeight="700">Network Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "Network Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" className="link" fontWeight="400" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md"  fontWeight="400" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                     <Text my={"12px"} fontSize="md" fontWeight="700">Cyber Security Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "Cyber Security Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" className="link" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                 </Box>
@@ -84,13 +88,13 @@ function header(props) {
                                                     <Text my={"12px"} fontSize="md" fontWeight="700">Collaborative Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "Collaborative Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" className="link" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                     <Text my={"12px"} fontSize="md" fontWeight="700">Development Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "Development Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" className="link" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                 </Box>
@@ -100,13 +104,13 @@ function header(props) {
                                     </Container>
                                 </PopoverContent>
                             </Popover>
-                            <Popover  trigger="hover" placement="bottom-start">
+                            <Popover onClose={onClose} onOpen={onOpen} isOpen={isOpen} trigger="hover" placement="bottom-start">
                                 <PopoverTrigger>
                                     <Link display={["none", "none","none","flex"]} mx={3} fontWeight="500" mx={3} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>Company</Link>
                                 </PopoverTrigger>
                                 <PopoverContent _focus={{outline:"none"}} maxW="auto" bg="transperant" borderWidth={0} boxShadow="none" zIndex={4} width="100%" right={0} left={0}  pt={6} >
                                     <Container>
-                                    <Fade duration={400} distance="5%" top>
+                                    <Fade duration={300} distance="5%" top>
                                         <Box rounded={4} boxShadow="xl" bg="white" overflow="hidden">
                                         
                                         <Row>
@@ -116,7 +120,7 @@ function header(props) {
                                                     <Hyperlink href="/about">
                                                         <a className="link"><Flex align="center">
                                                             <SVG color="primary.500" src="/assets/images/icons/library/home/building.svg"></SVG>
-                                                            <Box ml="3">
+                                                            <Box onClick={onClose} ml="3">
                                                                 <Heading size="sm" fontFamily="Nexa Bold">About us</Heading>
                                                                 <Text fontSize="sm" fontWeight="500" opacity=".7">Our Mission & Core values</Text>
                                                             </Box>
@@ -127,7 +131,7 @@ function header(props) {
                                                     <Hyperlink href="/newsroom">
                                                         <a className="link"><Flex align="center">
                                                             <SVG color="primary.500" src="/assets/images/icons/library/layout/layout-top-panel-5.svg"></SVG>
-                                                            <Box ml="3">
+                                                            <Box onClick={onClose} ml="3">
                                                                 <Heading size="sm" fontFamily="Nexa Bold">Newsroom</Heading>
                                                                 <Text fontSize="sm" fontWeight="500" opacity=".7">Keep an eye on us</Text>
                                                             </Box>
@@ -138,7 +142,7 @@ function header(props) {
                                                     <Hyperlink href="/solutions">
                                                         <a className="link"><Flex align="center">
                                                             <SVG color="primary.500" src="/assets/images/icons/library/general/folder.svg"></SVG>
-                                                            <Box ml="3">
+                                                            <Box onClick={onClose} ml="3">
                                                                 <Heading size="sm" fontFamily="Nexa Bold">Our Solutions</Heading>
                                                                 <Text fontSize="sm" fontWeight="500" opacity=".7">What we deliver</Text>
                                                             </Box>
@@ -149,7 +153,7 @@ function header(props) {
                                                     <Hyperlink href="/team">
                                                         <a className="link"><Flex align="center">
                                                             <SVG color="primary.500" src="/assets/images/icons/library/communication/group.svg"></SVG>
-                                                            <Box ml="3">
+                                                            <Box onClick={onClose} ml="3">
                                                                 <Heading size="sm" fontFamily="Nexa Bold">Team</Heading>
                                                                 <Text fontSize="sm" fontWeight="500" opacity=".7">See our faces</Text>
                                                             </Box>
@@ -159,25 +163,25 @@ function header(props) {
                                                 </Grid>
                                                 <Divider borderWidth={2} my={6}></Divider>
                                                 <Flex wrap="wrap">
-                                                    <Box px={3} my={3} width="50%">
+                                                    <Box onClick={onClose} px={3} my={3} width="50%">
                                                         <Hyperlink href="/contact"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Contact Us</Heading>
                                                             <Text fontSize="sm" fontWeight="500" opacity=".7">We are here to help</Text>
                                                         </a></Hyperlink> 
                                                     </Box>
-                                                    <Box px={3} my={3} width="50%">
+                                                    <Box onClick={onClose} px={3} my={3} width="50%">
                                                         <Hyperlink href="/newsroom"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Case Studies</Heading>
                                                             <Text fontSize="sm" fontWeight="500" opacity=".7">How we work</Text>
                                                         </a></Hyperlink> 
                                                     </Box>
-                                                    <Box px={3} my={3} width="50%">
+                                                    <Box onClick={onClose} px={3} my={3} width="50%">
                                                         <Hyperlink href="/testimonials"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Customer Stories</Heading>
                                                             <Text fontSize="sm" fontWeight="500" opacity=".7">People say a lot</Text>
                                                         </a></Hyperlink> 
                                                     </Box>
-                                                    <Box px={3} my={3} width="50%">
+                                                    <Box onClick={onClose} px={3} my={3} width="50%">
                                                         <Hyperlink href="/partners"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Our Partners</Heading>
                                                             <Text fontSize="sm" fontWeight="500" opacity=".7">Companies who trust us</Text>
