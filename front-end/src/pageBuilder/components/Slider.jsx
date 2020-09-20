@@ -9,17 +9,19 @@ function SliderC({sliderInfo}) {
         <div className=" position-relative">
             <Slider options={{ 
             autoPlay: 3000,
+            groupCells: true,
             adaptiveHeight:true,
             imagesLoaded: true, 
             pageDots: false, 
             draggable: true,
-            pauseAutoPlayOnHover: false,
+            pauseAutoPlayOnHover: true,
+            prevNextButtons: false,
             wrapAround: true 
             }}>
             {sliderInfo.map((info, index) => (
-              <Flex justifyContent="center" w="100%">
+              <Flex justifyContent="center" w="20%">
               <Box shadow="md" overflow="hidden">
-                <Image h="250px"   src={info.imgSrc} alt={info.sliderInfo} />
+                <Image h="150px"   src={info.imgSrc} alt={info.sliderInfo} />
                 
                   <Box
                     textAlign="center"
