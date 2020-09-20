@@ -75,7 +75,7 @@ function main(props) {
             <Box zIndex={100} px={100/6 + "%"} textAlign="center">
                 <Title fontSize="64px">Serving Technology for an Effortless Business</Title>
                 <Heading textAlign="center" mt={4} fontFamily="Nexa Light" size="md">Partner for IT solutions, delivering values and ensuring corporate growth.</Heading>
-                <Link href={"/contact"}><Button zIndex={100} p={8} className="btn btn-outline primary-btn" variantColor="primary" fontSize="20px" mt={8}>Request a Quote</Button></Link>
+                <Link href={"/contact"}><Button zIndex={100} p={8} _hover={{boxShadow:"0px 5px 10px -2px rgba(206, 30, 30, 1)"  }}  variantColor="primary" fontSize="20px" mt={8}>Request a Quote</Button></Link>
             </Box>
         </Section>  
         <Section>

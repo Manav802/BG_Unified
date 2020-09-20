@@ -130,8 +130,9 @@ class Landing extends Component {
                             <Button
                             zIndex={100}
                               variant="solid"
-                              className="mx-1 mx-lg-2 btn btn-outline primary-btn"
+                              className="mx-1 mx-lg-2"
                               variantColor="primary"
+                              _hover={{boxShadow:"0px 5px 10px -2px rgba(206, 30, 30, 1)"  }} 
                               size="lg"
                             >
                               {info.btnPrimaryText}
@@ -141,7 +142,8 @@ class Landing extends Component {
                             <Button
                             zIndex={100}
                               variant="outline"
-                              className="mx-1 mx-lg-2 btn btn-outline secondary-btn"
+                              className="mx-1 mx-lg-2"
+                              _hover={{color:"black", bg:"white", boxShadow:"0 5px 10px 0 rgba(0,0,0,0.24)"  }} 
                               size="lg"
                             >
                               {info.btnSecondaryText}
