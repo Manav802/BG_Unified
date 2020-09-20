@@ -400,15 +400,15 @@ function main(props) {
                 </Box>
                 <Flex px={8} wrap="wrap" width={["100%","100%",1/2]}>
                     <Box width={["100%","100%", 1/2]} px={3}>
-                        <Box bgImage="url('/assets/images/newsroom/infra.jpg')" mb={6} height="220px" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
+                        <Box bgImage="url('/assets/images/newsroom/infra.webp')" mb={6} height="220px" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
                         <Heading px={8} pt={8} size="lg" color="white" fontFamily="Nexa Bold">Network Infrastructure Redesign</Heading>
                         </Box>
-                        <Box bgImage="url('/assets/images/newsroom/f5_redesign.jpg')" mt={6} height="220px" backgroundSize="cover" backgroundRepeat="no-repeat" rounded={8}>
+                        <Box bgImage="url('/assets/images/newsroom/f5_redesign.webp')" mt={6} height="220px" backgroundSize="cover" backgroundRepeat="no-repeat" rounded={8}>
                             <Heading px={8} pt={8} size="lg" color="white" fontFamily="Nexa Bold">F5 Topology Redesign</Heading>
                         </Box>
                     </Box>
                     <Box width={["100%","100%", 1/2]} px={3}>
-                        <Flex align="flex-end" bgImage="url('/assets/images/newsroom/complete_vdi.jpg')" height="100%" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
+                        <Flex align="flex-end" bgImage="url('/assets/images/newsroom/complete_vdi.webp')" height="100%" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
                             <Heading p={8} size="lg" color="white" fontFamily="Nexa Bold">BG Unified Solutions hosted UC Solutions</Heading>
                         </Flex>
                     </Box>
