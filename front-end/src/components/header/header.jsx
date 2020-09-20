@@ -51,18 +51,18 @@ function header(props) {
 
                             <Popover trigger="hover" placement="bottom-start">
                                 <PopoverTrigger>
-                                    <Link display={["none", "none","none","flex"]} mx={3} fontWeight="500" mx={3} fontSize="md" href="#" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>Solutions</Link>
+                                    <Link display={["none", "none","none","flex"]} mx={3} fontWeight="500" mx={3} fontSize="md" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>Solutions</Link>
                                 </PopoverTrigger>
                                 <PopoverContent _focus={{outline:"none"}} maxW="auto" bg="transperant" borderWidth={0} boxShadow="none" zIndex={4} width="100%" right={0} left={0} pt={6}>
                                     <Container>
-                                        <Box rounded={4} boxShadow="xl" bg="white" p={10}>
                                         <Fade duration={300} distance={"5%"}>
+                                        <Box rounded={4} boxShadow="xl" bg="white" p={10}>
                                             <Flex wrap="wrap" px={6}>
                                                 <Box my={4} width={["100%", "100%", "50%", 1/3]}>
                                                     <Text my={"12px"} fontSize="md" fontWeight="700">IT & Infrastructure Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "IT Infrastructural Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" href="#" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" className="link" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                 </Box>
@@ -70,13 +70,13 @@ function header(props) {
                                                 <Text my={"12px"} fontSize="md" fontWeight="700">Network Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "Network Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" href="#" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" className="link" fontWeight="400" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                     <Text my={"12px"} fontSize="md" fontWeight="700">Cyber Security Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "Cyber Security Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" href="#" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" className="link" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                 </Box>
@@ -84,25 +84,25 @@ function header(props) {
                                                     <Text my={"12px"} fontSize="md" fontWeight="700">Collaborative Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "Collaborative Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" href="#" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" className="link" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                     <Text my={"12px"} fontSize="md" fontWeight="700">Development Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "Development Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" href="#" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" className="link" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                 </Box>
                                             </Flex>
-                                        </Fade>
                                         </Box>
+                                        </Fade>
                                     </Container>
                                 </PopoverContent>
                             </Popover>
                             <Popover  trigger="hover" placement="bottom-start">
                                 <PopoverTrigger>
-                                    <Link display={["none", "none","none","flex"]} mx={3} fontWeight="500" mx={3} fontSize="md" href="#" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>Company</Link>
+                                    <Link display={["none", "none","none","flex"]} mx={3} fontWeight="500" mx={3} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>Company</Link>
                                 </PopoverTrigger>
                                 <PopoverContent _focus={{outline:"none"}} maxW="auto" bg="transperant" borderWidth={0} boxShadow="none" zIndex={4} width="100%" right={0} left={0}  pt={6} >
                                     <Container>
@@ -113,7 +113,7 @@ function header(props) {
                                             <Box p={12} w="50%">
                                                 <Grid  templateColumns="auto auto" templateRows="72px" wrap="wrap">
                                                     <Box height="48px" my={4}>
-                                                    <Hyperlink href="/contact">
+                                                    <Hyperlink href="/about">
                                                         <a className="link"><Flex align="center">
                                                             <SVG color="primary.500" src="/assets/images/icons/library/home/building.svg"></SVG>
                                                             <Box ml="3">
@@ -124,7 +124,7 @@ function header(props) {
                                                     </Hyperlink>
                                                     </Box>
                                                     <Box height="48px" my={4}>
-                                                    <Hyperlink href="/contact">
+                                                    <Hyperlink href="/newsroom">
                                                         <a className="link"><Flex align="center">
                                                             <SVG color="primary.500" src="/assets/images/icons/library/layout/layout-top-panel-5.svg"></SVG>
                                                             <Box ml="3">
@@ -135,7 +135,7 @@ function header(props) {
                                                     </Hyperlink>
                                                     </Box>
                                                     <Box height="48px" my={4}>
-                                                    <Hyperlink href="/contact">
+                                                    <Hyperlink href="/solutions">
                                                         <a className="link"><Flex align="center">
                                                             <SVG color="primary.500" src="/assets/images/icons/library/general/folder.svg"></SVG>
                                                             <Box ml="3">
@@ -146,7 +146,7 @@ function header(props) {
                                                     </Hyperlink>
                                                     </Box>
                                                     <Box height="48px" my={4}>
-                                                    <Hyperlink href="/contact">
+                                                    <Hyperlink href="/team">
                                                         <a className="link"><Flex align="center">
                                                             <SVG color="primary.500" src="/assets/images/icons/library/communication/group.svg"></SVG>
                                                             <Box ml="3">
@@ -166,19 +166,19 @@ function header(props) {
                                                         </a></Hyperlink> 
                                                     </Box>
                                                     <Box px={3} my={3} width="50%">
-                                                        <Hyperlink href="/contact"><a className="link">
+                                                        <Hyperlink href="/newsroom"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Case Studies</Heading>
                                                             <Text fontSize="sm" fontWeight="500" opacity=".7">How we work</Text>
                                                         </a></Hyperlink> 
                                                     </Box>
                                                     <Box px={3} my={3} width="50%">
-                                                        <Hyperlink href="/contact"><a className="link">
+                                                        <Hyperlink href="/testimonials"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Customer Stories</Heading>
                                                             <Text fontSize="sm" fontWeight="500" opacity=".7">People say a lot</Text>
                                                         </a></Hyperlink> 
                                                     </Box>
                                                     <Box px={3} my={3} width="50%">
-                                                        <Hyperlink href="/contact"><a className="link">
+                                                        <Hyperlink href="/partners"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Our Partners</Heading>
                                                             <Text fontSize="sm" fontWeight="500" opacity=".7">Companies who trust us</Text>
                                                         </a></Hyperlink> 
@@ -210,7 +210,7 @@ function header(props) {
                                 </PopoverContent>
                             </Popover>
                             <Hyperlink href="/features">
-                                <Link display={["none", "none","none","flex"]} mx={3} fontWeight="500" mx={3} fontSize="md" href="#" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>Our Features</Link>
+                                <Link display={["none", "none","none","flex"]} mx={3} fontWeight="500" mx={3} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>Our Features</Link>
                             </Hyperlink>
                         </div>
                         <Hyperlink href="/"><a>
@@ -250,7 +250,7 @@ function header(props) {
                                     <Text my={"12px"} fontSize="md" fontWeight="700">IT & Infrastructure Services</Text>
                                     <Stack spacing="4px" direction="column">
                                     {servicesArray.filter(service => service[1].category === "IT Infrastructural Services").map(service => (
-                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" href="#" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                     ))}
                                     </Stack>
                                 </Box>
@@ -258,13 +258,13 @@ function header(props) {
                                 <Text my={"12px"} fontSize="md" fontWeight="700">Network Services</Text>
                                     <Stack spacing="4px" direction="column">
                                     {servicesArray.filter(service => service[1].category === "Network Services").map(service => (
-                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" href="#" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                     ))}
                                     </Stack>
                                     <Text my={"12px"} fontSize="md" fontWeight="700">Cyber Security Services</Text>
                                     <Stack spacing="4px" direction="column">
                                     {servicesArray.filter(service => service[1].category === "Cyber Security Services").map(service => (
-                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" href="#" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                     ))}
                                     </Stack>
                                 </Box>
@@ -272,13 +272,13 @@ function header(props) {
                                     <Text my={"12px"} fontSize="md" fontWeight="700">Collaborative Services</Text>
                                     <Stack spacing="4px" direction="column">
                                     {servicesArray.filter(service => service[1].category === "Collaborative Services").map(service => (
-                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" href="#" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                     ))}
                                     </Stack>
                                     <Text my={"12px"} fontSize="md" fontWeight="700">Development Services</Text>
                                     <Stack spacing="4px" direction="column">
                                     {servicesArray.filter(service => service[1].category === "Development Services").map(service => (
-                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md" href="#" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                     ))}
                                     </Stack>
                                 </Box>

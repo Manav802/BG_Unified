@@ -14,6 +14,9 @@ import Link from "next/link";
 import Feature3 from "../pageBuilder/components/Feature3";
 import RenderSection from "../pageBuilder/RenderSection";
 import Body from "../pageBuilder/Body";
+
+import { TESTIMONIALS } from "../database/testimonials";
+
 var array = [0,0,0,0,0,0,0,0,0,0,0,0];
 
 const tabs = [
@@ -63,13 +66,13 @@ function main(props) {
     return (
         <>
         <Box zIndex="-1" pos="absolute" left={0} top={0} width="100%" overflow="hidden">
-        <Image src="/assets/images/backgrounds/hero-shot.png" height="1200px" objectFit="cover" width="100vw" ></Image>
+        <Image src="/assets/images/backgrounds/hero-shot.webp" height="1200px" objectFit="cover" width="100vw" ></Image>
         </Box>
         <Section pos="relative" color="white" m={0} py={40}>
-            <Box px={100/6 + "%"} textAlign="center">
+            <Box zIndex={100} px={100/6 + "%"} textAlign="center">
                 <Title fontSize="64px">Serving Technology for an Effortless Business</Title>
                 <Heading textAlign="center" mt={4} fontFamily="Nexa Light" size="md">Partner for IT solutions, delivering values and ensuring corporate growth.</Heading>
-                <Button p={8} variantColor="primary" fontSize="20px" mt={8}>Request a Quote</Button>
+                <Link href={"/contact"}><Button zIndex={100} p={8} className="btn btn-outline primary-btn" variantColor="primary" fontSize="20px" mt={8}>Request a Quote</Button></Link>
             </Box>
         </Section>  
         <Section>
@@ -241,7 +244,7 @@ function main(props) {
                                 </Link>
                             </Box>
                             <Box width={["100%","100%",1/2]}>
-                                <Image mt={6} src="/assets/images/illustrations/collaborative.svg"></Image>
+                                <Image mt={6} src="/assets/images/illustrations/development.svg"></Image>
                             </Box>
                         </Row>
                         </TabPanel>
@@ -355,23 +358,22 @@ function main(props) {
             </Slider>
             <Divider mb={8} mt={16} borderWidth={2}></Divider>
             <Slider options={{prevNextButtons: false}}>
-            <Box w="100%">
-            <Heading fontSize="28px" lineHeight={1.7} opacity={.7} fontWeight="500">
-            I have worked with BG Unified Solutions for approximately 1 year now. I have found BG Unified Solutions to be a highly reputable company with a work ethic and reliability that is second to none. 
-            </Heading>
-            <Heading size="lg" color="primary.500" mt={3}>Tushar Bhatia</Heading>
-            <Heading size="md" opacity={.7} mt={3}>Optus</Heading>
-            </Box>
-            <Box w="100%">
-            <Heading fontSize="28px" lineHeight={1.7} opacity={.7} fontWeight="500">
-            I have worked with BG Unified Solutions for approximately 1 year now. I have found BG Unified Solutions to be a highly reputable company with a work ethic and reliability that is second to none. 
-            </Heading>
-            <Heading size="lg" color="primary.500" mt={3}>Tushar Bhatia</Heading>
-            <Heading size="md" opacity={.7} mt={3}>Optus</Heading>
-            </Box>
+            {TESTIMONIALS.map((x)=>(
+                <Box w="100%">
+                <Heading fontSize="26px" lineHeight={1.7} opacity={.7} fontWeight="500">
+                    {x.paragraph}
+                </Heading>
+            <Heading size="lg" color="primary.500" mt={3}>{x.author}</Heading>
+                <Heading size="md" opacity={.7} mt={3}>{x.CompanyName}</Heading>
+                </Box>
+            ))}
+            
+
+            
+
             </Slider>
             <Divider mb={8} mt={16} borderWidth={2}></Divider>
-            <Link href="/features">
+            <Link href="/testimonials">
                 <a className="link">
                 <Heading color="primary.500" mt={16} size="md">
                 Read More Customer Stories{" "}
@@ -398,15 +400,15 @@ function main(props) {
                 </Box>
                 <Flex px={8} wrap="wrap" width={["100%","100%",1/2]}>
                     <Box width={["100%","100%", 1/2]} px={3}>
-                        <Box bgImage="url('/assets/images/newsroom/infra.jpg')" mb={6} height="220px" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
+                        <Box bgImage="url('/assets/images/newsroom/infra.webp')" mb={6} height="220px" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
                         <Heading px={8} pt={8} size="lg" color="white" fontFamily="Nexa Bold">Network Infrastructure Redesign</Heading>
                         </Box>
-                        <Box bgImage="url('/assets/images/newsroom/f5_redesign.jpg')" mt={6} height="220px" backgroundSize="cover" backgroundRepeat="no-repeat" rounded={8}>
+                        <Box bgImage="url('/assets/images/newsroom/f5_redesign.webp')" mt={6} height="220px" backgroundSize="cover" backgroundRepeat="no-repeat" rounded={8}>
                             <Heading px={8} pt={8} size="lg" color="white" fontFamily="Nexa Bold">F5 Topology Redesign</Heading>
                         </Box>
                     </Box>
                     <Box width={["100%","100%", 1/2]} px={3}>
-                        <Flex align="flex-end" bgImage="url('/assets/images/newsroom/complete_vdi.jpg')" height="100%" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
+                        <Flex align="flex-end" bgImage="url('/assets/images/newsroom/complete_vdi.webp')" height="100%" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
                             <Heading p={8} size="lg" color="white" fontFamily="Nexa Bold">BG Unified Solutions hosted UC Solutions</Heading>
                         </Flex>
                     </Box>
@@ -419,16 +421,15 @@ function main(props) {
             </Title>
             <Flex>
                 <Box cursor="pointer" px={3} width="20%">
+                <Link href="/contact"><a className="link">
                 <Feature3 boxShadow="0px 6px 25px #ff000066" height="140px" icon="/assets/images/icons/color/speak.svg" bg="primary.500">
-                <Link href="/features">
-                    <a className="link">
                     <Heading color="white" px={8} pt={8} fontFamily="Nexa Bold" fontSize="20px">
                     Consult{" "}
                     <Icon name="arrow-forward"></Icon>
                     </Heading>
-                    </a>
-                </Link>
                 </Feature3>
+                </a>
+                </Link>
                 </Box>
                 <Box px={3} width="20%">
                     <Box height="140px" overflow="hidden" pos="relative" boxShadow="xl" my={6} borderWidth={1} rounded={8}>
