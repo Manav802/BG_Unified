@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Icon, Image, Button } from "@chakra-ui/core";
 import Link from "next/link"
+import SVG from "../svg/SVG";
 //props.icon is an element (can be image,icon etc.)
 
 function CardWithIcon(props) {
@@ -12,7 +13,7 @@ function CardWithIcon(props) {
       h="128px"
       bg={props.iconBg || "Blue"}
     >
-      <Image src={props.icon} size="40px"></Image>
+      <SVG size="40px" color="light.500" src={props.icon}></SVG>
     </Box>
   );
   if (props.fullIcon) {
