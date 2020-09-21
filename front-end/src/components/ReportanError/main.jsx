@@ -159,10 +159,9 @@ function ErrorForm(props) {
             <Link mx={["6px", "10px", "16px"]} fontSize={["10px", "12px", "14px"]} textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
             <Modal isOpen={isOpen} onClose={formClose} isCentered scrollBehavior="inside">
                 <ModalOverlay />
-                <ModalContent maxWidth={["400px", "400px", "600px", "700px"]}>
-                <ModalHeader position="sticky"><span className="display5">Report an Error</span></ModalHeader>
+                <ModalContent maxWidth={["400px", "400px", "600px", "700px"]} maxHeight="860px">
+                    <ModalHeader position="sticky"><Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}>Go Back</Button><span className="display5 mx-2">Report an Error</span></ModalHeader>
                     <ModalBody>
-                        <ModalCloseButton />
                         <Box className="container reportanerror">
                             <form onSubmit={onSubmit}>
                                 <input
@@ -171,19 +170,19 @@ function ErrorForm(props) {
                                 </input>
                                 <Tabs index={tabIndex} onChange={handleTabsChange} isFitted>
                                     <TabList>
-                                        <Tab paddingX={["2px","4px","16px"]} fontSize={["sm","md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Type of error</div> </Tab>
-                                        <Tab paddingX={["2px","8px","16px"]} fontSize={["sm","md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Device Details</div></Tab>
-                                        <Tab paddingX={["2px","4px","16px"]} fontSize={["sm","md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Description</div></Tab>
+                                        <Tab paddingX={["2px", "4px", "16px"]} fontSize={["sm", "md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Type of error</div> </Tab>
+                                        <Tab paddingX={["2px", "8px", "16px"]} fontSize={["sm", "md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Device Details</div></Tab>
+                                        <Tab paddingX={["2px", "4px", "16px"]} fontSize={["sm", "md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Description</div></Tab>
                                     </TabList>
                                     <TabPanels>
                                         <TabPanel>
                                             <FormControl mt={10} isRequired>
                                                 <FormLabel htmlFor="name">Type of error:</FormLabel>
                                                 <RadioGroup name="errortype" onChange={onChange} defaultValue={form.error}>
-                                                    <Radio value="Page not responsive" onClick={() => handleToggle(false)}><Box fontSize={["md","lg"]}>Page not responsive</Box></Radio>
-                                                    <Radio value="Component not working" onClick={() => handleToggle(false)}><Box fontSize={["md","lg"]}>Component not working</Box></Radio>
-                                                    <Radio value="Site not loading properly" onClick={() => handleToggle(false)}><Box fontSize={["md","lg"]}>Site not loading properly</Box></Radio>
-                                                    <Radio value="Some Other Error" onClick={() => handleToggle(true)}><Box fontSize={["md","lg"]}>Other</Box></Radio>
+                                                    <Radio value="Page not responsive" onClick={() => handleToggle(false)}><Box fontSize={["md", "lg"]}>Page not responsive</Box></Radio>
+                                                    <Radio value="Component not working" onClick={() => handleToggle(false)}><Box fontSize={["md", "lg"]}>Component not working</Box></Radio>
+                                                    <Radio value="Site not loading properly" onClick={() => handleToggle(false)}><Box fontSize={["md", "lg"]}>Site not loading properly</Box></Radio>
+                                                    <Radio value="Some Other Error" onClick={() => handleToggle(true)}><Box fontSize={["md", "lg"]}>Other</Box></Radio>
                                                 </RadioGroup>
                                             </FormControl>
                                             {rend && <Collapse isOpen={show}>
@@ -243,7 +242,7 @@ function ErrorForm(props) {
                                                     </FormControl>
                                                 </div>
                                                 <div className="col-md-6">
-                                                    <FormControl  isRequired mt={10} >
+                                                    <FormControl isRequired mt={10} >
                                                         <FormLabel htmlFor="phone">Contact No.</FormLabel>
                                                         <Input
                                                             type="tel"
