@@ -21,7 +21,8 @@ function SliderC({sliderInfo}) {
             {sliderInfo.map((info, index) => (
               <Flex justifyContent="center" w="20%">
               <Box mb="10px" p="15px" shadow="md" overflow="hidden">
-                <Image h="150px"   src={info.imgSrc} alt={info.sliderInfo} />                
+                <Image h="150px"   src={info.imgSrc} alt={info.sliderInfo} />
+                
                   <Box
                     textAlign="center"
                     mt="3"
