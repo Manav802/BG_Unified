@@ -1,4 +1,16 @@
+import WafPricing from "../../pricing/WafPricing";
+
 export default [
+    {
+        mb:0,
+        gap:0,
+        containerWidth: "100%",
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <WafPricing/>
+        }]
+    },
     {
         title:"Web Application Firewall:How it works?",
        rowDistance: 8,
