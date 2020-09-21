@@ -336,14 +336,14 @@ const services = {
         title: "GPU As A Service",
         slogan: "Powerful Yet Simple",
         bgImage: "/assets/images/services/wafaas.webp",
-        category: "Collaborative Services",
-        icon: "/assets/images/icons/monotone/serviceDesk.svg",
+        category: "IT Infrastructural Services",
+        icon: "/assets/images/icons/monotone/gpu.svg",
         color: "#E4572E",
         tags: ["wireless", "wifi", "clusters", "networks"],
         description: " Protect your Web Application with our Web Application Firewall Services, protecting your enterprise online with full durability....",
         illustration: "",
         relatedService: ["Contact Center As A Service", "Unified Communications As A Service", "CEX As A Service"],
-        conclusion: "Conclusion - Global network of infrastructure in your hands.",
+        conclusion: "Global network of infrastructure in your hands.",
         sections: sections.gpu
     },
     "webdev": {

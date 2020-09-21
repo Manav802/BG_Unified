@@ -84,7 +84,6 @@ export default [
         pb: 0,
         title : "Why BG Unified Solutions?",
         body: [
-       
         {
             width: "100%",
             type: "content",

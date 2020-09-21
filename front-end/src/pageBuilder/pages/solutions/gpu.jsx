@@ -51,32 +51,32 @@ export default [
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/shopping/dollar.svg", mt: 4, title: "Scientific Research"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/general/search.svg", mt: 4, title: "Scientific Research"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/design/line.svg", mt: 4, title: "Big Data Analytics"}
+            data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "Big Data Analytics"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/devices/keyboard.svg",mt: 4, title: "Financial Services"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/shopping/dollar.svg",mt: 4, title: "Financial Services"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/devices/diagnostics.svg", mt: 4, title: "Machine Learning"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/code/git-3.svg", mt: 4, title: "Machine Learning"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/files/folder-cloud.svg", mt: 4, title: "Deep Learning"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/code/cmd.svg", mt: 4, title: "Deep Learning"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center", titleSize:"md",iconColor:"red.500", svg:"/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Healthcare Services"}
+            data: {align: "center", titleSize:"md",iconColor:"red.500", svg:"/assets/images/icons/library/devices/diagnostics.svg", mt: 4, title: "Healthcare Services"}
         },
     ]
     },
@@ -99,7 +99,7 @@ export default [
                     title: "BGUS GPU-As-A-Service",
                     textAlign: "left",
                     fontSize: ["lg","xl"],
-                    titleSize: [40,40,48],
+                    titleSize: [25,25,32],
                     my:[2,4,8],
                     text: "With GPUaaS, you also get access to our AI expertise, extensive training and technical capabilities that can jump-start your projects. Our dedicated team can assist with prescriptive guidance and design expertise. Our technical team ensures your AI applications are fully supported."
                     
@@ -111,32 +111,32 @@ export default [
                 containerData : [{
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "Rapid Workspeed"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "Rapid Workspeed"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/code/time-schedule.svg", mt: 4, title: "High Availability"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/clock.svg", mt: 4, title: "High Availability"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/key.svg",mt: 4, title: "Varied Usage"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/flower-2.svg",mt: 4, title: "Varied Usage"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/devices/diagnostics.svg", mt: 4, title: "Seamless"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/air-ballon.svg", mt: 4, title: "Seamless"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/shield-check.svg", mt: 4, title: "Hybrid Management"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/duplicate.svg", mt: 4, title: "Hybrid Management"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Maximum Utilization"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "Maximum Utilization"}
                 }],
             },
         ]   
