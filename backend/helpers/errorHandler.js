@@ -5,13 +5,13 @@ exports.handleError = (res, err, message,statusCode) => {
         console.log(err);
       }
       // Sends error to user
-      res.status(statusCode).json({
+      return res.status(statusCode).json({
         success: false,
         message: message
       });
     } 
     catch (error) {
-      res.status(500).json({
+      return res.status(500).json({
         success: false,
         message: "Server Error"
       });

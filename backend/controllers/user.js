@@ -144,7 +144,7 @@ exports.signout =async(req, res)=>{
                 client.SREM(`${id}`,`${token}`,(err,data)=>{
                     if(err) throw err;
                     else{
-                        res.status(200).json({
+                        return res.status(200).json({
                             success:"true",
                             message:"SignOut Successfully"
                         })
@@ -154,12 +154,13 @@ exports.signout =async(req, res)=>{
         })
     }
     catch(err){
-        handleError(res,err,"Problem in SignOut",503)
+        return handleError(res,err,"Problem in SignOut",503)
     }
 }
 
 
-// IsSigned In middleware  
+// IsSigned In middleware 
+
 exports.isSignedIn = async (req, res, next)=>{
 
     //checking the header 
@@ -198,4 +199,21 @@ exports.isSignedIn = async (req, res, next)=>{
             })
         }
     })
+}
+
+
+// isAdmin  to  identify admin
+exports.isAdmin  = async(req, res, next) =>{
+    
+    //confirming from the local data
+    if(req.user.role ===0){
+        return handleError(res,{},"Access Denied,You are not Admin",401)
+    }
+    //verify from the database
+    const userData = await User.findById(req.user._id)
+    if(userData.role===0){
+        return handleError(res,{},"Access Denied,You are not Admin",401)
+    }
+    //if admin
+    next()
 }

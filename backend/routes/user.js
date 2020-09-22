@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 //signup  route
-const { signUp, signin, isSignedIn, signout, verifyToken } = require('../controllers/user') 
+const { signUp, signin, isSignedIn, signout, verifyToken, isAdmin } = require('../controllers/user') 
 const {check} = require('express-validator')
 
 //signup
@@ -43,8 +43,11 @@ router.get('/signout',signout)
 
 
 //Testing API
-router.get('/test',isSignedIn,(req, res)=>{
-   res.send("Access Granted")
+router.get('/test',isSignedIn,isAdmin,(req, res)=>{
+   return res.status(200).json({
+     success:true,
+     message:"Access Granted"
+   })
 })
 
 

@@ -4,6 +4,7 @@ const  feedBackRoutes = require('./feedback')
 const  reportRoutes = require('./report')
 const  contactRoutes = require('./contact')
 const  docuRoutes = require('./eSign')
+const  adminDashboard = require('./adminDashboard')
 
 
 const express =require('express')
@@ -15,15 +16,16 @@ router.use("/api/feedback", feedBackRoutes)
 router.use("/api/contact", contactRoutes)
 router.use("/api/report", reportRoutes)
 router.use("/api/document", docuRoutes)
+router.use("/api/admin",adminDashboard)
 
 const errorMessage = {
-    pageNotFount: 'Page Not Found'
+    pageNotFound: 'Page Not Found'
 }
 
 //handling error 404 (Not Found)
 router.use((req, res, next) => {
   
-    const error = new Error(errorMessage.pageNotFount);
+    const error = new Error(errorMessage.pageNotFound);
     error.status = 404;
     res.status(error.status).json({
         message: error.message
