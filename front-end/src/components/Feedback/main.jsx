@@ -106,7 +106,7 @@ function FeedbackForm(props) {
                                 <FormControl as="fieldset" isRequired>
                                     <FormLabel>Rate your experience!</FormLabel>
                                     <RadioGroup onChange={onChange} name="rating" isInline defaultValue={form.rating} spacing={4}>
-                                        <Radio size="lg" value="1">☹</Radio>
+                                        <Radio size="lg" value="1">🙁</Radio>
                                         <Radio size="lg" value="2">😐</Radio>
                                         <Radio size="lg" value="3">🙂</Radio>
                                         <Radio size="lg" value="4">😊</Radio>
