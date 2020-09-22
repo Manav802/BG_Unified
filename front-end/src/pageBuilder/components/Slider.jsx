@@ -19,7 +19,7 @@ function SliderC({sliderInfo}) {
             wrapAround: true 
             }}>
             {sliderInfo.map((info, index) => (
-              <Flex justifyContent="center" w="26%">
+              <Flex justifyContent="center" w="20%">
               <Box mb="10px" p="15px" shadow="md" overflow="hidden">
                 <Image w="180px" h="150px" src={info.imgSrc} alt={info.sliderInfo} />
                 
