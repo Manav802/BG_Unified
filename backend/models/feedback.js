@@ -3,6 +3,10 @@ const mongoose = require('mongoose')
 //schema
 const feedbackSchema = new mongoose.Schema({
 
+    archive:{
+        type:Boolean,
+        default:false
+    },
     name:{
         type:String,
         maxlength:32,
@@ -15,9 +19,7 @@ const feedbackSchema = new mongoose.Schema({
         default:""
     },
     contactNumber:{
-        type:String,
-        maxlength:32,
-        default:""
+        type:Number,
     },
     rating:{
         type:Number,

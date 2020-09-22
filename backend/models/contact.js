@@ -2,7 +2,11 @@ const mongoose = require('mongoose')
 
 //schema
 const contactSchema = new mongoose.Schema({
-
+    
+    archive:{
+        type:Boolean,
+        default:false
+    },
     name:{
         type:String,
         required:true,
@@ -15,9 +19,8 @@ const contactSchema = new mongoose.Schema({
         trim:true
     },
     contactNumber:{
-        type:String,
-        required:true,
-        maxlength:32,
+        type:Number,
+        required:true
     },
     subject:{
         type:String,

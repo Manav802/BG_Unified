@@ -3,6 +3,10 @@ const mongoose = require('mongoose')
 //schema
 const contactSchema = new mongoose.Schema({
 
+    archive:{
+        type:Boolean,
+        default:false
+    },
     name:{
         type:String,
         required:true,
@@ -15,9 +19,8 @@ const contactSchema = new mongoose.Schema({
         trim:true
     },
     contactNumber:{
-        type:String,
-        required:true,
-        maxlength:32,
+        type:Number,
+        required:true
     },
     description:{
         type:String,
@@ -34,4 +37,4 @@ const contactSchema = new mongoose.Schema({
 
 },{timestamps:true})
 
-module.exports = mongoose.model("Contact",contactSchema)
+module.exports = mongoose.model("Service",contactSchema)

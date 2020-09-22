@@ -21,15 +21,19 @@ const userSchema = new mongoose.Schema(
       required: true,
       unique: true
     },
+    contactNumber:{
+      type:Number,
+      required:true
+    },
     encry_password: {
       type: String,
       required: true
     },
-    auth_base:{
+    twoFactorBase:{
       type: String,
       required:true
     },
-    auth_buffer:{
+    twoFactorBuffer:{
       type:String,
       required:true
     },

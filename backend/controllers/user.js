@@ -19,13 +19,13 @@ exports.signUp = async (req, res) =>{
   //apply the validations result
   const errors = validationResult(req)
   if (!errors.isEmpty()) {
-    return handleError(res, errors, errors.array()[0].msg)
+    return handleError(res, errors, errors.array()[0].msg,400)
   }
   
-  const { firstName, lastName , email, password, confirmPassword } = req.body
+  const { firstName, lastName , email, password, confirmPassword ,contactNumber} = req.body
   //check that password and confimm password are same or not
   if (password !== confirmPassword) {
-    return handleError(res, {}, "Password does not match")
+    return handleError(res, {}, "Password does not match",400)
   }
   //generate the secret
   const secret = await speakeasy.generateSecret({
@@ -35,23 +35,22 @@ exports.signUp = async (req, res) =>{
 
   var user = new User(req.body)
   //add 2-F properties
-  user.auth_base = secret.base32;
-  user.auth_buffer = await QRCode.toDataURL(secret.otpauth_url);
+  user.twoFactorBase = secret.base32;
+  user.twoFactorBuffer = await QRCode.toDataURL(secret.otpauth_url);
   //saving the user in the databse
   user.save((err, data)=>{
     if(err){
-        return handleError(res, err, "Unable to Register")
+        return handleError(res, err, "Unable to store in DB",503)
     }
     else{
         return res.status(200).json({
             type: "Success",
             message:"User Registered Successfully",
-            image:user.auth_buffer
+            image:user.twoFactorBuffer
         })
     }
   })
 }
-
 
 //singin  controller
 exports.signin = async (req,res)=>{
@@ -61,44 +60,53 @@ exports.signin = async (req,res)=>{
         const { email, password } = req.body
         //validate the errorr
         if (!errors.isEmpty()) {
-        return res.status(422).json({
-        error: errors.array()[0].msg
-        })
+            return res.status(422).json({
+                error: errors.array()[0].msg},
+                400
+            )
         }
         User.findOne({ email }, (err, user) => {
 
             //checking the user
             if (err || !user) {
-                return  handleError(res,err,"User Does not exist")
+                return  handleError(res,err,"User Does not exist",400)
             }
             //authenticate the user
             if (!user.autheticate(password)) {
-                return handleError(res,err, "Invalid Email and Password")
+                return handleError(res,err, "Invalid Email and Password",400)
             }
-            res.status(200).json({
-                email:email,
+            return res.status(200).json({
+                sucess :true,
                 message:"Credential passed"
             })
         })
     }catch(err){
-        return handleError(res,err,"There is problem in SignIn")
+        return handleError(res,err,"There is problem in SignIn",503)
     }
 }
 
+
 //verify controller 
 exports.verifyToken = async (req,res)=>{
+
     try{
+        //apply the validations result
+        const errors = validationResult(req)
+        if (!errors.isEmpty()) {
+            return handleError(res, errors, errors.array()[0].msg,400)
+        }
+        //destruct the incoming body
         const { email, token } = req.body;
         //getting the user details
         const userDetails = await User.findOne({email});
         //verify the google autheticator
         var verified = speakeasy.totp.verify({
-        secret: userDetails.auth_base,
-        encoding: "base32",
-        token: token,
+            secret: userDetails.twoFactorBase,
+            encoding: "base32",
+            token: token,
         })
         if (!verified) {
-        return handleError(res, {}, "Incorrect 6 digit token");
+            return handleError(res, {}, "Incorrect 6 digit token",400);
         } 
         else {
             const token = jwt.sign({ _id: userDetails._id }, process.env.SECRET,{ expiresIn: '1h'})
@@ -107,14 +115,13 @@ exports.verifyToken = async (req,res)=>{
                 if(err) throw err
             })
             //send token in the header 
-            res.status(200).header('Authorization',`Bearer `+token).json({
-                type: "Success",
+            return res.status(200).header('Authorization',`Bearer `+token).json({
+                Success:"true",
                 message :"Sign In successfully"
             })
         }
     }catch(err){
-        console.log(err)
-        return handleError(res,err,"There is problem in SignIn")
+        return handleError(res,err,"There is problem in SignIn",503)
     }
 }
 
@@ -138,7 +145,7 @@ exports.signout =async(req, res)=>{
                     if(err) throw err;
                     else{
                         res.status(200).json({
-                            type: "Success",
+                            success:"true",
                             message:"SignOut Successfully"
                         })
                     }
@@ -147,7 +154,7 @@ exports.signout =async(req, res)=>{
         })
     }
     catch(err){
-        handleError(res,err,"Problem in SignOut")
+        handleError(res,err,"Problem in SignOut",503)
     }
 }
 
@@ -159,17 +166,17 @@ exports.isSignedIn = async (req, res, next)=>{
     var Btoken = req.header('Authorization')
     //adding the token
     if(!Btoken){
-        return handleError(res,{},"User not loggedIn")
+        return handleError(res,{},"User not loggedIn",401)
     }
     const token  = Btoken.split(' ')[1]
     //if token  does not exist 
     if(!token){
-        return handleError(res,{},"Access Denied")
+        return handleError(res,{},"Access Denied",401)
     }
     //verify the toekn 
     jwt.verify(token,process.env.SECRET,(err,verified)=>{
         if(err) {
-            return handleError(res, err, "Access Denied")
+            return handleError(res, err, "Access Denied",401)
         }
         else{
             //attaching the user to  req 

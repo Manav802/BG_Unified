@@ -14,7 +14,7 @@ router.use("/api/service", serviceRoutes)
 router.use("/api/feedback", feedBackRoutes)
 router.use("/api/contact", contactRoutes)
 router.use("/api/report", reportRoutes)
-router.use("/api/docu", docuRoutes)
+router.use("/api/document", docuRoutes)
 
 const errorMessage = {
     pageNotFount: 'Page Not Found'
