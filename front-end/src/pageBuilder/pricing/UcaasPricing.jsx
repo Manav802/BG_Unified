@@ -81,6 +81,13 @@ function UcaasPricing(props) {
     var totalPhones = parseInt(type=="100-50 SIP"?type.slice(0, 3):type.slice(0, 2))+additionalUcaas + addPhones ; 
     const [confSwitch, setconfSwitch] = React.useState(false);
     const handleSwitch = (swi) => swi ? ",Add Conference Phone" : "";
+
+    const [aj179, setaj179] = useState(0);
+    const [a1408, seta1408] = useState(0);
+    const [a9608, seta9608] = useState(0);
+
+    const [fanvilc400, setfanvilc400] = useState(0);
+    const [fanvilc600, setfanvilc600] = useState(0);
     
     console.log(dx650);
     const resetOnCardChange = () => {
@@ -105,6 +112,11 @@ function UcaasPricing(props) {
         setp9951(0);
         setp8845(0);
         setp7965g(0);
+        setaj179(0);
+        seta1408(0);
+        seta9608(0);
+        setfanvilc400(0);
+        setfanvilc600(0);
         setconfSwitch(false);
     };
     return (
@@ -693,7 +705,6 @@ function UcaasPricing(props) {
                                               
     </AccordionPanel>
   </AccordionItem>
-                                                        {node.slice(0,5)=="Cisco" && 
   <AccordionItem>
     <AccordionHeader>
       <Box flex="1" fontSize="lg" className="NunitoSans-Bold" textAlign="left">
@@ -701,6 +712,7 @@ function UcaasPricing(props) {
       </Box>
       <AccordionIcon />
     </AccordionHeader>
+                                                        {node.slice(0,5)=="Cisco" && 
     <AccordionPanel pb={4}>
     <div className="row justify-content-between">
                                                         <div className="col-md-5 my-1">
@@ -824,8 +836,136 @@ function UcaasPricing(props) {
                                                         </div>
                                                         </div>
                                                         
-    </AccordionPanel>
-                                                        </AccordionItem> }
+    </AccordionPanel> }
+
+    {node.slice(0,5)=="Avaya" && 
+    <AccordionPanel pb={4}>
+    <div className="row justify-content-between">
+                                                        <div className="col-md-5 my-1">
+                                                        <div className="NunitoSans-SemiBold">
+                                                        Avaya J179
+                                                        </div>
+                                                        <NumberInput
+                                                            onChange={(value)=>{value<=totalPhones-(a1408+a9608)?setaj179(value):setaj179(totalPhones-(a1408+a9608))}}
+                                                            value={aj179}
+                                                            min={0}
+                                                            max={totalPhones-(a1408+a9608)}
+                                                        >
+                                                            <NumberInputField className="bg-light" />
+                                                            <NumberInputStepper>
+                                                                <NumberIncrementStepper />
+                                                                <NumberDecrementStepper />
+                                                            </NumberInputStepper>
+                                                        </NumberInput>
+                                                        </div>
+                                                        <div className="col-md-5 my-1">
+                                                        <div className="NunitoSans-SemiBold">
+                                                        Avaya 1408
+                                                        </div>
+                                                        <NumberInput
+                                                            onChange={(value)=>{value<=totalPhones-(aj179+a9608)?seta1408(value):seta1408(totalPhones-(aj179+a9608))}}
+                                                            value={a1408}
+                                                            min={0}
+                                                            max={totalPhones-(aj179+a9608)}
+                                                        >
+                                                            <NumberInputField className="bg-light" />
+                                                            <NumberInputStepper>
+                                                                <NumberIncrementStepper />
+                                                                <NumberDecrementStepper />
+                                                            </NumberInputStepper>
+                                                        </NumberInput>
+                                                        </div>
+
+                                                        <div className="col-md-5 my-1">
+                                                        <div className="NunitoSans-SemiBold">
+                                                        Avaya 9608
+                                                        </div>
+                                                        <NumberInput
+                                                            onChange={(value)=>{value<=totalPhones-(aj179+a1408)?seta9608(value):seta9608(totalPhones-(aj179+a1408))}}
+                                                            value={a9608}
+                                                            min={0}
+                                                            max={totalPhones-(aj179+a1408)}
+                                                        >
+                                                            <NumberInputField className="bg-light" />
+                                                            <NumberInputStepper>
+                                                                <NumberIncrementStepper />
+                                                                <NumberDecrementStepper />
+                                                            </NumberInputStepper>
+                                                        </NumberInput>
+                                                        </div>
+                                                        <div className="col-12 mt-3">
+                                                            <FormLabel ml={1} htmlFor="license">
+                                                                    Add Conference Phone?
+                                                                </FormLabel>
+                                                                <Switch color="primary"
+                                                                    onChange={(e) => {
+                                                                    setconfSwitch(e.target.checked);
+                                                                    }}
+                                                                    isChecked={confSwitch}
+                                                                    id="license"
+                                                                />
+                                                                
+                                                        </div>
+                                                        </div>
+                                                        
+    </AccordionPanel> }
+
+    {node.slice(0,3)=="3CX" && 
+    <AccordionPanel pb={4}>
+    <div className="row justify-content-between">
+                                                        <div className="col-md-5 my-1">
+                                                        <div className="NunitoSans-SemiBold">
+                                                        Fanvil C400
+                                                        </div>
+                                                        <NumberInput
+                                                            onChange={(value)=>{value<=totalPhones-(fanvilc600)?setfanvilc400(value):setfanvilc400(totalPhones-(fanvilc600))}}
+                                                            value={fanvilc400}
+                                                            min={0}
+                                                            max={totalPhones-(fanvilc600)}
+                                                        >
+                                                            <NumberInputField className="bg-light" />
+                                                            <NumberInputStepper>
+                                                                <NumberIncrementStepper />
+                                                                <NumberDecrementStepper />
+                                                            </NumberInputStepper>
+                                                        </NumberInput>
+                                                        </div>
+                                                        <div className="col-md-5 my-1">
+                                                        <div className="NunitoSans-SemiBold">
+                                                        Fanvil C600
+                                                        </div>
+                                                        <NumberInput
+                                                            onChange={(value)=>{value<=totalPhones-(fanvilc400)?setfanvilc600(value):setfanvilc600(totalPhones-(fanvilc400))}}
+                                                            value={fanvilc600}
+                                                            min={0}
+                                                            max={totalPhones-(fanvilc400)}
+                                                        >
+                                                            <NumberInputField className="bg-light" />
+                                                            <NumberInputStepper>
+                                                                <NumberIncrementStepper />
+                                                                <NumberDecrementStepper />
+                                                            </NumberInputStepper>
+                                                        </NumberInput>
+                                                        </div>
+                                                        <div className="col-12 mt-3">
+                                                            <FormLabel ml={1} htmlFor="license">
+                                                                    Add Conference Phone?
+                                                                </FormLabel>
+                                                                <Switch color="primary"
+                                                                    onChange={(e) => {
+                                                                    setconfSwitch(e.target.checked);
+                                                                    }}
+                                                                    isChecked={confSwitch}
+                                                                    id="license"
+                                                                />
+                                                                
+                                                        </div>
+
+                                                        </div>
+                                                        
+    </AccordionPanel> }
+
+                                                        </AccordionItem>
 </Accordion>
                                             </div>
 
@@ -886,6 +1026,26 @@ function UcaasPricing(props) {
                                                     ${verifyNotEmpty(
                                                         p7965g,
                                                         "Cisco 7965G"
+                                                    )}
+                                                    ${verifyNotEmpty(
+                                                        aj179,
+                                                        "Avaya AJ179"
+                                                    )}
+                                                    ${verifyNotEmpty(
+                                                        a1408,
+                                                        "Avaya A1408"
+                                                    )}
+                                                    ${verifyNotEmpty(
+                                                        a9608,
+                                                        "Avaya A9608"
+                                                    )}
+                                                    ${verifyNotEmpty(
+                                                        fanvilc400,
+                                                        "3CX Fanvil C400"
+                                                    )}
+                                                    ${verifyNotEmpty(
+                                                        fanvilc600,
+                                                        "3CX Fanvil C600"
                                                     )}
                                                     ${handleSwitch(confSwitch)}
                                                     `}

@@ -54,3 +54,7 @@
   box-shadow: 0 0 10px  #F32222, 0 0 5px  #F32222 !important;
 }
   
+.link-highlight:hover{
+  color: $color-primary !important;
+  text-decoration: none !important;
+}

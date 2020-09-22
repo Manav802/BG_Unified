@@ -66,7 +66,7 @@ function header(props) {
                                                     <Text my={"12px"} fontSize="md" fontWeight="700">IT & Infrastructure Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "IT Infrastructural Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" className="link-highlight" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                 </Box>
@@ -74,13 +74,13 @@ function header(props) {
                                                 <Text my={"12px"} fontSize="md" fontWeight="700">Network Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "Network Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md"  fontWeight="400" color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md"  fontWeight="400" color="primary" className="link-highlight" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                     <Text my={"12px"} fontSize="md" fontWeight="700">Cyber Security Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "Cyber Security Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" className="link-highlight" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                 </Box>
@@ -88,13 +88,13 @@ function header(props) {
                                                     <Text my={"12px"} fontSize="md" fontWeight="700">Collaborative Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "Collaborative Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" className="link-highlight" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                     <Text my={"12px"} fontSize="md" fontWeight="700">Development Services</Text>
                                                     <Stack spacing="4px" direction="column">
                                                     {servicesArray.filter(service => service[1].category === "Development Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
+                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" className="link-highlight" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
                                                 </Box>
