@@ -32,8 +32,8 @@
     "typewriter-effect": "^2.13.1"
   },
   "scripts": {
-    "dev": "next",
-    "build": "next build",
+    "dev": "NODE_ENV='development' node server.js",
+    "build": "next build && next export",
     "start": "next start"
   },
   "eslintConfig": {

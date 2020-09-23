@@ -5,6 +5,7 @@ import {
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
 import axios from "axios";
+import Description from '../../pageBuilder/Description';
 function GetaQuoteForm(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [name, setName] = useState('');
@@ -14,7 +15,7 @@ function GetaQuoteForm(props) {
   let form = {
     name: name,
     email: email,
-    message: message,
+    description: message,
     contactNumber: phone,
     serviceName: props.serviceName,
     serviceString: props.serviceDescription
@@ -72,7 +73,7 @@ function GetaQuoteForm(props) {
   const onSubmit = (event) => {
     event.preventDefault()
     loadingState(true);
-    axios.post(' https://submit-form.com/' + keys.GetaQuote, form)
+    axios.post('/api/service/submit', form)
       .then((response) => refreshForm(response), (error) => refreshForm(error))
   }
   var description = props.serviceDescription.split(',');
@@ -169,7 +170,7 @@ function GetaQuoteForm(props) {
                     variant="flushed"
                     size="lg"
                     name="message"
-                    value={form.message}
+                    value={form.description}
                     onChange={onChange}
                   />
                 </FormControl>

@@ -78,7 +78,7 @@ function FeedbackForm(props) {
     const onSubmit = (event) => {
         event.preventDefault()
         loadingState(true);
-        axios.post(' https://submit-form.com/' + keys.Feedback, form)
+        axios.post('/api/feedback/submit', form)
             .then((response) => refreshForm(response), (error) => refreshForm(error))
     }
     return (
