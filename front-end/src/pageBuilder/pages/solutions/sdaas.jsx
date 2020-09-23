@@ -1,5 +1,6 @@
 export default [
 {
+    
     typeWriter_title: {
             before: "",
             typed: ["Collaborative", "Automated", "Affordable"],
@@ -94,25 +95,52 @@ export default [
             },
         ]   
     },
-     {
-        my:0,
+    {
+        gap: 10,
+        py: 12,
+        my: 0,
+        bg: "light.400",
         body: [
             {
-                width: [1 / 2, 1 / 3],
+                width: ["100%", 1 / 2, 1 / 3],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/communication/dial-numbers.svg", mt: 4, title: "Complete Australian Support and Helpdesk Staff" }
+                data: {
+                    titleSize: "md",
+                    textOpacity: "0.8",
+                    size: "96px",
+                    image: "/assets/images/icons/theme/cloud-computing.svg",
+                    title: "Complete Australian Support and Helpdesk Staff",
+                    description: "",
+                    align: "center",
+                }
             },
             {
-                width: [1 / 2, 1 / 3],
+                width: ["100%", 1 / 2, 1 / 3],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/map/marker-1.svg", mt: 4, title: "Location Independent Help Desk Solution" }
+                data: {
+                    titleSize: "md",
+                    textOpacity: "0.8",
+                    size: "96px",
+                    image: "/assets/images/icons/library/devices/cpu-1.svg",
+                    title: "Location Independent Help Desk Solutions",
+                    description: "",
+                    align: "center",
+                }
             },
             {
-                width: [1 / 2, 1 / 3],
+                width: ["100%", 1 / 2, 1 / 3],
                 type: "feature",
-                data: { align: "center", titleSize: "md", iconColor: "red.500", svg: "/assets/images/icons/library/home/clock.svg", mt: 4, title: "24X7 Highly Available Service Desk" }
-            }
-        ]
+                data: {
+                    titleSize: "md",
+                    textOpacity: "0.8",
+                    size: "96px",
+                    image: "/assets/images/icons/color/pie-chart.svg",
+                    title: "24X7 Highly Available Help-Desk Staff",
+                    description: "",
+                    align: "center",
+                }
+            },       
+         ]
     },
 {
        mt:0,

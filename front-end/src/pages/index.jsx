@@ -238,25 +238,23 @@ class Landing extends Component {
               Multiple Data Center Locations
             </Heading>
             <Text fontSize="lg" fontWeight="600" opacity=".7">
-              7 to be precise including Solarix,
-              Auckland, Airtrunk SYD/ME and GovDC.End-to-End DC network
-              infrastructure encompassing server switching. Server consolidation
-              and virtualization, high availability & clustering.
-              </Text>
+              Specialists in Hosting Solutions and Services, we have our Data Center Locations spread out to 
+              locations like Auckland, Sydney and Melbourne. Thus, proving BGUS to be a leader in Backup and 
+              Disaster Recovery for your Enterprise.</Text>
               <Row rowDistance={8}>
                   <Body  width={1/3} type="numberCount" data={{
-                    count: 1600,
+                    count: 40,
                     align:"left",
                     suffix: "+",
-                    title: "SIP Channels",
+                    title: "Trusted Partners",
                     fontSize: "30px",
                     titleSize:"18px"
                     }} />
                     <Body width={1/3} type="numberCount" data={{
-                    count: 1600,
+                    count: 900,
                     align:"left",
-                    suffix: "+",
-                    title: "SIP Channels",
+                    suffix: "TB+",
+                    title: "Storage Capacity",
                     fontSize: "30px",
                     titleSize:"18px"
                     }} />
@@ -306,7 +304,7 @@ class Landing extends Component {
                 <Box px={2} width={["100%","100%",1/2]}>
                     <Title mt={4} textAlign="left" fontSize="40px">Our Goals + Our Approach + Our Results  = Our Success Story</Title>
                     <Text mt={4} fontSize="20px" opacity={.7}>
-                        Our values are based around fresh ideas, delivering as promised, shoeing our customer’s respect, and being 100% committed.
+                        Our values are based around fresh ideas, delivering as promised, showing our customer’s respect, and being 100% committed.
                     </Text>
                     <Link href="/features">
                         <a className="link">

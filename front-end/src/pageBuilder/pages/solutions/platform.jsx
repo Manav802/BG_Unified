@@ -1,4 +1,5 @@
 export default [
+    
     {
         typeWriter_title: {
             before: "",

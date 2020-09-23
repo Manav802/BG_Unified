@@ -36,50 +36,57 @@ export default [
             }]
     },
     {
-        title : "GPU - Diversifying Applications",
-        titleStyle: {
-            fontSize: ["32px","40px"],
-            fontWeight: "800"
-        },
-        my: 0,
-        py: 20,
-        bg: "gray.100",
-        color: "dark.500",
-        rowDistance: [4,8,12],
-        gap: 8,
+        my: 16,
+        py: "48px",
+        bg: "light.400",
+        rowDistance: 8,
+        gap: 6,
         body: [
-        {
-            width: [1/2, 1/3, 1/4],
-            type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/general/search.svg", mt: 4, title: "Scientific Research"}
-        },
-        {
-            width: [1/2, 1/3, 1/4],
-            type: "feature",
-            data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "Big Data Analytics"}
-        },
-        {
-            width: [1/2, 1/3, 1/4],
-            type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/shopping/dollar.svg",mt: 4, title: "Financial Services"}
-        },
-        {
-            width: [1/2, 1/3, 1/4],
-            type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/code/git-3.svg", mt: 4, title: "Machine Learning"}
-        },
-        {
-            width: [1/2, 1/3, 1/4],
-            type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/code/cmd.svg", mt: 4, title: "Deep Learning"}
-        },
-        {
-            width: [1/2, 1/3, 1/4],
-            type: "feature",
-            data: {align: "center", titleSize:"md",iconColor:"red.500", svg:"/assets/images/icons/library/devices/diagnostics.svg", mt: 4, title: "Healthcare Services"}
-        },
-    ]
+            {
+                my:[0,0,4,4],
+                width: ["70%","60%","60%", 1/3],
+                type: "imageGroup",
+                data: {
+                    images: ["/assets/images/illustrations/itandinfra.svg"],
+                    mx: "16%",
+                }
+            },
+            {
+                my:[0,0,4,4],
+                width: ["100%","100%","100%", 2/3],
+                type: "content",
+                data: [{
+                    title: "GPU: Diversified Applications",
+                    fontSize: ["lg","xl"],
+                    titleSize: [32,36,40,48],
+                    my:[2,4,8],
+                    text:   <>
+                            <span>Graphical Processing Unit does not cater to a single domain.
+                                 In present day scenario, where technology proves to be the backbone of every industry, the importance of 
+                                 GPUs have grown exponentially.
+                                </span><br/><br/>
+                            <span> From refining and mining data, to analyzing it. From Scientific Researches to Health Sector.
+                                 From finance to educational institutions. Graphical Processing Unit has become an important resource for every industry.
+                                </span>,
+                            </>    
+                },
+                {   
+                    list: [
+                        "Healthcare Services",
+                        "Big Data Analytics",
+                        "Scientific Research Operations",
+                        "Deep Learning and Machine Learning"
+                    ],
+                    spacing: 2,
+                    styleType: "none",
+                    icon: "check",
+                    iconColor: "green.500"
+                }    
+            ]
+            },
+        ]   
     },
+    
     {
         my: 0,
         py: "48px",

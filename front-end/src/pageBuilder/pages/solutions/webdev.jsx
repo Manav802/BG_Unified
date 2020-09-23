@@ -110,7 +110,7 @@ export default [
                         "Built for fast loading speeds.",
                         "Platform Independence is a necessity.",
                         "Easy to Update, Manage, and Maintain.",
-                        "Highly Optimized Content."
+                        "SEO Friendly Content."
                     ],
                     spacing: 2,
                     styleType: "none",

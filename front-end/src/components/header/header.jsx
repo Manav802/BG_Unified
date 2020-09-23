@@ -91,9 +91,9 @@ function header(props) {
                                                         <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" className="link-highlight" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
-                                                    <Text my={"12px"} fontSize="md" fontWeight="700">Development Services</Text>
+                                                    <Text my={"12px"} fontSize="md" fontWeight="700">Professional Services</Text>
                                                     <Stack spacing="4px" direction="column">
-                                                    {servicesArray.filter(service => service[1].category === "Development Services").map(service => (
+                                                    {servicesArray.filter(service => service[1].category === "Professional Services").map(service => (
                                                         <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" className="link-highlight" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
                                                     ))}
                                                     </Stack>
