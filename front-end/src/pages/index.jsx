@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Head from "next/head";
 import { FaArrowRight} from "react-icons/fa";
-import { Image, Button, Heading,  Box,  Flex,  } from "@chakra-ui/core";
+import { Image, Button, Heading,  Box,  Flex, Icon, Text, Grid  } from "@chakra-ui/core";
 import FeatureCard from "../components/cards/FeatureCard";
 import CaseStudy from "../components/case_study/CaseStudy";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
@@ -14,8 +14,13 @@ import Section from "../pageBuilder/Section";
 import Conclusion from "../components/footer/conclusion";
 import SVG from "../components/svg/SVG";
 import Service from "../components/cards/Service";
-
 import Offer from "../components/cards/Offer";
+import Swiper from "../components/Sliders/HomeSlider";
+import Row from "../pageBuilder/Row";
+import Title from "../pageBuilder/Title";
+import Feature3 from "../pageBuilder/components/Feature3";
+import Body from "../pageBuilder/Body";
+import Partners from "../components/Sliders/Partners";
 
 const sliderInfo = [
   {
@@ -105,64 +110,8 @@ class Landing extends Component {
         <Head>
           <title>BG Unified Solutions</title>
         </Head>
-        <div className="bg-landing bg-dark position-relative">
-          {/*  */}
-          {/* <video controls="" autoplay="true" loop style={{opacity:".3", mixBlendMode:"lighten"}} className="bg-image" name="media">
-          <source src="/assets/videos/dots.webm" type="video/webm">
-            </source>
-          </video> */}
-          <Slider options={{ autoPlay: 10000, adaptiveHeight:true,imagesLoaded: true, pageDots: false, draggable: true,pauseAutoPlayOnHover: false,wrapAround: true }}>
-            {sliderInfo.map((info, index) => (
-              <Box maxHeight={["562px","562px","600px","528px"]} className="w-100 landing-section">
-                <Image alt="" src={info.imgSrc} opacity={.4} height="100%"  className="bg-image"></Image>
-                <div className="container py-5">
-                  <div className="row">
-                    <div className="col-lg-10 offset-lg-1">
-                      <div>
-                        <Box fontSize={["3xl","4xl","5xl"]} className="Nexa-Bold text-center text-white mt-0">
-                          {info.title}
-                        </Box>
-                        <Box fontSize={["lg","xl"]} className="h6 text-center NunitoSans-SemiBold mt-3">
-                          {info.subTitle}
-                        </Box>
-                        <div className="py-4 d-flex text-center justify-content-center">
-                          <Link href={info.btnPrimaryLink}>
-                            <Button
-                            zIndex={100}
-                              variant="solid"
-                              className="mx-1 mx-lg-2"
-                              variantColor="primary"
-                              _hover={{boxShadow:"0px 5px 10px -2px rgba(206, 30, 30, 1)"  }} 
-                              size="lg"
-                            >
-                              {info.btnPrimaryText}
-                            </Button>
-                          </Link>
-                          <Link href={info.btnSecondaryLink}>
-                            <Button
-                            zIndex={100}
-                              variant="outline"
-                              className="mx-1 mx-lg-2"
-                              _hover={{color:"black", bg:"white", boxShadow:"0 5px 10px 0 rgba(0,0,0,0.24)"  }} 
-                              size="lg"
-                            >
-                              {info.btnSecondaryText}
-                            </Button>
-                          </Link>
-                        </div>
-                      </div>
-
-
-                    </div>
-                  </div>
-                </div>
-              </Box>
-            ))}
-          </Slider>
-        </div>
-        <Offer></Offer>
-        <div className="section py-3">
-          <div className="container">
+        <Swiper></Swiper>
+          <Section my={0} py={0}>
 
             <div className="row my-5">
               <div className="col-12 text-center NunitoSans-ExtraBold text-primary text-uppercase">
@@ -194,34 +143,56 @@ class Landing extends Component {
                   </div>
                 </Fade>
             </div>
-          </div>
-        </div>
-        <Fade duration={500} cascade distance={"30%"} bottom>
-          <div className="section py-0 py-md-4">
-            <div className="container pb-2">
-              <Heading size="2xl" fontWeight="900" px="10%" fontFamily="Nexa Bold" textAlign="center">We have a ‘can do’ attitude with an ‘easy to work with’ culture.</Heading>
-              <Heading size="md" fontWeight="500" px="10%" opacity={.8} textAlign="center">Our values
-              are based around fresh thinking, delivering on our promises, showing
-                customer respect and making a 100% commitment.</Heading>
-              <Fade duration={500} cascade distance={"30%"} bottom>
-                <Box className="row justify-content-center">
-                  {processInfo.map((step, index) => (
-                    <Box className="col-lg-4" p={4} mt={12}>
-                      <Heading size="xl" fontFamily="Nexa Bold" textAlign="center" color={step.color}>0{index + 1}</Heading>
-                      <Heading size="lg" textAlign="center">{step.title}</Heading>
-                      <Heading size="sm" fontWeight="400" px="10%" mt={4} opacity={.8} textAlign="center">{step.content}</Heading>
+            </Section>
+            <Section mt="192px" mb={0} bg="#060529">
+                <Grid mt="-160px" templateColumns="256px auto" p={12} rounded={12} bg="white" boxShadow="xl">
+                    <Image alt="" src="/assets/images/vectors/covid.svg" width={["100%","40%","256px"]}></Image>
+                    <Flex direction="column" justify="center" px={12}>
+                        <a className="link"><Heading size="lg" fontFamily="Nexa Bold">Free Services* for 3 months for Healthy and Safety related Businesses. <Icon name="chevron-right"></Icon></Heading></a>
+                        <Text mt={3} opacity={.7}>Let us help you if you have limited budgets and because of COVID your current infrastructure can't handle the load. Dial our direct line +61 2 9095 0000. We will get things in motion very quickly.</Text>
+                    </Flex>
+                </Grid>
+            </Section>
+            <Section bg="#060529" my={0} py={24} color="white">
+            <Row>
+                <Flex direction="column" justify="center" width={["100%","100%",1/2]}>
+                    <Title textAlign="left" fontSize="56px">Highly <span className="text-primary">Redundant Solutions</span>. 
+                    Highly expert team
+                    </Title>
+                    <Text mt={4} fontSize="20px" opacity={.7}>
+                        Our values are based around fresh ideas, delivering as promised, shoeing our customer’s respect, and being 100% committed.
+                    </Text>
+                    <Link href="/features">
+                        <a className="link">
+                        <Heading color="white" py={3} size="md">
+                        Learn More{" "}
+                        <Icon name="arrow-forward"></Icon>
+                        </Heading>
+                        </a>
+                    </Link>
+                </Flex>
+                <Flex px={"3%"} wrap="wrap" width={["100%","100%",1/2]}>
+                    <Box width={["100%","100%", 1/2]} px={3}>
+                        <Feature3 bg="red.500" icon="/assets/images/icons/color/transaction.svg">
+                            <Heading px={8} pt={8} size="md" fontFamily="Nexa Bold">Guaranteed Transactional Security</Heading>
+                        </Feature3>
+                        <Feature3 bg="purple.600" icon="/assets/images/icons/color/graph.svg">
+                            <Heading px={8} pt={8} size="md" fontFamily="Nexa Bold"><Title textAlign="left" fontSize="40px">100%</Title>Success<br/>Ratio</Heading>
+                        </Feature3>
                     </Box>
-                  ))}
-                </Box>
-              </Fade>
-            </div>
-          </div>
-        </Fade>
-        <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.webp')" blend="multiply" py={20}>
-          {/* <Box id="globe-box" top={0} className="globe-container position-absolute">
-            <DynamicComponent></DynamicComponent>
-          </Box> */}
-     
+                    <Box width={["100%","100%", 1/2]} px={3}>
+                        <Feature3 mt={24} bg="light.500" color="dark.500" icon="/assets/images/icons/color/team.svg">
+                            <Heading px={8} pt={8} size="md" fontFamily="Nexa Bold"><Title textAlign="left" fontSize="40px" color="yellow.400">40+</Title>Trusted<br/>Partners</Heading>
+                        </Feature3>
+                        <Feature3 bg="blue.800" icon="/assets/images/icons/color/rocket.svg">
+                            <Heading px={8} pt={8} size="md" fontFamily="Nexa Bold">Completely Scalable Solutions</Heading>
+                        </Feature3>
+                    </Box>
+                </Flex>
+            </Row>       
+        </Section>
+        {/* <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.webp')" blend="multiply" py={20}>
+      
               <div className="row layer-1">
                 <Fade duration={500} cascade distance={"30%"} bottom>
                   <div className="col-lg-12 py-5 d-flex flex-column justify-content-center">
@@ -259,103 +230,62 @@ class Landing extends Component {
                   </div>
                 </Fade>
               </div>
-        </Section>
-        <div className="landing-benefits pt-5 justify-content-center">
-          <div className="col-12 p-0">
-            <div className="container p-0">
-              <Fade duration={500} cascade distance={"30%"} bottom>
-                <div className="col-12 text-center NunitoSans-ExtraBold text-primary text-uppercase">
-                  Features
-              </div>
-                <div className="col-12 my-2 text-center text-dark display4">
-                  Why Choose Us?
-              </div>
-              </Fade>
-              <div className="col-12 mb-3 ">
-                <Fade duration={500} cascade distance={"30%"} bottom>
-                  <div className="row">
-                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
-                      <FeatureCard
-                        title="24/7 Active Support"
-                        icon="/assets/images/icons/color/headphones.svg"
-                      >
-                        24X7X365 support service, ensures you to provide a
-                        positive customer experience. Consulting, support and
-                        operational services tailored to your needs.
-                    </FeatureCard>
-                    </div>
-                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
-                      <FeatureCard
-                        title="Diversified Services"
-                        icon="/assets/images/icons/color/stack.svg"
-                      >
-                        Organisation’s core business systems infrastructure;
-                        reaching from desktop to the data centre, hosted data
-                        centres, carriage services.
-                    </FeatureCard>
-                    </div>
-                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
-                      <FeatureCard
-                        title="Value for money"
-                        icon="/assets/images/icons/color/secure.svg"
-                      >
-                        Transparent methodology, no hidden costs, Pricing
-                        negotiations at the beginning of the project only. Low and
-                        affordable prices.
-                    </FeatureCard>
-                    </div>
-                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
-                      <FeatureCard
-                        title="Transaction Security"
-                        icon="/assets/images/icons/color/price_tag.svg"
-                      >
-                        Information kept completely confidential, under a
-                        Non-Disclosure Agreement. Ensures secure monetary
-                        transactions by our trusted payment gateways.
-                    </FeatureCard>
-                    </div>
-                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
-                      <FeatureCard
-                        title="Monitoring Freedom"
-                        icon="/assets/images/icons/color/analytics.svg"
-                      >
-                        Monitor the progress, data servers, data centres, network
-                        connectivity, security, cloud logging, storage and even
-                        backup or faults, in real-time
-                    </FeatureCard>
-                    </div>
-                    <div className="col-xl-4 p-2 col-sm-6 col-12 ">
-                      <FeatureCard
-                        title="Enhanced Performance"
-                        icon="/assets/images/icons/color/speedometer.svg"
-                      >
-                        We focus on providing the best a client can get, under the
-                        same cost, with maximum efficiency, maintenance and
-                        Disaster Management.
-                    </FeatureCard>
-                    </div>
-                    <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-center align-items-lg-end py-3">
-                      <span className="display6 text-dark">Not Convinced?</span>
-                      <Link href="/features">
-                        <a className="text-primary d-flex my-2" href="">
-                          Learn More{" "}
-                          <Box
-                            as={FaArrowRight}
-                            h="16px"
-                            ml="12px"
-                            my="4px"
-                          ></Box>
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
-                </Fade>
-              </div>
-            </div>
+        </Section> */}
+        <Section overflow="hidden">
+        <div className="row p-3 p-md-0">
+          <div className="col-md-5 mt-lg-5 align-self-center">
+            <Heading fontFamily="Nexa Bold" size="2xl" mt={6} mb={4}>
+              Multiple Data Center Locations
+            </Heading>
+            <Text fontSize="lg" fontWeight="600" opacity=".7">
+              7 to be precise including Solarix,
+              Auckland, Airtrunk SYD/ME and GovDC.End-to-End DC network
+              infrastructure encompassing server switching. Server consolidation
+              and virtualization, high availability & clustering.
+              </Text>
+              <Row rowDistance={8}>
+                  <Body  width={1/3} type="numberCount" data={{
+                    count: 1600,
+                    align:"left",
+                    suffix: "+",
+                    title: "SIP Channels",
+                    fontSize: "30px",
+                    titleSize:"18px"
+                    }} />
+                    <Body width={1/3} type="numberCount" data={{
+                    count: 1600,
+                    align:"left",
+                    suffix: "+",
+                    title: "SIP Channels",
+                    fontSize: "30px",
+                    titleSize:"18px"
+                    }} />
+                    <Body width={1/3} type="numberCount" data={{
+                    count: 1600,
+                    align:"left",
+                    suffix: "+",
+                    title: "SIP Channels",
+                    fontSize: "30px",
+                    titleSize:"18px"
+                    }} />
+              </Row>
+         
+          </div>
+          <div className="col-md-7 pl-0 position-relative d-none d-md-block">
+            <Image alt=""            
+              px={8}
+              minWidth="900px"
+              transform="translateX()"
+              src="/assets/images/features/vectors/map.svg"
+            />
           </div>
         </div>
-
-
+        </Section>
+        <Section my={16} containerWidth="100%">
+            <Partners>
+            </Partners>
+        </Section>
+    
         <Section position="relative" overflow="hidden" containerWidth="100%" bg="light.400" py={24}>
             <Fade duration={500} cascade distance={"30%"} bottom>
                 <div className="text-center NunitoSans-ExtraBold text-primary text-uppercase">
@@ -372,17 +302,39 @@ class Landing extends Component {
         </Section>
 
         <Section>
-          <CaseStudy caseStudyDetails={newsroom.filter(news => news.category === "Case Study")} link="read" />
+            <Row>
+                <Box px={2} width={["100%","100%",1/2]}>
+                    <Title mt={4} textAlign="left" fontSize="40px">Our Goals + Our Approach + Our Results  = Our Success Story</Title>
+                    <Text mt={4} fontSize="20px" opacity={.7}>
+                        Our values are based around fresh ideas, delivering as promised, shoeing our customer’s respect, and being 100% committed.
+                    </Text>
+                    <Link href="/features">
+                        <a className="link">
+                        <Heading color="primary.500" py={3} size="md">
+                        Learn More{" "}
+                        <Icon name="arrow-forward"></Icon>
+                        </Heading>
+                        </a>
+                    </Link>
+                </Box>
+                <Flex px={8} wrap="wrap" width={["100%","100%",1/2]}>
+                    <Box width={["100%","100%", 1/2]} px={3}>
+                        <Box bgImage="url('/assets/images/newsroom/infra.webp')" mb={6} height="220px" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
+                        <Heading px={8} pt={8} size="lg" color="white" fontFamily="Nexa Bold">Network Infrastructure Redesign</Heading>
+                        </Box>
+                        <Box bgImage="url('/assets/images/newsroom/f5_redesign.webp')" mt={6} height="220px" backgroundSize="cover" backgroundRepeat="no-repeat" rounded={8}>
+                            <Heading px={8} pt={8} size="lg" color="white" fontFamily="Nexa Bold">F5 Topology Redesign</Heading>
+                        </Box>
+                    </Box>
+                    <Box width={["100%","100%", 1/2]} px={3}>
+                        <Flex align="flex-end" bgImage="url('/assets/images/newsroom/complete_vdi.webp')" height="100%" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
+                            <Heading p={8} size="lg" color="white" fontFamily="Nexa Bold">BG Unified Solutions hosted UC Solutions</Heading>
+                        </Flex>
+                    </Box>
+                </Flex>
+            </Row>       
         </Section>
-        <Section containerWidth={["100%", "90%"]} className="brands">
-          <Flex wrap="wrap" justify="center">
-          {["/assets/images/brands/aapt.png", "/assets/images/brands/advanced_life.png", "/assets/images/brands/agc_plus.webp", "/assets/images/brands/blueglue.png", "/assets/images/brands/cumulus.png", "/assets/images/brands/fdba.png", "/assets/images/brands/fortinet.png",  "/assets/images/brands/huawei.webp", "/assets/images/brands/infin_it.png", "/assets/images/brands/datacom.png", "/assets/images/brands/airtrunk.png", "/assets/images/brands/microfocus.svg", "/assets/images/brands/nsw_gov.webp", "/assets/images/brands/victoria.webp", ].map(image => (
-            <>
-              <Image alt="" src={image} width="192px" height="96px" mx={12} my={6} objectFit="contain"></Image>
-            </>
-          ))}
-          </Flex>
-        </Section>
+        
         <Conclusion></Conclusion>
       </div>
     );
