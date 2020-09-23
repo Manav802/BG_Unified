@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse, ModalBody, List
+    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse, ModalBody
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import deviceList from '../../deviceDetect.js';
@@ -22,6 +22,7 @@ const CustomRadio = React.forwardRef((props, ref) => {
         />
     );
 });
+
 const deviceInfo = {
     browser: browserName,
     os: osName,
@@ -43,6 +44,7 @@ function ErrorForm(props) {
     const [show, setShow] = useState(false);
     const [tabIndex, setTabIndex] = useState(0);
     const [activeButton, setActiveButton] = useState(deviceInfo.device);
+    const [screenWidth, setScreenWidth] = useState(1000);
     let form = {
         name: name,
         email: email,
@@ -154,36 +156,45 @@ function ErrorForm(props) {
         })
             .then((response) => refreshForm(response), (error) => refreshForm(error))
     }
+    const updateWidth = () => {
+        setScreenWidth(window.innerWidth);
+    };
+    React.useEffect(() => {
+        updateWidth();
+        window.addEventListener("resize", updateWidth);
+        return () => window.removeEventListener("resize", updateWidth);
+    });
     return (
         <>
             <Link mx={["6px", "10px", "16px"]} fontSize={["10px", "12px", "14px"]} textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
-            <Modal isOpen={isOpen} onClose={formClose} isCentered scrollBehavior="inside">
+            <Modal isOpen={isOpen} onClose={formClose} scrollBehavior={screenWidth>420?"inside":"outside"}>
                 <ModalOverlay />
-                <ModalContent maxWidth={["400px", "400px", "600px", "700px"]}>
-                <ModalHeader position="sticky"><span className="display5">Report an Error</span></ModalHeader>
+                <ModalContent maxWidth={["430px", "430px", "600px", "700px"]} minHeight={screenWidth>420?"":"100vh"}  mb={screenWidth<=420?0:""} mt={screenWidth<=420?0:""}>
+                    <ModalHeader className="sticky-top">
+                        <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}>Go Back</Button>
+                        <span className="display5 mx-2">Report an Error</span></ModalHeader>
                     <ModalBody>
-                        <ModalCloseButton />
                         <Box className="container reportanerror">
                             <form onSubmit={onSubmit}>
                                 <input
                                     type="hidden"
-                                    name="_redirect">
-                                </input>
+                                    name="_redirect"
+                                />
                                 <Tabs index={tabIndex} onChange={handleTabsChange} isFitted>
                                     <TabList>
-                                        <Tab paddingX={["2px","4px","16px"]} fontSize={["sm","md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Type of error</div> </Tab>
-                                        <Tab paddingX={["2px","8px","16px"]} fontSize={["sm","md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Device Details</div></Tab>
-                                        <Tab paddingX={["2px","4px","16px"]} fontSize={["sm","md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Description</div></Tab>
+                                        <Tab paddingX={["2px", "4px", "16px"]} fontSize={["sm", "md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Type of error</div> </Tab>
+                                        <Tab paddingX={["2px", "8px", "16px"]} fontSize={["sm", "md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Device Details</div></Tab>
+                                        <Tab paddingX={["2px", "4px", "16px"]} fontSize={["sm", "md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Description</div></Tab>
                                     </TabList>
                                     <TabPanels>
                                         <TabPanel>
                                             <FormControl mt={10} isRequired>
                                                 <FormLabel htmlFor="name">Type of error:</FormLabel>
                                                 <RadioGroup name="errortype" onChange={onChange} defaultValue={form.error}>
-                                                    <Radio value="Page not responsive" onClick={() => handleToggle(false)}><Box fontSize={["md","lg"]}>Page not responsive</Box></Radio>
-                                                    <Radio value="Component not working" onClick={() => handleToggle(false)}><Box fontSize={["md","lg"]}>Component not working</Box></Radio>
-                                                    <Radio value="Site not loading properly" onClick={() => handleToggle(false)}><Box fontSize={["md","lg"]}>Site not loading properly</Box></Radio>
-                                                    <Radio value="Some Other Error" onClick={() => handleToggle(true)}><Box fontSize={["md","lg"]}>Other</Box></Radio>
+                                                    <Radio value="Page not responsive" onClick={() => handleToggle(false)}><Box fontSize={["md", "lg"]}>Page not responsive</Box></Radio>
+                                                    <Radio value="Component not working" onClick={() => handleToggle(false)}><Box fontSize={["md", "lg"]}>Component not working</Box></Radio>
+                                                    <Radio value="Site not loading properly" onClick={() => handleToggle(false)}><Box fontSize={["md", "lg"]}>Site not loading properly</Box></Radio>
+                                                    <Radio value="Some Other Error" onClick={() => handleToggle(true)}><Box fontSize={["md", "lg"]}>Other</Box></Radio>
                                                 </RadioGroup>
                                             </FormControl>
                                             {rend && <Collapse isOpen={show}>
@@ -214,7 +225,6 @@ function ErrorForm(props) {
                                                 <datalist id="os">
                                                     {deviceList.os.map(item => <option value={item}></option>)}
                                                 </datalist>
-
                                             </FormControl>
                                             <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(2)}>Next</Button>
                                         </TabPanel>
@@ -243,7 +253,7 @@ function ErrorForm(props) {
                                                     </FormControl>
                                                 </div>
                                                 <div className="col-md-6">
-                                                    <FormControl  isRequired mt={10} >
+                                                    <FormControl isRequired mt={10} >
                                                         <FormLabel htmlFor="phone">Contact No.</FormLabel>
                                                         <Input
                                                             type="tel"
