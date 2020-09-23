@@ -171,10 +171,10 @@ function ErrorForm(props) {
                 <ModalOverlay />
                 <ModalContent maxWidth={["430px", "430px", "600px", "700px"]} minHeight={screenWidth>420?"":"100vh"}  mb={screenWidth<=420?0:""} mt={screenWidth<=420?0:""}>
                     <ModalHeader className="sticky-top">
-                        <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}>Go Back</Button>
+                        <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}></Button>
                         <span className="display5 mx-2">Report an Error</span></ModalHeader>
                     <ModalBody>
-                        <Box className="container reportanerror">
+                        <Box className="reportanerror">
                             <form onSubmit={onSubmit}>
                                 <input
                                     type="hidden"
@@ -186,7 +186,7 @@ function ErrorForm(props) {
                                         <Tab paddingX={["2px", "8px", "16px"]} fontSize={["sm", "md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Device Details</div></Tab>
                                         <Tab paddingX={["2px", "4px", "16px"]} fontSize={["sm", "md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Description</div></Tab>
                                     </TabList>
-                                    <TabPanels>
+                                    <TabPanels className="container">
                                         <TabPanel>
                                             <FormControl mt={10} isRequired>
                                                 <FormLabel htmlFor="name">Type of error:</FormLabel>
