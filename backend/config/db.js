@@ -8,7 +8,7 @@ exports.connectionDB = async () => {
     { useUnifiedTopology: true ,useNewUrlParser: true,useCreateIndex: true },(err, data)=>{
       
         if(err){ 
-          throw err;
+          console.log("Unable to connect with DB");
         }
         else{
           console.log("DB Connected")
