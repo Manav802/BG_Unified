@@ -77,14 +77,7 @@ function FeedbackForm(props) {
     const onSubmit = (event) => {
         event.preventDefault()
         loadingState(true);
-        fetch(' https://submit-form.com/' + keys.Feedback, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                Accept: 'application/json'
-            },
-            body: JSON.stringify(form)
-        })
+        axios.post(' https://submit-form.com/' + keys.ErrorReport, { form })
             .then((response) => refreshForm(response), (error) => refreshForm(error))
     }
     return (
