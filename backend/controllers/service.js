@@ -16,11 +16,12 @@ exports.serviceSubmit =async(req,res)=>{
     //make service requirement array
     var serviceArray = Array()
     
-    var temp = serviceString.split(',')
-    //adding element to  serviceRequirement
-    temp.forEach(element => {
-        serviceArray.push(element)
-    });
+    if(serviceString){
+        //adding element to  serviceRequirement
+        serviceString.split(',').forEach(element => {
+            serviceArray.push(element)
+        });
+    }
      
     //storing the feedback
     const service = new Service({
