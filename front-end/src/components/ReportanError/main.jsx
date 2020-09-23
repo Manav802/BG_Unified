@@ -147,7 +147,7 @@ function ErrorForm(props) {
     const onSubmit = (event) => {
         event.preventDefault()
         loadingState(true);
-        axios.post(' https://submit-form.com/' + keys.ErrorReport, { form })
+        axios.post(' https://submit-form.com/' + keys.ErrorReport, form)
             .then((response) => refreshForm(response), (error) => refreshForm(error))
     }
 
@@ -216,7 +216,7 @@ function ErrorForm(props) {
                                             </FormControl>
                                             <FormControl mt={10} isRequired>
                                                 <FormLabel>Operating system you were using:</FormLabel>
-                                                <Input list="os" listStylePos="inside" name="operatingsystem" value={form.operatingsystem} onChange={onChange} variant="flushed"></Input>
+                                                <Input list="os" listStylePos="inside" name="operatingsystem" value={form.operatingSystem} onChange={onChange} variant="flushed"></Input>
                                                 <datalist id="os">
                                                     {deviceList.os.map(item => <option value={item}></option>)}
                                                 </datalist>
@@ -224,7 +224,7 @@ function ErrorForm(props) {
                                             <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(2)}>Next</Button>
                                         </TabPanel>
                                         <TabPanel>
-                                            <FormControl mt={10} >
+                                            <FormControl isRequired mt={10} >
                                                 <FormLabel htmlFor="name">Name:</FormLabel>
                                                 <Input
                                                     variant="flushed"
@@ -255,7 +255,7 @@ function ErrorForm(props) {
                                                             pattern="[0-9]{10}"
                                                             variant="flushed"
                                                             name="phone"
-                                                            value={form.phone}
+                                                            value={form.contactNumber}
                                                             onChange={onChange}
                                                         />
                                                     </FormControl>
