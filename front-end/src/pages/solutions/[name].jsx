@@ -24,8 +24,16 @@ function Solutions(props) {
     return (
         <>
             <Box py={["6rem","8rem","10rem"]} color="white" className="bg-dark position-relative">
-                <Head>
+            <Head>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta name ="description" content = {service.description}>
+                </meta>
+                <meta property="og:title" content={`${service.slogan} - ${service.title} | BG Unified Solutions`} key="title" />
+                <meta property="og:description" content={service.description}></meta>
                 <title>{service.slogan} - {service.title} | BG Unified Solutions</title>
+
                 </Head>
                 <Image alt=""                    opacity=".3"
                     className="bg-image"
