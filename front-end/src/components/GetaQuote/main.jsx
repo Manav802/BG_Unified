@@ -11,6 +11,7 @@ function GetaQuoteForm(props) {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [phone, setPhone] = useState('');
+  const [screenWidth, setScreenWidth] = useState(1000);
   let form = {
     name: name,
     email: email,
@@ -76,6 +77,14 @@ function GetaQuoteForm(props) {
       .then((response) => refreshForm(response), (error) => refreshForm(error))
   }
   var description = props.serviceDescription.split(',');
+  const updateWidth = () => {
+    setScreenWidth(window.innerWidth);
+  };
+  React.useEffect(() => {
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  });
   return (
     <>
       {!props.button && (
@@ -97,18 +106,17 @@ function GetaQuoteForm(props) {
           Get a quote
         </Button>
       )}
-      <Modal isOpen={isOpen} onClose={formClose} isCentered scrollBehavior="inside">
+      <Modal isOpen={isOpen} onClose={formClose} isCentered={screenWidth > 420 ? true : false} scrollBehavior={screenWidth > 420 ? "inside" : "outside"}>
         <ModalOverlay />
-        <ModalContent maxWidth={["400px", "400px", "600px"]} maxHeight="700px">
+        <ModalContent maxWidth={["400px", "400px", "600px"]} minHeight={screenWidth > 420 ? "" : "100vh"} mb={screenWidth <= 420 ? 0 : ""} mt={screenWidth <= 420 ? 0 : ""}>
           <ModalBody>
-            <ModalHeader mt={4}><span className="display5">{props.serviceName}</span></ModalHeader>
+            <ModalHeader mt={4} style={{ zIndex: "3", position: "sticky", top: 0, backgroundColor: "white" }}> <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}></Button><span className="display5">{props.serviceName}</span></ModalHeader>
             <div className="d-flex flex-wrap px-3">{description.map((service, index) => {
               return (
                 <div className="rounded-8 hover-effect bg-light m-2 py-2 px-3" key={index}>{service}</div>
               )
             })}</div>
-            <ModalCloseButton zIndex="100" />
-            <Box m={2} className="container contact-form">
+            <Box m={2} mb={4} className="container contact-form">
               <form onSubmit={onSubmit}>
                 <input
                   type="hidden"
