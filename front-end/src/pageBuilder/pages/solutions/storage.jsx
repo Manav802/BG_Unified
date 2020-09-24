@@ -36,10 +36,10 @@ export default [
             data: [{
                 textAlign: "justify",
                 fontSize: ["md","lg"],
-                text: <span>Today’s dynamic data centre’s present some unique storage challenges. How do you best manage explosive storage capacity requirements and 
+                text: <span>Today’s dynamic data center’s present some unique storage challenges. How do you best manage explosive storage capacity requirements and 
                     multiple storage silos—as well as consolidation into internal clouds to provide storage as a service? Add complex backup and recovery plans, 
                     and their integration into your disaster recovery plans and storage becomes even more complex. And while there are commonalities that allow for 
-                    pre-packaged solutions, every data centre is different. 
+                    pre-packaged solutions, every data center is different. 
                     <br/><br/>
                     Each one requires knowledgeable professionals to help define the correct solution, often across multiple manufacturers, to combine and collaborate in order 
                     to create the optimal solution for your organization.</span>

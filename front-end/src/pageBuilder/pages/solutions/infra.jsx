@@ -41,7 +41,7 @@ export default [
                 text: <span>Optimizing infrastructural resources is essential to controlling the cost of data growth. 
                     The Enterprise Infrastructure Assessment provides in-depth reports and recommendations for improving storage efficiency, 
                     performance, and availability. Findings are linked to your specific risks and benefits—so you can scale your infra 
-                    systems to successfully serve the growing needs of your business. We can address your heterogeneous data centre environment 
+                    systems to successfully serve the growing needs of your business. We can address your heterogeneous data center environment 
                     and provide data and recommendations across all assets.</span>,
                 fontSize: ["lg","xl"],
                 textAlign: "center",
@@ -68,9 +68,9 @@ export default [
                 titleFont: "Nexa Bold",
                 textOpacity:"0.7",
                 image: "/assets/images/icons/color/ui.svg",
-                title: "Scale Up On Demand",
+                title: "Scale Up On-Demand",
                 align: "left",
-                description: "With BG Unified Solutions, you create a combination of CPU, memory, bandwidth and storage as per your requirements. Enjoy the freedom to scale up your infrastructure as and when required"
+                description: "With BG Unified Solutions, you create a combination of CPU, memory, bandwidth, and storage as per your requirements. Enjoy the freedom to scale up your infrastructure as and when required"
                 }
             },
             {
@@ -84,7 +84,7 @@ export default [
                     image: "/assets/images/icons/color/agile.svg",
                     title: "Stay Agile",
                     align: "left",
-                    description: "Resources are not bundled together and there is surely no standard server size. Combine long-term subscriptions for predictible workloads and on-time delivery with regular updates."
+                    description: "Resources are not bundled together and there is surely no standard server size. Combine long-term subscriptions for predictable workloads and on-time delivery with regular updates."
                     }
             },
             {
@@ -110,7 +110,7 @@ export default [
                     titleFont: "Nexa Bold",
                     textOpacity:"0.7",
                     image: "/assets/images/icons/color/headphones.svg",
-                    title: "Excellent Customer Suppport",
+                    title: "Excellent Customer Support",
                     align: "left",
                     description: "BGUS's friendly and skilled customer support service is available24X7X365 with very less response time. Our policies ensure rapid and satisfactory resolution of issues."
                     }
@@ -140,7 +140,7 @@ export default [
                     image: "/assets/images/icons/color/fix.svg",
                     title: "No Vendor lock-in",
                     align: "left",
-                    description: "At BGUS you are able to develop or deploy your application in the cloud without being forced to use any vendor-specific tools."
+                    description: "At BGUS you can develop or deploy your application in the cloud without being forced to use any vendor-specific tools."
                     }
             },
         ]
@@ -197,7 +197,7 @@ export default [
                 fontSize: "md",
                 content: [{
                     title: "Choice between On-Premises & Cloud",
-                    description: "On-premise or cloud-based, that helps secure your IT environment quickly. The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance..",
+                    description: "On-premise or cloud-based, that helps secure your IT environment quickly. The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.",
                     image: "/assets/images/illustrations/Varied_Web_Hosting_Solutions.svg"
                 },
                 {
@@ -207,7 +207,7 @@ export default [
                 },
                 {
                     title: "Advanced Technology Stack",
-                    description: "Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, User-Based Policy and Advanced Logging facilities, SSL Virtual Private Network’s included.",
+                    description: "Advanced Malware Protection, Anti-Virus Detection, Uniform resource Locator Filtering, User-Based Policy, and Advanced Logging facilities, SSL Virtual Private Network’s included.",
                     image: "/assets/images/illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
                 },]
             }

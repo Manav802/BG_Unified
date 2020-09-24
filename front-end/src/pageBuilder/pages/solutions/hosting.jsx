@@ -112,7 +112,7 @@ export default [
                 fontSize: "md",
                 content: [{
                     title: "Varied Web Hosting Solutions",
-                    description: "WordPress hosting, cloud hosting, dedicated server, AWS cloud, digital ocean cloud, all under one roof. Multiple data centre locations allow access to your website anytime, anywhere.",
+                    description: "WordPress hosting, cloud hosting, dedicated server, AWS cloud, digital ocean cloud, all under one roof. Multiple data center locations allow access to your website anytime, anywhere.",
                     image: "/assets/images/illustrations/Varied_Web_Hosting_Solutions.svg"
                 },
                 {

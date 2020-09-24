@@ -53,7 +53,7 @@ export default [
             }]
     },
     {
-        title: "BG Unified Solutions providing Databases for your Enterprise Needs :-",
+        title: "BG Unified Solutions providing Databases for your Enterprise Needs:-",
         titleStyle: {
             mt: 8,
         },
@@ -111,7 +111,7 @@ export default [
     },
     {
         py: [8,12],
-        description:"We offer 24 x 7 managed database services. We’ll monitor database infrastructure, handle incidents, response to events/alarms, follow change management processes, improve overall performance and reduce vulnerabilities.",
+        description:"We offer 24 x 7 managed database services. We’ll monitor database infrastructure, handle incidents, respond to events/alarms, follow change management processes, improve overall performance and reduce vulnerabilities.",
         descriptionStyle:{
             fontSize:["lg","lg","xl"],
             opacity:0.7,

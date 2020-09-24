@@ -23,7 +23,7 @@ export default [
             data: [{
                 textAlign: "justify",
                 fontSize: "lg",
-                title: "Why Contact Centre for your Business?",
+                title: "Why Contact center for your Business?",
                 titleSize: 32,
                 text: <span>Collaboration or Customer Service involves
                  so much more than voice. With a full range of video 
@@ -32,7 +32,7 @@ export default [
                   Service Technology is widespread across organizations
                    and affects multiple lines of business. Positive 
                    customer experience through a suite of advanced 
-                   Contact Centre Tools.</span>
+                   Contact center Tools.</span>
             }]
         }]
     },
@@ -71,7 +71,7 @@ export default [
                     fontSize: "lg",
                     titleSize: 36,
                     
-                    text: "BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact centre tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus. We help organisations reduce their risks by offering solutions for creating, sharing and storing the information, to protect, detect and respond to external and internal incidents and threats. "
+                    text: "BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools and we have deep contracts with all major Telcos including AAPT, Telstra and Optus. We help organisations reduce their risks by offering solutions for creating, sharing and storing the information, to protect, detect and respond to external and internal incidents and threats. "
                     
                 }]
             },

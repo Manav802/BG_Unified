@@ -127,7 +127,7 @@ const services = {
         description: "Assist in DR strategy, evaluate threat models, select technologies, prototype multisite or multi-cloud DR strategies. Test rollback mechanisms....",
         illustration: "",
         relatedService: ["Backup As A Service", "Storage As A Service", "Infrastructure As A Service"],
-        conclusion: "Detects, isolates, notifies and corrects faults encountered in the network",
+        conclusion: "Detects, isolates, notifies, and corrects faults encountered in the network",
         sections: sections.dr
     },
     "firewall": {
