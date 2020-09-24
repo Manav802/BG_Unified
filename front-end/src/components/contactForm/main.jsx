@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import {
-  FormControl, FormLabel, Input, Button, Textarea, Spinner, Box, Flex
+  FormControl, Input, Button, Textarea, Spinner, Box, Flex
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
+import axios from "axios";
 function ContactForm(props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -14,7 +15,7 @@ function ContactForm(props) {
     name: name,
     email: email,
     message: message,
-    phone: phone,
+    contactNumber: phone,
     subject: subject
   }
   const [isLoading, loadingState] = useState(false);
@@ -66,14 +67,7 @@ function ContactForm(props) {
   const onSubmit = (event) => {
     event.preventDefault()
     loadingState(true);
-    fetch(' https://submit-form.com/' + keys.ContactUs, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json'
-      },
-      body: JSON.stringify(form)
-    })
+    axios.post('/api/contact/submit', form)
       .then((response) => refreshForm(response), (error) => refreshForm(error))
   }
   return (

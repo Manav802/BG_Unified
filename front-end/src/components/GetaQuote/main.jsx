@@ -4,6 +4,8 @@ import {
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
+import axios from "axios";
+import Description from '../../pageBuilder/Description';
 function GetaQuoteForm(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [name, setName] = useState('');
@@ -13,10 +15,10 @@ function GetaQuoteForm(props) {
   let form = {
     name: name,
     email: email,
-    message: message,
-    phone: phone,
+    description: message,
+    contactNumber: phone,
     serviceName: props.serviceName,
-    serviceDescription: props.serviceDescription
+    serviceString: props.serviceDescription
   }
   const [isLoading, loadingState] = useState(false);
   const [formResponse, setResponse] = useState('');
@@ -71,14 +73,7 @@ function GetaQuoteForm(props) {
   const onSubmit = (event) => {
     event.preventDefault()
     loadingState(true);
-    fetch(' https://submit-form.com/' + keys.GetaQuote, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json'
-      },
-      body: JSON.stringify(form)
-    })
+    axios.post('/api/service/submit', form)
       .then((response) => refreshForm(response), (error) => refreshForm(error))
   }
   var description = props.serviceDescription.split(',');
@@ -129,7 +124,7 @@ function GetaQuoteForm(props) {
                 <input
                   type="hidden"
                   name="serviceDescription"
-                  value={form.serviceDescription}
+                  value={form.serviceString}
                 />
                 <FormControl isRequired>
                   <FormLabel htmlFor="name">Name:</FormLabel>
@@ -162,7 +157,7 @@ function GetaQuoteForm(props) {
                         pattern="[0-9]{10}"
                         variant="flushed"
                         name="phone"
-                        value={form.phone}
+                        value={form.contactNumber}
                         onChange={onChange}
                       />
                     </FormControl>
@@ -175,7 +170,7 @@ function GetaQuoteForm(props) {
                     variant="flushed"
                     size="lg"
                     name="message"
-                    value={form.message}
+                    value={form.description}
                     onChange={onChange}
                   />
                 </FormControl>
