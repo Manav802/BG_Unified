@@ -312,7 +312,7 @@ class Landing extends Component {
                 <Box px={2} width={["100%","100%",1/2]}>
                     <Title mt={4} textAlign="left" fontSize="40px">Our Goals + Our Approach + Our Results  = Our Success Story</Title>
                     <Text mt={4} fontSize="20px" opacity={.7}>
-                        Our values are based around fresh ideas, delivering as promised, showing our customer’s respect, and being 100% committed.
+                        Our values are based around fresh ideas, delivering as promised, showing our customer’s respect, and being 100% committed. We focus on being the trusted and reliable partner for every business that we associate with, accounting for our enthusiasm and professionalism
                     </Text>
                     <Link href="/features">
                         <a className="link">

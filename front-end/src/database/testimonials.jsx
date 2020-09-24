@@ -29,7 +29,7 @@ export const TESTIMONIALS = [
         imageUrl: "assets/images/brands/nsw_gov.webp",
         imageAlt: "Company Logo",
         author: "Kate Romanenko",
-        paragraph: "I worked with BGUS during his time at Revenue NSW (OSR). They undertook a massive task of F5 load balancer upgrade - and things like that never go smoothly. What was absolutely amazing is the speed with which they resolved every single issue we encountered after. They were on top of everything - managing investigation, resolution and communication with every affected 3rd-party. Outstanding job! Efficient, reliable, professional - absolute delight to work with.",
+        paragraph: "I worked with BGUS during his time at Revenue NSW (OSR). They undertook a massive task of F5 load balancer upgrade - and things like that never go smoothly. What was absolutely amazing is the speed with which they resolved every single issue we encountered after.",
         CompanyName: "Senior Application Developer at Revenue NSW",
     },
     {
