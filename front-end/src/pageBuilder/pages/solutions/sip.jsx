@@ -25,7 +25,7 @@ export default [
                     textOpacity: "0.8",
                     size: "96px",
                     image: "/assets/images/icons/library/devices/cpu-1.svg",
-                    title: "Multiple Data Centres",
+                    title: "Multiple Data centers",
                     align: "center",
                 }
             },

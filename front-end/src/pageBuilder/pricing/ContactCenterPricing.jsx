@@ -268,7 +268,7 @@ function ContactCenterPricing(props) {
                           <PopoverContent zIndex={4}>
                             <PopoverArrow />
                             <PopoverHeader className="h6">Advanced QM</PopoverHeader>
-                            <PopoverBody>Advanced Quality Management solution gives you the tools to continuously measure and monitor agent performance, assess the quality and depth of your customer interactions, and drive constant improvement. In essence, an effective contact centre quality management program is directly connected to the success of your business.</PopoverBody>
+                            <PopoverBody>Advanced Quality Management solution gives you the tools to continuously measure and monitor agent performance, assess the quality and depth of your customer interactions, and drive constant improvement. In essence, an effective contact center quality management program is directly connected to the success of your business.</PopoverBody>
                           </PopoverContent>
                         </Popover> </div>
                         <NumberInput

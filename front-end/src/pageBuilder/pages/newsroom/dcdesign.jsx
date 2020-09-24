@@ -4,11 +4,11 @@ export default [
         fontSize: "xl",
         data: [
             {
-                text: "A client had a requirement to consolidate a distributed environment into a single highly available data centre. Analysis into the current-state highlighted over 50 geographically dispersed sites hosting 250+ separate pieces of infrastructure.",
+                text: "A client had a requirement to consolidate a distributed environment into a single highly available data center. Analysis into the current-state highlighted over 50 geographically dispersed sites hosting 250+ separate pieces of infrastructure.",
                 textAlign: "justify"
             },
             {
-                text: "A dual-site, dual-core Data Centre model was developed to provide a highly available central repository for this infrastructure with security overlay providing defined zones for controlled and internet-facing services.",
+                text: "A dual-site, dual-core Data center model was developed to provide a highly available central repository for this infrastructure with security overlay providing defined zones for controlled and internet-facing services.",
                 textAlign: "justify"
             },
             {
@@ -20,12 +20,12 @@ export default [
                 textAlign: "justify"
             },
             {
-                text: "And while there are commonalities that allow for pre-packaged solutions, every data centre is different.",
+                text: "And while there are commonalities that allow for pre-packaged solutions, every data center is different.",
                 textAlign: "justify"
             },
            
             {
-                text: "Our experienced, certified storage professionals and data centre practice team are adept and helped customers manage change and transform their data centre's to enable next-generation computing models.",
+                text: "Our experienced, certified storage professionals and data center practice team are adept and helped customers manage change and transform their data center's to enable next-generation computing models.",
                 textAlign: "justify"
             },
             {

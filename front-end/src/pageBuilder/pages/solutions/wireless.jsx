@@ -12,7 +12,7 @@ export default [
             {
                 type: "content",
                 data:[{
-                    text: "Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers.",
+                    text: "Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters as well as isolated Data centers of Cisco WLC 5508, 2504 and Aruba controllers.",
                     textAlign: "center",
                     opacity:0.7,
                     px:[0,4,8,16]

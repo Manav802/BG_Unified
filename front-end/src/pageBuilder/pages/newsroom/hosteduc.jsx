@@ -20,7 +20,7 @@ export default [
                 textAlign: "justify"
             },
             {
-                text: "An additional redundancy option is possible by implementing a CUBE at the client site so that in the event of any catastrophic failure in our data centre, SRST will still be able to provide basic inbound and outbound calling facilities. This option is not included in the proposal costs but can be quoted if required.",
+                text: "An additional redundancy option is possible by implementing a CUBE at the client site so that in the event of any catastrophic failure in our data center, SRST will still be able to provide basic inbound and outbound calling facilities. This option is not included in the proposal costs but can be quoted if required.",
                 textAlign: "justify"
             },
            

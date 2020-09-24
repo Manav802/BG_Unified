@@ -23,7 +23,7 @@ export default [
             data: [{
                 textAlign: "justify",
                 fontSize: ["md","md","md","lg"],
-                title: "Security Operations Centre As A Service",
+                title: "Security Operations center As A Service",
                 titleSize: [28,28,28,32],
                 text: <span>As data theft became evident and safeguarding 
                 sensitive data became a necessity for businesses everywhere, 

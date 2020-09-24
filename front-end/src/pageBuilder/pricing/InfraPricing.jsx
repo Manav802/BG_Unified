@@ -69,7 +69,7 @@ const plans = [
       "80GB SSD Storage",
       "4GB RAM",
       "Desktop Virtualization",
-      "High Availabilty",
+      "High Availability",
       "High Clustering",
     ],
     cpu: 2,
@@ -86,7 +86,7 @@ const plans = [
       "80GB SSD Storage",
       "6GB RAM",
       "Desktop Virtualization",
-      "High Availabilty",
+      "High Availability",
       "High Clustering",
     ],
     popular: false,
@@ -103,7 +103,7 @@ const plans = [
       "80GB SSD Storage",
       "8GB RAM",
       "Desktop Virtualization",
-      "High Availabilty",
+      "High Availability",
       "High Clustering",
     ],
     popular: true,
@@ -120,7 +120,7 @@ const plans = [
       "80GB SSD Storage",
       "16GB RAM",
       "Desktop Virtualization",
-      "High Availabilty",
+      "High Availability",
       "High Clustering",
     ],
     popular: false,
@@ -320,7 +320,7 @@ function InfraPricing(props) {
                     "80GB SSD Storage",
                     "4GB RAM",
                     "Desktop Virtualization",
-                    "High Availabilty",
+                    "High Availability",
                     "High Clustering",
                   ]}
                 >
@@ -345,7 +345,7 @@ function InfraPricing(props) {
                     "80GB SSD Storage",
                     "6GB RAM",
                     "Desktop Virtualization",
-                    "High Availabilty",
+                    "High Availability",
                     "High Clustering",
                   ]}
                 >
