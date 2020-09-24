@@ -96,10 +96,23 @@ export default [
         ]   
     },
     {
+        title: "BG Unified Solutions as your HelpDesk Partner",
+        py:4,
+        body: [
+            {
+                type: "image&text",
+                data: {
+                    image: "/assets/images/illustrations/ClientSpecific_AppDev.svg",
+                 
+                    flexDirection: ["column", "column", "row-reverse"],
+                    description: "Your time is valuable. Consequently, qualified support crew answering the call, helps us to identify the issue at a faster rate. Responsive and reliable support services are delivered by a highly trained, Australia based team. For infrastructure, networking, security, cloud-based service, end-user or any other facet of IT support, BGUS has the capability to deliver a world-class technical support solution.Get back on track fast. You can count on our responsive, reliable team to provide cost-effective expertise on-demand !!!"
+                }
+            },
+        ]
+    },
+    {
         gap: 10,
-        py: 12,
         my: 0,
-        bg: "light.400",
         body: [
             {
                 width: ["100%", 1 / 2, 1 / 3],
@@ -142,20 +155,5 @@ export default [
             },       
          ]
     },
-{
-       mt:0,
-        pt:4,
-        pb: 12,
-        body: [
-            {
-                type: "image&text",
-                data: {
-                    image: "/assets/images/illustrations/ClientSpecific_AppDev.svg",
-                    title: "BG Unified Solutions as your HelpDesk Partner",
-                    flexDirection: ["column", "column", "row-reverse"],
-                    description: "Your time is valuable. Consequently, qualified support crew answering the call, helps us to identify the issue at a faster rate. Responsive and reliable support services are delivered by a highly trained, Australia based team. For infrastructure, networking, security, cloud-based service, end-user or any other facet of IT support, BGUS has the capability to deliver a world-class technical support solution.Get back on track fast. You can count on our responsive, reliable team to provide cost-effective expertise on-demand !!!"
-                }
-            },
-        ]
-    }
+    
 ]

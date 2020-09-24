@@ -191,7 +191,7 @@ function OurSolutions(){
               </TabPanel>
               <TabPanel>
               <Row>
-              {Object.entries(solutions).filter(service => service[1].category === "Development Services").map(service => (
+              {Object.entries(solutions).filter(service => service[1].category === "Professional Services").map(service => (
                     <Box width={["100%","100%","50%"]} p={5}>
                       <Flex my={5} bg="white" boxShadow="lg" height="100%" direction={["column","row"]} rounded={8} overflow="hidden">
                         <Flex minH="100px" minW="160px" justify="center" align="center" bg={service[1].color}>

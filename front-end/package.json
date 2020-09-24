@@ -2,7 +2,7 @@
   "name": "front-end",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://manav802.github.io/BG_Unified/",
+  "homepage": "www.bgunifiedsolutions.net",
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",
     "@emotion/core": "^10.0.35",
@@ -11,6 +11,7 @@
     "babel-preset-es2015": "^6.24.1",
     "bootstrap": "^4.5.2",
     "emotion-theming": "^10.0.27",
+    "express": "^4.17.1",
     "flickity": "^2.2.1",
     "next": "^9.5.3",
     "node-sass": "^4.14.1",
@@ -32,7 +33,7 @@
     "typewriter-effect": "^2.13.1"
   },
   "scripts": {
-    "dev": "NODE_ENV='development' node server.js",
+    "dev": "node server.js",
     "build": "next build && next export",
     "start": "next start"
   },

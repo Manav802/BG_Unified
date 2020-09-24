@@ -35,61 +35,9 @@ export default [
                 }]
             }]
     },
-    {
-        my: 16,
-        py: "48px",
-        bg: "light.400",
-        rowDistance: 8,
-        gap: 6,
-        body: [
-            {
-                my:[0,0,4,4],
-                width: ["70%","60%","60%", 1/3],
-                type: "imageGroup",
-                data: {
-                    images: ["/assets/images/illustrations/itandinfra.svg"],
-                    mx: "16%",
-                }
-            },
-            {
-                my:[0,0,4,4],
-                width: ["100%","100%","100%", 2/3],
-                type: "content",
-                data: [{
-                    title: "GPU: Diversified Applications",
-                    fontSize: ["lg","xl"],
-                    titleSize: [32,36,40,48],
-                    my:[2,4,8],
-                    text:   <>
-                            <span>Graphical Processing Unit does not cater to a single domain.
-                                 In present day scenario, where technology proves to be the backbone of every industry, the importance of 
-                                 GPUs have grown exponentially.
-                                </span><br/><br/>
-                            <span> From refining and mining data, to analyzing it. From Scientific Researches to Health Sector.
-                                 From finance to educational institutions. Graphical Processing Unit has become an important resource for every industry.
-                                </span>,
-                            </>    
-                },
-                {   
-                    list: [
-                        "Healthcare Services",
-                        "Big Data Analytics",
-                        "Scientific Research Operations",
-                        "Deep Learning and Machine Learning"
-                    ],
-                    spacing: 2,
-                    styleType: "none",
-                    icon: "check",
-                    iconColor: "green.500"
-                }    
-            ]
-            },
-        ]   
-    },
-    
+  
     {
         my: 0,
-        py: "48px",
         bgImage: "url('/assets/images/backgrounds/network_abstract.webp')",
         blend: "screen",
         bg: "light.400",
@@ -148,4 +96,52 @@ export default [
             },
         ]   
     },
+    {
+        rowDistance: 8,
+        gap: 6,
+        body: [
+            {
+                my:[0,0,4,4],
+                width: ["70%","60%","60%", 1/3],
+                type: "imageGroup",
+                data: {
+                    images: ["/assets/images/illustrations/network.svg"],
+                    px: 4,
+                }
+            },
+            {
+                width: ["100%","100%","100%", 2/3],
+                type: "content",
+                data: [{
+                    title: "GPU: Diversified Applications",
+                    fontSize: ["lg","xl"],
+                    titleSize: [32,36,40,48],
+                    my:[2,4,8],
+                    text:   <>
+                            <span>Graphical Processing Unit does not cater to a single domain.
+                                 In present day scenario, where technology proves to be the backbone of every industry, the importance of 
+                                 GPUs have grown exponentially.
+                                </span><br/><br/>
+                            <span> From refining and mining data, to analyzing it. From Scientific Researches to Health Sector.
+                                 From finance to educational institutions. Graphical Processing Unit has become an important resource for every industry.
+                                </span>,
+                            </>    
+                },
+                {   
+                    list: [
+                        "Healthcare Services",
+                        "Big Data Analytics",
+                        "Scientific Research Operations",
+                        "Deep Learning and Machine Learning"
+                    ],
+                    spacing: 2,
+                    styleType: "none",
+                    icon: "check",
+                    iconColor: "green.500"
+                }    
+            ]
+            },
+        ]   
+    },
+    
 ]
