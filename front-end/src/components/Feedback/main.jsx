@@ -4,6 +4,7 @@ import {
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
+import axios from "axios";
 function FeedbackForm(props) {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [name, setName] = useState('');
@@ -15,7 +16,7 @@ function FeedbackForm(props) {
         name: name,
         email: email,
         description: description,
-        phone: phone,
+        contactNumber: phone,
         rating: rating
     }
     const [isLoading, loadingState] = useState(false);
@@ -77,14 +78,7 @@ function FeedbackForm(props) {
     const onSubmit = (event) => {
         event.preventDefault()
         loadingState(true);
-        fetch(' https://submit-form.com/' + keys.Feedback, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                Accept: 'application/json'
-            },
-            body: JSON.stringify(form)
-        })
+        axios.post('/api/feedback/submit', form)
             .then((response) => refreshForm(response), (error) => refreshForm(error))
     }
     return (
@@ -157,7 +151,7 @@ function FeedbackForm(props) {
                                                 pattern="[0-9]{10}"
                                                 variant="flushed"
                                                 name="phone"
-                                                value={form.phone}
+                                                value={form.contactNumber}
                                                 onChange={onChange}
                                             />
                                         </FormControl>

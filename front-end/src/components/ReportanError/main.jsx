@@ -8,6 +8,7 @@ import Toast from '../Toast/main';
 import { useDisclosure } from "@chakra-ui/core";
 import { deviceType, browserName, osName } from "react-device-detect";
 import SVG from '../svg/SVG';
+import axios from "axios";
 const CustomRadio = React.forwardRef((props, ref) => {
     const { isChecked, ...rest } = props;
     return (
@@ -49,11 +50,11 @@ function ErrorForm(props) {
         name: name,
         email: email,
         description: description,
-        phone: phone,
+        contactNumber: phone,
         error: othererror ? othererror : error,
         browser: browser,
         device: device,
-        operatingsystem: operatingsystem
+        operatingSystem: operatingsystem
     }
     const [isLoading, loadingState] = useState(false);
     const [formResponse, setResponse] = useState('');
@@ -146,16 +147,10 @@ function ErrorForm(props) {
     const onSubmit = (event) => {
         event.preventDefault()
         loadingState(true);
-        fetch(' https://submit-form.com/' + keys.ErrorReport, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                Accept: 'application/json'
-            },
-            body: JSON.stringify(form)
-        })
+        axios.post('/api/report/submit', form)
             .then((response) => refreshForm(response), (error) => refreshForm(error))
     }
+
     const updateWidth = () => {
         setScreenWidth(window.innerWidth);
     };
@@ -167,14 +162,14 @@ function ErrorForm(props) {
     return (
         <>
             <Link mx={["6px", "10px", "16px"]} fontSize={["10px", "12px", "14px"]} textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
-            <Modal isOpen={isOpen} onClose={formClose} scrollBehavior={screenWidth>420?"inside":"outside"}>
+            <Modal isOpen={isOpen} onClose={formClose} scrollBehavior={screenWidth > 420 ? "inside" : "outside"}>
                 <ModalOverlay />
-                <ModalContent maxWidth={["430px", "430px", "600px", "700px"]} minHeight={screenWidth>420?"":"100vh"}  mb={screenWidth<=420?0:""} mt={screenWidth<=420?0:""}>
+                <ModalContent maxWidth={["430px", "430px", "600px", "700px"]} minHeight={screenWidth > 420 ? "" : "100vh"} mb={screenWidth <= 420 ? 0 : ""} mt={screenWidth <= 420 ? 0 : ""}>
                     <ModalHeader className="sticky-top">
-                        <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}>Go Back</Button>
+                        <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}></Button>
                         <span className="display5 mx-2">Report an Error</span></ModalHeader>
                     <ModalBody>
-                        <Box className="container reportanerror">
+                        <Box className="reportanerror">
                             <form onSubmit={onSubmit}>
                                 <input
                                     type="hidden"
@@ -186,7 +181,7 @@ function ErrorForm(props) {
                                         <Tab paddingX={["2px", "8px", "16px"]} fontSize={["sm", "md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Device Details</div></Tab>
                                         <Tab paddingX={["2px", "4px", "16px"]} fontSize={["sm", "md"]} className="display6 tab-selected"><div className="d-flex align-items-center button-tab">Description</div></Tab>
                                     </TabList>
-                                    <TabPanels>
+                                    <TabPanels className="container">
                                         <TabPanel>
                                             <FormControl mt={10} isRequired>
                                                 <FormLabel htmlFor="name">Type of error:</FormLabel>
@@ -221,7 +216,7 @@ function ErrorForm(props) {
                                             </FormControl>
                                             <FormControl mt={10} isRequired>
                                                 <FormLabel>Operating system you were using:</FormLabel>
-                                                <Input list="os" listStylePos="inside" name="operatingsystem" value={form.operatingsystem} onChange={onChange} variant="flushed"></Input>
+                                                <Input list="os" listStylePos="inside" name="operatingsystem" value={form.operatingSystem} onChange={onChange} variant="flushed"></Input>
                                                 <datalist id="os">
                                                     {deviceList.os.map(item => <option value={item}></option>)}
                                                 </datalist>
@@ -229,7 +224,7 @@ function ErrorForm(props) {
                                             <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(2)}>Next</Button>
                                         </TabPanel>
                                         <TabPanel>
-                                            <FormControl mt={10} >
+                                            <FormControl isRequired mt={10} >
                                                 <FormLabel htmlFor="name">Name:</FormLabel>
                                                 <Input
                                                     variant="flushed"
@@ -260,7 +255,7 @@ function ErrorForm(props) {
                                                             pattern="[0-9]{10}"
                                                             variant="flushed"
                                                             name="phone"
-                                                            value={form.phone}
+                                                            value={form.contactNumber}
                                                             onChange={onChange}
                                                         />
                                                     </FormControl>
