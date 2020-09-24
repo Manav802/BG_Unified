@@ -13,7 +13,7 @@ const definations = [
     },
     {
         list: [
-            "in relation to a service provided at a data centre, a day that is not a Saturday, Sunday or public holiday in the state in which that data centre is located and in all other cases,",
+            "in relation to a service provided at a data center, a day that is not a Saturday, Sunday or public holiday in the state in which that data center is located and in all other cases,",
             "a day that is not a Saturday, Sunday or public holiday in NSW."
         ]
     },{

@@ -10,7 +10,7 @@ const blogs = [
         avatar: "/assets/images/team/saurabh.jpg",
         image: "/assets/images/newsroom/businessop.webp",
         category: "Updates",
-        tags: ["Huawei", "virtual desktop" , "bare metal" , "VM" , "VCS" , "free services" , "Remote Phone System" , "Contact Centre", "DC" , "RDSaaS" , "ConstantEFG" , "Uplink" , "E-mail Filtering"],
+        tags: ["Huawei", "virtual desktop" , "bare metal" , "VM" , "VCS" , "free services" , "Remote Phone System" , "Contact center", "DC" , "RDSaaS" , "ConstantEFG" , "Uplink" , "E-mail Filtering"],
         link: "1-businessop-during-covid",
         content: content.businessop,
     },
@@ -82,7 +82,7 @@ const blogs = [
         {
             index: 7,
             title: "Data Center Design and Implementation",
-            description: "A client had a requirement to consolidate a distributed environment into a single highly available data centre.....",
+            description: "A client had a requirement to consolidate a distributed environment into a single highly available data center.....",
             date: "2019",
             by: "Saurabh Sareen",
             avatar: "/assets/images/team/saurabh.jpg",

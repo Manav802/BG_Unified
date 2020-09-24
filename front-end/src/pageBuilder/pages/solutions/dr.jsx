@@ -35,7 +35,7 @@ export default [
                     fontSize: "lg",
                     title: "Always stay aware and prepared",
                     titleSize: 32,
-                    text: <span>Disaster Recovery Management as a Service is basically preparing your organization for a failure or situation that you are unable to predict. The situations may be a catastrophic failure, a natural calamity, data being lost, server not functioning properly, data centres being compromised and so on. Predicting the most unlikely events that may cause data loss, data breach and hinder the functioning of an organization, finding and installing solutions.
+                    text: <span>Disaster Recovery Management as a Service is preparing your organization for a failure or situation that you are unable to predict. The situations may be a catastrophic failure, a natural calamity, data being lost, server not functioning properly, data centers being compromised and so on. Predicting the most unlikely events that may cause data loss, data breach and hinder the functioning of an organization, finding and installing solutions.
                     </span>
                 }]
             }]
@@ -103,7 +103,7 @@ export default [
                     image: "/assets/images/illustrations/deploy.svg",
                     title: "Simplified Deployment",
                     flexDirection: ["column", "column", "row"],
-                    description: "An additional redundancy option is possible by implementing a CUBE at the client site so that in the event of any catastrophic failure in our data centre, SRST will still be able to provide basic inbound and outbound calling facilities"
+                    description: "An additional redundancy option is possible by implementing a CUBE at the client site so that in the event of any catastrophic failure in our data center, SRST will still be able to provide basic inbound and outbound calling facilities"
                 }
             },
             {
@@ -121,7 +121,7 @@ export default [
                     image: "/assets/images/illustrations/ClientSpecific_AppDev.svg",
                     title: "Flexible Solutions",
                     flexDirection: ["column", "column", "row"],
-                    description: "In-place upgrades reduce downtime and maximize operational efficiencies. And you can customize how you intercept, inspect, transform, and direct inbound or outbound application traffic with powerful, flexible iRules."
+                    description: "In-place upgrades reduce downtime and maximize operational efficiencies. And you can customize how you intercept, inspect, transform, and direct inbound or outbound application traffic with powerful, flexible Rules."
                 }
             },
         ]

@@ -108,7 +108,7 @@ export default [
                     titleSize: "md",
                     textOpacity: "0.8",
                     size: "96px",
-                    image: "/assets/images/icons/theme/cloud-computing.svg",
+                    image: "/assets/images/icons/color/headphones.svg",
                     title: "Complete Australian Support and Helpdesk Staff",
                     description: "",
                     align: "center",
@@ -121,7 +121,7 @@ export default [
                     titleSize: "md",
                     textOpacity: "0.8",
                     size: "96px",
-                    image: "/assets/images/icons/library/devices/cpu-1.svg",
+                    image: "/assets/images/icons/color/map-pin.svg",
                     title: "Location Independent Help Desk Solutions",
                     description: "",
                     align: "center",
@@ -134,7 +134,7 @@ export default [
                     titleSize: "md",
                     textOpacity: "0.8",
                     size: "96px",
-                    image: "/assets/images/icons/color/pie-chart.svg",
+                    image: "/assets/images/icons/color/24-hours.svg",
                     title: "24X7 Highly Available Help-Desk Staff",
                     description: "",
                     align: "center",
@@ -150,7 +150,7 @@ export default [
             {
                 type: "image&text",
                 data: {
-                    image: "/assets/images/illustrations/diversity.svg",
+                    image: "/assets/images/illustrations/ClientSpecific_AppDev.svg",
                     title: "BG Unified Solutions as your HelpDesk Partner",
                     flexDirection: ["column", "column", "row-reverse"],
                     description: "Your time is valuable. Consequently, qualified support crew answering the call, helps us to identify the issue at a faster rate. Responsive and reliable support services are delivered by a highly trained, Australia based team. For infrastructure, networking, security, cloud-based service, end-user or any other facet of IT support, BGUS has the capability to deliver a world-class technical support solution.Get back on track fast. You can count on our responsive, reliable team to provide cost-effective expertise on-demand !!!"

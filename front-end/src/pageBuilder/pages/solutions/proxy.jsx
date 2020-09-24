@@ -87,7 +87,7 @@ export default [
                 },
                 {
                     title: "Fast speed with minimum bandwidth usage",
-                    description: "Use proxy servers at a faster speed and limiting the bandwidth utilization, by filtering traffic, caching files and web pages accessed. Highly advanced, available and multiple data centre locations.",
+                    description: "Use proxy servers at a faster speed and limiting the bandwidth utilization, by filtering traffic, caching files and web pages accessed. Highly advanced, available and multiple data center locations.",
                     image: "/assets/images/illustrations/sip.svg"
                 },]
             }

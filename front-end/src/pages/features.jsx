@@ -110,7 +110,7 @@ function features() {
           {
             type: "image&text",
             data: {
-              title: "Data Centre Networking",
+              title: "Data center Networking",
               titleStyle: {
                 size: "2xl"
               },

@@ -196,8 +196,8 @@
         },
         {
             "name": "Wireless As A Service",
-            "description": "The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers.",
-            "sub-description": "The hosted wireless solution includes multiple clusters as well as isolated Data centres of Cisco WLC 5508, 2504 and Aruba controllers.",
+            "description": "The hosted wireless solution includes multiple clusters as well as isolated Data centers of Cisco WLC 5508, 2504 and Aruba controllers.",
+            "sub-description": "The hosted wireless solution includes multiple clusters as well as isolated Data centers of Cisco WLC 5508, 2504 and Aruba controllers.",
             "tags": ["wireless", "wifi", "clusters", "networks"],
             "price": "",
             "icon": "/assets/images/icons/monotone/WirelessAsAService.svg",

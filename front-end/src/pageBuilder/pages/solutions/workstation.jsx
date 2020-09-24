@@ -77,7 +77,7 @@ export default [
             text: <span>With BG Unified Solutions’ Workstation 
             As A Service, we give an organization the freedom to
              deploy virtual desktops from its own on-premises data 
-             centres. In-house IT teams are responsible for deploying 
+             centers. In-house IT teams are responsible for deploying 
              the virtual desktops as well as purchasing, managing, 
              and upgrading the infrastructure.</span>,
             fontSize: ["lg","lg","xl"],
