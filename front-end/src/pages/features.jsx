@@ -9,6 +9,13 @@ function features() {
   return (
     <div className="features overflow-hidden">
       <Head>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta name ="description" content = "Features like redundant solutions, connectivity with highly secured infrastructure with multiple telco vendors. Fast, friendly and delivery oriented web services, driven by our commitment of customer satisfaction.">
+                </meta>
+                <meta property="og:title" content="Our Features - BG Unified" key="title" />
+                <meta property="og:description" content={blog.description}></meta>
         <title>Our Features - BG Unified</title>
       </Head>
       <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>

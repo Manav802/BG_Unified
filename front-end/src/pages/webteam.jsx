@@ -10,7 +10,7 @@ const team = [
     { name: "Shubh Bhardwaj", username: "shubh", designation: "Content Curator & Front-end Developer"},
     { name: "Anuj Bansal", username: "anuj", designation: "Senior Developer"},
     { name: "Manav Chhabra", username: "manav", designation: "Front-end Developer"},
-    { name: "Vineet Yadav", username: "vineet", designation: "Product Engineer"},
+    { name: "Vineet Yadav", username: "vineet", designation: "Front-end Developer"},
     { name: "Vishu Chhabra", username: "vishu", designation: "Product Engineer"},
     { name: "Keysang Yonthan", username: "keysang", designation: "Web Designer"},
     { name: "Sparsh Gupta", username: "sparsh", designation: "Graphic Designer & Illustrator"},

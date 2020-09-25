@@ -28,6 +28,13 @@ function Blogs() {
   return (
     <div className="article">
       <Head>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta name ="description" content = {blog.description}>
+                </meta>
+                <meta property="og:title" content={blog.title} key="title" />
+                <meta property="og:description" content={blog.description}></meta>
         <title>{blog.title || ""}</title>
         <link
           rel="shortcut icon"
