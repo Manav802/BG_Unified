@@ -15,7 +15,7 @@ function features() {
                 <meta name ="description" content = "Features like redundant solutions, connectivity with highly secured infrastructure with multiple telco vendors. Fast, friendly and delivery oriented web services, driven by our commitment of customer satisfaction.">
                 </meta>
                 <meta property="og:title" content="Our Features - BG Unified" key="title" />
-                <meta property="og:description" content={blog.description}></meta>
+                <meta property="og:description" content="Features like redundant solutions, connectivity with highly secured infrastructure with multiple telco vendors. Fast, friendly and delivery oriented web services, driven by our commitment of customer satisfaction."></meta>
         <title>Our Features - BG Unified</title>
       </Head>
       <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
