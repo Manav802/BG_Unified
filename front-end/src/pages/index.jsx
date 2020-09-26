@@ -300,7 +300,7 @@ class Landing extends Component {
                   <div className="my-2 text-center text-dark display4">
                     What they say!
                 </div>
-                <TestimonialCard testimonialDetails={TESTIMONIALS} />
+                <TestimonialCard testimonials={TESTIMONIALS} />
                 <Box mt="-3%"width="100%" position="absolute" top="0px">
                     <SVG size="16%" src="https://image.flaticon.com/icons/svg/102/102571.svg" color="gray.200" ></SVG> 
                 </Box>

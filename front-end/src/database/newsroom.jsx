@@ -4,7 +4,7 @@ const blogs = [
     {
         index: 1,
         title: "Business Operations during COVID-19 Pandemic",
-        description: "The difficult COVID-19 era has also brought out how strong partnerships create lasting value. BG Unified Solutions and Huawei Australia have been working collaboratively to provide all Australians with solid and comprehensive IT solutions....",
+        description: "The difficult COVID-19 era has also brought out how strong partnerships create lasting value. BG Unified Solutions and Huawei Australia...",
         date: "7th September 2020",
         by: "Saurabh Sareen",
         avatar: "/assets/images/team/saurabh.jpg",
@@ -17,20 +17,20 @@ const blogs = [
     {
         index: 2,
         title: "Helping Hands during COVID-19 Pandemic",
-        description: "COVID-19 working from home taught us more lessons and even let us able to figure it out how we can be exponentially productive than just enjoying the comfort of staying at home....",
+        description: "COVID-19 working from home taught us more lessons and even let us able to figure it out how we can be exponentially productive than just...",
         date: "23rd August 2020",
         by: "Saurabh Sareen",
         avatar: "/assets/images/team/saurabh.jpg",
         image: "/assets/images/newsroom/coronavirus.webp",
         category: "Updates",
-        tags: ["B2B" , "VPNHEADEND" , "Firewall" , "10G" , "Paloalto" , "Fortinet" , "ASA" , "UTM" , "ALLFLASH" , "RDSaaS" , "Workstation" , "Cisco", "UCaaS", "Avaya"],
+        tags: ["B2B" , "VPNHEADEND" , "Firewall" , "covid", "10G" , "Paloalto" , "Fortinet" , "ASA" , "UTM" , "ALLFLASH" , "RDSaaS" , "Workstation" , "Cisco", "UCaaS", "Avaya"],
         link: "2-helping-hands-during-covid",
         content: content.covid19,
     },
     {
         index: 3,
         title: "Peace of mind and 60% cost savings with Datacom@AirTrunk",
-        description: "It was towards the end of 2019 and the staff at Australian data and applications hosting specialist BG Unified Solutions were looking forward to closing out another busy and successful year....",
+        description: "It was towards the end of 2019 and the staff at Australian data and applications hosting specialist BG Unified Solutions were looking...",
         date: "23rd August 2019",
         by: "Saurabh Sareen",
         avatar: "/assets/images/team/saurabh.jpg",
@@ -42,8 +42,8 @@ const blogs = [
         },
         {
             index: 4,
-            title: "A complete Office IT Infrastructure for small to medium size organizations.",
-            description: "An enterprise level solution for any small to medium size organization with single or multiple sites. This solution includes:....",
+            title: "A complete Office IT Infrastructure",
+            description: "An enterprise level solution for any small to medium size organization with single or multiple sites. This solution includes...",
             date: "23rd October 2019",
             by: "Saurabh Sareen",
             avatar: "/assets/images/team/saurabh.jpg",
@@ -56,7 +56,7 @@ const blogs = [
         {
             index: 5,
             title: "Launching a complete VDI/RDS as a Solution",
-            description: "We feel proud in announcing ConstantVDI service offering, which will offer you a complete VDI/RDS As A Service Solution using VMWARE, Parallels and Acronis Cyber Infrastructure. ....",
+            description: "We feel proud in announcing ConstantVDI service offering, which will offer you a complete VDI/RDS As A Service Solution using...",
             date: "September 2019",
             by: "Saurabh Sareen",
             avatar: "/assets/images/team/saurabh.jpg",
@@ -69,7 +69,7 @@ const blogs = [
         {
             index: 6,
             title: "Network Infrastructure Redesign",
-            description: "The primary purpose of the project is to redesign the network to achieve the following design criteria: ....",
+            description: "The primary purpose of the project is to redesign the network to achieve the following design criteria...",
             date: "2019",
             by: "Saurabh Sareen",
             avatar: "/assets/images/team/saurabh.jpg",
@@ -82,7 +82,7 @@ const blogs = [
         {
             index: 7,
             title: "Data Center Design and Implementation",
-            description: "A client had a requirement to consolidate a distributed environment into a single highly available data center.....",
+            description: "A client had a requirement to consolidate a distributed environment into a single highly available data center...",
             date: "2019",
             by: "Saurabh Sareen",
             avatar: "/assets/images/team/saurabh.jpg",
@@ -95,7 +95,7 @@ const blogs = [
         {
             index: 8,
             title: "BG Unified Solutions Hosted UC Solution",
-            description: "Currently hosted in NEXTDC, consisting of 18 UCS Server, C Series & B Series in the farm. Each UCS Server is running ESX version 5.5 with updated VMWARE tools. .....",
+            description: "Currently hosted in NEXTDC, consisting of 18 UCS Server, C Series & B Series in the farm. Each UCS Server is running...",
             date: "2019",
             by: "Saurabh Sareen",
             avatar: "/assets/images/team/saurabh.jpg",
@@ -108,7 +108,7 @@ const blogs = [
         {
             index: 9,
             title: "F5 Topology Redesign",
-            description: "F5 Configuration was redesigned and implemented in a recommended way. A lot of IRULES/POOLS defined to achieve the desired configuration requirements. Health Monitors were rewritten to provide the best monitor for the servers in different pools......",
+            description: "F5 Configuration was redesigned and implemented in a recommended way. A lot of IRULES/POOLS defined to achieve the desired...",
             date: "2019",
             by: "Saurabh Sareen",
             avatar: "/assets/images/team/saurabh.jpg",

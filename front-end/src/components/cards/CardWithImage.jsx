@@ -1,14 +1,12 @@
 import React from "react";
-import { Box, Image, Heading, Text, Button, ButtonGroup, Grid, Link } from "@chakra-ui/core";
+import { Box, Image, Heading, Text, Button, ButtonGroup, Flex, Link } from "@chakra-ui/core";
 
 function CardWithIcon({columns="auto", height="216px", ...props}) {
   return (
     
-    <Grid templateColumns={columns}>
-      <Box p={3}>
-      <Image alt="" objectFit="cover" rounded={8} src={props.src} height={height} width="100%"></Image>
-      </Box>
-      <Box  py={2} px={5}>
+    <Flex direction="column" bg="white" boxShadow="xl" height="100%">
+      <Image alt="" objectFit="cover" src={props.src} height={height} width="100%"></Image>
+      <Box  py={[3,6]} px={[3,8]}>
         <Heading fontSize={["md","2xl"]} lineHeight={1.5} mt={[2,1]} mb={[1, 2]} letterSpacing={1} fontFamily="Nexa Bold">{props.title}</Heading>
         {props.description && <Text textAlign="justify" fontSize="lg" mt={2}>{props.description}</Text>}
         {props.children}
@@ -16,7 +14,7 @@ function CardWithIcon({columns="auto", height="216px", ...props}) {
             {props.actions}
         </ButtonGroup>
       </Box>
-    </Grid>
+    </Flex>
   );
 }
 
