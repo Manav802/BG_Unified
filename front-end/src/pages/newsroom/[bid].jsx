@@ -35,6 +35,8 @@ function Blogs() {
                 </meta>
                 <meta property="og:title" content={blog.title} key="title" />
                 <meta property="og:description" content={blog.description}></meta>
+                <meta name="keywords" content={blog.tags.toString() || "Newsroom, BGUS"} />
+                <meta name="author" content={blog.by || "BGUS"}></meta>
         <title>{blog.title || ""}</title>
         <link
           rel="shortcut icon"
