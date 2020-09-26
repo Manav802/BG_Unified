@@ -162,10 +162,10 @@ function ErrorForm(props) {
     return (
         <>
             <Link mx={["6px", "10px", "16px"]} fontSize={["10px", "12px", "14px"]} textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
-            <Modal isOpen={isOpen} onClose={formClose} scrollBehavior={screenWidth > 420 ? "inside" : "outside"}>
+            <Modal isOpen={isOpen} onClose={formClose} isCentered={screenWidth > 420 ? true : false} scrollBehavior={screenWidth > 420 ? "inside" : "outside"}>
                 <ModalOverlay />
                 <ModalContent maxWidth={["430px", "430px", "600px", "700px"]} minHeight={screenWidth > 420 ? "" : "100vh"} mb={screenWidth <= 420 ? 0 : ""} mt={screenWidth <= 420 ? 0 : ""}>
-                    <ModalHeader className="sticky-top">
+                    <ModalHeader style={{ zIndex: "3", position: "sticky", top: 0, backgroundColor: "white" }}>
                         <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}></Button>
                         <span className="display5 mx-2">Report an Error</span></ModalHeader>
                     <ModalBody>
@@ -198,7 +198,7 @@ function ErrorForm(props) {
                                                     </Input>
                                                 </FormControl>
                                             </Collapse>}
-                                            <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(1)}>Next</Button>
+                                            <Button size="lg" variantColor="primary" className="primary-btn" mt={8} mb={8} onClick={() => setTabIndex(1)}>Next</Button>
                                         </TabPanel>
                                         <TabPanel>
                                             <FormControl mt={10} isRequired>
@@ -221,7 +221,7 @@ function ErrorForm(props) {
                                                     {deviceList.os.map(item => <option value={item}></option>)}
                                                 </datalist>
                                             </FormControl>
-                                            <Button size="lg" variantColor="primary" className="primary-btn" mt={8} onClick={() => setTabIndex(2)}>Next</Button>
+                                            <Button size="lg" variantColor="primary" className="primary-btn" mt={8} mb={8} onClick={() => setTabIndex(2)}>Next</Button>
                                         </TabPanel>
                                         <TabPanel>
                                             <FormControl isRequired mt={10} >
@@ -275,6 +275,7 @@ function ErrorForm(props) {
                                             <div>
                                                 <Button
                                                     mt={10}
+                                                    mb={8}
                                                     type="submit"
                                                     size="lg"
                                                     variantColor="primary"
