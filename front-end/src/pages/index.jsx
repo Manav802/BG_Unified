@@ -152,10 +152,10 @@ class Landing extends Component {
                 </Fade>
             </div>
             </Section>
-            <Section mt="192px" mb={0} bg="#060529">
-                <Grid mt="-160px" templateColumns="256px auto" p={12} rounded={12} bg="white" boxShadow="xl">
-                    <Image alt="" src="/assets/images/vectors/covid.svg" width={["100%","40%","256px"]}></Image>
-                    <Flex direction="column" justify="center" px={12}>
+            <Section px={0} mt="192px" mb={0} bg="#060529">
+                <Grid mt="-160px" templateColumns={["100%","192px auto","256px auto"]} p={[4,4,12]} rounded={12} bg="white" boxShadow="xl">
+                    <Image alt="" justifySelf="center" src="/assets/images/vectors/covid.svg" padding={[4,0]}  width={["60%","100%"]}></Image>
+                    <Flex direction="column" justify="center" px={[3,5,12]}>
                         <a className="link"><Heading size="lg" fontFamily="Nexa Bold">Free Services* for 3 months for Healthy and Safety related Businesses. <Icon name="chevron-right"></Icon></Heading></a>
                         <Text mt={3} opacity={.7}>Let us help you if you have limited budgets and because of COVID your current infrastructure can't handle the load. Dial our direct line +61 2 9095 0000. We will get things in motion very quickly.</Text>
                     </Flex>
@@ -164,7 +164,7 @@ class Landing extends Component {
             <Section bg="#060529" my={0} py={24} color="white">
             <Row>
                 <Flex direction="column" justify="center" width={["100%","100%",1/2]}>
-                    <Title textAlign="left" fontSize="56px">Highly <span className="text-primary">Redundant Solutions</span>. 
+                    <Title textAlign="left" fontSize={["40px","48px","56px"]}>Highly <span className="text-primary">Redundant Solutions</span>. 
                     Highly expert team
                     </Title>
                     <Text mt={4} fontSize="20px" opacity={.7}>
@@ -189,7 +189,7 @@ class Landing extends Component {
                         </Feature3>
                     </Box>
                     <Box width={["100%","100%", 1/2]} px={3}>
-                        <Feature3 mt={24} bg="light.500" color="dark.500" icon="/assets/images/icons/color/team.svg">
+                        <Feature3 mt={[0,0,24]} bg="light.500" color="dark.500" icon="/assets/images/icons/color/team.svg">
                             <Heading px={8} pt={8} size="md" fontFamily="Nexa Bold"><Title textAlign="left" fontSize="40px" color="yellow.400">40+</Title>Trusted<br/>Partners</Heading>
                         </Feature3>
                         <Feature3 bg="blue.800" icon="/assets/images/icons/color/rocket.svg">
@@ -255,24 +255,24 @@ class Landing extends Component {
                     align:"left",
                     suffix: "+",
                     title: "Trusted Partners",
-                    fontSize: "30px",
-                    titleSize:"18px"
+                    fontSize: ["24px","30px"],
+                    titleSize:["15px","18px"]
                     }} />
                     <Body width={1/3} type="numberCount" data={{
                     count: 900,
                     align:"left",
                     suffix: "TB+",
                     title: "Storage Capacity",
-                    fontSize: "30px",
-                    titleSize:"18px"
+                    fontSize: ["24px","30px"],
+                    titleSize:["15px","18px"]
                     }} />
-                    <Body width={1/3} type="numberCount" data={{
+                    <Body pl={5} width={1/3} type="numberCount" data={{
                     count: 1600,
                     align:"left",
                     suffix: "+",
                     title: "SIP Channels",
-                    fontSize: "30px",
-                    titleSize:"18px"
+                    fontSize: ["24px","30px"],
+                    titleSize:["15px","18px"]
                     }} />
               </Row>
          
@@ -316,14 +316,14 @@ class Landing extends Component {
                     </Text>
                     <Link href="/features">
                         <a className="link">
-                        <Heading color="primary.500" py={3} size="md">
+                        <Heading color="primary.500" py={[6,6,3]} size="md">
                         Learn More{" "}
                         <Icon name="arrow-forward"></Icon>
                         </Heading>
                         </a>
                     </Link>
                 </Box>
-                <Flex px={8} wrap="wrap" width={["100%","100%",1/2]}>
+                <Flex px={[0,4,8]} wrap="wrap" width={["100%","100%",1/2]}>
                     <Box width={["100%","100%", 1/2]} px={3}>
                         <Box bgImage="url('/assets/images/newsroom/infra.webp')" mb={6} height="220px" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
                         <Heading px={8} pt={8} size="lg" color="white" fontFamily="Nexa Bold">Network Infrastructure Redesign</Heading>
@@ -333,7 +333,7 @@ class Landing extends Component {
                         </Box>
                     </Box>
                     <Box width={["100%","100%", 1/2]} px={3}>
-                        <Flex align="flex-end" bgImage="url('/assets/images/newsroom/complete_vdi.webp')" height="100%" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
+                        <Flex mt={[6,0]} align="flex-end" bgImage="url('/assets/images/newsroom/complete_vdi.webp')" height="100%" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
                             <Heading p={8} size="lg" color="white" fontFamily="Nexa Bold">BG Unified Solutions hosted UC Solutions</Heading>
                         </Flex>
                     </Box>
