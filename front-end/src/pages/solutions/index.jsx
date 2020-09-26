@@ -34,7 +34,7 @@ const tabs = [
   },
   {
     index: 4,
-    title: "Development",
+    title: "Professional",
 
   },
 ];
@@ -50,7 +50,15 @@ function OurSolutions(){
     return (
       <>
           <Head>
-            <title>Our Solutions</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <title>Our Solutions | BG Unified Solutions</title>
+            <meta name ="description" content = "Infrastructure, COntact Center, UCaaS, Service Desk, App Development, Web Development. Secured infrastructure with telco vendors. Backup and Recovery. Silver-Peak and Cisco. Data Center Locations. Wireless, CEX, CLoud Logging. Load Balancing, DNS and Web Hosting. SD-WAN optimization, managed firewall, proxy, WAF">
+          </meta>
+          <meta property="og:title" content="Our Solutions | BG Unified Solutions" key="title" />
+          <meta property="og:description" content="Infrastructure, COntact Center, UCaaS, Service Desk, App Development, Web Development. Secured infrastructure with telco vendors. Backup and Recovery. Silver-Peak and Cisco. Data Center Locations. Wireless, CEX, CLoud Logging. Load Balancing, DNS and Web Hosting. SD-WAN optimization, managed firewall, proxy, WAF"/>
           </Head>
           <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
             <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.webp"></Image>
