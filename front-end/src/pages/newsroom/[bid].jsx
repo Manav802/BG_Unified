@@ -25,6 +25,8 @@ function Blogs() {
     }
   })[0] || { content: "" }; //Filter and get the current blog object
 
+  const imgalt=blog.imgalt;
+
   return (
     <div className="article">
       <Head>
@@ -48,7 +50,7 @@ function Blogs() {
       
      <Section mb={6} pb={0} mt={4}>
       <Title mb={8} fontSize={["4xl","4xl","5xl"]} textAlign="left">{blog.title}</Title>
-      <Image alt={blog.imgalt}          
+      <Image alt={imgalt || ""}          
       src={blog.image}
           objectFit="cover"
           rounded={8}
