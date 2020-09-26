@@ -55,7 +55,7 @@ function Newsroom(){
               </Flex>
               <Flex wrap="wrap">
                 {newsroom.map(blog =>{if(blog.category === category || category === "All") return(<>
-                <Box width={["100%","100%","50%","50%","33%"]} px={1} my={1} fontWeight="500">
+                <Box width={["100%","100%","50%","50%","33%"]} px={3} my={3} fontWeight="500">
                 <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}><a>
                   <CardWithImage
                   src={blog.image}
@@ -63,7 +63,7 @@ function Newsroom(){
                   columns={["128px auto", "auto"]}
                   height={["96px", "216px"]}
                 >
-                  <Text mt={1} opacity={.7} fontSize={["sm","lg"]} overflow="hidden" height={["40px", "auto"]}>{blog.description}</Text>
+                  <Text mt={1} opacity={.7} fontSize={["sm","md"]} overflow="hidden" height={["40px", "auto"]}>{blog.description}</Text>
                   <Flex display={["none","flex"]} mt={4}>
                   <Avatar src={blog.avatar} />
                   <Box ml="3">

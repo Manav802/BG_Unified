@@ -13,7 +13,7 @@ import {
     Popover,
     PopoverTrigger,
     PopoverContent,
-    Stack, Link, Heading, Grid, Divider, useDisclosure
+    Stack, Link, Heading, Grid, Divider, useDisclosure, Tabs, TabList, TabPanels, Tab, TabPanel
 } from '@chakra-ui/core'
 import services from "../../database/services"
 import { FaInfoCircle, FaNewspaper, FaCommentAlt, FaBriefcase } from "react-icons/fa"
@@ -43,14 +43,14 @@ function header(props) {
     const onClose2 = () => setIsOpen2(false);
     return (
         <>
-            <CookieNotice></CookieNotice>
+            
             <Box className="headerBox" top="0px" bg="white" boxShadow="lg" zIndex={1000}>
                 <div className="container">
                     <div className="p-3 transition-3 d-flex justify-content-between align-items-center layer-4">
                         <div className="d-flex align-items-center">
                             <Menu></Menu>
                             <Hyperlink href="/"><a>
-                                <Image alt="" src="/assets/logo.png" height="45px" className="d-none d-sm-block mr-3"></Image>
+                                <Image alt="" src="/assets/logo.png" height="40px" className="d-none d-sm-block mr-3"></Image>
                             </a></Hyperlink>
 
                             <Popover onClose={onClose2} onOpen={onOpen2} isOpen={isOpen2} trigger="hover" placement="bottom-start">
@@ -60,45 +60,89 @@ function header(props) {
                                 <PopoverContent _focus={{outline:"none"}} maxW="auto" bg="transperant" borderWidth={0} boxShadow="none" zIndex={4} width="100%" right={0} left={0} pt={6}>
                                     <Container>
                                         <Fade duration={300} distance={"5%"} top>
-                                        <Box rounded={4} boxShadow="xl" bg="white" p={10}>
-                                            <Flex wrap="wrap" px={6}>
-                                                <Box my={4} width={["100%", "100%", "50%", 1/3]}>
-                                                    <Text my={"12px"} fontSize="md" fontWeight="700">IT & Infrastructure Services</Text>
-                                                    <Stack spacing="4px" direction="column">
-                                                    {servicesArray.filter(service => service[1].category === "IT Infrastructural Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" className="link-highlight" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
-                                                    ))}
-                                                    </Stack>
-                                                </Box>
-                                                <Box my={4} width={["100%", "100%", "50%", 1/3]}>
-                                                <Text my={"12px"} fontSize="md" fontWeight="700">Network Services</Text>
-                                                    <Stack spacing="4px" direction="column">
-                                                    {servicesArray.filter(service => service[1].category === "Network Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md"  fontWeight="400" color="primary" className="link-highlight" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
-                                                    ))}
-                                                    </Stack>
-                                                    <Text my={"12px"} fontSize="md" fontWeight="700">Cyber Security Services</Text>
-                                                    <Stack spacing="4px" direction="column">
-                                                    {servicesArray.filter(service => service[1].category === "Cyber Security Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" className="link-highlight" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
-                                                    ))}
-                                                    </Stack>
-                                                </Box>
-                                                <Box my={4}  width={["100%", "100%", "50%", 1/3]}>
-                                                    <Text my={"12px"} fontSize="md" fontWeight="700">Collaborative Services</Text>
-                                                    <Stack spacing="4px" direction="column">
-                                                    {servicesArray.filter(service => service[1].category === "Collaborative Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" className="link-highlight" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
-                                                    ))}
-                                                    </Stack>
-                                                    <Text my={"12px"} fontSize="md" fontWeight="700">Professional Services</Text>
-                                                    <Stack spacing="4px" direction="column">
-                                                    {servicesArray.filter(service => service[1].category === "Professional Services").map(service => (
-                                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link onClick={onClose2} my={1} fontSize="md" fontWeight="400"  color="primary" className="link-highlight" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
-                                                    ))}
-                                                    </Stack>
-                                                </Box>
-                                            </Flex>
+                                        <Box rounded={4} boxShadow="xl" bg="white">
+                                            <Tabs align="center">
+                                                <TabList>
+                                                    <Tab p={6} _selected={{color:"primary.500", borderBottomColor:"primary.500"}}>IT & Infrastructure Services</Tab>
+                                                    <Tab p={6} _selected={{color:"primary.500", borderBottomColor:"primary.500"}}>Network Services</Tab>
+                                                    <Tab p={6} _selected={{color:"primary.500", borderBottomColor:"primary.500"}}>Cyber Security Services</Tab>
+                                                    <Tab p={6} _selected={{color:"primary.500", borderBottomColor:"primary.500"}}>Collaborative Services</Tab>
+                                                    <Tab p={6} _selected={{color:"primary.500", borderBottomColor:"primary.500"}}>Professional Services</Tab>
+                                                </TabList>
+
+                                                <TabPanels>
+                                                    <TabPanel>
+                                                        <Flex wrap="wrap" p={6}>
+                                                        {servicesArray.filter(service => service[1].category === "IT Infrastructural Services").map(service => (
+                                                            <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}>
+                                                                <Link onClick={onClose2} my={1} width="33%" fontSize="md" px={3} fontWeight="600">
+                                                                    <Flex align="center" p={3} className="hover-effect">
+                                                                        <SVG hex={service[1].color} size="24px" src={service[1].icon} />
+                                                                        <Box as="span" ml={3}>{service[1].title}</Box>
+                                                                    </Flex>
+                                                                </Link>
+                                                            </Hyperlink>
+                                                        ))}
+                                                        </Flex>
+                                                    </TabPanel>
+                                                    <TabPanel>
+                                                        <Flex wrap="wrap" p={6}>
+                                                        {servicesArray.filter(service => service[1].category === "Network Services").map(service => (
+                                                            <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}>
+                                                                <Link onClick={onClose2} my={1} width="33%" fontSize="md" px={3} fontWeight="600">
+                                                                    <Flex align="center" p={3} className="hover-effect">
+                                                                        <SVG hex={service[1].color} size="24px" src={service[1].icon} />
+                                                                        <Box as="span" ml={3}>{service[1].title}</Box>
+                                                                    </Flex>
+                                                                </Link>
+                                                            </Hyperlink>
+                                                        ))}
+                                                        </Flex>
+                                                    </TabPanel>
+                                                    <TabPanel>
+                                                        <Flex wrap="wrap" p={6}>
+                                                        {servicesArray.filter(service => service[1].category === "Cyber Security Services").map(service => (
+                                                            <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}>
+                                                                <Link onClick={onClose2} my={1} width="33%" fontSize="md" px={3} fontWeight="600">
+                                                                    <Flex align="center" p={3} className="hover-effect">
+                                                                        <SVG hex={service[1].color} size="24px" src={service[1].icon} />
+                                                                        <Box as="span" ml={3}>{service[1].title}</Box>
+                                                                    </Flex>
+                                                                </Link>
+                                                            </Hyperlink>
+                                                        ))}
+                                                        </Flex>
+                                                    </TabPanel>
+                                                    <TabPanel>
+                                                        <Flex wrap="wrap" p={6}>
+                                                        {servicesArray.filter(service => service[1].category === "Collaborative Services").map(service => (
+                                                            <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}>
+                                                                <Link onClick={onClose2} my={1} width="33%" fontSize="md" px={3} fontWeight="600">
+                                                                    <Flex align="center" p={3} className="hover-effect">
+                                                                        <SVG hex={service[1].color} size="24px" src={service[1].icon} />
+                                                                        <Box as="span" ml={3}>{service[1].title}</Box>
+                                                                    </Flex>
+                                                                </Link>
+                                                            </Hyperlink>
+                                                        ))}
+                                                        </Flex>
+                                                    </TabPanel>
+                                                    <TabPanel>
+                                                        <Flex wrap="wrap" p={6}>
+                                                        {servicesArray.filter(service => service[1].category === "Professional Services").map(service => (
+                                                            <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}>
+                                                                <Link onClick={onClose2} my={1} width="33%" fontSize="md" px={3} fontWeight="600">
+                                                                    <Flex align="center" p={3} className="hover-effect">
+                                                                        <SVG hex={service[1].color} size="24px" src={service[1].icon} />
+                                                                        <Box as="span" ml={3}>{service[1].title}</Box>
+                                                                    </Flex>
+                                                                </Link>
+                                                            </Hyperlink>
+                                                        ))}
+                                                        </Flex>
+                                                    </TabPanel>
+                                                </TabPanels>
+                                            </Tabs>
                                         </Box>
                                         </Fade>
                                     </Container>
@@ -243,130 +287,9 @@ function header(props) {
                     </div>
                 </div>
 
-
-
-                {/* Menu */}
-                <Collapse display={["none", "none", "none", "block"]} isOpen={show === 1}>
-                    <Fade duration={800} distance={"30%"} bottom>
-                        <Container>
-                            <Flex pb={12} wrap="wrap" px={6}>
-                                <Box mb={4} mt={12} width={["100%", "100%", "50%", 1/3]}>
-                                    <Text my={"12px"} fontSize="md" fontWeight="700">IT & Infrastructure Services</Text>
-                                    <Stack spacing="4px" direction="column">
-                                    {servicesArray.filter(service => service[1].category === "IT Infrastructural Services").map(service => (
-                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
-                                    ))}
-                                    </Stack>
-                                </Box>
-                                <Box mb={4} mt={12} width={["100%", "100%", "50%", 1/3]}>
-                                <Text my={"12px"} fontSize="md" fontWeight="700">Network Services</Text>
-                                    <Stack spacing="4px" direction="column">
-                                    {servicesArray.filter(service => service[1].category === "Network Services").map(service => (
-                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
-                                    ))}
-                                    </Stack>
-                                    <Text my={"12px"} fontSize="md" fontWeight="700">Cyber Security Services</Text>
-                                    <Stack spacing="4px" direction="column">
-                                    {servicesArray.filter(service => service[1].category === "Cyber Security Services").map(service => (
-                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
-                                    ))}
-                                    </Stack>
-                                </Box>
-                                <Box mb={4} mt={12} width={["100%", "100%", "50%", 1/3]}>
-                                    <Text my={"12px"} fontSize="md" fontWeight="700">Collaborative Services</Text>
-                                    <Stack spacing="4px" direction="column">
-                                    {servicesArray.filter(service => service[1].category === "Collaborative Services").map(service => (
-                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
-                                    ))}
-                                    </Stack>
-                                    <Text my={"12px"} fontSize="md" fontWeight="700">Development Services</Text>
-                                    <Stack spacing="4px" direction="column">
-                                    {servicesArray.filter(service => service[1].category === "Development Services").map(service => (
-                                        <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}><Link my={1} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>{service[1].title}</Link></Hyperlink>
-                                    ))}
-                                    </Stack>
-                                </Box>
-                            </Flex>
-                        </Container>
-                    </Fade>
-                </Collapse>
-                <Collapse isOpen={show === 2}>
-                    <Fade duration={800} distance={"30%"} bottom>
-                        <Box>
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-lg-3 py-4 pr-5 d-flex flex-column header-list">
-                                        <div className="display6 mt-2 text-primary text-uppercase">
-                                            Company
-                                    </div>
-                                        <div className="NunitoSans-ExtraBold text-secondary mt-2">
-                                            Get the latest resources and updates
-                                            from our company here.
-                                    </div>
-                                    </div>
-                                    <div className="col-lg-3 py-4 d-flex flex-column header-list">
-                                        <Hyperlink href="/about">
-                                            <a className="d-flex link">
-                                                <Box
-                                                    as={FaInfoCircle}
-                                                    size="20px"
-                                                    mr="12px"
-                                                ></Box>
-                                            About Us
-                                        </a>
-                                        </Hyperlink>
-                                        <Hyperlink href="/newsroom">
-                                            <a className="d-flex link">
-                                                <Box
-                                                    as={FaNewspaper}
-                                                    size="20px"
-                                                    mr="12px"
-                                                ></Box>
-                                            Newsroom
-                                        </a>
-                                        </Hyperlink>
-                                        <Hyperlink href="/solutions">
-                                            <a className="d-flex link">
-                                                <Box
-                                                    as={FaBriefcase}
-                                                    size="20px"
-                                                    mr="12px"
-                                                ></Box>
-                                            Our Solutions
-                                        </a>
-                                        </Hyperlink>
-                                        <Hyperlink href="/contact">
-                                            <a className="d-flex link">
-                                                <Box
-                                                    as={FaCommentAlt}
-                                                    size="20px"
-                                                    mr="12px"
-                                                ></Box>
-                                            Contact Us
-                                        </a>
-                                        </Hyperlink>
-                                    </div>
-                                    <div className="col-lg-6 py-4 d-flex flex-column header-list">
-                                        <h5 className="display6">
-                                            What's New
-                                    </h5>
-                                        <WhatsNew
-                                            image={newsroom[0].image}
-                                            heading={newsroom[0].title}
-                                            link={"/newsroom/"+newsroom[0].link}
-                                        />
-                                        <WhatsNew
-                                            image={newsroom[1].image}
-                                            heading={newsroom[1].title}
-                                            link={"/newsroom/"+newsroom[1].link}
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </Box>
-                    </Fade>
-                </Collapse>
+                <CookieNotice></CookieNotice>
             </Box>
+            
             {show ? <div className="overlay" onClick={overlayClick} /> : ""}
         </>
     )

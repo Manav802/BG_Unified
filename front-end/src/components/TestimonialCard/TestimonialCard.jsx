@@ -7,7 +7,7 @@ import Row from "../../pageBuilder/Row";
 
 const Testimonial = (testimonialDetails, imageW = "160px") => {
   return (
-      <Box width="33%" px={1}  my={1}>
+      <Box width={["100%","100%","50%","50%","33%"]} px={1}  my={1}>
            <Box p={6} height="100%" borderWidth={1} rounded={4} >
               <Image src={testimonialDetails.imageUrl} height="80px" maxW={imageW} objectFit="contain"></Image>
               <Text my={8} textAlign="justify" fontWeight={600} lineHeight={1.5}>
@@ -42,6 +42,7 @@ function TestimonialCard({testimonials}) {
             {Testimonial(testimonials[4])}   
             {Testimonial(testimonials[1])}
             {Testimonial(testimonials[3])}
+            {Testimonial(testimonials[8])}
         </Flex>
     </Container>
   );
