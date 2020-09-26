@@ -25,6 +25,8 @@ function Blogs() {
     }
   })[0] || { content: "" }; //Filter and get the current blog object
 
+  const imgalt=blog.imgalt;
+
   return (
     <div className="article">
       <Head>
@@ -35,6 +37,8 @@ function Blogs() {
                 </meta>
                 <meta property="og:title" content={blog.title} key="title" />
                 <meta property="og:description" content={blog.description}></meta>
+                <meta name="keywords" content={blog.tags.toString() || "Newsroom, BGUS"} />
+                <meta name="author" content={blog.by || "BGUS"}></meta>
         <title>{blog.title || ""}</title>
         <link
           rel="shortcut icon"
@@ -46,7 +50,8 @@ function Blogs() {
       
      <Section mb={6} pb={0} mt={4}>
       <Title mb={8} fontSize={["4xl","4xl","5xl"]} textAlign="left">{blog.title}</Title>
-      <Image alt=""          src={blog.image}
+      <Image alt={imgalt || ""}          
+      src={blog.image}
           objectFit="cover"
           rounded={8}
           boxShadow="xl"
