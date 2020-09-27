@@ -128,7 +128,7 @@ export default [
             {
                 width: ["80%", 1/2, 1/3, 1/4],
                 type: "feature",
-                data: {svg: "/assets/images/icons/library/tools/tools.svg", size:"80px", title: "Regular Website Maintainence Plans", titleSize: "md" }
+                data: {svg: "/assets/images/icons/library/tools/tools.svg", size:"80px", title: "Regular Website Maintenance Plans", titleSize: "md" }
             },
             {
                 width: ["80%", 1/2, 1/3, 1/4],
@@ -143,7 +143,7 @@ export default [
             {
                 width: ["80%", 1/2, 1/3, 1/4],
                 type: "feature",
-                data: {svg: "/assets/images/icons/library/home/picture.svg", size:"80px", title: "Ads, Brochures, Posters and much more...", titleSize: "md" }
+                data: {svg: "/assets/images/icons/library/home/picture.svg", size:"80px", title: "Ads, Brochures, Posters, and much more...", titleSize: "md" }
             },
         ],
     }

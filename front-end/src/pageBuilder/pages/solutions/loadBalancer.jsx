@@ -30,7 +30,7 @@ export default [
                  from modern multi-application, multi-device workflows.
                   When traffic is running at normal levels, global 
                   (geographic) load balancers direct traffic to 
-                  dedicated optimized application servers.Rapidly 
+                  dedicated optimized application servers. Rapidly 
                   redirect traffic from a data center suffering from 
                   an outage to an available server. </span>
             }]

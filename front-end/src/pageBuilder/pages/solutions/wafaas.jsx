@@ -12,7 +12,7 @@ export default [
         }]
     },
     {
-        title:"Web Application Firewall:How it works?",
+        title:"Web Application Firewall: How it works?",
        rowDistance: 8,
         body: [{
             width: "100%",

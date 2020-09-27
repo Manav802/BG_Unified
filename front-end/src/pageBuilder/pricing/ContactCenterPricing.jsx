@@ -42,7 +42,7 @@ function ContactCenterPricing(props) {
     "Includes 5 CSQ",
     "Connectivity to end customer is not included in the costs",
     "All Call Recording",
-    "On Demand Call Recording",
+    "On-Demand Call Recording",
     "Fully Managed Service",
   ];
   const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + " " + text : "");
