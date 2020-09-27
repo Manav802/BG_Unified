@@ -4,7 +4,7 @@ export default [
     {   
         title : "Hosting that you want to choose",
         description: <span>Web Hosting as a Service includes 
-        deploying, maintaining, managing and securing your 
+        deploying, maintaining, managing, and securing your 
         website over the world wide web with a unique domain
          name for your website. The main functionality of 
          Hosting is to make your website live to be accessed
@@ -42,7 +42,7 @@ export default [
                 width: ["100%","100%","100%",1/2, 5/12],
                 type: "content",
                 data: [{
-                    title: "Delivering a scalable, reliable and well-managed authoritative Web Hosting Service.",
+                    title: "Delivering a scalable, reliable, and well-managed authoritative Web Hosting Service.",
                     textAlign: "left",
                     fontSize: "lg",
                     titleSize: 32,
@@ -99,7 +99,7 @@ export default [
             data: [{
                 textAlign: "center",
                 fontSize: "xl",
-                text: "We have a ‘can-do’ attitude with an ‘easy to work with’ culture. Our values are based around fresh thinking, delivering on our promises, showing customer respect and making a 100% commitment."
+                text: "We have a ‘can-do’ attitude with an ‘easy to work with’ culture. Our values are based around fresh thinking, delivering on our promises, showing customer respect, and making a 100% commitment."
             }]
         }]
     },

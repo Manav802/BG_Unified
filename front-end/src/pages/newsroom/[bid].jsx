@@ -36,9 +36,7 @@ function Blogs() {
                 <meta name ="description" content = {blog.description}>
                 </meta>
                 <meta property="og:title" content={blog.title} key="title" />
-                <meta property="og:description" content={blog.description}></meta>
-                <meta name="keywords" content={blog.tags.toString() || "Newsroom, BG Unified Solutions"} />
-                <meta name="author" content={blog.by || "BG Unified Solutions"}></meta>
+                <meta property="og:description" content={blog.description} key ="description"></meta>
         <title>{blog.title || ""}</title>
         <link
           rel="shortcut icon"
@@ -50,7 +48,7 @@ function Blogs() {
       
      <Section mb={6} pb={0} mt={4}>
       <Title mb={8} fontSize={["4xl","4xl","5xl"]} textAlign="left">{blog.title}</Title>
-      <Image alt={imgalt || ""}          
+      <Image alt={blog.imgalt}          
       src={blog.image}
           objectFit="cover"
           rounded={8}

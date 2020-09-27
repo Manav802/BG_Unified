@@ -59,8 +59,8 @@ export default [
                     textOpacity: "0.8",
                     size: "96px",
                     image: "/assets/images/icons/theme/cloud-computing.svg",
-                    title: "User Oriented Cloud Platforms",
-                    description: "Solutions for  diverse range of platforms, as and what suits you the most!",
+                    title: "User-Oriented Cloud Platforms",
+                    description: "Solutions for a diverse range of platforms, as and what suits you the most!",
                     align: "center",
                 }
             },
@@ -86,7 +86,7 @@ export default [
                     size: "96px",
                     image: "/assets/images/icons/color/pie-chart.svg",
                     title: "Monitor on-the-go",
-                    description: "Maintain, monitor and manage your application, anytime, anywhere!",
+                    description: "Maintain, monitor, and manage your application, anytime, anywhere!",
                     align: "center",
                 }
             },

@@ -80,7 +80,7 @@ export default [
                     image: "/assets/images/icons/color/turn.svg",
                     title: "Low Turn-Around Time",
                     align: "left",
-                    description: "We plan, design, start, and deliver without wasting any single second. Delivering the results before the deadlines, always."
+                    description: "We plan, design, start and deliver without wasting any single second. Delivering the results before the deadlines, always."
                     }
             },
             {
@@ -100,7 +100,7 @@ export default [
         ]
     },
     {
-        title:"Application built on the Platform of your choice, maintained and monitored in real-time.",
+        title:"An application built on the Platform of your choice is maintained and monitored in real-time.",
         body: [
             {
                 type: "image&text",
@@ -115,7 +115,7 @@ export default [
                 type: "image&text",
                 data: {
                     title: "Client Specific",
-                    description: "Highly talented team of professionals and technology experts, to build customized solutions as per the client’s needs. Customer satisfaction is the prime motto, and we ensure to deliver every requirement expected.",
+                    description: "A highly talented team of professionals and technology experts, to build customized solutions as per the client’s needs. Customer satisfaction is the prime motto, and we ensure to deliver every requirement expected.",
                     image: "/assets/images/illustrations/ClientSpecific_AppDev.svg",
                     flexDirection: ["column", "column", "row-reverse"],
                 }
@@ -124,7 +124,7 @@ export default [
                 type: "image&text",
                 data: {
                     title: "Flexibility and Scalability",
-                    description: "Digital transformation, App modernization and up-gradation, and Application Integration Services. Agile software development model followed to provide better results.",
+                    description: "Digital transformation, App modernization and up-gradation, and Application Integration Services. The agile software development model is followed to provide better results.",
                     image: "/assets/images/illustrations/FlexibilityAndScalabilty_AppDev.svg",
                     flexDirection: ["column", "column", "row"],
                 }
