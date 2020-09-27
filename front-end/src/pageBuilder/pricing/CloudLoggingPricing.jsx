@@ -31,7 +31,8 @@ function CloudLoggingPricing(props) {
                         icon="/assets/images/icons/theme/stack.svg"
                         featureList={[
                             "Included 5G Logs per day",
-                            "Portal access will be provided.",
+                            "Portal access provided.",
+                            "Troubleshooting",
                             "Fully Managed Service",
                         ]}
                     >
@@ -91,7 +92,8 @@ function CloudLoggingPricing(props) {
                         icon="/assets/images/icons/theme/stack.svg"
                         featureList={[
                             "Included 5G Logs per day",
-                            "Portal access will be provided.",
+                            "Portal access provided.",
+                            "Troubleshooting",
                             "Fully Managed Service",
                         ]}
                     >
@@ -151,7 +153,8 @@ function CloudLoggingPricing(props) {
                         icon="/assets/images/icons/theme/stack.svg"
                         featureList={[
                             "Included 5G Logs per day",
-                            "Portal access will be provided.",
+                            "Portal access provided.",
+                            "Troubleshooting",
                             "Fully Managed Service",
                         ]}
                     >

@@ -112,10 +112,10 @@ class Landing extends Component {
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
           <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-          <title>BG Unified Solutions</title>
+          <title>BG Unified Solutions - IT & Infrastructure, Network, Cyber Security, Collaborative and Professional Services </title>
           <meta name ="description" content = "IT solutions and services. Australia's No. 1 IT service provider. Secured infrastructure with telco vendors. Backup and Recovery. Silver-Peak and Cisco. Data Center Locations. Affordable and secure. Load Balancing, DNS and Web Hosting. SD-WAN optimization, managed firewall, proxy, WAF">
           </meta>
-          <meta property="og:title" content="BG Unified Solutions" key="title" />
+          <meta property="og:title" content="BG Unified Solutions - IT & Infrastructure, Network, Cyber Security, Collaborative and Professional Services " key="title" />
           <meta property="og:description" content="IT solutions and services. Australia's No. 1 IT service provider. Secured infrastructure with telco vendors. Backup and Recovery. Silver-Peak and Cisco. Data Center Locations. Affordable and secure. Load Balancing, DNS and Web Hosting. SD-WAN optimization, managed firewall, proxy, WAF"/>
         </Head>
         <Swiper></Swiper>
@@ -312,7 +312,7 @@ class Landing extends Component {
                 <Box px={2} width={["100%","100%",1/2]}>
                     <Title mt={4} textAlign="left" fontSize="40px">Our Goals + Our Approach + Our Results  = Our Success Story</Title>
                     <Text mt={4} fontSize="20px" opacity={.7}>
-                        Our values are based around fresh ideas, delivering as promised, showing our customer’s respect, and being 100% committed. We focus on being the trusted and reliable partner for every business that we associate with, accounting for our enthusiasm and professionalism
+                        We understand completely, the well defined goals and process that a client has, and tend to achieve them with maximum utiliaztion and commitment. We focus on being the trusted and reliable partner for every business that we associate with, accounting for our enthusiasm and professionalism
                     </Text>
                     <Link href="/features">
                         <a className="link">

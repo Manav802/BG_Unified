@@ -12,11 +12,11 @@ function features() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-                <meta name ="description" content = "Features like redundant solutions, connectivity with highly secured infrastructure with multiple telco vendors. Fast, friendly and delivery oriented web services, driven by our commitment of customer satisfaction.">
+                <meta name ="description" content = "Desktop virtualization, and server management, connectivity with highly secured infrastructure with multiple telco vendors. 10000 Cores CPU, 10TB RAM, Huawei 10G core switching. SourceFire, Cisco / Palo Alto / Checkpoint / Fortinet Firewall, DDOS Protection.">
                 </meta>
-                <meta property="og:title" content="Our Features - BG Unified" key="title" />
-                <meta property="og:description" content="Features like redundant solutions, connectivity with highly secured infrastructure with multiple telco vendors. Fast, friendly and delivery oriented web services, driven by our commitment of customer satisfaction."></meta>
-        <title>Our Features - BG Unified</title>
+                <meta property="og:title" content="Our Features - BG Unified Solutions" key="title" />
+                <meta property="og:description" content="Desktop virtualization, and server management, connectivity with highly secured infrastructure with multiple telco vendors.10000 Cores CPU, 10TB RAM, Huawei 10G core switching. SourceFire, Cisco / Palo Alto / Checkpoint / Fortinet Firewall, DDOS Protection."></meta>
+        <title>Our Features - BG Unified Solutions</title>
       </Head>
       <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
           <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.webp"></Image>
