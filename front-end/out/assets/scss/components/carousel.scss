@@ -1,0 +1,130 @@
+.carousel{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+    &__prev, &__next{
+      cursor: pointer;
+      position: absolute;
+      background: rgba(0,0,0,.6);
+      font-size: 32px;
+      color: white;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+      top: 50%;
+      margin-top: -30px;
+      z-index: 1000;
+    }
+    
+    &__prev{
+      left: 40px;
+    }
+    
+    &__next{
+      right: 40px;
+    }
+    
+    &__slide{
+      width: 100%;
+      height: 100%;
+      
+      div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+      }
+    }
+  }
+  
+  .translate-enter {
+    transform: translateX(100vw);
+  }
+  
+  .translate-enter.translate-enter-active {
+    transform: translateX(0);
+    transition: all 500ms ease-in-out;
+  }
+  
+  .translate-leave {
+      transform: translateX(0);
+  }
+  
+  .translate-leave.translate-leave-active {
+      transform: translateX(-100vw);
+    transition: all 500ms ease-in-out;
+  }
+  
+  .scale-appear, .blur-appear, .rotate-appear, .translate-appear{
+    filter: grayscale(100%);
+    transition: all 1000ms ease-in-out;
+  }
+  
+  .scale-appear.scale-appear-active, .blur-appear.blur-appear-active, .rotate-appear.rotate-appear-active, .translate-appear.translate-appear-active{
+    filter: grayscale(0);
+  }
+  .scale-enter {
+    transform: scale(1);
+  }
+  
+  .scale-enter.scale-enter-active {
+    transform: scale(1);
+    transition: all 500ms ease-in-out;
+  }
+  
+  .scale-leave {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .scale-leave.scale-leave-active {
+      transform: scale(1.2);
+    opacity: .01;
+    transition: all 500ms ease-in-out;
+  }
+  
+  .blur-enter {
+    transform: scale(1);
+  }
+  
+  .blur-enter.blur-enter-active {
+    transform: scale(1);
+    transition: all 500ms ease-in-out;
+  }
+  
+  .blur-leave {
+      transform: scale(1);
+    opacity: 1;
+  }
+  
+  .blur-leave.blur-leave-active {
+    filter: blur(40px);
+    opacity: .01;
+    transition: all 500ms ease-in-out;
+  }
+  
+  .rotate-enter {
+    filter: hue-rotate(-180deg);
+    opacity: .01;
+  }
+  
+  .rotate-enter.rotate-enter-active {
+      filter: hue-rotate(0deg);
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+  }
+  
+  .rotate-leave {
+        filter: hue-rotate(0deg);
+    opacity: 1;
+  }
+  
+  .rotate-leave.rotate-leave-active {
+    filter: hue-rotate(180deg);
+    opacity: .01;
+    transition: all 500ms ease-in-out;
+  }

@@ -1,10 +1,14 @@
 const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
+const optimizedImages = require('@mrroll/next-optimized-images');
 
 module.exports = withPlugins([
   [optimizedImages, {
     mozjpeg: {
-      quality: 80,
+      quality: .2,
     },
+   webp:{
+     preset: 'default',
+     quality: .2,
+}
   }],
 ]);
