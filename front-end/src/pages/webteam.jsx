@@ -21,7 +21,7 @@ function webteam(props) {
     return (
         <>
             <Head>
-                <title>The team behind the web - BG Unified</title>
+                <title>The team behind the web - BG Unified Solutions</title>
             </Head>
             <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
                 <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.webp"></Image>
