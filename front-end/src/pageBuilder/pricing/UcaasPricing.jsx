@@ -255,6 +255,10 @@ function UcaasPricing(props) {
                                                             "Include Voicemail",
                                                             "Include Presence",
                                                             "Include Voicemail to Email*",
+                                                            "Complete Mobility",
+                                                            "Cost-Effective",
+                                                            "Flexibly Deployed",
+                                                            "Highly Scalable",
                                                             
                                                         ]}
                                                     >
@@ -285,6 +289,10 @@ function UcaasPricing(props) {
                                                             "Include Voicemail",
                                                             "Include Presence",
                                                             "Include Voicemail to Email*",
+                                                            "Complete Mobility",
+                                                            "Cost-Effective",
+                                                            "Flexibly Deployed",
+                                                            "Highly Scalable",
                                                             
                                                         ]}
                                                     >
@@ -316,6 +324,10 @@ function UcaasPricing(props) {
                                                             "Include Voicemail",
                                                             "Include Presence",
                                                             "Include Voicemail to Email*",
+                                                            "Complete Mobility",
+                                                            "Cost-Effective",
+                                                            "Flexibly Deployed",
+                                                            "Highly Scalable",
                                                             
                                                         ]}
                                                     >
@@ -356,6 +368,8 @@ function UcaasPricing(props) {
                                                             "Include Voicemail",
                                                             "Include Presence",
                                                             "Include Voicemail to Email*",
+                                                            "Scalable",
+
                                                             
                                                         ]}
                                                     >
@@ -386,7 +400,7 @@ function UcaasPricing(props) {
                                                             "Include Voicemail",
                                                             "Include Presence",
                                                             "Include Voicemail to Email*",
-                                                            
+                                                            "Scalable",
                                                         ]}
                                                     >
                                                     <a href="#collapse-1" className="no-red">
@@ -417,7 +431,7 @@ function UcaasPricing(props) {
                                                             "Include Voicemail",
                                                             "Include Presence",
                                                             "Include Voicemail to Email*",
-                                                            
+                                                            "Scalable",
                                                         ]}
                                                     >
                                                     <a href="#collapse-1" className="no-red">
