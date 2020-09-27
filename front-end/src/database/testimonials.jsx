@@ -1,4 +1,4 @@
-export const TESTIMONIALS = [
+export default [
     {
         id: 1,
         imageUrl: "/assets/images/brands/cisco.png",

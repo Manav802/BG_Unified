@@ -41,7 +41,7 @@ export default [
     },
     {
         name: "Micro Focus",
-        logo: "/assets/images/brands/microfocus.png",
+        logo: "/assets/images/brands/microfocus.svg",
         description: "Micro Focus is one of the world’s largest enterprise software providers, delivering the mission-critical software that keeps the digital world running. We combine pragmatism, discipline, and customer-centric innovation to deliver trusted, proven solutions that customers need in order to succeed in today’s rapidly evolving marketplace."
     },
     {

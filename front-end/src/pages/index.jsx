@@ -5,7 +5,7 @@ import { Image, Button, Heading,  Box,  Flex, Icon, Text, Grid, Avatar  } from "
 import FeatureCard from "../components/cards/FeatureCard";
 import CaseStudy from "../components/case_study/CaseStudy";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
-import { TESTIMONIALS } from "../database/testimonials";
+import TESTIMONIALS from "../database/testimonials";
 import newsroom from "../database/newsroom"
 import Fade from "react-reveal/Fade";
 import Link from "next/link";

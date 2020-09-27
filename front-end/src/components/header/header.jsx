@@ -220,7 +220,7 @@ function header(props) {
                                                         </a></Hyperlink> 
                                                     </Box>
                                                     <Box onClick={onClose} px={3} my={3} width="50%">
-                                                        <Hyperlink href="/testimonials"><a className="link">
+                                                        <Hyperlink href="/stories"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Customer Stories</Heading>
                                                             <Text fontSize="sm" fontWeight="500" opacity=".7">People say a lot</Text>
                                                         </a></Hyperlink> 
