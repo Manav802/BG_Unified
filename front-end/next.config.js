@@ -9,6 +9,11 @@ module.exports = withPlugins([
    webp:{
      preset: 'default',
      quality: .2,
-}
+  },
+  pngquant:{
+    speed: 3,
+      strip: true,
+      verbose: true,
+  },
   }],
 ]);

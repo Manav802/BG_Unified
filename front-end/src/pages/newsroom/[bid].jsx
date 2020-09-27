@@ -48,15 +48,23 @@ function Blogs() {
       
      <Section mb={6} pb={0} mt={4}>
       <Title mb={8} fontSize={["4xl","4xl","5xl"]} textAlign="left">{blog.title}</Title>
-      <Image alt={blog.imgalt}          
-      src={blog.image}
+      {/* <Image alt={blog.imgalt}          
+          src={blog.image}
           objectFit="cover"
           rounded={8}
           boxShadow="xl"
           width="100%"
           height="320px"
-        ></Image>
-        
+        ></Image> */}
+        <picture>
+            <source srcSet={require(`../../../public${blog.image}?webp`)} type="image/webp" />
+            <source srcSet={require(`../../../public${blog.image}`)} type="image/png" />
+            <img
+            style={{borderRadius:"1rem", width:"100%", height:"320px", objectFit:"cover"}}
+            src={require(`../../../public${blog.image}`)}
+            alt={blog.imgalt}
+            />
+        </picture>
      </Section>
      <Section  mt={6} py={0} >
         <Box width={["100%","100%","72%"]}>
