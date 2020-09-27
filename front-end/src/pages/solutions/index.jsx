@@ -61,7 +61,7 @@ function OurSolutions(){
           <meta property="og:description" content="Infrastructure, Contact Center, UCaaS, Service Desk, App Development, Web Development. Secured infrastructure with telco vendors. Backup and Recovery. Silver-Peak and Cisco. Data Center Locations. Wireless, CEX, CLoud Logging. Load Balancing, DNS and Web Hosting. SD-WAN optimization, managed firewall, proxy, WAF"/>
           </Head>
           <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
-            <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.webp"></Image>
+            <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
             <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">What we deliver</Heading>
             <Title zIndex="100" fontSize={["44px","64px"]}>Our Solutions</Title>
             <Text zIndex="100" fontSize="xl" mt={2}>Choose your requirments. We provide you with the solution, needed for your Enterprise</Text>

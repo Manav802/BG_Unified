@@ -46,7 +46,7 @@ const news = (blog) => {
 const sliderInfo = [
   {
     title: <span>Welcome to BG Unified Solutions</span>,
-    imgSrc: "/assets/images/backgrounds/globe.webp",
+    imgSrc: "/assets/images/backgrounds/globe.jpg",
     subTitle: "Your go-to partner for all IT solutions and services that deliver value and enable solid corporate growth.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
@@ -55,7 +55,7 @@ const sliderInfo = [
   },
   {
     title: "Protecting Online Presence of your Business",
-    imgSrc: "/assets/images/backgrounds/cyber_security.webp",
+    imgSrc: "/assets/images/backgrounds/cyber_security.jpg",
     subTitle: "Fast, friendly and delivery oriented web services, driven by our commitment of customer satisfaction.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
@@ -64,7 +64,7 @@ const sliderInfo = [
   },
   {
     title: "Geographical Redundant Infrastructre",
-    imgSrc: "/assets/images/backgrounds/map.webp",
+    imgSrc: "/assets/images/backgrounds/map.jpg",
     subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
@@ -237,7 +237,7 @@ class Landing extends Component {
                 </Flex>
             </Row>       
         </Section>
-        {/* <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.webp')" blend="multiply" py={20}>
+        {/* <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.jpg')" blend="multiply" py={20}>
       
               <div className="row layer-1">
                 <Fade duration={500} cascade distance={"30%"} bottom>
