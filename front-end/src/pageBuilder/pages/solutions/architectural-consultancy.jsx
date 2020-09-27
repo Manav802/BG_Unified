@@ -26,8 +26,8 @@ export default [
                 is accessing the needs of the users, about their organization, and 
                 providing them with the best solutions tailored according to their requirements. 
                 Monitoring and measuring various aspects of the network environment 
-                so that overall performance can be maintained and optimised.
-                Knowing what’s best for you is the primary criteria for you to optimize 
+                so that overall performance can be maintained and optimized.
+                Knowing what’s best for you is the primary criterion  for you to optimize 
                 your resources and use them to the fullest.
                 </span>
             }]
@@ -57,7 +57,7 @@ export default [
         {
             width: [1/2,1/3,1/3,1/2,1/3],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/chat-smile.svg",mt: 4, title: "Customer Centric"}
+            data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/chat-smile.svg",mt: 4, title: "Customer-Centric"}
         },
         {
             width: [1/2,1/3,1/3,1/2,1/3],
@@ -88,7 +88,7 @@ export default [
                 fontSize: "lg",
                 content: [{
                     title: "Performance Optimized",
-                    description: "Monitors and measures various aspects of the network environment so that overall performance can be maintained and optimised.",
+                    description: "Monitors and measures various aspects of the network environment so that overall performance can be maintained and optimized.",
                     image: "/assets/images/illustrations/analytics.svg"
                 },
                 {

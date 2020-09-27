@@ -28,7 +28,7 @@ export default [
                     experts, the experience we’ve gained, ensures you to provide customizable
                     security to your network, prevent any security breach, secure data
                     flowing through your network. We offer you solutions that especially
-                    suit your business model, whether small, medium or large, we’ve got it covered.
+                    suit your business model, whether small, medium, or large, we’ve got it covered.
                 </span>
                 }]
             }]
@@ -126,7 +126,7 @@ export default [
                 fontSize: "lg",
                 content: [{
                     title: "Platform Diversity",
-                    description: "On-premise or cloud-based, that helps secure your IT environment quickly.The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.",
+                    description: "On-premise or cloud-based, that helps secure your IT environment quickly. The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.",
                     image: "/assets/images/illustrations/diversity.svg"
                 },
                 {

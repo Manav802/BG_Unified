@@ -82,7 +82,7 @@ function WafPricing(props) {
                         </div>
                         <div className="col-lg-10 mt-4">
                                 <div className="h6">
-                                                    Bandwidth per Application (in mbps)
+                                                    Bandwidth per Application (in Mbps)
                                                 </div>
                             <Slider color="primary" my={2}  min={1} max={80} value={value} onChange={handleChange}>
                                 <SliderTrack h="16px" borderRadius="8px" />
@@ -129,7 +129,7 @@ function WafPricing(props) {
                         </div>
 
                         <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                            <PricingQuote serviceName="WAF As A Service" serviceDescription={`${type} ${verifyNotEmpty(applications, "Application")} ${verifyNotEmpty(value*5,"mbps Bandwidth")} ${handleBot(bot)} ${handleRedundancy(redundancy)}`} button ></PricingQuote>
+                            <PricingQuote serviceName="WAF As A Service" serviceDescription={`${type} ${verifyNotEmpty(applications, "Application")} ${verifyNotEmpty(value*5,"Mbps Bandwidth")} ${handleBot(bot)} ${handleRedundancy(redundancy)}`} button ></PricingQuote>
                         </div>
                     </div>
                 </div>

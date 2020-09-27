@@ -40,8 +40,8 @@ const CustomRadio = React.forwardRef((props, ref) => {
 function ContactCenterPricing(props) {
   const features = [
     "Includes 5 CSQ",
-    "Connectivity to end customer is not included in the costs",
-    "All Call Recording",
+    "Connectivity to end customer*",
+    "Complete Call Recording",
     "On Demand Call Recording",
     "Fully Managed Service",
   ];

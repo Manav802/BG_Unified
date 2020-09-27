@@ -9,7 +9,7 @@ const services = {
         icon: "/assets/images/icons/monotone/AppDev.svg",
         color: "#ED1C24",
         tags: ["application", "app", "dev", "development", "scalability", "platform", "independence", "client", "flexibility"],
-        description: "BG Unified Solutions provides services in the area of Web, Mobile and Enterprise Application Development. Our team....",
+        description: "BG Unified Solutions provides services in the area of Web, Mobile, and Enterprise Application Development. Our team....",
         illustration: "",
         relatedService: ["Web Development As A Service", "Contact Center As A Service", "Architectural Consultancy As A Service"],
         conclusion: "User-interactivity, responsiveness, user-friendly interfaces kept into consideration.",
@@ -27,7 +27,7 @@ const services = {
         description: "BG Unified Solutions has a team of practicing multi-disciplinary architects to baseline current architecture and its.... ",
         illustration: "",
         relatedService: ["Contact Center As A Service", "Application Development As A Service", "Service Desk As A Service"],
-        conclusion: "Achieve Higher Business Efficiency through increased agility, cost containment and lowered risk.",
+        conclusion: "Achieve Higher Business Efficiency through increased agility, cost containment, and lowered risk.",
         sections: sections.architecture
     },
     "backup": {
@@ -212,7 +212,7 @@ const services = {
         icon: "/assets/images/icons/monotone/proxy.svg",
         color: "#451F55",
         tags: ["proxy", "servers", "low-latency", "services"],
-        description: "Just redirect your traffic to our Proxy Service either by DNS or other custom solution to our public Proxy....",
+        description: "Just redirect your traffic to our Proxy Service either by DNS or other custom solutions to our public Proxy....",
         illustration: "",
         relatedService: ["Firewall As A Service", "WAF As A Service", "SOC As A Service"],
         conclusion: "Enhanced proxy service by isolating the private network from the web",
@@ -269,7 +269,7 @@ const services = {
         icon: "/assets/images/icons/monotone/security.svg",
         color: "#0091AD",
         tags: ["storage", "blocks", "consolidation", "virtualization", "backup", "recovery", "archive"],
-        description: "BG Unified Solutions' Security Operations Center As A Service tends to provide you with reliable and flexible cyber security....",
+        description: "BG Unified Solutions' Security Operations Center As A Service tends to provide you with reliable and flexible cybersecurity....",
         illustration: "",
         relatedService: ["Proxy As A Service", "Firewall As A Service", "WAF As A Service"],
         conclusion: "Win the battle against Cyber Threats with our SOCaaS",
@@ -287,7 +287,7 @@ const services = {
         description: "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring....",
         illustration: "",
         relatedService: ["Contact Center As A Service", "Infrastructure As A Service", "SIP As A Service"],
-        conclusion: "We tailor a solution with best products and technologies from top firms with expert service.",
+        conclusion: "We tailor a solution with the best products and technologies from top firms with expert service.",
         sections: sections.ucaas
     },
     "hosting": {
@@ -343,7 +343,7 @@ const services = {
         description: " Protect your Web Application with our Web Application Firewall Services, protecting your enterprise online with full durability....",
         illustration: "",
         relatedService: ["Backup As A Service", "Platform As A Service", "Infrastructure As A Service"],
-        conclusion: "Maximized Utilization, highly scalable powerful resource for high-end workloads!!",
+        conclusion: "Maximized Utilization, a highly scalable powerful resource for high-end workloads!!",
         sections: sections.gpu
     },
     "webdev": {

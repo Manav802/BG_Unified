@@ -9,7 +9,7 @@ export default [
             data: [{
                 text: <span>
                 Proxy as a Service refers to proxy servers that act as intermediate nodes or connecting points between an end-user and the internet.
-                Proxy as a Service allows you to connect to a different server and provides you with access to web pages, files etc. 
+                Proxy as a Service allows you to connect to a different server and provides you with access to web pages, files, etc. 
                 Proxy servers facilitate administrative, authoritative, security issues in the enterprise world.
                 </span>,
                 fontSize: ["lg","lg","xl"],
@@ -49,7 +49,7 @@ export default [
                 {
                     width: [1 / 2, 1 / 3, 1 / 3, 1 / 2, 1 / 3],
                     type: "feature",
-                    data: { align: "center", titleSize: "md", iconColor: "primary.500", svg: "/assets/images/icons/library/home/key.svg", mt: 4, title: "Authorotative" }
+                    data: { align: "center", titleSize: "md", iconColor: "primary.500", svg: "/assets/images/icons/library/home/key.svg", mt: 4, title: "Authoritative" }
                 },
                 {
                     width: [1 / 2, 1 / 3, 1 / 3, 1 / 2, 1 / 3],

@@ -73,8 +73,8 @@ const blogs = [
         },
         {
             index: 6,
-            title: "Network Infrastructure Redesign",
-            description: "The primary purpose of the project is to redesign the network to achieve the following design criteria...",
+            title: "Network Infrastructure Redesign | BG Unified Solutions",
+            description: "The primary purpose of the project is to redesign the network to achieve the following design criteria: ....",
             date: "2019",
             by: "Saurabh Sareen",
             avatar: "/assets/images/team/saurabh.jpg",
