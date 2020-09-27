@@ -152,7 +152,7 @@ function header(props) {
                                 <PopoverTrigger>
                                     <Link display={["none", "none","none","flex"]} mx={3} fontWeight="500" mx={3} fontSize="md"  color="primary" _hover={{color:"#ff0000", textDecoration:"none"}}>Company</Link>
                                 </PopoverTrigger>
-                                <PopoverContent _focus={{outline:"none"}} maxW="auto" bg="transperant" borderWidth={0} boxShadow="none" zIndex={4} width="100%" right={0} left={0}  pt={6} >
+                                <PopoverContent _focus={{outline:"none"}} maxW="auto" bg="transperant" width={["100%", "100%", "720px", "960px", "1140px"]} borderWidth={0} boxShadow="none" zIndex={4} className="header-dropdown" pos="fixed" pt={6} >
                                     <Container>
                                     <Fade duration={300} distance="5%" top>
                                         <Box rounded={4} boxShadow="xl" bg="white" overflow="hidden">
