@@ -9,6 +9,7 @@ import Fade from 'react-reveal/Fade';
 import Section from "../pageBuilder/Section";
 import Title from "../pageBuilder/Title";
 import MyCount from "../components/Countup/main";
+import Link from "next/link";
 
 const timeline = {
   2013: "Founded BG Unified Solutions Pty Ltd, a team providing IT solutions to the clients focusing on customer satisfaction and deliverability.",
@@ -125,7 +126,7 @@ class about extends Component {
                 </div>
               </div>
             </div>
-          <div className="section">
+          <div id="team" className="section">
             <div className="container">
               <div className="p-3 text-center d-flex flex-column">
                 <span className="h6 text-primary">TEAM</span>
@@ -155,8 +156,7 @@ class about extends Component {
                   </Team>
                 </div>
                 <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-end py-3">
-                  {/* <span className="display6 text-dark">Interested in joining our team?</span> */}
-                  {/* <a className="text-primary d-flex my-2" href="">View Career Opportunities <Box as={FaArrowRight} h="16px" ml="12px" my="4px"></Box></a> */}
+                  <Link href="/webteam"><a className="text-primary  Nexa-Bold d-flex my-2" href="">Meet the Website IT Team<Box as={FaArrowRight} h="16px" ml="12px" my="4px"></Box></a></Link>
                 </div>
                 <div className="py-5" style={{ paddingTop: "100px" }}></div>
               </div>

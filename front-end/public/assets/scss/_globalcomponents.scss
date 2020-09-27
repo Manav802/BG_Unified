@@ -1,4 +1,5 @@
 $container-width: 570px;
+
 html{
     scroll-behavior: smooth;
 }
@@ -63,6 +64,10 @@ button{
 .slider-offset{
     height: 100%;
     width: calc(50vw - 600px);
+}
+.header-dropdown{
+    left: 50% !important;
+    transform: translateX(-50%) translateY(64px) !important;
 }
 
 .bg-dark{

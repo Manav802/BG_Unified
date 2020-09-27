@@ -341,7 +341,7 @@ class Landing extends Component {
                 </div>
                 <TestimonialCard testimonials={TESTIMONIALS} />
                 <Box px={6} mt={16}>
-                  <a><Text color="primary.500" mt={2} fontFamily="Nexa bold" fontSize="xl">Read Customer Stories</Text></a>
+                  <Link href="/stories"><a><Text color="primary.500" mt={2} fontFamily="Nexa bold" fontSize="xl">Read Customer Stories</Text></a></Link>
                 </Box>
                 <Box mt="-3%"width="100%" position="absolute" left={0} top="0px">
                     <SVG size="16%" src="https://image.flaticon.com/icons/svg/102/102571.svg" color="gray.200" ></SVG> 
