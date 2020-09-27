@@ -29,7 +29,7 @@ function AccordionWithImage({content, ...props}) {
             <Box display={["none", "none", "block"]} p={6}>
             {content && content.map((data, index) => {
                 if(data.image) return (<>
-                    {current === index &&  <Image alt={data.title} h="280px" m="auto" src={require(`../../../public${data.image}`)}></Image>}
+                    {current === index &&  <Image alt={data.title} h="280px" m="auto" src={data.image}></Image>}
                 </>)   
             })}
             </Box>
