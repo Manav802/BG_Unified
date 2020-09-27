@@ -22,7 +22,7 @@ class Contact extends Component {
             <title>Contact us - BG Unified Solutions</title>
           </Head>
           <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} pb={4} pt={[16, 32]} my={0}>
-            <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.webp"></Image>
+            <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
             <Title zIndex="100" fontSize={["44px","64px"]}>Contact Us</Title>
             <Text zIndex="100" fontSize="xl" mt={2}>Have a doubt? Want to know more? Let's Connect!</Text>
             <Row mt={16} mb={4}>
@@ -57,7 +57,7 @@ class Contact extends Component {
             
         </Section>
         <Section py={0} my={0}>
-        <Image alt="" src="/assets/images/backgrounds/call_us.webp" height="316px" width="100%" objectFit="cover" rounded={[0,0,0, 8]} mt={[0,0,0, 8]}></Image>
+        <Image alt="" src="/assets/images/backgrounds/call_us.jpg" height="316px" width="100%" objectFit="cover" rounded={[0,0,0, 8]} mt={[0,0,0, 8]}></Image>
         </Section>
         <Section mb={0} mt={[0,0,0, "-128px"]} py={0} containerWidth={["100%", "100%", "640px", "720px"]}>
           <Box bg={["#ffffff00","#ffffff00","#ffffff00","white"]} px={8} py={16} mb={[0,0,0,24]} boxShadow={[0,0,0,"xl"]} textAlign="center" rounded={12}>

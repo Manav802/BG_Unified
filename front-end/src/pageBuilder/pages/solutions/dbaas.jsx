@@ -32,7 +32,7 @@ export default [
                 type: "imageGroup",
                 my:[0,2],
                 data: {
-                    images: ["/assets/images/services/dbaas.webp"],
+                    images: ["/assets/images/services/dbaas.jpg"],
                     borderRadius: 8,
                     width: ['100%',"100%","90%"],
                     height: "300px",
