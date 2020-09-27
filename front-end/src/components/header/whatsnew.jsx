@@ -5,6 +5,7 @@ import Link from "next/link";
 function WhatsNew(props) {
   return (
     <Flex
+      onClick={props.click}
       p={3}
       my={1}
       align="center"

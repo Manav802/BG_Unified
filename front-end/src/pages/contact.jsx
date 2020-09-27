@@ -32,7 +32,7 @@ class Contact extends Component {
                   <Text fontWeight="bold">
                     Call Us
                   </Text>
-                  <Heading size={["sm", "md","md", "lg"]}>1300 00 BGUS</Heading>
+                  <a href="tel::1300002487"><Text fontSize={["sm", "md","md", "lg"]}>1300 00 BGUS</Text></a>
                 </Box>
               </Flex>
               <Flex m={[4,0]} width={["100%","33.33%"]} align="center" direction={["row","column"]}>
@@ -41,7 +41,7 @@ class Contact extends Component {
                   <Text fontWeight="bold">
                     Email
                   </Text>
-                  <Heading size={["sm", "md","md", "lg"]}>info@bgunifiedsolutions.net</Heading>
+                  <a href="mailto::info@bgunifiedsolutions.net"><Text fontSize={["sm", "md","md", "lg"]}>info@bgunifiedsolutions.net</Text></a>
                 </Box>
               </Flex>
               <Flex m={[4,0]} width={["100%","33.33%"]} align="center" direction={["row","column"]}>
@@ -50,7 +50,7 @@ class Contact extends Component {
                   <Text fontWeight="bold">
                     Have a chat!
                   </Text>
-                  <Heading size={["sm", "md","md", "lg"]}>24/7 Chat Support</Heading>
+                  <Text fontSize={["sm", "md","md", "lg"]}>24/7 Chat Support</Text>
                 </Box>
               </Flex>
             </Row> 

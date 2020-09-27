@@ -1,66 +1,52 @@
 import React, { Component } from "react";
-import Slider from "react-flickity-component";
 // import Slider from '../ImageSlider/Slider'
-import { Box, Image, Avatar, Heading, AvatarBadge, Flex } from "@chakra-ui/core";
+import { Box, Image, Avatar, Heading,Text, AvatarBadge, Flex, Divider } from "@chakra-ui/core";
 import Container from "../../pageBuilder/Container";
+import Row from "../../pageBuilder/Row";
 
-class Testimonial extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    const TestimonialVariable = this.props.testimonialDetails.map(
-      (testimonialDetails) => {
-        return (
-          <div key={testimonialDetails.id} className="w-100">
-           
-           <Box
-              className="p-4"
-            >
-              <Container>
-                <Flex justify="center" my={8}>
-                  <Image alt="" src={testimonialDetails.imageUrl} height="64px" />
-                </Flex>
-                <Heading textAlign="center" mt={4} size="lg" fontWeight={600} lineHeight={1.5}>
-                  {testimonialDetails.paragraph}
-                </Heading>
 
-                <Heading
-                  size="md"
-                  mt={8}
-                  fontWeight={800}
-                  color="primary.500"
-                  textAlign="center"
-                >
-                  {testimonialDetails.author}
-                </Heading>
+const Testimonial = (testimonialDetails, imageW = "160px") => {
+  return (
+      <Box width={["100%","100%","50%","50%","33%"]} px={1}  my={1}>
+           <Box p={6} height="100%" borderWidth={1} rounded={4} >
+              <Image src={testimonialDetails.imageUrl} height="80px" maxW={imageW} objectFit="contain"></Image>
+              <Text my={8} textAlign="justify" fontWeight={600} lineHeight={1.5}>
+                {testimonialDetails.paragraph}
+              </Text>
+              <Divider mt="auto" borderWidth={1} borderColor="gray.300"></Divider>
+              <Heading
+                size="md"
+                mt={4}
+                fontWeight={500}
+              >
+                {testimonialDetails.author}
+              </Heading>
 
-                <Heading textAlign="center" size="sm" mt={2} color="gray.600">
-                  {testimonialDetails.CompanyName}
-                </Heading>
-                </Container>
-            </Box>
-           
-          </div>
-        );
-      }
-    );
-
-    return (
-      <Slider
-        className="w-100"
-        options={{
-          adaptiveHeight: true,
-          freeScroll: false,
-          draggable: false,
-          autoPlay: 15000
-        }}
-      >
-        {TestimonialVariable}
-      </Slider>
-    );
-  }
+              <Heading size="sm" mt={2} color="gray.600">
+                {testimonialDetails.CompanyName}
+              </Heading>
+          </Box>
+        </Box>
+  )
 }
 
-export default Testimonial;
+
+
+
+function TestimonialCard({testimonials}) {
+  return (
+    <Container mt={12}>
+        <Flex wrap="wrap" width="100%">
+            {Testimonial(testimonials[0], "112px")}
+            {Testimonial(testimonials[2],"224px")}
+            {Testimonial(testimonials[4])}   
+            {Testimonial(testimonials[1])}
+            {Testimonial(testimonials[3])}
+            {Testimonial(testimonials[8])}
+        </Flex>
+    </Container>
+  );
+}
+
+export default TestimonialCard;
+

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Head from "next/head";
 import { FaArrowRight} from "react-icons/fa";
-import { Image, Button, Heading,  Box,  Flex, Icon, Text, Grid  } from "@chakra-ui/core";
+import { Image, Button, Heading,  Box,  Flex, Icon, Text, Grid, Avatar  } from "@chakra-ui/core";
 import FeatureCard from "../components/cards/FeatureCard";
 import CaseStudy from "../components/case_study/CaseStudy";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
-import { TESTIMONIALS } from "../database/testimonials";
+import TESTIMONIALS from "../database/testimonials";
 import newsroom from "../database/newsroom"
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
@@ -16,11 +16,32 @@ import SVG from "../components/svg/SVG";
 import Service from "../components/cards/Service";
 import Offer from "../components/cards/Offer";
 import Swiper from "../components/Sliders/HomeSlider";
+import Offers from "../components/Sliders/Offers";
 import Row from "../pageBuilder/Row";
 import Title from "../pageBuilder/Title";
 import Feature3 from "../pageBuilder/components/Feature3";
 import Body from "../pageBuilder/Body";
 import Partners from "../components/Sliders/Partners";
+import Description from "../pageBuilder/Description";
+import CardWithImage from "../components/cards/CardWithImage";
+
+const news = (blog) => {
+    return (
+    <Box width={["100%","100%","50%","50%","33%"]} px={3} my={3} fontWeight="500">
+    <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}>
+      <a>
+      <CardWithImage
+      src={blog.image}
+      title={blog.title}
+      columns={["128px auto", "auto"]}
+      height={["128px", "256px"]}
+      >
+      <Button variant="unstyled" mt={8} textTransform="uppercase" color="primary.500">Read More</Button>
+    </CardWithImage>
+    </a>
+    </Link>
+    </Box>)
+}
 
 const sliderInfo = [
   {
@@ -54,8 +75,8 @@ const sliderInfo = [
 
 const processInfo = [
   {
-    title: "Consult",
-    color: "green.500",
+    title: <Link href="/contact"><Button as="a" variant="solid" variantColor="primary" className="primary-btn" boxShadow="lg" size="lg" my={1} px={8}>Consult</Button></Link>,
+    color: "white",
     content: "From concept through business case then on to high level design"
   },
   {
@@ -151,15 +172,33 @@ class Landing extends Component {
                   </div>
                 </Fade>
             </div>
+            <Box textAlign={["center","center","right"]}>
+                <Text fontSize="xl">We deliver 30+ services</Text>
+                <a><Text color="primary.500" mt={2} fontFamily="Nexa bold" fontSize="xl">View All <Icon name="arrow-forward"></Icon></Text></a>
+            </Box>
             </Section>
-            <Section px={0} mt="192px" mb={0} bg="#060529">
-                <Grid mt="-160px" templateColumns={["100%","192px auto","256px auto"]} p={[4,4,12]} rounded={12} bg="white" boxShadow="xl">
-                    <Image alt="" justifySelf="center" src="/assets/images/vectors/covid.svg" padding={[4,0]}  width={["60%","100%"]}></Image>
-                    <Flex direction="column" justify="center" px={[3,5,12]}>
-                        <a className="link"><Heading size="lg" fontFamily="Nexa Bold">Free Services* for 3 months for Healthy and Safety related Businesses. <Icon name="chevron-right"></Icon></Heading></a>
-                        <Text mt={3} opacity={.7}>Let us help you if you have limited budgets and because of COVID your current infrastructure can't handle the load. Dial our direct line +61 2 9095 0000. We will get things in motion very quickly.</Text>
-                    </Flex>
-                </Grid>
+            <Section>
+              <Title>
+                We have a ‘can do’ attitude with an ‘easy to work with’ culture.
+              </Title>
+              <Description>
+                Our values are based around fresh thinking, delivering on our promises, showing customer respect and making a 100% commitment.
+              </Description>
+              <Row bg="white" p={5} rounded={4} boxShadow="xl" rowDistance={8}>
+                {processInfo.map((info, index) => (
+                  <Box pos="relative" p={4} width={["100%",1/3,1/3,1/5]}>
+                        {index === 0 ? info.title : <Heading my={5} color={info.color} fontFamily="Nexa Bold" size="md"><span className="text-dark d-lg-none">0{index + 1}.</span> {info.title}</Heading>}
+                        <Text pr={3} mt={2} fontSize="14px">{info.content}</Text>
+                        {index !== 4 && <Icon name="chevron-right" display={["none","none","none", "block"]} fontSize="32px" pos="absolute" right={0} mt="-16px" top={"50%"}></Icon>}
+                  </Box>
+                ))
+                }
+              </Row>
+            </Section>
+            <Section containerWidth="100%">
+                <Box>
+                <Offers></Offers>
+                </Box>
             </Section>
             <Section bg="#060529" my={0} py={24} color="white">
             <Row>
@@ -292,7 +331,7 @@ class Landing extends Component {
             </Partners>
         </Section>
     
-        <Section position="relative" overflow="hidden" containerWidth="100%" bg="light.400" py={24}>
+        <Section position="relative" overflow="hidden" bg="light.400" py={16}>
             <Fade duration={500} cascade distance={"30%"} bottom>
                 <div className="text-center NunitoSans-ExtraBold text-primary text-uppercase">
                   Testimonials
@@ -300,48 +339,34 @@ class Landing extends Component {
                   <div className="my-2 text-center text-dark display4">
                     What they say!
                 </div>
-                <TestimonialCard testimonialDetails={TESTIMONIALS} />
-                <Box mt="-3%"width="100%" position="absolute" top="0px">
+                <TestimonialCard testimonials={TESTIMONIALS} />
+                <Box px={6} mt={16}>
+                  <a><Text color="primary.500" mt={2} fontFamily="Nexa bold" fontSize="xl">Read Customer Stories</Text></a>
+                </Box>
+                <Box mt="-3%"width="100%" position="absolute" left={0} top="0px">
                     <SVG size="16%" src="https://image.flaticon.com/icons/svg/102/102571.svg" color="gray.200" ></SVG> 
                 </Box>
             </Fade>
         </Section>
 
-        <Section>
-            <Row>
-                <Box px={2} width={["100%","100%",1/2]}>
-                    <Title mt={4} textAlign="left" fontSize="40px">Our Goals + Our Approach + Our Results  = Our Success Story</Title>
-                    <Text mt={4} fontSize="20px" opacity={.7}>
-                        We understand completely, the well defined goals and process that a client has, and tend to achieve them with maximum utiliaztion and commitment. We focus on being the trusted and reliable partner for every business that we associate with, accounting for our enthusiasm and professionalism
-                    </Text>
-                    <Link href="/features">
-                        <a className="link">
-                        <Heading color="primary.500" py={[6,6,3]} size="md">
-                        Learn More{" "}
-                        <Icon name="arrow-forward"></Icon>
-                        </Heading>
-                        </a>
-                    </Link>
+        <Section py={16}>
+            <Title>Our Goals + Our Approach + Our Results  = Our Success Story</Title>
+            <Description>We focus on being the trusted and reliable partner for every business that we associate with, accounting for our enthusiasm and professionalism</Description>
+            <Row rowDistance={8}>
+                <Box width={["100%","100%","50%","50%","33%"]} px={3} my={3} fontWeight="500">
+                  <Box bg="dark.500" pos="relative" rounded={8} p={12} overflow="hidden" boxShadow="xl" height="100%">
+                      <Image zIndex="0" opacity=".7" className="bg-image" src="/assets/images/backgrounds/card.png"></Image>
+                      <Flex height="100%" direction="column" justify="space-between">
+                        <Title zIndex="10" textAlign="left" fontSize="5xl" color="white">Let's get IT done.</Title>
+                        <Link href="/solutions"><Button as="a" variantColor="primary" className="primary-btn" size="lg">Explore Solutions</Button></Link>
+                      </Flex>
+                  </Box>
                 </Box>
-                <Flex px={[0,4,8]} wrap="wrap" width={["100%","100%",1/2]}>
-                    <Box width={["100%","100%", 1/2]} px={3}>
-                        <Box bgImage="url('/assets/images/newsroom/infra.webp')" mb={6} height="220px" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
-                        <Heading px={8} pt={8} size="lg" color="white" fontFamily="Nexa Bold">Network Infrastructure Redesign</Heading>
-                        </Box>
-                        <Box bgImage="url('/assets/images/newsroom/f5_redesign.webp')" mt={6} height="220px" backgroundSize="cover" backgroundRepeat="no-repeat" rounded={8}>
-                            <Heading px={8} pt={8} size="lg" color="white" fontFamily="Nexa Bold">F5 Topology Redesign</Heading>
-                        </Box>
-                    </Box>
-                    <Box width={["100%","100%", 1/2]} px={3}>
-                        <Flex mt={[6,0]} align="flex-end" bgImage="url('/assets/images/newsroom/complete_vdi.webp')" height="100%" backgroundSize="cover" backgroundPosition="center" backgroundRepeat="no-repeat" rounded={8}>
-                            <Heading p={8} size="lg" color="white" fontFamily="Nexa Bold">BG Unified Solutions hosted UC Solutions</Heading>
-                        </Flex>
-                    </Box>
-                </Flex>
+                {news(newsroom[7])}
+                {news(newsroom[4])}
             </Row>       
         </Section>
         
-        <Conclusion></Conclusion>
       </div>
     );
   }

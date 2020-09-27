@@ -12,6 +12,7 @@ function FeedbackForm(props) {
     const [description, setDescription] = useState('');
     const [phone, setPhone] = useState('');
     const [rating, setRating] = useState('4');
+    const [screenWidth, setScreenWidth] = useState(1000);
     let form = {
         name: name,
         email: email,
@@ -81,15 +82,25 @@ function FeedbackForm(props) {
         axios.post('/api/feedback/submit', form)
             .then((response) => refreshForm(response), (error) => refreshForm(error))
     }
+
+    const updateWidth = () => {
+        setScreenWidth(window.innerWidth);
+    };
+    React.useEffect(() => {
+        updateWidth();
+        window.addEventListener("resize", updateWidth);
+        return () => window.removeEventListener("resize", updateWidth);
+    });
     return (
         <>
             <Link mx={["6px", "10px", "16px"]} fontSize={["10px", "12px", "14px"]} textTransform="uppercase" onClick={onOpen}>Send A Feedback</Link>
-            <Modal isOpen={isOpen} onClose={formClose} isCentered scrollBehavior="inside">
+            <Modal isOpen={isOpen} onClose={formClose} isCentered={screenWidth > 420 ? true : false} scrollBehavior={screenWidth > 420 ? "inside" : "outside"}>
                 <ModalOverlay />
-                <ModalContent py="2" maxWidth={["400px", "400px", "600px"]} maxHeight="700px">
+                <ModalContent py="2" maxWidth={["430px", "400px", "600px"]} minHeight={screenWidth > 420 ? "" : "100vh"} mb={screenWidth <= 420 ? 0 : ""} mt={screenWidth <= 420 ? 0 : ""}>
                     <ModalBody>
-                        <ModalHeader><span className="display5">Send us your feedback!</span></ModalHeader>
-                        <ModalCloseButton />
+                        <ModalHeader style={{ zIndex: "3", position: "sticky", top: 0, backgroundColor: "white" }}>
+                            <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}></Button>
+                            <span className="display5 mx-2">Send your feedback!</span></ModalHeader>
                         <div className="container">
                             <form className="feedback-form px-4" onSubmit={onSubmit}>
                                 <input
@@ -160,6 +171,7 @@ function FeedbackForm(props) {
                                 <div>
                                     <Button
                                         mt={10}
+                                        mb={8}
                                         type="submit"
                                         size="lg"
                                         variantColor="primary"

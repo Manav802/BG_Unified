@@ -10,6 +10,15 @@ body{
 a{
     cursor: pointer;
     transition: .3s;
+    color: $color-dark;
+    text-decoration: none !important;
+}
+a:hover{
+    color: $color-dark;
+    text-decoration: none !important;
+}
+p{
+    margin-bottom: 0px;
 }
 .link{
     font-weight: 700;

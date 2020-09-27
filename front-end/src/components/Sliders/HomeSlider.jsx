@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {EffectFade, Controller, Navigation} from 'swiper';
 import Section from '../../pageBuilder/Section';
+import Link from 'next/link';
 
 const sliderInfo = [
     {
@@ -66,6 +67,12 @@ function main(props) {
                             <Text textShadow="xl" width={["100%","100%","72%","56%"]} mt={4} fontSize={["md","lg","xl"]}>
                                 {slide.subTitle}
                             </Text>
+                        </Fade>
+                        <Fade duration={500} delay={1700}  when={animate == 1} bottom>
+                            <ButtonGroup mt={6}>
+                                    <Link href="/solutions"><Button as="a" fontSize={["14px","18px"]} mr={2} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button></Link>
+                                    <Link href="/contact"><Button as="a" padding={["20px","24px"]} ml={2} fontSize={["14px","18px"]} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">Contact Sales</Button></Link>
+                            </ButtonGroup>
                         </Fade>
                     </Section>
                 </Flex>

@@ -17,6 +17,8 @@ function Partners(props) {
             <div className="marquee">
                 <div className="justify-content-center text-center d-flex  mx-xl-5 mx-0 scroll">
                     {slides}
+                    {slides}
+                    {slides}
                 </div>
             </div>
         </div>
