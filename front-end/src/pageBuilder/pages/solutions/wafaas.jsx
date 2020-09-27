@@ -20,9 +20,9 @@ export default [
             data: {
                 images: ["/assets/images/vectors/waf.svg"],
                 objectFit: "contain",
+                px: "15%"
             }
         }],
-        containerWidth: ["100%", "100%", "88%", "80%"],
     },
  {
         my: 0,
