@@ -5,7 +5,7 @@ export default [
         title: "Workstation for your Business",
         description: <span>Virtual Desktop Infrastructure is when virtual 
                 desktops are served through on-site technology solutions. 
-                A hardware stack is maintained by IT administrators and 
+                A hardware stack is maintained by IT administrators and is 
                 usually located on-site. This is how virtual desktops have 
                 traditionally been deployed. This allows IT 
                 resources to be reallocated for managing virtual desktops, 
@@ -105,7 +105,7 @@ export default [
                 maxH: 200,
                 spacing: 12,
                 title: "Flexible migration to the cloud for Remote Desktop Services",
-                description: "Optimize your experience with affordable costs for your server desktop and apps. Get all the resources, tools and infrastructure, you need to migrate your apps.",
+                description: "Optimize your experience with affordable costs for your server desktop and apps. Get all the resources, tools, and infrastructure, you need to migrate your apps.",
             },
         },
         {

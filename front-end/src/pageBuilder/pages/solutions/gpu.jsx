@@ -24,13 +24,13 @@ export default [
                     title: "Harness the power of GPU",
                     titleSize: [28, 28, 28, 32],
                     text: <span>You get direct access to one of the most flexible 
-                    server-selection processes in the industry, and seamless integration. 
+                    server-selection processes in the industry and seamless integration. 
                     This delivers extreme performance and industry-leading hybrid cloud 
                     data management capabilities. To provide customer enablement (if required) 
                     we can provide tools to automatically detect GPUs and make them available. 
                     In order to maximize utilization of this powerful resource IT administrators
-                     can configure, scale and allow fine-grained access control of GPU resources 
-                     to end users.                    
+                     can configure, scale, and allow fine-grained access control of GPU resources 
+                     to end-users.                    
                      </span>
                 }]
             }]
@@ -56,7 +56,7 @@ export default [
                     fontSize: ["lg","xl"],
                     titleSize: [25,25,32],
                     my:[2,4,8],
-                    text: "With GPUaaS, you also get access to our AI expertise, extensive training and technical capabilities that can jump-start your projects. Our dedicated team can assist with prescriptive guidance and design expertise. Our technical team ensures your AI applications are fully supported."
+                    text: "With GPUaaS, you also get access to our AI expertise, extensive training, and technical capabilities that can jump-start your projects. Our dedicated team can assist with prescriptive guidance and design expertise. Our technical team ensures your AI applications are fully supported."
                     
                 }]
             },
@@ -119,10 +119,10 @@ export default [
                     my:[2,4,8],
                     text:   <>
                             <span>Graphical Processing Unit does not cater to a single domain.
-                                 In present day scenario, where technology proves to be the backbone of every industry, the importance of 
-                                 GPUs have grown exponentially.
+                                 In present-day scenario, where technology proves to be the backbone of every industry, the importance of 
+                                 GPUs has grown exponentially.
                                 </span><br/><br/>
-                            <span> From refining and mining data, to analyzing it. From Scientific Researches to Health Sector.
+                            <span> From refining and mining data to analyzing it. From Scientific Researches to Health Sector.
                                  From finance to educational institutions. Graphical Processing Unit has become an important resource for every industry.
                                 </span>,
                             </>    

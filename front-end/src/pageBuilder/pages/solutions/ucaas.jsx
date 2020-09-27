@@ -56,7 +56,7 @@ export default [
             after: " Your Application on the Cloud"
         },
         titleStyle:{fontSize:["3xl","4xl"],px:"5px"},
-        description: "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business. Expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint",
+        description: "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization, and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business. Expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint",
         descriptionStyle: {
             textAlign: "left"
         },
@@ -74,7 +74,7 @@ export default [
                     image: "/assets/images/icons/color/microphone.svg",
                     title: "Voice Integration",
                     align: "left",
-                    description: "Extended capability of your telephony solutions, for a better output with the same resource."
+                    description: "The extended capability of your telephony solutions, for a better output with the same resource."
                 }
             },
             {
@@ -116,7 +116,7 @@ export default [
                     image: "/assets/images/icons/color/cloud.svg",
                     title: "Backup over Cloud",
                     align: "left",
-                    description: "The business keeps on running smoothly, with everything backed up on cloud, while taking measures for potential threats."
+                    description: "The business keeps on running smoothly, with everything backed up on the cloud, while taking measures for potential threats."
                 }
             },
             {
