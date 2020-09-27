@@ -8,7 +8,7 @@ import Title from "../pageBuilder/Title";
 
 const team = [
     { name: "Yuvraj Midha", username: "yuvraj", designation: "Project Manager"},
-    { name: "Shubh Bhardwaj", username: "shubh", designation: "Content Curator & Front-End Developer"},
+    { name: "Shubh Bhardwaj", username: "shubh", designation: "Content Curator/ Frontend Developer"},
     { name: "Anuj Bansal", username: "anuj", designation: "Senior Developer"},
     { name: "Manav Chhabra", username: "manav", designation: "Front-End Developer"},
     { name: "Vineet Yadav", username: "vineet", designation: "Front-End Developer"},
@@ -45,9 +45,7 @@ function webteam(props) {
                     name={member.name}
                     img={"/assets/images/team/" + member.username +".jpg"}
                     >
-                    Managing Director / Owner at BG Unified Solutions Limited, AU and NZ. 
-                    Hardworking, Cloud Services and Hosting Solutions Specialist,
-                    completely driven by customers satisfaction and deliverability.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum eaque aut pariatur doloremque non. Porro doloribus, animi dolores fugit repudiandae quisquam quibusdam, quidem non amet at, molestiae saepe temporibus nemo.
                   </Team>
                   </Box>
                     

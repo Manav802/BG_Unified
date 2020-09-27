@@ -195,10 +195,9 @@ class Landing extends Component {
                 }
               </Row>
             </Section>
-            <Section containerWidth="100%">
-                <Box>
+            <Section mb={0} bg="light.400" pb={0} pt={12} containerWidth="100%">
+                <Title>Latest Updates</Title>
                 <Offers></Offers>
-                </Box>
             </Section>
             <Section bg="#060529" my={0} py={24} color="white">
             <Row>
