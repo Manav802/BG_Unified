@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Flex, Heading, Text, Image } from "@chakra-ui/core";
 import Head from "next/head";
 import Fade from 'react-reveal/Fade';
+import Team from "../components/cards/team";
 import Section from "../pageBuilder/Section";
 import Title from "../pageBuilder/Title";
 
@@ -28,13 +29,20 @@ function webteam(props) {
                 <Title zIndex="100" fontSize={["44px","64px"]}>Website IT Team</Title>
             </Section>
             <Section>
-                <Flex wrap="wrap">
+                <Flex wrap="wrap" justify="center">
                 {team.map(member => (
-                    <Flex direction="column" px={3} my={3} width={["100%", "100%","50%", 1/3]}>
-                        <Image alt="" src={"/assets/images/team/" + member.username +".jpg"} rounded={12} height="360px" objectFit="cover"></Image>
-                        <Title size="lg" textAlign="left" mt={4}>{member.name}</Title>
-                        <Text fontSize="md" mx={2} opacity=".7" fontWeight="600">{member.designation}</Text>
-                    </Flex>
+                    <Box width={["100%","100%","100%","66%","50%"]} px={3}>
+                    <Team
+                    title={member.designation}
+                    name={member.name}
+                    img={"/assets/images/team/" + member.username +".jpg"}
+                    >
+                    Managing Director / Owner at BG Unified Solutions Limited, AU and NZ. 
+                    Hardworking, Cloud Services and Hosting Solutions Specialist,
+                    completely driven by customers satisfaction and deliverability.
+                  </Team>
+                  </Box>
+                    
                 ))}
                 </Flex> 
             </Section>

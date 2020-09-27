@@ -194,7 +194,7 @@ function header(props) {
                                                     </Hyperlink>
                                                     </Box>
                                                     <Box height="48px" my={4}>
-                                                    <Hyperlink href="/team">
+                                                    <Hyperlink href="/about#team">
                                                         <a className="link"><Flex align="center">
                                                             <SVG color="primary.500" src="/assets/images/icons/library/communication/group.svg"></SVG>
                                                             <Box onClick={onClose} ml="3">
