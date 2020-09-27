@@ -106,7 +106,7 @@ const blogs = [
             date: "2019",
             by: "Saurabh Sareen",
             avatar: "/assets/images/team/saurabh.jpg",
-            image: "/assets/images/services/infra.png",
+            image: "/assets/images/newsroom/infra.png",
             imgalt : "Business Operations during COVID-19 Pandemic",
             category: "Case Study",
             tags: ["Nimble", "WLC", "Nexus", "SourceFire" , "Cisco ASA" , "DC" , "VMWARE" , "ESX" , "UCS", "NEXTDC", "NetApp" , "SPLUNK" , "CUBE" , "SRST" , "UC"],
