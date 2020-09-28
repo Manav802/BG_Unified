@@ -7,9 +7,10 @@ module.exports = withPlugins([
     mozjpeg: {
       quality: 15,
     },
-    optipng: {
-      optimizationLevel: 7,
-    },
-    
+    pngquant: {
+      speed: 4,
+      quality: [0.10, 0.25],
+      verbose: true,
+    }
   }],
 ]);
