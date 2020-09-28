@@ -37,8 +37,8 @@ function Solutions(props) {
                 </Head>
                 {/* <Image alt={service.title} opacity=".3" className="bg-image" src={service.bgImage}/> */}
                 <picture>
-                    <source srcSet={require(`../../../public${service.bgImage}?webp`)} type="image/webp" />
-                    <source srcSet={require(`../../../public${service.bgImage}`)} type="image/jpeg" />
+                    <source srcSet={require(`../../../public${service.bgImage}?webp?lqip`)} type="image/webp" />
+                    <source srcSet={require(`../../../public${service.bgImage}?lqip`)} type="image/jpeg" />
                     <img
                     className="bg-image"
                     style={{opacity:".3"}}
