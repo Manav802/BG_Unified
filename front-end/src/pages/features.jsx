@@ -82,7 +82,7 @@ function features() {
                   Desktop virtualization, and server management. Geographically
                   sound, redundant, quick and efficient increasing your backup by
                   60%.F5 load balancing solutions ensures scaling your critical
-                  applications. Scaling up or down your storage capability as and
+                  applications. Scaling up or down your storage capacity as and
                   when required.
                 </span>,
                   flexDirection: ["column", "column", "row-reverse"],
@@ -105,10 +105,10 @@ function features() {
                 maxH: "400px",
                 description: <span>
                   Connectivity to the highly secured infrastructure using multiple
-                  telco vendors.Improved operational efficiencies, Reduced
-                  communication related delays and enhanced collaboration. high
+                  telco vendors. Improved operational efficiencies, Reduced
+                  communication-related delays and enhanced collaboration. high
                   levels of availability (HA) as well as flexibility and scalability
-                  for core business tasks.Improved clustering scenarios along with
+                  for core business tasks.Improved clustering scenarios with
                   remote locations.
                 </span>,
                   flexDirection: ["column", "column", "row"],
@@ -132,9 +132,9 @@ function features() {
               description: <span>
                 End-to-End DC network infrastructure encompassing server
                 switching, storage switching and DC Interconnect Solutions. Huawei
-                10G core switching offering a high speed spine and leaf network.
-                we can help you implement a flexible, agile architecture designed
-                specifically to meet your unique needs.next-general data centers
+                10G core switching offering a high-speed spine and leaf network.
+                We can help you implement a flexible, agile architecture designed
+                specifically to meet your unique needs. Next-general data centers
                 and enable your journey to the cloud.
               </span>,
                 flexDirection: ["column", "column", "row-reverse"],
@@ -164,13 +164,13 @@ function features() {
           </div>
           <div className="col-md-5 mt-lg-5 align-self-center">
             <Heading fontFamily="Nexa Bold" size="2xl" mb={4}>
-              Upto 1600 SIP Channels
+              Up to 1600 SIP Channels
             </Heading>
             <Text fontSize="lg" fontWeight="600" opacity=".7">
               15 Cisco Unified Border Elements with 1600 SIP channels spanned
               across multiple DC locations with DUAL Exchange Homing. Improved
-              operational efficiencies, Reduced communication related delays and
-              enhanced collaboration. Ensuring completely secure network by
+              operational efficiencies, Reduced communication-related delays and
+              enhanced collaboration. Ensure a completely secure network by
               technologies such as NAC(Network Access Control) using ISE,
               SourceFire, Cisco / Palo Alto / Checkpoint / Fortinet Firewall,
               DDOS Protection.
@@ -192,7 +192,7 @@ function features() {
               Multiple Data Center Locations
             </Heading>
             <Text fontSize="lg" fontWeight="600" opacity=".7">
-              7 to be precise including Solarix,
+              Seven to be precise including Solarix,
               Auckland, Airtrunk SYD/ME and GovDC.End-to-End DC network
               infrastructure encompassing server switching. Server consolidation
               and virtualization, high availability & clustering.

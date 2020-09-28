@@ -4,7 +4,7 @@ export default [
         fontSize: "xl",
         data: [
             {
-                text: "An enterprise level solution for any small to medium size organization with single or multiple sites.",
+                text: "An enterprise-level solution for any small to medium size organization with single or multiple sites.",
                 textAlign: "justify"
             },
             {
@@ -12,7 +12,7 @@ export default [
                 textAlign: "justify"
             },
             {
-                text: "-A Cisco ASA / PaloAlto Firewall (5512X / 220PA) fully managed by 24x7 NOC. 36 months warranty support.",
+                text: "-A Cisco ASA / PaloAlto Firewall (5512X / 220PA) fully managed by 24x7 NOC. 36 months of warranty support.",
                 textAlign: "justify"
             },
             {
@@ -20,11 +20,11 @@ export default [
                 textAlign: "justify"
             },
             {
-                text: "-Cisco Switch Stack fully managed by the 24x7 NOC. 36 months warranty support.",
+                text: "-Cisco Switch Stack fully managed by the 24x7 NOC. 36 months of warranty support.",
                 textAlign: "justify"
             },
             {
-                text: "-20 Cisco 7965G handsets for 20 users. 36 months warranty support.",
+                text: "-20 Cisco 7965G handsets for 20 users. 36 months of warranty support.",
                 textAlign: "justify"
             },
             {

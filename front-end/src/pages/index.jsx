@@ -63,7 +63,7 @@ const sliderInfo = [
     btnSecondaryLink: "/contact"
   },
   {
-    title: "Geographical Redundant Infrastructre",
+    title: "Geographical Redundant Infrastructure",
     imgSrc: "/assets/images/backgrounds/map.webp",
     subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
     btnPrimaryText: "Explore Now",
@@ -77,12 +77,12 @@ const processInfo = [
   {
     title: <Link href="/contact"><Button as="a" variant="solid" variantColor="primary" className="primary-btn" boxShadow="lg" size="lg" my={1} px={8}>Consult</Button></Link>,
     color: "white",
-    content: "From concept through business case then on to high level design"
+    content: "From concept through business case than on to high-level design"
   },
   {
     title: "Design",
     color: "blue.500",
-    content: "From high level design to detailed design ready to build"
+    content: "From high-level design to detailed design - ready to build"
   },
   {
     title: "Build",
@@ -92,7 +92,7 @@ const processInfo = [
   {
     title: "Deploy",
     color: "red.500",
-    content: "Implentation services from specification time to final signoff"
+    content: "Implementation services from specification time to final signoff"
   },
   {
     title: "Manage",
@@ -147,7 +147,7 @@ class Landing extends Component {
                 Solutions
               </div>
               <div className="col-12 mt-2 mb-5 text-center text-dark display4">
-                What We Deliver?
+                What do We deliver?
               </div>
               <Fade duration={800} cascade distance={"8%"} bottom>
                 <div className="row mx-2">
@@ -179,7 +179,7 @@ class Landing extends Component {
             </Section>
             <Section>
               <Title>
-                We have a ‘can do’ attitude with an ‘easy to work with’ culture.
+                We have a ‘can-do’ attitude with an ‘easy to work with’ culture.
               </Title>
               <Description>
                 Our values are based around fresh thinking, delivering on our promises, showing customer respect and making a 100% commitment.

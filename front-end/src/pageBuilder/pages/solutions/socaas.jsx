@@ -39,7 +39,7 @@ export default [
     },
     {
         title : "Ensure Cyber Security with Advanced Intelligence",
-        description: "The service architecture for our Security Operations Center as a Service (SOCaaS) program integrates best-of-breed products with proven processes and highly-skilled staff, increasing visibility into the network, speeding up alert response, and resolution times, and providing proactive risk modeling and risk mitigation.",
+        description: "The service architecture for our Security Operations Center as a Service (SOCaaS) program integrates best-of-breed products with proven processes and highly-skilled staff, increasing visibility into the network, speeding up alert response, and resolution times, and providing proactive risk modelling and risk mitigation.",
 
         my: 0,
         py: 20,

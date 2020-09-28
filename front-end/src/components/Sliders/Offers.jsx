@@ -23,7 +23,7 @@ function main(props) {
                     <Image alt="Free Healthcare Services" justifySelf="center" src="/assets/images/vectors/covid.svg" padding={[4,0]}  width={["60%","100%"]}></Image>
                     <Flex direction="column" justify="center" px={[3,5,12]}>
                         <a className="link"><Heading fontSize={["xl","xl","2xl","3xl"]} fontFamily="Nexa Bold">Free Services* for 3 months for Healthy and Safety related Businesses. <Icon name="chevron-right"></Icon></Heading></a>
-                        <Text mt={3} opacity={.7}>Let us help you if you have limited budgets and because of COVID your current infrastructure can't handle the load. Dial our direct line +61 2 9095 0000. We will get things in motion very quickly.</Text>
+                        <Text mt={3} opacity={.7}>Let us help you if you have limited budgets and because of COVID, your current infrastructure can't handle the load. Dial our direct line +61 2 9095 0000. We will get things in motion very quickly.</Text>
                     </Flex>
                 </Grid>
             </Container>

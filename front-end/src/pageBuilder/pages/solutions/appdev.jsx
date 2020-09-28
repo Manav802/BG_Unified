@@ -100,7 +100,7 @@ export default [
         ]
     },
     {
-        title:"An application built on the Platform of your choice is maintained and monitored in real-time.",
+        title:"An application built on the platform of your choice is maintained and monitored in real-time.",
         body: [
             {
                 type: "image&text",

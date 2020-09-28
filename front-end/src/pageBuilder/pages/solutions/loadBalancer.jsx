@@ -39,7 +39,7 @@ export default [
     {
         title : "Manage your Traffic with Our Load Balancers",
         
-        description: "BG Unified Solutions provide F5 topology for your Load Balancing needs, in order to manage traffic asserted on your servers and applications. ",
+        description: "BG Unified Solutions provide F5 topology for your Load Balancing needs, to manage traffic asserted on your servers and applications. ",
 
         my: 0,
         py: 20,
@@ -91,8 +91,8 @@ export default [
         data: [{
             text: <span>High traffic sites need the resources to 
             serve large amounts of unique visitors in a fast and 
-            efficient way. In order to scale to meet those needs,
-             a number of web servers, commonly known as a farm, 
+            efficient way. To scale to meet those needs,
+             several web servers, commonly known as a farm, 
              need to be implemented and a method to route traffic
               across them in a balanced way.</span>,
             fontSize: ["lg","lg","xl"],
