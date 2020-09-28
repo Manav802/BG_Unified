@@ -4,11 +4,13 @@ const optimizedImages = require('@mrroll/next-optimized-images');
 module.exports = withPlugins([
   [optimizedImages, {
     inlineImageLimit: -1,
+    optimizeImagesInDev: true,
     mozjpeg: {
-      quality: 20,
+      quality: 15,
     },
     optipng: {
-      optimizationLevel: 5,
+      optimizationLevel: 7,
     },
+    
   }],
 ]);

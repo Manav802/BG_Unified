@@ -27,19 +27,6 @@ function Blogs() {
 
   const imgalt=blog.imgalt;
 
-    const [imageLoaded, setImageLoaded] = React.useState(false);
-
-    const styles = {
-    lqip: {
-        opacity:"0.3",
-      filter: "blur(10px)",
-    },
-    };
-
-    // Hide preview when image has loaded.
-    if (imageLoaded) {
-    styles.lqip.opacity = 0;
-    }
 
   return (
     <div className="article">
@@ -74,15 +61,9 @@ function Blogs() {
             <source srcSet={require(`../../../public${blog.image}?webp`)} type="image/webp" />
             <source srcSet={require(`../../../public${blog.image}`)} type="image/png" /> */}
             <img
-            src={require(`../../../public${blog.image}?lqip`)}
-            alt={imgalt}
-            style={styles.lqip}
-            />
-            <img
             style={{borderRadius:"1rem", width:"100%", height:"320px", objectFit:"cover"}}
             src={require(`../../../public${blog.image}`)}
             alt={imgalt}
-            onLoad={() => setImageLoaded(true)}
             />
             
         {/* </picture> */}

@@ -19,19 +19,6 @@ function Solutions(props) {
             setPricing(document.getElementById('pricing'))
         }
     })
-    const [imageLoaded, setImageLoaded] = useState(false);
-
-  const styles = {
-    lqip: {
-        opacity:"0.3",
-      filter: "blur(10px)",
-    },
-  };
-
-  // Hide preview when image has loaded.
-  if (imageLoaded) {
-    styles.lqip.opacity = 0;
-  }
 
     return (
         <>
@@ -51,18 +38,11 @@ function Solutions(props) {
                 {/* <picture> */}
                     {/* <source srcSet={require(`../../../public${service.bgImage}?webp&lqip`)} type="image/webp" /> */}
                     {/* <source srcSet={require(`../../../public${service.bgImage}?lqip`)} type="image/jpeg" /> */}
-                    <img
-                    className="bg-image"
-                    style={styles.lqip}
-                    src={require(`../../../public${service.bgImage}?lqip`)}
-                    alt={service.title}
-                    />
                      <img
                     className="bg-image"
                     src={require(`../../../public${service.bgImage}`)}
                     alt={service.title}
                     style={{opacity:"0.3"}}
-                    onLoad={() => setImageLoaded(true)}
                     />
                 {/* </picture> */}
                 <div className="container">
