@@ -5,16 +5,10 @@ module.exports = withPlugins([
   [optimizedImages, {
     inlineImageLimit: -1,
     mozjpeg: {
-      quality: .2,
+      quality: 20,
     },
-   webp:{
-     preset: 'default',
-     quality: .2,
-  },
-  pngquant:{
-    speed: 3,
-      strip: true,
-      verbose: true,
-  },
+    optipng: {
+      optimizationLevel: 5,
+    },
   }],
 ]);

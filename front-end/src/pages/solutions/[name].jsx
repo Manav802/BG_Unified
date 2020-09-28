@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { useRouter } from "next/router";
 import services from "../../database/services"
 import Head from "next/head";
@@ -19,7 +19,19 @@ function Solutions(props) {
             setPricing(document.getElementById('pricing'))
         }
     })
+    const [imageLoaded, setImageLoaded] = useState(false);
 
+  const styles = {
+    lqip: {
+        opacity:"0.3",
+      filter: "blur(10px)",
+    },
+  };
+
+  // Hide preview when image has loaded.
+  if (imageLoaded) {
+    styles.lqip.opacity = 0;
+  }
 
     return (
         <>
@@ -36,16 +48,23 @@ function Solutions(props) {
 
                 </Head>
                 {/* <Image alt={service.title} opacity=".3" className="bg-image" src={service.bgImage}/> */}
-                <picture>
-                    <source srcSet={require(`../../../public${service.bgImage}?lqip?webp`)} type="image/webp" />
-                    <source srcSet={require(`../../../public${service.bgImage}?lqip`)} type="image/jpeg" />
+                {/* <picture> */}
+                    {/* <source srcSet={require(`../../../public${service.bgImage}?webp&lqip`)} type="image/webp" /> */}
+                    {/* <source srcSet={require(`../../../public${service.bgImage}?lqip`)} type="image/jpeg" /> */}
                     <img
                     className="bg-image"
-                    style={{opacity:".3"}}
-                    src={require(`../../../public${service.bgImage}`)}
+                    style={styles.lqip}
+                    src={require(`../../../public${service.bgImage}?lqip`)}
                     alt={service.title}
                     />
-                </picture>
+                     <img
+                    className="bg-image"
+                    src={require(`../../../public${service.bgImage}`)}
+                    alt={service.title}
+                    style={{opacity:"0.3"}}
+                    onLoad={() => setImageLoaded(true)}
+                    />
+                {/* </picture> */}
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
