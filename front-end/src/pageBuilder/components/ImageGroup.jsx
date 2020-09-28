@@ -7,7 +7,7 @@ function ImageGroup({ images,captionStyles, spacing, maxW, width = "100%", ...da
         allImages = images.map((url, index) =><Image alt="" src={require(`../../../public${url}`)} width={width} key={"image-" + index} {...data}></Image>);
     }
     else {
-        allImages = images.map((url, index) =><Image alt="" src={require(`../../../public${url}`)} mx={spacing || "16px"} width={width} maxW={maxW || [ "80px", "135.5px", "175px", "231px", "283px"]} key={"image-" + index} {...data}></Image>);
+        allImages = images.map((url, index) =><Image alt="" src={url} mx={spacing || "16px"} width={width} maxW={maxW || [ "80px", "135.5px", "175px", "231px", "283px"]} key={"image-" + index} {...data}></Image>);
     }
 
     return (
