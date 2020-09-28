@@ -9,7 +9,7 @@ export default [
                 py: [2, 6, 6, 6, 2],
                 type: "imageGroup",
                 data: {
-                    images: ["/assets/images/services/backup-2.jpg"],
+                    images: ["/assets/images/services/backup-2.png"],
                     borderRadius: 8,
                     width: '90%',
                     height: "300px",
