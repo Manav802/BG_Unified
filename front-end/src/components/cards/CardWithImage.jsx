@@ -10,7 +10,8 @@ function CardWithImage({columns="auto", height="216px", ...props}) {
           <source srcSet={require(`../../../public${props.src}?webp`)} type="image/webp" />
           <source srcSet={require(`../../../public${props.src}`)} type="image/png" />
           <img
-          style={{height:height, width: "100%"}}
+          height={height}
+          style={{width: "100%"}}
           src={require(`../../../public${props.src}`)}
           alt={props.src}
           />
