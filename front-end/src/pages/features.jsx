@@ -131,8 +131,7 @@ function features() {
               maxH: "400px",
               description: <span>
                 End-to-End DC network infrastructure encompassing server
-                switching, storage switching and DC Interconnect Solutions. Huawei
-                10G core switching offering a high-speed spine and leaf network.
+                switching, storage switching and DC Interconnect Solutions. 10G/40G core switching offering a high-speed spine and leaf network.
                 We can help you implement a flexible, agile architecture designed
                 specifically to meet your unique needs. Next-general data centers
                 and enable your journey to the cloud.
