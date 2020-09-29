@@ -34,17 +34,14 @@ function Solutions(props) {
                 <title>{service.slogan} - {service.title} | BG Unified Solutions</title>
 
                 </Head>
-                {/* <Image alt={service.title} opacity=".3" className="bg-image" src={service.bgImage}/> */}
-                {/* <picture> */}
-                    {/* <source srcSet={require(`../../../public${service.bgImage}?webp&lqip`)} type="image/webp" /> */}
-                    {/* <source srcSet={require(`../../../public${service.bgImage}?lqip`)} type="image/jpeg" /> */}
+                
                      <img
                     className="bg-image"
-                    src={require(`../../../public${service.bgImage}`)}
+                    src={service.bgImage}
                     alt={service.title}
                     style={{opacity:"0.3"}}
                     />
-                {/* </picture> */}
+                
                 <div className="container">
                     <div className="row">
                         <div className="col-12">

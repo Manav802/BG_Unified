@@ -52,7 +52,7 @@ function main(props) {
         <Swiper slidesPerView={1} loop onSlideChange={() => {setAnimation(0); setAnimation(1)}} navigation effect="fade">
         {sliderInfo.map(slide => <SwiperSlide>
             <Box pos="relative">
-                <Image src={require(`../../../public${slide.imgSrc}`)} height={["440px","520px","720px", "auto"]} minH="448px" objectFit="cover" width="100%"></Image>
+                <Image src={slide.imgSrc} height={["440px","520px","720px", "auto"]} minH="448px" objectFit="cover" width="100%"></Image>
                 {/* <Box top={0} left={0} opacity={.7} pos="absolute" width="100%" height="100%" bg="black"></Box> */}
                 <Flex alignItems="center" pos="absolute" top={0} left={0} width="100%" height="100%" color="white" my={0}>
                     
