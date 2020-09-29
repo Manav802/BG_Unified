@@ -8,8 +8,10 @@ import Title from "../../pageBuilder/Title";
 import { Heading, Text, Box, InputGroup, InputLeftElement, Button, Icon, Input, Image, Avatar, Badge, Flex, Grid, MenuList, Menu, MenuButton } from "@chakra-ui/core";
 import {dynamicSearch} from "../../../public/assets/js/searchFunctions"
 import { Divider } from "@chakra-ui/core";
+import { useRouter } from 'next/router'
 
 function Newsroom(){
+  const router = useRouter()
     const [category, setCategory] = React.useState("All")
     const [search, setSearch] = React.useState("")
     const [data, setData] = React.useState({
@@ -21,6 +23,9 @@ function Newsroom(){
       setSearch(e.target.value)
       setData(dynamicSearch(e.target.value))
     }
+    const { tab } = router.query;
+    useEffect(() => {if(tab=='case_studies'){ setCategory("Case Study"); }}, [tab]) 
+    
     return (
       <div className="newsroom">
         <Head>
