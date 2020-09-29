@@ -82,6 +82,7 @@ export default [
     {
         id: 10,
         author: "Houman Asefi",
+        imageUrl: "assets/images/brands/letsSaas.png",
         imageAlt: "Company Logo",
         description: <span>Saurabh (Sunny) is a rare combination of technical mastery and entrepreneurship mindset with the mojo of "getting things done fast". He has the capacity of an engineering business unit and step up to help whenever he can. His customers can testify on his unique work and are proof of his dedication and hard work. Plus, he is a great humble friend of mine. Wish you all the best Sunny.</span>,
         CompanyName: "Sales Strategy Executive, Let’s SaaS",
