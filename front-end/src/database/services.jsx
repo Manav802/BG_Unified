@@ -197,7 +197,7 @@ const services = {
         icon: "/assets/images/icons/monotone/PlatformAsAServiceIcon.svg",
         color: "#F76F8E",
         tags: ["cloud", "platform", "service", "infrastructure", "DC Interconnect"],
-        description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. Huawei 10G core switching....",
+        description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. 10G/40G core switching....",
         illustration: "",
         relatedService: ["Workstation As A Service", "Infrastructure As A Service", "GPU As A Service"],
         conclusion: "We give you the power to easily deploy, efficiently monitor, and scale the applications.",
