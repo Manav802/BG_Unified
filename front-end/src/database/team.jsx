@@ -9,7 +9,8 @@ export default [
             dribble:"",
             blogger:"",
             youtube:""
-        }
+        },
+        imgSrc:""
     },
     {
         name: "Keysang Yonthan",
@@ -21,6 +22,7 @@ export default [
             dribble:"",
             blogger:"",
             youtube:"https://www.youtube.com/channel/UCHPEV-bfHD-myQVLO-aOemg"
-        }
+        },
+        imgSrc:""
     },
 ]
