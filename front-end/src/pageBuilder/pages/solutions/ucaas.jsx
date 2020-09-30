@@ -3,8 +3,8 @@ import SliderC from "../../components/Slider"
 
 const sliderInfo = [
     {
-      title: <span>Cisco 7965G</span>,
-      imgSrc: "/assets/images/phones/cisco/7965G.webp",
+        title: <span>Cisco 7965G</span>,
+        imgSrc: "/assets/images/phones/cisco/7965G.png",
     },
     {
         title: <span>Avaya 1408</span>,
@@ -46,7 +46,7 @@ const sliderInfo = [
         title: <span>Cisco DX650</span>,
         imgSrc: "/assets/images/phones/cisco/DX650.webp",
     },
-  ]
+]
 
 export default [
     {
@@ -55,7 +55,7 @@ export default [
             typed: ["Capture", "Live Stream", "Repurpose"],
             after: " Your Application on the Cloud"
         },
-        titleStyle:{fontSize:["3xl","4xl"],px:"5px"},
+        titleStyle: { fontSize: ["3xl", "4xl"], px: "5px" },
         description: "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization, and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business. Expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint",
         descriptionStyle: {
             textAlign: "left"
@@ -171,7 +171,7 @@ export default [
     {
         title: "Why BG Unified Solutions?",
         rowDistance: 8,
-        py: [8,16],
+        py: [8, 16],
         body: [{
             width: "100%",
             type: "accordion",
