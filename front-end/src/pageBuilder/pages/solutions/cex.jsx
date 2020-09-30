@@ -3,7 +3,7 @@ export default [
     {
         title: "Express Routes to Office 365, AWS, Azure and many more",
         titleStyle:{fontSize:["3xl","4xl"],px:"10px"},
-        description: "We ensure reliability, integrity, security as well as scalability for our cloud exchange connectivity solutions. The traffic is not sent over the internet only, rather the exchange provider connects the exchange’s network directly to the cloud provider’s network. We give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners while also mitigating the risk of security breaches.",
+        description: "We ensure reliability, integrity, security, as well as scalability for our cloud exchange connectivity solutions. The traffic is not sent over the internet only; rather, the exchange provider connects the exchange’s network directly to the cloud provider’s network. We give you the power to quickly deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners while also mitigating the risk of security breaches.",
         descriptionStyle: {
             px: [4,6],
         },

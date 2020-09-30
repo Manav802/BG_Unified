@@ -83,7 +83,7 @@ export default [
             installing a SIEM product and sending your team 
             members an overwhelming number of alerts to review. 
             Our Security Engineers use analytic software to 
-            conduct the deep analysis required to provide you
+            conduct the in-depth analysis required to provide you
              with actionable remediation recommendations.</span>,
             fontSize:["lg","lg","xl"],
             textAlign: "center",

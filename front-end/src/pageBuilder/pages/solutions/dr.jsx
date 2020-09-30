@@ -33,9 +33,15 @@ export default [
                 data: [{
                     textAlign: "justify",
                     fontSize: "lg",
-                    title: "Always stay aware and prepared",
+                    title: "Always stay aware and prepared.",
                     titleSize: 32,
-                    text: <span>Disaster Recovery Management as a Service is preparing your organization for a failure or situation that you are unable to predict. The situations may be a catastrophic failure, a natural calamity, data being lost, server not functioning properly, data centers being compromised and so on. Predicting the most unlikely events that may cause data loss, data breach and hinder the functioning of an organization, finding and installing solutions.
+                    text: <span>Disaster Recovery Management as a Service is preparing your organization for a 
+                        failure or situation that you are unable to predict. The circumstances may be a 
+                        catastrophic failure, a natural calamity, data loss, server not functioning correctly, 
+                        data centers compromised and so on. We are predicting the most unlikely events that may cause 
+                        data loss, data breach and hinder the functioning of an organization, finding and installing 
+                        solutions.
+
                     </span>
                 }]
             }]
@@ -103,7 +109,7 @@ export default [
                     image: "/assets/images/illustrations/deploy.svg",
                     title: "Simplified Deployment",
                     flexDirection: ["column", "column", "row"],
-                    description: "An additional redundancy option is possible by implementing a CUBE at the client site so that in the event of any catastrophic failure in our data center, SRST will still be able to provide basic inbound and outbound calling facilities"
+                    description: "An additional redundancy option is possible by implementing a CUBE at the client site so that in the event of any catastrophic failure in our data center, SRST will still be able to provide basic inbound and outbound calling facilities."
                 }
             },
             {
@@ -112,7 +118,7 @@ export default [
                     image: "/assets/images/illustrations/Completeness_CloudLogging.svg",
                     title: "Non - Disruptive Testing",
                     flexDirection: ["column", "column", "row-reverse"],
-                    description: "We’ve got it covered under all circumstances, whether natural calamities, forecasted events, unforecasted events. The time taken to restore normal conditions becomes very less, thanks to our team of experts, who take precautionary measures from the starting."
+                    description: "We’ve got it covered under all circumstances, whether natural calamities, forecasted events, unforecasted events. The time taken to restore normal conditions becomes significantly less, thanks to our team of experts, who take precautionary measures from the starting."
                 }
             },
             {

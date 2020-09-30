@@ -4,7 +4,7 @@ export default [
         fontSize: "xl",
         data: [
             {
-                text: "It was towards the end of 2019 and the staff at Australian data and applications hosting specialist BG Unified Solutions were looking forward to closing out another busy and successful year.",
+                text: "It was towards the end of 2019, and the staff at Australian data and applications hosting specialist BG Unified Solutions were looking forward to closing out another busy and successful year.",
                 textAlign: "justify"
             },
             {

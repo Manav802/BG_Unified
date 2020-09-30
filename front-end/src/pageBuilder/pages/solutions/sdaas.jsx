@@ -30,7 +30,7 @@ export default [
             data: [{
                 textAlign: "justify",
                 fontSize: ["md","md","md","lg"],
-                text: <span>We believe that Service / Help Desk should be more than just a resource for solving problems – it should be a hotbed of innovation and discoveries. So when you outsource to BGUS, you aren’t just getting a partner who’ll provide round the clock support to users all over the world, but one who’ll strive tirelessly to improve the way they work. We provide completely customer-centric solutions, always upgrading and updating…
+                text: <span>We believe that Service / Help Desk should be more than just a resource for solving problems – it should be a hotbed of innovation and discoveries. So when you outsource to BGUS, you aren’t just getting a partner who’ll provide round the clock support to users all over the world, but one who’ll strive tirelessly to improve the way they work. We give entirely customer-centric solutions, always upgrading and updating…
                 </span>
             }]
         }]
@@ -56,7 +56,7 @@ export default [
                     fontSize: ["lg","xl"],
                     titleSize: [40,40,48],
                     my:[2,4,8],
-                    text: "Through our Sense and Respond methodology, we empower our experts to develop preventative solutions to recurring problems and, in turn, empower users to self-serve wherever possible."
+                    text: "Through our Sense and Respond methodology, we empower our experts to develop preventative solutions to recurring problems and, in turn, enable users to self-serve wherever possible."
                     
                 }]
             },

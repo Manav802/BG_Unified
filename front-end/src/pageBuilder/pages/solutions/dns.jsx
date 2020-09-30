@@ -39,7 +39,7 @@ export default [
                     fontSize: ["lg","xl"],
                     titleSize: [40,40,48],
                     my:[2,4,8],
-                    text: "BG Unified Solutions give you the power to easily deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches. "
+                    text: "BG Unified Solutions give you the power to quickly deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners—while also mitigating the risk of security breaches. "
                     
                 }]
             },
@@ -90,7 +90,7 @@ export default [
             data: [{
                 textAlign: "center",
                 fontSize: "xl",
-                text: "BG Solutions has gained an excellent reputation in the design and implementation of IP technology and significant experience in Domain Name System services design and implementation for several clients and distributed environments and locations. BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use Information Technology to improve their business results."
+                text: "BG Solutions has gained an excellent reputation in the design and implementation of IP technology and significant experience in DNS services design and performance for several clients and distributed environments and locations. BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use Information Technology to improve their business results."
             }]
         }]
     },

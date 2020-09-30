@@ -4,11 +4,11 @@ export default [
         fontSize: "xl",
         data: [
             {
-                text: "The difficult COVID-19 era has also brought out how strong partnerships create lasting value. BG Unified Solutions and Huawei Australia have been working collaboratively to provide all Australians with solid and comprehensive IT solutions, keeping business operations running efficiently during the most challenging times.",
+                text: "The difficult COVID-19 era has also brought out how strong partnerships create lasting value. BG Unified Solutions and Huawei Australia have been working collaboratively to provide all Australians with substantial and comprehensive IT solutions, keeping business operations running efficiently during the most challenging times.",
                 textAlign: "justify"
             },
             {
-                text: "As a leader of BGUS, I am delighted to offer free services* for the next three months to any business(s) related to the Health and Safety of Australians. You need Remote Phone System, Virtual Desktops, Bare Metal Servers to host your VM's, Database Servers, Telepresence/VCS Solution or anything which we can offer with the current solutions in BGUS service offerings. No charges at all for the next three months. Let us help you if you have limited budgets and because of COVID your current infrastructure can't handle the load. Dial my direct line +61 2 9095 0000. We will get things in motion very quickly.",
+                text: "As a leader of BGUS, I am delighted to offer free services* for the next three months to any business(s) related to the Health and Safety of Australians. You need Remote Phone System, Virtual Desktops, Bare Metal Servers to host your VM's, Database Servers, Telepresence/VCS Solution or anything which we can offer with the current solutions in BGUS service offerings. No charges at all for the next three months. Let us help you if you have limited budgets, and because of COVID, your current infrastructure can't handle the load. Dial my direct line +61 2 9095 0000. We will get things in motion very quickly.",
                 textAlign: "justify"
             },
             {
@@ -16,7 +16,7 @@ export default [
                 textAlign: "justify"
             },
             {
-                text: " Keeping in mind the disastrous effect of Coronavirus and the requirements to work from home, BG Unified Solutions will be offering to any organization related to Health and Public Safety, any solution that helps you to carry on your work remotely FREE OF COST. Whether you need VDI, Phone System or Contact Center or anything which helps you to carry on your work and help AUSTRALIANS in this tough situation, please contact me. " ,
+                text: " Keeping in mind the disastrous effect of Coronavirus and the requirements to work from home, BG Unified Solutions will be offering to any organization related to Health and Public Safety, any solution that allows you to carry on your work remotely FREE OF COST. Whether you need VDI, Phone System or Contact Center or anything which allows you to carry on your work and help AUSTRALIANS in this challenging situation, please contact me. " ,
                 textAlign: "justify"
             },
             {
