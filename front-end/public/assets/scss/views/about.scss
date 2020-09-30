@@ -45,6 +45,9 @@
         opacity: 0;
         overflow: hidden;
     }
+    .links{
+        display: none;
+    }
 }
 .ps-team-card:hover{
     .team-image{
@@ -55,5 +58,11 @@
     .description{
         height: auto;
         opacity: 1;
+    }
+    .heading{
+        display: none
+    }
+    .links{
+        display: flex !important;
     }
 }
