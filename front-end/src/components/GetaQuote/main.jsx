@@ -109,15 +109,17 @@ function GetaQuoteForm(props) {
       )}
       <Modal isOpen={isOpen} onClose={formClose} isCentered={screenWidth > 420 ? true : false} scrollBehavior={screenWidth > 420 ? "inside" : "outside"}>
         <ModalOverlay />
-        <ModalContent maxWidth={["400px", "400px", "600px"]} minHeight={screenWidth > 420 ? "" : "100vh"} mb={screenWidth <= 420 ? 0 : ""} mt={screenWidth <= 420 ? 0 : ""}>
+        <ModalContent maxWidth={["400px", "400px", "600px"]} maxHeight={screenWidth > 420 ? "700px" : ""} minHeight={screenWidth > 420 ? "" : "100vh"} mb={screenWidth <= 420 ? 0 : ""} mt={screenWidth <= 420 ? 0 : ""}>
           <ModalBody>
-            <ModalHeader mt={4} style={{ zIndex: "3", position: "sticky", top: 0, backgroundColor: "white" }}> <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}></Button><span className="display5">{props.serviceName}</span></ModalHeader>
+            <ModalHeader style={{ zIndex: "3", position: "sticky", top: 0, backgroundColor: "white" }}> <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}></Button><span className="display5">{props.serviceName}</span></ModalHeader>
             <div className="d-flex flex-wrap px-3">{description.map((service, index) => {
               return (
                 <div className="rounded-8 hover-effect bg-light m-2 py-2 px-3" key={index}>{service}</div>
               )
             })}</div>
+
             <Box m={2} mb={4} className="container contact-form">
+              <div className="mt-1 mb-4 font-weight-bold">* We are developing an E-commerce platform to enhance the user experience.</div>
               <form onSubmit={onSubmit}>
                 <input
                   type="hidden"

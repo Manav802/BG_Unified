@@ -164,7 +164,7 @@ function ErrorForm(props) {
             <Link mx={["6px", "10px", "16px"]} fontSize={["10px", "12px", "14px"]} textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
             <Modal isOpen={isOpen} onClose={formClose} isCentered={screenWidth > 420 ? true : false} scrollBehavior={screenWidth > 420 ? "inside" : "outside"}>
                 <ModalOverlay />
-                <ModalContent maxWidth={["430px", "430px", "600px", "700px"]} minHeight={screenWidth > 420 ? "" : "100vh"} mb={screenWidth <= 420 ? 0 : ""} mt={screenWidth <= 420 ? 0 : ""}>
+                <ModalContent maxWidth={["430px", "430px", "600px", "700px"]} maxHeight={screenWidth > 420 ? "700px" : ""} minHeight={screenWidth > 420 ? "" : "100vh"} mb={screenWidth <= 420 ? 0 : ""} mt={screenWidth <= 420 ? 0 : ""}>
                     <ModalHeader style={{ zIndex: "3", position: "sticky", top: 0, backgroundColor: "white" }}>
                         <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}></Button>
                         <span className="display5 mx-2">Report an Error</span></ModalHeader>
