@@ -15,11 +15,6 @@ export default [
         description: "AGC Networks (AGC) is a Global Solutions Integrator representing the world’s best brands in Unified Communications, Data Center & Edge IT, Cyber Security (CYBER-i) and Digital Transformation & Applications to evolve the customer’s digital landscape. AGC’s ability to tailor solutions across quadrants is strengthened through delivery of seamless customer support services.",
     },
     {
-        name: "Blue Glue",
-        logo: "/assets/images/brands/blueglue.png",
-        description: "Blue Glue is an Australian company that designs, develops and manufactures advanced access control and security, personnel tracking and WH&S systems. The Blue Glue Contractor Competency System (CCS) and the National Safety System (NSS) delivers a fully integrated, single point of contact solution that meets all our client needs. Cumulus-Cumulus is leading the transition of the data center market from a closed and proprietary environment to one that embraces open, standards-based systems. Unlike anyone else in the market, we build networking products purely with Linux. Our customers can leverage its standard interfaces and rich ecosystem to achieve a new level of control of cost and operations  — previously accessible only to the largest web-scale operators."
-    },
-    {
         name: "Fortinet (NASDAQ: FTNT)",
         logo: "/assets/images/brands/fortinet.png",
         description: "Fortinet (NASDAQ: FTNT) secures the largest enterprise, service provider, and government organizations around the world. Fortinet empowers its customers with intelligent, seamless protection across the expanding attack surface and the power to take on ever-increasing performance requirements of the borderless network"
@@ -35,9 +30,9 @@ export default [
         description: "At Datacom, we know that cleverly applied information technology makes a demonstrable difference to our clients’ businesses. Private and public sector clients across New Zealand and Australia and from the USA to Asia choose to partner with us because our service breadth and depth is world-class, our infrastructure rock-solid, and our local knowledge truly insightful."
     },
     {
-        name: "Airtrunk",
+        name: "Datacom@Airtrunk",
         logo: "/assets/images/brands/airtrunk.png",
-        description: "AirTrunk combines Asia-Pacific insight and best-in-class data centre design to power the companies transforming the world. The world of tomorrow will be driven by a handful of companies using one resource in smarter ways: data."
+        description: "Datacom@AirTrunk provides a secure, scalable home for your digital assets. We provide flexible contracts, true usage-based billing and guaranteed uptime availability to help your business reach its full digital potential."
     },
     {
         name: "Micro Focus",
