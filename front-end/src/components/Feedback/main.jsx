@@ -93,10 +93,10 @@ function FeedbackForm(props) {
     });
     return (
         <>
-            <Link mx={["6px", "10px", "16px"]} fontSize={["10px", "12px", "14px"]} textTransform="uppercase" onClick={onOpen}>Send A Feedback</Link>
+            <Button mx={4} variant="unstyled" onClick={onOpen} variantColor="white">Feedback</Button>
             <Modal isOpen={isOpen} onClose={formClose} isCentered={screenWidth > 420 ? true : false} scrollBehavior={screenWidth > 420 ? "inside" : "outside"}>
                 <ModalOverlay />
-                <ModalContent py="2" maxWidth={["430px", "400px", "600px"]} minHeight={screenWidth > 420 ? "" : "100vh"} mb={screenWidth <= 420 ? 0 : ""} mt={screenWidth <= 420 ? 0 : ""}>
+                <ModalContent py="2" maxWidth={["430px", "400px", "600px"]} maxHeight={screenWidth > 420 ? "700px" : ""} minHeight={screenWidth > 420 ? "" : "100vh"} mb={screenWidth <= 420 ? 0 : ""} mt={screenWidth <= 420 ? 0 : ""}>
                     <ModalBody>
                         <ModalHeader style={{ zIndex: "3", position: "sticky", top: 0, backgroundColor: "white" }}>
                             <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}></Button>

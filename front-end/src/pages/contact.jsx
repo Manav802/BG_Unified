@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ContactForm from "../components/contactForm/main";
 import Head from "next/head";
+import Fade from 'react-reveal/Fade';
 import Section from "../pageBuilder/Section";
 import Title from "../pageBuilder/Title";
 import { Heading, Text, Box, Icon, Image, Flex} from "@chakra-ui/core";
@@ -21,10 +22,15 @@ class Contact extends Component {
           <Head>
             <title>Contact us - BG Unified Solutions</title>
           </Head>
-            <Section zIndex="3000" bgImage="url('/assets/images/backgrounds/call_us.jpg')" blend="screen" textAlign="center" bg={["gray.300"]} py={[16, 32]} my={0}>
-            <Title zIndex="100" fontSize={["44px","64px"]}>Contact Us</Title>
-            <Text zIndex="100" fontSize="xl" mt={2}>Have a doubt? Want to know more? Let's Connect!</Text>
-        </Section>
+          <Box pos="relative" bg="dark.500">
+            <Image position="absolute" height="100%" zIndex="0" top={0} left={0}  opacity=".3" objectFit="cover" width="100%" src="/assets/images/backgrounds/call_us.jpg"></Image>
+            <Fade distance="5%" duration={500} top>
+                <Section zIndex="100" textAlign="center" color="white" bg={["gray.200", "#ffffff00"]} py={[16, 40]} my={0}>
+                  <Title zIndex="100" fontSize={["44px","64px"]}>Contact Us</Title>
+                  <Text zIndex="100" fontSize="xl" mt={2}>Have a doubt? Want to know more? Let's Connect!</Text>
+                </Section>
+            </Fade>
+          </Box>
         <Section py={0} my={0}>
         <Row mt={16} mb={4}>
               <Flex m={[4,0]} width={["100%","33.33%"]} align="center" direction={["row","column"]}>

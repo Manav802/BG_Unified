@@ -321,7 +321,7 @@ const services = {
     "sdaas": {
         title: "Service Desk As A Service",
         slogan: "The Perfect Customer Service",
-        bgImage: "/assets/images/services/wafaas.jpg",
+        bgImage: "/assets/images/services/sdaasBG.jpg",
         category: "Collaborative Services",
         icon: "/assets/images/icons/monotone/serviceDesk.svg",
         color: "#E4572E",
@@ -335,7 +335,7 @@ const services = {
     "gpu": {
         title: "GPU As A Service",
         slogan: "Powerful Yet Simple",
-        bgImage: "/assets/images/services/wafaas.jpg",
+        bgImage: "/assets/images/services/gpuBG.jpg",
         category: "IT Infrastructural Services",
         icon: "/assets/images/icons/monotone/gpu.svg",
         color: "#E4572E",

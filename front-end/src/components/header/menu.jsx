@@ -10,7 +10,6 @@ import {
   Drawer,
   DrawerBody,
   DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   useDisclosure,
@@ -43,7 +42,7 @@ function menu(props) {
               onClick={handleToggle}
             >
               <div className="d-flex justify-content-between align-items-center w-100">
-                <span className="display6">Our Solutions</span>
+                <span className="display6">Solutions</span>
                 <Icon
                   name={services ? "chevron-up" : "chevron-down"}
                   size="16px"
@@ -81,27 +80,33 @@ function menu(props) {
                   <a className="link py-1">Newsroom</a>
                 </Link>
                 <Link href="/solutions">
-                  <a className="link py-1"> Solutions</a>
+                  <a className="link py-1">Our Solutions</a>
+                </Link>
+                <Link href="/about#team">
+                  <a className="link py-1">Team</a>
+                </Link>
+                <Link href="/stories">
+                  <a className="link py-1">Customer Stories</a>
                 </Link>
               </div>
             </Collapse>
             <Link href="/features">
-            <Button className="btn-block btn my-2" bg="white" py="24px">
-              <div className="d-flex justify-content-between align-items-center w-100">
-                <span className="display6">Our Features</span>
-              </div>
-            </Button>
+              <Button className="btn-block btn my-2" bg="white" py="24px">
+                <div className="d-flex justify-content-between align-items-center w-100">
+                  <span className="display6">Our Features</span>
+                </div>
+              </Button>
             </Link>
             <Link href="/contact">
-            <Button as="a" className="btn-block btn my-2" bg="white" py="24px">
-              <div className="d-flex justify-content-between align-items-center w-100">
-                <span className="display6">Contact</span>
-              </div>
-            </Button>
+              <Button as="a" className="btn-block btn my-2" bg="white" py="24px">
+                <div className="d-flex justify-content-between align-items-center w-100">
+                  <span className="display6">Contact</span>
+                </div>
+              </Button>
             </Link>
           </DrawerBody>
           <DrawerFooter justifyContent="start">
-             <Button leftIcon="arrow-back" bg="white" onClick={onClose} color="primary.500">Go Back</Button>
+            <Button leftIcon="arrow-back" bg="white" onClick={onClose} color="primary.500">Go Back</Button>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

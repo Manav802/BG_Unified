@@ -1,7 +1,7 @@
 import React from "react";
-import { Image, Flex, Avatar, Box, Text } from "@chakra-ui/core";
+import { Image, Flex, Avatar, Box, Text, Heading } from "@chakra-ui/core";
 import { useRouter } from "next/router";
-
+import Fade from 'react-reveal/Fade';
 import blogs from "../../database/newsroom";
 import Head from "next/head";
 import Link from "next/link";
@@ -47,18 +47,18 @@ function Blogs() {
       </Head>
 
       
-     <Section mb={6} pb={0} mt={4}>
-      <Title mb={8} fontSize={["4xl","4xl","5xl"]} textAlign="left">{blog.title}</Title>
-     
-            <img
-            style={{borderRadius:"1rem", width:"100%", height:"320px", objectFit:"cover"}}
-            src={blog.image}
-            alt={imgalt}
-            />
-       
-     </Section>
-     <Section  mt={6} py={0} >
-        <Box width={["100%","100%","72%"]}>
+  
+     <Box  zIndex="10" pos="relative" bg="dark.500">
+          <Image position="absolute" height="100%" zIndex="0" top={0} left={0}  opacity=".3" objectFit="cover" width="100%" src={blog.image}></Image>
+            <Fade distance="5%" duration={500} top>
+            <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
+            <Heading width="fit-content" rounded={8} zIndex="100" size="xs" textAlign="center" color="white" bg="primary.500" py={1} px={2} mb={4}>{blog.category}</Heading>
+            <Title textAlign="left" zIndex="100" fontSize={["24px","48px"]}>{blog.title}</Title>
+            </Section>
+            </Fade>
+          </Box>
+     <Section mt={6} py={0} >
+        <Box fontWeight="600" lineHeight={1.6} color="gray.500" width={["100%","100%","72%"]}>
         {blog.content && blog.content.map((body, index) => (
             <Body {...body}></Body>
         ))}
@@ -66,7 +66,7 @@ function Blogs() {
       </Section>         
       <Section pt={0} pb={6}>
         <Flex width={["100%","100%","72%"]}>
-        <Flex >
+          <Flex >
             <Avatar src={blog.avatar} />
             <Box ml="3">
               <Text fontWeight="bold">

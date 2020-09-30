@@ -18,8 +18,8 @@ const timeline = {
   2016: "Technology migration to Next-Generation Firewalls, UCaaS, Wireless, Telepresence and Storage.",
   2017: "Presence in London, offering all the services in our portfolio including, UCaaS, SaaS, IaaS, WiaaS and FaaS",
   2018: "Received BTS Excellence Award in recognition of Excellent Service by the NSW Government.",
-  2019: "Built our Logging Cloud Connect Product, Newly deployed RDS/VDIaaS Solution into its portfolio as Workstation Service.",
-  2020: "DNS As A Service using a hybrid Windows, Red Hat Linux and Infoblox DNS Servers",
+  2019: "Built our own Logging Cloud Connect Product, Newly deployed RDS/VDIaaS Solution into its portfolio as Workstation Service.",
+  2020: "DNS As A Service using a hybrid Windows, Red Hat Linux andInfoblox DNS Servers",
 }
 
 class about extends Component {
@@ -41,12 +41,16 @@ class about extends Component {
           <Head>
             <title>More About Us - BG Unified</title>
           </Head>
-            <Section zIndex="3000" bgImage="url('/assets/images/backgrounds/aboutus.jpg')" blend="overlay" color="white" textAlign="center" bg={["dark.400"]} py={[16, 32]} my={0}>
-                <Heading  size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Know More</Heading>
-                <Title zIndex="100" fontSize={["44px","64px"]}>About Us</Title>
-            </Section>
-         
-          <Section containerWidth="100%">
+          <Box pos="relative" bg="dark.500">
+            <Image position="absolute" height="100%" zIndex="0" top={0} left={0}  opacity=".3" objectFit="cover" width="100%" src="/assets/images/backgrounds/aboutus.jpg"></Image>
+            <Fade distance="5%" duration={500} top>
+                <Section zIndex="100" textAlign="center" color="white" bg={["gray.200", "#ffffff00"]} py={[16, 40]} my={0}>
+                  <Heading  size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Know More</Heading>
+                  <Title zIndex="100" fontSize={["44px","64px"]}>About Us</Title>
+                </Section>
+            </Fade>
+          </Box>
+              <Box mt="-48px">
               <Slider
                 className="timeline"
                 flickityRef={(c) => (this.flkty = c)}
@@ -79,7 +83,7 @@ class about extends Component {
                   <Flex justify="center" align="center" height="96px"><Box width="100%" height="4px" bg="gray.200"></Box></Flex>
                 </div>
               </Slider>
-          </Section>
+              </Box>
             <div className="container">
               <div className="row">
                 <div className="col-lg-10 offset-1">
@@ -140,8 +144,8 @@ class about extends Component {
                     img="/assets/images/team/jenny.jpg"
                   >
                    CPA and Master of Accounting.
-                   the financial specialist started up this company back in 2014. Responsible personality,
-                   an expert when it comes to finance and accounts.
+                   the financial specialist, started up this company back in 2014. Responsible personality,
+                   expert when it comes to finance and accounts.
                   </Team>
                 </div>
                 <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">

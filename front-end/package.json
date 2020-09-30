@@ -24,6 +24,7 @@
     "react-dom": "^16.13.1",
     "react-flickity-component": "^3.5.0",
     "react-icons": "^3.11.0",
+    "react-load-image": "^0.1.7",
     "react-reveal": "^1.2.2",
     "react-svg": "^11.0.40",
     "react-transition-group": "^4.4.1",

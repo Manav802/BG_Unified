@@ -8,6 +8,7 @@ export default [
         },
         gap: 10,
         py: [8,16],
+        rowDistance: 8,
         body: [
         {
             width:["100%", "100%", 1/2],
@@ -15,10 +16,10 @@ export default [
             type: "imageGroup",
                 my:[0,2],
                 data: {
-                    images: ["/assets/images/services/socaas.jpg"],
+                    images: ["/assets/images/services/sdaas.svg"],
                     borderRadius: 8,
-                    width: ['100%',"100%","90%"],
-                    height: "300px",
+                    width: ['100%',"100%","80%"],
+                    height: "240px",
                     objectFit: "cover"
                 }
             },
