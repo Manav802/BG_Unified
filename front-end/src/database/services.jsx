@@ -134,7 +134,7 @@ const services = {
         title: "Firewall As A Service",
         slogan: "Redefining Security Needs",
         bgImage: "/assets/images/services/firewall-2.jpg",
-        category: "Cyber Security Services",
+        category: "Network Services",
         icon: "/assets/images/icons/monotone/Firewall.svg",
         color: "#6A0136",
         tags: ["Firewall", "Security", "protection"],

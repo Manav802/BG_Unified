@@ -39,6 +39,11 @@ function FirewallPricing(props) {
                               serviceName="Firewall As A Service"
                               serviceDescription="Physical 1G, Multihomed"
                             ></PricingQuote>
+                            <PricingQuote
+                              title="On Premise"
+                              serviceName="Firewall As A Service"
+                              serviceDescription="Virtual Cluster 1G, Multihomed"
+                            ></PricingQuote>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 my-3">
@@ -57,6 +62,11 @@ function FirewallPricing(props) {
                               serviceDescription="Physical Cluster 1G, Multihomed"
                             ></PricingQuote>
                           </PricingCard>
+                          <PricingQuote
+                              title="On Premise"
+                              serviceName="Firewall As A Service"
+                              serviceDescription="Virtual Cluster 1G, Multihomed"
+                            ></PricingQuote>
                         </div>
                       </div>
                     </Fade>
@@ -80,6 +90,11 @@ function FirewallPricing(props) {
                               serviceName="Firewall As A Service"
                               serviceDescription="Virtual 1G, Multihomed"
                             ></PricingQuote>
+                            <PricingQuote
+                              title="On Premise"
+                              serviceName="Firewall As A Service"
+                              serviceDescription="Virtual Cluster 1G, Multihomed"
+                            ></PricingQuote>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 my-3">
@@ -94,6 +109,11 @@ function FirewallPricing(props) {
                             ></PricingQuote>
                             <PricingQuote
                               title="Multihomed"
+                              serviceName="Firewall As A Service"
+                              serviceDescription="Virtual Cluster 1G, Multihomed"
+                            ></PricingQuote>
+                            <PricingQuote
+                              title="On Premise"
                               serviceName="Firewall As A Service"
                               serviceDescription="Virtual Cluster 1G, Multihomed"
                             ></PricingQuote>
@@ -116,6 +136,11 @@ function FirewallPricing(props) {
                               serviceName="Firewall As A Service"
                               serviceDescription="Virtual 10G, Multihomed"
                             ></PricingQuote>
+                            <PricingQuote
+                              title="On Premise"
+                              serviceName="Firewall As A Service"
+                              serviceDescription="Virtual Cluster 1G, Multihomed"
+                            ></PricingQuote>
                           </PricingCard>
                         </div>
                         <div className="col-lg-5 my-3">
@@ -132,6 +157,11 @@ function FirewallPricing(props) {
                               title="Multihomed"
                               serviceName="Firewall As A Service"
                               serviceDescription="Virtual Cluster 10G, Multihomed"
+                            ></PricingQuote>
+                            <PricingQuote
+                              title="On Premise"
+                              serviceName="Firewall As A Service"
+                              serviceDescription="Virtual Cluster 1G, Multihomed"
                             ></PricingQuote>
                           </PricingCard>
                         </div>

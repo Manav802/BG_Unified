@@ -281,7 +281,7 @@ class Landing extends Component {
             </div>
           </div>
         </Section>
-        <Section my={16} containerWidth="100%">
+        <Section>
           <Partners>
           </Partners>
         </Section>

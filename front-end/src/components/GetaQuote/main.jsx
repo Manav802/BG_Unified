@@ -91,7 +91,7 @@ function GetaQuoteForm(props) {
       {!props.button && (
         <div className="mt-3 w-100 px-3 d-flex justify-content-between">
           {props.title && <p>{props.title}</p>}
-          <a className="" onClick={onOpen}>
+          <a className="link" onClick={onOpen}>
             Get a quote
           </a>
         </div>
