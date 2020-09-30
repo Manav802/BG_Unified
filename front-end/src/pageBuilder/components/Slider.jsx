@@ -21,11 +21,11 @@ function SliderC({ sliderInfo }) {
       }}>
         {sliderInfo.map((info, index) => (
           <Flex justifyContent="center" w={["50%", "32%", "25%", "20%"]}>
-            <Box mb="10px" p="15px" shadow="md" overflow="hidden">
+            <Box mb={"10px"} p={"15px"} mx={"10px"} shadow="md" overflow="hidden">
               <ImageLoader
                 src={info.imgSrc}
               >
-                <img />
+                <Image width={"200px"} height={"130px"} />
                 <Spinner
                   thickness="4px"
                   speed="0.65s"
