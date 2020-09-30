@@ -4,7 +4,7 @@ export default [
     {
         px: 2,
         title: "Secure Connectivity with SD-WAN",
-        description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, WiFi Services etc. to securely connect users to applications. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
+        description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, Wi-Fi Services etc. to connect users to applications securely. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
         descriptionStyle: {
             fontSize: ["xl", "lg"],
             opacity: 0.7
@@ -43,7 +43,7 @@ export default [
                     title: "Virtual Flexibility",
                     align: "left",
                     size: "50px",
-                    description: "Industry’s only multi-gigabit virtual WAN optimization solution and the only products that support every major hypervisor. Email (MS Exchange and SMTP), file services (CIFS, FTP), document management(SharePoint)."
+                    description: "Industry’s only multi-gigabit virtual WAN optimization solution and the superior products that support every primary hypervisor. Email (MS Exchange and SMTP), file services (CIFS, FTP), document management(SharePoint)."
                 }
             },
             {
@@ -73,7 +73,7 @@ export default [
                     title: "Storage Centralization",
                     align: "left",
                     size: "50px",
-                    description: " Fast, Reliable and Increasingly efficient centralizing servers and storage offer significant cost, management, security, and compliance benefits. Detects, isolates notifies and corrects faults encountered in the network."
+                    description: "Fast, Reliable and Increasingly efficient centralizing servers and storage offer high cost, management, security, and compliance benefits. Detects, isolates notifies and corrects faults encountered in the network."
                 }
             },
             {

@@ -23,14 +23,15 @@ export default [
                     fontSize: ["md", "md", "md", "lg"],
                     title: "Harness the power of GPU",
                     titleSize: [28, 28, 28, 32],
-                    text: <span>You get direct access to one of the most flexible 
-                    server-selection processes in the industry and seamless integration. 
-                    This delivers extreme performance and industry-leading hybrid cloud 
-                    data management capabilities. To provide customer enablement (if required) 
-                    we can provide tools to automatically detect GPUs and make them available. 
-                    In order to maximize utilization of this powerful resource IT administrators
-                     can configure, scale, and allow fine-grained access control of GPU resources 
-                     to end-users.                    
+                    text: <span>You get direct access to one of the most flexible server-selection
+                         processes in the industry and seamless integration. 
+                         GPU delivers extreme performance and industry-leading hybrid cloud data 
+                         management capabilities. To provide customer enablement (if required), 
+                         we can provide tools to detect GPUs and make them 
+                         available automatically. To maximize utilization of this 
+                         powerful resource IT administrators can configure, scale, 
+                         and allow fine-grained access control of GPU resources to end-users.
+                    
                      </span>
                 }]
             }]
@@ -123,7 +124,7 @@ export default [
                                  GPUs has grown exponentially.
                                 </span><br/><br/>
                             <span> From refining and mining data to analyzing it. From Scientific Researches to Health Sector.
-                                 From finance to educational institutions. Graphical Processing Unit has become an important resource for every industry.
+                                 From finance to educational institutions. Graphical Processing Unit has become an essential resource for every industry.
                                 </span>,
                             </>    
                 },

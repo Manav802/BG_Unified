@@ -38,11 +38,15 @@ export default [
         body: [{
             type: "content",
             data: [{
-                text: <span>Optimizing infrastructural resources is essential to controlling the cost of data growth. 
-                    The Enterprise Infrastructure Assessment provides in-depth reports and recommendations for improving storage efficiency, 
-                    performance, and availability. Findings are linked to your specific risks and benefits—so you can scale your infra 
-                    systems to successfully serve the growing needs of your business. We can address your heterogeneous data center environment 
-                    and provide data and recommendations across all assets.</span>,
+                text: <span>Optimizing infrastructural resources is essential to controlling
+                     the cost of data growth. The Enterprise Infrastructure Assessment 
+                     provides in-depth reports and recommendations for improving storage 
+                     efficiency, performance, and availability. Findings, linked to your 
+                     specific risks and benefits—so you can scale your infra systems to serve 
+                     the growing needs of your business successfully. We can address 
+                     your heterogeneous data center environment and provide data and 
+                     recommendations across all assets.
+                </span>,
                 fontSize: ["lg","xl"],
                 textAlign: "center",
             }]
@@ -70,7 +74,7 @@ export default [
                 image: "/assets/images/icons/color/ui.svg",
                 title: "Scale Up On-Demand",
                 align: "left",
-                description: "With BG Unified Solutions, you create a combination of CPU, memory, bandwidth, and storage as per your requirements. Enjoy the freedom to scale up your infrastructure as and when required"
+                description: "With BG Unified Solutions, you create a combination of CPU, memory, bandwidth, and storage as per your requirements. Enjoy the freedom to scale up your infrastructure as and when required."
                 }
             },
             {
@@ -84,7 +88,7 @@ export default [
                     image: "/assets/images/icons/color/agile.svg",
                     title: "Stay Agile",
                     align: "left",
-                    description: "Resources are not bundled together and there is surely no standard server size. Combine long-term subscriptions for predictable workloads and on-time delivery with regular updates."
+                    description: "Resources are not bundled together, and there is undoubtedly no standard server size. Combine long-term subscriptions for predictable workloads and on-time delivery with regular updates."
                     }
             },
             {
@@ -112,7 +116,7 @@ export default [
                     image: "/assets/images/icons/color/headphones.svg",
                     title: "Excellent Customer Support",
                     align: "left",
-                    description: "BGUS's friendly and skilled customer support service is available24X7X365 with very less response time. Our policies ensure rapid and satisfactory resolution of issues."
+                    description: "BGUS's friendly and skilled customer support service is available24X7X365 with significantly less response time. Our policies ensure rapid and satisfactory resolution of issues."
                     }
             },    
             {
@@ -140,7 +144,7 @@ export default [
                     image: "/assets/images/icons/color/fix.svg",
                     title: "No Vendor lock-in",
                     align: "left",
-                    description: "At BGUS you can develop or deploy your application in the cloud without being forced to use any vendor-specific tools."
+                    description: "At BGUS' infrastructure, you can develop or deploy your application in the cloud without being forced to use any vendor-specific tools."
                     }
             },
         ]
@@ -187,7 +191,7 @@ export default [
             data: [{
                 textAlign: "justify",
                 fontSize: ["lg","xl"],
-                text: "With BG Unified Solutions Infrastructure as a Service, not only do you pay only for the data storage you use when you use it but we provide you with a geographical redundant storage infrastructure and ready access to experts in Infrastructure Technologies who will be eager to understand your storage requirements. Initial setup is very quick, adding or removing capacity is even faster and without any downtime."
+                text: "With BG Unified Solutions Infrastructure as a Service, not only do you pay only for the data storage you use, but we provide you with a geographical redundant storage infrastructure and ready access to experts in Infrastructure Technologies who will be eager to understand your storage requirements. Initial setup is rapid, adding or removing capacity is even faster and without any downtime."
             }]
         },
         {

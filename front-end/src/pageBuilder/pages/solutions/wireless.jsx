@@ -77,7 +77,7 @@ export default [
                 fontSize: "md",
                 content: [{
                     title: "Clustering of Devices",
-                    description: "Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, to support Wireless Phones in any environment. Traffic and congestion problems were reduced significantly.",
+                    description: "Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, to support Wireless Phones in any environment. We reduce traffic and congestion problems significantly.",
                     image: "/assets/images/illustrations/ClusteringOfDevices_Wireless.svg"
                 },
                 {

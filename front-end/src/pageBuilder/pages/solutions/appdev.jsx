@@ -24,7 +24,7 @@ export default [
                 image: "/assets/images/icons/color/world-wide-web.svg",
                 title: "Diversified Domains",
                 align: "left",
-                description: "We help you build applications for a wide domain - We help you build applications for a wide range of platforms and domains, including mobile, web, enterprise, startups and much more.."
+                description: "We help you build applications for a broad domain - We help you build applications for a wide range of platforms and fields, including mobile, web, enterprise, startups and much more.."
                 }
             },
             {
@@ -38,7 +38,7 @@ export default [
                     image: "/assets/images/icons/color/target-audience.svg",
                     title: "Client-Centric",
                     align: "left",
-                    description: "We make sure that our Application Development Service, is exactly in agreement with the vision of our clients, and what they expect from us."
+                    description: "We make sure that our Application Development Service is precisely in agreement with the vision of our clients, and what they expect from us."
                     }
             },
             {
@@ -52,7 +52,7 @@ export default [
                     image: "/assets/images/icons/color/money.svg",
                     title: "Affordable",
                     align: "left",
-                    description: "We tend to provide our customers with the full value of the money they pay. We make sure that each and every penny paid is fully utilized."
+                    description: "We tend to provide our customers with the full value of the money they pay. We make sure that every penny spent is fully utilized."
                     }
             },
             {
@@ -66,7 +66,7 @@ export default [
                     image: "/assets/images/icons/color/user-engagement.svg",
                     title: "User-Engagement",
                     align: "left",
-                    description: "Applications developed for mobiles and web, help your clients and customers to use the application at their own ease."
+                    description: "Applications developed for mobiles and web, help your clients and customers to use the application at their ease."
                     }
             },    
             {
@@ -80,7 +80,7 @@ export default [
                     image: "/assets/images/icons/color/turn.svg",
                     title: "Low Turn-Around Time",
                     align: "left",
-                    description: "We plan, design, start and deliver without wasting any single second. Delivering the results before the deadlines, always."
+                    description: "We plan, design, start and deliver without wasting any single second, providing the results before the deadlines, always."
                     }
             },
             {
@@ -94,7 +94,7 @@ export default [
                     image: "/assets/images/icons/color/headphones.svg",
                     title: "Excellent Customer Support",
                     align: "left",
-                    description: "We are available 24X7X365, at your disposal. Be it installation, deployment, consultation, we are there to help you."
+                    description: "We are available 24X7X365, at your disposal. Be it installation, deployment, consultation; we are there to help you."
                     }
             },
         ]

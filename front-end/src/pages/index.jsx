@@ -141,39 +141,40 @@ class Landing extends Component {
               Solutions
               </div>
             <div className="col-12 mt-2 mb-5 text-center text-dark display4">
-              What We Deliver?
+              What do We deliver?
               </div>
-            <Fade duration={800} cascade distance={"8%"} bottom>
-              <div className="row mx-2">
-                <div className="col-xl-4 col-sm-6 my-2">
-                  <Service className="col-xl-4 col-sm-6 my-2" service="Infrastructure As A Service"></Service>
-                </div>
-                <div className="col-xl-4 col-sm-6 my-2">
-                  <Service className="col-xl-4 col-sm-6 my-2" service="Storage As A Service"></Service>
-                </div>
-                <div className="col-xl-4 col-sm-6 my-2">
-                  <Service className="col-xl-4 col-sm-6 my-2" service="Wireless As A Service"></Service>
-                </div>
-                <div className="col-xl-4 col-sm-6 my-2">
-                  <Service className="col-xl-4 col-sm-6 my-2" service="DNS As A Service"></Service>
-                </div>
-                <div className="col-xl-4 col-sm-6 my-2">
-                  <Service className="col-xl-4 col-sm-6 my-2" service="Unified Communications As A Service"></Service>
-                </div>
-                <div className="col-xl-4 col-sm-6 my-2">
-                  <Service className="col-xl-4 col-sm-6 my-2" service="Firewall As A Service"></Service>
-                </div>
-              </div>
-            </Fade>
-          </div>
-          <Box textAlign={["center", "center", "right"]}>
-            <Text fontSize="xl">We deliver 25+ services</Text>
-            <Link href="/solutions"><a><Text color="primary.500" mt={2} fontFamily="Nexa bold" fontSize="xl">View All <Icon name="arrow-forward"></Icon></Text></a></Link>
-          </Box>
-        </Section>
-        <Section>
-          <Title>
-            We have a ‘can do’ attitude with an ‘easy to work with’ culture.
+              <Fade duration={800} cascade distance={"8%"} bottom>
+                <div className="row mx-2">
+                  <div className="col-xl-4 col-sm-6 my-2">
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Infrastructure As A Service"></Service>
+                  </div>
+                  <div className="col-xl-4 col-sm-6 my-2">
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Storage As A Service"></Service>
+                  </div>
+                  <div className="col-xl-4 col-sm-6 my-2">
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Wireless As A Service"></Service>
+                  </div>
+                  <div className="col-xl-4 col-sm-6 my-2">
+                    <Service className="col-xl-4 col-sm-6 my-2" service="DNS As A Service"></Service>
+                  </div>
+                  <div className="col-xl-4 col-sm-6 my-2">
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Unified Communications As A Service"></Service>
+                  </div>
+                  <div className="col-xl-4 col-sm-6 my-2">
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Firewall As A Service"></Service>
+                  </div>
+                  </div>
+                </Fade>
+            </div>
+            <Box textAlign={["center","center","right"]}>
+                <Text fontSize="xl">We deliver 25+ services.</Text>
+                <a><Text color="primary.500" mt={2} fontFamily="Nexa bold" fontSize="xl">View All <Icon name="arrow-forward"></Icon></Text></a>
+            </Box>
+            </Section>
+            <Section>
+              <Title>
+              We have a 'can-do' attitude with an 'easy to work with' culture.
+
               </Title>
           <Description>
             Our values are based around fresh thinking, delivering on our promises, showing customer respect and making a 100% commitment.

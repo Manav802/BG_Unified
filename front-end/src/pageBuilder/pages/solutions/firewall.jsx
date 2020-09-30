@@ -23,12 +23,14 @@ export default [
                     fontSize: "lg",
                     title: "Your Security Needs Meet Our Expertise",
                     titleSize: 32,
-                    text: <span>We, at BG Unified Solutions, tend to offer the best in
-                    class Security for your business around the globe. With our team of
-                    experts, the experience we’ve gained, ensures you to provide customizable
-                    security to your network, prevent any security breach, secure data
-                    flowing through your network. We offer you solutions that especially
-                    suit your business model, whether small, medium, or large, we’ve got it covered.
+                    text: <span>We, at BG Unified Solutions, tend to offer the best-in-class 
+                        Security for your business around the globe. With our team of experts,
+                         the experience we’ve gained, ensures you to 
+                         provide customizable security to your network, prevent any security breach,
+                          secure data flowing through your system. We offer you solutions 
+                          that especially suit your business model, whether small, medium, 
+                          or large, we’ve got it covered.
+
                 </span>
                 }]
             }]
@@ -55,7 +57,7 @@ export default [
     {
         title: "Protect Your Network With BG Unified Solutions",
 
-        description: "BG Unified solutions provide you firewalls for a single location system, or a multi-homed network, as per your needs and requirements. We have On-premise or cloud-based, that helps secure your IT environment quickly.",
+        description: "BG Unified solutions provide you firewalls for a single location system, or a multi-homed network, as per your needs and requirements. We have On-premise or cloud-based that helps secure your IT environment quickly.",
 
         my: 0,
         py: 20,

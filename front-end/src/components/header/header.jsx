@@ -166,7 +166,7 @@ function header(props) {
                                                             <SVG color="primary.500" src="/assets/images/icons/library/home/building.svg"></SVG>
                                                             <Box onClick={onClose} ml="3">
                                                                 <Heading size="sm" fontFamily="Nexa Bold">About us</Heading>
-                                                                <Text fontSize="sm" fontWeight="500" opacity=".7">Our Mission & Core values</Text>
+                                                                <Text fontSize="sm" fontWeight="500" opacity=".7">Our Vision & Core values</Text>
                                                             </Box>
                                                         </Flex></a>
                                                     </Hyperlink>
@@ -177,7 +177,7 @@ function header(props) {
                                                             <SVG color="primary.500" src="/assets/images/icons/library/layout/layout-top-panel-5.svg"></SVG>
                                                             <Box onClick={onClose} ml="3">
                                                                 <Heading size="sm" fontFamily="Nexa Bold">Newsroom</Heading>
-                                                                <Text fontSize="sm" fontWeight="500" opacity=".7">Keep an eye on us</Text>
+                                                                <Text fontSize="sm" fontWeight="500" opacity=".7">What we are up to!</Text>
                                                             </Box>
                                                         </Flex></a>
                                                     </Hyperlink>
@@ -188,7 +188,7 @@ function header(props) {
                                                             <SVG color="primary.500" src="/assets/images/icons/library/general/folder.svg"></SVG>
                                                             <Box onClick={onClose} ml="3">
                                                                 <Heading size="sm" fontFamily="Nexa Bold">Our Solutions</Heading>
-                                                                <Text fontSize="sm" fontWeight="500" opacity=".7">What we deliver</Text>
+                                                                <Text fontSize="sm" fontWeight="500" opacity=".7">What do we deliver</Text>
                                                             </Box>
                                                         </Flex></a>
                                                     </Hyperlink>
@@ -199,7 +199,7 @@ function header(props) {
                                                             <SVG color="primary.500" src="/assets/images/icons/library/communication/group.svg"></SVG>
                                                             <Box onClick={onClose} ml="3">
                                                                 <Heading size="sm" fontFamily="Nexa Bold">Team</Heading>
-                                                                <Text fontSize="sm" fontWeight="500" opacity=".7">See our faces</Text>
+                                                                <Text fontSize="sm" fontWeight="500" opacity=".7">Meet Us!!</Text>
                                                             </Box>
                                                         </Flex></a>
                                                     </Hyperlink>
@@ -210,25 +210,25 @@ function header(props) {
                                                     <Box onClick={onClose} px={3} my={3} width="50%">
                                                         <Hyperlink href="/contact"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Contact Us</Heading>
-                                                            <Text fontSize="sm" fontWeight="500" opacity=".7">We are here to help</Text>
+                                                            <Text fontSize="sm" fontWeight="500" opacity=".7">We are here to help!</Text>
                                                         </a></Hyperlink> 
                                                     </Box>
                                                     <Box onClick={onClose} px={3} my={3} width="50%">
                                                         <Hyperlink href="/newsroom?tab=Case Study"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Case Studies</Heading>
-                                                            <Text fontSize="sm" fontWeight="500" opacity=".7">How we work</Text>
+                                                            <Text fontSize="sm" fontWeight="500" opacity=".7">Our Projects!!</Text>
                                                         </a></Hyperlink> 
                                                     </Box>
                                                     <Box onClick={onClose} px={3} my={3} width="50%">
                                                         <Hyperlink href="/stories"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Customer Stories</Heading>
-                                                            <Text fontSize="sm" fontWeight="500" opacity=".7">People say a lot</Text>
+                                                            <Text fontSize="sm" fontWeight="500" opacity=".7">The word out there!</Text>
                                                         </a></Hyperlink> 
                                                     </Box>
                                                     <Box onClick={onClose} px={3} my={3} width="50%">
                                                         <Hyperlink href="/partners"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Our Partners</Heading>
-                                                            <Text fontSize="sm" fontWeight="500" opacity=".7">Companies who trust us</Text>
+                                                            <Text fontSize="sm" fontWeight="500" opacity=".7">Companies who trust us!</Text>
                                                         </a></Hyperlink> 
                                                     </Box>
                                                 </Flex>

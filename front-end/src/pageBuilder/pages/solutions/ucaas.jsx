@@ -56,7 +56,7 @@ export default [
             after: " Your Application on the Cloud"
         },
         titleStyle: { fontSize: ["3xl", "4xl"], px: "5px" },
-        description: "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization, and Quality Monitoring. N+N Redundant components fulfilling all Unified Collaboration requirements of your business. Expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint",
+        description: "Cisco and Avaya Unified Collaboration, Messaging, Telepresence, Contact Center, Workforce Optimization, and Quality Monitoring. N+N Redundant components are fulfilling all Unified Collaboration requirements of your business. Expertise to address these challenges by designing and delivering complete collaboration solutions that maximize your capabilities and investments while minimizing your technology footprint",
         descriptionStyle: {
             textAlign: "left"
         },
@@ -102,7 +102,7 @@ export default [
                     image: "/assets/images/icons/color/learn.svg",
                     title: "Collaboration Experts",
                     align: "left",
-                    description: "We offer business and technology assessments to help identify any barriers in order for your collaborative Goals to succeed."
+                    description: "We offer business and technology assessments to help identify any barriers for your collaborative Goals to succeed."
                 }
             },
             {
@@ -130,7 +130,7 @@ export default [
                     image: "/assets/images/icons/color/headphones.svg",
                     title: "Excellent Customer Support",
                     align: "left",
-                    description: "BGUS's friendly and skilled customer support service is available 24X7X365 with very less response time. Our policies ensure rapid and satisfactory resolution of issues."
+                    description: "BGUS's friendly and skilled customer support service is available 24X7X365 with significantly less response time. Our policies ensure rapid and satisfactory resolution of issues."
                 }
             },
             {
@@ -144,7 +144,7 @@ export default [
                     image: "/assets/images/icons/color/user.svg",
                     title: "Hot Desking",
                     align: "left",
-                    description: "Log onto any device on your personal system, and have your user profile, populate on that particular system."
+                    description: "Log onto any device on your system, and have your user profile, populate on that particular system."
                 }
             },
         ]
@@ -179,7 +179,7 @@ export default [
                 fontSize: "md",
                 content: [{
                     title: "Flexibility / Scalability",
-                    description: "For any of your organization departments, our UCaaS offering provides a simplified IT management and a highly scalable platform. Irrespective of the end-user, everyone gets access to the latest and the greatest collaboration tools.",
+                    description: "For any of your organization departments, our UCaaS offering provides a simplified IT management and a highly scalable platform. Irrespective of the end-user, everyone gets access to the latest and the most incredible collaboration tools.",
                     image: "/assets/images/illustrations/FlexibilityAndScalabilty_AppDev.svg"
                 },
                 {
