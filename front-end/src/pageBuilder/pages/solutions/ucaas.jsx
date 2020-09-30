@@ -4,47 +4,47 @@ import SliderC from "../../components/Slider"
 const sliderInfo = [
     {
       title: <span>Cisco 7965G</span>,
-      imgSrc: "/assets/images/phones/cisco/7965G.png",
+      imgSrc: "/assets/images/phones/cisco/7965G.webp",
     },
     {
         title: <span>Avaya 1408</span>,
-        imgSrc: "/assets/images/phones/avaya/avaya1408.png",
+        imgSrc: "/assets/images/phones/avaya/avaya1408.webp",
     },
     {
         title: <span>Cisco 8845</span>,
-        imgSrc: "/assets/images/phones/cisco/8845.png",
+        imgSrc: "/assets/images/phones/cisco/8845.webp",
     },
     {
         title: <span>Avaya 9608</span>,
-        imgSrc: "/assets/images/phones/avaya/avaya9608.png",
+        imgSrc: "/assets/images/phones/avaya/avaya9608.webp",
     },
     {
         title: <span>Cisco 9951</span>,
-        imgSrc: "/assets/images/phones/cisco/9951.png",
+        imgSrc: "/assets/images/phones/cisco/9951.webp",
     },
     {
         title: <span>Avaya J179</span>,
-        imgSrc: "/assets/images/phones/avaya/avayaJ179.png",
+        imgSrc: "/assets/images/phones/avaya/avayaJ179.webp",
     },
     {
         title: <span>Cisco DX70</span>,
-        imgSrc: "/assets/images/phones/cisco/DX70.png",
+        imgSrc: "/assets/images/phones/cisco/DX70.webp",
     },
     {
         title: <span>Fanvil C400</span>,
-        imgSrc: "/assets/images/phones/3CX/fanvilC400.png",
+        imgSrc: "/assets/images/phones/3CX/fanvilC400.webp",
     },
     {
         title: <span>Cisco DX80</span>,
-        imgSrc: "/assets/images/phones/cisco/DX80.png",
+        imgSrc: "/assets/images/phones/cisco/DX80.webp",
     },
     {
         title: <span>Fanvil C600</span>,
-        imgSrc: "/assets/images/phones/3CX/fanvilC600.png",
+        imgSrc: "/assets/images/phones/3CX/fanvilC600.webp",
     },
     {
         title: <span>Cisco DX650</span>,
-        imgSrc: "/assets/images/phones/cisco/DX650.png",
+        imgSrc: "/assets/images/phones/cisco/DX650.webp",
     },
   ]
 
