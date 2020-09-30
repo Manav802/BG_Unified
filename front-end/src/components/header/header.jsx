@@ -268,14 +268,9 @@ function header(props) {
                             <Image alt="" src="/assets/logo.png" height="45px" className="mr-3 d-sm-none"></Image>
                         </a></Hyperlink>
                         <div className="d-flex">
-                            <Popover trigger="hover">
-                                <PopoverTrigger>
+                            
                                     <Button variant="unstyled" leftIcon={IoIosCall} className="NunitoSans-Bold link p-2 mt-1 d-none d-lg-flex"> <a href="tel:1300002487" className="link">1300 00 BGUS</a> </Button>
-                                </PopoverTrigger>
-                                <PopoverContent zIndex={4} p={6}>
-                                    <Image alt="" src="/assets/images/animations/phone-dial.gif" style={{filter:"brightness(1.1) hue-rotate(200deg)"}}></Image>
-                                </PopoverContent>
-                            </Popover>
+                                
                             {/* <Search toggle ={() => setSearch(!search)} searching={search}></Search> */}
                             {/*propper syntax to use link with dynamic routing*/}
                             <Hyperlink href={`/search?search=`}>
