@@ -73,7 +73,7 @@ export default [
                     title: "Storage Centralization",
                     align: "left",
                     size: "50px",
-                    description: " Fast, Reliable and Increasingly efficient centralizing servers and storage offer significant cost, management, security, and compliance benefits. Detects, isolates notifies, and corrects faults encountered in the network."
+                    description: " Fast, Reliable and Increasingly efficient centralizing servers and storage offer significant cost, management, security, and compliance benefits. Detects, isolates notifies and corrects faults encountered in the network."
                 }
             },
             {
@@ -88,7 +88,7 @@ export default [
                     title: "Endpoint Security",
                     align: "left",
                     size: "50px",
-                    description: "All without risk of corrupting data or altering behavior. No plug-ins are required, which expedites deployment and saves both time and money. Fast, Reliable, and Increasingly Efficient."
+                    description: "All without risk of corrupting data or altering behaviour. No plug-ins are required, which expedites deployment and saves both time and money. Fast, Reliable, and Increasingly Efficient."
                 }
             },
         ]

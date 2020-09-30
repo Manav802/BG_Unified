@@ -11,10 +11,8 @@ const servicesArray = Object.entries(services);
 const Matcher = (name,searchTerm) =>{
   //Searching in title
   const title = name.title
-  let k = Math.min(title.length, searchTerm.length);
-    for(var i=0; i<k; i++) {
-      if( title.toLowerCase().charAt(i) == searchTerm.toLowerCase().charAt(i) && title.toLowerCase().includes(searchTerm.toLowerCase())) return(true);
-    }
+  if(title.toLowerCase().includes(searchTerm.toLowerCase())) return(true);
+    
 
   //Searching in tags array
   for(const tag of name.tags){

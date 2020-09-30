@@ -10,7 +10,7 @@ function CardWithImage({columns="auto", height="216px", ...props}) {
         {props.description && <Text textAlign="justify" fontSize="lg" mt={2}>{props.description}</Text>}
         {props.children}
         <ButtonGroup spacing={4}>
-            {props.actions}
+          {props.actions}
         </ButtonGroup>
       </Box>
     </Flex>

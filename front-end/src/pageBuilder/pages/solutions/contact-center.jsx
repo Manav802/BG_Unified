@@ -119,7 +119,7 @@ export default [
                 type: "image&text",
                 data: {
                     title: "Profitable Customer Experience",
-                    description: "We help organizationsto develop and improve communication channels and deliver lasting customer relationships at a lower cost. Our objective is to maximize the value of information within an organization whilst minimizing the cost.",
+                    description: "We help organizations to develop and improve communication channels and deliver lasting customer relationships at a lower cost. Our objective is to maximize the value of information within an organization whilst minimizing the cost.",
                     image: "/assets/images/illustrations/analytics.svg",
                     flexDirection: ["column", "column", "row"],
                 }
@@ -128,7 +128,7 @@ export default [
                 type: "image&text",
                 data: {
                     title: "Employee Productivity",
-                    description: "We assist organizationsin improving employee and partner collaboration to deliver greater employee productivity, improved information sharing, and knowledge management",
+                    description: "We assist organizations in improving employee and partner collaboration to deliver greater employee productivity, improved information sharing, and knowledge management",
                     image: "/assets/images/illustrations/productivity.svg",
                     flexDirection: ["column", "column", "row-reverse"],
                 }
@@ -137,7 +137,7 @@ export default [
                 type: "image&text",
                 data: {
                     title: "Securing Data",
-                    description: "We help organizationsreduce their risks by offering solutions for creating, sharing, and storing the information, to protect, detect, and respond to external and internal incidents and threats.",
+                    description: "We help organizations reduce their risks by offering solutions for creating, sharing, and storing the information, to protect, detect, and respond to external and internal incidents and threats.",
                     image: "/assets/images/illustrations/security_lock_firewall.svg",
                     flexDirection: ["column", "column", "row"],
                 }

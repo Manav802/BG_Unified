@@ -10,7 +10,7 @@ const sliderInfo = [
     {
       title: <span><Heading textTransform="uppercase" letterSpacing={1.5} size="sm" mb={4} color="primary.500">Welcome to</Heading> BG Unified Solutions</span>,
       imgSrc: "/assets/images/backgrounds/landing-1.png",
-      subTitle: "Your go-to partner for all IT solutions and services that deliver value and enable solid corporate growth.",
+      subTitle: "Your go-to partner for all IT solutions and services that deliver value and enable substantial corporate growth.",
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
       btnPrimaryLink: "/solutions",
@@ -26,7 +26,7 @@ const sliderInfo = [
       btnSecondaryLink: "/contact"
     },
     {
-      title: "Geographical Redundant Infrastructre",
+      title: "Geographical Redundant Infrastructure",
       imgSrc: "/assets/images/backgrounds/landing-3.png",
       subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
       btnPrimaryText: "Explore Now",
@@ -51,7 +51,7 @@ function main(props) {
         <Swiper slidesPerView={1} loop onSlideChange={() => {setAnimation(0); setAnimation(1)}} navigation>
         {sliderInfo.map(slide => <SwiperSlide>
             <Box pos="relative">
-                <Image src={slide.imgSrc} height={["440px","520px","720px", "auto"]} minH="448px" objectFit="cover" width="100%"></Image>
+                <Image src={require(`../../../public${slide.imgSrc}`)} height={["440px","520px","720px", "auto"]} minH="448px" objectFit="cover" width="100%"></Image>
                 {/* <Box top={0} left={0} opacity={.7} pos="absolute" width="100%" height="100%" bg="black"></Box> */}
                 <Flex alignItems="center" pos="absolute" top={0} left={0} width="100%" height="100%" color="white" my={0}>
                     

@@ -196,7 +196,7 @@ export default [
             data: {
                 fontSize: "md",
                 content: [{
-                    title: "Choice between On-Premises & Cloud",
+                    title: "The Choice between On-Premises & Cloud",
                     description: "On-premise or cloud-based, that helps secure your IT environment quickly. The mainstay of Enterprise Security. Blocks malicious traffic and allows legitimate traffic to flow without any hindrance.",
                     image: "/assets/images/illustrations/Varied_Web_Hosting_Solutions.svg"
                 },

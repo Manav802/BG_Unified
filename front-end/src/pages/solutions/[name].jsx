@@ -34,6 +34,19 @@ function Solutions(props) {
                 <title>{service.slogan} - {service.title} | BG Unified Solutions</title>
 
                 </Head>
+<<<<<<< HEAD
+                {/* <Image alt={service.title} opacity=".3" className="bg-image" src={service.bgImage}/> */}
+                <picture>
+                    <source srcSet={require(`../../../public${service.bgImage}?lqip?webp`)} type="image/webp" />
+                    <source srcSet={require(`../../../public${service.bgImage}?lqip`)} type="image/jpeg" />
+                    <img
+                    className="bg-image"
+                    style={{opacity:".3"}}
+                    src={require(`../../../public${service.bgImage}`)}
+                    alt={service.title}
+                    />
+                </picture>
+=======
                 
                      <img
                     className="bg-image"
@@ -42,6 +55,7 @@ function Solutions(props) {
                     style={{opacity:"0.3"}}
                     />
                 
+>>>>>>> BGUS-v1o1
                 <div className="container">
                     <div className="row">
                         <div className="col-12">

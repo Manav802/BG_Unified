@@ -8,19 +8,19 @@ export default [
                 textAlign: "justify"
             },
             {
-                text: "The solution will be tailored to your requirements. We have done an extensive POC using Parallels and VMWARE using different clients including Windows 10, iPhone, iPAD and Android from different locations in Australia, NZ, UAE and China.",
+                text: "The solution will be tailored to your requirements. We have done an extensive POC using Parallels and VMWARE using different clients including Windows 10, iPhone, iPad and Android from different locations in Australia, NZ, UAE and China.",
                 textAlign: "justify"
             },
             {
-                text: "SOE engineers will work with you to create a golden image for VDI deployment. Session based RDS will be deployed using high performance RDS servers (24vCPU's / 128GB RAM / 10G Network Connectivity).",
+                text: "SOE engineers will work with you to create a golden image for VDI deployment. Session-based RDS will be deployed using high-performance RDS servers (24vCPU's / 128GB RAM / 10G Network Connectivity).",
                 textAlign: "justify"
             },
             {
-                text: "Daily / Hourly backups using Acronis will give you a peace of mind." ,
+                text: "Daily / Hourly backups using Acronis will give you peace of mind." ,
                 textAlign: "justify"
             },
             {
-                text: "Solution is fully integrated with other Microsoft Office products like teams and office 365.",
+                text: " The Solution is fully integrated with other Microsoft Office products like teams and office 365.",
                 textAlign: "justify"
             }
                        

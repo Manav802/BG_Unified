@@ -37,7 +37,20 @@ function main(props) {
                 </Fade>
             </Box>
             <Section py={0} mt={0} containerWidth="100%">
-            <Swiper centeredSlides={true} navigation slidesPerView={6} spaceBetween={16} onSlideChange={(swiper) => {setActive(swiper.activeIndex)}} onSwiper={setControlledSwiper} >
+            <Swiper centeredSlides={true} navigation 
+            breakpoints={{
+            // when window width is >= 640px
+            640: {
+            width: 640,
+            slidesPerView: 1,
+            },
+            // when window width is >= 768px
+            768: {
+            width: 768,
+            slidesPerView: 2,
+            },
+        }}
+   spaceBetween={16} onSlideChange={(swiper) => {setActive(swiper.activeIndex)}} onSwiper={setControlledSwiper} >
                 {testimonials.map((info, index) => (
                     <SwiperSlide>
                         <Box p={8} my={8}>

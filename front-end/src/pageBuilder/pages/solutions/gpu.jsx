@@ -119,7 +119,7 @@ export default [
                     my:[2,4,8],
                     text:   <>
                             <span>Graphical Processing Unit does not cater to a single domain.
-                                 In present-day scenario, where technology proves to be the backbone of every industry, the importance of 
+                                 In the present-day scenario, where technology proves to be the backbone of every industry, the importance of 
                                  GPUs has grown exponentially.
                                 </span><br/><br/>
                             <span> From refining and mining data to analyzing it. From Scientific Researches to Health Sector.
