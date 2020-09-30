@@ -38,7 +38,6 @@ const sliderInfo = [
 
 SwiperCore.use([Controller]);
 SwiperCore.use([Navigation]);
-SwiperCore.use([EffectFade]);
 
 
 // install Swiper's Controller component
@@ -49,7 +48,7 @@ function main(props) {
     const [animate, setAnimation] = useState(0);
     return (
         <div>
-        <Swiper slidesPerView={1} loop onSlideChange={() => {setAnimation(0); setAnimation(1)}} navigation effect="fade">
+        <Swiper slidesPerView={1} loop onSlideChange={() => {setAnimation(0); setAnimation(1)}} navigation>
         {sliderInfo.map(slide => <SwiperSlide>
             <Box pos="relative">
                 <Image src={slide.imgSrc} height={["440px","520px","720px", "auto"]} minH="448px" objectFit="cover" width="100%"></Image>
