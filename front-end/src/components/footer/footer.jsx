@@ -27,6 +27,7 @@ function footer(props) {
                 <Link href="/newsroom"><Button mx={4} variant="unstyled" variantColor="white">Newsroom</Button></Link>
                 <Link href="/about"><Button mx={4} variant="unstyled" variantColor="white">About Us</Button></Link>
                 <Link href="/policies"><Button mx={4} variant="unstyled" variantColor="white">Privacy Policy</Button></Link>
+                <ErrorForm/><FeedbackForm/>
             </Flex>
             
             {/* <Flex mt={5} align="center">
@@ -40,9 +41,7 @@ function footer(props) {
      <Container>
        <Flex fontSize={["10px","12px","14px"]} wrap="wrap" justify="space-between">
        <Text textAlign={["center", "center", "left"]} fontSize="lg" my={[3,3,0]} width={["100%","100%",1/2]}>Website developed and maintained by <Link href="/webteam"><a className="link">Peppershades</a></Link></Text>
-       <Flex justify={["center","center","flex-end"]} width={["100%","100%",1/2]}>
-          <ErrorForm/><FeedbackForm/>
-        </Flex>
+       <Text textAlign={["center", "center", "right"]} fontSize="lg" my={[3,3,0]} width={["100%","100%",1/2]}>© Copyright 2020 BG Unified Solutions</Text>
        </Flex>
      </Container>
    </Box>

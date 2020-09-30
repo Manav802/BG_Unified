@@ -161,7 +161,7 @@ function ErrorForm(props) {
     });
     return (
         <>
-            <Link mx={["6px", "10px", "16px"]} fontSize={["10px", "12px", "14px"]} textTransform="uppercase" onClick={onOpen}>Report An Issue</Link>
+            <Button mx={4} variant="unstyled" onClick={onOpen} variantColor="white">Report an Error</Button>
             <Modal isOpen={isOpen} onClose={formClose} isCentered={screenWidth > 420 ? true : false} scrollBehavior={screenWidth > 420 ? "inside" : "outside"}>
                 <ModalOverlay />
                 <ModalContent maxWidth={["430px", "430px", "600px", "700px"]} maxHeight={screenWidth > 420 ? "700px" : ""} minHeight={screenWidth > 420 ? "" : "100vh"} mb={screenWidth <= 420 ? 0 : ""} mt={screenWidth <= 420 ? 0 : ""}>
