@@ -24,7 +24,7 @@ export default [
                 image: "/assets/images/icons/color/world-wide-web.svg",
                 title: "Diversified Domains",
                 align: "left",
-                description: "We help you build applications for a wide domain - We help you build applications for a wide range of platforms and domains, including mobile, web, enterprise, startups, and much more."
+                description: "We help you build applications for a wide domain - We help you build applications for a wide range of platforms and domains, including mobile, web, enterprise, startups and much more.."
                 }
             },
             {

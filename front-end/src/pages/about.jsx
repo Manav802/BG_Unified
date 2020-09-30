@@ -41,12 +41,21 @@ class about extends Component {
           <Head>
             <title>More About Us - BG Unified</title>
           </Head>
+<<<<<<< HEAD
           <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
             <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
             <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Know More</Heading>
             <Title zIndex="100" fontSize={["44px","64px"]}>About Us</Title>
         </Section>
             <div className="container-fluid p-0 pt-5 pb-2 pt-lg-5 pb-lg-5">
+=======
+            <Section zIndex="3000" bgImage="url('/assets/images/backgrounds/aboutus.jpg')" blend="overlay" color="white" textAlign="center" bg={["dark.400"]} py={[16, 32]} my={0}>
+                <Heading  size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Know More</Heading>
+                <Title zIndex="100" fontSize={["44px","64px"]}>About Us</Title>
+            </Section>
+         
+          <Section containerWidth="100%">
+>>>>>>> BGUS-v1o1
               <Slider
                 className="timeline"
                 flickityRef={(c) => (this.flkty = c)}
@@ -79,7 +88,7 @@ class about extends Component {
                   <Flex justify="center" align="center" height="96px"><Box width="100%" height="4px" bg="gray.200"></Box></Flex>
                 </div>
               </Slider>
-            </div>
+          </Section>
             <div className="container">
               <div className="row">
                 <div className="col-lg-10 offset-1">
@@ -137,7 +146,7 @@ class about extends Component {
                   <Team
                     title="Founder & Owner"
                     name="Jingyi Li"
-                    img="https://www.bgunifiedsolutions.net/wp-content/uploads/2019/02/JingyiLi.png"
+                    img="/assets/images/team/jenny.jpg"
                   >
                    CPA and Master of Accounting.
                    the financial specialist, started up this company back in 2014. Responsible personality,
@@ -148,7 +157,7 @@ class about extends Component {
                   <Team
                     title="Co-Founder and Managing Director"
                     name="Saurabh Sareen"
-                    img="https://www.bgunifiedsolutions.net/wp-content/uploads/2019/01/Closeup.jpg"
+                    img="/assets/images/team/saurabh.jpg"
                   >
                     Managing Director / Owner at BG Unified Solutions Limited, AU and NZ. 
                     Hardworking, Cloud Services and Hosting Solutions Specialist,

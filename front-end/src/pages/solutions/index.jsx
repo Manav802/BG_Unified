@@ -55,10 +55,10 @@ function OurSolutions(){
           <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
             <title>Our Solutions | BG Unified Solutions</title>
-            <meta name ="description" content = "Infrastructure, COntact Center, UCaaS, Service Desk, App Development, Web Development. Secured infrastructure with telco vendors. Backup and Recovery. Silver-Peak and Cisco. Data Center Locations. Wireless, CEX, CLoud Logging. Load Balancing, DNS and Web Hosting. SD-WAN optimization, managed firewall, proxy, WAF">
+            <meta name ="description" content = "Infrastructure, Contact Center, UCaaS, Service Desk, App Development, Web Development. Secured infrastructure with telco vendors. Backup and Recovery. Silver-Peak and Cisco. Data Center Locations. Wireless, CEX, CLoud Logging. Load Balancing, DNS and Web Hosting. SD-WAN optimization, managed firewall, proxy, WAF">
           </meta>
           <meta property="og:title" content="Our Solutions | BG Unified Solutions" key="title" />
-          <meta property="og:description" content="Infrastructure, COntact Center, UCaaS, Service Desk, App Development, Web Development. Secured infrastructure with telco vendors. Backup and Recovery. Silver-Peak and Cisco. Data Center Locations. Wireless, CEX, CLoud Logging. Load Balancing, DNS and Web Hosting. SD-WAN optimization, managed firewall, proxy, WAF"/>
+          <meta property="og:description" content="Infrastructure, Contact Center, UCaaS, Service Desk, App Development, Web Development. Secured infrastructure with telco vendors. Backup and Recovery. Silver-Peak and Cisco. Data Center Locations. Wireless, CEX, CLoud Logging. Load Balancing, DNS and Web Hosting. SD-WAN optimization, managed firewall, proxy, WAF"/>
           </Head>
           <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
             <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
@@ -121,7 +121,7 @@ function OurSolutions(){
               <Tab className="box-none tab" p={6}>Network</Tab>
               <Tab className="box-none tab" p={6}>Cyber Security</Tab>
               <Tab className="box-none tab" p={6}>Collaborative</Tab>
-              <Tab className="box-none tab" p={6}>Development</Tab>
+              <Tab className="box-none tab" p={6}>Professional</Tab>
             </TabList>
 
             <TabPanels>

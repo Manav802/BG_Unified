@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { useRouter } from "next/router";
 import services from "../../database/services"
 import Head from "next/head";
@@ -20,7 +20,6 @@ function Solutions(props) {
         }
     })
 
-
     return (
         <>
             <Box py={["6rem","8rem","10rem"]} color="white" className="bg-dark position-relative">
@@ -35,6 +34,7 @@ function Solutions(props) {
                 <title>{service.slogan} - {service.title} | BG Unified Solutions</title>
 
                 </Head>
+<<<<<<< HEAD
                 {/* <Image alt={service.title} opacity=".3" className="bg-image" src={service.bgImage}/> */}
                 <picture>
                     <source srcSet={require(`../../../public${service.bgImage}?lqip?webp`)} type="image/webp" />
@@ -46,6 +46,16 @@ function Solutions(props) {
                     alt={service.title}
                     />
                 </picture>
+=======
+                
+                     <img
+                    className="bg-image"
+                    src={service.bgImage}
+                    alt={service.title}
+                    style={{opacity:"0.3"}}
+                    />
+                
+>>>>>>> BGUS-v1o1
                 <div className="container">
                     <div className="row">
                         <div className="col-12">

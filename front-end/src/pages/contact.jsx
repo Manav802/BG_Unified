@@ -21,11 +21,17 @@ class Contact extends Component {
           <Head>
             <title>Contact us - BG Unified Solutions</title>
           </Head>
+<<<<<<< HEAD
           <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} pb={4} pt={[16, 32]} my={0}>
             <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
+=======
+            <Section zIndex="3000" bgImage="url('/assets/images/backgrounds/call_us.jpg')" blend="screen" textAlign="center" bg={["gray.300"]} py={[16, 32]} my={0}>
+>>>>>>> BGUS-v1o1
             <Title zIndex="100" fontSize={["44px","64px"]}>Contact Us</Title>
             <Text zIndex="100" fontSize="xl" mt={2}>Have a doubt? Want to know more? Let's Connect!</Text>
-            <Row mt={16} mb={4}>
+        </Section>
+        <Section py={0} my={0}>
+        <Row mt={16} mb={4}>
               <Flex m={[4,0]} width={["100%","33.33%"]} align="center" direction={["row","column"]}>
                 <Image alt="" src="/assets/images/vectors/phone.svg" objectFit="contain" size="64px" />
                 <Box mt={3} ml={[6,0]} textAlign={["left","center"]}>
@@ -54,13 +60,16 @@ class Contact extends Component {
                 </Box>
               </Flex>
             </Row> 
+<<<<<<< HEAD
             
         </Section>
         <Section py={0} my={0}>
         <Image alt="" src="/assets/images/backgrounds/call_us.jpg" height="316px" width="100%" objectFit="cover" rounded={[0,0,0, 8]} mt={[0,0,0, 8]}></Image>
+=======
+>>>>>>> BGUS-v1o1
         </Section>
-        <Section mb={0} mt={[0,0,0, "-128px"]} py={0} containerWidth={["100%", "100%", "640px", "720px"]}>
-          <Box bg={["#ffffff00","#ffffff00","#ffffff00","white"]} px={8} py={16} mb={[0,0,0,24]} boxShadow={[0,0,0,"xl"]} textAlign="center" rounded={12}>
+        <Section containerWidth={["100%", "100%", "640px", "720px"]}>
+          <Box bg={["#ffffff00","#ffffff00","#ffffff00","white"]} px={8} py={16}  boxShadow={[0,0,0,"xl"]} textAlign="center" rounded={12}>
             <Title>Let's Talk!</Title>
             <Text my={4}>Reach out to us, in case anything comes up.. We'll be glad to connect with you!</Text>
             <ContactForm />

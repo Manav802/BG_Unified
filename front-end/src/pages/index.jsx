@@ -1,20 +1,14 @@
 import React, { Component } from "react";
 import Head from "next/head";
-import { FaArrowRight} from "react-icons/fa";
-import { Image, Button, Heading,  Box,  Flex, Icon, Text, Grid, Avatar  } from "@chakra-ui/core";
-import FeatureCard from "../components/cards/FeatureCard";
-import CaseStudy from "../components/case_study/CaseStudy";
+import { Image, Button, Heading,  Box,  Flex, Icon, Text  } from "@chakra-ui/core";
 import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import TESTIMONIALS from "../database/testimonials";
 import newsroom from "../database/newsroom"
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
-import Slider from "react-flickity-component";
 import Section from "../pageBuilder/Section";
-import Conclusion from "../components/footer/conclusion";
 import SVG from "../components/svg/SVG";
 import Service from "../components/cards/Service";
-import Offer from "../components/cards/Offer";
 import Swiper from "../components/Sliders/HomeSlider";
 import Offers from "../components/Sliders/Offers";
 import Row from "../pageBuilder/Row";
@@ -133,10 +127,10 @@ class Landing extends Component {
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
           <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-          <title>BG Unified Solutions</title>
+          <title>BG Unified Solutions - IT & Infrastructure, Network, Cyber Security, Collaborative and Professional Services </title>
           <meta name ="description" content = "IT solutions and services. Australia's No. 1 IT service provider. Secured infrastructure with telco vendors. Backup and Recovery. Silver-Peak and Cisco. Data Center Locations. Affordable and secure. Load Balancing, DNS and Web Hosting. SD-WAN optimization, managed firewall, proxy, WAF">
           </meta>
-          <meta property="og:title" content="BG Unified Solutions" key="title" />
+          <meta property="og:title" content="BG Unified Solutions - IT & Infrastructure, Network, Cyber Security, Collaborative and Professional Services " key="title" />
           <meta property="og:description" content="IT solutions and services. Australia's No. 1 IT service provider. Secured infrastructure with telco vendors. Backup and Recovery. Silver-Peak and Cisco. Data Center Locations. Affordable and secure. Load Balancing, DNS and Web Hosting. SD-WAN optimization, managed firewall, proxy, WAF"/>
         </Head>
         <Swiper></Swiper>
@@ -237,6 +231,7 @@ class Landing extends Component {
                 </Flex>
             </Row>       
         </Section>
+<<<<<<< HEAD
         {/* <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.jpg')" blend="multiply" py={20}>
       
               <div className="row layer-1">
@@ -277,6 +272,9 @@ class Landing extends Component {
                 </Fade>
               </div>
         </Section> */}
+=======
+    
+>>>>>>> BGUS-v1o1
         <Section overflow="hidden">
         <div className="row p-3 p-md-0">
           <div className="col-md-5 mt-lg-5 align-self-center">

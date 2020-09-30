@@ -32,7 +32,11 @@ export default [
     },
     {
         id: 4,
+<<<<<<< HEAD
         imageUrl: "assets/images/brands/nsw_gov.jpg",
+=======
+        imageUrl: "assets/images/brands/nsw_gov.png",
+>>>>>>> BGUS-v1o1
         imageAlt: "Company Logo",
         author: "Kate Romanenko",
         paragraph: "I worked with BGUS during his time at Revenue NSW (OSR). They undertook a massive task of F5 load balancer upgrade - and things like that never go smoothly.",
@@ -69,7 +73,11 @@ export default [
     },
     {
         id: 8,
+<<<<<<< HEAD
         imageUrl: "assets/images/brands/nsw_gov.jpg",
+=======
+        imageUrl: "assets/images/brands/nsw_gov.png",
+>>>>>>> BGUS-v1o1
         author: "Jeremy Wood",
         imageAlt: "Company Logo",
         description: <span>BG Unified Solutions came on board for a Contact Center consolidation project. They are leading the architect team to consolidate 180 Contact Centers of Service NSW. We found their skills are far more advanced and trustworthy than any of the technology vendors we have. As a result, now BGUS is covering more widened scope of work that initially allocated. They have gained an excellent reputation in the whole organization especially in the design and implementation of IP telephony networks. They have significant experience in Cisco Contact Centre design and implementation for a number of call centres and distributed call centre environments.

@@ -39,6 +39,7 @@ function BackupPricing(props) {
                                     "Single Location",
                                     "Reliable & Secure",
                                     "Cost-Effective",
+                                    "Recovery Planning",
                                 ]}
                             >
                                 <PricingQuote
@@ -58,6 +59,7 @@ function BackupPricing(props) {
                                     "Single Location",
                                     "Reliable & Secure",
                                     "Cost-Effective",
+                                    "Recovery Planning",
                                 ]}
                             >
                                 <PricingQuote
@@ -77,6 +79,7 @@ function BackupPricing(props) {
                                     "Multiple Location",
                                     "Reliable & Secure",
                                     "Cost-Effective",
+                                    "Recovery Planning",
                                 ]}
                             >
                                 <a href="#collapse-1" className="no-red">
