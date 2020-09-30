@@ -8,7 +8,7 @@ const sliderInfo = [
     },
     {
         title: <span>Avaya 1408</span>,
-        imgSrc: "/assets/images/phones/avaya/avaya1408.png",
+        imgSrc: "/assets/images/phones/Avaya/avaya1408.png",
     },
     {
         title: <span>Cisco 8845</span>,
@@ -16,7 +16,7 @@ const sliderInfo = [
     },
     {
         title: <span>Avaya 9608</span>,
-        imgSrc: "/assets/images/phones/avaya/avaya9608.png",
+        imgSrc: "/assets/images/phones/Avaya/avaya9608.png",
     },
     {
         title: <span>Cisco 9951</span>,
@@ -24,7 +24,7 @@ const sliderInfo = [
     },
     {
         title: <span>Avaya J179</span>,
-        imgSrc: "/assets/images/phones/avaya/avayaJ179.png",
+        imgSrc: "/assets/images/phones/Avaya/avayaJ179.png",
     },
     {
         title: <span>Cisco DX70</span>,
