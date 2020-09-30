@@ -14,6 +14,7 @@ import { useRouter } from 'next/router'
 function Newsroom(){
   const router = useRouter()
     const [category, setCategory] = React.useState("All")
+    const [tabIndex, setTabIndex] = React.useState(0)
     const [search, setSearch] = React.useState("")
     const [data, setData] = React.useState({
       pages: [],
@@ -25,7 +26,7 @@ function Newsroom(){
       setData(dynamicSearch(e.target.value))
     }
     const { tab } = router.query;
-    useEffect(() => {if(tab=='case_studies'){ setCategory("Case Study"); }}, [tab]) 
+    useEffect(() => {if(tab=='Case Study'){ setTabIndex(2) }}, [tab]) 
     
     return (
       <div className="newsroom">
@@ -90,7 +91,7 @@ function Newsroom(){
                 </Button>)}
               </Flex> */}
               <Fade duration={100} distance="5%" bottom>
-              <Tabs align="center">
+              <Tabs index={tabIndex} onChange={setTabIndex} align="center">
                 <TabList mb={8} borderBottomWidth={0}>
                   {["All", "Updates", "Case Studies"].map(text => <Tab p={5} _selected={{ color: "primary.500", fontWeight:"600", borderBottomColor:"primary.500"}} >{text}</Tab>)}
                 </TabList>
