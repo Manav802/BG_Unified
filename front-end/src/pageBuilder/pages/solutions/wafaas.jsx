@@ -45,7 +45,7 @@ export default [
                     fontSize: ["lg","xl"],
                     titleSize: [40,40,48],
                     my:[2,4,8],
-                    text: "Benefit your business from the expert knowledge of our experts who offer effective solutions. Our modular SLAs are tailored to your individual needs – so support is always flexible and transparent in terms of cost."
+                    text: "Benefit your business from the expert knowledge of our experts who offer practical solutions. Our modular SLAs are tailored to your individual needs – so support is always flexible and transparent in terms of cost."
                     
                 }]
             },

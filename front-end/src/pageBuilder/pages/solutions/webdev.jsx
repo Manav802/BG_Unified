@@ -10,7 +10,7 @@ export default [
     },
     {
         title: "Establish your Brand Online",
-        description: "We have the right team, with expertise in their respective domains to develop and turn any kind of business into an online giant.",
+        description: "We have the right team, with expertise in their respective domains to develop and turn any business into an online giant.",
         rowDistance: 4,
         gap: 4,
         body: [
@@ -39,7 +39,7 @@ export default [
     },
     {
         title: "Our Development Process",
-        description: "We follow the popular UX Design Process for designing and developing interfaces.",
+        description: "We follow the famous UX Design Process for designing and developing interfaces.",
         rowDistance: 8,
         body: [
             {

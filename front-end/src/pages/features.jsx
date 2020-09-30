@@ -83,11 +83,11 @@ function features() {
                 },
                 description: <span>
                   Infrastructure includes more than 10000 Cores CPU, 10TB RAM. The
-                  storage infrastructure includes more than 900TB of storage.
-                  Desktop virtualization, and server management. Geographically
+                  storage infrastructure comprises more than 900TB of storage.
+                  Desktop virtualization and server management. Geographically
                   sound, redundant, quick and efficient increasing your backup by
                   60%.F5 load balancing solutions ensures scaling your critical
-                  applications. Scaling up or down your storage capacity as and
+                  applications, scaling up or down your storage capacity as and
                   when required.
                 </span>,
                   flexDirection: ["column", "column", "row-reverse"],
@@ -111,9 +111,9 @@ function features() {
                 description: <span>
                   Connectivity to the highly secured infrastructure using multiple
                   telco vendors. Improved operational efficiencies, Reduced
-                  communication-related delays and enhanced collaboration. high
+                  communication-related delays and enhanced collaboration. High
                   levels of availability (HA) as well as flexibility and scalability
-                  for core business tasks.Improved clustering scenarios with
+                  for core business tasks. Improved clustering scenarios with
                   remote locations.
                 </span>,
                   flexDirection: ["column", "column", "row"],
@@ -137,8 +137,7 @@ function features() {
               description: <span>
                 End-to-End DC network infrastructure encompassing server
                 switching, storage switching and DC Interconnect Solutions. 10G/40G core switching offering a high-speed spine and leaf network.
-                We can help you implement a flexible, agile architecture designed
-                specifically to meet your unique needs. Next-general data centers
+                We can help you implement a flexible, agile architecture explicitly designed to meet your unique needs. Next-general data centers
                 and enable your journey to the cloud.
               </span>,
                 flexDirection: ["column", "column", "row-reverse"],

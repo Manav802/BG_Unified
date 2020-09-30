@@ -343,7 +343,7 @@ const services = {
         description: " Protect your Web Application with our Web Application Firewall Services, protecting your enterprise online with full durability....",
         illustration: "",
         relatedService: ["Backup As A Service", "Platform As A Service", "Infrastructure As A Service"],
-        conclusion: "Maximized Utilization, a highly scalable powerful resource for high-end workloads!!",
+        conclusion: "Maximized Utilization, a highly scalable, powerful resource for high-end workloads!!",
         sections: sections.gpu
     },
     "webdev": {

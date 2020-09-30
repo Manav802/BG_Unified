@@ -4,7 +4,7 @@ export default [
     {
         mb:0,
         title: "Get your quote now!",
-        description: "Our storage infrastructure includes more than 900TB of Tier1/Tier2/Tier3 storage",
+        description: "Our storage infrastructure includes more than 900TB of Tier1/Tier2/Tier3 Storage",
         rowDistance: 4,
         gap:0,
         containerWidth: "100%",
@@ -38,7 +38,7 @@ export default [
                 fontSize: ["md","lg"],
                 text: <span>Today’s dynamic data center’s present some unique storage challenges. How do you best manage explosive storage capacity requirements and 
                     multiple storage silos—as well as consolidation into internal clouds to provide storage as a service? Add complex backup and recovery plans, 
-                    and their integration into your disaster recovery plans and storage becomes even more complex. And while there are commonalities that allow for 
+                    and their integration into your disaster recovery plans and storage becomes even more complicated. And while there are commonalities that allow for 
                     pre-packaged solutions, every data center is different. 
                     <br/><br/>
                     Each one requires knowledgeable professionals to help define the correct solution, often across multiple manufacturers, to combine and collaborate to create the optimal solution for your organization.</span>
@@ -106,14 +106,14 @@ export default [
     {   
         pt: 16,
         pb: 0,
-        title: "Meeting your Storage needs at Affordable Prices",
+        title: "Meeting your Storage needs at Affordable Prices.",
         titleStyle:{fontSize:["3xl","4xl"],px:"10px"},
         body: [{
             type: "content",
             data: [{
                 textAlign: "justify",
                 fontSize: ["lg","xl"],
-                text: "With BG Unified Solutions Infrastructure as a Service, not only do you pay only for the data storage you use when you use it but we provide you with a geographical redundant storage infrastructure and ready access to experts in Infrastructure Technologies who will be eager to understand your storage requirements. Initial setup is very quick, adding or removing capacity is even faster and without any downtime."
+                text: "Our staff are trained and experienced across top storage manufacturer offerings, enabling us to design complex, multi-vendor solutions. We’ll show you how to tame explosive storage capacity growth and put management products in place to support your specific virtualized computing and storage environments. From assessments to design, architecture, and implementation, we can help you transform your legacy application environments to “cloud-based” data centres."
             }]
         }]
     },

@@ -18,8 +18,8 @@ const timeline = {
   2016: "Technology migration to Next-Generation Firewalls, UCaaS, Wireless, Telepresence and Storage.",
   2017: "Presence in London, offering all the services in our portfolio including, UCaaS, SaaS, IaaS, WiaaS and FaaS",
   2018: "Received BTS Excellence Award in recognition of Excellent Service by the NSW Government.",
-  2019: "Built our own Logging Cloud Connect Product, Newly deployed RDS/VDIaaS Solution into its portfolio as Workstation Service.",
-  2020: "DNS As A Service using a hybrid Windows, Red Hat Linux andInfoblox DNS Servers",
+  2019: "Built our Logging Cloud Connect Product, Newly deployed RDS/VDIaaS Solution into its portfolio as Workstation Service.",
+  2020: "DNS As A Service using a hybrid Windows, Red Hat Linux and Infoblox DNS Servers",
 }
 
 class about extends Component {
@@ -121,7 +121,7 @@ class about extends Component {
                     We majorly deal with Cisco Voice / Video Projects, WAN
                     Implementations, DC Design and Implementation. Our goal is
                     to make our customers more competitive and achieve higher
-                    business efficiency through increased agility, effective
+                    business efficiency through increased agility, significant
                     cost containment and lower risk. BG Unified Solutions,
                     founded in 2013, provides national and international IT
                     Services to some of Australia's leading companies, who use
@@ -134,7 +134,7 @@ class about extends Component {
             <div className="container">
               <div className="p-3 text-center d-flex flex-column">
                 <span className="h6 text-primary">TEAM</span>
-                <span className="display5">Meet the Visionary People</span>
+                <span className="display5">Meet, the Visionary People</span>
               </div>
               <div className="row py-2">
                 <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
@@ -144,8 +144,8 @@ class about extends Component {
                     img="/assets/images/team/jenny.jpg"
                   >
                    CPA and Master of Accounting.
-                   the financial specialist, started up this company back in 2014. Responsible personality,
-                   expert when it comes to finance and accounts.
+                   The financial specialist started up this company back in 2014. Responsible personality,
+                   an expert when it comes to finance and accounts.
                   </Team>
                 </div>
                 <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
@@ -156,7 +156,7 @@ class about extends Component {
                   >
                     Managing Director / Owner at BG Unified Solutions Limited, AU and NZ. 
                     Hardworking, Cloud Services and Hosting Solutions Specialist,
-                    completely driven by customers satisfaction and deliverability.
+                    entirely driven by customers satisfaction and deliverability.
                   </Team>
                 </div>
                 <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-end py-3">
