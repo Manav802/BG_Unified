@@ -24,11 +24,11 @@ export default [
                     fontSize: ["md", "md", "md", "lg"],
                     title: "Protecting your Data is the New Normal!!",
                     titleSize: [28, 28, 28, 32],
-                    text: <span>BG Unified Solutions provides reliable, secure & cost-effective managed services for backup
-                    and recovery of all types of data. We handle protection and management for all of your structured
-                    and unstructured data while enabling self-service restoration capability to your teams.
-                    We’ll create a realistic roadmap and provide continual service so you can capture the
-                    promise of tomorrow’s data center, cloud, and backup—today. </span>
+                    text: <span>BG Unified Solutions provides reliable, secure & cost-effective managed services for backup 
+                        and recovery of all types of data. We handle protection and management for all of your structured and 
+                        unstructured data while enabling self-service restoration capability to your teams. We’ll create a 
+                        realistic roadmap and provide continual service so you can capture the promise 
+                        of tomorrow’s data center, cloud, and backup—today. </span>
                 }]
             }]
     },
@@ -55,7 +55,7 @@ export default [
                     image: "/assets/images/illustrations/productivity.svg",
                     title: "Flexible and Scalable Service",
                     flexDirection: ["column", "column", "row"],
-                    description: "For any  department of your organization, our BaaS offering provides a simplified IT management and a highly scalable platform. Irrespective of the end-user, everyone gets access to the latest and the greatest backup technology stack. Customized and tailor-made solutions to meet client needs with Local end-market support services and Local language capabilities"
+                    description: "Concerning any department of your organization, our BaaS offering provides a simplified IT management and a highly scalable platform. Irrespective of the end-user, everyone gets access to the latest and the most excellent backup technology stack—customized and tailor-made solutions to meet client needs with Local end-market support services and Local language capabilities."
                 }
             },
             {
@@ -64,7 +64,7 @@ export default [
                     image: "/assets/images/illustrations/Sound_and_Efficient_Planning.svg",
                     title: "Cost-Effective Solution",
                     flexDirection: ["column", "column", "row-reverse"],
-                    description: "For your business, we are offering and providing a flat billing structure. It's designed for pay as you go model that shifts your costs from capex to opex. You will have very simplified and predictable expenses and have the option of rolling any upfront or one-off expenses into your monthly payment."
+                    description: "To your business, we are offering and providing a flat billing structure. It’s designed for pay as you go model that shifts your costs from capex to opex. You will have very simplified and predictable expenses and have the option of rolling any upfront or one-off fees into your monthly payment."
                 }
             },
             {
@@ -73,7 +73,7 @@ export default [
                     image: "/assets/images/illustrations/Completeness_CloudLogging.svg",
                     title: "Back it Up",
                     flexDirection: ["column", "column", "row"],
-                    description: "Geographically sound, quick, and efficient increasing your backup by 60%. Highly advanced, available and, multiple data center locations offering multiple IP types globally, in a clustered or isolated environment."
+                    description: "Geographically sound, quick, and efficient increasing your backup by 60%. Highly advanced, available, and, multiple data center locations are offering multiple IP types globally, in a clustered or isolated environment."
                 }
             },
         ]
