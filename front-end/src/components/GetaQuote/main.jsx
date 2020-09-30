@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import {
-  useDisclosure, FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, ModalBody, Box
+  useDisclosure, FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, 
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+  ModalCloseButton, Spinner, Modal, ModalOverlay, Textarea, ModalBody, Box, Alert, AlertIcon, Tooltip, Icon
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import Toast from '../Toast/main';
@@ -109,17 +118,25 @@ function GetaQuoteForm(props) {
       )}
       <Modal isOpen={isOpen} onClose={formClose} isCentered={screenWidth > 420 ? true : false} scrollBehavior={screenWidth > 420 ? "inside" : "outside"}>
         <ModalOverlay />
-        <ModalContent maxWidth={["400px", "400px", "600px"]} maxHeight={screenWidth > 420 ? "700px" : ""} minHeight={screenWidth > 420 ? "" : "100vh"} mb={screenWidth <= 420 ? 0 : ""} mt={screenWidth <= 420 ? 0 : ""}>
+        <ModalContent maxWidth={["400px", "400px", "600px"]} maxHeight={screenWidth > 420 ? "800px" : ""} minHeight={screenWidth > 420 ? "" : "100vh"} mb={screenWidth <= 420 ? 0 : ""} mt={screenWidth <= 420 ? 0 : ""}>
           <ModalBody>
-            <ModalHeader style={{ zIndex: "3", position: "sticky", top: 0, backgroundColor: "white" }}> <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}></Button><span className="display5">{props.serviceName}</span></ModalHeader>
+            <ModalHeader style={{ zIndex: "3", position: "sticky", top: 0, backgroundColor: "white" }}> <Button verticalAlign="middle" leftIcon="arrow-back" color="primary.500" variant="link" onClick={formClose}></Button><span className="display5">{props.serviceName}
+            </span></ModalHeader>
             <div className="d-flex flex-wrap px-3">{description.map((service, index) => {
               return (
                 <div className="rounded-8 hover-effect bg-light m-2 py-2 px-3" key={index}>{service}</div>
               )
             })}</div>
-
-            <Box m={2} mb={4} className="container contact-form">
-              <div className="mt-1 mb-4 font-weight-bold">* We are developing an E-commerce platform to enhance the user experience.</div>
+            
+            <Box mb={4} className="container contact-form">
+              <Popover trigger="hover">
+                <PopoverTrigger>
+                  <Button variant="link" variantColor="primary" mb={6} mt={2}>Whats this?</Button>
+                </PopoverTrigger>
+                <PopoverContent zIndex={4}>
+                  <PopoverBody>We're working on automating our sign-up process to make it easier for you to buy and use our services. In the meantime, please fill out and submit the form. We will have one of our qualified account managers contact you about system availability for the configuration you desire. We look forward to speaking with you.</PopoverBody>
+                </PopoverContent>
+              </Popover>
               <form onSubmit={onSubmit}>
                 <input
                   type="hidden"

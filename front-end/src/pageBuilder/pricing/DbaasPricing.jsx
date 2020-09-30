@@ -18,6 +18,7 @@ import {
 import Fade from "react-reveal/Fade";
 import { FaWindows, FaServer, FaDatabase } from "react-icons/fa";
 import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
+import Container from "../Container";
 
 const tabs = [
   {
@@ -48,23 +49,6 @@ const tabs = [
 ];
 
 const plans = [
-  {
-    index: 0,
-    name: "Standard",
-    icon: "/assets/images/icons/theme/origami.svg",
-    feature: [
-      "2vCPU",
-      "80GB SSD Storage",
-      "4GB RAM",
-      "Desktop Virtualization",
-      "High Availability",
-      "High Clustering",
-    ],
-    cpu: 2,
-    popular: false,
-    storage: 80,
-    ram: 4,
-  },
   {
     index: 1,
     name: "Professional",
@@ -179,7 +163,7 @@ function DbaasPricing(props) {
   
   return (
     <div className="container-fluid" id="pricing">
-    <Box mx="auto" width={["100%", "100%", "100%", "90%" ]} className="py-2">
+    <Container py={4}>
       <Fade cascade duration={500} distance={"30%"} bottom>
       <div className="row no-gutters justify-content-center">
         {plans.map((plan) => {
@@ -213,7 +197,7 @@ function DbaasPricing(props) {
         
       </div>
       </Fade>
-    </Box>
+      </Container>
     <div id="collapse-1" className="container">
       <Collapse id="quoteForm" className="px-lg-5" mt={6} isOpen={show}>
         <div className="px-4 py-5 border">
