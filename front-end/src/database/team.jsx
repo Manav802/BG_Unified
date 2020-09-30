@@ -4,8 +4,8 @@ export default [
         designation:"Project Manager and Development Lead",
         description: "UX Designer, Full Stack Developer -to name a few of his skillset. A genuine and authentic Team Lead, who believes to be persistent, focused and consistent. Optimist and a curious learner, and an engineer by profession",
         links : {
-            github:"https://github.com/vineet8588",
-            linkedin:"https://www.linkedin.com/in/vineet-yadav-abb6b3194",
+            github:"",
+            linkedin:"",
             behance:"",
             dribble:"",
             blogger:"",
@@ -18,8 +18,8 @@ export default [
         designation:"Senior Web and Database Developer",
         description: "Fullstack developer, dabbles in everything be it frontend, backend or deployment. An enthusiastic learner, always looking to grow his knowledge base and the best possible approach to a problem.heading",
         links : {
-            github:"https://github.com/vineet8588",
-            linkedin:"https://www.linkedin.com/in/vineet-yadav-abb6b3194",
+            github:"",
+            linkedin:"",
             behance:"",
             dribble:"",
             blogger:"",
