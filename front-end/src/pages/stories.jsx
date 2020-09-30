@@ -22,11 +22,20 @@ function main(props) {
             <Head>
                 <title>The team behind the web - BG Unified</title>
             </Head>
-            <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
+            {/* <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
                 <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
                 <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">What they say!</Heading>
                 <Title zIndex="100" fontSize={["44px","64px"]}>Customer Stories</Title>
-            </Section>
+            </Section> */}
+            <Box  zIndex="10" pos="relative" bg="dark.500">
+                <Image position="absolute" height="100%" zIndex="0" top={0} left={0} style={{mixBlendMode:"overlay"}}  opacity="1" objectFit="cover" width="100%" src="/assets/images/backgrounds/tech.jpg"></Image>
+                <Fade distance="5%" duration={500} top>
+                <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
+                <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">What they say!</Heading>
+                <Title zIndex="100" fontSize={["44px","64px"]}>Customer Stories</Title>
+                </Section>
+                </Fade>
+            </Box>
             <Section py={0} mt={0} containerWidth="100%">
             <Swiper centeredSlides={true} navigation slidesPerView={6} spaceBetween={16} onSlideChange={(swiper) => {setActive(swiper.activeIndex)}} onSwiper={setControlledSwiper} >
                 {testimonials.map((info, index) => (

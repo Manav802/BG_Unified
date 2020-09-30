@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Fade from 'react-reveal/Fade';
 import { Heading, Image, Text, Box } from "@chakra-ui/core";
 import RenderSection from "../pageBuilder/RenderSection";
 import Conclusion from "../components/footer/conclusion";
@@ -18,14 +19,16 @@ function features() {
                 <meta property="og:description" content="Desktop virtualization, and server management, connectivity with highly secured infrastructure with multiple telco vendors.10000 Cores CPU, 10TB RAM, Huawei 10G core switching. SourceFire, Cisco / Palo Alto / Checkpoint / Fortinet Firewall, DDOS Protection."></meta>
         <title>Our Features - BG Unified Solutions</title>
       </Head>
-      <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
-          <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
-          <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" my={4} textTransform="uppercase">Why Choose Us</Heading>
-          <Title zIndex="100" fontSize={["44px","64px"]}>Our Features</Title>
-      </Section>
+      <Box  zIndex="10" pos="relative" bg="dark.500">
+          <Image position="absolute" height="100%" zIndex="0" top={0} left={0} style={{mixBlendMode:"overlay"}}  opacity="1" objectFit="cover" width="100%" src="/assets/images/backgrounds/tech.jpg"></Image>
+          <Fade distance="5%" duration={500} top>
+          <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
+          <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Our Features</Heading>
+          <Title zIndex="100" fontSize={["44px","64px"]}>Why BGUS</Title>
+          </Section>
+          </Fade>
+      </Box>
       <RenderSection
-        py={0}
-        my={0}
         body={[
           {
             width: ["100%", 1/3],
@@ -56,6 +59,8 @@ function features() {
         ]}
       />
       <RenderSection
+        mt={0}
+        pt={0}
         body={[
             
             {
