@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { useRouter } from "next/router";
 import services from "../../database/services"
 import Head from "next/head";
@@ -20,7 +20,6 @@ function Solutions(props) {
         }
     })
 
-
     return (
         <>
             <Box py={["6rem","8rem","10rem"]} color="white" className="bg-dark position-relative">
@@ -35,10 +34,14 @@ function Solutions(props) {
                 <title>{service.slogan} - {service.title} | BG Unified Solutions</title>
 
                 </Head>
-                <Image alt=""                    opacity=".3"
+                
+                     <img
                     className="bg-image"
                     src={service.bgImage}
-                />
+                    alt={service.title}
+                    style={{opacity:"0.3"}}
+                    />
+                
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
@@ -62,10 +65,10 @@ function Solutions(props) {
                             <Fade duration={700} delay={1000} top>
                                 <Flex justifyContent={["center","center","left"]}>
                                 <ButtonGroup mt={10} spacing="16px">
-                                    {pricing && <Button fontSize={["14px","18px"]} onClick={() => {
+                                    {pricing && <Button onClick={() => {
                                         window.scrollTo(0, document.getElementById("pricing").offsetTop - 80)
-                                    }} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button>}
-                                    <Link href="/contact"><Button padding={["20px","24px"]} fontSize={["14px","18px"]} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">Contact Sales</Button></Link>
+                                    }} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button>}
+                                    <Link href="/contact"><Button variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">Contact Sales</Button></Link>
                                 </ButtonGroup>
                                 </Flex>
                             </Fade>

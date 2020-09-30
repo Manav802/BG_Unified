@@ -214,7 +214,7 @@ function header(props) {
                                                         </a></Hyperlink> 
                                                     </Box>
                                                     <Box onClick={onClose} px={3} my={3} width="50%">
-                                                        <Hyperlink href="/newsroom"><a className="link">
+                                                        <Hyperlink href="/newsroom?tab=case_studies"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Case Studies</Heading>
                                                             <Text fontSize="sm" fontWeight="500" opacity=".7">How we work</Text>
                                                         </a></Hyperlink> 
@@ -236,16 +236,19 @@ function header(props) {
                                                 <Flex flexDirection="column" width="50%" p={12} bg="light.400">
                                                     <Heading mb={4} size="md" fontFamily="Nexa Bold">What's New</Heading>
                                                     <WhatsNew
+                                                        onClick={onClose}
                                                         image={newsroom[0].image}
                                                         heading={newsroom[0].title}
                                                         link={"/newsroom/"+newsroom[0].link}
                                                     />
                                                     <WhatsNew
+                                                        onClick={onClose}
                                                         image={newsroom[1].image}
                                                         heading={newsroom[1].title}
                                                         link={"/newsroom/"+newsroom[1].link}
                                                     />
                                                     <WhatsNew
+                                                        onClick={onClose}
                                                         image={newsroom[2].image}
                                                         heading={newsroom[2].title}
                                                         link={"/newsroom/"+newsroom[2].link}

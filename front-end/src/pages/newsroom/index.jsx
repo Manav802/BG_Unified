@@ -8,8 +8,10 @@ import Title from "../../pageBuilder/Title";
 import { Heading, Text, Box, InputGroup, InputLeftElement, Button, Icon, Input, Image, Avatar, Badge, Flex, Grid, MenuList, Menu, MenuButton } from "@chakra-ui/core";
 import {dynamicSearch} from "../../../public/assets/js/searchFunctions"
 import { Divider } from "@chakra-ui/core";
+import { useRouter } from 'next/router'
 
 function Newsroom(){
+  const router = useRouter()
     const [category, setCategory] = React.useState("All")
     const [search, setSearch] = React.useState("")
     const [data, setData] = React.useState({
@@ -21,13 +23,16 @@ function Newsroom(){
       setSearch(e.target.value)
       setData(dynamicSearch(e.target.value))
     }
+    const { tab } = router.query;
+    useEffect(() => {if(tab=='case_studies'){ setCategory("Case Study"); }}, [tab]) 
+    
     return (
       <div className="newsroom">
         <Head>
           <title>Newsroom - BG Unified Solutions</title>
         </Head>
         <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 24]} my={0}>
-            <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.webp"></Image>
+            <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
             <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">News from us</Heading>
             <Title zIndex="100" fontSize={["44px","64px"]}>Our Newsroom</Title>
             <Text zIndex="100" fontSize="xl" mt={2}>Get the latest updates from us.</Text>

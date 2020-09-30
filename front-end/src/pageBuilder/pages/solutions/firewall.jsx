@@ -8,7 +8,7 @@ export default [
                 width: ["100%", "100%", 1 / 2],
                 type: "imageGroup",
                 data: {
-                    images: ["/assets/images/services/firewall.webp"],
+                    images: ["/assets/images/services/firewall.jpg"],
                     borderRadius: 8,
                     width: ['100%', "100%", "90%"],
                     height: "300px",

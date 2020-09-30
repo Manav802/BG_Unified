@@ -19,7 +19,7 @@ function features() {
         <title>Our Features - BG Unified Solutions</title>
       </Head>
       <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
-          <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.webp"></Image>
+          <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
           <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" my={4} textTransform="uppercase">Why Choose Us</Heading>
           <Title zIndex="100" fontSize={["44px","64px"]}>Our Features</Title>
       </Section>
@@ -71,7 +71,7 @@ function features() {
                   opacity: .7,
                   textAlign: "left"
                 },
-                image: "/assets/images/features/vectors/network_design.webp",
+                image: "/assets/images/features/vectors/network_design.png",
                 maxH: "400px",
                 imageProps:{
                   objectFit: "contain"
@@ -101,7 +101,7 @@ function features() {
                   opacity: .7,
                   textAlign: "left"
                 },
-                image: "/assets/images/features/vectors/data_protection.webp",
+                image: "/assets/images/features/vectors/data_protection.png",
                 maxH: "400px",
                 description: <span>
                   Connectivity to the highly secured infrastructure using multiple

@@ -84,7 +84,7 @@ function search(props) {
                 {data.articles.length > 0 && data.articles.map(blog => ( 
                 <Box mt={3}>
                     <Heading size="md" mb={2}>{blog.title}</Heading>
-                    <Text fontSize="md" overflow="hidden" h="52px">
+                    <Text fontSize="md" overflow="hidden">
                         {blog.description}
                     </Text>
                     <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}><a onClick={props.toggle} className="link text-secondary">Read More</a></Link>

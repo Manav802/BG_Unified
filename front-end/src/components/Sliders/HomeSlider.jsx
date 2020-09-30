@@ -70,8 +70,8 @@ function main(props) {
                         </Fade>
                         <Fade duration={500} delay={1700}  when={animate == 1} bottom>
                             <ButtonGroup mt={6}>
-                                    <Link href="/solutions"><Button as="a" fontSize={["14px","18px"]} mr={2} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button></Link>
-                                    <Link href="/contact"><Button as="a" padding={["20px","24px"]} ml={2} fontSize={["14px","18px"]} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">Contact Sales</Button></Link>
+                                    <Link href="/solutions"><a><Button fontSize={["14px","18px"]} mr={2} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button></a></Link>
+                                    <Link href="/contact"><a><Button padding={["20px","24px"]} ml={2} fontSize={["14px","18px"]} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">Contact Sales</Button></a></Link>
                             </ButtonGroup>
                         </Fade>
                     </Section>

@@ -20,7 +20,7 @@ export default [
                 width: ["100%", "100%", 1 / 2],
                 type: "imageGroup",
                 data: {
-                    images: ["/assets/images/services/dr.webp"],
+                    images: ["/assets/images/services/dr.jpg"],
                     borderRadius: 8,
                     width: ['100%',"100%","90%"],
                     height: "300px",

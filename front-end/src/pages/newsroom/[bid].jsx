@@ -27,6 +27,7 @@ function Blogs() {
 
   const imgalt=blog.imgalt;
 
+
   return (
     <div className="article">
       <Head>
@@ -48,15 +49,13 @@ function Blogs() {
       
      <Section mb={6} pb={0} mt={4}>
       <Title mb={8} fontSize={["4xl","4xl","5xl"]} textAlign="left">{blog.title}</Title>
-      <Image alt={blog.imgalt}          
-      src={blog.image}
-          objectFit="cover"
-          rounded={8}
-          boxShadow="xl"
-          width="100%"
-          height="320px"
-        ></Image>
-        
+     
+            <img
+            style={{borderRadius:"1rem", width:"100%", height:"320px", objectFit:"cover"}}
+            src={blog.image}
+            alt={imgalt}
+            />
+       
      </Section>
      <Section  mt={6} py={0} >
         <Box width={["100%","100%","72%"]}>
