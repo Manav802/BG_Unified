@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse, ModalBody
+    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse, ModalBody ,Alert,AlertIcon
 } from "@chakra-ui/core";
 import keys from '../../apiKeys';
 import deviceList from '../../deviceDetect.js';
@@ -29,7 +29,6 @@ const deviceInfo = {
     os: osName,
     device: deviceType
 }
-
 function ErrorForm(props) {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [name, setName] = useState('');
@@ -148,9 +147,8 @@ function ErrorForm(props) {
         event.preventDefault()
         loadingState(true);
         axios.post('/api/report/submit', form)
-            .then((response) => refreshForm(response), (error) => refreshForm(error))
+            .then((response) => refreshForm(response),error=>refreshForm(error))
     }
-
     const updateWidth = () => {
         setScreenWidth(window.innerWidth);
     };
