@@ -1,7 +1,6 @@
 import React from 'react'
 import Slider from "react-flickity-component";
 import { Box, Image, Badge, Flex } from '@chakra-ui/core';
-import ImageLoader from 'react-load-image';
 import { Spinner } from "@chakra-ui/core";
 
 

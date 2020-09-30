@@ -2,20 +2,30 @@ import React from 'react';
 import { Box, Flex, Heading, Text, Image } from "@chakra-ui/core";
 import Head from "next/head";
 import Fade from 'react-reveal/Fade';
+import team from "../database/team";
 import Team from "../components/cards/team";
 import Section from "../pageBuilder/Section";
 import Title from "../pageBuilder/Title";
+import { FaBehance, FaBlogger, FaGithub, FaLinkedin } from 'react-icons/fa';
 
-const team = [
-    { name: "Yuvraj Midha", username: "yuvraj", designation: "Project Manager"},
-    { name: "Shubh Bhardwaj", username: "shubh", designation: "Content Curator/ Frontend Developer"},
-    { name: "Anuj Bansal", username: "anuj", designation: "Senior Developer"},
-    { name: "Manav Chhabra", username: "manav", designation: "Front-End Developer"},
-    { name: "Vineet Yadav", username: "vineet", designation: "Front-End Developer"},
-    { name: "Vishu Chhabra", username: "vishu", designation: "Product Engineer"},
-    { name: "Keysang Yonthan", username: "keysang", designation: "Web Designer"},
-    { name: "Sparsh Gupta", username: "sparsh", designation: "Graphic Designer & Illustrator"},
-]
+const teamCard = (member) => (<Box className="ps-team-card" height="448px" overflow="hidden" my={3}  bg="dark.500"  pos="relative" rounded={8}>
+<Image opacity=".5" className=" team-image bg-image" src="/assets/images/team/yuvraj.jpg"></Image>
+
+    <Flex height="100%" justify="flex-end" flexDirection="column" color="white" p={8}>
+        <Fade>
+            <Heading size="xl" fontFamily="Nexa Bold">Yuvraj Midha</Heading>
+            <Heading size="md" mt={2} fontFamily="Nexa Bold">Project Manager & Development Lead</Heading>
+            <Text className="description" mt={2}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed voluptates officia qui temporibus molestiae expedita quaerat, eaque amet dolore eligendi quasi nulla aliquid architecto vero, porro est fugit neque ipsa!</Text>
+            <Flex mt={3} mx="-8px">
+                <Box as="a" p={2} ><FaGithub color="white"  size="24px"></FaGithub></Box>
+                <Box as="a" p={2} ><FaBehance color="white"  size="24px"></FaBehance></Box>
+                <Box as="a" p={2} ><FaLinkedin color="white"  size="24px"></FaLinkedin></Box>
+                <Box as="a" p={2} ><FaBlogger color="white"  size="24px"></FaBlogger></Box>
+            </Flex>
+        </Fade>
+    </Flex>
+
+</Box>)
 
 function webteam(props) {
     return (
@@ -40,15 +50,8 @@ function webteam(props) {
                 <Flex wrap="wrap" justify="center">
                 {team.map(member => (
                     <Box width={["100%","100%","100%","66%","50%"]} px={3}>
-                    <Team
-                    title={member.designation}
-                    name={member.name}
-                    img={"/assets/images/team/" + member.username +".jpg"}
-                    >
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum eaque aut pariatur doloremque non. Porro doloribus, animi dolores fugit repudiandae quisquam quibusdam, quidem non amet at, molestiae saepe temporibus nemo.
-                  </Team>
+                        {teamCard()}
                   </Box>
-                    
                 ))}
                 </Flex> 
             </Section>

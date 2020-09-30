@@ -32,3 +32,28 @@
         }
     }
 }
+
+.ps-team-card{
+    cursor: pointer;
+    transition: all .3s !important;
+    .team-image{
+        transition: all .3s;
+    }
+    .description{
+        transition: all .3s !important;
+        height: 0px;
+        opacity: 0;
+        overflow: hidden;
+    }
+}
+.ps-team-card:hover{
+    .team-image{
+        filter: blur(5px);
+        transform: scale(1.2);
+        opacity: .3;
+    }
+    .description{
+        height: auto;
+        opacity: 1;
+    }
+}
