@@ -11,16 +11,12 @@ function footer(props) {
     <>
    <Section my={0} py={8} bg="light.400">
      <Container>
-        <Flex mx={[2,2,0]} direction="column" alignItems="center">
-            <Flex py={3}>
-            <Heading fontFamily="Nexa Bold" size="md" opacity='.7'>© Copyright 2020 BG Unified Solutions</Heading>
-            </Flex>
             {/* <Box display={["none","none","block"]} width={1/3}>
               <Heading px={2} mb={3} size="sm" textTransform="uppercase" letterSpacing={1.2}>About the company</Heading>
               <Text px={2}>BG Unified Solutions is a specialist IT services and solutions provider that helps clients plan, build, support and manage their IT infrastructures</Text>
               <Button mt={3} variant="unstyled" variantColor="white" p={1}><SVG src="/assets/images/icons/library/social/linkedin.svg" color="light.500" size="24px"></SVG></Button>
             </Box> */}
-            <Flex flexDirection="row" wrap="wrap" justify="center" mt={2} px={4}>
+            <Flex mx={[2,2,0]} flexDirection="row" wrap="wrap" justify="center" mt={2} px={4}>
                 <Link href="/"><Button mx={4} variant="unstyled" variantColor="white">Home</Button></Link>
                 <Link href="/solutions"><Button mx={4} variant="unstyled" variantColor="white">Solutions</Button></Link>
                 <Link href="/features"><Button mx={4} variant="unstyled" variantColor="white">Our Features</Button></Link>
@@ -34,7 +30,6 @@ function footer(props) {
                   <SVG src="/assets/images/icons/library/communication/call.svg" color="light.500" size="28px"></SVG>
                   <Heading px={2} mb={1} size="md">1300 00 BGUS</Heading>
               </Flex> */}
-        </Flex>
       </Container>
    </Section>
    <Box bg="light.400" py={3}>
