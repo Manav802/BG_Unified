@@ -41,12 +41,21 @@ class about extends Component {
           <Head>
             <title>More About Us - BG Unified</title>
           </Head>
+<<<<<<< HEAD
+          <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
+            <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
+            <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Know More</Heading>
+            <Title zIndex="100" fontSize={["44px","64px"]}>About Us</Title>
+        </Section>
+            <div className="container-fluid p-0 pt-5 pb-2 pt-lg-5 pb-lg-5">
+=======
             <Section zIndex="3000" bgImage="url('/assets/images/backgrounds/aboutus.jpg')" blend="overlay" color="white" textAlign="center" bg={["dark.400"]} py={[16, 32]} my={0}>
                 <Heading  size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Know More</Heading>
                 <Title zIndex="100" fontSize={["44px","64px"]}>About Us</Title>
             </Section>
          
           <Section containerWidth="100%">
+>>>>>>> BGUS-v1o1
               <Slider
                 className="timeline"
                 flickityRef={(c) => (this.flkty = c)}

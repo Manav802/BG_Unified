@@ -1,0 +1,60 @@
+.max-height1{
+    max-height:360px;
+}
+.max-height2 {
+    max-height: 320px;
+}
+
+.rcw-launcher{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: $color-primary !important;
+}
+
+.rcw-conversation-container > .rcw-header {
+    background: $color-primary !important;
+  }
+  
+.rcw-client{
+    .rcw-message-text{
+        background: $color-primary !important;   
+        color: white !important;
+    }
+}
+
+.truncate-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  @media (max-width: 1200px) {
+    
+  .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    
+  }
+  .flickity-prev-next-button.previous {
+    left: -6px;
+  }
+  .flickity-prev-next-button.next {
+    right: -6px;
+  }
+}
+
+
+#nprogress .bar {
+  background: #F32222 !important;
+  height: 3px !important; 
+  }
+
+#nprogress .peg {
+  box-shadow: 0 0 10px  #F32222, 0 0 5px  #F32222 !important;
+}
+  
+.link-highlight:hover{
+  color: $color-primary !important;
+  text-decoration: none !important;
+}

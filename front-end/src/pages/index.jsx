@@ -231,7 +231,50 @@ class Landing extends Component {
                 </Flex>
             </Row>       
         </Section>
+<<<<<<< HEAD
+        {/* <Section bg="dark.500" bgImage="url('/assets/images/vectors/map.jpg')" blend="multiply" py={20}>
+      
+              <div className="row layer-1">
+                <Fade duration={500} cascade distance={"30%"} bottom>
+                  <div className="col-lg-12 py-5 d-flex flex-column justify-content-center">
+                    <Heading size="sm" className="text-primary" letterSpacing={1.5} textTransform="uppercase" mb={2}>Our Reach</Heading>
+                    <Box fontSize={["4xl","4xl","5xl"]} className="mb-2 display3 text-white">Our Data Center Locations</Box>
+                    <Box fontSize={["16px","18px","20px"]} lineHeight={1.5} className="h6 NunitoSans-SemiBold text-white text-justify">
+                      BG Unified Solution specializes in Hosting Solutions and Services. We help clients plan, build, support and manage their IT infrastructure. Currently, we have several DC locations including IBM. We have our Data center Locations spread out to locations including Auckland, Sydney and Melbourne.
+                </Box>
+                  </div>
+                </Fade>
+                <Fade duration={500} cascade distance={"50%"} left>
+                  <div className="col-md-3 col-sm-4 p-2">
+                    <Box boxShadow="md" bg="white" borderRadius="sm" p={8}>
+                      <div className="d-flex align-items-center flex-column">
+                        <Image alt="" src="/assets/images/icons/cities/sydney.svg" size="64px"></Image>
+                        <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Sydney</Heading>
+                      </div>
+                    </Box>
+                  </div>
+                  <div className="col-md-3 col-sm-4 p-2">
+                    <Box boxShadow="md" bg="white"  borderRadius="sm" p={8}>
+                      <div className="d-flex align-items-center flex-column">
+                        <Image alt="" src="/assets/images/icons/cities/auckland.svg" size="64px"></Image>
+                        <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Auckland</Heading>
+                      </div>
+                    </Box>
+                  </div>
+                  <div className="col-md-3 col-sm-4 p-2">
+                    <Box boxShadow="md" bg="white" borderRadius="sm" p={8}>
+                      <div className="d-flex align-items-center flex-column">
+                        <Image alt="" src="/assets/images/icons/cities/melbourne.svg" size="64px"></Image>
+                        <Heading size="sm" mt={3} textTransform="uppercase" letterSpacing={1} className="diplay6 px-2">Melbourne</Heading>
+                      </div>
+                    </Box>
+                  </div>
+                </Fade>
+              </div>
+        </Section> */}
+=======
     
+>>>>>>> BGUS-v1o1
         <Section overflow="hidden">
         <div className="row p-3 p-md-0">
           <div className="col-md-5 mt-lg-5 align-self-center">

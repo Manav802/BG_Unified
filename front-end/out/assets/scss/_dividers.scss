@@ -1,0 +1,26 @@
+.divider{
+    &-bottom-with-margin{
+        margin-top: calc(100vw/-8);
+        z-index: 0;
+    }
+    &-img{
+        
+    }
+    &-top-with-margin{
+        margin-bottom: calc(100vw/-8);
+        z-index: 0;
+    }
+    &-yellow-with-margin{
+        width: 100% !important;
+        transform: translate(0px, 5px);
+        margin-top: calc(100vw/-4);
+        z-index: 60;
+    }
+    &-plain-white-offset{
+        margin-top: calc(100vw/6);
+    }
+    &-topred-with-margin{
+        margin-top: calc(100vw/-10);
+        z-index: 60;
+    }
+}

@@ -21,7 +21,12 @@ class Contact extends Component {
           <Head>
             <title>Contact us - BG Unified Solutions</title>
           </Head>
+<<<<<<< HEAD
+          <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} pb={4} pt={[16, 32]} my={0}>
+            <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
+=======
             <Section zIndex="3000" bgImage="url('/assets/images/backgrounds/call_us.jpg')" blend="screen" textAlign="center" bg={["gray.300"]} py={[16, 32]} my={0}>
+>>>>>>> BGUS-v1o1
             <Title zIndex="100" fontSize={["44px","64px"]}>Contact Us</Title>
             <Text zIndex="100" fontSize="xl" mt={2}>Have a doubt? Want to know more? Let's Connect!</Text>
         </Section>
@@ -55,6 +60,13 @@ class Contact extends Component {
                 </Box>
               </Flex>
             </Row> 
+<<<<<<< HEAD
+            
+        </Section>
+        <Section py={0} my={0}>
+        <Image alt="" src="/assets/images/backgrounds/call_us.jpg" height="316px" width="100%" objectFit="cover" rounded={[0,0,0, 8]} mt={[0,0,0, 8]}></Image>
+=======
+>>>>>>> BGUS-v1o1
         </Section>
         <Section containerWidth={["100%", "100%", "640px", "720px"]}>
           <Box bg={["#ffffff00","#ffffff00","#ffffff00","white"]} px={8} py={16}  boxShadow={[0,0,0,"xl"]} textAlign="center" rounded={12}>
