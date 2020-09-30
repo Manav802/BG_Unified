@@ -147,10 +147,8 @@ function ErrorForm(props) {
         event.preventDefault()
         loadingState(true);
         axios.post('/api/report/submit', form)
-            .then((response) => refreshForm(response))
-            .catch(error=>{console.log(error)})
+            .then((response) => refreshForm(response),error=>refreshForm(error))
     }
-
     const updateWidth = () => {
         setScreenWidth(window.innerWidth);
     };
