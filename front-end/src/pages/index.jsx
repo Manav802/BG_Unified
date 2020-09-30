@@ -40,8 +40,8 @@ const news = (blog) => {
 const sliderInfo = [
   {
     title: <span>Welcome to BG Unified Solutions</span>,
-    imgSrc: "/assets/images/backgrounds/globe.jpg",
-    subTitle: "Your go-to partner for all IT solutions and services that deliver value and enable solid corporate growth.",
+    imgSrc: "/assets/images/backgrounds/globe.webp",
+    subTitle: "Your go-to partner for all IT solutions and services that deliver value and enable substantial corporate growth.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
     btnPrimaryLink: "/solutions",
@@ -57,8 +57,8 @@ const sliderInfo = [
     btnSecondaryLink: "/contact"
   },
   {
-    title: "Geographical Redundant Infrastructre",
-    imgSrc: "/assets/images/backgrounds/map.jpg",
+    title: "Geographical Redundant Infrastructure",
+    imgSrc: "/assets/images/backgrounds/map.webp",
     subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
     btnPrimaryText: "Explore Now",
     btnSecondaryText: "Get a quote",
@@ -71,22 +71,22 @@ const processInfo = [
   {
     title: <Link href="/contact"><Button as="a" variant="solid" variantColor="primary" className="primary-btn" boxShadow="lg" size="lg" my={1} px={8}>Consult</Button></Link>,
     color: "white",
-    content: "From concept through business case then on to high level design"
+    content: "From concept through business case than on to high-level design"
   },
   {
     title: "Design",
     color: "blue.500",
-    content: "From high level design to detailed design ready to build"
+    content: "From high-level design to detailed design - ready to build"
   },
   {
     title: "Build",
     color: "yellow.500",
-    content: "After design sign off we procure and build your tailored solution"
+    content: "After design sign off, we procure and build your tailored solution."
   },
   {
     title: "Deploy",
     color: "red.500",
-    content: "Implentation services from specification time to final signoff"
+    content: "Implementation services from specification time to final signoff"
   },
   {
     title: "Manage",
@@ -141,7 +141,7 @@ class Landing extends Component {
                 Solutions
               </div>
               <div className="col-12 mt-2 mb-5 text-center text-dark display4">
-                What We Deliver?
+                What do We deliver?
               </div>
               <Fade duration={800} cascade distance={"8%"} bottom>
                 <div className="row mx-2">
@@ -167,13 +167,14 @@ class Landing extends Component {
                 </Fade>
             </div>
             <Box textAlign={["center","center","right"]}>
-                <Text fontSize="xl">We deliver 25+ services</Text>
-                <Link href="/solutions"><a><Text color="primary.500" mt={2} fontFamily="Nexa bold" fontSize="xl">View All <Icon name="arrow-forward"></Icon></Text></a></Link>
+                <Text fontSize="xl">We deliver 30+ services.</Text>
+                <a><Text color="primary.500" mt={2} fontFamily="Nexa bold" fontSize="xl">View All <Icon name="arrow-forward"></Icon></Text></a>
             </Box>
             </Section>
             <Section>
               <Title>
-                We have a ‘can do’ attitude with an ‘easy to work with’ culture.
+              We have a 'can-do' attitude with an 'easy to work with' culture.
+
               </Title>
               <Description>
                 Our values are based around fresh thinking, delivering on our promises, showing customer respect and making a 100% commitment.
@@ -200,7 +201,7 @@ class Landing extends Component {
                     Highly expert team
                     </Title>
                     <Text mt={4} fontSize="20px" opacity={.7}>
-                        Our values are based around fresh ideas, delivering as promised, shoeing our customer’s respect, and being 100% committed.
+                    We tend to provide the best-in-class services to our users, with the transactional security, wholly reliable and scalable solutions for efficient business operations.
                     </Text>
                     <Link href="/features">
                         <a className="link">
@@ -282,9 +283,10 @@ class Landing extends Component {
               Multiple Data Center Locations
             </Heading>
             <Text fontSize="lg" fontWeight="600" opacity=".7">
-              Specialists in Hosting Solutions and Services, we have our Data Center Locations spread out to 
-              locations like Auckland, Sydney and Melbourne. Thus, proving BGUS to be a leader in Backup and 
-              Disaster Recovery for your Enterprise.</Text>
+            Specialists in Hosting Solutions and Services, we have our Data Center Locations spread out 
+            to locations like Auckland, Sydney and Melbourne. Thus, proving BGUS to be a leader in 
+            Backup and Disaster Recovery for your Enterprise.
+</Text>
               <Row rowDistance={8}>
                   <Body  width={1/3} type="numberCount" data={{
                     count: 40,
@@ -348,7 +350,7 @@ class Landing extends Component {
 
         <Section py={16}>
             <Title>Our Goals + Our Approach + Our Results  = Our Success Story</Title>
-            <Description>We focus on being the trusted and reliable partner for every business that we associate with, accounting for our enthusiasm and professionalism</Description>
+            <Description>We focus on being the trusted and reliable partner for every business that we associate with, accounting for our enthusiasm and professionalism.</Description>
             <Row rowDistance={8}>
                 <Box width={["100%","100%","50%","50%","33%"]} px={3} my={3} fontWeight="500">
                   <Box bg="dark.500" pos="relative" rounded={8} p={12} overflow="hidden" boxShadow="xl" height="100%">

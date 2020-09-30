@@ -3,7 +3,7 @@ import StoragePricing from "../../pricing/StoragePricing"
 export default [
     {
         mb:0,
-        title: "Get your Quote now!",
+        title: "Get your quote now!",
         description: "Our storage infrastructure includes more than 900TB of Tier1/Tier2/Tier3 storage",
         rowDistance: 4,
         gap:0,
@@ -41,8 +41,7 @@ export default [
                     and their integration into your disaster recovery plans and storage becomes even more complex. And while there are commonalities that allow for 
                     pre-packaged solutions, every data center is different. 
                     <br/><br/>
-                    Each one requires knowledgeable professionals to help define the correct solution, often across multiple manufacturers, to combine and collaborate in order 
-                    to create the optimal solution for your organization.</span>
+                    Each one requires knowledgeable professionals to help define the correct solution, often across multiple manufacturers, to combine and collaborate to create the optimal solution for your organization.</span>
             }]
         }]
     },
@@ -127,7 +126,7 @@ export default [
                 fontSize: "lg",
                 content: [{
                     title: "Pay per Use",
-                    description: "Pay only for the storage you actually require and use, bundling it up with Data Link. Transparent pricing and costing schedule. Dynamic as per your needs.",
+                    description: "Pay only for the storage you require and use, bundling it up with Data Link. Transparent pricing and costing schedule. Dynamic as per your needs.",
                     image: "/assets/images/illustrations/low_pricing.svg"
                 },
                 {

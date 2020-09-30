@@ -18,8 +18,8 @@ const timeline = {
   2016: "Technology migration to Next-Generation Firewalls, UCaaS, Wireless, Telepresence and Storage.",
   2017: "Presence in London, offering all the services in our portfolio including, UCaaS, SaaS, IaaS, WiaaS and FaaS",
   2018: "Received BTS Excellence Award in recognition of Excellent Service by the NSW Government.",
-  2019: "Built our own Logging Cloud Connect Product, Newly deployed RDS/VDIaaS Solution into its portfolio as Workstation Service.",
-  2020: "DNS As A Service using a hybrid Windows, Red Hat Linux andInfoblox DNS Servers",
+  2019: "Built our Logging Cloud Connect Product, Newly deployed RDS/VDIaaS Solution into its portfolio as Workstation Service.",
+  2020: "DNS As A Service using a hybrid Windows, Red Hat Linux and Infoblox DNS Servers",
 }
 
 class about extends Component {
@@ -149,8 +149,8 @@ class about extends Component {
                     img="/assets/images/team/jenny.jpg"
                   >
                    CPA and Master of Accounting.
-                   the financial specialist, started up this company back in 2014. Responsible personality,
-                   expert when it comes to finance and accounts.
+                   the financial specialist started up this company back in 2014. Responsible personality,
+                   an expert when it comes to finance and accounts.
                   </Team>
                 </div>
                 <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">

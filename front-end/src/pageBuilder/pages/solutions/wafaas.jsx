@@ -40,7 +40,7 @@ export default [
                 width: ["100%","100%","100%",1/2, 5/12],
                 type: "content",
                 data: [{
-                    title: "Why choose Us?",
+                    title: "Why Choose Us?",
                     textAlign: "left",
                     fontSize: ["lg","xl"],
                     titleSize: [40,40,48],

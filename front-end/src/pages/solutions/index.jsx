@@ -64,7 +64,7 @@ function OurSolutions(){
             <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
             <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">What we deliver</Heading>
             <Title zIndex="100" fontSize={["44px","64px"]}>Our Solutions</Title>
-            <Text zIndex="100" fontSize="xl" mt={2}>Choose your requirments. We provide you with the solution, needed for your Enterprise</Text>
+            <Text zIndex="100" fontSize="xl" mt={2}>Choose your requirements. We provide you with the solution, needed for your Enterprise</Text>
         </Section>
         <Section mt={0} pt={0}>
         <div className="d-flex mt-3 justify-content-center">

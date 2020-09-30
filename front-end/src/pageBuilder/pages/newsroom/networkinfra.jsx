@@ -33,7 +33,7 @@ export default [
                 textAlign: "justify"
             },
             {
-                text: "From legacy production systems support to a wide technology lens and multi-vendor solutions, we did help them implement a flexible, agile architecture designed specifically to meet their unique needs.",
+                text: "From legacy production systems support a wide technology lens and multi-vendor solutions, we did help them implement a flexible, agile architecture designed specifically to meet their unique needs.",
                 textAlign: "justify"
             
             },

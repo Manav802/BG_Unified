@@ -35,7 +35,7 @@ export default [
         {
             width: [1/2, 1/3],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/devices/display-1.svg", mt: 4, title: "Real Time Monitoring"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/devices/display-1.svg", mt: 4, title: "Real-Time Monitoring"}
         },
         {
             width: [1/2, 1/3],

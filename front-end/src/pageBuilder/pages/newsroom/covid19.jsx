@@ -13,11 +13,11 @@ export default [
             },
             
             {
-                text: "We have increased our firewalls capacity to 10G firewalls in all DC locations. Now we have PaloAlto 5K, Fortinet 3700D’s and ASA 5585X with full UTM capabilities to provide you with a secure internet access.",
+                text: "We have increased our firewalls capacity to 10G firewalls in all DC locations. Now we have PaloAlto 5K, Fortinet 3700D’s and ASA 5585X with full UTM capabilities to provide you with secure internet access.",
                 textAlign: "justify"
             },
             {
-                text: "We have increased our core capacity in all DC locations to 40G devices with ALLFLASH storage for VDI/RDSaaS. We have added 150 TB of ALLFLASH Storage into our DC locations to support VDIaaS, WorkstationAAS and RDSaaS.",
+                text: "We have increased our core capabilities in all DC locations to 40G devices with ALLFLASH storage for VDI/RDSaaS. We have added 150 TB of ALLFLASH Storage into our DC locations to support VDIaaS, WorkstationAAS and RDSaaS.",
                 textAlign: "justify"
             },
             {
@@ -37,7 +37,7 @@ export default [
                 textAlign: "justify"
             },
             {
-                text: "We are here to help in this tough time. Please do not hesitate to ask for help, whether you need VDI, UC, Storage, Managed Firewall or anything that will help you to keep carrying on your work remotely and keep you & your family safe in this time! ! ! Anything you need starting from storage, DR, Contact Center, Compute, VDI, RDS, DNS, SIP, Email Filtering or DB, don’t hesitate to contact us!!.",
+                text: "We are here to help in this tough time. Please do not hesitate to ask for help, whether you need VDI, UC, Storage, Managed Firewall or anything that will help you to keep carrying on your work remotely and keep you & your family safe in this time!!! Anything you need starting from storage, DR, Contact Center, Compute, VDI, RDS, DNS, SIP, Email Filtering or DB, don’t hesitate to contact us!!.",
                 textAlign: "justify"
             },
             {
