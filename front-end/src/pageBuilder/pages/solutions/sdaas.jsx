@@ -8,6 +8,7 @@ export default [
         },
         gap: 10,
         py: [8,16],
+        rowDistance: 8,
         body: [
         {
             width:["100%", "100%", 1/2],
@@ -18,7 +19,7 @@ export default [
                     images: ["/assets/images/services/sdaas.svg"],
                     borderRadius: 8,
                     width: ['100%',"100%","80%"],
-                    height: "300px",
+                    height: "240px",
                     objectFit: "cover"
                 }
             },
