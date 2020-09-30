@@ -41,13 +41,14 @@ function main(props) {
             breakpoints={{
             // when window width is >= 640px
             640: {
-            width: 640,
             slidesPerView: 1,
             },
             // when window width is >= 768px
             768: {
-            width: 768,
-            slidesPerView: 2,
+            slidesPerView: 3,
+            },
+            1200: {
+            slidesPerView: 5,
             },
         }}
    spaceBetween={16} onSlideChange={(swiper) => {setActive(swiper.activeIndex)}} onSwiper={setControlledSwiper} >
