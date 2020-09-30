@@ -80,7 +80,13 @@ function menu(props) {
                   <a className="link py-1">Newsroom</a>
                 </Link>
                 <Link href="/solutions">
-                  <a className="link py-1"> Solutions</a>
+                  <a className="link py-1">Our Solutions</a>
+                </Link>
+                <Link href="/about#team">
+                  <a className="link py-1">Team</a>
+                </Link>
+                <Link href="/stories">
+                  <a className="link py-1">Customer Stories</a>
                 </Link>
               </div>
             </Collapse>
