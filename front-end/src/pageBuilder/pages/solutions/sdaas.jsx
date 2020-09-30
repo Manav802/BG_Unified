@@ -15,9 +15,9 @@ export default [
             type: "imageGroup",
                 my:[0,2],
                 data: {
-                    images: ["/assets/images/services/socaas.jpg"],
+                    images: ["/assets/images/services/sdaas.svg"],
                     borderRadius: 8,
-                    width: ['100%',"100%","90%"],
+                    width: ['100%',"100%","80%"],
                     height: "300px",
                     objectFit: "cover"
                 }
