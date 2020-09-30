@@ -122,13 +122,12 @@ function OurSolutions(){
     </div>
           <Tabs index={tabIndex} align="center" onChange={handleTabsChange} variantColor="red.500">
             <TabList fontFamily="Nexa Bold">
-              <Tab className="box-none tab" p={6}>IT & Infrastructure</Tab>
-              <Tab className="box-none tab" p={6}>Network</Tab>
-              <Tab className="box-none tab" p={6}>Cyber Security</Tab>
-              <Tab className="box-none tab" p={6}>Collaborative</Tab>
-              <Tab className="box-none tab" p={6}>Professional</Tab>
+              <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">IT & Infrastructure</Box></Tab>
+               <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Network</Box></Tab>
+                <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Cyber Security</Box></Tab>
+                 <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Collaborative</Box></Tab>
+                  <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Professional</Box></Tab>
             </TabList>
-
             <TabPanels>
               <TabPanel>
               <Row>

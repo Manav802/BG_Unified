@@ -25,7 +25,7 @@ function SliderC({ sliderInfo }) {
               <ImageLoader
                 src={info.imgSrc}
               >
-                <Image width={"200px"} height={"130px"} />
+                <img style={{width:"200px",height:"130px"}}/>
                 <Spinner
                   thickness="4px"
                   speed="0.65s"
