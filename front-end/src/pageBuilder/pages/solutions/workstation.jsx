@@ -3,13 +3,11 @@ import VdiPricing from "../../pricing/VdiPricing";
 export default [
     {
         title: "Workstation for your Business",
-        description: <span>Virtual Desktop Infrastructure is when virtual 
-                desktops are served through on-site technology solutions. 
-                A hardware stack is maintained by IT administrators and is 
-                usually located on-site. This is how virtual desktops have 
-                traditionally been deployed. This allows IT 
-                resources to be reallocated for managing virtual desktops, 
-                clients, and applications.
+        description: <span>Virtual Desktop Infrastructure is when we serve virtual desktops through on-site 
+            technology solutions. IT administrators maintain a hardware stack and is usually located on-site.
+             This is the traditional approach of how virtual desktops are deployed. 
+             This allows IT resources to be reallocated for managing virtual desktops, clients, and applications.
+
                 </span>,
         gap: 10,
         py: [8,16],
@@ -24,7 +22,7 @@ export default [
     {
         title : "BG Unified Solution’s Workstations",
         
-        description: "With full control over hardware, software, and data, this is an ideal solution for highly sensitive computing environments. This greater degree of control also lends itself well to customization ",
+        description: "With full control over hardware, software, and data, this is an ideal solution for highly sensitive computing environments. This greater degree of control also lends itself well to customization.",
 
         my: 0,
         py: 20,
@@ -74,12 +72,12 @@ export default [
     body: [{
         type: "content",
         data: [{
-            text: <span>With BG Unified Solutions’ Workstation 
-            As A Service, we give an organization the freedom to
-             deploy virtual desktops from its own on-premises data 
-             centers. In-house IT teams are responsible for deploying 
-             the virtual desktops as well as purchasing, managing, 
-             and upgrading the infrastructure.</span>,
+            text: <span>By BG Unified Solutions’ Workstation As A Service,
+                 we give an organization the freedom to deploy virtual 
+                 desktops from its own on-premises data centers. 
+                 In-house IT teams are responsible for deploying the virtual desktops
+                 as well as purchasing, managing, and upgrading the infrastructure.
+            </span>,
             fontSize: ["lg","lg","xl"],
             textAlign: "center",
         }]
@@ -105,7 +103,7 @@ export default [
                 maxH: 200,
                 spacing: 12,
                 title: "Flexible migration to the cloud for Remote Desktop Services",
-                description: "Optimize your experience with affordable costs for your server desktop and apps. Get all the resources, tools, and infrastructure, you need to migrate your apps.",
+                description: "Optimize your experience with affordable costs for your server desktop and apps. Get all the resources, tools, and infrastructure; you need to migrate your apps.",
             },
         },
         {

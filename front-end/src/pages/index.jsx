@@ -167,7 +167,7 @@ class Landing extends Component {
                 </Fade>
             </div>
             <Box textAlign={["center","center","right"]}>
-                <Text fontSize="xl">We deliver 30+ services.</Text>
+                <Text fontSize="xl">We deliver 25+ services.</Text>
                 <a><Text color="primary.500" mt={2} fontFamily="Nexa bold" fontSize="xl">View All <Icon name="arrow-forward"></Icon></Text></a>
             </Box>
             </Section>

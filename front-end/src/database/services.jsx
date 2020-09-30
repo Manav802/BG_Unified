@@ -127,7 +127,7 @@ const services = {
         description: "Assist in DR strategy, evaluate threat models, select technologies, prototype multisite or multi-cloud DR strategies. Test rollback mechanisms....",
         illustration: "",
         relatedService: ["Backup As A Service", "Storage As A Service", "Infrastructure As A Service"],
-        conclusion: "Detects, isolates, notifies, and corrects faults encountered in the network",
+        conclusion: "Recognizes, isolates notifies and corrects faults encountered in the network",
         sections: sections.dr
     },
     "firewall": {
@@ -185,7 +185,7 @@ const services = {
         description: "BG Unified Solutions delivers architects for the technology stack(s) that your enterprise has adopted....",
         illustration: "",
         relatedService: ["GPU As A Service", "Infrastructure As A Service", "Platform As A Service"],
-        conclusion: "An ideal solution for highly sensitive computing environments.",
+        conclusion: "An ideal workstation solution for highly sensitive computing environments.",
         sections: sections.workstation,
         popular:true,
     },
@@ -200,7 +200,7 @@ const services = {
         description: "End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions. 10G/40G core switching....",
         illustration: "",
         relatedService: ["Workstation As A Service", "Infrastructure As A Service", "GPU As A Service"],
-        conclusion: "We give you the power to easily deploy, efficiently monitor, and scale the applications.",
+        conclusion: "We give you the power to deploy, efficiently monitor, and scale the applications quickly.",
         sections: sections.platform
     },
     "proxy": {

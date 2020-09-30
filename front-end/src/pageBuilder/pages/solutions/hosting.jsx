@@ -3,13 +3,12 @@ import WebHostingPricing from "../../pricing/WebHostingPricing";
 export default [
     {   
         title : "Hosting that you want to choose",
-        description: <span>Web Hosting as a Service includes 
-        deploying, maintaining, managing, and securing your 
-        website over the world wide web with a unique domain
-         name for your website. The main functionality of 
-         Hosting is to make your website live to be accessed
-          or viewed by users all around the globe, for them 
-          to load the required resources. <br/><br/> Web Hosting as a 
+        description: <span>Web Hosting as a Service includes deploying, maintaining, managing, 
+            and securing your website over the world wide web with a unique 
+            domain name for your website. The main functionality of Hosting is 
+            to make your website live to be accessed or 
+            viewed by users all around the globe, for them to load the required resources.
+        <br/><br/> Web Hosting as a 
           Service allows you to host the website over the web, 
           and maintain and monitor in real-time. The current 
           age is what you witness over the web, because of 
@@ -42,12 +41,12 @@ export default [
                 width: ["100%","100%","100%",1/2, 5/12],
                 type: "content",
                 data: [{
-                    title: "Delivering a scalable, reliable, and well-managed authoritative Web Hosting Service.",
+                    title: "We are delivering a scalable, reliable, and well-managed authoritative Web Hosting Service.",
                     textAlign: "left",
                     fontSize: "lg",
                     titleSize: 32,
                     
-                    text: "Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package. Load balancing can also be added as an option if required. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users."
+                    text: "Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring included in the package. Load balancing can also be added as an option if required. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users."
                     
                 }]
             },
@@ -99,7 +98,7 @@ export default [
             data: [{
                 textAlign: "center",
                 fontSize: "xl",
-                text: "We have a ‘can-do’ attitude with an ‘easy to work with’ culture. Our values are based around fresh thinking, delivering on our promises, showing customer respect, and making a 100% commitment."
+                text: "A complete website monitoring is included in the package. Load balancing can also be added as an option if required."
             }]
         }]
     },

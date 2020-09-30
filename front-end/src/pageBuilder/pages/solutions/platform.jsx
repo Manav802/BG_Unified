@@ -31,7 +31,7 @@ export default [
                     text: <>
                     <span>
                         End-to-End DC network infrastructure encompassing server switching, storage switching, and DC Interconnect Solutions.
-                        Huawei 10G core switching offering a high-speed spine and leaf network.
+                         10G/40G core switching offering a high-speed spine and leaf network.
                     </span>
                     <br/><br/>
                     <span>
@@ -73,7 +73,7 @@ export default [
                     size: "96px",
                     image: "/assets/images/icons/library/devices/cpu-1.svg",
                     title: "Infinite Computing Resources",
-                    description: "Delivering all the necessary resources required at minimal time and cost!",
+                    description: "We are delivering all the necessary resources required at minimal time and cost!",
                     align: "center",
                 }
             },
@@ -102,7 +102,7 @@ export default [
                 fontSize: "md",
                 content: [{
                     title: "Load Balancing",
-                    description: "Meet the needs of your business—today and as you grow—with innovative, flexible and scalable load balancing solutions.Platform-oriented cloud platforms.",
+                    description: "Meet the needs of your business—today and as you grow—with innovative, flexible and scalable load balancing solutions—platform-oriented cloud platforms.",
                     image: "/assets/images/illustrations/data_points.svg"
                 },
                 {
