@@ -89,7 +89,6 @@ function UcaasPricing(props) {
     const [fanvilc400, setfanvilc400] = useState(0);
     const [fanvilc600, setfanvilc600] = useState(0);
     
-    console.log(dx650);
     const resetOnCardChange = () => {
         setNum10(0);
         setNum50(0);
