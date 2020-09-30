@@ -4,49 +4,6 @@ import SliderC from "../../components/Slider"
 const sliderInfo = [
     {
       title: <span>Cisco 7965G</span>,
-<<<<<<< HEAD
-      imgSrc: "/assets/images/phones/cisco/7965G.jpg",
-    },
-    {
-        title: <span>Avaya 1408</span>,
-        imgSrc: "/assets/images/phones/avaya/avaya1408.jpg",
-    },
-    {
-        title: <span>Cisco 8845</span>,
-        imgSrc: "/assets/images/phones/cisco/8845.jpg",
-    },
-    {
-        title: <span>Avaya 9608</span>,
-        imgSrc: "/assets/images/phones/avaya/avaya9608.jpg",
-    },
-    {
-        title: <span>Cisco 9951</span>,
-        imgSrc: "/assets/images/phones/cisco/9951.jpg",
-    },
-    {
-        title: <span>Avaya J179</span>,
-        imgSrc: "/assets/images/phones/avaya/avayaJ179.jpg",
-    },
-    {
-        title: <span>Cisco DX70</span>,
-        imgSrc: "/assets/images/phones/cisco/DX70.jpg",
-    },
-    {
-        title: <span>Fanvil C400</span>,
-        imgSrc: "/assets/images/phones/3CX/fanvilC400.jpg",
-    },
-    {
-        title: <span>Cisco DX80</span>,
-        imgSrc: "/assets/images/phones/cisco/DX80.jpg",
-    },
-    {
-        title: <span>Fanvil C600</span>,
-        imgSrc: "/assets/images/phones/3CX/fanvilC600.jpg",
-    },
-    {
-        title: <span>Cisco DX650</span>,
-        imgSrc: "/assets/images/phones/cisco/DX650.jpg",
-=======
       imgSrc: "/assets/images/phones/cisco/7965G.png",
     },
     {
@@ -88,7 +45,6 @@ const sliderInfo = [
     {
         title: <span>Cisco DX650</span>,
         imgSrc: "/assets/images/phones/cisco/DX650.png",
->>>>>>> BGUS-v1o1
     },
   ]
 
