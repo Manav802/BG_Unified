@@ -214,7 +214,7 @@ function header(props) {
                                                         </a></Hyperlink> 
                                                     </Box>
                                                     <Box onClick={onClose} px={3} my={3} width="50%">
-                                                        <Hyperlink href="/newsroom?tab=case_studies"><a className="link">
+                                                        <Hyperlink href="/newsroom?tab=Case Study"><a className="link">
                                                             <Heading size="sm" fontFamily="Nexa Bold">Case Studies</Heading>
                                                             <Text fontSize="sm" fontWeight="500" opacity=".7">How we work</Text>
                                                         </a></Hyperlink> 
