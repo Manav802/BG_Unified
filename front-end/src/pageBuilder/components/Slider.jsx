@@ -1,9 +1,6 @@
-import React from 'react'
+import React,{Suspense} from 'react'
 import Slider from "react-flickity-component";
 import { Box, Image, Badge, Flex } from '@chakra-ui/core';
-import ImageLoader from 'react-load-image';
-import { Spinner } from "@chakra-ui/core";
-
 
 function SliderC({ sliderInfo }) {
   return (
@@ -11,7 +8,7 @@ function SliderC({ sliderInfo }) {
       <Slider options={{
         autoPlay: false,
         groupCells: true,
-        adaptiveHeight: true,
+        adaptiveHeight:true,
         imagesLoaded: true,
         pageDots: false,
         draggable: true,
@@ -21,21 +18,9 @@ function SliderC({ sliderInfo }) {
       }}>
         {sliderInfo.map((info, index) => (
           <Flex justifyContent="center" w={["50%", "32%", "25%", "20%"]}>
-            <Box mb={"10px"} p={"15px"} mx={"10px"} shadow="md" overflow="hidden">
-              <ImageLoader
-                src={info.imgSrc}
-              >
-                <img style={{width:"200px",height:"130px"}}/>
-                <Spinner
-                  thickness="4px"
-                  speed="0.65s"
-                  emptyColor="gray.200"
-                  color="blue"
-                  size="sm"
-                />
-                <div>Error! image is not loading</div>
-              </ImageLoader>
-              <Box
+            <Box p={"15px"} mx={"10px"} my={2} shadow="md" overflow="hidden">
+                <Image src={info.imgSrc} h={"130px"} w={"200px"}/>
+                <Box
                 textAlign="center"
                 mt="3"
                 fontWeight="semibold"
@@ -43,7 +28,6 @@ function SliderC({ sliderInfo }) {
               >
                 {info.title}
               </Box>
-
             </Box>
           </Flex>
         ))}
