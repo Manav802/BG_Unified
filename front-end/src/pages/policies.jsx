@@ -23,7 +23,7 @@ function policies(props) {
             <Image position="absolute" height="100%" zIndex="0" top={0} left={0} style={{mixBlendMode:"overlay"}}  opacity="1" objectFit="cover" width="100%" src="/assets/images/backgrounds/tech.jpg"></Image>
                 <Fade distance="5%" duration={500} top>
                 <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
-                <Title zIndex="100" fontSize={["44px","64px"]}>Privacy Policies</Title>
+                <Title zIndex="100" fontSize={["44px","64px"]}>Privacy Policy</Title>
                 </Section>
                 </Fade>
             </Box>

@@ -82,6 +82,9 @@ function menu(props) {
                 <Link href="/solutions">
                   <a className="link py-1">Our Solutions</a>
                 </Link>
+                <Link href="/partners">
+                  <a className="link py-1">Our Partners</a>
+                </Link>
                 <Link href="/about#team">
                   <a className="link py-1">Team</a>
                 </Link>
