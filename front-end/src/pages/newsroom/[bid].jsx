@@ -58,7 +58,7 @@ function Blogs() {
             </Fade>
           </Box>
      <Section mt={6} py={0} >
-        <Box fontWeight="600" lineHeight={1.6} color="gray.500" width={["100%","100%","72%"]}>
+        <Box fontWeight={["400","500"]} lineHeight={1.6} color="gray.500" width={["100%","100%","72%"]}>
         {blog.content && blog.content.map((body, index) => (
             <Body {...body}></Body>
         ))}
