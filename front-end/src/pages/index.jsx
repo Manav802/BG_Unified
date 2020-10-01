@@ -168,7 +168,7 @@ class Landing extends Component {
             </div>
             <Box textAlign={["center","center","right"]}>
                 <Text fontSize="xl">We deliver 25+ services.</Text>
-                <a><Text color="primary.500" mt={2} fontFamily="Nexa bold" fontSize="xl">View All <Icon name="arrow-forward"></Icon></Text></a>
+                <Link href="/solutions"><a><Text color="primary.500" mt={2} fontFamily="Nexa bold" fontSize="xl">View All <Icon name="arrow-forward"></Icon></Text></a></Link>
             </Box>
             </Section>
             <Section>
