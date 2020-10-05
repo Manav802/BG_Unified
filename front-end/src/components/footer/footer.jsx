@@ -36,7 +36,7 @@ function footer(props) {
      <Container>
        <Flex fontSize={["10px","12px","14px"]} wrap="wrap" justify="space-between">
        <Text textAlign={["center", "center", "left"]} fontSize="lg" my={[3,3,0]} width={["100%","100%",1/2]}>Website developed and maintained by <Link href="/webteam"><a className="link">Peppershades</a></Link></Text>
-       <Text textAlign={["center", "center", "right"]} fontSize="lg" my={[3,3,0]} width={["100%","100%",1/2]}>© Copyright 2020 BG Unified Solutions</Text>
+       <Text textAlign={["center", "center", "right"]} fontSize="md" my={[3,3,0]} width={["100%","100%",1/2]}>© Copyright 2020 BG Unified Solutions</Text>
        </Flex>
      </Container>
    </Box>

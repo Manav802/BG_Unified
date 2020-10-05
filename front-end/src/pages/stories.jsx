@@ -9,6 +9,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import testimonials from "../database/testimonials"
 import { useEffect } from 'react';
 import Row from '../pageBuilder/Row';
+import TestimonialCard from "../components/TestimonialCard/Stories";
+import TESTIMONIALS from "../database/testimonials";
 
 // install Swiper's Controller component
 SwiperCore.use([Controller, Navigation]);
@@ -20,7 +22,7 @@ function main(props) {
     return (
         <>
             <Head>
-                <title>The team behind the web - BG Unified</title>
+                <title>Customer Stories | BG Unified Solutions</title>
             </Head>
             {/* <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 32]} my={0}>
                 <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
@@ -36,7 +38,7 @@ function main(props) {
                 </Section>
                 </Fade>
             </Box>
-            <Section py={0} mt={0} containerWidth="100%">
+            {/* <Section py={0} mt={0} containerWidth="100%">
             <Swiper centeredSlides={true} navigation 
             breakpoints={{
             // when window width is >= 640px
@@ -69,6 +71,9 @@ function main(props) {
                         <Text mt={0} opacity=".7">{testimonials[active].CompanyName}</Text>
                     </Box>
                 </Row>
+            </Section> */}
+            <Section>
+                <TestimonialCard testimonials={TESTIMONIALS} />
             </Section>
         </>
     );

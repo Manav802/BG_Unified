@@ -146,22 +146,22 @@ class Landing extends Component {
               <Fade duration={800} cascade distance={"8%"} bottom>
                 <div className="row mx-2">
                   <div className="col-xl-4 col-sm-6 my-2">
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Unified Communications As A Service"></Service>
+                  </div>
+                  <div className="col-xl-4 col-sm-6 my-2">
                     <Service className="col-xl-4 col-sm-6 my-2" service="Infrastructure As A Service"></Service>
                   </div>
                   <div className="col-xl-4 col-sm-6 my-2">
                     <Service className="col-xl-4 col-sm-6 my-2" service="Storage As A Service"></Service>
                   </div>
                   <div className="col-xl-4 col-sm-6 my-2">
-                    <Service className="col-xl-4 col-sm-6 my-2" service="Wireless As A Service"></Service>
-                  </div>
-                  <div className="col-xl-4 col-sm-6 my-2">
                     <Service className="col-xl-4 col-sm-6 my-2" service="DNS As A Service"></Service>
                   </div>
                   <div className="col-xl-4 col-sm-6 my-2">
-                    <Service className="col-xl-4 col-sm-6 my-2" service="Unified Communications As A Service"></Service>
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Firewall As A Service"></Service>
                   </div>
                   <div className="col-xl-4 col-sm-6 my-2">
-                    <Service className="col-xl-4 col-sm-6 my-2" service="Firewall As A Service"></Service>
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Wireless As A Service"></Service>
                   </div>
                   </div>
                 </Fade>
