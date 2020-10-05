@@ -34,7 +34,9 @@ export default [
                 Responsibly troubleshooting and managing high computing storage, 
                 persistent / non-persistent volume, volume claims, and volume claim 
                 policies related to Kubernetes. Configuring, managing Demon set, and 
-                Init containers.</span>
+                Init containers. Open Source software that allows you to deploy and 
+                manage containerized applications at scale. Kubernetes Administrator As A Service helps 
+                you to conquer this task efficiently and effectively. </span>
             }]
         },
     ]
@@ -94,7 +96,7 @@ export default [
                     image: "/assets/images/icons/color/cloud.svg",
                     title: "Skilled Experts",
                     align: "left",
-                    description: "Sufficient knowledge and troubleshooting skills on using different api-plugins used by users or developers. Managing services in Kubernetes by using operators. Configuring, managing Demon set, and Init containers."
+                    description: "Sufficient knowledge and troubleshooting skills on using different api-plugins used by users or developers. Managing services in Kubernetes by using operators. We can assist customers to go serverless and operate code in a more granular, scalable and cost-effective way."
                 }
             },
             {
