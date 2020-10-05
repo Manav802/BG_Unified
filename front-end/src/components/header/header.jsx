@@ -66,10 +66,10 @@ function header(props) {
                                         <Box rounded={4} boxShadow="xl" bg="white">
                                             <Tabs align="center">
                                                 <TabList>
-                                                    <Tab p={6} _selected={{color:"primary.500", borderBottomColor:"primary.500"}}>IT & Infrastructure Services</Tab>
-                                                    <Tab p={6} _selected={{color:"primary.500", borderBottomColor:"primary.500"}}>Network Services</Tab>
-                                                    <Tab p={6} _selected={{color:"primary.500", borderBottomColor:"primary.500"}}>Cyber Security Services</Tab>
-                                                    <Tab p={6} _selected={{color:"primary.500", borderBottomColor:"primary.500"}}>Collaborative Services</Tab>
+                                                    <Tab p={6} _selected={{color:"blue.500", borderBottomColor:"blue.500"}}>IT & Infrastructure Services</Tab>
+                                                    <Tab p={6} _selected={{color:"green.400", borderBottomColor:"green.400"}}>Network Services</Tab>
+                                                    <Tab p={6} _selected={{color:"purple.500", borderBottomColor:"purple.500"}}>Cyber Security Services</Tab>
+                                                    <Tab p={6} _selected={{color:"orange.400", borderBottomColor:"orange.400"}}>Collaborative Services</Tab>
                                                     <Tab p={6} _selected={{color:"primary.500", borderBottomColor:"primary.500"}}>Professional Services</Tab>
                                                 </TabList>
 
