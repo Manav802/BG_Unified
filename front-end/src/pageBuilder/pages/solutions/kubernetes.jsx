@@ -30,7 +30,11 @@ export default [
                 builds upon 15 years of experience of running production workloads
                 at Google, combined with best-of-breed ideas and practices from the
                 community. Positioned VMs to deliver the most comprehensive, 
-                enterprise-grade Kubernetes-based portfolio for modern applications.</span>
+                enterprise-grade Kubernetes-based portfolio for modern applications.
+                Responsibly troubleshooting and managing high computing storage, 
+                persistent / non-persistent volume, volume claims, and volume claim 
+                policies related to Kubernetes. Configuring, managing Demon set, and 
+                Init containers.</span>
             }]
         },
     ]
