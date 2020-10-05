@@ -76,3 +76,6 @@ module.exports.sdaas = sdaas
 
 import gpu from './gpu'
 module.exports.gpu = gpu
+
+import kubernetes from './kubernetes'
+module.exports.kubernetes = kubernetes

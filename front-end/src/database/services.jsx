@@ -30,6 +30,7 @@ const services = {
         conclusion: "Achieve Higher Business Efficiency through increased agility, cost containment, and lowered risk.",
         sections: sections.architecture
     },
+
     "backup": {
         title: "Backup As A Service",
         slogan: "Backup for your Digital System",
@@ -44,6 +45,22 @@ const services = {
         conclusion: "Customizable Data Protection for your Business",
         sections: sections.backup
     },
+
+    "kubernetes": {
+        title: "Kubernetes Administrator As A Service",
+        slogan: "Empowered by Automation",
+        category: "Collaborative Services",
+        bgImage: "/assets/images/services/backup.jpg",
+        icon: "/assets/images/icons/monotone/BackupAsAService.svg",
+        color: "#0267C1",
+        tags: ["backup"],
+        description: "BG Unified Solutions provides reliable, secure & cost-effective managed service for backup and recovery of all types of data....",
+        illustration: "",
+        relatedService: ["Contact Center As A Service", "Service Desk As A Service", "Architectural Consultancy As A Service"],
+        conclusion: "Get Persistent Storage with Highly available features.",
+        sections: sections.kubernetes
+    },
+
     "cex": {
         title: "CEX As A Service",
         slogan: "The Cloud Service at its Best",
