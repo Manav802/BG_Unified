@@ -51,7 +51,7 @@ const services = {
         slogan: "Empowered by Automation",
         category: "Collaborative Services",
         bgImage: "/assets/images/services/kubernetesBG.jpg",
-        icon: "/assets/images/icons/monotone/kubernetes.svg",
+        icon: "/assets/images/icons/monotone/InfrastructureIcon.svg",
         color: "#C490D1",
         tags: ["backup"],
         description: "BG Unified Solutions provides reliable, secure & cost-effective managed service for backup and recovery of all types of data....",
