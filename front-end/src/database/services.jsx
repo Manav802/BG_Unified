@@ -50,7 +50,7 @@ const services = {
         title: "Kubernetes Administrator As A Service",
         slogan: "Empowered by Automation",
         category: "Collaborative Services",
-        bgImage: "/assets/images/services/backup.jpg",
+        bgImage: "/assets/images/services/kubernetesBG.jpg",
         icon: "/assets/images/icons/monotone/BackupAsAService.svg",
         color: "#0267C1",
         tags: ["backup"],
