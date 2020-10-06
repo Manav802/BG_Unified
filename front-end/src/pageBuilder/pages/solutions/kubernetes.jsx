@@ -25,18 +25,20 @@ export default [
             data: [{
                 textAlign: "justify",
                 fontSize: ["md","lg"],
-                text: <span>Groups containers that make up an application into 
-                logical units for easy management and discovery. Kubernetes 
-                builds upon 15 years of experience of running production workloads
-                at Google, combined with best-of-breed ideas and practices from the
-                community. Positioned VMs to deliver the most comprehensive, 
-                enterprise-grade Kubernetes-based portfolio for modern applications.
-                Responsibly troubleshooting and managing high computing storage, 
-                persistent / non-persistent volume, volume claims, and volume claim 
-                policies related to Kubernetes. Configuring, managing Demon set, and 
-                Init containers. Open Source software that allows you to deploy and 
-                manage containerized applications at scale. Kubernetes Administrator As A Service helps 
-                you to conquer this task efficiently and effectively. </span>
+                text: <span>Groups containers that make up 
+                an application into logical units for easy 
+                management and discovery. Kubernetes builds 
+                upon 15 years of experience of running production 
+                workloads at Google, combined with best-of-breed 
+                ideas and practices from the community. Positioned
+                 VMs to deliver the most comprehensive, 
+                 enterprise-grade Kubernetes-based portfolio for 
+                 modern applications. Responsibly troubleshooting 
+                 and managing high computing storage, 
+                 persistent / non-persistent volume, volume claims, 
+                 and volume claim policies related to Kubernetes. 
+                 Configuring, managing Demon set, and Init containers.
+                  </span>
             }]
         },
     ]
@@ -51,10 +53,10 @@ export default [
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/microphone.svg",
+                    image: "/assets/images/icons/color/cluster-computing.svg",
                     title: "Clustering",
                     align: "left",
-                    description: "Troubleshooting the container applications outside Kubernetes clusters ( ports, nodeports, service ports, external load balancers). Managing and creating POC."
+                    description: "Troubleshooting the container applications outside Kubernetes clusters (ports, nodeports, service ports, external load balancers). Managing and creating POC  (single master cluster) for demonstration and High-availability cluster with 3 / 5 node master and variable worker nodes with kubeadm."
                 }
             },
             {
@@ -65,10 +67,24 @@ export default [
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/chat.svg",
+                    image: "/assets/images/icons/color/multiple.svg",
                     title: "Application Multiplicity",
                     align: "left",
-                    description: "Troubleshooting creating a private /global registry and deploying stateful and stateless applications in Kubernetes container like Jupyter notebook, Drupal etc."
+                    description: "Troubleshooting creating a private /global registry and deploying stateful and stateless applications in Kubernetes container like (Jupyter notebook, Drupal, Prometheus, Mongodb, httpd, nginx, JBoss and other web server related applications)."
+                }
+            },
+            {
+                py: 4,
+                width: ["95%", 1 / 2, 1 / 3],
+                type: "feature",
+                data: {
+                    titleSize: "md",
+                    titleFont: "Nexa Bold",
+                    textOpacity: "0.7",
+                    image: "/assets/images/icons/color/package.svg",
+                    title: "Container Management",
+                    align: "left",
+                    description: "Managing containers using different container tools like dockers, cri-o other than orchestrating containers with Kubernetes. Troubleshooting the container applications outside Kubernetes clusters ( ports, nodeports, service ports, external load balancers)."
                 }
             },
             {
@@ -80,23 +96,9 @@ export default [
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
                     image: "/assets/images/icons/color/learn.svg",
-                    title: "Container Management",
-                    align: "left",
-                    description: "Managing containers using different container tools like dockers, cri-o other than orchestrating containers with Kubernetes. Troubleshooting the container applications outside Kubernetes clusters."
-                }
-            },
-            {
-                py: 4,
-                width: ["95%", 1 / 2, 1 / 3],
-                type: "feature",
-                data: {
-                    titleSize: "md",
-                    titleFont: "Nexa Bold",
-                    textOpacity: "0.7",
-                    image: "/assets/images/icons/color/cloud.svg",
                     title: "Skilled Experts",
                     align: "left",
-                    description: "Sufficient knowledge and troubleshooting skills on using different api-plugins used by users or developers. Managing services in Kubernetes by using operators."
+                    description: "Sufficient knowledge and troubleshooting skills on using different api-plugins used by users or developers. Managing services in Kubernetes by using operators. Configuring, managing Demon set, and Init containers."
                 }
             },
             {
@@ -107,10 +109,10 @@ export default [
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/headphones.svg",
+                    image: "/assets/images/icons/color/secure.svg",
                     title: "Completely Secure",
                     align: "left",
-                    description: "Adding users and setting permission for application users inside containers using Pod security standards. Managing TLS and CA certificate for Kubernetes."
+                    description: "Adding users and setting permission for application users inside containers using Pod security standards. Managing TLS and CA certificate for Kubernetes. creating and configuring CNI using SDN (software designed network) for a cluster (like Weave net and Calico)."
                 }
             },
             {
@@ -121,10 +123,10 @@ export default [
                     titleSize: "md",
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/user.svg",
+                    image: "/assets/images/icons/color/fix.svg",
                     title: "On-Demand Hardware",
                     align: "left",
-                    description: "Get required CPU and VM's along with different flavors of Linux like Redhat, CentOS, Ubuntu as well as with installing and configuring Kubernetes."
+                    description: "Get required CPU and VM's along with different flavors of Linux like Redhat, CentOS, Ubuntu as well as with installing and configuring Kubernetes. Managing containers using different container tools like dockers, cri-o other than orchestrating containers with Kubernetes."
                 }
             },
         ]
@@ -160,32 +162,32 @@ export default [
                 containerData : [{
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "Scalable Service"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/size.svg", mt: 4, title: "Scalable Service"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/code/time-schedule.svg", mt: 4, title: "Persistent Storage"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/сommode-1.svg", mt: 4, title: "Persistent Storage"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/key.svg",mt: 4, title: "Containerised"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/shopping/box-3.svg",mt: 4, title: "Containerised"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/devices/diagnostics.svg", mt: 4, title: "Micromanaged"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/map/marker-1.svg", mt: 4, title: "Remote Access"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/shield-check.svg", mt: 4, title: "Remote Access"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/devices/usb-storage.svg", mt: 4, title: "Micromanaged"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Traffic Routing"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/devices/router-1.svg", mt: 4, title: "Traffic Routing"}
                 }],
             },
         ]   
