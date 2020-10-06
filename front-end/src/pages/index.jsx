@@ -141,13 +141,10 @@ class Landing extends Component {
               Solutions
               </div>
             <div className="col-12 mt-2 mb-5 text-center text-dark display4">
-              What do We deliver?
+              What We Deliver?
               </div>
               <Fade duration={800} cascade distance={"8%"} bottom>
                 <div className="row mx-2">
-                  <div className="col-xl-4 col-sm-6 my-2">
-                    <Service className="col-xl-4 col-sm-6 my-2" service="Unified Communications As A Service"></Service>
-                  </div>
                   <div className="col-xl-4 col-sm-6 my-2">
                     <Service className="col-xl-4 col-sm-6 my-2" service="Infrastructure As A Service"></Service>
                   </div>
@@ -155,20 +152,23 @@ class Landing extends Component {
                     <Service className="col-xl-4 col-sm-6 my-2" service="Storage As A Service"></Service>
                   </div>
                   <div className="col-xl-4 col-sm-6 my-2">
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Wireless As A Service"></Service>
+                  </div>
+                  <div className="col-xl-4 col-sm-6 my-2">
                     <Service className="col-xl-4 col-sm-6 my-2" service="DNS As A Service"></Service>
                   </div>
                   <div className="col-xl-4 col-sm-6 my-2">
-                    <Service className="col-xl-4 col-sm-6 my-2" service="Firewall As A Service"></Service>
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Unified Communications As A Service"></Service>
                   </div>
                   <div className="col-xl-4 col-sm-6 my-2">
-                    <Service className="col-xl-4 col-sm-6 my-2" service="Wireless As A Service"></Service>
+                    <Service className="col-xl-4 col-sm-6 my-2" service="Firewall As A Service"></Service>
                   </div>
                   </div>
                 </Fade>
             </div>
             <Box textAlign={["center","center","right"]}>
                 <Text fontSize="xl">We deliver 25+ services.</Text>
-                <Link href="/solutions"><a><Text color="primary.500" mt={2} fontFamily="Nexa bold" fontSize="xl">View All <Icon name="arrow-forward"></Icon></Text></a></Link>
+                <a><Text color="primary.500" mt={2} fontFamily="Nexa bold" fontSize="xl">View All <Icon name="arrow-forward"></Icon></Text></a>
             </Box>
             </Section>
             <Section>
@@ -281,7 +281,7 @@ class Landing extends Component {
             </div>
           </div>
         </Section>
-        <Section>
+        <Section my={16} containerWidth="100%">
           <Partners>
           </Partners>
         </Section>
