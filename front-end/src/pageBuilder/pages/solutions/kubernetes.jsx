@@ -54,7 +54,7 @@ export default [
                     image: "/assets/images/icons/color/microphone.svg",
                     title: "Clustering",
                     align: "left",
-                    description: "Troubleshooting the container applications outside Kubernetes clusters ( ports, nodeports, service ports, external load balancers). Managing and creating POC  (single master cluster) for demonstration and High-availability cluster with 3 / 5 node master and variable worker nodes with kubeadm."
+                    description: "Troubleshooting the container applications outside Kubernetes clusters ( ports, nodeports, service ports, external load balancers). Managing and creating POC."
                 }
             },
             {
@@ -68,7 +68,7 @@ export default [
                     image: "/assets/images/icons/color/chat.svg",
                     title: "Application Multiplicity",
                     align: "left",
-                    description: "Troubleshooting creating a private /global registry and deploying stateful and stateless applications in Kubernetes container like (Jupyter notebook, Drupal, Prometheus, Mongodb, httpd, nginx, JBoss and other web server related applications)."
+                    description: "Troubleshooting creating a private /global registry and deploying stateful and stateless applications in Kubernetes container like Jupyter notebook, Drupal etc."
                 }
             },
             {
@@ -82,7 +82,7 @@ export default [
                     image: "/assets/images/icons/color/learn.svg",
                     title: "Container Management",
                     align: "left",
-                    description: "Managing containers using different container tools like dockers, cri-o other than orchestrating containers with Kubernetes. Troubleshooting the container applications outside Kubernetes clusters ( ports, nodeports, service ports, external load balancers)."
+                    description: "Managing containers using different container tools like dockers, cri-o other than orchestrating containers with Kubernetes. Troubleshooting the container applications outside Kubernetes clusters."
                 }
             },
             {
@@ -96,7 +96,7 @@ export default [
                     image: "/assets/images/icons/color/cloud.svg",
                     title: "Skilled Experts",
                     align: "left",
-                    description: "Sufficient knowledge and troubleshooting skills on using different api-plugins used by users or developers. Managing services in Kubernetes by using operators. We can assist customers to go serverless and operate code in a more granular, scalable and cost-effective way."
+                    description: "Sufficient knowledge and troubleshooting skills on using different api-plugins used by users or developers. Managing services in Kubernetes by using operators."
                 }
             },
             {
@@ -110,7 +110,7 @@ export default [
                     image: "/assets/images/icons/color/headphones.svg",
                     title: "Completely Secure",
                     align: "left",
-                    description: "Adding users and setting permission for application users inside containers using Pod security standards. Managing TLS and CA certificate for Kubernetes. creating and configuring CNI using SDN (software designed network) for a cluster (like Weave net and Calico)."
+                    description: "Adding users and setting permission for application users inside containers using Pod security standards. Managing TLS and CA certificate for Kubernetes."
                 }
             },
             {
@@ -124,11 +124,73 @@ export default [
                     image: "/assets/images/icons/color/user.svg",
                     title: "On-Demand Hardware",
                     align: "left",
-                    description: "Get required CPU and VM's along with different flavors of Linux like Redhat, CentOS, Ubuntu as well as with installing and configuring Kubernetes. Managing containers using different container tools like dockers, cri-o other than orchestrating containers with Kubernetes."
+                    description: "Get required CPU and VM's along with different flavors of Linux like Redhat, CentOS, Ubuntu as well as with installing and configuring Kubernetes."
                 }
             },
         ]
     },
+    {
+        my: 0,
+        py: "48px",
+        bgImage: "url('/assets/images/backgrounds/network_abstract.jpg')",
+        blend: "screen",
+        bg: "light.400",
+        color: "dark.500",
+        containerWidth: ["100%", "100%", "88%", "72%"],
+        rowDistance: 8,
+        gap: 6,
+        body: [
+            {
+                my:[0,0,6,4],
+                width: ["100%","100%","100%",1/2, 5/12],
+                type: "content",
+                data: [{
+                    title: "Comprehensive Kubernetes Administrator",
+                    textAlign: "justify",
+                    fontSize: ["lg","xl"],
+                    titleSize: [40,40,48],
+                    my:[2,4,8],
+                    text: "We assist customers to go serverless and operate code in more granular, scalable and cost-effective way. Managing containers using different container tools like dockers,cri-o. Managing cluster applications along with configuring CNI. "
+                    
+                }]
+            },
+            {
+                width : ["100%","100%","100%",1/2, 7/12],
+                type: "container",
+                containerData : [{
+                    width: [1/2,1/3,1/3,1/2,1/3],
+                    type: "feature",
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "Scalable Service"}
+                },
+                {
+                    width: [1/2,1/3,1/3,1/2,1/3],
+                    type: "feature",
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/code/time-schedule.svg", mt: 4, title: "Persistent Storage"}
+                },
+                {
+                    width: [1/2,1/3,1/3,1/2,1/3],
+                    type: "feature",
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/key.svg",mt: 4, title: "Containerised"}
+                },
+                {
+                    width: [1/2,1/3,1/3,1/2,1/3],
+                    type: "feature",
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/devices/diagnostics.svg", mt: 4, title: "Micromanaged"}
+                },
+                {
+                    width: [1/2,1/3,1/3,1/2,1/3],
+                    type: "feature",
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/shield-check.svg", mt: 4, title: "Remote Access"}
+                },
+                {
+                    width: [1/2,1/3,1/3,1/2,1/3],
+                    type: "feature",
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/navigation/arrows-h.svg", mt: 4, title: "Traffic Routing"}
+                }],
+            },
+        ]   
+    },
+    
     {
         title: "Why BG Unified Solutions?",
         py: 12,
