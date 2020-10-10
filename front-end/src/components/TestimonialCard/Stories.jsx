@@ -9,10 +9,12 @@ const Testimonial = (testimonialDetails, imageW = "160px") => {
   return (
       <Box width={["100%","100%","50%","50%","33%"]} px={1}  my={1}>
            <Box p={6} height="100%" borderWidth={1} rounded={4} >
+             <Box minH="80%">
               <Image src={testimonialDetails.imageUrl} height="80px" maxW={imageW} objectFit="contain"></Image>
               <Text my={8} textAlign="justify" fontWeight={600} lineHeight={1.5}>
                 {testimonialDetails.paragraph || testimonialDetails.description}
               </Text>
+              </Box>
               <Divider mt="auto" borderWidth={1} borderColor="gray.300"></Divider>
               <Heading
                 size="md"
@@ -25,6 +27,7 @@ const Testimonial = (testimonialDetails, imageW = "160px") => {
               <Heading size="sm" mt={2} color="gray.600">
                 {testimonialDetails.CompanyName}
               </Heading>
+              
           </Box>
         </Box>
   )
