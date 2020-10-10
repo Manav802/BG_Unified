@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import testimonials from "../database/testimonials"
 import { useEffect } from 'react';
 import Row from '../pageBuilder/Row';
-import TestimonialCard from "../components/TestimonialCard/Stories";
+import Stories from "../components/TestimonialCard/Stories";
 import TESTIMONIALS from "../database/testimonials";
 
 // install Swiper's Controller component
@@ -73,7 +73,7 @@ function main(props) {
                 </Row>
             </Section> */}
             <Section>
-                <TestimonialCard testimonials={TESTIMONIALS} />
+                <Stories testimonials={TESTIMONIALS} />
             </Section>
         </>
     );

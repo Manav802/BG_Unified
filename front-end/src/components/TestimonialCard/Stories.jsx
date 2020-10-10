@@ -37,16 +37,7 @@ function TestimonialCard({testimonials}) {
   return (
     <Container mt={12}>
         <Flex wrap="wrap" width="100%">
-            {Testimonial(testimonials[0], "112px")}
-            {Testimonial(testimonials[1])}
-            {Testimonial(testimonials[2],"224px")}
-            {Testimonial(testimonials[3])}
-            {Testimonial(testimonials[4])}   
-            {Testimonial(testimonials[5])} 
-            {Testimonial(testimonials[6])} 
-            {/* {Testimonial(testimonials[7])}  */}
-            {Testimonial(testimonials[8])}
-            {Testimonial(testimonials[9])}
+          {testimonials.map((x)=>(Testimonial(x)))}
         </Flex>
     </Container>
   );
