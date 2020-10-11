@@ -1,8 +1,23 @@
 import content from "../pageBuilder/pages/newsroom/index"
 
 const blogs = [
+
     {
         index: 1,
+        title: "Consultel Group with BG Unified Solutions - Enhancing Excellence, Reaching Perfection!",
+        description: "Consultel Group coming together with BGUS, for efficient and intelligent business solutions with authentic integrity...",
+        date: "October 2020",
+        by: "Saurabh Sareen",
+        avatar: "/assets/images/team/saurabh.jpg",
+        image: "/assets/images/newsroom/consultelgroup.png",
+        imgalt : "Consultel Group with BG Unified Solutions",
+        category: "Updates",
+        tags: ["Consultel Group", "Consultel", "Consultel AI" , "Consultel Managed Services" , "BGUS" , "Consultel Networks" , "Consultel Cloud" , "Datacom", "Saurabh" , "Sareen" , "data hosting" , "infrastructure" , "racks" , "Network"],
+        link: "Consultel-Group-with-BG-Unified-Solutions",
+        content: content.consultel,
+        },
+    {
+        index: 2,
         title: "Business Operations during COVID-19 Pandemic",
         description: "The difficult COVID-19 era has also brought out how strong partnerships create lasting value. BG Unified Solutions and Huawei Australia...",
         date: "7th September 2020",
@@ -16,7 +31,7 @@ const blogs = [
         content: content.businessop,
     },
     {
-        index: 2,
+        index: 3,
         title: "Helping Hands during COVID-19 Pandemic",
         description: "COVID-19 working from home taught us more lessons and even let us able to figure it out how we can be exponentially productive than just...",
         date: "23rd August 2020",
@@ -30,7 +45,7 @@ const blogs = [
         content: content.covid19,
     },
     {
-        index: 3,
+        index: 4,
         title: "Peace of mind and 60% cost savings with Datacom@AirTrunk",
         description: "It was towards the end of 2019 and the staff at Australian data and applications hosting specialist BG Unified Solutions were looking...",
         date: "23rd August 2019",
@@ -44,7 +59,7 @@ const blogs = [
         content: content.datacom,
         },
         {
-            index: 4,
+            index: 5,
             title: "A complete Office IT Infrastructure",
             description: "An enterprise level solution for any small to medium size organization with single or multiple sites. This solution includes...",
             date: "23rd October 2019",
@@ -58,7 +73,7 @@ const blogs = [
             content: content.itInfra,
         },
         {
-            index: 5,
+            index: 6,
             title: "Launching a complete VDI/RDS as a Solution",
             description: "We feel proud in announcing ConstantVDI service offering, which will offer you a complete VDI/RDS As A Service Solution using...",
             date: "September 2019",
@@ -72,7 +87,7 @@ const blogs = [
             content: content.vdiaas,
         },
         {
-            index: 6,
+            index: 7,
             title: "Network Infrastructure Redesign | BG Unified Solutions",
             description: "The primary purpose of the project is to redesign the network to achieve the following design criteria: ....",
             date: "2019",
@@ -86,7 +101,7 @@ const blogs = [
             content: content.networkinfra,
         },
         {
-            index: 7,
+            index: 8,
             title: "Data Center Design and Implementation",
             description: "A client had a requirement to consolidate a distributed environment into a single highly available data center...",
             date: "2019",
@@ -100,7 +115,7 @@ const blogs = [
             content: content.dcdesign,
         },
         {
-            index: 8,
+            index: 9,
             title: "BG Unified Solutions Hosted UC Solution",
             description: "Currently hosted in NEXTDC, consisting of 18 UCS Server, C Series & B Series in the farm. Each UCS Server is running...",
             date: "2019",
@@ -114,7 +129,7 @@ const blogs = [
             content: content.hosteduc,
         },
         {
-            index: 9,
+            index: 10,
             title: "F5 Topology Redesign",
             description: "F5 Configuration was redesigned and implemented in a recommended way. A lot of IRULES/POOLS defined to achieve the desired...",
             date: "2019",
@@ -126,22 +141,9 @@ const blogs = [
             tags: ["ASM" , "PCI", "iApps", "TOMCAT", "IPs" , "POOLS" , "IRULES" , "Load Balancer" , "F5" , "routers", "WAN"],
             link: "9-F5-Topology-Redesign",
             content: content.f5top,
-        },
-        {
-            index: 10,
-            title: "Consultel Group with BG Unified Solutions - Enhancing Excellence, Reaching Perfection",
-            description: "Consultel Group coming together with BGUS, for efficient and intelligent business solutions with authentic integrity...",
-            date: "23rd August 2019",
-            by: "Saurabh Sareen",
-            avatar: "/assets/images/team/saurabh.jpg",
-            image: "/assets/images/newsroom/datacom.png",
-            imgalt : "Business Operations during COVID-19 Pandemic",
-            category: "Updates",
-            tags: ["infrastructure", "iaas", "BGU" , "DDOS" , "SYD1" , "MEL1" , "AirTrunk" , "Datacom", "Saurabh" , "Sareen" , "data hosting" , "infrastructure" , "racks" , "Network"],
-            link: "Consultel Group with BG Unified Solutions",
-            content: content.consultel,
-            }
         
+        
+    }
     ]
     
     
