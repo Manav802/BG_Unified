@@ -24,3 +24,6 @@ module.exports.hosteduc = hosteduc
 
 import f5top from './f5top'
 module.exports.f5top = f5top
+
+import consultel from './consultel'
+module.exports.consultel = consultel

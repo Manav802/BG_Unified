@@ -126,7 +126,21 @@ const blogs = [
             tags: ["ASM" , "PCI", "iApps", "TOMCAT", "IPs" , "POOLS" , "IRULES" , "Load Balancer" , "F5" , "routers", "WAN"],
             link: "9-F5-Topology-Redesign",
             content: content.f5top,
-        }
+        },
+        {
+            index: 10,
+            title: "Consultel Group with BG Unified Solutions - Enhancing Excellence, Reaching Perfection",
+            description: "Consultel Group coming together with BGUS, for efficient and intelligent business solutions with authentic integrity...",
+            date: "23rd August 2019",
+            by: "Saurabh Sareen",
+            avatar: "/assets/images/team/saurabh.jpg",
+            image: "/assets/images/newsroom/datacom.png",
+            imgalt : "Business Operations during COVID-19 Pandemic",
+            category: "Updates",
+            tags: ["infrastructure", "iaas", "BGU" , "DDOS" , "SYD1" , "MEL1" , "AirTrunk" , "Datacom", "Saurabh" , "Sareen" , "data hosting" , "infrastructure" , "racks" , "Network"],
+            link: "Consultel Group with BG Unified Solutions",
+            content: content.consultel,
+            }
         
     ]
     
