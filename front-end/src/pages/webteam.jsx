@@ -8,24 +8,11 @@ import Section from "../pageBuilder/Section";
 import Title from "../pageBuilder/Title";
 import { FaBehance, FaBlogger, FaGithub, FaLinkedin } from 'react-icons/fa';
 
-const teamCard = (member, height) => (<Box className="ps-team-card" height={height} overflow="hidden" my={2}  bg="dark.500"  pos="relative" rounded={8}>
-<Image opacity=".5" className=" team-image bg-image" src={`/assets/images/team/${member.username}.jpg`}></Image>
-
-    <Flex height="100%" justify="flex-end" flexDirection="column" color="white" p={8}>
-        <Fade>
-            <Heading className="heading" size="lg" fontFamily="Nexa Bold">{member.name}</Heading>
-            <Heading className="heading" size="sm" mt={2}>{member.designation}</Heading>
-            <Text className="description" mt={2}>{member.description}</Text>
-            <Flex className="links" mt={3} mx="-8px">
-                {member.links.github && <Box as="a" p={2} href={member.links.github} ><FaGithub color="white" size="24px"></FaGithub></Box>}
-                {member.links.behance && <Box as="a" p={2} href={member.links.behance} ><FaBehance color="white" size="24px"></FaBehance></Box>}
-                {member.links.linkedin && <Box as="a" p={2} href={member.links.linkedin} ><FaLinkedin color="white" size="24px"></FaLinkedin></Box>}
-                {member.links.blogger && <Box as="a" p={2} href={member.links.blogger} ><FaBlogger color="white" size="24px"></FaBlogger></Box>}
-            </Flex>
-        </Fade>
-    </Flex>
-
-</Box>)
+const teamCard = (member, height) => (<Flex direction="column" justify="center" my={6}>
+    <Image rounded="12px 0px 12px 0px" height="324px" width="280px" objectFit="cover" src={`/assets/images/team/${member.username}.jpg`}></Image>
+    <Heading mt={4} fontFamily="Nexa Bold" size="lg">{member.name}</Heading>
+    <Heading mt={2} size="xs" fontFamily="Nexa Light">{member.designation}</Heading>
+</Flex>)
 
 function webteam(props) {
     return (
@@ -52,28 +39,9 @@ function webteam(props) {
             </Box>
             <Section>
                 <Flex wrap="wrap" justify="center">
-                    <Box width={["100%","100%","100%","66%","56%"]} px={2}>
-                        {teamCard(team[0], "560px")}
-                    </Box>
-                    <Box width={["100%","100%","100%","66%","44%"]} px={2}>
-                        {teamCard(team[3], "274px")}
-                        {teamCard(team[4], "274px")}
-                    </Box>
-                    <Box width={["100%","100%","100%","66%","50%"]} px={2}>
-                        {teamCard(team[2], "560px")}
-                    </Box>
-                    <Box width={["100%","100%","100%","66%","50%"]} px={2}>
-                        {teamCard(team[1], "560px")}
-                    </Box>
-                    <Box width={["100%","100%","100%","66%","33.33%"]} px={2}>
-                        {teamCard(team[5], "560px")}
-                    </Box>
-                    <Box width={["100%","100%","100%","66%","33.33%"]} px={2}>
-                        {teamCard(team[6], "560px")}
-                    </Box>
-                    <Box width={["100%","100%","100%","66%","33.33%"]} px={2}>
-                        {teamCard(team[7], "560px")}
-                    </Box>
+                    {team.map(member => <Box px={6}>
+                        {teamCard(member)}
+                    </Box>)}
                 </Flex> 
             </Section>
         </>
