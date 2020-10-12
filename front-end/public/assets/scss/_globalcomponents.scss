@@ -64,6 +64,7 @@ button{
 .slider-offset{
     height: 100%;
     width: calc(50vw - 600px);
+    min-width:calc(50vw - 600px);
 }
 .header-dropdown{
     left: 50% !important;
