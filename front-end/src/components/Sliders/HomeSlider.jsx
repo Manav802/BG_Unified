@@ -38,7 +38,7 @@ const sliderInfo = [
       title: "Creating Impact Together",
       imgSrc: "/assets/images/backgrounds/landing-1.jpg",
       subTitle: "Consultel Group coming together with BGUS, for efficient and intelligent business solutions with authentic integrity.",
-      btnPrimaryText: "Learn more here",
+      btnPrimaryText: "Read Customer Stories",
       btnPrimaryLink: "/newsroom/[bid]",
       btnPrimaryLinkAs: "/newsroom/Consultel-Group-with-BG-Unified-Solutions"
     
@@ -159,7 +159,7 @@ function main(props) {
                       {sliderInfo[animate % sliderInfo.length].btnPrimaryLink && sliderInfo[animate % sliderInfo.length].btnPrimaryLinkAs==null  && 
                         <Link href={sliderInfo[animate % sliderInfo.length].btnPrimaryLink}><a><Button fontSize={["14px","18px"]} mr={2} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >{sliderInfo[animate % sliderInfo.length].btnPrimaryText}</Button></a></Link>
                         }
-                      {sliderInfo[animate % sliderInfo.length].btnPrimaryLinkAs && <Link href={sliderInfo[animate % sliderInfo.length].btnPrimaryLink} as={sliderInfo[animate % sliderInfo.length].btnPrimaryLinkAs}><a><Button fontSize={["14px","18px"]} mr={2} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >{sliderInfo[animate % sliderInfo.length].btnPrimaryText}</Button></a></Link>}
+                      {sliderInfo[animate % sliderInfo.length].btnPrimaryLinkAs && <Link href={sliderInfo[animate % sliderInfo.length].btnPrimaryLink} as={sliderInfo[animate % sliderInfo.length].btnPrimaryLinkAs}><a><Button  rightIcon="chevron-right" fontSize={["14px","18px"]} mr={2} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >{sliderInfo[animate % sliderInfo.length].btnPrimaryText}</Button></a></Link>}
                       {sliderInfo[animate % sliderInfo.length].btnSecondaryLink && <Link href={sliderInfo[animate % sliderInfo.length].btnSecondaryLink}><a><Button padding={["20px","24px"]} ml={2} fontSize={["14px","18px"]} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">{sliderInfo[animate % sliderInfo.length].btnSecondaryText}</Button></a></Link>}
                     </ButtonGroup>
                   </Box>
