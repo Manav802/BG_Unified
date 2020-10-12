@@ -13,7 +13,6 @@ import Body from "../../pageBuilder/Body";
 //  url basic : /blogs/bid
 //  example   : /blogs/covid-19
 
-//Using random images for now
 
 function Blogs() {
   const router = useRouter();

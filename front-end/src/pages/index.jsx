@@ -141,7 +141,7 @@ class Landing extends Component {
               Solutions
               </div>
             <div className="col-12 mt-2 mb-5 text-center text-dark display4">
-              What We Deliver?
+              What do We deliver?
               </div>
               <Fade duration={800} cascade distance={"8%"} bottom>
                 <div className="row mx-2">
