@@ -32,6 +32,10 @@ function Newsroom(){
       <div className="newsroom">
         <Head>
           <title>Newsroom - BG Unified Solutions</title>
+          <meta name ="description" content = "Get the latest updates from us">
+          </meta>
+          <meta property="og:title" content="Newsroom - BG Unified Solutions" key="title" />
+          <meta property="og:description" content="Get the latest updates from us" key ="description"></meta>
         </Head>
         <Box  zIndex="10" pos="relative" bg="dark.500">
           <Image position="absolute" height="100%" zIndex="0" top={0} left={0} style={{mixBlendMode:"overlay"}}  opacity="1" objectFit="cover" width="100%" src="/assets/images/backgrounds/tech.jpg"></Image>

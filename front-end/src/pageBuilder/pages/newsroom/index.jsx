@@ -1,3 +1,6 @@
+import consultel from './consultel'
+module.exports.consultel = consultel
+
 import covid19 from './covid19'
 module.exports.covid19 = covid19
 
@@ -24,3 +27,4 @@ module.exports.hosteduc = hosteduc
 
 import f5top from './f5top'
 module.exports.f5top = f5top
+
