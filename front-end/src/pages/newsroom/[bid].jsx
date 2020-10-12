@@ -13,7 +13,6 @@ import Body from "../../pageBuilder/Body";
 //  url basic : /blogs/bid
 //  example   : /blogs/covid-19
 
-//Using random images for now
 
 function Blogs() {
   const router = useRouter();
@@ -38,6 +37,7 @@ function Blogs() {
                 </meta>
                 <meta property="og:title" content={blog.title} key="title" />
                 <meta property="og:description" content={blog.description} key ="description"></meta>
+                <meta name="keywords" content={blog.tags.map((x)=>(x))}></meta>
         <title>{blog.title || ""}</title>
         <link
           rel="shortcut icon"

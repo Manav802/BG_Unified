@@ -9,7 +9,7 @@ import Link from 'next/link';
 const sliderInfo = [
     {
       title: "Welcome to BG Unified Solutions",
-      imgSrc: "/assets/images/backgrounds/landing-1.jpg",
+      imgSrc: "/assets/images/backgrounds/globe.jpg",
       subTitle: "Your go-to partner for all IT solutions and services that deliver value and enable substantial corporate growth.",
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
@@ -18,7 +18,7 @@ const sliderInfo = [
     },
     {
       title: "Protecting Online Presence of your Business",
-      imgSrc: "/assets/images/backgrounds/landing-2.jpg",
+      imgSrc: "/assets/images/backgrounds/cyber_security.jpg",
       subTitle: "Fast, friendly and delivery oriented web services, driven by our commitment of customer satisfaction.",
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
@@ -26,7 +26,7 @@ const sliderInfo = [
       btnSecondaryLink: "/contact"
     },
     {
-      title: "We have Geographical Redundant Infrastructure",
+      title: "Geographical Redundant Infrastructure",
       imgSrc: "/assets/images/backgrounds/landing-3.jpg",
       subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
       btnPrimaryText: "Explore Now",
@@ -35,13 +35,13 @@ const sliderInfo = [
       btnSecondaryLink: "/contact"
     },
     {
-      title: "Creating Impacts Together",
-      imgSrc: "/assets/images/backgrounds/landing-3.jpg",
-      subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
-      btnPrimaryText: "Explore Now",
-      btnSecondaryText: "Get a quote",
-      btnPrimaryLink: "/solutions",
-      btnSecondaryLink: "/contact"
+      title: "Creating Impact Together",
+      imgSrc: "/assets/images/backgrounds/landing-1.jpg",
+      subTitle: "Consultel Group coming together with BGUS, for efficient and intelligent business solutions with authentic integrity.",
+      btnPrimaryText: "Learn more here",
+      btnPrimaryLink: "/newsroom/[bid]",
+      btnPrimaryLinkAs: "/newsroom/Consultel-Group-with-BG-Unified-Solutions"
+    
     },
   ]
 
@@ -156,8 +156,11 @@ function main(props) {
                         {sliderInfo[animate % sliderInfo.length].subTitle}
                     </Text>
                     <ButtonGroup mt={6}>
-                            <Link href="/solutions"><a><Button fontSize={["14px","18px"]} mr={2} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >Explore Now</Button></a></Link>
-                            <Link href="/contact"><a><Button padding={["20px","24px"]} ml={2} fontSize={["14px","18px"]} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">Contact Sales</Button></a></Link>
+                      {sliderInfo[animate % sliderInfo.length].btnPrimaryLink && sliderInfo[animate % sliderInfo.length].btnPrimaryLinkAs==null  && 
+                        <Link href={sliderInfo[animate % sliderInfo.length].btnPrimaryLink}><a><Button fontSize={["14px","18px"]} mr={2} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >{sliderInfo[animate % sliderInfo.length].btnPrimaryText}</Button></a></Link>
+                        }
+                      {sliderInfo[animate % sliderInfo.length].btnPrimaryLinkAs && <Link href={sliderInfo[animate % sliderInfo.length].btnPrimaryLink} as={sliderInfo[animate % sliderInfo.length].btnPrimaryLinkAs}><a><Button fontSize={["14px","18px"]} mr={2} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >{sliderInfo[animate % sliderInfo.length].btnPrimaryText}</Button></a></Link>}
+                      {sliderInfo[animate % sliderInfo.length].btnSecondaryLink && <Link href={sliderInfo[animate % sliderInfo.length].btnSecondaryLink}><a><Button padding={["20px","24px"]} ml={2} fontSize={["14px","18px"]} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">{sliderInfo[animate % sliderInfo.length].btnSecondaryText}</Button></a></Link>}
                     </ButtonGroup>
                   </Box>
                 </Flex>
