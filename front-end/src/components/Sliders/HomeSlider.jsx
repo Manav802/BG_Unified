@@ -36,7 +36,7 @@ const sliderInfo = [
     },
     {
       title: "Creating Impact Together",
-      imgSrc: "/assets/images/newsroom/consultelgroup.png",
+      imgSrc: "/assets/images/backgrounds/landing-1.jpg",
       subTitle: "Consultel Group coming together with BGUS, for efficient and intelligent business solutions with authentic integrity.",
       btnPrimaryText: "Learn more here",
       btnPrimaryLink: "/newsroom/[bid]",

@@ -38,6 +38,7 @@ function Blogs() {
                 </meta>
                 <meta property="og:title" content={blog.title} key="title" />
                 <meta property="og:description" content={blog.description} key ="description"></meta>
+                <meta name="keywords" content={blog.tags.map((x)=>(x))}></meta>
         <title>{blog.title || ""}</title>
         <link
           rel="shortcut icon"
