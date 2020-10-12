@@ -26,7 +26,7 @@ const sliderInfo = [
       btnSecondaryLink: "/contact"
     },
     {
-      title: "We have Geographical Redundant Infrastructure",
+      title: "Geographical Redundant Infrastructure",
       imgSrc: "/assets/images/backgrounds/landing-3.jpg",
       subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
       btnPrimaryText: "Explore Now",
@@ -35,9 +35,9 @@ const sliderInfo = [
       btnSecondaryLink: "/contact"
     },
     {
-      title: "Creating Impacts Together",
-      imgSrc: "/assets/images/backgrounds/landing-3.jpg",
-      subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
+      title: "Creating Impact Together",
+      imgSrc: "/assets/images/newsroom/consultelgroup.png",
+      subTitle: "Consultel Group coming together with BGUS, for efficient and intelligent business solutions with authentic integrity.",
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
       btnPrimaryLink: "/solutions",
