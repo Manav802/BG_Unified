@@ -7,7 +7,7 @@ export default [
         paragraph: "BGUS is a very capable and reliable customer-first IT firm. Their disposition is calm and joyful, despite challenges, and they are infectiously inspired to maintain a very high standard. For anyone with the opportunity to employ their expertise,  disposition and resourceful nature: I urge you to take it.",
         CompanyName: "ASIC",
         designation: "Graduate",
-        emoji:""
+        emoji:<span>&#128512; &#128151;</span>    
     },
     {
         id: 2,
