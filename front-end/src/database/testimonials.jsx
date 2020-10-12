@@ -31,7 +31,7 @@ export default [
         imageUrl: "assets/images/brands/nsw_gov.png",
         imageAlt: "Company Logo",
         author: "Kate Romanenko",
-        paragraph: "I worked with BGUS during his time at Revenue NSW (OSR). They undertook a massive task of F5 load balancer upgrade - and things like that never go smoothly. What was absolutely amazing is the speed with which they resolved every single issue we encountered after. They were on top of everything - managing investigation, resolution and communication with every affected 3rd-party. Outstanding job! Efficient, reliable, professional - absolute delight to work with.",
+        paragraph: "I worked with BGUS during their time at Revenue NSW (OSR). They undertook a massive task of F5 load balancer upgrade - and things like that never go smoothly. What was absolutely amazing is the speed with which they resolved every single issue we encountered after. They were on top of everything - managing investigation, resolution and communication with every affected 3rd-party. Outstanding job! Efficient, reliable, professional - absolute delight to work with.",
         CompanyName: "Revenue NSW",
         designation: "Senior Application Developer"
     },
@@ -106,7 +106,7 @@ export default [
         imageUrl: "assets/images/brands/ambition_tech.png",
         imageAlt: "Company Logo",
         author: "Kelly McCaughey",
-        paragraph: "I have worked with BG Unified Solutions for approximately 1 year now. I have found BG Unified Solutions to be a highly reputable company with a work ethic and reliability that is second to none. I would highly recommend BG Unified Solutions to any client, and indeed have introduced them to a number of Ambition’s clients in recent times.",
+        paragraph: "I have worked with BG Unified Solutions for approximately 1 year. I have found BG Unified Solutions to be a highly reputable company with a work ethic and reliability that is second to none. I would highly recommend BG Unified Solutions to any client, and indeed have introduced them to a number of Ambition’s clients in recent times.",
         CompanyName: "Ambition Technology",
         designation: "Infrastructure Consultant"
     },
@@ -115,7 +115,7 @@ export default [
         imageUrl: "assets/images/brands/optus.png",
         imageAlt: "Company Logo",
         author: "Tushar Bhatt",
-        paragraph: "Their experts in different technologies like security, voice and a broad range of skills including F5 Load balancers, WAN Optimizatin, WAN , Cloud technologies and Cisco technologies have proven to be quite valuable to us. This has created high business efficiency for Optus, especially for voice/ video projects, WAN implementation, DC design.",
+        paragraph: "They are experts in different technologies like security, voice and a broad range of skills including F5 Load balancers, WAN Optimizatin, WAN , Cloud technologies and Cisco technologies have proven to be quite valuable to us. This has created high business efficiency for Optus, especially for voice/ video projects, WAN implementation, DC design.",
         description: `BG Unified Solutions,
         I would like to thank BG Unified Solutions for the exceptional customer service they have provided to Optus.
         Their experts in different technologies like security, voice and a broad range of skills including F5 Load balancers, WAN Optimizatin, WAN , Cloud technologies and Cisco technologies have proven to be quite valuable to us. This has created high business efficiency for Optus, especially for voice/ video projects, WAN implementation, DC design. It has also proven to be cost effective and improve business results.
