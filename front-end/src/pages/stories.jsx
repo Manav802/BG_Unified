@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
-import { Box, Flex, Heading, Text, Image } from "@chakra-ui/core";
+import { Box, Flex, Heading, Text, Image, Button } from "@chakra-ui/core";
 import Head from "next/head";
 import Fade from 'react-reveal/Fade';
 import Section from "../pageBuilder/Section";
 import Title from "../pageBuilder/Title";
+import {FaQuoteLeft, FaQuoteRight} from "react-icons/fa";
 import SwiperCore, { Controller, Navigation} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import testimonials from "../database/testimonials"
@@ -72,8 +73,36 @@ function main(props) {
                     </Box>
                 </Row>
             </Section> */}
+            <Section pos="relative" display="block">
+                {/* <Stories testimonials={TESTIMONIALS} /> */}
+                {TESTIMONIALS.map((comment) => 
+                <Flex className="comment-box" width="100%" my={6} bg="white"  rounded={8} pos="sticky" top="128px" borderWidth={1}>
+                    <Flex justify="center" p={12} align="center" flexDirection="column" width={4/12}>
+                        {comment.imageUrl && <Image maxW="160px" objectFit="contain" height="64px" src={comment.imageUrl}></Image>}
+                        <Heading textAlign="center" mt={6} fontFamily="Nexa Bold" size="lg">{comment.author}</Heading>
+                        <Heading textAlign="center" size="xs" fontFamily="Nexa Light">{comment.designation}</Heading>
+                        
+                        
+                    </Flex>
+                    <Flex flexDirection="column" overflow="hidden" pos="relative" justify="center" width={8/12} height="480px" p={16}>
+                        <Box pos="absolute" color="primary.500" opacity=".04" right="-32px" bottom="-64px" size="324px" as={FaQuoteRight}></Box>
+                        <Heading mb={5}>🥰</Heading>
+                        <Text fontSize="md" lineHeight="1.7" opacity=".7" fontWeight="500" textAlign="justify">
+                        {comment.paragraph}
+                        </Text>
+                    </Flex>
+                </Flex>
+            )}
+            </Section>
             <Section>
-                <Stories testimonials={TESTIMONIALS} />
+            <Flex className="comment-box" width="100%" my={6} bg="white"  rounded={8} pos="sticky" height="480px" top="128px" boxShadow="xl">
+                    <Flex justify="center" p={12} align="center" flexDirection="column" width={"100%"}>
+                        <Image maxW="160px" objectFit="contain" height="128px" src="/assets/images/icons/color/monitor.svg"></Image>
+                        <Heading textAlign="center" mt={6} fontFamily="Nexa Bold" size="xl">Let's get IT done.</Heading>
+                        <Text textAlign="center" mx={6} mt={3} maxW="448px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum rem dolores nisi voluptas, ipsa modi dolor minima.</Text>
+                        <Button variant="ghost" variantColor="red" mt={3} rightIcon="chevron-right">Explore Now</Button>
+                    </Flex>
+                </Flex>
             </Section>
         </>
     );

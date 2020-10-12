@@ -24,16 +24,19 @@ function main(props) {
                     </Section>
                 </Fade>
             </Box>
-
-            {partners.map(info => <Section>
+            <Section>
                 <Row justify="center">
-                    <Box textAlign="justify" fontSize="xl" width={12 / 12, 12 / 12, 10 / 12}>
-                        <Image src={info.logo} objectFit="contain" maxW="160px" mb={8} height="64px"></Image>
-                        <Heading size="lg">{info.name}</Heading>
-                        {info.description}
+            {partners.map(info => 
+                    <Box width={[12 / 12, 12 / 12, 6 / 12]} p={3}>
+                        <Box height="100%" bg="white" rounded={8} boxShadow="xl" p={10} textAlign="justify">
+                            <Image src={info.logo} objectFit="contain" maxW="160px" mb={4} height="64px"></Image>
+                            <Heading size="lg" mb={3}>{info.name}</Heading>
+                            {info.description}
+                        </Box>
                     </Box>
+                )}
                 </Row>
-            </Section>)}
+            </Section>
         </>
     );
 }

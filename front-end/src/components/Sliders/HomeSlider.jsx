@@ -38,9 +38,9 @@ const sliderInfo = [
       title: "Creating Impact Together",
       imgSrc: "/assets/images/backgrounds/landing-1.jpg",
       subTitle: "Consultel Group coming together with BGUS, for efficient and intelligent business solutions with authentic integrity.",
-      btnPrimaryText: "Read Customer Stories",
-      btnPrimaryLink: "/newsroom/[bid]",
-      btnPrimaryLinkAs: "/newsroom/Consultel-Group-with-BG-Unified-Solutions"
+      btnSecondaryText: "Learn More",
+      btnSecondaryLink: "/newsroom/[bid]",
+      btnSecondaryLinkAs: "/newsroom/Consultel-Group-with-BG-Unified-Solutions"
     
     },
   ]
@@ -159,8 +159,8 @@ function main(props) {
                       {sliderInfo[animate % sliderInfo.length].btnPrimaryLink && sliderInfo[animate % sliderInfo.length].btnPrimaryLinkAs==null  && 
                         <Link href={sliderInfo[animate % sliderInfo.length].btnPrimaryLink}><a><Button fontSize={["14px","18px"]} mr={2} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >{sliderInfo[animate % sliderInfo.length].btnPrimaryText}</Button></a></Link>
                         }
-                      {sliderInfo[animate % sliderInfo.length].btnPrimaryLinkAs && <Link href={sliderInfo[animate % sliderInfo.length].btnPrimaryLink} as={sliderInfo[animate % sliderInfo.length].btnPrimaryLinkAs}><a><Button  rightIcon="chevron-right" fontSize={["14px","18px"]} mr={2} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >{sliderInfo[animate % sliderInfo.length].btnPrimaryText}</Button></a></Link>}
-                      {sliderInfo[animate % sliderInfo.length].btnSecondaryLink && <Link href={sliderInfo[animate % sliderInfo.length].btnSecondaryLink}><a><Button padding={["20px","24px"]} ml={2} fontSize={["14px","18px"]} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">{sliderInfo[animate % sliderInfo.length].btnSecondaryText}</Button></a></Link>}
+                      {sliderInfo[animate % sliderInfo.length].btnPrimaryLinkAs && <Link href={sliderInfo[animate % sliderInfo.length].btnPrimaryLink} as={sliderInfo[animate % sliderInfo.length].btnPrimaryLinkAs}><a><Button fontSize={["14px","18px"]} mr={2} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >{sliderInfo[animate % sliderInfo.length].btnPrimaryText}</Button></a></Link>}
+                      {sliderInfo[animate % sliderInfo.length].btnSecondaryLink && <Link href={sliderInfo[animate % sliderInfo.length].btnSecondaryLink} as={sliderInfo[animate % sliderInfo.length].btnSecondaryLinkAs}><a><Button padding={["20px","24px"]} ml={2} fontSize={["14px","18px"]} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">{sliderInfo[animate % sliderInfo.length].btnSecondaryText}</Button></a></Link>}
                     </ButtonGroup>
                   </Box>
                 </Flex>
@@ -173,9 +173,9 @@ function main(props) {
                   py={8} 
                   cursor="pointer"
                   onClick={() => {setAnimation(i)}}
-                  fontWeight={animate == i && "700"}
-                  opacity={animate != i && ".4"}
-                  bg={animate === i && "#ffffff22"}
+                  fontWeight={animate % sliderInfo.length == i && "700"}
+                  opacity={animate % sliderInfo.length != i && ".4"}
+                  bg={animate % sliderInfo.length === i && "#ffffff22"}
                   width={1/sliderInfo.length}
                   borderTopWidth={1}>
                         {slide.title}
