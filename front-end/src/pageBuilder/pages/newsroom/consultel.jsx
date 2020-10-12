@@ -16,19 +16,19 @@ export default [
                 textAlign: "justify"
             },
             {
-                text: "1) Consultel Cloud - Consultel Cloud delivers private cloud to businesses either as a standalone solution or centralize data and complement an organization’s hybrid, multi-cloud strategy." ,
+                text: <span><b>1) Consultel Cloud</b> - Consultel Cloud delivers private cloud to businesses either as a standalone solution or centralize data and complement an organization’s hybrid, multi-cloud strategy.</span> ,
                 textAlign: "justify"
             },
             {
-                text: "2) Consultel AI - Consultel AI provides automation tools, quality checking, compliance checking, safety controls, and facial recognition technologies to businesses across Australia.",
+                text: <span><b>2) Consultel AI</b> - Consultel AI provides automation tools, quality checking, compliance checking, safety controls, and facial recognition technologies to businesses across Australia.</span>,
                 textAlign: "justify"
             },
             {
-                text: "3) Consultel Managed Services - Consultel Managed Services brings the best of breed security solutions and delivers real-time security protection, which helps organizations establish compliance and reduce overall security risk.",
+                text: <span><b>3) Consultel Managed Services</b> - Consultel Managed Services brings the best of breed security solutions and delivers real-time security protection, which helps organizations establish compliance and reduce overall security risk.</span>,
                 textAlign: "justify"
             },
             {
-                text: "4) Consultel Networks - Consultel Networks designs, configures, and deploys cost-effective network solutions that meet organizations’ interconnection needs in a continually evolving technology landscape.",
+                text: <span><b>4) Consultel Networks</b> - Consultel Networks designs, configures, and deploys cost-effective network solutions that meet organizations’ interconnection needs in a continually evolving technology landscape.</span>,
                 textAlign: "justify"
             },
             {
