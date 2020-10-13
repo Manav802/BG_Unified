@@ -106,6 +106,7 @@ export default [
                 imageJustify: "center"
             },
             {
+                mt:"32px",
                 text: <p><em>“To solve performance problems with our customers’ web applications,
                 the Radware SMEs proposed using their cloud-based Bot Manager solution.
                 Bot Manager worked very well from Day One, fixing attack issues
