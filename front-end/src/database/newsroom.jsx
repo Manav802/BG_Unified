@@ -12,7 +12,7 @@ const blogs = [
         image: "/assets/images/newsroom/consultelgroup.png",
         imgalt : "Consultel Group with BG Unified Solutions",
         category: "Updates",
-        tags: ["Consultel Group", "Consultel", "Consultel AI" , "Consultel Managed Services" , "BGUS" , "Consultel Networks" , "Consultel Cloud" , "Datacom", "Saurabh" , "Sareen" , "data hosting" , "infrastructure" , "racks" , "Network"],
+        tags: ["Consultel Group", "Consultel", "Consultel AI" , "Consultel Managed Services" , "BGUS" , "Consultel Networks" , "Consultel Cloud" , "Saurabh" , "Sareen"  , "infrastructure" , "racks" , "Network"],
         link: "Consultel-Group-with-BG-Unified-Solutions",
         content: content.consultel,
         },
@@ -32,6 +32,20 @@ const blogs = [
     },
     {
         index: 3,
+        title: "Radware collaborating with BGUS, providing Cybersecurity Solutions",
+        description: "A very big step from Radware to work closely with BG Unified Solutions to offer a redundant, highly stable...",
+        date: "October 2020",
+        by: "Saurabh Sareen",
+        avatar: "/assets/images/team/saurabh.jpg",
+        image: "/assets/images/newsroom/consultelgroup.png",
+        imgalt : "Radware collaborating with BGUS, providing Cybersecurity Solutions",
+        category: "Updates",
+        tags: ["Radware", "DDOS", "WAF" , "BGUS" , "Cybersecurity" , "Alteon 6024" , "NSW" , "VIctoria State Government", "Saurabh" , "Sareen" ],
+        link: "Radware-collaborating-with-BGUS",
+        content: content.cybersecurity,
+        },
+    {
+        index: 4,
         title: "Helping Hands during COVID-19 Pandemic",
         description: "COVID-19 working from home taught us more lessons and even let us able to figure it out how we can be exponentially productive than just...",
         date: "23rd August 2020",
@@ -45,7 +59,7 @@ const blogs = [
         content: content.covid19,
     },
     {
-        index: 4,
+        index: 5,
         title: "Peace of mind and 60% cost savings with Datacom@AirTrunk",
         description: "It was towards the end of 2019 and the staff at Australian data and applications hosting specialist BG Unified Solutions were looking...",
         date: "23rd August 2019",
@@ -59,7 +73,7 @@ const blogs = [
         content: content.datacom,
         },
         {
-            index: 5,
+            index: 6,
             title: "A complete Office IT Infrastructure",
             description: "An enterprise level solution for any small to medium size organization with single or multiple sites. This solution includes...",
             date: "23rd October 2019",
@@ -73,7 +87,7 @@ const blogs = [
             content: content.itInfra,
         },
         {
-            index: 6,
+            index: 7,
             title: "Launching a complete VDI/RDS as a Solution",
             description: "We feel proud in announcing ConstantVDI service offering, which will offer you a complete VDI/RDS As A Service Solution using...",
             date: "September 2019",
@@ -87,7 +101,7 @@ const blogs = [
             content: content.vdiaas,
         },
         {
-            index: 7,
+            index: 8,
             title: "Network Infrastructure Redesign | BG Unified Solutions",
             description: "The primary purpose of the project is to redesign the network to achieve the following design criteria: ....",
             date: "2019",
@@ -101,7 +115,7 @@ const blogs = [
             content: content.networkinfra,
         },
         {
-            index: 8,
+            index: 9,
             title: "Data Center Design and Implementation",
             description: "A client had a requirement to consolidate a distributed environment into a single highly available data center...",
             date: "2019",
@@ -115,7 +129,7 @@ const blogs = [
             content: content.dcdesign,
         },
         {
-            index: 9,
+            index: 10,
             title: "BG Unified Solutions Hosted UC Solution",
             description: "Currently hosted in NEXTDC, consisting of 18 UCS Server, C Series & B Series in the farm. Each UCS Server is running...",
             date: "2019",
@@ -129,7 +143,7 @@ const blogs = [
             content: content.hosteduc,
         },
         {
-            index: 10,
+            index: 11,
             title: "F5 Topology Redesign",
             description: "F5 Configuration was redesigned and implemented in a recommended way. A lot of IRULES/POOLS defined to achieve the desired...",
             date: "2019",
@@ -143,6 +157,20 @@ const blogs = [
             content: content.f5top,
         
         
+    },
+    {
+        index: 12,
+        title: "Radware's Cloud WAF enhancing BGUS' Application Security",
+        description: "Radware’s Cloud WAF Service to protect its website, BG Unified noticed blocked IP addresses in the...",
+        date: "2020",
+        by: "Saurabh Sareen",
+        avatar: "/assets/images/team/saurabh.jpg",
+        image: "/assets/images/newsroom/it-infra.png",
+        imgalt : "Radware's Cloud WAF enhancing BGUS' Application Security",
+        category: "Case Study",
+        tags: ["Network", "Complexity", "Security", "Architecture" , "vendor" , "throughput" , "flexible architecture" , "Cisco IPS" , "Cisco L3", "AIP-SSM"],
+        link: "Radware-Cloud-WAF",
+        content: content.radware,
     }
     ]
     

@@ -28,3 +28,8 @@ module.exports.hosteduc = hosteduc
 import f5top from './f5top'
 module.exports.f5top = f5top
 
+import radware from './radware'
+module.exports.radware = radware
+
+import cybersecurity from './cybersecurity'
+module.exports.cybersecurity = cybersecurity
