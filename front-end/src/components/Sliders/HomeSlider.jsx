@@ -9,7 +9,7 @@ import Link from 'next/link';
 const sliderInfo = [
     {
       title: "Welcome to BG Unified Solutions",
-      imgSrc: "/assets/images/backgrounds/globe.jpg",
+      imgSrc: "/assets/images/backgrounds/landing-1.png",
       subTitle: "Your go-to partner for all IT solutions and services that deliver value and enable substantial corporate growth.",
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
@@ -18,7 +18,7 @@ const sliderInfo = [
     },
     {
       title: "Protecting Online Presence of your Business",
-      imgSrc: "/assets/images/backgrounds/cyber_security.jpg",
+      imgSrc: "/assets/images/backgrounds/landing-2.png",
       subTitle: "Fast, friendly and delivery oriented web services, driven by our commitment of customer satisfaction.",
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
@@ -27,7 +27,7 @@ const sliderInfo = [
     },
     {
       title: "Geographical Redundant Infrastructure",
-      imgSrc: "/assets/images/backgrounds/landing-3.jpg",
+      imgSrc: "/assets/images/backgrounds/Artboard 2.png",
       subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
@@ -36,12 +36,28 @@ const sliderInfo = [
     },
     {
       title: <p>Creating Impact <br/> Together</p>,
-      imgSrc: "/assets/images/backgrounds/landing-1.jpg",
+      imgSrc: "/assets/images/backgrounds/landing4.png",
       subTitle: "Consultel Group coming together with BGUS, for efficient and intelligent business solutions with authentic integrity.",
       btnSecondaryText: "Read Customer Stories",
       btnSecondaryLink: "/stories"
     
     },
+    {
+      title: <p>Intelligent Business<br/> Solutions</p>,
+      imgSrc: "/assets/images/backgrounds/landing5.png",
+      subTitle: "Radware and BGUS providing highly secured WAF and DDoS Solutions to the end-customers collaboratively.",
+      btnSecondaryText: "Read Customer Stories",
+      btnSecondaryLink: "/stories"
+    
+    },
+    {
+      title: <p>Bright Solutions. Comprehensive Results.</p>,
+      imgSrc: "/assets/images/backgrounds/landing6.png",
+      subTitle: "Huawei working collaboratively with BG Unified Solutions to extend BG's services offerings and enhance growth.",
+      btnSecondaryText: "Read Customer Stories",
+      btnSecondaryLink: "/stories"
+    
+    }
   ]
 
   const roller = [
@@ -115,11 +131,11 @@ function main(props) {
     }, [])
     return (
         <div>
-            <Box pos="relative" height={["440px","520px","640px"]}>
+            <Box pos="relative" height={["440px","500px"]}>
                 {sliderInfo.map((slide, index) => 
-                  <Image src={slide.imgSrc} transition="1s" opacity={animate % sliderInfo.length === index ? "1" : "0"}  pos="absolute" top={0} left={0} width="100%" height="100%" objectFit="cover" width="100%"></Image>
+                  <Image src={slide.imgSrc} transition="1s" opacity={animate % sliderInfo.length === index ? "1" : "0"} minH="448px"  height={["440px","520px","720px", "auto"]} pos="absolute" top={0} left={0} width="100%" height="100%" objectFit="cover" width="100%"></Image>
                 )}
-                <Box top={0} left={0} opacity={.7} pos="absolute" width="100%" height="100%" bg="black"></Box>
+                {/* <Box top={0} left={0} opacity={.7} pos="absolute" width="100%" height="100%" bg="black"></Box> */}
                 <Section  pos="absolute" left={0} color="white" width="100%" height="100%" px={8} py={0} my={0} mt={[0,0,0,"-56px","-32px"]}>
                 <Flex my={0}>
                   <Box display={["none","none","block"]} pos="relative" minW="180px" color="white">
@@ -156,16 +172,16 @@ function main(props) {
                     </Text>
                     <ButtonGroup mt={6}>
                       {sliderInfo[animate % sliderInfo.length].btnPrimaryLink && 
-                        <Link href={sliderInfo[animate % sliderInfo.length].btnPrimaryLink}><a><Button fontSize={["14px","18px"]} mr={2} padding={["20px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >{sliderInfo[animate % sliderInfo.length].btnPrimaryText}</Button></a></Link>
+                        <Link href={sliderInfo[animate % sliderInfo.length].btnPrimaryLink}><a><Button fontSize={["12px","18px"]} mr={[1,2]} padding={["18px","24px"]} variant="solid" className="primary-btn" variantColor="primary" size="lg" >{sliderInfo[animate % sliderInfo.length].btnPrimaryText}</Button></a></Link>
                         }
-                      {sliderInfo[animate % sliderInfo.length].btnSecondaryLink && <Link href={sliderInfo[animate % sliderInfo.length].btnSecondaryLink}><a><Button rightIcon="chevron-right" padding={["20px","24px"]} ml={2} fontSize={["14px","18px"]} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">{sliderInfo[animate % sliderInfo.length].btnSecondaryText}</Button></a></Link>}
+                      {sliderInfo[animate % sliderInfo.length].btnSecondaryLink && <Link href={sliderInfo[animate % sliderInfo.length].btnSecondaryLink}><a><Button rightIcon="chevron-right" padding={["18px","24px"]} ml={[1,2]} fontSize={["12px","18px"]} variant="outline" color="white" _hover={{ color: "black", bg: "white" }} size="lg">{sliderInfo[animate % sliderInfo.length].btnSecondaryText}</Button></a></Link>}
                     </ButtonGroup>
                   </Box>
                 </Flex>
                 </Section>
                
           
-            <Flex display={["none", "none","none", "flex"]} pos="absolute" bottom={0} left={0} width="100%" color="white">
+            {/* <Flex display={["none", "none","none", "flex"]} pos="absolute" bottom={0} left={0} width="100%" color="white">
                   {sliderInfo.map((slide, i) => <Box 
                   px={6} 
                   py={8} 
@@ -178,7 +194,7 @@ function main(props) {
                   borderTopWidth={1}>
                         {slide.title}
                   </Box>)}
-            </Flex>
+            </Flex> */}
             {/* <Box pos="absolute" bottom={0} p={5} right={0}>
                 <Button onClick={() => setAnimation(animate - 1)} mx={2} rounded={0} fontSize="24px" py={6}><Icon name="arrow-back"></Icon></Button>
                 <Button onClick={() => setAnimation(animate + 1)} mx={2} rounded={0} fontSize="24px" py={6}><Icon name="arrow-forward"></Icon></Button>
