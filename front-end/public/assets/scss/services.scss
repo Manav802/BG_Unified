@@ -52,3 +52,7 @@
     filter: hue-rotate(150deg);
     max-width: 640px;
 }
+
+.gpu-slider .is-selected{
+    transform: scale(1);
+}
