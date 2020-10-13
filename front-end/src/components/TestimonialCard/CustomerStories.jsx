@@ -1,14 +1,11 @@
-import React, { Component } from "react";
-// import Slider from '../ImageSlider/Slider'
-import { Box, Image, Avatar, Heading, Text, AvatarBadge, Flex, Divider, Button } from "@chakra-ui/core";
+import React from "react";
+import { Box, Image, Heading, Text, Divider, Grid } from "@chakra-ui/core";
 import Container from "../../pageBuilder/Container";
-import Row from "../../pageBuilder/Row";
-
 
 const Testimonial = (testimonialDetails, imageW = "160px") => {
   return (
-    <Box width={["100%", "100%", "50%", "50%", "33%"]} px={1} my={1}>
-      <Box p={6} height="100%" borderWidth={1} rounded={4} >
+    <Box px={5} my={5}>
+      <Box p={6} height="100%" borderWidth={1} rounded={4} minHeight="460px" >
         <Box h="80%">
           <Image src={testimonialDetails.imageUrl} height="80px" maxW={imageW} objectFit="contain"></Image>
           <Text my={8} textAlign="justify" fontWeight={600} lineHeight={1.5}>
@@ -32,22 +29,21 @@ const Testimonial = (testimonialDetails, imageW = "160px") => {
   )
 }
 
-
-
-function TestimonialCard({ testimonials }) {
+function main({ testimonials }) {
   return (
-    <Container mt={12}>
-      <Flex wrap="wrap" width="100%">
+    <Grid templateColumns={"repeat(2,auto)"}>
+      <Box>
         {Testimonial(testimonials[0], "112px")}
-        {Testimonial(testimonials[1])}
         {Testimonial(testimonials[2], "224px")}
-        {Testimonial(testimonials[3])}
         {Testimonial(testimonials[4])}
+      </Box>
+      <Box>
+        {Testimonial(testimonials[1])}
+        {Testimonial(testimonials[3])}
         {Testimonial(testimonials[5])}
-      </Flex>
-    </Container>
+      </Box>
+    </Grid>
   );
 }
 
-export default TestimonialCard;
-
+export default main;
