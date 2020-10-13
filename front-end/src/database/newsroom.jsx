@@ -165,7 +165,7 @@ const blogs = [
         date: "2020",
         by: "Saurabh Sareen",
         avatar: "/assets/images/team/saurabh.jpg",
-        image: "/assets/images/newsroom/it-infra.png",
+        image: "/assets/images/newsroom/radware/BGUS1.png",
         imgalt : "Radware's Cloud WAF enhancing BGUS' Application Security",
         category: "Case Study",
         tags: ["Network", "Complexity", "Security", "Architecture" , "vendor" , "throughput" , "flexible architecture" , "Cisco IPS" , "Cisco L3", "AIP-SSM"],
