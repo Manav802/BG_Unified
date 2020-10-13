@@ -1,3 +1,4 @@
+import {Image} from "@chakra-ui/core"
 export default [
     {
         type: "content",
@@ -83,7 +84,16 @@ export default [
                 textAlign: "justify"
             },
             // image 1
+            {
+                image:<Image justifySelf="center" src="/assets/images/newsroom/radware/BGUS2.png"/>,
+                imageJustify: "center"
+            },
             //image 2
+            {
+                image:<Image justifySelf="center" src="/assets/images/newsroom/radware/BGUS3.png"/>,
+                imageJustify: "center"
+            },
+            
             {
                 text: <span>To prevent future revenue and data loss, the customer expedited installation of Radware’s Bot Manager.
                 After activating Radware Bot Manager, the customer saw a 79% decrease in website bot activity and an
@@ -91,6 +101,10 @@ export default [
                 textAlign: "justify"
             },
             // image 3
+            {
+                image:<Image justifySelf="center" src="/assets/images/newsroom/radware/BGUS4.png"/>,
+                imageJustify: "center"
+            },
             {
                 text: <p><em>“To solve performance problems with our customers’ web applications,
                 the Radware SMEs proposed using their cloud-based Bot Manager solution.
@@ -133,5 +147,6 @@ export default [
             }
             
         ]
-    }
+    },
+    
 ]

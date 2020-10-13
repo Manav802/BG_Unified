@@ -1,3 +1,5 @@
+import GPUPricing from "../../pricing/GPUPricing";
+
 export default [
     {
         gap: 10,
@@ -35,6 +37,18 @@ export default [
                      </span>
                 }]
             }]
+    },
+    {
+        mt: "-96px",
+        mb: 0,
+        py: 0,
+        gap: 0,
+        containerWidth:"100%",
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <GPUPricing/>
+        }],
     },
   
     {
