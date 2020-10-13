@@ -36,7 +36,7 @@ const sliderInfo = [
     },
     {
       title: <p>Creating Impact <br/> Together</p>,
-      imgSrc: "/assets/images/backgrounds/landing4darker.png",
+      imgSrc: "/assets/images/backgrounds/landing-3.png",
       subTitle: "Consultel Group coming together with BGUS, for efficient and intelligent business solutions with authentic integrity.",
       btnSecondaryText: "Read Customer Stories",
       btnSecondaryLink: "/stories"
