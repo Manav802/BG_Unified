@@ -171,6 +171,20 @@ const blogs = [
         tags: ["Network", "Complexity", "Security", "Architecture" , "vendor" , "throughput" , "flexible architecture" , "Cisco IPS" , "Cisco L3", "AIP-SSM"],
         link: "Radware-Cloud-WAF",
         content: content.radware,
+    },
+    {
+        index: 13,
+        title: "Radware's Cloud WAF enhancing BGUS' Application Security",
+        description: "Radware’s Cloud WAF Service to protect its website, BG Unified noticed blocked IP addresses in the...",
+        date: "2020",
+        by: "Saurabh Sareen",
+        avatar: "/assets/images/team/saurabh.jpg",
+        image: "/assets/images/newsroom/it-infra.png",
+        imgalt : "Radware's Cloud WAF enhancing BGUS' Application Security",
+        category: "Case Study",
+        tags: ["Network", "Complexity", "Security", "Architecture" , "vendor" , "throughput" , "flexible architecture" , "Cisco IPS" , "Cisco L3", "AIP-SSM"],
+        link: "Radware-Cloud-WAF",
+        content: content.radware,
     }
     ]
     
