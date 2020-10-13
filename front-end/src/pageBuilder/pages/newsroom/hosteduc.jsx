@@ -3,6 +3,7 @@ export default [
         type: "content",
         fontSize: "xl",
         data: [
+            
             {
                 text: "Currently hosted in NEXTDC and EQUINIX, consisting of 18 UCS Server, C Series & B Series in the farm. Each UCS Server is running ESX version 5.5 with updated VMWARE tools. ",
                 textAlign: "justify"
