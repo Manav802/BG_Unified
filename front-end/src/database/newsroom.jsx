@@ -5,6 +5,7 @@ const blogs = [
     {
         index: 1,
         title: "Consultel Group with BG Unified Solutions - Enhancing Excellence, Reaching Perfection!",
+        headertitle: "Consultel Group with BG Unified Solutions",
         description: "Consultel Group coming together with BGUS, for efficient and intelligent business solutions with authentic integrity...",
         date: "October 2020",
         by: "Saurabh Sareen",
@@ -19,6 +20,7 @@ const blogs = [
     {
         index: 2,
         title: "Business Operations during COVID-19 Pandemic",
+        headertitle: "Business Operations during COVID-19 Pandemic",
         description: "The difficult COVID-19 era has also brought out how strong partnerships create lasting value. BG Unified Solutions and Huawei Australia...",
         date: "7th September 2020",
         by: "Saurabh Sareen",
@@ -33,6 +35,7 @@ const blogs = [
     {
         index: 3,
         title: "Radware collaborating with BGUS, providing Cybersecurity Solutions",
+        headertitle: "Radware collaborating with BGUS",
         description: "A very big step from Radware to work closely with BG Unified Solutions to offer a redundant, highly stable...",
         date: "October 2020",
         by: "Saurabh Sareen",
@@ -47,6 +50,7 @@ const blogs = [
     {
         index: 4,
         title: "Helping Hands during COVID-19 Pandemic",
+        headertitle: "",
         description: "COVID-19 working from home taught us more lessons and even let us able to figure it out how we can be exponentially productive than just...",
         date: "23rd August 2020",
         by: "Saurabh Sareen",
@@ -75,6 +79,7 @@ const blogs = [
     {
         index: 6,
         title: "Peace of mind and 60% cost savings with Datacom@AirTrunk",
+        headertitle: "",
         description: "It was towards the end of 2019 and the staff at Australian data and applications hosting specialist BG Unified Solutions were looking...",
         date: "23rd August 2019",
         by: "Saurabh Sareen",
@@ -89,6 +94,7 @@ const blogs = [
         {
             index: 7,
             title: "A complete Office IT Infrastructure",
+            headertitle: "",
             description: "An enterprise level solution for any small to medium size organization with single or multiple sites. This solution includes...",
             date: "23rd October 2019",
             by: "Saurabh Sareen",
@@ -103,6 +109,7 @@ const blogs = [
         {
             index: 8,
             title: "Launching a complete VDI/RDS as a Solution",
+            headertitle: "",
             description: "We feel proud in announcing ConstantVDI service offering, which will offer you a complete VDI/RDS As A Service Solution using...",
             date: "September 2019",
             by: "Saurabh Sareen",
@@ -117,6 +124,7 @@ const blogs = [
         {
             index: 9,
             title: "Network Infrastructure Redesign | BG Unified Solutions",
+            headertitle: "",
             description: "The primary purpose of the project was to redesign the network to achieve the following design criteria: ....",
             date: "2019",
             by: "Saurabh Sareen",
@@ -131,6 +139,7 @@ const blogs = [
         {
             index: 10,
             title: "Data Center Design and Implementation",
+            headertitle: "",
             description: "A client had a requirement to consolidate a distributed environment into a single highly available data center...",
             date: "2019",
             by: "Saurabh Sareen",
@@ -146,6 +155,7 @@ const blogs = [
             index: 11,
             title: "BG Unified Solutions Hosted UC Solution",
             description: "Hosted in NEXTDC, consisting of 18 UCS Server, C Series & B Series in the farm. Each UCS Server is running...",
+            headertitle: "",
             date: "2019",
             by: "Saurabh Sareen",
             avatar: "/assets/images/team/saurabh.jpg",
@@ -159,6 +169,7 @@ const blogs = [
         {
             index: 12,
             title: "F5 Topology Redesign",
+            headertitle: "",
             description: "F5 Configuration was redesigned and implemented in a recommended way. A lot of IRULES/POOLS defined to achieve the desired...",
             date: "2019",
             by: "Saurabh Sareen",
@@ -175,6 +186,7 @@ const blogs = [
     {
         index: 13,
         title: "Radware's Cloud WAF enhancing BGUS' Application Security",
+        headertitle: "",
         description: "Radware’s Cloud WAF Service to protect its website, BG Unified noticed blocked IP addresses in the...",
         date: "2020",
         by: "Saurabh Sareen",

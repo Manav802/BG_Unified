@@ -241,19 +241,19 @@ function header(props) {
                                                     <WhatsNew
                                                         onClick={onClose}
                                                         image={a}
-                                                        heading={newsroom[0].title}
+                                                        heading={newsroom[0].headertitle}
                                                         link={"/newsroom/"+newsroom[0].link}
                                                     />
                                                     <WhatsNew
                                                         onClick={onClose}
                                                         image={b}
-                                                        heading={newsroom[1].title}
+                                                        heading={newsroom[1].headertitle}
                                                         link={"/newsroom/"+newsroom[1].link}
                                                     />
                                                     <WhatsNew
                                                         onClick={onClose}
                                                         image={c}
-                                                        heading={newsroom[2].title}
+                                                        heading={newsroom[2].headertitle}
                                                         link={"/newsroom/"+newsroom[2].link}
                                                     />
                                                 </Flex>
