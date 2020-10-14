@@ -1,3 +1,5 @@
+import {Image} from "@chakra-ui/core"
+
 export default [
     {
         type: "content",

@@ -103,7 +103,7 @@ const blogs = [
         {
             index: 8,
             title: "Network Infrastructure Redesign | BG Unified Solutions",
-            description: "The primary purpose of the project is to redesign the network to achieve the following design criteria: ....",
+            description: "The primary purpose of the project was to redesign the network to achieve the following design criteria: ....",
             date: "2019",
             by: "Saurabh Sareen",
             avatar: "/assets/images/team/saurabh.jpg",
@@ -174,7 +174,7 @@ const blogs = [
     },
     {
         index: 13,
-        title: "Radware's Cloud WAF enhancing BGUS' Application Security",
+        title: "Huawei collaboration with BGUS ",
         description: "Radware’s Cloud WAF Service to protect its website, BG Unified noticed blocked IP addresses in the...",
         date: "2020",
         by: "Saurabh Sareen",
