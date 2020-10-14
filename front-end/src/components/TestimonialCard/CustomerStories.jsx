@@ -36,11 +36,14 @@ function main({ testimonials }) {
         {Testimonial(testimonials[0], "112px")}
         {Testimonial(testimonials[2], "224px")}
         {Testimonial(testimonials[4])}
+        {Testimonial(testimonials[6])}
+        
       </Box>
       <Box>
         {Testimonial(testimonials[1])}
         {Testimonial(testimonials[3])}
         {Testimonial(testimonials[5])}
+        {Testimonial(testimonials[7])}
       </Box>
     </Grid>
   );

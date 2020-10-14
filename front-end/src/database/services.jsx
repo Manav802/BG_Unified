@@ -321,6 +321,20 @@ const services = {
         conclusion: "Web Hosting services design and implementation in distributed environments.",
         sections: sections.hosting
     },
+    "ddos": {
+        title: "DDoS Protection As A Service",
+        slogan: "For your Utmost Security",
+        bgImage: "/assets/images/services/wafaas.jpg",
+        category: "Cyber Security Services",
+        icon: "/assets/images/icons/monotone/app.svg",
+        color: "#E4572E",
+        tags: ["wireless", "wifi", "clusters", "networks"],
+        description: "BG Unified Soutions provides optimal DDoS protection as a  service with most accurate detection and feasible solution....",
+        illustration: "",
+        relatedService: ["WAF As A Service", "SOC As A Service", "Firewall As A Service"],
+        conclusion: " Be DDoS protected in a rapid and reliable way.",
+        sections: sections.ddos
+    },
     "wafaas": {
         title: "WAF As A Service",
         slogan: "Robust Security with a Dedicated Web App Firewall",

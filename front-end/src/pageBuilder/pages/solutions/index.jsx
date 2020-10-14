@@ -5,6 +5,9 @@ module.exports.storage = storage
 import infra from "./infra"
 module.exports.infra = infra
 
+import ddos from "./ddos"
+module.exports.ddos = ddos
+
 import logging from './logging'
 module.exports.logging = logging
 

@@ -48,7 +48,7 @@ class Contact extends Component {
                   <Text fontWeight="bold">
                     Email
                   </Text>
-                  <a href="mailto::info@bgunifiedsolutions.net"><Text fontSize={["sm", "md","md", "lg"]}>info@bgunifiedsolutions.net</Text></a>
+                  <a href="mailto::support@bgunifiedsolutions.net"><Text fontSize={["sm", "md","md", "lg"]}>support@bgunifiedsolutions.net</Text></a>
                 </Box>
               </Flex>
               <Flex m={[4,0]} width={["100%","33.33%"]} align="center" direction={["row","column"]}>
@@ -57,7 +57,7 @@ class Contact extends Component {
                   <Text fontWeight="bold">
                     Have a chat!
                   </Text>
-                  <Text fontSize={["sm", "md","md", "lg"]}>24/7 Chat Support</Text>
+                  <Text fontSize={["sm", "md","md", "lg"]}>Comprehensive Chat Support</Text>
                 </Box>
               </Flex>
             </Row> 
