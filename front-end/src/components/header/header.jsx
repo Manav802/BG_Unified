@@ -240,20 +240,20 @@ function header(props) {
                                                     <Heading mb={4} size="md" fontFamily="Nexa Bold">What's New</Heading>
                                                     <WhatsNew
                                                         onClick={onClose}
-                                                        image={a}
-                                                        heading={newsroom[0].title}
+                                                        image={newsroom[0].headerIcon}
+                                                        heading={newsroom[0].headertitle}
                                                         link={"/newsroom/"+newsroom[0].link}
                                                     />
                                                     <WhatsNew
                                                         onClick={onClose}
-                                                        image={b}
-                                                        heading={newsroom[1].title}
+                                                        image={newsroom[1].headerIcon}
+                                                        heading={newsroom[1].headertitle}
                                                         link={"/newsroom/"+newsroom[1].link}
                                                     />
                                                     <WhatsNew
                                                         onClick={onClose}
-                                                        image={c}
-                                                        heading={newsroom[2].title}
+                                                        image={newsroom[2].headerIcon}
+                                                        heading={newsroom[2].headertitle}
                                                         link={"/newsroom/"+newsroom[2].link}
                                                     />
                                                 </Flex>

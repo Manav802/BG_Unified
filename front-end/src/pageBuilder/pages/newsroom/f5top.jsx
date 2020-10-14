@@ -8,6 +8,13 @@ export default [
                 textAlign: "justify"
             },
             {
+                text: "OVERVIEW",
+                textAlign: "justify",
+                fontWeight:"800",
+                fontSize: "2xl",
+                mt: "32px"
+            },
+            {
                 text: "The project involved the integration of Big IPs to the newly implemented DC. Design a Load Balancing topology for web servers running multiple instances of TOMCAT. A couple of applications are SSL based and others are Non-SSL based. Implementation of advanced features of F5 including Application Monitoring, Intrusion Prevention, Application Inspection and dynamically powering on the VMs based on the load or other criteria.",
                 textAlign: "justify"
             },
@@ -16,8 +23,22 @@ export default [
                 textAlign: "justify"
             },
             {
+                text: "THE SOLUTION",
+                textAlign: "justify",
+                fontWeight:"800",
+                fontSize: "2xl",
+                mt: "32px"
+            },
+            {
                 text: "The F5 application-centric view allowed us to set up customized network services with ease. And by managing application services rather than the individual networking components and configurations, we could dramatically speed deployment, lower operational expenses, and streamline IT operations." ,
                 textAlign: "justify"
+            },
+            {
+                text: "CONCLUSION",
+                textAlign: "justify",
+                fontWeight:"800",
+                fontSize: "2xl",
+                mt: "32px"
             },
             {
                 text: "F5 application-centric load balancing solutions ensured that our customers and partners have access to the applications they need—whenever they need them—by monitoring the health and performance of individual servers in real-time.",

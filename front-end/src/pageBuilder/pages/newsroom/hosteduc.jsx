@@ -4,7 +4,15 @@ export default [
         fontSize: "xl",
         data: [
             {
-                text: "Currently hosted in NEXTDC and EQUINIX, consisting of 18 UCS Server, C Series & B Series in the farm. Each UCS Server is running ESX version 5.5 with updated VMWARE tools. ",
+                text: "OVERVIEW",
+                textAlign: "justify",
+                fontWeight:"800",
+                fontSize: "2xl",
+                mt: "32px"
+            },
+            
+            {
+                text: "Hosted in NEXTDC and EQUINIX, consisting of 18 UCS Server, C Series & B Series in the farm. Each UCS Server is running ESX version 5.5 with updated VMWARE tools. ",
                 textAlign: "justify"
             },
             {
@@ -14,6 +22,13 @@ export default [
             {
                 text: "The core of the network exists on a pair of Nexus 93128TX Switches with a high speed Nimble or NetApp Storage. In addition, BGUS hosted solution is offering a hosted Wireless Solution with Cisco 5508 WLC in Cluster and 4404 WLC in Cluster, so as to support Wireless Phones in any of the client’s environments.",
                 textAlign: "justify"
+            },
+            {
+                text: "SOLUTION",
+                textAlign: "justify",
+                fontWeight:"800",
+                fontSize: "2xl",
+                mt: "32px"
             },
             {
                 text: "The WAN Edge Devices are running in Active/Standby mode and are usually Cisco 2921 Routers. The primary internet-facing device is a Cisco ASA with SourceFire and is configured to provide connectivity to remote workers. All traffic destined for any part of the UC Solution has to traverse through three different layers of firewalls and all traffic activity is being logged using SPLUNK. " ,
