@@ -1,4 +1,5 @@
 import content from "../pageBuilder/pages/newsroom/index"
+import CarSideVideo from '../components/cards/CardSideVideo'
 
 const blogs = [
 
@@ -17,6 +18,7 @@ const blogs = [
         tags: ["Consultel Group", "Consultel", "Consultel AI" , "Consultel Managed Services" , "BGUS" , "Consultel Networks" , "Consultel Cloud" , "Saurabh" , "Sareen"  , "infrastructure" , "racks" , "Network"],
         link: "Consultel-Group-with-BG-Unified-Solutions",
         content: content.consultel,
+        logo:"/assets/images/brands/consultelgroup.png",
         },
     {
         index: 2,
@@ -49,6 +51,8 @@ const blogs = [
         tags: ["Radware", "DDOS", "WAF" , "BGUS" , "Cybersecurity" , "Alteon 6024" , "NSW" , "VIctoria State Government", "Saurabh" , "Sareen" ],
         link: "Radware-collaborating-with-BGUS",
         content: content.cybersecurity,
+        logo : "/assets/images/brands/radware.png",
+        
         },
     {
         index: 4,
@@ -78,6 +82,7 @@ const blogs = [
         tags: ["Network", "Complexity", "Security", "Architecture" , "vendor" , "throughput" , "flexible architecture" , "Cisco IPS" , "Cisco L3", "AIP-SSM"],
         link: "Huawei-and-BGUS",
         content: content.huawei,
+        logo:"/assets/images/brands/huawei.png",
     },
     {
         index: 6,
@@ -127,7 +132,7 @@ const blogs = [
         {
             index: 9,
             title: "Network Infrastructure Redesign | BG Unified Solutions",
-            headertitle: "",
+            headertitle: "Network Infrastructure Redesign",
             description: "The primary purpose of the project was to redesign the network to achieve the following design criteria: ....",
             date: "2019",
             by: "Saurabh Sareen",
@@ -189,7 +194,7 @@ const blogs = [
     {
         index: 13,
         title: "Radware's Cloud WAF enhancing BGUS' Application Security",
-        headertitle: "",
+        headertitle: "Radware's Cloud WAF enhancing Application Security",
         description: "Radware’s Cloud WAF Service to protect its website, BG Unified noticed blocked IP addresses in the...",
         date: "2020",
         by: "Saurabh Sareen",
@@ -200,6 +205,15 @@ const blogs = [
         tags: ["Network", "Complexity", "Security", "Architecture" , "vendor" , "throughput" , "flexible architecture" , "Cisco IPS" , "Cisco L3", "AIP-SSM"],
         link: "Radware-Cloud-WAF",
         content: content.radware,
+        logo : "/assets/images/brands/radware.png",
+        sideContent:[<CarSideVideo data={{ 
+                                thumbnail:"/assets/images/videoThumbnails/radware.png",
+                                height:"80%",
+                                minW:"50%" ,
+                                body:<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6705379682822578176?compact=1" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                            }}
+                        />,
+                    ]
     }
     
     ]

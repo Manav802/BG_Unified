@@ -52,7 +52,7 @@ const sliderInfo = [
     },
     {
       title: <p>Bright Solutions. Comprehensive Results.</p>,
-      imgSrc: "/assets/images/backgrounds/landing6.png",
+      imgSrc: "/assets/images/backgrounds/landing6dark.png",
       subTitle: "Huawei working collaboratively with BG Unified Solutions to extend BG's services offerings and enhance growth.",
       btnSecondaryText: "Read Customer Stories",
       btnSecondaryLink: "/stories"
