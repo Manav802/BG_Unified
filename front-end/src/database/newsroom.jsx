@@ -207,6 +207,7 @@ const blogs = [
         content: content.radware,
         logo : "/assets/images/brands/radware.png",
         sideContent:[<CarSideVideo data={{ 
+                                title:"Radware Case Study",
                                 thumbnail:"/assets/images/videoThumbnails/radware.png",
                                 height:"80%",
                                 minW:"50%" ,

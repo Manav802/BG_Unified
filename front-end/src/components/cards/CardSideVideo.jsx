@@ -19,7 +19,7 @@ function CardSideVideo({data,...props}) {
             <Modal isOpen={isOpen} onClose={onClose}>
               <ModalOverlay />
               <ModalContent minW={data.minW} minH={data.minW} width={data.width} height={data.height}>
-                <ModalHeader>Radware Case Study</ModalHeader>
+                <ModalHeader>{data.title}</ModalHeader>
                 <ModalCloseButton />
                 <ModalBody marginBottom={3} >
                     {data.body}
