@@ -19,6 +19,7 @@ function Training(props) {
                         {props.title}
                     </Text>
                     <Text
+                        textAlign="justify"
                         fontSize={["lg", "xl"]}>
                         {props.content}
                     </Text>
