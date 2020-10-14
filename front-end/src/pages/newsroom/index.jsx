@@ -108,7 +108,7 @@ function Newsroom(){
                         <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}><a>
                           <CardWithImage
                           src={blog.image}
-                          title={blog.title}
+                          title={blog.headertitle || blog.title}
                           columns={["128px auto", "auto"]}
                           height={["96px", "216px"]}
                           >
@@ -116,10 +116,10 @@ function Newsroom(){
                           <Flex display={["none","flex"]} mt={4}>
                           <Avatar src={blog.avatar} />
                           <Box ml="3">
-                            <Text fontWeight="bold">
+                            <Text mt={3} fontWeight="bold">
                               {"by " + blog.by || "Team"}
                             </Text>
-                            <Text fontSize="sm">Posted On {blog.date}</Text>
+                            {/* <Text fontSize="sm">Posted On {blog.date}</Text> */}
                           </Box>
                         </Flex>
                         </CardWithImage>

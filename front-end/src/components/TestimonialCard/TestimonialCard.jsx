@@ -9,7 +9,7 @@ const Testimonial = (testimonialDetails, imageW = "160px") => {
   return (
     <Box width={["100%", "100%", "50%", "50%", "33%"]} px={1} my={1}>
       <Box p={6} height="100%" borderWidth={1} rounded={4} >
-        <Box h="80%">
+        <Box minH="80%">
           <Image src={testimonialDetails.imageUrl} height="80px" maxW={imageW} objectFit="contain"></Image>
           <Text my={8} textAlign="justify" fontWeight={600} lineHeight={1.5}>
             {testimonialDetails.paragraph}

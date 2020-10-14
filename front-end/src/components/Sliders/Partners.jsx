@@ -13,7 +13,7 @@ for (let index = 0; index < 10; index++) {
 
 function Partners(props) {
     return (
-        <Slider options={{cellAlign:"left", pageDots:false, autoPlay:2000}}>
+        <Slider options={{wrapAround:true, freeScroll:true, pageDots:false, autoPlay:2000}}>
             {slides}
         </Slider>
     );

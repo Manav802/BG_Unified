@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Flex, Avatar, Box, Text, Heading } from "@chakra-ui/core";
+import { Image, Flex, Avatar, Box, Text, Heading,Button, } from "@chakra-ui/core";
 import { useRouter } from "next/router";
 import Fade from 'react-reveal/Fade';
 import blogs from "../../database/newsroom";
@@ -58,11 +58,33 @@ function Blogs() {
             </Fade>
           </Box>
      <Section mt={6} py={0} >
+       <Flex>
         <Box fontWeight={["400","500"]} lineHeight={1.6} color="gray.500" width={["100%","100%","72%"]}>
         {blog.content && blog.content.map((body, index) => (
             <Body {...body}></Body>
         ))}
-        </Box>  
+        </Box>
+        <Flex mt={6} display={["none","none","flex"]} alignItems="center" direction="column">
+        {blog.logo && <Box mb={4} borderRadius={"5%"} p={6} shadow="lg">
+        <Image w="200px" src={blog.logo}/>  
+        </Box>
+        }
+        {blog.sideContent && blog.sideContent.map((cont) => (
+          <Box my={3}>
+            {cont}
+            </Box>
+        ))}
+          <Box minW="250px" width={["0%","0%","80%"]} mt={4} fontWeight="500">
+              <Box bg="dark.500" pos="relative" rounded={8} p={12} overflow="hidden" boxShadow="xl" height="100%">
+                <Image zIndex="0" opacity=".7" className="bg-image" src="/assets/images/backgrounds/card.png"></Image>
+                <Flex height="100%" direction="column" justify="space-between">
+                  <Title zIndex="10" textAlign="left" fontSize="3xl" color="white">Let's get IT done.</Title>
+                  <Link href="/solutions"><Button mt={8} as="a" variantColor="primary" className="primary-btn" size="md">Explore Solutions</Button></Link>
+                </Flex>
+              </Box>
+          </Box>
+        </Flex>  
+        </Flex>
       </Section>         
       <Section pt={0} pb={6}>
         <Flex width={["100%","100%","72%"]}>
