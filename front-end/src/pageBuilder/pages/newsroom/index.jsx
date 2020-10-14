@@ -33,3 +33,6 @@ module.exports.radware = radware
 
 import cybersecurity from './cybersecurity'
 module.exports.cybersecurity = cybersecurity
+
+import huawei from './huawei'
+module.exports.huawei = huawei
