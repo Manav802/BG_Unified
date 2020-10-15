@@ -9,7 +9,7 @@ export default [
             type: "imageGroup",
                 my:[0,2],
                 data: {
-                    images: ["/assets/images/services/lb-2.jpg"],
+                    images: ["/assets/images/services/firewall-2.jpg"],
                     borderRadius: 8,
                     width: ['100%',"100%","90%"],
                     height: "300px",
