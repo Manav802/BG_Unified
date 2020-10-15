@@ -8,6 +8,22 @@ export default [
         name: "Advanced Life",
         logo: "/assets/images/brands/advanced_life.png",
         description: "For more than 30 years, led by Maurie and Lesley and with branches around Australia, the advancedlife team has been responsible for countless innovations in the school photography industry. These innovations include the school photobook, high resolution free online portrait download, secure online ordering, and even the printing of students' names under group photos!",
+    }, {
+        name: "Hitachi",
+        logo: "/assets/images/brands/hitachi.png",
+        description: "As one of the oldest technology companies and best known brands in the world, Hitachi Group Companies innovate, build and manufacture IT and operational technology (OT) around the globe and are leaders in their respective industries. Our IoT solutions provide insights that help organizations make more informed decisions to deliver exceptional outcomes and smarter, safer, healthier and more efficient societies. ",
+    }, {
+        name: "Cisco",
+        logo: "/assets/images/brands/cisco.png",
+        description: "Cisco Systems, Inc. is an American multinational technology conglomerate headquartered in San Jose, California, in the center of Silicon Valley. Cisco develops, manufactures and sells networking hardware, software, telecommunications equipment and other high-technology services and products.Through its numerous acquired subsidiaries, such as OpenDNS, Webex, Jabber and Jasper, Cisco specializes in specific tech markets, such as the Internet of Things (IoT), domain security and energy management. Cisco is incorporated in California.",
+    }, {
+        name: "Riverbed",
+        logo: "/assets/images/brands/Icons/riverbed.png",
+        description: "The Riverbed Network and Application Performance Platform enables organizations to visualize, optimize, accelerate and remediate the performance of any network for any application. Our secure, open and flexible platform is comprised of best-in-class network performance management, WAN optimization, application acceleration and SD-WAN solutions.",
+    }, {
+        name: "VMware",
+        logo: "/assets/images/brands/Icons/vmware.png",
+        description: "VMware, Inc. is an American publicly traded software company from California, USA. It provides cloud computing and virtualization software and services. It was one of the first commercially successful companies to virtualize the x86 architecture.",
     },
     {
         name: "AGC",
