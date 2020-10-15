@@ -52,7 +52,7 @@ function Blogs() {
           <Image position="absolute" height="100%" zIndex="0" top={0} left={0}  opacity=".3" objectFit="cover" width="100%" src={blog.image}></Image>
             <Fade distance="5%" duration={500} top>
             <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
-            <Heading width="fit-content" rounded={8} zIndex="100" size="xs" textAlign="center" color="white" bg="primary.500" py={1} px={2} mb={4}>{blog.category}</Heading>
+            <Link href={`/newsroom?tab=${blog.category}`}><a><Heading width="fit-content" rounded={8} zIndex="100" size="xs" textAlign="center" color="white" bg="primary.500" py={1} px={2} mb={4}>{blog.category}</Heading></a></Link>
             <Title textAlign="left" zIndex="100" fontSize={["24px","48px"]}>{blog.title}</Title>
             </Section>
             </Fade>
@@ -70,16 +70,16 @@ function Blogs() {
         </Box>
         }
         {blog.sideContent && blog.sideContent.map((cont) => (
-          <Box my={3}>
+          <Box mb={4}>
             {cont}
             </Box>
         ))}
-          <Box minW="250px" width={["0%","0%","80%"]} mt={4} fontWeight="500">
-              <Box bg="dark.500" pos="relative" rounded={8} p={12} overflow="hidden" boxShadow="xl" height="100%">
+          <Box minW="250px" width={["0%","0%","80%"]} fontWeight="500">
+              <Box bg="dark.500" pos="relative" rounded={8} px={8} py={12} overflow="hidden" boxShadow="xl" height="100%">
                 <Image zIndex="0" opacity=".7" className="bg-image" src="/assets/images/backgrounds/card.png"></Image>
                 <Flex height="100%" direction="column" justify="space-between">
                   <Title zIndex="10" textAlign="left" fontSize="3xl" color="white">Let's get IT done.</Title>
-                  <Link href="/solutions"><Button mt={8} as="a" variantColor="primary" className="primary-btn" size="md">Explore Solutions</Button></Link>
+                  <Link href="/solutions"><Button mt={8} as="a" variant="ghost" variantColor="red" size="md">Explore Solutions</Button></Link>
                 </Flex>
               </Box>
           </Box>
