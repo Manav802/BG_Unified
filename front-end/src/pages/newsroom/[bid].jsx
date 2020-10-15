@@ -75,11 +75,11 @@ function Blogs() {
             </Box>
         ))}
           <Box minW="250px" width={["0%","0%","80%"]} mt={4} fontWeight="500">
-              <Box bg="dark.500" pos="relative" rounded={8} p={12} overflow="hidden" boxShadow="xl" height="100%">
+              <Box bg="dark.500" pos="relative" rounded={8} px={8} py={12} overflow="hidden" boxShadow="xl" height="100%">
                 <Image zIndex="0" opacity=".7" className="bg-image" src="/assets/images/backgrounds/card.png"></Image>
                 <Flex height="100%" direction="column" justify="space-between">
                   <Title zIndex="10" textAlign="left" fontSize="3xl" color="white">Let's get IT done.</Title>
-                  <Link href="/solutions"><Button mt={8} as="a" variantColor="primary" className="primary-btn" size="md">Explore Solutions</Button></Link>
+                  <Link href="/solutions"><Button mt={8} as="a" variant="ghost" variantColor="red" size="md">Explore Solutions</Button></Link>
                 </Flex>
               </Box>
           </Box>
