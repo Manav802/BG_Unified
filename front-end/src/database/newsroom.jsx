@@ -34,6 +34,7 @@ const blogs = [
         category: "Updates",
         tags: ["Huawei", "virtual desktop" , "bare metal" , "VM" , "VCS" , "free services" , "Remote Phone System" , "Contact center", "DC" , "RDSaaS" , "ConstantEFG" , "Uplink" , "E-mail Filtering"],
         link: "1-businessop-during-covid",
+        redirectStatus: false,
         content: content.businessop,
     },
     {

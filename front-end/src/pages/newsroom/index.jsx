@@ -141,8 +141,10 @@ function Newsroom(){
                   {["Updates", "Case Study"].map(text => <TabPanel>
                   <Fade duration={300} cascade distance="5%" bottom>
                       <Flex wrap="wrap">
-                    {newsroom.map(blog =>{if(blog.category === text) return(<>
-                    <Box width={["100%","100%","50%","50%","33%"]} px={3} my={3} fontWeight="500">
+                    {newsroom.map(blog =>{if(blog.category === text) {
+                        if(blog.redirectStatus === false) return <div>Hello</div>
+                        
+                        else return <Box width={["100%","100%","50%","50%","33%"]} px={3} my={3} fontWeight="500">
                         <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}><a>
                           <CardWithImage
                           src={blog.image}
@@ -164,9 +166,7 @@ function Newsroom(){
                         </a>
                         </Link>
                         </Box>
-                        </>
-
-                        )})}
+                        }})}
                         </Flex>
                         </Fade>
                   </TabPanel>)}

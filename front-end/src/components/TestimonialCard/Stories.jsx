@@ -7,9 +7,9 @@ import Row from "../../pageBuilder/Row";
 
 const Testimonial = (testimonialDetails, imageW = "160px") => {
   return (
-    <Box width={["100%", "100%", "50%", "50%"]} px={5} my={5}>
+    <Box w="100%" px={3} my={5}>
       <Box p={6} height="100%" borderWidth={1} rounded={4} >
-        <Box minH="80%">
+        <Box>
           <Image src={testimonialDetails.imageUrl} height="80px" maxW={imageW} objectFit="contain"></Image>
           <Text my={8} textAlign="justify" fontWeight={600} lineHeight={1.5}>
             {testimonialDetails.paragraph || testimonialDetails.description}
@@ -46,4 +46,4 @@ function TestimonialCard({ testimonials }) {
   );
 }
 
-export default TestimonialCard;
+export default Testimonial;

@@ -9,11 +9,11 @@ function Training(props) {
     return <>
         <Section>
             <Row align="center" justify="space-between">
-                <Box my={[3, 3]} width={["70%", "60%", "60%", 1 / 3.5]} >
-                    <Image objectFit="contain" src={"assets/images/brands/Icons/" + props.image}>
+                <Box width="256px" >
+                    <Image objectFit="contain" height="128px" src={"assets/images/brands/Icons/" + props.image}>
                     </Image>
                 </Box>
-                <Box width={["100%", "100%", "100%", 2.4 / 3.5]}>
+                <Box width="100%">
                     <Text
                         fontSize={[32, 36, 40, 48]}>
                         {props.title}

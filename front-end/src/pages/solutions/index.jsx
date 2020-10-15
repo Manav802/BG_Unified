@@ -123,10 +123,10 @@ function OurSolutions(){
           <Tabs index={tabIndex} align="center" onChange={handleTabsChange} variantColor="red.500">
             <TabList fontFamily="Nexa Bold">
               <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">IT & Infrastructure</Box></Tab>
-               <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Network</Box></Tab>
-                <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Cyber Security</Box></Tab>
-                 <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Collaborative</Box></Tab>
-                  <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Professional</Box></Tab>
+              <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Network</Box></Tab>
+              <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Cyber Security</Box></Tab>
+              <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Collaborative</Box></Tab>
+              <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Professional</Box></Tab>
             </TabList>
             <TabPanels>
               <TabPanel>
