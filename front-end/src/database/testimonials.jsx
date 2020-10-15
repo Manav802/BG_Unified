@@ -1,5 +1,15 @@
 export default [
-    
+
+    {
+        id: 1,
+        imageUrl: "assets/images/brands/nsw_gov.png",
+        imageAlt: "Company Logo",
+        author: "Simran Singh B. ",
+        paragraph: "BGUS is a very capable and reliable customer-first IT firm. Their disposition is calm and joyful, despite challenges, and they are infectiously inspired to maintain a very high standard. For anyone with the opportunity to employ their expertise,  disposition and resourceful nature: I urge you to take it.",
+        CompanyName: "ASIC",
+        designation: "Graduate",
+        emoji: ""
+    },
     {
         id: 2,
         imageUrl: "assets/images/brands/nsw_gov.png",
@@ -8,7 +18,7 @@ export default [
         paragraph: "I was privileged to have worked with BG Unified Solutions at eHealth NSW while the firm was the leading network solution architect for a major service transition / transformation program. BGUS is a team, which gets things done.",
         CompanyName: "eHealth NSW",
         designation: "IT Professional",
-        emoji:""
+        emoji: ""
     },
     {
         id: 3,
@@ -18,7 +28,7 @@ export default [
         paragraph: "BG Unified Solutions has a passion for customer delivery and the management of risk out of the supply chain that supports them. If providers of services to BG Solutions let them down or do not enhance and improve the quality of BG solutions customer experiences.",
         CompanyName: "Datacom",
         designation: "Associate Director",
-        emoji:""
+        emoji: ""
     },
     {
         id: 4,
@@ -28,27 +38,27 @@ export default [
         paragraph: "I worked with BGUS during their time at Revenue NSW (OSR). They undertook a massive task of F5 load balancer upgrade - and things like that never go smoothly. What was absolutely amazing is the speed with which they resolved every single issue.",
         CompanyName: "Revenue NSW",
         designation: "Senior Application Developer",
-        emoji:""
+        emoji: ""
     },
     {
         id: 5,
         author: "Houman Asefi",
         imageUrl: "assets/images/brands/letsSaas.png",
         imageAlt: "Company Logo",
-        paragraph:"BGUS comprises of personnels that are a rare combination of technical mastery and entrepreneurship mindset with the mojo of 'getting things done fast'. They have the capacity of an engineering business unit.",
+        paragraph: "BGUS comprises of personnels that are a rare combination of technical mastery and entrepreneurship mindset with the mojo of 'getting things done fast'. They have the capacity of an engineering business unit.",
         CompanyName: "Let’s SaaS",
         designation: "Sales Strategy Executive",
-        emoji:""
+        emoji: ""
     },
     {
         id: 6,
         author: "Nicholas Falloon",
         imageUrl: "assets/images/brands/telstra.png",
         imageAlt: "Company Logo",
-        paragraph:"I worked with BGUS through a number of infrastructure refreshes, Telephony implementations and operational support roles. The teammates were always the deep technical go-to and SME for networks.",
+        paragraph: "I worked with BGUS through a number of infrastructure refreshes, Telephony implementations and operational support roles. The teammates were always the deep technical go-to and SME for networks.",
         CompanyName: "Telstra",
         designation: "Mobility Service Architec",
-        emoji:""
+        emoji: ""
     },
     {
         id: 7,
@@ -58,19 +68,8 @@ export default [
         paragraph: "I have had the ... opportunity to have worked with BGUS with multiple vendors. They have a brilliant customer orientated demeanor and their technical skills are second to none. When it comes to Information Security I can always rely on BGUS.",
         CompanyName: "Rackspace Technology",
         designation: "Senior Enterprise Account Executive",
-        emoji:""
+        emoji: ""
     },
-    {
-        id: 8,
-        imageUrl: "assets/images/brands/optus.png",
-        imageAlt: "Company Logo",
-        author: "Sergio Anacleto",
-        paragraph: "I had the pleasure to work with BGUS on a very critical, high pressure environment by migrating a dual core router site within two days. The routers being a dual Cisco GSR and moving across a dual core ASR9K environment. I saw them take the lead across 5 engineers, and it was great having worked with BGUS. If you are an organisation looking to get a critical project across the line, I would recommend you look at Bg Unified Solutions up!",
-        CompanyName: "OPTUS",
-        designation: "Senior Network Engineer",
-        emoji:""
-    },
-    
     {
         id: 9,
         imageUrl: "assets/images/brands/nsw_gov.png",
@@ -81,10 +80,20 @@ export default [
         </span>,
         CompanyName: "Service NSW, NSW Government",
         designation: "Project Manager",
-        emoji:""
+        emoji: ""
     },
     {
-        id: 9,
+        id: 8,
+        imageUrl: "assets/images/brands/optus.png",
+        imageAlt: "Company Logo",
+        author: "Sergio Anacleto",
+        paragraph: "I had the pleasure to work with BGUS on a very critical, high pressure environment by migrating a dual core router site within two days. The routers being a dual Cisco GSR and moving across a dual core ASR9K environment. I saw them take the lead across 5 engineers, and it was great having worked with BGUS. If you are an organisation looking to get a critical project across the line, I would recommend you look at Bg Unified Solutions up!",
+        CompanyName: "OPTUS",
+        designation: "Senior Network Engineer",
+        emoji: ""
+    },
+    {
+        id: 10,
         imageUrl: "/assets/images/brands/cisco.png",
         imageAlt: "Company Logo",
         author: "Dave Moy",
@@ -100,20 +109,20 @@ export default [
         `,
         CompanyName: "Dicker Data",
         designation: "Cisco Business Development Manager",
-        emoji:""
+        emoji: ""
     },
     {
-        id: 10,
+        id: 11,
         imageUrl: "assets/images/brands/ambition_tech.png",
         imageAlt: "Company Logo",
         author: "Kelly McCaughey",
         paragraph: "I have worked with BG Unified Solutions for approximately 1 year. I have found BG Unified Solutions to be a highly reputable company with a work ethic and reliability that is second to none. I would highly recommend BG Unified Solutions to any client, and indeed have introduced them to a number of Ambition’s clients in recent times.",
         CompanyName: "Ambition Technology",
         designation: "Infrastructure Consultant",
-        emoji:""
+        emoji: ""
     },
     {
-        id: 11,
+        id: 12,
         imageUrl: "assets/images/brands/optus.png",
         imageAlt: "Company Logo",
         author: "Tushar Bhatt",
@@ -125,17 +134,46 @@ export default [
         `,
         CompanyName: "OPTUS",
         designation: "Senior Network Engineer",
-        emoji:""
+        emoji: ""
+    }, {
+
+        id: 14,
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "Company Logo",
+        author: "Matt Campbell",
+        paragraph: " BGUS’ people worked on a short contract for me with one of my clients.They went above and beyond the expectations of everyone involved.The team worked 14 hour days on weekends and he worked 16 hour week days when required to help the client meet a deadline.I cannot praise the efforts of BGUS enough.They are an expert in their field, their work ethic and commitment is fantastic.",
+        CompanyName: "Accelerate Loans",
+        designation: "Director",
+        emoji: ""
     },
     {
-        id: 12,
+        id: 15,
         imageUrl: "assets/images/brands/sabre_pacific.png",
         imageAlt: "Company Logo",
         author: "Munish Verma",
         paragraph: "BG Unified Solutions worked together with our in-house engineers, whom we engaged to redesign our network. Saurabh was the engineer in-charge, who designed the whole solution to reduce the overall complexity and remove bottlenecks. They worked cohesively with our in-house team and brought great technical skills & expertise on Cisco switches, routers, firewalls, content switches, IPS etc. Throughout the project, their dedication was remarkable. They ensured that project is completed with minimum end-user impact and since all the implementations were performed in middle of night, they made themselves personally available for mid-night implementations and any post-implementation support. Would highly recommend their skills, expertise and professional services.",
         CompanyName: "Sabre Pacific Pty Ltd",
         designation: "Head of Technology Services",
-        emoji:""
+        emoji: ""
     },
-
+    {
+        id: 14,
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "Company Logo",
+        author: "Runi Nielsen",
+        paragraph: "BGUS has the ultimate team of technical engineers with an attitude that ‘nothing is too hard’ with a focus that ‘an affordable high quality solution will be found’. The team never stops seeking improvement, in both themselves and in delivery of solutions. They are a highly regarded and respected team.",
+        CompanyName: "Candido",
+        designation: "",
+        emoji: ""
+    },
+    // {
+    //     id: 16,
+    //     imageUrl: "assets/images/brands/sabre_pacific.png",
+    //     imageAlt: "Company Logo",
+    //     author: "Julian Evans JP",
+    //     paragraph: "I worked with BG Unified Solutions briefly while scoping work for an upgrade to UCCX Premium. They quoted on this work with an impressive turn-around time and provided an in-depth analysis of our network topology to facilitate a more effective discussion on project possibilities.From the start, they showed a huge level of technical knowledge and enthusiasm and I hope to have the opportunity to work with them in the future.",
+    //     CompanyName: "Accelerated Outcomes for Volunteering and Charity Services",
+    //     designation: "Volunteer",
+    //     emoji: ""
+    // },
 ]
