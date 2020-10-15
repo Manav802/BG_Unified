@@ -70,11 +70,11 @@ function Blogs() {
         </Box>
         }
         {blog.sideContent && blog.sideContent.map((cont) => (
-          <Box my={3}>
+          <Box mb={4}>
             {cont}
             </Box>
         ))}
-          <Box minW="250px" width={["0%","0%","80%"]} mt={4} fontWeight="500">
+          <Box minW="250px" width={["0%","0%","80%"]} fontWeight="500">
               <Box bg="dark.500" pos="relative" rounded={8} px={8} py={12} overflow="hidden" boxShadow="xl" height="100%">
                 <Image zIndex="0" opacity=".7" className="bg-image" src="/assets/images/backgrounds/card.png"></Image>
                 <Flex height="100%" direction="column" justify="space-between">
