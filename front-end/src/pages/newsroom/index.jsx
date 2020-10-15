@@ -121,15 +121,15 @@ function Newsroom(){
                           height={["96px", "216px"]}
                           >
                           <Text mt={1} opacity={.7} fontSize={["sm","md"]} overflow="hidden" height={["40px", "auto"]}>{blog.description}</Text>
-                          <Flex display={["none","flex"]} mt={4}>
+                          {/* <Flex display={["none","flex"]} mt={4}>
                           <Avatar src={blog.avatar} />
                           <Box ml="3">
-                            <Text mt={2} fontWeight="bold">
-                              {"by " + blog.by || "Team"}
+                            <Text fontWeight="bold">
+                              by<br/>{blog.by || "Team"}
                             </Text>
-                            {/* <Text fontSize="sm">Posted On {blog.date}</Text> */}
+                            <Text fontSize="sm">Posted On {blog.date}</Text>
                           </Box>
-                        </Flex>
+                          </Flex> */}
                         </CardWithImage>
                         </a>
                         </Link>
@@ -151,15 +151,15 @@ function Newsroom(){
                           height={["96px", "216px"]}
                           >
                           <Text mt={1} opacity={.7} fontSize={["sm","md"]} overflow="hidden" height={["40px", "auto"]}>{blog.description}</Text>
-                          <Flex display={["none","flex"]} mt={4}>
+                          {/* <Flex display={["none","flex"]} mt={4}>
                           <Avatar src={blog.avatar} />
                           <Box ml="3">
-                            <Text mt={2} fontWeight="bold">
-                              {"by " + blog.by || "Team"}
+                            <Text fontWeight="bold">
+                              by<br/>{blog.by || "Team"}
                             </Text>
-                            {/* <Text fontSize="sm">Posted On {blog.date}</Text> */}
+                            <Text fontSize="sm">Posted On {blog.date}</Text>
                           </Box>
-                        </Flex>
+                        </Flex> */}
                         </CardWithImage>
                         </a>
                         </Link>
