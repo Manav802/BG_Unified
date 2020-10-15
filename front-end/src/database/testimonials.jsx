@@ -5,7 +5,7 @@ export default [
         imageUrl: "assets/images/brands/nsw_gov.png",
         imageAlt: "Company Logo",
         author: "Eldon Wong",
-        paragraph: "I was privileged to have worked with BG Unified Solutions at eHealth NSW while the firm was the leading network solution architect for a major service transition / transformation program. BGUS is a team, which gets things done. They not only understand complex business requirements but are also able to navigate around legacy design constraints to deliver best-of-class enterprise technical solutions, bringing clarity to business stakeholders and technical implementers alike.",
+        paragraph: "I was privileged to have worked with BG Unified Solutions at eHealth NSW while the firm was the leading network solution architect for a major service transition / transformation program. BGUS is a team, which gets things done.",
         CompanyName: "eHealth NSW",
         designation: "IT Professional",
         emoji:""
@@ -15,7 +15,7 @@ export default [
         imageUrl: "assets/images/brands/datacom.png",
         imageAlt: "Company Logo",
         author: "Bruce McEwen",
-        paragraph: "BG Unified Solutions has a passion for customer delivery and the management of risk out of the supply chain that supports them. If providers of services to BG Solutions let them down or do not enhance and improve the quality of BG solutions customer experiences they are prepared to look elsewhere. That’s one of the ingredients for success.",
+        paragraph: "BG Unified Solutions has a passion for customer delivery and the management of risk out of the supply chain that supports them. If providers of services to BG Solutions let them down or do not enhance and improve the quality of BG solutions customer experiences.",
         CompanyName: "Datacom",
         designation: "Associate Director",
         emoji:""
@@ -25,7 +25,7 @@ export default [
         imageUrl: "assets/images/brands/nsw_gov.png",
         imageAlt: "Company Logo",
         author: "Kate Romanenko",
-        paragraph: "I worked with BGUS during their time at Revenue NSW (OSR). They undertook a massive task of F5 load balancer upgrade - and things like that never go smoothly. What was absolutely amazing is the speed with which they resolved every single issue we encountered after. They were on top of everything - managing investigation, resolution and communication with every affected 3rd-party. Outstanding job! Efficient, reliable, professional - absolute delight to work with.",
+        paragraph: "I worked with BGUS during their time at Revenue NSW (OSR). They undertook a massive task of F5 load balancer upgrade - and things like that never go smoothly. What was absolutely amazing is the speed with which they resolved every single issue.",
         CompanyName: "Revenue NSW",
         designation: "Senior Application Developer",
         emoji:""
@@ -35,7 +35,7 @@ export default [
         author: "Houman Asefi",
         imageUrl: "assets/images/brands/letsSaas.png",
         imageAlt: "Company Logo",
-        paragraph:"BGUS comprises of personnels that are a rare combination of technical mastery and entrepreneurship mindset with the mojo of 'getting things done fast'. They have the capacity of an engineering business unit and step up to help whenever they can. Their customers can testify on the company’s unique work and are proof of their dedication and hard work. Wish you all the best BG Unified Solutions.",
+        paragraph:"BGUS comprises of personnels that are a rare combination of technical mastery and entrepreneurship mindset with the mojo of 'getting things done fast'. They have the capacity of an engineering business unit.",
         CompanyName: "Let’s SaaS",
         designation: "Sales Strategy Executive",
         emoji:""
@@ -45,7 +45,7 @@ export default [
         author: "Nicholas Falloon",
         imageUrl: "assets/images/brands/telstra.png",
         imageAlt: "Company Logo",
-        paragraph:"I worked with BGUS through a number of infrastructure refreshes, Telephony implementations and operational support roles. The teammates were always the deep technical go-to and SME for networks, however, their broad knowledge and expertise across enterprise infrastructure and platforms meant they were able to see and solve problems from many perspectives which is invaluable.",
+        paragraph:"I worked with BGUS through a number of infrastructure refreshes, Telephony implementations and operational support roles. The teammates were always the deep technical go-to and SME for networks.",
         CompanyName: "Telstra",
         designation: "Mobility Service Architec",
         emoji:""
@@ -55,7 +55,7 @@ export default [
         imageUrl: "assets/images/brands/Rackspace_Technology.png",
         imageAlt: "Company Logo",
         author: "Bryan Cawse",
-        paragraph: "I have had the ... opportunity to have worked with BGUS with multiple vendors. They have a brilliant customer orientated demeanor and their technical skills are second to none. When it comes to Information Security I can always rely on BGUS to connect the technical elements to that of the customer's needs. I would highly recommend that anyone who feels like they are drowning when trying to understand the technical world of security, reach out to BGUS for clarity.",
+        paragraph: "I have had the ... opportunity to have worked with BGUS with multiple vendors. They have a brilliant customer orientated demeanor and their technical skills are second to none. When it comes to Information Security I can always rely on BGUS.",
         CompanyName: "Rackspace Technology",
         designation: "Senior Enterprise Account Executive",
         emoji:""
