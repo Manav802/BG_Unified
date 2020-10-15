@@ -1,15 +1,15 @@
 export default [
 
-    {
-        id: 1,
-        imageUrl: "assets/images/brands/nsw_gov.png",
-        imageAlt: "Company Logo",
-        author: "Simran Singh B. ",
-        paragraph: "BGUS is a very capable and reliable customer-first IT firm. Their disposition is calm and joyful, despite challenges, and they are infectiously inspired to maintain a very high standard. For anyone with the opportunity to employ their expertise,  disposition and resourceful nature: I urge you to take it.",
-        CompanyName: "ASIC",
-        designation: "Graduate",
-        emoji: ""
-    },
+    // {
+    //     id: 1,
+    //     imageUrl: "assets/images/brands/nsw_gov.png",
+    //     imageAlt: "Company Logo",
+    //     author: "Simran Singh B. ",
+    //     paragraph: "BGUS is a very capable and reliable customer-first IT firm. Their disposition is calm and joyful, despite challenges, and they are infectiously inspired to maintain a very high standard. For anyone with the opportunity to employ their expertise,  disposition and resourceful nature: I urge you to take it.",
+    //     CompanyName: "ASIC",
+    //     designation: "Graduate",
+    //     emoji: ""
+    // },
     {
         id: 2,
         imageUrl: "assets/images/brands/nsw_gov.png",
@@ -135,17 +135,17 @@ export default [
         CompanyName: "OPTUS",
         designation: "Senior Network Engineer",
         emoji: ""
-    }, {
-
-        id: 14,
-        imageUrl: "assets/images/brands/sabre_pacific.png",
-        imageAlt: "Company Logo",
-        author: "Matt Campbell",
-        paragraph: " BGUS’ people worked on a short contract for me with one of my clients.They went above and beyond the expectations of everyone involved.The team worked 14 hour days on weekends and he worked 16 hour week days when required to help the client meet a deadline.I cannot praise the efforts of BGUS enough.They are an expert in their field, their work ethic and commitment is fantastic.",
-        CompanyName: "Accelerate Loans",
-        designation: "Director",
-        emoji: ""
     },
+    // {
+    //     id: 14,
+    //     imageUrl: "assets/images/brands/sabre_pacific.png",
+    //     imageAlt: "Company Logo",
+    //     author: "Matt Campbell",
+    //     paragraph: " BGUS’ people worked on a short contract for me with one of my clients.They went above and beyond the expectations of everyone involved.The team worked 14 hour days on weekends and he worked 16 hour week days when required to help the client meet a deadline.I cannot praise the efforts of BGUS enough.They are an expert in their field, their work ethic and commitment is fantastic.",
+    //     CompanyName: "Accelerate Loans",
+    //     designation: "Director",
+    //     emoji: ""
+    // },
     {
         id: 15,
         imageUrl: "assets/images/brands/sabre_pacific.png",
@@ -156,16 +156,16 @@ export default [
         designation: "Head of Technology Services",
         emoji: ""
     },
-    {
-        id: 14,
-        imageUrl: "assets/images/brands/sabre_pacific.png",
-        imageAlt: "Company Logo",
-        author: "Runi Nielsen",
-        paragraph: "BGUS has the ultimate team of technical engineers with an attitude that ‘nothing is too hard’ with a focus that ‘an affordable high quality solution will be found’. The team never stops seeking improvement, in both themselves and in delivery of solutions. They are a highly regarded and respected team.",
-        CompanyName: "Candido",
-        designation: "",
-        emoji: ""
-    },
+    // {
+    //     id: 14,
+    //     imageUrl: "assets/images/brands/sabre_pacific.png",
+    //     imageAlt: "Company Logo",
+    //     author: "Runi Nielsen",
+    //     paragraph: "BGUS has the ultimate team of technical engineers with an attitude that ‘nothing is too hard’ with a focus that ‘an affordable high quality solution will be found’. The team never stops seeking improvement, in both themselves and in delivery of solutions. They are a highly regarded and respected team.",
+    //     CompanyName: "Candido",
+    //     designation: "",
+    //     emoji: ""
+    // },
     // {
     //     id: 16,
     //     imageUrl: "assets/images/brands/sabre_pacific.png",
