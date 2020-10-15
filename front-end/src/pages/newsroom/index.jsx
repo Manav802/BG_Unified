@@ -124,7 +124,7 @@ function Newsroom(){
                           <Flex display={["none","flex"]} mt={4}>
                           <Avatar src={blog.avatar} />
                           <Box ml="3">
-                            <Text mt={3} fontWeight="bold">
+                            <Text mt={2} fontWeight="bold">
                               {"by " + blog.by || "Team"}
                             </Text>
                             {/* <Text fontSize="sm">Posted On {blog.date}</Text> */}
@@ -154,10 +154,10 @@ function Newsroom(){
                           <Flex display={["none","flex"]} mt={4}>
                           <Avatar src={blog.avatar} />
                           <Box ml="3">
-                            <Text fontWeight="bold">
+                            <Text mt={2} fontWeight="bold">
                               {"by " + blog.by || "Team"}
                             </Text>
-                            <Text fontSize="sm">Posted On {blog.date}</Text>
+                            {/* <Text fontSize="sm">Posted On {blog.date}</Text> */}
                           </Box>
                         </Flex>
                         </CardWithImage>
