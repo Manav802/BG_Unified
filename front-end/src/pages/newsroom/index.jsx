@@ -146,7 +146,7 @@ function Newsroom(){
                         <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}><a>
                           <CardWithImage
                           src={blog.image}
-                          title={blog.title}
+                          title={blog.headertitle || blog.title}
                           columns={["128px auto", "auto"]}
                           height={["96px", "216px"]}
                           >
