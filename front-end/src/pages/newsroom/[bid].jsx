@@ -52,7 +52,7 @@ function Blogs() {
           <Image position="absolute" height="100%" zIndex="0" top={0} left={0}  opacity=".3" objectFit="cover" width="100%" src={blog.image}></Image>
             <Fade distance="5%" duration={500} top>
             <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
-            <Heading width="fit-content" rounded={8} zIndex="100" size="xs" textAlign="center" color="white" bg="primary.500" py={1} px={2} mb={4}>{blog.category}</Heading>
+            <Link href={`/newsroom?tab=${blog.category}`}><a><Heading width="fit-content" rounded={8} zIndex="100" size="xs" textAlign="center" color="white" bg="primary.500" py={1} px={2} mb={4}>{blog.category}</Heading></a></Link>
             <Title textAlign="left" zIndex="100" fontSize={["24px","48px"]}>{blog.title}</Title>
             </Section>
             </Fade>

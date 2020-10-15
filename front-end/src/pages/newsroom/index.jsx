@@ -26,7 +26,15 @@ function Newsroom(){
       setData(dynamicSearch(e.target.value))
     }
     const { tab } = router.query;
-    useEffect(() => {if(tab=='Case Study'){ setTabIndex(2) }}, [tab]) 
+    useEffect(() => {switch(tab){
+      case "Updates":
+        setTabIndex(1);
+        break;
+      case "Case Study":
+        setTabIndex(2);
+        break;
+    }}
+                      , [tab]) 
     
     return (
       <div className="newsroom">
