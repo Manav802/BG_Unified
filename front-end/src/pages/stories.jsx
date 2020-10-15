@@ -3,7 +3,7 @@ import Head from "next/head";
 import Fade from 'react-reveal/Fade';
 import Section from "../pageBuilder/Section";
 import Title from "../pageBuilder/Title";
-import Stories from "../components/TestimonialCard/CustomerStories";
+import Stories from "../components/TestimonialCard/Stories";
 import TESTIMONIALS from "../database/testimonials";
 function main() {
     return <>

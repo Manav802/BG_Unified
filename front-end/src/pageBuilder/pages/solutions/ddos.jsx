@@ -51,37 +51,37 @@ export default [
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/shopping/chart-line-1.svg", mt: 4, title: "Multi-Layered Protection"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/code/stack.svg", mt: 4, title: "Multi-Layered Protection"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/design/line.svg", mt: 4, title: "Comprehensive"}
+            data: {align: "center", titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/design/bucket.svg", mt: 4, title: "Comprehensive"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/code/git-4.svg",mt: 4, title: "Competent and Responsive Team"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/devices/headphones.svg",mt: 4, title: "Competent and Responsive Team"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/devices/headphones.svg", mt: 4, title: "Extremely Reliable"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/general/shield-check.svg", mt: 4, title: "Extremely Reliable"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/home/clock.svg", mt: 4, title: "Variety of domains"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/code/git-4.svg", mt: 4, title: "Variety of domains"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center", titleSize:"md",iconColor:"red.500", svg:"/assets/images/icons/library/general/size.svg", mt: 4, title: "Fast mitigation"}
+            data: {align: "center", titleSize:"md",iconColor:"red.500", svg:"/assets/images/icons/library/general/thunder-move.svg", mt: 4, title: "Fast mitigation"}
         },
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md",iconColor:"red.500", svg:"/assets/images/icons/library/home/chair-1.svg", mt: 4, title: "Geographically Distributed"}
+            data: {align: "center",titleSize:"md",iconColor:"red.500", svg:"/assets/images/icons/library/shopping/chart-line-1.svg", mt: 4, title: "Geographically Distributed"}
         }
     ]
 },
