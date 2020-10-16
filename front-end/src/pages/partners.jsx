@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Box, Flex, Heading, Text, Image } from "@chakra-ui/core";
+import React from 'react';
+import { Box, Heading, Image } from "@chakra-ui/core";
 import Head from "next/head";
 import Fade from 'react-reveal/Fade';
 import Section from "../pageBuilder/Section";
