@@ -30,7 +30,7 @@ function PricingQuote(props) {
 
 function PricingCard(props) {
   return (
-    <Box pt="32px">
+    <Box pt="32px" height="100%">
       <Box bg="white" h="100%" mx={1} borderColor={props.popular ? "red.500" : "black.200"} boxShadow={props.popular && "xl"} borderWidth={1}>
       <Flex align="center" direction="column" justify="center" bg={props.popular ? "primary.500" : "white"} p={8} mt="-32px" mx="32px" boxShadow="lg">
         <Image alt="" style={{filter: props.popular && "brightness(8) saturate(0)"}} src={props.icon} padding="8px" height="64px"></Image>

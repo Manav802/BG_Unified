@@ -93,7 +93,7 @@ function GPUPricing(props) {
         hourlyBackups ? ",Enabled Hourly Backups" : "";
         
     return (
-            <div id="pricing" className="container-fluid">
+            <div id="pricing" className="container">
                 <Carousel/>
             </div>
         )
