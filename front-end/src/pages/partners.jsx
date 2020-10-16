@@ -13,7 +13,7 @@ function main(props) {
     return (
         <>
             <Head>
-                <title>The team behind the web - BG Unified</title>
+                <title>Our partners | BG Unified</title>
             </Head>
             <Box zIndex="10" pos="relative" bg="dark.500">
                 <Image position="absolute" height="100%" zIndex="0" top={0} left={0} style={{ mixBlendMode: "overlay" }} opacity="1" objectFit="cover" width="100%" src="/assets/images/backgrounds/tech.jpg"></Image>
@@ -26,15 +26,15 @@ function main(props) {
             </Box>
             <Section>
                 <Row justify="center">
-            {partners.map(info => 
-                    <Box width={["100%", "100%", 6 / 12]} p={3}>
-                        <Box height="100%" bg="white" rounded={8} boxShadow="xl" p={10} textAlign="justify">
-                            <Image src={info.logo} objectFit="contain" maxW="160px" mb={4} height="64px"></Image>
-                            <Heading size="lg" mb={3}>{info.name}</Heading>
-                            {info.description}
+                    {partners.map(info =>
+                        <Box width={["100%", "100%", 6 / 12]} p={3}>
+                            <Box height="100%" bg="white" rounded={8} boxShadow="xl" p={10} textAlign="justify">
+                                <Image src={info.logo} objectFit="contain" maxW="160px" mb={4} height="64px"></Image>
+                                <Heading size="lg" mb={3}>{info.name}</Heading>
+                                {info.description}
+                            </Box>
                         </Box>
-                    </Box>
-                )}
+                    )}
                 </Row>
             </Section>
         </>
