@@ -55,14 +55,4 @@ export default [
         logo: "/assets/images/brands/microfocus.svg",
         description: "Micro Focus is one of the world’s largest enterprise software providers, delivering the mission-critical software that keeps the digital world running. We combine pragmatism, discipline, and customer-centric innovation to deliver trusted, proven solutions that customers need in order to succeed in today’s rapidly evolving marketplace."
     },
-    {
-        name: "NSW-govt. Agency using their services",
-        logo: "/assets/images/brands/nsw_gov.png",
-        description: "services-The Government of New South Wales, known most often as the NSW Government, is the australian state democratic administrative authority of New South Wales"
-    },
-    {
-        name: "Victoria - state govt. Using their services",
-        logo: "/assets/images/brands/victoria.png",
-        description: "The Victoria State Government is the executive administrative authority of the Australian state of Victoria."
-    }
 ]
