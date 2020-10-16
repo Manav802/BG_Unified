@@ -24,7 +24,7 @@ function PricingQuote(props) {
           button={props.button}
           buttonStyle={props.buttonStyle}
           title={props.title}
-        ></GetAQuote>
+        >{props.children}</GetAQuote>
   );
 }
 

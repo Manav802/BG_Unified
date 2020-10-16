@@ -59,14 +59,23 @@ function Blogs() {
           </Box>
      <Section mt={6} py={0} >
        <Flex>
-        <Box fontWeight={["400","500"]} lineHeight={1.6} color="gray.500" width={["100%","100%","72%"]}>
+        <Box fontWeight={["400"]} lineHeight={1.6} color="gray.700" width={["100%","100%","72%"]}>
+        {blog.overview && <Box bg="gray.200" textAlign="center" my={6} rounded={8} p={12}>
+            <Heading size="md">Overview</Heading>
+              <Text mt={4}>{blog.overview}</Text>
+        </Box>}
+        {blog.solution &&<Box bg="dark.500" color="white" textAlign="center" my={6} rounded={8} p={12}>
+            <Heading size="md">Solution</Heading>
+            <Text mt={4}>{blog.solution}</Text>
+        </Box>}
         {blog.content && blog.content.map((body, index) => (
             <Body {...body}></Body>
         ))}
         </Box>
-        <Flex mt={6} display={["none","none","flex"]} alignItems="center" direction="column">
-        {blog.logo && <Box mb={4} borderRadius={"5%"} p={6} shadow="lg">
-        <Image w="200px" src={blog.logo}/>  
+        <Flex width={["100%","100%","28%"]} mt={6} display={["none","none","flex"]} alignItems="center" direction="column">
+        {blog.logo && 
+        <Box mb={4} borderRadius={8} mx={8} p={12} shadow="lg">
+          <Image w="100%" src={blog.logo}/>  
         </Box>
         }
         {blog.sideContent && blog.sideContent.map((cont) => (
@@ -86,7 +95,7 @@ function Blogs() {
         </Flex>  
         </Flex>
       </Section>         
-      <Section pt={0} pb={6}>
+      {/* <Section pt={0} pb={6}>
         <Flex width={["100%","100%","72%"]}>
           <Flex >
             <Avatar src={blog.avatar} />
@@ -99,7 +108,7 @@ function Blogs() {
           </Flex>
           <Text ml="auto"  fontSize="md">Posted On <br></br> <b>{blog.date}</b></Text>
           </Flex>
-      </Section>
+      </Section> */}
     </div>
   );
 }

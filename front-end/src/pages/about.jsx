@@ -161,7 +161,7 @@ class about extends Component {
                   </Team>
                 </div>
                 <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-end py-3">
-                  <Link href="/webteam"><a className="text-primary  Nexa-Bold d-flex my-2" href="">Meet the Website IT Team<Box as={FaArrowRight} h="16px" ml="12px" my="4px"></Box></a></Link>
+                  <Link href="/webteam"><a className="text-primary  Nexa-Bold d-flex my-2" href="">Meet the Development Team<Box as={FaArrowRight} h="16px" ml="12px" my="4px"></Box></a></Link>
                 </div>
                 {/* <Section>
                   <Box textAlign="center" className="display5" fontSize={[32, 36, 40, 48]} fontWeight="bold">Our Expertise</Box>

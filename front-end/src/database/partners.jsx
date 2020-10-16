@@ -5,10 +5,6 @@ export default [
         description: "AAPT is a force in the Australian telecommunications industry. Our people, products, network assets and innovation have enabled us to provide our customers with communication services that are reliable, fast and cost effective.",
     },
     {
-        name: "Advanced Life",
-        logo: "/assets/images/brands/advanced_life.png",
-        description: "For more than 30 years, led by Maurie and Lesley and with branches around Australia, the advancedlife team has been responsible for countless innovations in the school photography industry. These innovations include the school photobook, high resolution free online portrait download, secure online ordering, and even the printing of students' names under group photos!",
-    }, {
         name: "Hitachi",
         logo: "/assets/images/brands/hitachi.png",
         description: "As one of the oldest technology companies and best known brands in the world, Hitachi Group Companies innovate, build and manufacture IT and operational technology (OT) around the globe and are leaders in their respective industries. Our IoT solutions provide insights that help organizations make more informed decisions to deliver exceptional outcomes and smarter, safer, healthier and more efficient societies. ",
