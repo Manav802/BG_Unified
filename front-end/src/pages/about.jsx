@@ -166,8 +166,11 @@ class about extends Component {
                 <Section>
                   <Box textAlign="center" className="display5" fontSize={[32, 36, 40, 48]} fontWeight="bold">Our Expertise</Box>
                   <Box textAlign="center" pt={2} fontSize={["lg", "xl"]}>The BG Unified Solutions Team is specializes in</Box>
-                  <Row>
-                    {skills.map((a) => <><Box><Box>{a.title}</Box></Box></>)}
+                  <Row justify="space-between">
+                    {skills.map((a) => <Box width={["100%", "100%", "33%"]}>
+                      <Box fontSize={["lg", "xl"]}>{a.title}</Box>
+                      {a.subtitles && <Box fontSize={["sm", "lg"]}>{a.subtitles.map(b => <Text>{b}</Text>)}</Box>}
+                    </Box>)}
                   </Row>
                 </Section>
               </div>
