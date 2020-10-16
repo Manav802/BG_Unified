@@ -39,8 +39,6 @@ export default [
             }]
     },
     {
-        mt: "-96px",
-        mb: 0,
         py: 0,
         gap: 0,
         containerWidth:"100%",
