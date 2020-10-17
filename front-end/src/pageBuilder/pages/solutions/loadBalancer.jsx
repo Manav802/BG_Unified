@@ -25,21 +25,20 @@ export default [
                 fontSize: ["md","md","md","lg"],
                 title: "Load Balancing Solutions for your Application Servers",
                 titleSize: [28,28,28,32],
-                text: <span>Load balancing is the most scalable 
-                methodology for handling the multitude of requests
-                 from modern multi-application, multi-device workflows.
-                  When traffic is running at normal levels, global 
-                  (geographic) load balancers direct traffic to 
-                  dedicated optimized application servers, rapidly 
-                  redirect traffic from a data center suffering from 
-                  an outage to an available server. </span>
+                text: <span>Load balancing is the most scalable methodology for 
+                    handling many requests from modern multi-application, multi-device 
+                    workflows. When traffic runs at normal levels, global (geographic) 
+                    load balancers direct traffic to dedicated optimized application 
+                    servers, rapidly redirect traffic from a data center suffering from 
+                    an outage to an available server.
+                </span>
             }]
         }]
     },
     {
         title : "Manage your Traffic with Our Load Balancers",
         
-        description: "BG Unified Solutions provide F5 topology for your Load Balancing needs, to manage traffic asserted on your servers and applications. ",
+        description: "BG Unified Solutions provide F5 topology for your Load Balancing needs to manage traffic asserted on your servers and applications.",
 
         my: 0,
         py: 20,
@@ -89,12 +88,11 @@ export default [
     body: [{
         type: "content",
         data: [{
-            text: <span>High traffic sites need the resources to 
-            serve large amounts of unique visitors in a fast and 
-            efficient way. To scale to meet those needs,
-             several web servers, commonly known as a farm, 
-             need to be implemented and a method to route traffic
-              across them in a balanced way.</span>,
+            text: <span>High traffic sites need resources to serve large amounts of unique 
+                visitors quickly and efficiently. To scale to meet those needs, 
+                several web servers, commonly known as a farm, need to be implemented 
+                and route traffic across them in a balanced way.
+            </span>,
             fontSize: ["lg","lg","xl"],
             textAlign: "center",
         }]

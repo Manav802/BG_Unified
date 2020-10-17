@@ -48,11 +48,12 @@ export default [
                     fontSize: ["md","md","md","lg"],
                     title: "Managed databases for your Businesses -",
                     titleSize: [28,28,28,32],
-                    text: <span>Database-as-a-Service (DBaaS) refers to software that enables 
-                        users to set up, operate and scale databases using a standard set of 
-                        abstractions (primitives), without having to either 
-                        understand or care about the exact implementations of 
-                        those abstractions for the specific database. </span>
+                    text: <span>Database-as-a-Service (DBaaS) refers to software 
+                        that enables users to set up, operate and scale databases 
+                        using a standard set of abstractions (primitives) without 
+                        either understanding or care about the exact implementations of 
+                        those abstractions for the specific database.
+                    </span>
                 }]
             }]
     },
@@ -61,7 +62,7 @@ export default [
         titleStyle: {
             mt: 8,
         },
-        description:"BG Unified Solutions Remote DBA service will manage your database infrastructure, no matter how big or small it may be. You’ll be able to focus more on your business while our experts work your database platform 24 x 7.",
+        description:"BG Unified Solutions Remote DBA service will manage your database infrastructure, no matter how big or small it may be. You’ll be able to focus more on your business while our experts work on your database platform 24 x 7.",
         my: 0,
         py: 16,
         bg: "light.400",
@@ -115,7 +116,7 @@ export default [
     },
     {
         py: [8,12],
-        description:"We offer 24 x 7 managed database services. We’ll monitor database infrastructure, handle incidents, respond to events/alarms, follow change management processes, improve overall performance and reduce vulnerabilities.",
+        description:"We offer 24 x 7 managed database services. We’ll monitor database infrastructure, handle incidents, respond to events/alarms, follow change management processes, improve overall performance, and reduce vulnerabilities.",
         descriptionStyle:{
             fontSize:["lg","lg","xl"],
             opacity:0.7,

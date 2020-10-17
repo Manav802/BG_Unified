@@ -6,7 +6,7 @@ export default [
             typed: ["Collect", "Store", "Report"],
             after: "the various data and underlying threats."
         },
-        description: "Cloud Logging allows the ingestion of system log data and applications from numerous VMs and analyzes the data in real-time. The analysis of data is done through logs, which are managed and simplified over the cloud, with BG Unified Solutions Cloud Logging as a Service, Log central services over the internet. Add the shield to protect your business reputation—application and system log ingestions.",
+        description: "Cloud Logging allows the ingestion of system log data and applications from numerous VMs and analyzes real-time data. The data analysis is done through logs, which are managed and simplified over the cloud, with BG Unified Solutions Cloud Logging as a Service, Log central services over the internet. Add the shield to protect your business reputation—application and system log ingestions.",
         descriptionStyle: {
             textAlign: "left"
         },

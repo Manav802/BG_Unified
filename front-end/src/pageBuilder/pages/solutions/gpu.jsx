@@ -25,15 +25,12 @@ export default [
                     fontSize: ["md", "md", "md", "lg"],
                     title: "Harness the power of GPU",
                     titleSize: [28, 28, 28, 32],
-                    text: <span>You get direct access to one of the most flexible server-selection
-                         processes in the industry and seamless integration. 
-                         GPU delivers extreme performance and industry-leading hybrid cloud data 
-                         management capabilities. To provide customer enablement (if required), 
-                         we can provide tools to detect GPUs and make them 
-                         available automatically. To maximize utilization of this 
-                         powerful resource IT administrators can configure, scale, 
-                         and allow fine-grained access control of GPU resources to end-users.
-                    
+                    text: <span>You get direct access to one of the most flexible server-selection processes 
+                        in the industry and seamless integration. GPU delivers extreme performance and 
+                        industry-leading hybrid cloud data management capabilities. To provide customer 
+                        enablement (if required), we can provide tools to detect GPUs and make them available 
+                        automatically. To maximize this powerful resource's utilization, IT administrators can 
+                        configure, scale, and allow fine-grained access control of GPU resources to end-users.
                      </span>
                 }]
             }]

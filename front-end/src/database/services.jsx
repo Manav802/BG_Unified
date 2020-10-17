@@ -180,7 +180,7 @@ const services = {
         title: "Load Balancer As A Service",
         slogan: "Simplified Load Balancing",
         bgImage: "/assets/images/services/loadbalancer.jpg",
-        category: "IT Infrastructural Services",
+        category: "Network Services",
         icon: "/assets/images/icons/monotone/balancer.svg",
         color: "#235789",
         tags: ["architectural", "consultancy", "architects", "technology", "stack", "future-proof", "planning", "engineering"],
