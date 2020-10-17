@@ -163,16 +163,16 @@ class about extends Component {
                 <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-end py-3">
                   <Link href="/webteam"><a className="text-primary  Nexa-Bold d-flex my-2" href="">Meet the Development Team<Box as={FaArrowRight} h="16px" ml="12px" my="4px"></Box></a></Link>
                 </div>
-                {/* <Section>
+                <Section>
                   <Box textAlign="center" className="display5" fontSize={[32, 36, 40, 48]} fontWeight="bold">Our Expertise</Box>
                   <Box textAlign="center" pt={2} fontSize={["lg", "xl"]}>The BG Unified Solutions Team is specializes in</Box>
                   <Row justify="space-between">
-                    {skills.map((a) => <Box width={["100%", "100%", "33%"]}>
-                      <Box fontSize={["lg", "xl"]}>{a.title}</Box>
-                      <Box fontSize={["sm"]}>{a.subtitles && a.subtitles.map(b => <Text>{b}</Text>)}</Box>
+                    {skills.map((a) => <Box borderRadius="10px" textAlign="justify" align="center" boxShadow={"xl"} my={3} mx={2} p={4} width={["100%","100%", "46%", "31%"]}>
+                      <Box>{a.title}</Box>
+                      <Flex align="center">{a.subtitles && a.subtitles.map(b => <Box m={2} fontSize={"xs"}>{b}</Box>)}</Flex>
                     </Box>)}
                   </Row>
-                </Section> */}
+                </Section>
               </div>
             </div>
           </div>

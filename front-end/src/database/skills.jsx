@@ -14,7 +14,7 @@ export default [
         subtitles: ["Panorama", "Fortianalyser", "Splunk", "Logic Monitor"]
     }, {
         title: "InfoVista Solution Design and Management",
-        subtitles: ["Application Visibility", "Application Control", "WAN Optimization and Security", "Infrastructure Performance Monitoring", "SLA Reporting"]
+        subtitles: ["Application Visibility", "Application Control", "WAN Optimization and Security", "Infrastructure Performance Monitoring"]
     }, {
         title: "Network Security Architecture",
     }, {
