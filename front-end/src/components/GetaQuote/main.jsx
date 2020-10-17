@@ -113,7 +113,7 @@ function GetaQuoteForm(props) {
           variantColor="primary"
           onClick={onOpen}
         >
-          Get a quote
+          {props.children || "Get a Quote"}
         </Button>
       )}
       <Modal isOpen={isOpen} onClose={formClose} isCentered={screenWidth > 420 ? true : false} scrollBehavior={screenWidth > 420 ? "inside" : "outside"}>

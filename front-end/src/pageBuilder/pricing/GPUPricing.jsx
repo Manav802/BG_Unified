@@ -51,17 +51,17 @@ const GPUS=[
 
 function Carousel(){
     return(
-    <Flickity className="gpu-slider" options={{ initialIndex:3, cellAlign:"center",contain:true,pageDots: false,
+    <Flickity options={{ initialIndex:0,contain:true,pageDots: false,
         }
     }
     >
         {GPUS.map((x)=>(
-            <Box transform="scale(0.8)" transition="0.3s" maxW="350px" w="100%">
-      <PricingCard
-            title={x.name}
-            icon="/assets/images/icons/theme/work.svg"
-            featureList={x.featureList}
-        >
+            <Box minHeight="100%" transition="0.3s" maxW="350px" width="100%">
+            <PricingCard
+                title={x.name}
+                icon="/assets/images/icons/theme/gpu.svg"
+                featureList={x.featureList}
+            >
             <PricingQuote
                 buttonStyle="mt-3"
                 
@@ -93,7 +93,7 @@ function GPUPricing(props) {
         hourlyBackups ? ",Enabled Hourly Backups" : "";
         
     return (
-            <div id="pricing" className="container-fluid">
+            <div id="pricing" className="container">
                 <Carousel/>
             </div>
         )

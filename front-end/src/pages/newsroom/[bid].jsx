@@ -59,14 +59,23 @@ function Blogs() {
           </Box>
      <Section mt={6} py={0} >
        <Flex>
-        <Box fontWeight={["400","500"]} lineHeight={1.6} color="gray.500" width={["100%","100%","72%"]}>
+        <Box fontWeight={["400"]} lineHeight={1.6} color="gray.700" width={["100%","100%","72%"]}>
+        {blog.overview && <Box bg="gray.200" textAlign="center" my={6} rounded={8} p={12}>
+            <Heading size="md">Overview</Heading>
+              <Text mt={4}>{blog.overview}</Text>
+        </Box>}
+        {blog.solution &&<Box bg="dark.500" color="white" textAlign="center" my={6} rounded={8} p={12}>
+            <Heading size="md">Solution</Heading>
+            <Text mt={4}>{blog.solution}</Text>
+        </Box>}
         {blog.content && blog.content.map((body, index) => (
             <Body {...body}></Body>
         ))}
         </Box>
-        <Flex mt={6} display={["none","none","flex"]} alignItems="center" direction="column">
-        {blog.logo && <Box mb={4} borderRadius={"5%"} p={6} shadow="lg">
-        <Image w="200px" src={blog.logo}/>  
+        <Flex width={["100%","100%","28%"]} mt={6} display={["none","none","flex"]} alignItems="center" direction="column">
+        {blog.logo && 
+        <Box mb={4} borderRadius={8} mx={8} p={12} shadow="lg">
+          <Image w="100%" src={blog.logo}/>  
         </Box>
         }
         {blog.sideContent && blog.sideContent.map((cont) => (
@@ -75,18 +84,18 @@ function Blogs() {
             </Box>
         ))}
           <Box minW="250px" width={["0%","0%","80%"]} fontWeight="500">
-              <Box bg="dark.500" pos="relative" rounded={8} px={8} py={12} overflow="hidden" boxShadow="xl" height="100%">
+              <Box bg="dark.500" pos="relative" rounded={8} p={8} overflow="hidden" boxShadow="xl" height="100%">
                 <Image zIndex="0" opacity=".7" className="bg-image" src="/assets/images/backgrounds/card.png"></Image>
                 <Flex height="100%" direction="column" justify="space-between">
-                  <Title zIndex="10" textAlign="left" fontSize="3xl" color="white">Let's get IT done.</Title>
-                  <Link href="/solutions"><Button mt={8} as="a" variant="ghost" variantColor="red" size="md">Explore Solutions</Button></Link>
+                  <Title zIndex="10" textAlign="left" fontSize="3xl" color="white">Get Started</Title>
+                  <Link href="/solutions"><Button mt={8} as="a" variant="solid" className="primary-btn" py={4} variantColor="primary" rightIcon="chevron-right" size="md">Explore Solutions</Button></Link>
                 </Flex>
               </Box>
           </Box>
         </Flex>  
         </Flex>
       </Section>         
-      <Section pt={0} pb={6}>
+      {/* <Section pt={0} pb={6}>
         <Flex width={["100%","100%","72%"]}>
           <Flex >
             <Avatar src={blog.avatar} />
@@ -99,7 +108,7 @@ function Blogs() {
           </Flex>
           <Text ml="auto"  fontSize="md">Posted On <br></br> <b>{blog.date}</b></Text>
           </Flex>
-      </Section>
+      </Section> */}
     </div>
   );
 }

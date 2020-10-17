@@ -6,11 +6,12 @@ import Title from "../pageBuilder/Title";
 import Testimonial from "../components/TestimonialCard/Stories";
 import TESTIMONIALS from "../database/testimonials";
 import Row from "../pageBuilder/Row";
+import Link from "next/link";
 function main() {
     return <>
         <Head><title>Customer Stories | BG Unified Solutions</title></Head>
         <Box zIndex="10" pos="relative" bg="dark.500">
-            <Image position="absolute" height="100%" zIndex="0" top={0} left={0} style={{ mixBlendMode: "overlay" }} opacity="1" objectFit="cover" width="100%" src="/assets/images/backgrounds/tech.jpg"></Image>
+            <Image position="absolute" height="100%" zIndex="0" top={0} left={0} opacity=".5" objectFit="cover" width="100%" src="/assets/images/backgrounds/stories.jpg"></Image>
             <Fade distance="5%" duration={500} top>
                 <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
                     <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">What they say!</Heading>
@@ -38,7 +39,7 @@ function main() {
                     <Image maxW="160px" objectFit="contain" height="128px" src="/assets/images/icons/color/monitor.svg"></Image>
                     <Heading textAlign="center" mt={6} fontFamily="Nexa Bold" size="xl">Let's get IT done.</Heading>
                     <Text textAlign="center" mx={6} mt={3} maxW="448px">Our Success Stories, our feedbacks, are our real gains. We accelerate to continue on this success journey, being a reliable and trusted associate for your business.</Text>
-                    <Button variant="ghost" variantColor="red" mt={3} rightIcon="chevron-right">Explore Now</Button>
+                    <Link href="/solutions"><Button variant="ghost" variantColor="red" mt={3} rightIcon="chevron-right">Explore Now</Button></Link>
                 </Flex>
             </Flex>
         </Section>

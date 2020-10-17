@@ -2,12 +2,12 @@ export default [
 
     {
         id: 1,
-        imageUrl: "assets/images/brands/asic.png",
+        imageUrl: "assets/images/brands/Rackspace_Technology.png",
         imageAlt: "Company Logo",
-        author: "Simran Singh B. ",
-        paragraph: "BGUS is a very capable and reliable customer-first IT firm. Their disposition is calm and joyful, despite challenges, and they are infectiously inspired to maintain a very high standard. For anyone with the opportunity to employ their expertise,  disposition and resourceful nature: I urge you to take it.",
-        CompanyName: "ASIC",
-        designation: "Graduate",
+        author: "Bryan Cawse",
+        paragraph: "I have had the ... opportunity to have worked with BGUS with multiple vendors. They have a brilliant customer orientated demeanor and their technical skills are second to none. When it comes to Information Security I can always rely on BGUS.",
+        CompanyName: "Rackspace Technology",
+        designation: "Senior Enterprise Account Executive",
         emoji: ""
     },
     {
@@ -59,15 +59,15 @@ export default [
         CompanyName: "Telstra",
         designation: "Mobility Service Architec",
         emoji: ""
-    },
+    },    
     {
         id: 7,
-        imageUrl: "assets/images/brands/Rackspace_Technology.png",
+        imageUrl: "assets/images/brands/asic.png",
         imageAlt: "Company Logo",
-        author: "Bryan Cawse",
-        paragraph: "I have had the ... opportunity to have worked with BGUS with multiple vendors. They have a brilliant customer orientated demeanor and their technical skills are second to none. When it comes to Information Security I can always rely on BGUS.",
-        CompanyName: "Rackspace Technology",
-        designation: "Senior Enterprise Account Executive",
+        author: "Simran Singh B. ",
+        paragraph: "BGUS is a very capable and reliable customer-first IT firm. Their disposition is calm and joyful, despite challenges, and they are infectiously inspired to maintain a very high standard. For anyone with the opportunity to employ their expertise,  disposition and resourceful nature: I urge you to take it.",
+        CompanyName: "ASIC",
+        designation: "Graduate",
         emoji: ""
     },
     {

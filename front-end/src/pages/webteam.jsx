@@ -8,10 +8,15 @@ import Section from "../pageBuilder/Section";
 import Title from "../pageBuilder/Title";
 import { FaBehance, FaBlogger, FaGithub, FaLinkedin } from 'react-icons/fa';
 
-const teamCard = (member, height) => (<Flex direction="column" justify="center" my={6}>
-    <Image rounded="12px 0px 12px 0px" height="324px" width="280px" objectFit="cover" src={`/assets/images/team/${member.username}.jpg`}></Image>
-    <Heading mt={4} fontFamily="Nexa Bold" size="lg">{member.name}</Heading>
-    <Heading mt={2} size="xs" fontFamily="Nexa Light">{member.designation}</Heading>
+const teamCard = (member, height) => (<Flex height="100%" overflow="hidden" bg="white" pos="relative" rounded={8} boxShadow="xl" p={"32px"} direction="column" justify="center">
+    <Box top={"-32px"} left={0} width="100%" transform="skewy(-6deg)" objectFit="contain" pos="absolute" zIndex="0" width="100%" bg="dark.500" height="160px"></Box>
+    <Fade>
+    <Image rounded="80px" height="160px" mx="auto" width="160px" objectFit="cover" src={`/assets/images/team/${member.username}.jpg`}></Image>
+    <Box textAlign="center">
+        <Heading mt={4} fontFamily="Nexa Bold" size="lg">{member.name}</Heading>
+        <Heading mt={2} size="xs" fontFamily="Nexa Light">{member.designation}</Heading>
+    </Box>
+    </Fade>
 </Flex>)
 
 function webteam(props) {
@@ -32,14 +37,14 @@ function webteam(props) {
             <Image position="absolute" height="100%" zIndex="0" top={0} left={0} style={{mixBlendMode:"overlay"}}  opacity="1" objectFit="cover" width="100%" src="/assets/images/backgrounds/tech.jpg"></Image>
                 <Fade distance="5%" duration={500} top>
                 <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
-                <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Behind the Web</Heading>
-                <Title zIndex="100" fontSize={["44px","64px"]}>Website IT Team</Title>
+                <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Development Team</Heading>
+                <Title zIndex="100" fontSize={["44px","64px"]}>Meet the Team</Title>
                 </Section>
                 </Fade>
             </Box>
             <Section>
                 <Flex wrap="wrap" justify="center">
-                    {team.map(member => <Box px={6}>
+                    {team.map(member => <Box width="33%" px={3} my={3}>
                         {teamCard(member)}
                     </Box>)}
                 </Flex> 

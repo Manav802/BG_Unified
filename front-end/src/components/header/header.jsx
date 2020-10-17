@@ -208,15 +208,15 @@ function header(props) {
                                                         <Divider borderWidth={2} my={6}></Divider>
                                                         <Flex wrap="wrap">
                                                             <Box onClick={onClose} px={3} my={3} width="50%">
-                                                                <Hyperlink href="/contact"><a className="link">
-                                                                    <Heading size="sm" fontFamily="Nexa Bold">Contact Us</Heading>
-                                                                    <Text fontSize="sm" fontWeight="500" opacity=".7">We are here to help!</Text>
+                                                                <Hyperlink href="/trainings"><a className="link">
+                                                                    <Heading size="sm" fontFamily="Nexa Bold">Trainings</Heading>
+                                                                    <Text fontSize="sm" fontWeight="500" opacity=".7">Learn and Grow!!</Text>
                                                                 </a></Hyperlink>
                                                             </Box>
                                                             <Box onClick={onClose} px={3} my={3} width="50%">
-                                                                <Hyperlink href="/trainings"><a className="link">
-                                                                    <Heading size="sm" fontFamily="Nexa Bold">Trainings and Certifications</Heading>
-                                                                    <Text fontSize="sm" fontWeight="500" opacity=".7">Learn and Grow!!</Text>
+                                                                <Hyperlink href="/newsroom?tab=Case%20Study"><a className="link">
+                                                                    <Heading size="sm" fontFamily="Nexa Bold">Case Studies</Heading>
+                                                                    <Text fontSize="sm" fontWeight="500" opacity=".7">Our Projects</Text>
                                                                 </a></Hyperlink>
                                                             </Box>
                                                             <Box onClick={onClose} px={3} my={3} width="50%">
