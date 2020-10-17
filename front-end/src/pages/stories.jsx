@@ -38,7 +38,7 @@ function main() {
                     <Image maxW="160px" objectFit="contain" height="128px" src="/assets/images/icons/color/monitor.svg"></Image>
                     <Heading textAlign="center" mt={6} fontFamily="Nexa Bold" size="xl">Let's get IT done.</Heading>
                     <Text textAlign="center" mx={6} mt={3} maxW="448px">Our Success Stories, our feedbacks, are our real gains. We accelerate to continue on this success journey, being a reliable and trusted associate for your business.</Text>
-                    <Button variant="ghost" variantColor="red" mt={3} rightIcon="chevron-right">Explore Now</Button>
+                    <Link href="/solutions"><Button variant="ghost" variantColor="red" mt={3} rightIcon="chevron-right">Explore Now</Button></Link>
                 </Flex>
             </Flex>
         </Section>
