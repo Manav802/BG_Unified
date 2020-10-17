@@ -6,6 +6,7 @@ import Title from "../pageBuilder/Title";
 import Testimonial from "../components/TestimonialCard/Stories";
 import TESTIMONIALS from "../database/testimonials";
 import Row from "../pageBuilder/Row";
+import Link from "next/link";
 function main() {
     return <>
         <Head><title>Customer Stories | BG Unified Solutions</title></Head>
