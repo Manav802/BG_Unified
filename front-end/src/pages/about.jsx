@@ -169,7 +169,7 @@ class about extends Component {
                   <Row justify="space-between">
                     {skills.map((a) => <Box width={["100%", "100%", "33%"]}>
                       <Box fontSize={["lg", "xl"]}>{a.title}</Box>
-                      {a.subtitles && <Box fontSize={["sm", "lg"]}>{a.subtitles.map(b => <Text>{b}</Text>)}</Box>}
+                      <Box fontSize={["sm"]}>{a.subtitles && a.subtitles.map(b => <Text>{b}</Text>)}</Box>
                     </Box>)}
                   </Row>
                 </Section>
