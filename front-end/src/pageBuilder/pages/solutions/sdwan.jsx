@@ -4,7 +4,7 @@ export default [
     {
         px: 2,
         title: "Secure Connectivity with SD-WAN",
-        description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, Wi-Fi Services etc. to connect users to applications securely. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
+        description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, Wi-Fi Services, etc. to connect users to applications securely. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
         descriptionStyle: {
             fontSize: ["xl", "lg"],
             opacity: 0.7
@@ -24,7 +24,7 @@ export default [
     {
         px: 2,
         title: "Find out How BGUS SD-WAN will improve your network:",
-        description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure, and AWS.",
+        description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange, and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure, and AWS.",
         descriptionStyle: {
             px: "10px",
         },
