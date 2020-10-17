@@ -326,7 +326,7 @@ const services = {
         slogan: "For your Utmost Security",
         bgImage: "/assets/images/services/ddos.jpg",
         category: "Cyber Security Services",
-        icon: "/assets/images/icons/monotone/app.svg",
+        icon: "/assets/images/icons/monotone/ddos.svg",
         color: "#E4572E",
         tags: ["wireless", "wifi", "clusters", "networks"],
         description: "BG Unified Soutions provides optimal DDoS protection as a  service with most accurate detection and feasible solution....",
