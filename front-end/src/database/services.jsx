@@ -324,7 +324,7 @@ const services = {
     "ddos": {
         title: "DDoS Protection As A Service",
         slogan: "For your Utmost Security",
-        bgImage: "/assets/images/services/wafaas.jpg",
+        bgImage: "/assets/images/services/ddos.jpg",
         category: "Cyber Security Services",
         icon: "/assets/images/icons/monotone/app.svg",
         color: "#E4572E",

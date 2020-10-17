@@ -62,7 +62,7 @@ function OurSolutions(){
           <meta property="og:description" content="Infrastructure, Contact Center, UCaaS, Service Desk, App Development, Web Development. Secured infrastructure with telco vendors. Backup and Recovery. Silver-Peak and Cisco. Data Center Locations. Wireless, CEX, CLoud Logging. Load Balancing, DNS and Web Hosting. SD-WAN optimization, managed firewall, proxy, WAF"/>
           </Head>
         <Box  zIndex="10" pos="relative" bg="dark.500">
-          <Image position="absolute" height="100%" zIndex="0" top={0} left={0} style={{mixBlendMode:"overlay"}}  opacity="1" objectFit="cover" width="100%" src="/assets/images/backgrounds/tech.jpg"></Image>
+          <Image position="absolute" height="100%" zIndex="0" top={0} left={0}  opacity=".5" objectFit="cover" width="100%" src="/assets/images/backgrounds/solutions.jpg"></Image>
             <Fade distance="5%" duration={500} top>
             <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
             <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">What we deliver</Heading>
@@ -123,10 +123,10 @@ function OurSolutions(){
           <Tabs index={tabIndex} align="center" onChange={handleTabsChange} variantColor="red.500">
             <TabList fontFamily="Nexa Bold">
               <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">IT & Infrastructure</Box></Tab>
-               <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Network</Box></Tab>
-                <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Cyber Security</Box></Tab>
-                 <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Collaborative</Box></Tab>
-                  <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Professional</Box></Tab>
+              <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Network</Box></Tab>
+              <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Cyber Security</Box></Tab>
+              <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Collaborative</Box></Tab>
+              <Tab className="tab"><Box minH={"82px"} className="d-flex align-items-center">Professional</Box></Tab>
             </TabList>
             <TabPanels>
               <TabPanel>

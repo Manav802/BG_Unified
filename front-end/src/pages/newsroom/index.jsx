@@ -26,7 +26,15 @@ function Newsroom(){
       setData(dynamicSearch(e.target.value))
     }
     const { tab } = router.query;
-    useEffect(() => {if(tab=='Case Study'){ setTabIndex(2) }}, [tab]) 
+    useEffect(() => {switch(tab){
+      case "Updates":
+        setTabIndex(1);
+        break;
+      case "Case Study":
+        setTabIndex(2);
+        break;
+    }}
+                      , [tab]) 
     
     return (
       <div className="newsroom">
@@ -108,20 +116,20 @@ function Newsroom(){
                         <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}><a>
                           <CardWithImage
                           src={blog.image}
-                          title={blog.title}
+                          title={blog.headertitle || blog.title}
                           columns={["128px auto", "auto"]}
                           height={["96px", "216px"]}
                           >
                           <Text mt={1} opacity={.7} fontSize={["sm","md"]} overflow="hidden" height={["40px", "auto"]}>{blog.description}</Text>
-                          <Flex display={["none","flex"]} mt={4}>
+                          {/* <Flex display={["none","flex"]} mt={4}>
                           <Avatar src={blog.avatar} />
                           <Box ml="3">
                             <Text fontWeight="bold">
-                              {"by " + blog.by || "Team"}
+                              by<br/>{blog.by || "Team"}
                             </Text>
                             <Text fontSize="sm">Posted On {blog.date}</Text>
                           </Box>
-                        </Flex>
+                          </Flex> */}
                         </CardWithImage>
                         </a>
                         </Link>
@@ -133,32 +141,30 @@ function Newsroom(){
                   {["Updates", "Case Study"].map(text => <TabPanel>
                   <Fade duration={300} cascade distance="5%" bottom>
                       <Flex wrap="wrap">
-                    {newsroom.map(blog =>{if(blog.category === text) return(<>
-                    <Box width={["100%","100%","50%","50%","33%"]} px={3} my={3} fontWeight="500">
+                    {newsroom.map(blog =>{if(blog.category === text) {
+                      return <Box width={["100%","100%","50%","50%","33%"]} px={3} my={3} fontWeight="500">
                         <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}><a>
                           <CardWithImage
                           src={blog.image}
-                          title={blog.title}
+                          title={blog.headertitle || blog.title}
                           columns={["128px auto", "auto"]}
                           height={["96px", "216px"]}
                           >
                           <Text mt={1} opacity={.7} fontSize={["sm","md"]} overflow="hidden" height={["40px", "auto"]}>{blog.description}</Text>
-                          <Flex display={["none","flex"]} mt={4}>
+                          {/* <Flex display={["none","flex"]} mt={4}>
                           <Avatar src={blog.avatar} />
                           <Box ml="3">
                             <Text fontWeight="bold">
-                              {"by " + blog.by || "Team"}
+                              by<br/>{blog.by || "Team"}
                             </Text>
                             <Text fontSize="sm">Posted On {blog.date}</Text>
                           </Box>
-                        </Flex>
+                        </Flex> */}
                         </CardWithImage>
                         </a>
                         </Link>
                         </Box>
-                        </>
-
-                        )})}
+                        }})}
                         </Flex>
                         </Fade>
                   </TabPanel>)}

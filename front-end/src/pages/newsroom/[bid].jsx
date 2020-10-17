@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Flex, Avatar, Box, Text, Heading } from "@chakra-ui/core";
+import { Image, Flex, Avatar, Box, Text, Heading,Button, } from "@chakra-ui/core";
 import { useRouter } from "next/router";
 import Fade from 'react-reveal/Fade';
 import blogs from "../../database/newsroom";
@@ -52,19 +52,50 @@ function Blogs() {
           <Image position="absolute" height="100%" zIndex="0" top={0} left={0}  opacity=".3" objectFit="cover" width="100%" src={blog.image}></Image>
             <Fade distance="5%" duration={500} top>
             <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
-            <Heading width="fit-content" rounded={8} zIndex="100" size="xs" textAlign="center" color="white" bg="primary.500" py={1} px={2} mb={4}>{blog.category}</Heading>
+            <Link href={`/newsroom?tab=${blog.category}`}><a><Heading width="fit-content" rounded={8} zIndex="100" size="xs" textAlign="center" color="white" bg="primary.500" py={1} px={2} mb={4}>{blog.category}</Heading></a></Link>
             <Title textAlign="left" zIndex="100" fontSize={["24px","48px"]}>{blog.title}</Title>
             </Section>
             </Fade>
           </Box>
      <Section mt={6} py={0} >
-        <Box fontWeight={["400","500"]} lineHeight={1.6} color="gray.500" width={["100%","100%","72%"]}>
+       <Flex>
+        <Box fontWeight={["400"]} lineHeight={1.6} color="gray.700" width={["100%","100%","72%"]}>
+        {blog.overview && <Box bg="gray.200" textAlign="center" my={6} rounded={8} p={12}>
+            <Heading size="md">Overview</Heading>
+              <Text mt={4}>{blog.overview}</Text>
+        </Box>}
+        {blog.solution &&<Box bg="dark.500" color="white" textAlign="center" my={6} rounded={8} p={12}>
+            <Heading size="md">Solution</Heading>
+            <Text mt={4}>{blog.solution}</Text>
+        </Box>}
         {blog.content && blog.content.map((body, index) => (
             <Body {...body}></Body>
         ))}
-        </Box>  
+        </Box>
+        <Flex width={["100%","100%","28%"]} mt={6} display={["none","none","flex"]} alignItems="center" direction="column">
+        {blog.logo && 
+        <Box mb={4} borderRadius={8} mx={8} p={12} shadow="lg">
+          <Image w="100%" src={blog.logo}/>  
+        </Box>
+        }
+        {blog.sideContent && blog.sideContent.map((cont) => (
+          <Box mb={4}>
+            {cont}
+            </Box>
+        ))}
+          <Box minW="250px" width={["0%","0%","80%"]} fontWeight="500">
+              <Box bg="dark.500" pos="relative" rounded={8} p={8} overflow="hidden" boxShadow="xl" height="100%">
+                <Image zIndex="0" opacity=".7" className="bg-image" src="/assets/images/backgrounds/card.png"></Image>
+                <Flex height="100%" direction="column" justify="space-between">
+                  <Title zIndex="10" textAlign="left" fontSize="3xl" color="white">Get Started</Title>
+                  <Link href="/solutions"><Button mt={8} as="a" variant="solid" className="primary-btn" py={4} variantColor="primary" rightIcon="chevron-right" size="md">Explore Solutions</Button></Link>
+                </Flex>
+              </Box>
+          </Box>
+        </Flex>  
+        </Flex>
       </Section>         
-      <Section pt={0} pb={6}>
+      {/* <Section pt={0} pb={6}>
         <Flex width={["100%","100%","72%"]}>
           <Flex >
             <Avatar src={blog.avatar} />
@@ -77,7 +108,7 @@ function Blogs() {
           </Flex>
           <Text ml="auto"  fontSize="md">Posted On <br></br> <b>{blog.date}</b></Text>
           </Flex>
-      </Section>
+      </Section> */}
     </div>
   );
 }

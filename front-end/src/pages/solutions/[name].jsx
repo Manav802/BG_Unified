@@ -8,6 +8,7 @@ import RenderSection from "../../pageBuilder/RenderSection";
 import { Box, Button, ButtonGroup, Image, Heading, Flex } from "@chakra-ui/core"
 import Fade from "react-reveal/Fade"
 import SVG from "../../components/svg/SVG";
+import Section from "../../pageBuilder/Section";
 
 
 function Solutions(props) {
@@ -22,7 +23,6 @@ function Solutions(props) {
 
     return (
         <>
-            <Box py={["6rem","8rem","10rem"]} color="white" className="bg-dark position-relative">
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -32,19 +32,16 @@ function Solutions(props) {
                 <meta property="og:title" content={`${service.slogan} - ${service.title} | BG Unified Solutions`} key="title" />
                 <meta property="og:description" content={service.description}></meta>
                 <title>{service.slogan} - {service.title} | BG Unified Solutions</title>
+            </Head>
 
-                </Head>
-                
-                     <img
+                     
+                <Section color="white" py={["6rem","8rem","10rem"]} my={0} bg="dark.500" pos="relative">
+                <img
                     className="bg-image"
                     src={service.bgImage}
                     alt={service.title}
                     style={{opacity:"0.3"}}
                     />
-                
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
                             <Fade duration={700} delay={1000} bottom>
                                 <Flex textAlign={["center","center","left"]} alignContent={["center","center","left"]} justifyContent={["center","center","left"]}  align="center" py={4}>
                                     <SVG src={service.icon} color="light.400" size="24px"></SVG>
@@ -72,10 +69,7 @@ function Solutions(props) {
                                 </ButtonGroup>
                                 </Flex>
                             </Fade>
-                        </div>
-                    </div>
-                </div>
-            </Box>
+                  </Section>
             {service.sections && service.sections.map((section, index) => (
                 <RenderSection {...section}></RenderSection>
             ))}

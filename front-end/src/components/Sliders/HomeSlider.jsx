@@ -52,7 +52,7 @@ const sliderInfo = [
     },
     {
       title: <p>Bright Solutions. Comprehensive Results.</p>,
-      imgSrc: "/assets/images/backgrounds/landing6.png",
+      imgSrc: "/assets/images/backgrounds/landing6dark.png",
       subTitle: "Huawei working collaboratively with BG Unified Solutions to extend BG's services offerings and enhance growth.",
       btnSecondaryText: "Read Customer Stories",
       btnSecondaryLink: "/stories"
@@ -131,9 +131,9 @@ function main(props) {
     }, [])
     return (
         <div>
-            <Box pos="relative" height={["440px","500px"]}>
+            <Box pos="relative" height={["440px","520px","720px"]}>
                 {sliderInfo.map((slide, index) => 
-                  <Image src={slide.imgSrc} transition="1s" opacity={animate % sliderInfo.length === index ? "1" : "0"} minH="448px"  height={["440px","520px","720px", "auto"]} pos="absolute" top={0} left={0} width="100%" height="100%" objectFit="cover" width="100%"></Image>
+                  <Image src={slide.imgSrc} transition="1s" opacity={animate % sliderInfo.length === index ? "1" : "0"} minH="448px"  height={["440px","520px","720px"]} objectFit="cover" pos="absolute" top={0} left={0} width="100%"></Image>
                 )}
                 {/* <Box top={0} left={0} opacity={.7} pos="absolute" width="100%" height="100%" bg="black"></Box> */}
                 <Section  pos="absolute" left={0} color="white" width="100%" height="100%" px={8} py={0} my={0} mt={[0,0,0,"-56px","-32px"]}>
