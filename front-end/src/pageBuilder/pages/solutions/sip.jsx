@@ -66,7 +66,7 @@ export default [
                     image: "/assets/images/illustrations/ClientSpecific_AppDev.svg",
                     title: "Mobile access",
                     flexDirection: ["column", "column", "row"],
-                    description: "Multiple data center locations allow access to your website anytime, anywhere. Improved operational efficiencies, Reduced communication-related delays and enhanced collaboration."
+                    description: "Multiple data center locations allow access to your website anytime, anywhere. Improved operational efficiencies, Reduced communication-related delays, and enhanced collaboration."
                 }
             },
             {
@@ -86,7 +86,7 @@ export default [
                     image: "/assets/images/illustrations/DataProtection_Wireless.svg",
                     title: "Secure Channels",
                     flexDirection: ["column", "column", "row"],
-                    description: "Ensuring a completely secure network by technologies such as NAC(Network Access Control) using ISE, SourceFire, Cisco / Palo Alto /Checkpoint / Fortinet Firewall, DDOS Protection."
+                    description: "We ensure a completely secure network by technologies such as NAC(Network Access Control) using ISE, SourceFire, Cisco / Palo Alto /Checkpoint / Fortinet Firewall, DDOS Protection."
                 }
             },
         ]
