@@ -1,6 +1,7 @@
 const { validationResult } = require("express-validator");
 const { handleError } = require("../helpers/errorHandler");
 const Service = require("../models/service");
+const { sendMail } = require('../helpers/mail')
 
 //submission  the service
 exports.serviceSubmit =async(req,res)=>{
@@ -33,9 +34,29 @@ exports.serviceSubmit =async(req,res)=>{
         if(err){
             return handleError(res,err,"Unable to Store in DB" ,503)
         }
-        return res.status(200).json({
-            success :true,
-            message:"Service Request stored Successfully"
-        })
+        else{
+            var emailObject={
+                email: "ssareen@bgunifiedsolutions.net",
+                subject:"BGUS's Get a Quote",
+                html:`
+                    <h1>Details are following as:</h1>
+                    <p>Name: ${name}</p>
+                    <p>Email: ${email}</p>
+                    <p>Contact no: ${contactNumber}</p>
+                    <p>Service Name: ${serviceName}</p>
+                    <p>Description: ${description}</p>
+                    <p>Requirements are: ${serviceString} </p>
+                `
+            }
+            sendMail(emailObject.email,emailObject.subject,emailObject.html).then(data=>{
+                return res.status(200).json({
+                    success :true,
+                    message:"Service Request stored Successfully"
+                })
+            })
+            .catch(err =>{
+                    console.log('Error in sending mail')
+            })
+        } 
     })
 };
