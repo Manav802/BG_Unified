@@ -22,7 +22,7 @@ function Training(props) {
                 <Text mb={3} textAlign="justify">
                     {props.content}
                 </Text>
-                <PricingQuote button serviceName="Trainings & Certifications" serviceDescription={props.title}>Apply Now</PricingQuote>
+                <PricingQuote button serviceName="Trainings & Certifications" serviceDescription={props.title}>Get a Quote</PricingQuote>
             </Box>
             
         </Flex>
