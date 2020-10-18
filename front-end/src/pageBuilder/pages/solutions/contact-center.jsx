@@ -71,7 +71,7 @@ export default [
                     fontSize: "lg",
                     titleSize: 36,
                     
-                    text: "BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools, and we have deep contracts with all significant Telcos, including AAPT, Telstra, and Optus. We help organizations reduce their risks by offering solutions for creating, sharing, and store the information, to protect, detect, and respond to external and internal incidents and threats."
+                    text: "BG Unified Solution’s CCaaS helps you provide a positive customer experience through a suite of advanced contact center tools. We have deep contracts with all significant Telcos, including AAPT, Telstra, and Optus. We help organizations reduce their risks by offering solutions for creating, sharing, and store the information, to protect, detect, and respond to external and internal incidents and threats."
                     
                 }]
             },
@@ -119,7 +119,7 @@ export default [
                 type: "image&text",
                 data: {
                     title: "Profitable Customer Experience",
-                    description: "We help organizations to develop and improve communication channels and deliver lasting customer relationships at a lower cost. Our objective is to maximize the value of information within an organization whilst minimizing the cost.",
+                    description: "We help organizations to develop and improve communication channels and deliver lasting customer relationships at a lower cost. Our objective is to maximize the value of information within an organization while minimizing the cost.",
                     image: "/assets/images/illustrations/analytics.svg",
                     flexDirection: ["column", "column", "row"],
                 }
@@ -128,7 +128,7 @@ export default [
                 type: "image&text",
                 data: {
                     title: "Employee Productivity",
-                    description: "We assist organizations in improving employee and partner collaboration to deliver greater employee productivity, improved information sharing, and knowledge management.",
+                    description: "We help organizations improve employee and partner collaboration to deliver greater employee productivity, improved information sharing, and knowledge management.",
                     image: "/assets/images/illustrations/productivity.svg",
                     flexDirection: ["column", "column", "row-reverse"],
                 }
