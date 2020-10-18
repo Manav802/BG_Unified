@@ -12,10 +12,10 @@ function Training(props) {
     return <>
     <Fade bottom distance="10%" duration={300}>
         <Flex width="100%" height="100%" pos="relative" overflow="hidden" boxShadow="xl" bg="white" rounded={8}>
-            <Box width="25%" p={12}>
+            <Box width={["70%","60%","60%","25%"]} p={12}>
                 <Image objectFit="contain" width="100%" maxW="256px" height="128px" src={"assets/images/brands/Icons/" + props.image}></Image>
             </Box>
-            <Box width="75%" p={12}>
+            <Box width={ ["100%","100%","75%","75%"]} p={12}>
                 {/* <Title textAlign="left">
                     {props.title}
                 </Title> */}
