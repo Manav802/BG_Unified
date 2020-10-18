@@ -9,7 +9,7 @@ export default [
                 py: [2, 6, 6, 6, 2],
                 type: "imageGroup",
                 data: {
-                    images: ["/assets/images/services/gpuBody.jpg"],
+                    images: ["/assets/images/services/snb-2.jpg"],
                     borderRadius: 8,
                     width: '90%',
                     height: "300px",
@@ -70,27 +70,27 @@ export default [
                 containerData : [{
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "Secure Hosting"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/code/lock-circle.svg", mt: 4, title: "Secure Hosting"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/clock.svg", mt: 4, title: "Flexible"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/tools/compass.svg", mt: 4, title: "Flexible"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/flower-2.svg",mt: 4, title: "Portable"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/devices/iphone-x.svg",mt: 4, title: "Portable"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/air-ballon.svg", mt: 4, title: "Relocatable"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/map/marker-1.svg", mt: 4, title: "Relocatable"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/duplicate.svg", mt: 4, title: "Scalable"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/size.svg", mt: 4, title: "Scalable"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
@@ -104,15 +104,6 @@ export default [
         rowDistance: 8,
         gap: 6,
         body: [
-            {
-                my:[0,0,4,4],
-                width: ["70%","60%","60%", 1/3],
-                type: "imageGroup",
-                data: {
-                    images: ["/assets/images/illustrations/network.svg"],
-                    px: 4,
-                }
-            },
             {
                 width: ["100%","100%","100%", 2/3],
                 type: "content",

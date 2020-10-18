@@ -21,12 +21,12 @@ function main() {
         </Box>
         <Section>
             <Row>
-                <Box width="50%">
+                <Box width={["100%","100%","50%"]}>
                 {TESTIMONIALS.map((story, index) => {
                     if(index % 2 === 0) return Testimonial(story)
                 })}
                 </Box>
-                <Box width="50%">
+                <Box width={["100%","100%","50%"]}>
                 {TESTIMONIALS.map((story, index) => {
                     if(index % 2 != 0) return Testimonial(story)
                 })}

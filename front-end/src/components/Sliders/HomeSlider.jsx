@@ -27,7 +27,7 @@ const sliderInfo = [
     },
     {
       title: "Geographical Redundant Infrastructure",
-      imgSrc: "/assets/images/backgrounds/Artboard 2.png",
+      imgSrc: "/assets/images/backgrounds/globe.png",
       subTitle: "Highly Redundant Solutions. Connectivity with highly secured infrastructure with multiple telco vendors.",
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
@@ -52,7 +52,7 @@ const sliderInfo = [
     },
     {
       title: <p>Bright Solutions. Comprehensive Results.</p>,
-      imgSrc: "/assets/images/backgrounds/landing6dark.png",
+      imgSrc: "/assets/images/backgrounds/city.png",
       subTitle: "Huawei working collaboratively with BG Unified Solutions to extend BG's services offerings and enhance growth.",
       btnSecondaryText: "Read Customer Stories",
       btnSecondaryLink: "/stories"

@@ -36,6 +36,14 @@ export default [
         name: "Datacom",
         logo: "/assets/images/brands/datacom.png",
         description: "At Datacom, we know that cleverly applied information technology makes a demonstrable difference to our clients’ businesses. Private and public sector clients across New Zealand and Australia and from the USA to Asia choose to partner with us because our service breadth and depth is world-class, our infrastructure rock-solid, and our local knowledge truly insightful."
+    },    {
+        name: "Palo Alto",
+        logo: "/assets/images/brands/Icons/palo_alto.png",
+        description: "Palo Alto Networks, Inc.is an American multinational cybersecurity company with headquarters in Santa Clara, California. Its core products are a platform that includes advanced firewalls and cloud-based offerings that extend those firewalls to cover other aspects of security. The company serves over 70,000 organizations in over 150 countries, including 85 of the Fortune 100.It is home to the Unit 42 threat research team and hosts the Ignite cybersecurity conference."
+    },    {
+        name: "Redhat",
+        logo: "/assets/images/brands/Icons/redhat.png",
+        description: "The world’s leading provider of enterprise open source solutions, using a community-powered approach to deliver high-performing Linux, cloud, container, and Kubernetes technologies. We help you standardize across environments, develop cloud-native applications, and integrate, automate, secure, and manage complex environments with award-winning support, training, and consulting services."
     },
     {
         name: "Datacom@Airtrunk",
