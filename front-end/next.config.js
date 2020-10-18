@@ -1,11 +1,6 @@
 module.exports = {
-    webpack: config => {
-      const alias = { ...config.resolve.alias }
-      delete alias.url // alias to native-url
-      config.resolve = {
-        ...config.resolve,
-        alias
-      }
-      return config
-    }
-  }
+  generateBuildId: async () => {
+    // You can, for example, get the latest git commit hash here
+    return 'bgusv1-18102020'
+  },
+}
