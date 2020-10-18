@@ -38,8 +38,9 @@ export default [
                 textAlign: "justify"
             },
             {
-                image:<Image justifySelf="center" src="/assets/images/services/storage.jpg"/>,
-                imageJustify: "center"
+                image:<Image justifySelf="center"  src="/assets/images/services/storage.jpg"/>,
+                imageJustify: "center",
+                
             },
             {
                 text: "And while there are commonalities that allow for pre-packaged solutions, every data center is different.",
@@ -69,22 +70,22 @@ export default [
                 textAlign: "justify"
             },
             {
-                text: "->PaloAlto 5060 in multiple layers",
+                text: <span><b> PaloAlto 5060</b> in multiple layers</span>,
                 textAlign: "justify"
             
             },
             {
-                text: "->Huawei 10G switches ",
+                text: <span><b>Huawei 10G</b> switches </span>,
                 textAlign: "justify"
             
             },
             {
-                text: "->Cisco 5508 WLC",
+                text: <span><b>Cisco 5508 WLC</b></span>,
                 textAlign: "justify"
             
             },
             {
-                text: "->F5 Viprion LTM(s)",
+                text: <span><b>F5 Viprion LTM(s)</b></span>,
                 textAlign: "justify"
             
             },

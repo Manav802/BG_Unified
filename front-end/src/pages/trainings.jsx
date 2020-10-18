@@ -22,7 +22,7 @@ function Training(props) {
                 <Text mb={3} textAlign="justify">
                     {props.content}
                 </Text>
-                <PricingQuote button serviceName="Trainings & Certifications" serviceDescription={props.title}>Apply Now</PricingQuote>
+                <PricingQuote button serviceName="Trainings & Certifications" serviceDescription={props.title}>Get a Quote</PricingQuote>
             </Box>
             
         </Flex>
@@ -55,7 +55,7 @@ function main() {
         </Section>
         <Section mb={0}>
             <Heading opacity=".9" lineHeight={1.5} fontSize="32px" fontFamily="Nexa Bold" textAlign="center">
-                BG Unified Solutions brings you a complete and comprehensive list of training and certification courses. 
+                BG Unified Solutions brings to you a completely reliable infrastructure for your training labs. 
             </Heading>
             <Description>
             Get industry-ready, be proficient in leading world technologies offered by Global Tech Giants in their respective domains.

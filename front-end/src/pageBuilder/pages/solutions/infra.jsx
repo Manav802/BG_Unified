@@ -115,7 +115,7 @@ export default [
                     image: "/assets/images/icons/color/headphones.svg",
                     title: "Excellent Customer Support",
                     align: "left",
-                    description: "BGUS's friendly and skilled customer support service is available24X7X365 with significantly less response time. Our policies ensure rapid and satisfactory resolution of issues."
+                    description: "BGUS's friendly and skilled customer support service is available 24X7X365 with significantly less response time. Our policies ensure rapid and satisfactory resolution of issues."
                     }
             },    
             {

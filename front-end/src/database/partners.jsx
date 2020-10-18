@@ -1,9 +1,5 @@
 export default [
-    {
-        name: "AAPT",
-        logo: "/assets/images/brands/aapt.png",
-        description: "AAPT is a force in the Australian telecommunications industry. Our people, products, network assets and innovation have enabled us to provide our customers with communication services that are reliable, fast and cost effective.",
-    },
+    
     {
         name: "Hitachi",
         logo: "/assets/images/brands/hitachi.png",
@@ -27,9 +23,9 @@ export default [
         description: "AGC Networks (AGC) is a Global Solutions Integrator representing the world’s best brands in Unified Communications, Data Center & Edge IT, Cyber Security (CYBER-i) and Digital Transformation & Applications to evolve the customer’s digital landscape. AGC’s ability to tailor solutions across quadrants is strengthened through delivery of seamless customer support services.",
     },
     {
-        name: "Fortinet (NASDAQ: FTNT)",
+        name: "Fortinet (MSSP)",
         logo: "/assets/images/brands/fortinet.png",
-        description: "Fortinet (NASDAQ: FTNT) secures the largest enterprise, service provider, and government organizations around the world. Fortinet empowers its customers with intelligent, seamless protection across the expanding attack surface and the power to take on ever-increasing performance requirements of the borderless network"
+        description: "Fortinet (MSSP) secures the largest enterprise, service provider, and government organizations around the world. Fortinet empowers its customers with intelligent, seamless protection across the expanding attack surface and the power to take on ever-increasing performance requirements of the borderless network"
     },
     {
         name: "Huawei",
@@ -40,11 +36,24 @@ export default [
         name: "Datacom",
         logo: "/assets/images/brands/datacom.png",
         description: "At Datacom, we know that cleverly applied information technology makes a demonstrable difference to our clients’ businesses. Private and public sector clients across New Zealand and Australia and from the USA to Asia choose to partner with us because our service breadth and depth is world-class, our infrastructure rock-solid, and our local knowledge truly insightful."
+    },    {
+        name: "Palo Alto",
+        logo: "/assets/images/brands/Icons/palo_alto.png",
+        description: "Palo Alto Networks, Inc.is an American multinational cybersecurity company with headquarters in Santa Clara, California. Its core products are a platform that includes advanced firewalls and cloud-based offerings that extend those firewalls to cover other aspects of security. The company serves over 70,000 organizations in over 150 countries, including 85 of the Fortune 100.It is home to the Unit 42 threat research team and hosts the Ignite cybersecurity conference."
+    },    {
+        name: "Redhat",
+        logo: "/assets/images/brands/Icons/redhat.png",
+        description: "The world’s leading provider of enterprise open source solutions, using a community-powered approach to deliver high-performing Linux, cloud, container, and Kubernetes technologies. We help you standardize across environments, develop cloud-native applications, and integrate, automate, secure, and manage complex environments with award-winning support, training, and consulting services."
     },
     {
         name: "Datacom@Airtrunk",
         logo: "/assets/images/brands/airtrunk.png",
         description: "Datacom@AirTrunk provides a secure, scalable home for your digital assets. We provide flexible contracts, true usage-based billing and guaranteed uptime availability to help your business reach its full digital potential."
+    },
+    {
+        name: "AAPT",
+        logo: "/assets/images/brands/aapt.png",
+        description: "AAPT is a force in the Australian telecommunications industry. Our people, products, network assets and innovation have enabled us to provide our customers with communication services that are reliable, fast and cost effective.",
     },
     {
         name: "Micro Focus",

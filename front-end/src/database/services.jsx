@@ -150,7 +150,7 @@ const services = {
     "snb": {
         title: "Smart Number Billing As A Service",
         slogan: "Communicating Effectively",
-        bgImage: "/assets/images/services/firewall-2.jpg",
+        bgImage: "/assets/images/services/sbn.jpg",
         category: "Collaborative Services",
         icon: "/assets/images/icons/monotone/Firewall.svg",
         color: "#6A0136",
@@ -224,7 +224,7 @@ const services = {
     "cdr":{
         title: "CDR As A Service",
         slogan: "Where every call counts",
-        bgImage: "/assets/images/services/workstation.jpg",
+        bgImage: "/assets/images/services/cdr.jpg",
         category: "Collaborative Services",
         icon: "/assets/images/icons/monotone/workstation.svg",
         color: "#235789",
