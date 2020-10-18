@@ -1,9 +1,5 @@
 export default [
-    {
-        name: "AAPT",
-        logo: "/assets/images/brands/aapt.png",
-        description: "AAPT is a force in the Australian telecommunications industry. Our people, products, network assets and innovation have enabled us to provide our customers with communication services that are reliable, fast and cost effective.",
-    },
+    
     {
         name: "Hitachi",
         logo: "/assets/images/brands/hitachi.png",
@@ -27,9 +23,9 @@ export default [
         description: "AGC Networks (AGC) is a Global Solutions Integrator representing the world’s best brands in Unified Communications, Data Center & Edge IT, Cyber Security (CYBER-i) and Digital Transformation & Applications to evolve the customer’s digital landscape. AGC’s ability to tailor solutions across quadrants is strengthened through delivery of seamless customer support services.",
     },
     {
-        name: "Fortinet (NASDAQ: FTNT)",
+        name: "Fortinet (MSSP)",
         logo: "/assets/images/brands/fortinet.png",
-        description: "Fortinet (NASDAQ: FTNT) secures the largest enterprise, service provider, and government organizations around the world. Fortinet empowers its customers with intelligent, seamless protection across the expanding attack surface and the power to take on ever-increasing performance requirements of the borderless network"
+        description: "Fortinet (MSSP) secures the largest enterprise, service provider, and government organizations around the world. Fortinet empowers its customers with intelligent, seamless protection across the expanding attack surface and the power to take on ever-increasing performance requirements of the borderless network"
     },
     {
         name: "Huawei",
@@ -45,6 +41,11 @@ export default [
         name: "Datacom@Airtrunk",
         logo: "/assets/images/brands/airtrunk.png",
         description: "Datacom@AirTrunk provides a secure, scalable home for your digital assets. We provide flexible contracts, true usage-based billing and guaranteed uptime availability to help your business reach its full digital potential."
+    },
+    {
+        name: "AAPT",
+        logo: "/assets/images/brands/aapt.png",
+        description: "AAPT is a force in the Australian telecommunications industry. Our people, products, network assets and innovation have enabled us to provide our customers with communication services that are reliable, fast and cost effective.",
     },
     {
         name: "Micro Focus",

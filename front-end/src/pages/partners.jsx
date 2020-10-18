@@ -13,7 +13,7 @@ function main(props) {
     return (
         <>
             <Head>
-                <title>Our partners | BG Unified</title>
+                <title>Our Partners | BG Unified Solutions</title>
             </Head>
             <Box zIndex="10" pos="relative" bg="dark.500">
                 <Image position="absolute" height="100%" zIndex="0" top={0} left={0} opacity=".5" objectFit="cover" width="100%" src="/assets/images/backgrounds/partners.jpg"></Image>
