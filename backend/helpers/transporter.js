@@ -1,12 +1,12 @@
 const nodemailer = require('nodemailer')
 // exporting the transporter 
 exports.transporter = nodemailer.createTransport({
-    host: 'smtp.office365.com',
-    port: 587, 
+    host: process.env.host,
+    port: process.env.port, 
     secureConnection: "secure",
     auth: {
-      user: "webapi@bghosted.net",
-      pass: "mc68hc12@API@"
+      user: process.env.user,
+      pass: process.env.pass
     },
     tls: {
       rejectUnauthorized: false
