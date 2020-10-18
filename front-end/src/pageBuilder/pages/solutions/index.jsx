@@ -40,6 +40,10 @@ module.exports.hosting = hosting
 import cex from './cex'
 module.exports.cex = cex
 
+
+import snb from './snb'
+module.exports.snb = snb
+
 import cdr from './cdr'
 module.exports.cdr = cdr
 
