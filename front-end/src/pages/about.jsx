@@ -45,7 +45,7 @@ class about extends Component {
           <Box pos="relative" bg="dark.500">
             <Image position="absolute" height="100%" zIndex="0" top={0} left={0} opacity=".3" objectFit="cover" width="100%" src="/assets/images/backgrounds/aboutus.jpg"></Image>
             <Fade distance="5%" duration={500} top>
-              <Section zIndex="100" textAlign="center" color="white" bg={["gray.200", "#ffffff00"]} py={[16, 40]} my={0}>
+              <Section zIndex="100" textAlign="center" color="white" py={[16, 40]} my={0}>
                 <Heading size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Know More</Heading>
                 <Title zIndex="100" fontSize={["44px", "64px"]}>About Us</Title>
               </Section>

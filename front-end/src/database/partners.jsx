@@ -41,8 +41,8 @@ export default [
         logo: "/assets/images/brands/Icons/palo_alto.png",
         description: "Palo Alto Networks, Inc.is an American multinational cybersecurity company with headquarters in Santa Clara, California. Its core products are a platform that includes advanced firewalls and cloud-based offerings that extend those firewalls to cover other aspects of security. The company serves over 70,000 organizations in over 150 countries, including 85 of the Fortune 100.It is home to the Unit 42 threat research team and hosts the Ignite cybersecurity conference."
     },    {
-        name: "Redhat",
-        logo: "/assets/images/brands/Icons/redhat.png",
+        name: "Redhat CCSP",
+        logo: "/assets/images/brands/redhat.jpg",
         description: "The world’s leading provider of enterprise open source solutions, using a community-powered approach to deliver high-performing Linux, cloud, container, and Kubernetes technologies. We help you standardize across environments, develop cloud-native applications, and integrate, automate, secure, and manage complex environments with award-winning support, training, and consulting services."
     },
     {
