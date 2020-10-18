@@ -3,17 +3,17 @@ import WebHostingPricing from "../../pricing/WebHostingPricing";
 export default [
     {   
         title : "Hosting that you want to choose",
-        description: <span>Web Hosting as a Service includes deploying, maintaining, managing, 
-            and securing your website over the world wide web with a unique 
-            domain name for your website. The main functionality of Hosting is 
-            to make your website live to be accessed or 
-            viewed by users all around the globe, for them to load the required resources.
-        <br/><br/> Web Hosting as a 
-          Service allows you to host the website over the web, 
-          and maintain and monitor in real-time. The current 
-          age is what you witness over the web, because of 
-          which Web Hosting Services have gained tremendous
-           fame over the past few years.</span>,
+        description: <span>Web Hosting as a Service includes deploying, maintaining, 
+            managing, and securing your website over the world wide web with a 
+            unique domain name for your website. The main functionality of Hosting is 
+            to make your website live to be accessed or viewed by users all around the 
+            globe, for them to load the required resources.
+
+        <br/><br/> Web Hosting as a Service allows you to host the website over the web 
+        and maintain and monitor in real-time. The current age is what you witness 
+        over the web, because of which Web Hosting Services have gained tremendous 
+        fame over the past few years.
+</span>,
         descriptionStyle: {
             fontSize: "lg",
             px: 6,
@@ -46,7 +46,7 @@ export default [
                     fontSize: "lg",
                     titleSize: 32,
                     
-                    text: "Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring included in the package. Load balancing can also be added as an option if required. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users."
+                    text: "Dedicated Web Server running APACHE with full redundancy and daily backups. A complete website monitoring is included in the package. Load balancing can also be added as an option if required. With assured low latency and high availability, it is a cost-effective way to make your applications and services available to your users."
                     
                 }]
             },
@@ -111,17 +111,17 @@ export default [
                 fontSize: "md",
                 content: [{
                     title: "Varied Web Hosting Solutions",
-                    description: "WordPress hosting, cloud hosting, dedicated server, AWS cloud, digital ocean cloud, all under one roof. Multiple data center locations allow access to your website anytime, anywhere.",
+                    description: "WordPress hosting, cloud hosting, dedicated server, AWS cloud, and digital ocean cloud are all under one roof. Multiple data center locations allow access to your website anytime, anywhere.",
                     image: "/assets/images/illustrations/Varied_Web_Hosting_Solutions.svg"
                 },
                 {
                     title: "Sound and Efficient Planning",
-                    description: "We can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. Migratory process of your website onto our platform is super easy with fast, secure and reliable hosting.",
+                    description: "We can help you choose the best path to embrace this transformation at all levels—from your base infrastructure to achieve your strategic vision and goals. Your website's migratory process onto our platform is super easy with fast, secure, and reliable hosting.",
                     image: "/assets/images/illustrations/Sound_and_Efficient_Planning.svg"
                 },
                 {
                     title: "Value for Money",
-                    description: "Reduced costs, pay for what you want, no hidden costs and completely transparent process. Costing and pricing discussed and negotiated at the starting of the job only.",
+                    description: "Reduced costs, pay for what you want, no hidden fees, and completely transparent process. Costing and pricing are discussed and negotiated at the starting of the job only.",
                     image: "/assets/images/illustrations/Value_for_Money.svg"
                 },]
             }

@@ -106,7 +106,7 @@ export default [
                     image: "/assets/images/illustrations/ClientSpecific_AppDev.svg",
                  
                     flexDirection: ["column", "column", "row-reverse"],
-                    description: "Your time is valuable. Consequently, a qualified support crew answering the call helps us to identify the issue at a faster rate. Responsive and reliable support services are delivered by highly trained, Australia based team. For infrastructure, networking, security, cloud-based service, end-user or any other facet of IT support, BGUS can deliver a world-class technical support solution. Get back on track fast. You can count on our responsive, reliable team to provide cost-effective expertise on-demand !!!"
+                    description: "Your time is valuable. Consequently, a qualified support crew answering the call helps us identify the issue faster. Responsive and reliable support services are delivered by a highly trained, Australia based team. For infrastructure, networking, security, cloud-based service, end-user, or any other facet of IT support, BGUS can deliver a world-class technical support solution. Get back on track fast. You can count on our responsive, reliable team to provide cost-effective expertise on-demand !!!"
                 }
             },
         ]

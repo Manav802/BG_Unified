@@ -1,4 +1,3 @@
-import GPUPricing from "../../pricing/GPUPricing";
 
 export default [
     {
@@ -23,28 +22,23 @@ export default [
                 data: [{
                     textAlign: "justify",
                     fontSize: ["md", "md", "md", "lg"],
-                    title: "Harness the power of GPU",
+                    title: "Smart Business Solutions",
                     titleSize: [28, 28, 28, 32],
-                    text: <span>You get direct access to one of the most flexible server-selection processes 
-                        in the industry and seamless integration. GPU delivers extreme performance and 
-                        industry-leading hybrid cloud data management capabilities. To provide customer 
-                        enablement (if required), we can provide tools to detect GPUs and make them available 
-                        automatically. To maximize this powerful resource's utilization, IT administrators can 
-                        configure, scale, and allow fine-grained access control of GPU resources to end-users.
+                    text: <span>If you plan to promote your business using the 
+                        1300 numbers, you should consider the range of smart numbers 
+                        with high impact numeric patterns. And apart from being able 
+                        to use the number to promote your business in various ways, it 
+                        becomes your business asset that can be on-sold or traded. 
+                        Promoting your business by just being displayed, Smart Numbers 
+                        have also proven to be more memorable. And that means more 
+                        calls leading to more business.
+
+
                      </span>
                 }]
             }]
     },
-    {
-        py: 0,
-        gap: 0,
-        containerWidth:"100%",
-        body: [{
-            width: "100%",
-            type: "pricing",
-            data: <GPUPricing/>
-        }],
-    },
+    
   
     {
         my: 0,
@@ -61,12 +55,12 @@ export default [
                 width: ["100%","100%","100%",1/2, 5/12],
                 type: "content",
                 data: [{
-                    title: "BGUS GPU-As-A-Service",
+                    title: "BGUS SNB-As-A-Service",
                     textAlign: "left",
                     fontSize: ["lg","xl"],
                     titleSize: [25,25,32],
                     my:[2,4,8],
-                    text: "With GPUaaS, you also get access to our AI expertise, extensive training, and technical capabilities that can jump-start your projects. Our dedicated team can assist with prescriptive guidance and design expertise. Our technical team ensures your AI applications are fully supported."
+                    text: "BGUS offers you a complete package for your business. Get your Smart Numbers hosted by our telco vendors; we’ll provide you with the full billing logs and statistics. We ensure to be a completely trustworthy partner for your inbound calls. Give your business a boost with BGUS Smart Number Billing."
                     
                 }]
             },
@@ -76,27 +70,27 @@ export default [
                 containerData : [{
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "Rapid Workspeed"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "Secure Hosting"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/clock.svg", mt: 4, title: "High Availability"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/clock.svg", mt: 4, title: "Flexible"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/flower-2.svg",mt: 4, title: "Varied Usage"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/flower-2.svg",mt: 4, title: "Portable"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/air-ballon.svg", mt: 4, title: "Seamless"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/air-ballon.svg", mt: 4, title: "Relocatable"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/duplicate.svg", mt: 4, title: "Hybrid Management"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/duplicate.svg", mt: 4, title: "Scalable"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
@@ -123,26 +117,34 @@ export default [
                 width: ["100%","100%","100%", 2/3],
                 type: "content",
                 data: [{
-                    title: "GPU: Diversified Applications",
+                    title: "SNB: Seamless Inbound Service",
                     fontSize: ["lg","xl"],
                     titleSize: [32,36,40,48],
                     my:[2,4,8],
                     text:   <>
-                            <span>Graphical Processing Unit does not cater to a single domain.
-                                 In the present-day scenario, where technology proves to be the backbone of every industry, the importance of 
-                                 GPUs has grown exponentially.
-                                </span><br/><br/>
-                            <span> From refining and mining data to analyzing it. From Scientific Researches to Health Sector.
-                                 From finance to educational institutions. Graphical Processing Unit has become an essential resource for every industry.
-                                </span>,
+                            <span>Being unique to your business, Smart Numbers make 
+                                it much easier for customers to remember your number 
+                                and more accessible for them to reach you. Research shows
+                                 they are a very successful marketing tool for creating 
+                                 more sales leads phone calls to your business.
+
+</span><br/><br/>
+                            <span> Smart Numbers aren’t limited to your local area, 
+                                so your business can reach all of Australia. Whether 
+                                you’re ready to expand now…or down the track, a Smart 
+                                Number gives your business more options. BGUS provide 
+                                diversified solutions for smart number integration for your business.
+
+
+                                </span>
                             </>    
                 },
                 {   
                     list: [
-                        "Healthcare Services",
-                        "Big Data Analytics",
-                        "Scientific Research Operations",
-                        "Deep Learning and Machine Learning"
+                        "Buy New Smart Numbers",
+                        "Host Existing Smart Numbers",
+                        "Get a Smart Number Billing Service",
+                        "Reports and complete billing logs."
                     ],
                     spacing: 2,
                     styleType: "none",

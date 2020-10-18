@@ -42,7 +42,7 @@ function main() {
         />
                 <Fade duration={700} delay={1000} bottom>
                     <Flex textAlign={["center","center","left"]} alignContent={["center","center","left"]} justifyContent={["center","center","left"]}  align="center" py={4}>
-                        <Heading fontSize={["18px","24px"]}>Training and Certifications</Heading>
+                        <Heading fontSize={["18px","24px"]}>Trainings and Certifications</Heading>
                     </Flex>
                 </Fade>
                 <Fade duration={700} delay={100} bottom>

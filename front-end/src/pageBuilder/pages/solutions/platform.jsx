@@ -86,7 +86,7 @@ export default [
                     size: "96px",
                     image: "/assets/images/icons/color/pie-chart.svg",
                     title: "Monitor on-the-go",
-                    description: "Maintain, monitor, and manage your application, anytime, anywhere!",
+                    description: "Maintain, monitor, and manage your application anytime, anywhere!",
                     align: "center",
                 }
             },
@@ -102,17 +102,17 @@ export default [
                 fontSize: "md",
                 content: [{
                     title: "Load Balancing",
-                    description: "Meet the needs of your business—today and as you grow—with innovative, flexible and scalable load balancing solutions—platform-oriented cloud platforms.",
+                    description: "Meet the needs of your business—today and as you grow—with innovative, flexible, and scalable load balancing solutions—platform-oriented cloud platforms.",
                     image: "/assets/images/illustrations/data_points.svg"
                 },
                 {
                     title: "Easy execution",
-                    description: "Enabling clients to develop, run and manage business applications without the need to build authentic software infrastructure. Platform-oriented cloud platforms obtain a higher level of abstraction.",
+                    description: "Enabling clients to develop, run, and manage business applications without building authentic software infrastructure. Platform-oriented cloud platforms obtain a higher level of abstraction.",
                     image: "/assets/images/illustrations/FlexibilityAndScalabilty_AppDev.svg"
                 },
                 {
                     title: "Cost-effective scalability",
-                    description: " Scale up your project on demand by purchasing just the amount of hardware or storage you require at affordable prices. Platform as a service cloud providing you with limitless resources of computing.",
+                    description: " Scale up your project on demand by purchasing just the amount of hardware or storage you require at affordable prices—platform as a service cloud providing you with limitless computing resources.",
                     image: "/assets/images/illustrations/productivity.svg"
                 },]
             }

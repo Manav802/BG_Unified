@@ -24,7 +24,7 @@ function features() {
           <Fade distance="5%" duration={500} top>
           <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
           <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Our Features</Heading>
-          <Title zIndex="100" fontSize={["44px","64px"]}>Why BGUS</Title>
+          <Title zIndex="100" fontSize={["44px","64px"]}>Why BG Unified Solutions</Title>
           </Section>
           </Fade>
       </Box>
@@ -82,13 +82,13 @@ function features() {
                   objectFit: "contain"
                 },
                 description: <span>
-                  Infrastructure includes more than 10000 Cores CPU, 10TB RAM. The
-                  storage infrastructure comprises more than 900TB of storage.
-                  Desktop virtualization and server management. Geographically
-                  sound, redundant, quick and efficient increasing your backup by
-                  60%.F5 load balancing solutions ensures scaling your critical
-                  applications, scaling up or down your storage capacity as and
-                  when required.
+                  Infrastructure includes more than 10000 Cores CPU, 10TB RAM. 
+                  The storage infrastructure comprises more than 900TB of storage: 
+                  desktop virtualization and server management. Geographically sound, 
+                  redundant, quick, and efficient, increasing your backup by 60%. F5 load balancing 
+                  solutions ensure scaling your critical applications, scaling up or down your 
+                  storage capacity as and when required.
+
                 </span>,
                   flexDirection: ["column", "column", "row-reverse"],
               }
@@ -135,10 +135,12 @@ function features() {
               image: "/assets/images/features/vectors/end_to_end.svg",
               maxH: "400px",
               description: <span>
-                End-to-End DC network infrastructure encompassing server
-                switching, storage switching and DC Interconnect Solutions. 10G/40G core switching offering a high-speed spine and leaf network.
-                We can help you implement a flexible, agile architecture explicitly designed to meet your unique needs. Next-general data centers
-                and enable your journey to the cloud.
+                End-to-End DC network infrastructure encompassing server switching, 
+                storage switching, and DC Interconnect Solutions. 10G/40G core 
+                switching offering a high-speed spine and leaf network. We can help 
+                you implement a flexible, agile architecture explicitly designed to 
+                meet your unique needs. Next-general data centers and enable your journey to the cloud.
+
               </span>,
                 flexDirection: ["column", "column", "row-reverse"],
             }
@@ -170,13 +172,12 @@ function features() {
               Up to 1600 SIP Channels
             </Heading>
             <Text fontSize="lg" fontWeight="600" opacity=".7">
-              15 Cisco Unified Border Elements with 1600 SIP channels spanned
-              across multiple DC locations with DUAL Exchange Homing. Improved
-              operational efficiencies, Reduced communication-related delays and
-              enhanced collaboration. Ensure a completely secure network by
-              technologies such as NAC(Network Access Control) using ISE,
-              SourceFire, Cisco / Palo Alto / Checkpoint / Fortinet Firewall,
-              DDOS Protection.
+            15 Cisco Unified Border Elements with 1600 SIP channels spanned across 
+            multiple DC locations with DUAL Exchange Homing. Improved operational 
+            efficiencies, Reduced communication-related delays, and enhanced collaboration. 
+            Ensure a completely secure network by technologies such as NAC(Network Access Control) 
+            using ISE, SourceFire, Cisco / Palo Alto / Checkpoint / Fortinet Firewall, DDOS Protection.
+
               </Text>
           </div>
         </div>
@@ -195,10 +196,10 @@ function features() {
               Multiple Data Center Locations
             </Heading>
             <Text fontSize="lg" fontWeight="600" opacity=".7">
-              Seven to be precise including Solarix,
-              Auckland, Airtrunk SYD/ME and GovDC.End-to-End DC network
-              infrastructure encompassing server switching. Server consolidation
-              and virtualization, high availability & clustering.
+            Seven to be precise, including Solarix, Auckland, Airtrunk SYD/ME, and GovDC.End-to-End 
+            DC network infrastructure encompassing server switching. Server consolidation and 
+            virtualization, high availability & clustering.
+
               </Text>
           </div>
           <div className="col-md-7 pl-0 position-relative d-none d-md-block">

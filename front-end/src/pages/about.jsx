@@ -110,24 +110,24 @@ class about extends Component {
                 </div>
                 <div className="display6 py-3">Our Mission</div>
                 <Text fontSize="xl">
-                  BG Unified Solutions Pty Ltd Team consists of experts in
-                  different technologies like Security, Voice and a broad
-                  range of additional skills including F5 Load Balancers, WAN
-                  Optimization, WAN, Cloud Technologies and Cisco
-                  Technologies. As experts in different technologies, our
-                  focus is to provide competitive and affordable Unified
-                  Solutions to our clients.
+                BG Unified Solutions Pty Ltd Team consists of experts in 
+                different technologies like Security, Voice, and a broad range of 
+                additional skills, including F5 Load Balancers, WAN Optimization, WAN, 
+                Cloud Technologies, and Cisco Technologies. As experts in different 
+                technologies, our focus is to provide competitive and affordable 
+                Unified Solutions to our clients.
+
                     </Text>
                 <Text fontSize="xl" mt={3}>
-                  We majorly deal with Cisco Voice / Video Projects, WAN
-                  Implementations, DC Design and Implementation. Our goal is
-                  to make our customers more competitive and achieve higher
-                  business efficiency through increased agility, significant
-                  cost containment and lower risk. BG Unified Solutions,
-                  founded in 2013, provides national and international IT
-                  Services to some of Australia's leading companies, who use
-                  information technology to improve their business results.
-                    </Text>
+                We majorly deal with Cisco Voice / Video Projects, WAN Implementations, 
+                DC Design, and Implementation. Our goal is to make our customers more 
+                competitive and achieve higher business efficiency through increased 
+                agility, significant cost containment, and lower risk. BG Unified Solutions, 
+                founded in 2013, provides national and international IT Services to some 
+                of Australia's leading companies, who use information technology to 
+                improve their business results.
+
+                    </Text> 
               </div>
             </div>
           </div>
@@ -155,9 +155,9 @@ class about extends Component {
                     name="Saurabh Sareen"
                     img="/assets/images/team/saurabh.jpg"
                   >
-                    Managing Director / Owner at BG Unified Solutions Limited, AU and NZ.
-                    Hardworking, Cloud Services and Hosting Solutions Specialist,
-                    entirely driven by customers satisfaction and deliverability.
+                    Managing Director / Owner at BG Unified Solutions Limited, AU, and NZ. 
+                    Hardworking, Cloud Services, and Hosting Solutions Specialist, entirely 
+                    driven by customer satisfaction and deliverability.
                   </Team>
                 </div>
                 <div className="col-lg-8 offset-lg-4 offset-xl-6 col-xl-6 d-flex flex-column align-items-end py-3">

@@ -1,4 +1,3 @@
-import GPUPricing from "../../pricing/GPUPricing";
 
 export default [
     {
@@ -23,28 +22,21 @@ export default [
                 data: [{
                     textAlign: "justify",
                     fontSize: ["md", "md", "md", "lg"],
-                    title: "Harness the power of GPU",
+                    title: "Connecting the World for Better Solving ",
                     titleSize: [28, 28, 28, 32],
-                    text: <span>You get direct access to one of the most flexible server-selection processes 
-                        in the industry and seamless integration. GPU delivers extreme performance and 
-                        industry-leading hybrid cloud data management capabilities. To provide customer 
-                        enablement (if required), we can provide tools to detect GPUs and make them available 
-                        automatically. To maximize this powerful resource's utilization, IT administrators can 
-                        configure, scale, and allow fine-grained access control of GPU resources to end-users.
-                     </span>
+                    text: <span>A call detail record (CDR) provides information about 
+                        calls made over phone service. A CDR report can offer businesses 
+                        exact answers about where, when, and how markets are made for
+                         reporting and billing purposes. Get the insight you need into 
+                         key call quality metrics, including network jitter, packet loss, 
+                         and latency. Sort and filter CDRs based on-call status, call time, 
+                         termination reason, phone IP, phone number, and more.
+
+                         </span>
                 }]
             }]
     },
-    {
-        py: 0,
-        gap: 0,
-        containerWidth:"100%",
-        body: [{
-            width: "100%",
-            type: "pricing",
-            data: <GPUPricing/>
-        }],
-    },
+    
   
     {
         my: 0,
@@ -61,12 +53,12 @@ export default [
                 width: ["100%","100%","100%",1/2, 5/12],
                 type: "content",
                 data: [{
-                    title: "BGUS GPU-As-A-Service",
+                    title: "BGUS CDR-As-A-Service",
                     textAlign: "left",
                     fontSize: ["lg","xl"],
                     titleSize: [25,25,32],
                     my:[2,4,8],
-                    text: "With GPUaaS, you also get access to our AI expertise, extensive training, and technical capabilities that can jump-start your projects. Our dedicated team can assist with prescriptive guidance and design expertise. Our technical team ensures your AI applications are fully supported."
+                    text: "BG Unified Solutions' CDR As A Service extensively covers every aspect and parameter of call detail records. We bring you a comprehensive and thorough call data records that are customizable according to your needs, lets you filter logs and data as per your requirements."
                     
                 }]
             },
@@ -76,32 +68,32 @@ export default [
                 containerData : [{
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "Rapid Workspeed"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/communication/sending.svg", mt: 4, title: "Call Time"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/clock.svg", mt: 4, title: "High Availability"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/clock.svg", mt: 4, title: "Call Status"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/flower-2.svg",mt: 4, title: "Varied Usage"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/flower-2.svg",mt: 4, title: "Phone IP"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/air-ballon.svg", mt: 4, title: "Seamless"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/home/air-ballon.svg", mt: 4, title: "Termination Reason"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/duplicate.svg", mt: 4, title: "Hybrid Management"}
+                    data: {align: "center",titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/general/duplicate.svg", mt: 4, title: "Featured QoS"}
                 },
                 {
                     width: [1/2,1/3,1/3,1/2,1/3],
                     type: "feature",
-                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "Maximum Utilization"}
+                    data: {align: "center", titleSize:"md", iconColor:"primary.500", svg:"/assets/images/icons/library/media/equalizer.svg", mt: 4, title: "Customized Reports"}
                 }],
             },
         ]   
@@ -123,26 +115,29 @@ export default [
                 width: ["100%","100%","100%", 2/3],
                 type: "content",
                 data: [{
-                    title: "GPU: Diversified Applications",
+                    title: "CDR: Diversified Applications",
                     fontSize: ["lg","xl"],
                     titleSize: [32,36,40,48],
                     my:[2,4,8],
                     text:   <>
-                            <span>Graphical Processing Unit does not cater to a single domain.
-                                 In the present-day scenario, where technology proves to be the backbone of every industry, the importance of 
-                                 GPUs has grown exponentially.
+                            <span>Call Detail Records does not cater to a single domain.
+                                 In the present-day scenario, where technology and telephony prove to be the backbone of every industry, the importance of 
+                                 CDRs has grown exponentially.
                                 </span><br/><br/>
-                            <span> From refining and mining data to analyzing it. From Scientific Researches to Health Sector.
-                                 From finance to educational institutions. Graphical Processing Unit has become an essential resource for every industry.
-                                </span>,
+                            <span> Call detail records serve a valuable purpose of revenue generation for 
+                                telephone service providers and are critical for law enforcement, 
+                                whenever required. CDR is also used for VOIP and is a file containing 
+                                all usage details such as the source of origin and destination point of the call, 
+                                usage period of the IP, and the total amount charged during the billing period.
+                                </span>
                             </>    
                 },
                 {   
                     list: [
-                        "Healthcare Services",
-                        "Big Data Analytics",
-                        "Scientific Research Operations",
-                        "Deep Learning and Machine Learning"
+                        "Call Metadata",
+                        "Analyze calling patterns",
+                        "Billable communications transmission",
+                        "Identify calling trends"
                     ],
                     spacing: 2,
                     styleType: "none",

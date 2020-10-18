@@ -25,8 +25,8 @@ export default [
                 fontSize: ["md","md","md","lg"],
                 title: "Your Security Needs Meet our Expertise",
                 titleSize: [28,28,28,32],
-                text: <span>Distributed Denial of Service Attacks has become more hazardous and more 
-                    frequent in recent times. This situation has triggered the need for DDoS protection 
+                text: <span>Distributed Denial of Service Attacks have become more frequent and more 
+                    hazardous in recent times. This situation has triggered the need for DDoS protection 
                     at a tremendous rate. With the growing availability of attack tools and global 
                     botnets, BGUS tackles all your worries from a 
                     security perspective and practice to provide the best-in-class security service to 
