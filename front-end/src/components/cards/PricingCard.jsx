@@ -47,6 +47,14 @@ function PricingCard(props) {
                 </ListItem>
               );
             })}
+            {props.excludingList && props.excludingList.map((feature, index) => {
+              return (
+                <ListItem>
+                  <ListIcon p="2px" icon="close" color="Red" />
+                  {feature}
+                </ListItem>
+              );
+            })}
           </List>
         </div>
       )}

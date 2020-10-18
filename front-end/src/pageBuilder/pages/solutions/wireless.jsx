@@ -12,7 +12,7 @@ export default [
             {
                 type: "content",
                 data:[{
-                    text: "Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters as well as isolated Data centers of Cisco WLC 5508, 2504 and Aruba controllers.",
+                    text: "Cisco Wi-Fi and Aruba Wi-Fi. The hosted wireless solution includes multiple clusters and isolated Data centers of Cisco WLC 5508, 2504, and Aruba controllers.",
                     textAlign: "center",
                     opacity:0.7,
                     px:[0,4,8,16]
@@ -66,7 +66,7 @@ export default [
     },
     {
         title: "Why BG Unified Solutions?",
-        description: "Wireless plays an integral part in collaborating and streamlining resources of an organization and increases productivity at a tremendous rate.",
+        description: "Wireless plays an integral part in collaborating and streamlining an organization's resources and increases productivity at a tremendous rate.",
         rowDistance: 8,
         mb:0,
         py:45,

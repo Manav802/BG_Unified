@@ -20,6 +20,8 @@ module.exports.dns = dns
 import platform from "./platform"
 module.exports.platform = platform
 
+
+
 import firewall from "./firewall"
 module.exports.firewall = firewall
 
@@ -37,6 +39,9 @@ module.exports.hosting = hosting
 
 import cex from './cex'
 module.exports.cex = cex
+
+import cdr from './cdr'
+module.exports.cdr = cdr
 
 import sip from './sip'
 module.exports.sip = sip
