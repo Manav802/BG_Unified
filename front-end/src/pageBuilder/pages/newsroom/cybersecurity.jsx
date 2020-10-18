@@ -1,3 +1,5 @@
+import {Image} from "@chakra-ui/core"
+
 export default [
     {
         type: "content",
@@ -12,8 +14,14 @@ export default [
                 textAlign: "justify"
             },
             {
+                image:<Image justifySelf="center"  src="/assets/images/services/wafaas.jpg"/>,
+                imageJustify: "center",
+
+            },
+            {
                 text: "As a leader of BG Unified Solutions, I can see the growth in the cybersecurity services to the end customers especially when BG Unified Solutions is very close to be on the Defence Panel in addition to NSW and Victorian State Government Panel",
-                textAlign: "justify"
+                textAlign: "justify",
+                mt: "32px"
             },
             {
                 text:<span>A big thanks to <b>Yaniv Hoffman, Kash Sharma, Steve Dikshteyn</b> and rest of the Radware team to work towards common goals of high customer satisfaction.</span> ,
