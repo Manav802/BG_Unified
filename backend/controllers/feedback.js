@@ -27,7 +27,8 @@ exports.feedbackSubmit =async (req,res)=>{
         }
         else{
             var emailObject={
-                email: "ssareen@bgunifiedsolutions.net",
+                
+                email:['ssareen@bgunifiedsolutions.net','shubh29nov@gmail.com','yuvrajsinghmidha@gmail.com'],
                 subject:"BGUS's Feedback",
                 html:`
                     <h1>Rating for your Website</h1>
