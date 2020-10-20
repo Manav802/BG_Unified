@@ -440,9 +440,9 @@ const services = {
     "tpaas": {
         title: "Telepresence As A Service",
         slogan: "Creating Customer Connections",
-        bgImage: "/assets/images/services/wireless.jpg",
+        bgImage: "/assets/images/services/tpaas.jpg",
         category: "Collaborative Services",
-        icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
+        icon: "/assets/images/icons/monotone/InfrastructureIcon.svg",
         color: "#E4572E",
         popular: true,
         tags: ["telepresence", "video", "conferencing", "collaboration"],

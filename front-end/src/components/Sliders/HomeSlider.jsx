@@ -60,7 +60,7 @@ const sliderInfo = [
     },
     {
       title: <p>Client Focused.<br/> Results Driven.</p>,
-      imgSrc: "/assets/images/backgrounds/city.png",
+      imgSrc: "/assets/images/backgrounds/Artboard 7.png",
       subTitle: "Infin8IT working as the technology partner  with BGUS to extend service offerings to the end-customers.",
       btnSecondaryText: "Read Customer Stories",
       btnSecondaryLink: "/stories"
