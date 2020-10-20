@@ -1,3 +1,5 @@
+import TpaasPricing from "../../pricing/TpaasPricing";
+
 export default [
     {
         gap: 10,
@@ -34,6 +36,18 @@ export default [
                 </span>
             }]
         }]
+    },
+    {
+        py: [0, 4],
+        gap: 0, mt: 0,
+        mb:0,
+        bg: "light.400",
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <TpaasPricing/>
+        },
+        ]
     },
     {
         title : "Fully Managed Video Conferencing Solutions by BGUS",
