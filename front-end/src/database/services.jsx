@@ -437,6 +437,21 @@ const services = {
         conclusion: "Let us make your campus wireless for you!!",
         sections: sections.wireless
     },
+    "tpaas": {
+        title: "Telepresence As A Service",
+        slogan: "Creating Customer Connections",
+        bgImage: "/assets/images/services/wireless.jpg",
+        category: "Collaborative Services",
+        icon: "/assets/images/icons/monotone/WirelessAsAService.svg",
+        color: "#E4572E",
+        popular: true,
+        tags: ["telepresence", "video", "conferencing", "collaboration"],
+        description: "BGUS' TelePresence Services provide comprehensive service offerings to help enterprises prepare, plan, and design their networks. These services combine extensive engineering expertise in converged networks,",
+        illustration: "",
+        relatedService: ["Unified Communications As A Service", "Service Desk As A Service", "Contact Center As A Service"],
+        conclusion: "Video Conferencing Experience like never before with BGUS TPaaS!",
+        sections: sections.tpaas
+    },
  
   
 }

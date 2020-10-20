@@ -40,6 +40,8 @@ module.exports.hosting = hosting
 import cex from './cex'
 module.exports.cex = cex
 
+import tpaas from './tpaas'
+module.exports.tpaas = tpaas
 
 import snb from './snb'
 module.exports.snb = snb
