@@ -11,17 +11,7 @@ import Title from "../pageBuilder/Title";
 import MyCount from "../components/Countup/main";
 import Link from "next/link";
 import skills from "../database/skills";
-
-const timeline = {
-  2013: "Founded BG Unified Solutions Pty Ltd, a team providing IT solutions to the clients focusing on customer satisfaction and deliverability.",
-  2014: "F5 Authorized Partners, CISCO Premier Partner, CISCO Advanced Collaboration, Architecture Specialized Partner, Palo Alto Authorized Partners.",
-  2015: "Nimble Storage Partners, NetAPP Partner, GENESYS Collaboration",
-  2016: "Technology migration to Next-Generation Firewalls, UCaaS, Wireless, Telepresence and Storage.",
-  2017: "Presence in London, offering all the services in our portfolio including, UCaaS, SaaS, IaaS, WiaaS and FaaS",
-  2018: "Received BTS Excellence Award in recognition of Excellent Service by the NSW Government.",
-  2019: "Built our Logging Cloud Connect Product, Newly deployed RDS/VDIaaS Solution into its portfolio as Workstation Service.",
-  2020: "DNS As A Service using a hybrid Windows, Red Hat Linux and Infoblox DNS Servers",
-}
+import timeline from "../database/timeline";
 
 class about extends Component {
   constructor(props) {
@@ -66,20 +56,22 @@ class about extends Component {
               <div className="slider-offset">
                 <Flex justify="center" align="center" height="96px"><Box width="100%" height="4px" bg="gray.200"></Box></Flex>
               </div>
-              {Object.entries(timeline).reverse().map(notes => (<Box pos="relative">
+              {timeline.reverse().map((notes)=>{
+              return <Box pos="relative">
                 <Flex h="300px">
                   <Flex justify="center" align="center" width="160px" height="96px"><Box width="100%" height="4px" bg="gray.200"></Box></Flex>
                   <Flex justify="center" align="center" rounded="50%" borderWidth={5} borderWidthColor="gray.200" size="96px" color="white" bg="primary.500">
-                    <Heading size="md" fontFamily="Nexa Bold">{notes[0]}</Heading>
+                    <Heading size="md" fontFamily="Nexa Bold">{notes.year}</Heading>
                   </Flex>
                   <Flex justify="center" align="center" width="160px" height="96px"><Box width="100%" height="4px" bg="gray.200"></Box></Flex>
                 </Flex>
                 <Box pos="absolute" top="96px" width="100%" px={6} mt={8}>
                   <Text fontSize="lg" textAlign="center">
-                    {notes[1]}
+                    {notes.text}
                   </Text>
                 </Box>
-              </Box>))}
+              </Box>
+              })}
               <div className="slider-offset">
                 <Flex justify="center" align="center" height="96px"><Box width="100%" height="4px" bg="gray.200"></Box></Flex>
               </div>
