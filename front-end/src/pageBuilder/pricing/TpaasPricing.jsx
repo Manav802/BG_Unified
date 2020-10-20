@@ -46,7 +46,7 @@ function TpaasPricing(props) {
                                                         featureList={["DX 70",
                                                         "DX 80",
                                                         "5 B2B Calls",
-                                                        "5 units +"]}
+                                                        "5 units "]}
                                                         
                                                         icon="/assets/images/icons/theme/origami.svg"
                                                         title="Standard"
