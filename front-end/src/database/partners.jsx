@@ -13,6 +13,10 @@ export default [
         logo: "/assets/images/brands/cisco.png",
         description: "Cisco Systems, Inc. is an American multinational technology conglomerate headquartered in San Jose, California, in the center of Silicon Valley. Cisco develops, manufactures and sells networking hardware, software, telecommunications equipment and other high-technology services and products.Through its numerous acquired subsidiaries, such as OpenDNS, Webex, Jabber and Jasper, Cisco specializes in specific tech markets, such as the Internet of Things (IoT), domain security and energy management. Cisco is incorporated in California.",
     }, {
+        name: "Infin8IT",
+        logo: "/assets/images/brands/infin_it.png",
+        description: "Infin8IT is a privately owned Australian ICT Solutions Company focussed on delivering innovative solutions and unparalleled service to both SME and enterprise market space. At Infin8IT we take a business approach to ICT management, with a strong focus on partnering with your business utilising our extensive resource pool to promote strategy and industry best practice to achieve optimal performance and systems availability." 
+    }, {
         name: "Riverbed",
         logo: "/assets/images/brands/Icons/riverbed.png",
         description: "The Riverbed Network and Application Performance Platform enables organizations to visualize, optimize, accelerate and remediate the performance of any network for any application. Our secure, open and flexible platform is comprised of best-in-class network performance management, WAN optimization, application acceleration and SD-WAN solutions.",
