@@ -4,16 +4,16 @@ import { Image, Box } from '@chakra-ui/core';
 
 
 const slides = []
-for (let index = 0; index < 10; index++) {
-    slides.push(<Box mx={6}>
-        <Image alt={"parter-" + index} src={`/assets/images/partners/partners (${index}).png`} maxW={["180px","256px"]} px={3} objectFit="contain" height="64px"></Image>
-    </Box>)
+for (let index = 0; index < 11; index++) {
+    slides.push(
+        <Image mx={6} w={["50%", "32%", "25%", "20%"]} alt={"parter-" + index} src={`/assets/images/partners/partners (${index}).png`} maxW={["180px","256px"]} px={3} objectFit="contain" height="64px"></Image>
+    )
     
 }
 
 function Partners(props) {
     return (
-        <Slider options={{wrapAround:true, freeScroll:true, pageDots:false, autoPlay:2000}}>
+        <Slider options={{wrapAround:true, freeScroll:true, pageDots:false, autoPlay:2000, pauseAutoPlayOnHover: false}}>
             {slides}
         </Slider>
     );
