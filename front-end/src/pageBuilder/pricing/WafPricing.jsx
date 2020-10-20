@@ -60,6 +60,9 @@ function WafPricing(props) {
                                                     <CustomRadio value="F5">
                                                         F5
                                                     </CustomRadio>
+                                                    <CustomRadio value="Fortinet">
+                                                        Fortinet
+                                                    </CustomRadio>
                                                 </RadioButtonGroup>
                                             </div>
                         
