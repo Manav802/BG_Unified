@@ -33,8 +33,13 @@ function WirelessPricing(props) {
                                 }
                                 icon="/assets/images/icons/theme/wifi.svg"
                                 featureList={[
+                                    "Suitable for small offices with capacity of less than 100 users",
+                                    "Each AP handles an average of 20-30 users with full application visibility",
                                     "Included 1 Corporate SSID",
                                     "Cisco Wi-Fi and Aruba Wi-Fi",
+                                    "Limit Utilization per device",
+                                    "Limit Utilization per user",
+                                    "Guest SSID available on request",
                                     "Fully Managed Service",
                                 ]}
                             >
@@ -90,9 +95,16 @@ function WirelessPricing(props) {
                                 }
                                 icon="/assets/images/icons/theme/wifi.svg"
                                 featureList={[
+                                    "Suitable for medium sized businesses with capacity of upto 300 users with seamless coverage",
+                                    "Each AP handles an average of 20-30 users with full application visibility",
                                     "Included 1 Corporate SSID",
                                     "Cisco Wi-Fi and Aruba Wi-Fi",
+                                    "Limit Utilization per device",
+                                    "Limit Utilization per user",
+                                    "Guest SSID available on request",
+                                    "Make SSID included - 5",
                                     "Fully Managed Service",
+                
                                 ]}
                             >
                                 <div className=" my-2 NunitoSans-Bold">
@@ -147,9 +159,16 @@ function WirelessPricing(props) {
                                 }
                                 icon="/assets/images/icons/theme/wifi.svg"
                                 featureList={[
+                                    "Suitable for large businesses with capacity of 600 users with seamless coverage",
+                                    "Each AP handles an average of 20-30 users with full application visibility",
                                     "Included 1 Corporate SSID",
                                     "Cisco Wi-Fi and Aruba Wi-Fi",
+                                    "Limit Utilization per device",
+                                    "Limit Utilization per user",
+                                    "Guest SSID available on request",
+                                    "Make SSID included - 10",
                                     "Fully Managed Service",
+                
                                 ]}
                             >
                                 <div className=" my-2 NunitoSans-Bold">

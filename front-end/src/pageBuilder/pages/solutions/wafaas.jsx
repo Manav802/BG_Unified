@@ -85,12 +85,84 @@ export default [
             },
         ]   
     },
-    {
-        description:"Our Dedicated Web App Firewall uses a single code base, for you can consistently apply and enforce security policies across any environment. It’s easy to deploy and available at a single license, giving you simplified configuration, bot management, and holistic visibility and control with a single pane of glass.",
-        descriptionStyle:{
-            fontSize:["lg","lg","xl"],
-            opacity:0.7,
-            px:"10px"
-        }
-    }
+    
+        {
+            px: 2,
+            title: "BGUS' Managed Web Application Firewall",
+            description: "Our Dedicated Web App Firewall uses a single code base, for you can consistently apply and enforce security policies across any environment. It’s easy to deploy and available at a single license, giving you simplified configuration, bot management, and holistic visibility and control with a single pane of glass.",
+            descriptionStyle: {
+                               fontSize:["lg","lg","xl"],
+                               opacity:0.7,
+                               px:"10px"     
+        },
+        gap: 10,
+        rowDistance: 8,
+        body: [
+            {
+                py: 4,
+                width: ["100%", "100%", 1 / 2],
+                type: "feature2",
+                data: {
+                    titleFontSize: ["lg","xl"],
+                    titleFont: "Nexa Bold",
+                    textOpacity: "0.7",
+                    image: "/assets/images/icons/color/tags.svg",
+                    title: "Breadth of offerings",
+                    align: "left",
+                    size: "50px",
+                    description: "Offering a broad suite of security services to customers enables an MSSP to meet the needs of more current and potential customers. This potentially increases ARPU through the opportunity to upsell in specific accounts. It also enables the organization to compete for business from potential new customers that are looking for a comprehensive set of services under one umbrella."
+                }
+            },
+            {
+                py: 4,
+                width: ["100%", "100%", 1 / 2],
+                type: "feature2",
+                data: {
+                    titleFontSize: ["lg","xl"],
+                    titleFont: "Nexa Bold",
+                    textOpacity: "0.7",
+                    image: "/assets/images/icons/color/mobile.svg",
+                    title: "Visibility",
+                    align: "left",
+                    size: "50px",
+                    description: "Providing end-to-end visibility is an essential capability for MSSPs seeking to meet the service expectations of their target customers. In the absence of visibility, fast-moving intrusions may cause harm before a response can occur, negating all efforts to maintain an effective security posture. To deliver a value add to customers, MSSPs need to achieve end-to-end visibility across each customer’s environment and provide that visibility to them via a customer portal."
+                }
+            },
+            {
+                py: 4,
+                width: ["100%", "100%", 1 / 2],
+                type: "feature2",
+                data: {
+                    titleFontSize: ["lg","xl"],
+                    titleFont: "Nexa Bold",
+                    textOpacity: "0.7",
+                    image: "/assets/images/icons/color/lock.svg",
+                    title: "Threat intelligence and analytics",
+                    align: "left",
+                    size: "50px",
+                    description: "In today’s advanced threat landscape, customers need real-time access to robust threat intelligence to counter attacks that move at machine speed. In addition to a customer’s own security logs, many subscribe to threat-intelligence feeds pulled from large networks of firewalls around the world, but it is a challenge to aggregate this data across a fragmented security architecture in time to deliver adequate speed of response."
+                }
+            },
+            
+            {
+                py: 4,
+                width: ["100%", "100%", 1 / 2],
+                type: "feature2",
+                data: {
+                    titleFontSize: ["lg","xl"],
+                    titleFont: "Nexa Bold",
+                    textOpacity: "0.7",
+                    image: "/assets/images/icons/color/agile.svg",
+                    title: "Operational efficiency",
+                    align: "left",
+                    size: "50px",
+                    description: "Lack of integration across different security elements and architectural fragmentation increase operational inefficiencies. Without integration and automation, many security workflows must be managed manually. End-to-end integration, on the other hand, enables the MSSP to deliver broad services while optimizing staff time and budgetary resources, maximizing margins and potentially increasing ARPU."
+                }
+            },
+            
+            
+        ]
+    },
+
 ]
+    
