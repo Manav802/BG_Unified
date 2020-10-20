@@ -40,7 +40,7 @@ class about extends Component {
       <>
         <div className="about">
           <Head>
-            <title>More About Us - BG Unified</title>
+            <title>More About Us | BG Unified Solutions</title>
           </Head>
           <Box pos="relative" bg="dark.500">
             <Image position="absolute" height="100%" zIndex="0" top={0} left={0} opacity=".3" objectFit="cover" width="100%" src="/assets/images/backgrounds/aboutus.jpg"></Image>
