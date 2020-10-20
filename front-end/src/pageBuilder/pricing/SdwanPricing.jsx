@@ -26,15 +26,76 @@ function SdwanPricing(props) {
                             <Tabs onChange={()=>{setSwitch1(false); setSwitch2(false);}} align="center">
                                 <TabList
                                 >
-                                    <Tab className="py-4 px-5 display6 ">
-                                        Silver Peak
-                                    </Tab>
                                     <Tab className="py-4 px-5 display6">
                                         Fortinet
                                     </Tab>
+                                    <Tab className="py-4 px-5 display6 ">
+                                        Silver Peak
+                                    </Tab>
+                                    
                                 </TabList>
 
                                 <TabPanels>
+                                    <TabPanel className="py-2">
+                                        <Fade
+                                            duration={500}
+                                            distance={"30%"}
+                                            bottom
+                                        >
+                                            <div className="row no-gutters justify-content-center">
+                                                <div className="col-lg-4 my-3">
+                                                    <PricingCard
+                                                        featureList={fortnietFeatures.slice(0,3)}
+                                                        excludingList={fortnietFeatures.slice(3,11)}
+                                                        icon="/assets/images/icons/theme/origami.svg"
+                                                        title="Standard"
+                                                    >
+                                                        
+                                                        <div className="d-flex btn align-items-center">
+                                                            <PricingQuote
+                                                                button
+                                                                serviceName="SD-WAN As A Service"
+                                                                serviceDescription={"Fortinet, Standard"}
+                                                            ></PricingQuote>
+                                                        </div>
+                                                    </PricingCard>
+                                                </div>
+                                                <div className="col-lg-4 my-3">
+                                                    <PricingCard
+                                                        featureList={fortnietFeatures.slice(0,6)}
+                                                        excludingList={fortnietFeatures.slice(6,11)}
+                                                        icon="/assets/images/icons/theme/paper-plane.svg"
+                                                        title="Professional"
+                                                    >
+                                                        
+                                                        <div className="d-flex btn align-items-center">
+                                                            <PricingQuote
+                                                                button
+                                                                serviceName="SD-WAN As A Service"
+                                                                serviceDescription={"Fortinet, Professional"}
+                                                            ></PricingQuote>
+                                                        </div>
+                                                    </PricingCard>
+                                                </div>
+                                                <div className="col-lg-4 my-3">
+                                                    <PricingCard
+                                                        featureList={fortnietFeatures.slice(0,11)}
+                                                        icon="/assets/images/icons/theme/airplane.svg"
+                                                        title="Business"
+                                                    >
+                                                        
+                                                        <div className="d-flex btn align-items-center">
+                                                            <PricingQuote
+                                                                button
+                                                                serviceName="SD-WAN As A Service"
+                                                                serviceDescription={"Fortinet, Business"}
+                                                            ></PricingQuote>
+                                                        </div>
+                                                    </PricingCard>
+                                                </div>
+                                            </div>
+                                        </Fade>
+                                    </TabPanel>
                                     <TabPanel className="py-2">
                                         <Fade
                                             duration={500}
@@ -106,67 +167,6 @@ function SdwanPricing(props) {
                                                                 button
                                                                 serviceName="SD-WAN As A Service"
                                                                 serviceDescription={"Silver Peak, Cluster"+handleSwitch(switch2)}
-                                                            ></PricingQuote>
-                                                        </div>
-                                                    </PricingCard>
-                                                </div>
-                                            </div>
-                                        </Fade>
-                                    </TabPanel>
-
-                                    <TabPanel className="py-2">
-                                        <Fade
-                                            duration={500}
-                                            distance={"30%"}
-                                            bottom
-                                        >
-                                            <div className="row no-gutters justify-content-center">
-                                                <div className="col-lg-4 my-3">
-                                                    <PricingCard
-                                                        featureList={fortnietFeatures.slice(0,3)}
-                                                        excludingList={fortnietFeatures.slice(3,11)}
-                                                        icon="/assets/images/icons/theme/origami.svg"
-                                                        title="Standard"
-                                                    >
-                                                        
-                                                        <div className="d-flex btn align-items-center">
-                                                            <PricingQuote
-                                                                button
-                                                                serviceName="SD-WAN As A Service"
-                                                                serviceDescription={"Fortinet, Standard"}
-                                                            ></PricingQuote>
-                                                        </div>
-                                                    </PricingCard>
-                                                </div>
-                                                <div className="col-lg-4 my-3">
-                                                    <PricingCard
-                                                        featureList={fortnietFeatures.slice(0,6)}
-                                                        excludingList={fortnietFeatures.slice(6,11)}
-                                                        icon="/assets/images/icons/theme/paper-plane.svg"
-                                                        title="Professional"
-                                                    >
-                                                        
-                                                        <div className="d-flex btn align-items-center">
-                                                            <PricingQuote
-                                                                button
-                                                                serviceName="SD-WAN As A Service"
-                                                                serviceDescription={"Fortinet, Professional"}
-                                                            ></PricingQuote>
-                                                        </div>
-                                                    </PricingCard>
-                                                </div>
-                                                <div className="col-lg-4 my-3">
-                                                    <PricingCard
-                                                        featureList={fortnietFeatures.slice(0,11)}
-                                                        icon="/assets/images/icons/theme/airplane.svg"
-                                                        title="Business"
-                                                    >
-                                                        
-                                                        <div className="d-flex btn align-items-center">
-                                                            <PricingQuote
-                                                                button
-                                                                serviceName="SD-WAN As A Service"
-                                                                serviceDescription={"Fortinet, Business"}
                                                             ></PricingQuote>
                                                         </div>
                                                     </PricingCard>
