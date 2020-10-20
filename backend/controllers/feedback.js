@@ -1,6 +1,7 @@
 const Feedback  = require('../models/feedback')
 const  { validationResult } = require('express-validator')
 const { handleError } = require('../helpers/errorHandler')
+const { sendMail } = require('../helpers/mail')
 
 //submission  the feedback
 exports.feedbackSubmit =async (req,res)=>{
@@ -24,9 +25,30 @@ exports.feedbackSubmit =async (req,res)=>{
         if(err){
             return handleError(res,err,"Unable to Store in DB" ,503)
         }
-        return res.status(200).json({
-            success :true,
-            message:"Feedback stored Successfully"
-        })
+        else{
+            var emailObject={
+                
+                email:['ssareen@bgunifiedsolutions.net','shubh29nov@gmail.com','yuvrajsinghmidha@gmail.com'],
+                subject:"BGUS's Feedback",
+                html:`
+                    <h1>Rating for your Website</h1>
+                    <p>Rating: ${rating}</p>
+                    <p>Description: ${description}</p>
+                    <h1>Sender Details</h1>
+                    <p>Name: ${name}</p>
+                    <p>Email: ${email}</p>
+                    <p>Contact No: ${contactNumber}</p>
+                `
+            }
+            sendMail(emailObject.email,emailObject.subject,emailObject.html).then(data=>{
+                return res.status(200).json({
+                    success :true,
+                    message:"Feedback stored Successfully"
+                })
+            })
+            .catch(err =>{
+                    console.log('Error in sending mail')
+            })
+        }
     })
 }

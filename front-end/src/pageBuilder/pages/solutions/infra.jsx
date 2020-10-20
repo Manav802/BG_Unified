@@ -38,14 +38,13 @@ export default [
         body: [{
             type: "content",
             data: [{
-                text: <span>Optimizing infrastructural resources is essential to controlling
-                     the cost of data growth. The Enterprise Infrastructure Assessment 
-                     provides in-depth reports and recommendations for improving storage 
-                     efficiency, performance, and availability. Findings, linked to your 
-                     specific risks and benefits—so you can scale your infra systems to serve 
-                     the growing needs of your business successfully. We can address 
-                     your heterogeneous data center environment and provide data and 
-                     recommendations across all assets.
+                text: <span>Optimizing infrastructural resources is essential to 
+                    controlling the cost of data growth. The Enterprise Infrastructure 
+                    Assessment provides in-depth reports and recommendations for improving 
+                    storage efficiency, performance, and availability. Findings linked to your 
+                    specific risks and benefits—so you can scale your infra systems to serve 
+                    the growing needs of your business successfully. We can address your 
+                    heterogeneous data center environment and provide data and recommendations across all assets.
                 </span>,
                 fontSize: ["lg","xl"],
                 textAlign: "center",
@@ -116,7 +115,7 @@ export default [
                     image: "/assets/images/icons/color/headphones.svg",
                     title: "Excellent Customer Support",
                     align: "left",
-                    description: "BGUS's friendly and skilled customer support service is available24X7X365 with significantly less response time. Our policies ensure rapid and satisfactory resolution of issues."
+                    description: "BGUS's friendly and skilled customer support service is available 24X7X365 with significantly less response time. Our policies ensure rapid and satisfactory resolution of issues."
                     }
             },    
             {
@@ -144,7 +143,7 @@ export default [
                     image: "/assets/images/icons/color/fix.svg",
                     title: "No Vendor lock-in",
                     align: "left",
-                    description: "At BGUS' infrastructure, you can develop or deploy your application in the cloud without being forced to use any vendor-specific tools."
+                    description: "At BGUS's infrastructure, you can develop or deploy your application in the cloud without being forced to use any vendor-specific tools."
                     }
             },
         ]
@@ -206,7 +205,7 @@ export default [
                 },
                 {
                     title: "Fast and easy Deployment",
-                    description: "Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure without capex.",
+                    description: "Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure without Capex.",
                     image: "/assets/images/illustrations/FlexibilityAndScalabilty_AppDev.svg"
                 },
                 {

@@ -22,13 +22,13 @@ export default [
                 textAlign: "justify",
                 title: "Achieve Higher Business Efficiency with BG Unified Solutions",
                 titleSize: [30,32],
-                text: <span>Architectural Consultancy Services, as the name suggests, 
-                is accessing the needs of the users, about their organization, and 
-                providing them with the best solutions tailored according to their requirements. 
-                Monitoring and measuring various aspects of the network environment 
-                so that overall performance can be maintained and optimized.
-                Knowing what’s best for you is the primary criterion  for you to optimize 
-                your resources and use them to the fullest.
+                text: <span>As the name suggests, Architectural Consultancy Services is 
+                    accessing users' needs about their organization and providing them with the
+                     best solutions tailored according to their requirements. Monitoring and 
+                     measuring various aspects of the network environment so that overall 
+                     performance can be maintained and optimized. Knowing what’s best for you 
+                     is the primary criterion for optimizing your resources and using them to the fullest.
+
                 </span>
             }]
         }]

@@ -4,7 +4,7 @@ export default [
     {
         px: 2,
         title: "Secure Connectivity with SD-WAN",
-        description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, Wi-Fi Services etc. to connect users to applications securely. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
+        description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, Wi-Fi Services, etc. to connect users to applications securely. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
         descriptionStyle: {
             fontSize: ["xl", "lg"],
             opacity: 0.7
@@ -24,7 +24,7 @@ export default [
     {
         px: 2,
         title: "Find out How BGUS SD-WAN will improve your network:",
-        description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure, and AWS.",
+        description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange, and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure, and AWS.",
         descriptionStyle: {
             px: "10px",
         },
@@ -89,6 +89,36 @@ export default [
                     align: "left",
                     size: "50px",
                     description: "All without risk of corrupting data or altering behaviour. No plug-ins are required, which expedites deployment and saves both time and money. Fast, Reliable, and Increasingly Efficient."
+                }
+            },
+            {
+                py: 4,
+                width: ["100%", "100%", 1 / 2],
+                type: "feature2",
+                data: {
+                    titleFontSize: ["lg","xl"],
+                    titleFont: "Nexa Bold",
+                    textOpacity: "0.7",
+                    image: "/assets/images/icons/color/agile.svg",
+                    title: "Flexible Consumption Models",
+                    align: "left",
+                    size: "50px",
+                    description: "Managed SD-WAN services are available with multiple pricing and product consumption options. SD-WAN deployments and value-added services can be scoped to a customer’s needs."
+                }
+            },
+            {
+                py: 4,
+                width: ["100%", "100%", 1 / 2],
+                type: "feature2",
+                data: {
+                    titleFontSize: ["lg","xl"],
+                    titleFont: "Nexa Bold",
+                    textOpacity: "0.7",
+                    image: "/assets/images/icons/color/software.svg",
+                    title: "Comprehensive Visibility",
+                    align: "left",
+                    size: "50px",
+                    description: "Integrated application visibility enables threat prevention, detection, and response. Automated monitoring and reporting decreases overhead associated with regulatory compliance."
                 }
             },
         ]

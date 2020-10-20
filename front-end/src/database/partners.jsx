@@ -4,6 +4,10 @@ export default [
         name: "Hitachi",
         logo: "/assets/images/brands/hitachi.png",
         description: "As one of the oldest technology companies and best known brands in the world, Hitachi Group Companies innovate, build and manufacture IT and operational technology (OT) around the globe and are leaders in their respective industries. Our IoT solutions provide insights that help organizations make more informed decisions to deliver exceptional outcomes and smarter, safer, healthier and more efficient societies. ",
+    },{
+        name: "Radware",
+        logo: "/assets/images/brands/radware.png",
+        description: "Radware® (NASDAQ: RDWR), is a global leader of cyber security and application delivery solutions for physical, cloud, and software defined data centers. Its award-winning solutions portfolio secures the digital experience by providing infrastructure, application, and corporate IT protection and availability services to enterprises globally. Radware’s solutions empower more than 12,500 enterprise and carrier customers worldwide to adapt to market challenges quickly, maintain business continuity and achieve maximum productivity while keeping costs down."
     }, {
         name: "Cisco",
         logo: "/assets/images/brands/cisco.png",
@@ -23,9 +27,9 @@ export default [
         description: "AGC Networks (AGC) is a Global Solutions Integrator representing the world’s best brands in Unified Communications, Data Center & Edge IT, Cyber Security (CYBER-i) and Digital Transformation & Applications to evolve the customer’s digital landscape. AGC’s ability to tailor solutions across quadrants is strengthened through delivery of seamless customer support services.",
     },
     {
-        name: "Fortinet MSSP",
+        name: "Fortinet (MSSP)",
         logo: "/assets/images/brands/fortinet.png",
-        description: "Fortinet (NASDAQ: FTNT) secures the largest enterprise, service provider, and government organizations around the world. Fortinet empowers its customers with intelligent, seamless protection across the expanding attack surface and the power to take on ever-increasing performance requirements of the borderless network"
+        description: "Fortinet (MSSP) secures the largest enterprise, service provider, and government organizations around the world. Fortinet empowers its customers with intelligent, seamless protection across the expanding attack surface and the power to take on ever-increasing performance requirements of the borderless network"
     },
     {
         name: "Huawei",
@@ -41,8 +45,8 @@ export default [
         logo: "/assets/images/brands/Icons/palo_alto.png",
         description: "Palo Alto Networks, Inc.is an American multinational cybersecurity company with headquarters in Santa Clara, California. Its core products are a platform that includes advanced firewalls and cloud-based offerings that extend those firewalls to cover other aspects of security. The company serves over 70,000 organizations in over 150 countries, including 85 of the Fortune 100.It is home to the Unit 42 threat research team and hosts the Ignite cybersecurity conference."
     },    {
-        name: "Redhat",
-        logo: "/assets/images/brands/Icons/redhat.png",
+        name: "Redhat CCSP",
+        logo: "/assets/images/brands/redhat.jpg",
         description: "The world’s leading provider of enterprise open source solutions, using a community-powered approach to deliver high-performing Linux, cloud, container, and Kubernetes technologies. We help you standardize across environments, develop cloud-native applications, and integrate, automate, secure, and manage complex environments with award-winning support, training, and consulting services."
     },
     {

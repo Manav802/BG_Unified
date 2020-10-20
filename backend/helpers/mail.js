@@ -1,27 +1,24 @@
-//Mail facility using Sendgrid
-const sendMAIL = require('@sendgrid/mail');
+// importing the module
+const nodemailer = require("nodemailer");
+const { transporter } = require("./transporter");
 
-const successMessage = {
-    emailSent: "Email sent successfully"
-}
 
-const errorMessage = {
-    error: "There is an error"
-}
-
-//setting up the apikey
-sendMAIL.setApiKey('')
-
-exports.sendMail =(message) =>{
-    sendMAIL.send(message).then(res =>{
-     
-        console.log(successMessage.emailSent)
+// mailing function
+exports.sendMail = async(to,subject,html,text) =>{
+  
+    // send mail with defined transport object
+    await transporter.sendMail({
+      from: "BGUS Support webapi@bghosted.net",
+      to: to, 
+      subject:subject, 
+      text: text, 
+      html: html},
+      (err, data)=>{
+        if(err){
+            console.log('Error in mail',err)
+        }else{
+            console.log("Mail send Successfully ",data.messageId)
+        }
     })
-    .catch(err =>{
-        console.log(errorMessage.error)
-    })
 }
-
-//strcutre of the message
-// { to, from,subject,text,html}
 

@@ -44,7 +44,7 @@ function webteam(props) {
             </Box>
             <Section>
                 <Flex wrap="wrap" justify="center">
-                    {team.map(member => <Box width="33%" px={3} my={3}>
+                    {team.map(member => <Box width={["100%","50%","33%"]} px={3} my={3}>
                         {teamCard(member)}
                     </Box>)}
                 </Flex> 

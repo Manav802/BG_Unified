@@ -23,13 +23,13 @@ export default [
                     fontSize: "lg",
                     title: "Your Security Needs Meet Our Expertise",
                     titleSize: 32,
-                    text: <span>We, at BG Unified Solutions, tend to offer the best-in-class 
-                        Security for your business around the globe. With our team of experts,
-                         the experience we’ve gained, ensures you to 
-                         provide customizable security to your network, prevent any security breach,
-                          secure data flowing through your system. We offer you solutions 
-                          that especially suit your business model, whether small, medium, 
-                          or large, we’ve got it covered.
+                    text: <span>At BG Unified Solutions, we tend to offer the best-in-class
+                         Security for your business around the globe. With our team of experts,
+                          the experience we’ve gained ensures you can provide customizable security
+                           to your network, prevent any security breach, and secure data flowing 
+                           through your system. We offer you solutions that especially suit your 
+                           business model; whether small, medium, or large, we’ve got it covered.
+
 
                 </span>
                 }]
@@ -133,7 +133,7 @@ export default [
                 },
                 {
                     title: "Fast and Easy Deployment",
-                    description: "Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure without capex.",
+                    description: "Rapid evolvement, easily deployable with tremendous speed. Proven deployment methodology that integrates and extends your existing security infrastructure without Capex.",
                     image: "/assets/images/illustrations/FastAndEasyDevelopment_Firewall.svg"
                 },
                 {

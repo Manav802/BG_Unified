@@ -1,9 +1,9 @@
 import CloudExchangePricing from "../../pricing/CloudExchangePricing";
 export default [
     {
-        title: "Express Routes to Office 365, AWS, Azure and many more",
+        title: "Express Routes to Office 365, AWS, Azure, and many more",
         titleStyle:{fontSize:["3xl","4xl"],px:"10px"},
-        description: "We ensure reliability, integrity, security, as well as scalability for our cloud exchange connectivity solutions. The traffic is not sent over the internet only; rather, the exchange provider connects the exchange’s network directly to the cloud provider’s network. We give you the power to quickly deploy, efficiently monitor, and transparently scale the applications that your business requires to run and to interact with customers and partners while also mitigating the risk of security breaches.",
+        description: "We ensure reliability, integrity, security, as well as scalability for our cloud exchange connectivity solutions. The traffic is not sent over the internet only; instead, the exchange provider connects the exchange’s network directly to the cloud provider’s network. We give you the power to quickly deploy, efficiently monitor, and transparently scale the applications that your business requires to run and interact with customers and partners while also mitigating the risk of security breaches.",
         descriptionStyle: {
             px: [4,6],
         },
@@ -31,7 +31,7 @@ export default [
                 fontSize: "md",
                 content: [{
                     title: "Reliable and Secure",
-                    description: "Complete security on our end, while connecting to these cloud platforms. Improve the experience of users throughout the extended enterprise providing significant benefits and reliability.",
+                    description: "Complete security on our end while connecting to these cloud platforms. Improve the experience of users throughout the extended enterprise providing significant benefits and reliability.",
                     image: "/assets/images/illustrations/ReliableAndSecure_CloudExchangeConnectivity.svg"
                 },
                 {
@@ -41,7 +41,7 @@ export default [
                 },
                 {
                     title: "Integration",
-                    description: "Simplified usage and integration of new technology services. On-demand communication and connectivity. Multi-cloud operations with a complex structure are handled easily.",
+                    description: "Simplified usage and integration of new technology services. On-demand communication and connectivity. Multi-cloud operations with a complex structure are handled efficiently.",
                     image: "/assets/images/illustrations/sip.svg"
                 }]
             }

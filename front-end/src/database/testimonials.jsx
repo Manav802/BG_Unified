@@ -60,8 +60,9 @@ export default [
         designation: "Mobility Service Architec",
         emoji: ""
     },    
+    
     {
-        id: 7,
+        id: 9,
         imageUrl: "assets/images/brands/nsw_gov.png",
         author: "Jeremy Wood",
         imageAlt: "Company Logo",

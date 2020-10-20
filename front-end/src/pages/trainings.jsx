@@ -11,18 +11,18 @@ import Conclusion from "../components/footer/conclusion";
 function Training(props) {
     return <>
     <Fade bottom distance="10%" duration={300}>
-        <Flex width="100%" height="100%" pos="relative" overflow="hidden" boxShadow="xl" bg="white" rounded={8}>
-            <Box width={["70%","60%","60%","25%"]} p={12}>
+        <Flex wrap="wrap" width="100%" height="100%" pos="relative" overflow="hidden" boxShadow="xl" bg="white" rounded={8}>
+            <Box width={["100%","100%","100%","25%"]} px={[12]} py={[8,8,8,8,12]}>
                 <Image objectFit="contain" width="100%" maxW="256px" height="128px" src={"assets/images/brands/Icons/" + props.image}></Image>
             </Box>
-            <Box width={ ["100%","100%","75%","75%"]} p={12}>
+            <Box width={ ["100%","100%","100%","75%"]} px={12} py={[8,8,8,8,12]}>
                 {/* <Title textAlign="left">
                     {props.title}
                 </Title> */}
                 <Text mb={3} textAlign="justify">
                     {props.content}
                 </Text>
-                <PricingQuote button serviceName="Trainings & Certifications" serviceDescription={props.title}>Apply Now</PricingQuote>
+                <PricingQuote button serviceName="Trainings & Certifications" serviceDescription={props.title}>Get a Quote</PricingQuote>
             </Box>
             
         </Flex>
@@ -42,7 +42,7 @@ function main() {
         />
                 <Fade duration={700} delay={1000} bottom>
                     <Flex textAlign={["center","center","left"]} alignContent={["center","center","left"]} justifyContent={["center","center","left"]}  align="center" py={4}>
-                        <Heading fontSize={["18px","24px"]}>Training and Certifications</Heading>
+                        <Heading fontSize={["18px","24px"]}>Trainings and Certifications</Heading>
                     </Flex>
                 </Fade>
                 <Fade duration={700} delay={100} bottom>
@@ -55,7 +55,7 @@ function main() {
         </Section>
         <Section mb={0}>
             <Heading opacity=".9" lineHeight={1.5} fontSize="32px" fontFamily="Nexa Bold" textAlign="center">
-                BG Unified Solutions brings you a complete and comprehensive list of training and certification courses. 
+                BG Unified Solutions brings to you a completely reliable infrastructure for your training labs. 
             </Heading>
             <Description>
             Get industry-ready, be proficient in leading world technologies offered by Global Tech Giants in their respective domains.
