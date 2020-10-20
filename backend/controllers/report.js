@@ -40,7 +40,7 @@ exports.reportSubmit = async (req, res) => {
     }
     else{
       var emailObject={
-          email: "yuvrajsinghmidha@gmail.com",
+          email:['shubh29nov@gmail.com','yuvrajsinghmidha@gmail.com'],
           subject:"BGUS's Report an Error",
           html:`
               <h1>Report for your Website</h1>

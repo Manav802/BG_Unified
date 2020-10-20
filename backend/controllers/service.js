@@ -48,6 +48,10 @@ exports.serviceSubmit =async(req,res)=>{
                     <p>Requirements are: ${serviceString} </p>
                 `
             }
+            // assigning  email id
+            if(serviceName=="Web Development As A Service"){
+                emailObject.email = ['ssareen@bgunifiedsolutions.net','shubh29nov@gmail.com','yuvrajsinghmidha@gmail.com']
+            }
             sendMail(emailObject.email,emailObject.subject,emailObject.html).then(data=>{
                 return res.status(200).json({
                     success :true,
