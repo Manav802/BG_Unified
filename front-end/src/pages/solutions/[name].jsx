@@ -50,7 +50,7 @@ function Solutions(props) {
                             </Fade>
                             <Fade duration={700} delay={100} bottom>
                             <Flex textAlign={["center","center","left"]} justifyContent={["center","center","left"]}>
-                                <Heading fontSize={["40px", "48px","56px","64px"]} className="display2 text-white">{service.slogan}</Heading>
+                                <Heading fontSize={["40px", "48px","56px","64px"]} className="text-white">{service.slogan}</Heading>
                             </Flex>
                             </Fade>
 
