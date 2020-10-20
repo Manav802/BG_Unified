@@ -158,7 +158,7 @@ function features() {
         <div className="row px-3 p-md-0">
           <div className="col-md-7 pl-0 position-relative d-md-none">
             <Image alt=""            my={2}
-            paddingX={10}
+            paddingX={4}
               src="/assets/images/features/vectors/sip.svg"
             />
           </div>
@@ -185,9 +185,9 @@ function features() {
 
         <Section my={0}>
         <div className="row p-3 p-md-0">
-          <div className="col-md-7 pl-0 position-relative d-md-none">
+          <div className="col-md-7 position-relative d-md-none">
             <Image alt=""            my={2}
-            paddingX={10}
+            px={2}
             src="/assets/images/features/vectors/map.svg"
             />
           </div>
@@ -202,10 +202,9 @@ function features() {
 
               </Text>
           </div>
-          <div className="col-md-7 pl-0 position-relative d-none d-md-block">
-            <Image alt=""              px={8}
-              minWidth="900px"
-              transform="translateX()"
+          <div className="col-md-7 px-0 position-relative d-none d-md-block">
+            <Image alt=""           px={0}
+              w="100%"
               src="/assets/images/features/vectors/map.svg"
             />
           </div>

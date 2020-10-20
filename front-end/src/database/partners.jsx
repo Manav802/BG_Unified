@@ -4,6 +4,10 @@ export default [
         name: "Hitachi",
         logo: "/assets/images/brands/hitachi.png",
         description: "As one of the oldest technology companies and best known brands in the world, Hitachi Group Companies innovate, build and manufacture IT and operational technology (OT) around the globe and are leaders in their respective industries. Our IoT solutions provide insights that help organizations make more informed decisions to deliver exceptional outcomes and smarter, safer, healthier and more efficient societies. ",
+    },{
+        name: "Radware",
+        logo: "/assets/images/brands/radware.png",
+        description: "Radware® (NASDAQ: RDWR), is a global leader of cyber security and application delivery solutions for physical, cloud, and software defined data centers. Its award-winning solutions portfolio secures the digital experience by providing infrastructure, application, and corporate IT protection and availability services to enterprises globally. Radware’s solutions empower more than 12,500 enterprise and carrier customers worldwide to adapt to market challenges quickly, maintain business continuity and achieve maximum productivity while keeping costs down."
     }, {
         name: "Cisco",
         logo: "/assets/images/brands/cisco.png",
