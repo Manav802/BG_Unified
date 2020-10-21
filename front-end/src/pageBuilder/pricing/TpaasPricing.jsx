@@ -90,7 +90,7 @@ function TpaasPricing(props) {
                                                             <PricingQuote
                                                                 button
                                                                 serviceName="Telepresence As A Service"
-                                                                serviceDescription={`Standard ${verifyNotEmpty(units1,"Additional Units")}`}
+                                                                serviceDescription={`Cisco Telepresence, Standard ${verifyNotEmpty(units1,"Additional Units")}`}
                                                             ></PricingQuote>
                                                         </div>
                                                     </PricingCard>
@@ -131,7 +131,7 @@ function TpaasPricing(props) {
                                                             <PricingQuote
                                                                 button
                                                                 serviceName="Telepresence As A Service"
-                                                                serviceDescription={`Professional ${verifyNotEmpty(units2,"Additional Units")}`}
+                                                                serviceDescription={`Cisco Telepresence, Professional ${verifyNotEmpty(units2,"Additional Units")}`}
                                                             ></PricingQuote>
                                                         </div>
                                                     </PricingCard>
@@ -172,7 +172,7 @@ function TpaasPricing(props) {
                                                             <PricingQuote
                                                                 button
                                                                 serviceName="Telepresence As A Service"
-                                                                serviceDescription={`Business ${verifyNotEmpty(units3,"Additional Units")}`}
+                                                                serviceDescription={`Cisco Telepresence, Business ${verifyNotEmpty(units3,"Additional Units")}`}
                                                             ></PricingQuote>
                                                         </div>
                                                     </PricingCard>
