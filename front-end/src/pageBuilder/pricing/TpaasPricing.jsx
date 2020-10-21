@@ -59,7 +59,11 @@ function TpaasPricing(props) {
                                                             "Cisco DX 70",
                                                         " Cisco DX 80",
                                                         "5 B2B Calls",
-                                                        "5 units "]}
+                                                        "5 units ",
+                                                        "H323/SIP",
+                                                        "VCS Expressway - E & C included",
+                                                        "10 Concurrent SIP calls"
+                                                    ]}
                                                         
                                                         icon="/assets/images/icons/theme/origami.svg"
                                                         title="Standard"
@@ -101,7 +105,10 @@ function TpaasPricing(props) {
                                                             "Cisco MX 200",
                                                         "Cisco MX 300",
                                                         "10 B2B calls",
-                                                        "5 units +"]}
+                                                        "5 units +",
+                                                        "H323/SIP",
+                                                        "VCS Expressway - E & C included",
+                                                        "20 Concurrent SIP calls"]}
                                                         icon="/assets/images/icons/theme/paper-plane.svg"
                                                         title="Professional"
                                                     >
@@ -142,7 +149,10 @@ function TpaasPricing(props) {
                                                             "Cisco SX",
                                                         "Cisco SX Codec",
                                                         "20 B2B Calls",
-                                                        "5 units +"]}
+                                                        "5 units +",
+                                                        "H323/SIP",
+                                                        "VCS Expressway - E & C included",
+                                                        "50 Concurrent SIP calls"]}
                                                         icon="/assets/images/icons/theme/airplane.svg"
                                                         title="Business"
                                                     >
