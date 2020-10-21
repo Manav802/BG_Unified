@@ -74,7 +74,7 @@ export default [
         {
             width: [1/2, 1/3, 1/4],
             type: "feature",
-            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/code/git-4.svg",mt: 4, title: "In-Person Experience"}
+            data: {align: "center",titleSize:"md", iconColor:"red.500", svg:"/assets/images/icons/library/communication/group.svg",mt: 4, title: "In-Person Experience"}
         },
         {
             width: [1/2, 1/3, 1/4],
