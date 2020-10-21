@@ -15,7 +15,7 @@ export default [
                 mt: 8,
                 type: "imageGroup",
                 data: {
-                    images: ["/assets/images/icons/brands/mongodb.svg", "/assets/images/icons/brands/MySQL-Logo.png", "/assets/images/icons/brands/azure_sql_server_posted.svg"],
+                    images: ["/assets/images/icons/brands/mongodb.svg", "/assets/images/icons/brands/MySQL-Logo.png", "/assets/images/icons/brands/azure_sql_server_posted.svg", "/assets/images/icons/brands/microsoft-sql-server.svg"],
                     px: 3,
                     height: "80px",
                     objectFit: "contain",
