@@ -43,8 +43,9 @@ function TpaasPricing(props) {
                                             <div className="row no-gutters justify-content-center">
                                                 <div className="col-lg-4 my-3">
                                                     <PricingCard
-                                                        featureList={["DX 70",
-                                                        "DX 80",
+                                                        featureList={[
+                                                            "Cisco DX 70",
+                                                        " Cisco DX 80",
                                                         "5 B2B Calls",
                                                         "5 units "]}
                                                         
@@ -84,8 +85,9 @@ function TpaasPricing(props) {
                                                 </div>
                                                 <div className="col-lg-4 my-3">
                                                     <PricingCard
-                                                        featureList={["MX 200",
-                                                        "MX 300",
+                                                        featureList={[
+                                                            "Cisco MX 200",
+                                                        "Cisco MX 300",
                                                         "10 B2B calls",
                                                         "5 units +"]}
                                                         icon="/assets/images/icons/theme/paper-plane.svg"
@@ -124,8 +126,9 @@ function TpaasPricing(props) {
                                                 </div>
                                                 <div className="col-lg-4 my-3">
                                                     <PricingCard
-                                                        featureList={["SX",
-                                                        "SX Codec",
+                                                        featureList={[
+                                                            "Cisco SX",
+                                                        "Cisco SX Codec",
                                                         "20 B2B Calls",
                                                         "5 units +"]}
                                                         icon="/assets/images/icons/theme/airplane.svg"

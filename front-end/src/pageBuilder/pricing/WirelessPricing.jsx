@@ -102,7 +102,7 @@ function WirelessPricing(props) {
                                     "Limit Utilization per device",
                                     "Limit Utilization per user",
                                     "Guest SSID available on request",
-                                    "Make SSID included - 5",
+                                    "Maximum SSID included - 5",
                                     "Fully Managed Service",
                 
                                 ]}
@@ -166,7 +166,7 @@ function WirelessPricing(props) {
                                     "Limit Utilization per device",
                                     "Limit Utilization per user",
                                     "Guest SSID available on request",
-                                    "Make SSID included - 10",
+                                    "Maximum SSID included - 10",
                                     "Fully Managed Service",
                 
                                 ]}
