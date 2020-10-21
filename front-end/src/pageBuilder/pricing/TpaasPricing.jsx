@@ -34,6 +34,18 @@ function TpaasPricing(props) {
                 <div id="pricing" className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-12">
+
+                        <Tabs align="center">
+                                <TabList 
+                                >
+                                    <Tab pointerEvents="none" style={{cursor:"default"}}  className="py-4 px-5 display6">
+                                       Cisco Telepresence
+                                    </Tab>
+                                   
+                                </TabList>
+
+                                <TabPanels>
+                                    <TabPanel className="py-2">
                         
                                         <Fade
                                             duration={500}
@@ -167,7 +179,9 @@ function TpaasPricing(props) {
                                                 </div>
                                             </div>
                                         </Fade>
-                                    
+                                        </TabPanel>
+                                </TabPanels>
+                            </Tabs>
                             
                         </div>
                     </div>
