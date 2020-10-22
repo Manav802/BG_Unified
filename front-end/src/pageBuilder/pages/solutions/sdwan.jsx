@@ -11,13 +11,28 @@ export default [
         }
     },
     {
-        py: [0, 4],
-        gap: 0, mt: 0,
+        py:0,
+        gap: 0, my: 0,
         bg: "light.400",
         body: [{
             width: "100%",
             type: "pricing",
             data: <SdwanPricing />
+        },
+        ]
+    },
+    {
+        gap: 0, mt: "-32px",
+        bg: "light.400",
+        pt: 0,
+        body: [{
+            width: "100%",
+            type: "imageGroup",
+            data: {
+                images: ["/assets/images/sponsors/fortinet.png"],
+                height: "64px",
+                objectFit: "contain",
+            }
         },
         ]
     },
