@@ -4,7 +4,7 @@ export default [
     {
         px: 2,
         title: "Secure Connectivity with SD-WAN",
-        description: "A virtual WAN architecture, allowing firms or companies to leverage any combination of services, including LTE, VoLTE, Broadband services, Wi-Fi Services, etc. to connect users to applications securely. SD-WAN transforms the way a particular network supports and interacts with enterprise applications.",
+        description: "As distributed enterprises and small and midsize businesses (SMBs) embrace digital innovation (DI), legacy networking and security infrastructures often fail to deliver sufficient performance and protection. Software-defined wide-area networking (SD-WAN) and SD-Branch solutions can help organizations consolidate traditional infrastructure and facilitate adoption of the latest business-enabling technologies.",
         descriptionStyle: {
             fontSize: ["xl", "lg"],
             opacity: 0.7
@@ -23,8 +23,8 @@ export default [
     },
     {
         px: 2,
-        title: "Find out How BGUS SD-WAN will improve your network:",
-        description: "Next-generation WAN connectivity services. We have Express Routes to office 365, AWS, Azure through Equinix Cloud Exchange, and are peering with ASNs directly for providing better and high-performance routes to Office 365, Azure, and AWS.",
+        title: "Find out How Fortinet SD-WAN will improve your network:",
+        description: "Managed SD-WAN services that are powered by a fully featured, integrated solution lay the groundwork for adding SD-Branch capabilities. This gives service providers the ability to grow revenue with customers while significantly reducing additional infrastructure complexity, cost, and overall onboarding churn.",
         descriptionStyle: {
             px: "10px",
         },
@@ -40,10 +40,10 @@ export default [
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
                     image: "/assets/images/icons/color/mobile.svg",
-                    title: "Virtual Flexibility",
+                    title: "Application Awareness",
                     align: "left",
                     size: "50px",
-                    description: "Industry’s only multi-gigabit virtual WAN optimization solution and the superior products that support every primary hypervisor. Email (MS Exchange and SMTP), file services (CIFS, FTP), document management(SharePoint)."
+                    description: "With applications, users, and devices varying in their level of priority. in addition to reliable connectivity. Increasing WAN bandwidth demands can carry high costs while also failing to meet the designated SLA. Intelligent application awareness capabilities with link resiliency can address this issue."
                 }
             },
             {
@@ -55,10 +55,10 @@ export default [
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
                     image: "/assets/images/icons/color/tags.svg",
-                    title: "Diversifying Applications",
+                    title: "Multitenant by Design",
                     align: "left",
                     size: "50px",
-                    description: "Silver Peak/ Riverbed’s WAN optimization solution works on all applications, regardless of transport protocol or version. Interactive and transactional applications such as VMware VDI, and SQL."
+                    description: "Fortinet solutions are designed to be multitenant. Multiple customers managed from the same console. Offering shared, isolated SD-WAN infrastructure increases average revenue per user."
                 }
             },
             {
@@ -85,10 +85,10 @@ export default [
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
                     image: "/assets/images/icons/color/lock.svg",
-                    title: "Endpoint Security",
+                    title: "Improved security",
                     align: "left",
                     size: "50px",
-                    description: "All without risk of corrupting data or altering behaviour. No plug-ins are required, which expedites deployment and saves both time and money. Fast, Reliable, and Increasingly Efficient."
+                    description: "A solution that integrates advanced SD-WAN networking capabilities within a next-generation firewall (NGFW) provides a foundational element for a managed SD-WAN service. This consolidation reduces risk along with CapEx and OpEx costs."
                 }
             },
             {
