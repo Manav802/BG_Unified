@@ -69,11 +69,11 @@ export default [
                     titleFontSize: ["lg","xl"],
                     titleFont: "Nexa Bold",
                     textOpacity: "0.7",
-                    image: "/assets/images/icons/color/data-server.svg",
-                    title: "Storage Centralization",
+                    image: "/assets/images/icons/color/team.svg",
+                    title: "Professional Development",
                     align: "left",
                     size: "50px",
-                    description: "Fast, Reliable and Increasingly efficient centralizing servers and storage offer high cost, management, security, and compliance benefits. Detects, isolates notifies and corrects faults encountered in the network."
+                    description: "Fortinet offers multiple training formats for MSPs and MSSPs. This enables MSPs and MSSPs to quickly ramp and deploy SD-WAN and other value-added services like SD-Branch."
                 }
             },
             {
