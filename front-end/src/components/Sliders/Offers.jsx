@@ -33,6 +33,19 @@ function main({height = "296px", ...props}) {
                 <Grid templateColumns={["100%","128px auto","192px auto","256px auto","40% 60%"]} p={[8,8,12]}>
                     <Image height={height} alt="Free Healthcare Services" justifySelf="center" src="/assets/images/vectors/GPU_Offer-01.svg" padding={[4,0]}  width={["60%","100%"]}></Image>
                     <Flex direction="column" justify="center" px={[3,5,12]}>
+                        <Heading fontSize={["xl","xl","2xl","3xl"]} fontFamily="Nexa Bold">BG Unified Solutions resolving security issues for an international bank.</Heading>
+                        <Text mt={3} opacity={.7}>BG Unified Solutions is currently working on resolving security issues for an international bank. Working on Security Operations Center, Web Application Firewalls, and Managed Firewalls, to provide secure infrastructure and completely trusted gateways.
+
+                        </Text>
+                    </Flex>
+                </Grid>
+            </Container>
+        </SwiperSlide>
+               <SwiperSlide>
+            <Container>
+                <Grid templateColumns={["100%","128px auto","192px auto","256px auto","40% 60%"]} p={[8,8,12]}>
+                    <Image height={height} alt="Free Healthcare Services" justifySelf="center" src="/assets/images/vectors/GPU_Offer-01.svg" padding={[4,0]}  width={["60%","100%"]}></Image>
+                    <Flex direction="column" justify="center" px={[3,5,12]}>
                         <Heading fontSize={["xl","xl","2xl","3xl"]} fontFamily="Nexa Bold">BGUS is launching GPUaaS through multiple Geo-locations and with Bundled Solutions!!</Heading>
                         <Text mt={3} opacity={.7}>GPUaaS will be offered through multiple geo-locations and to make it more profitable and economical for your business; we are ready to bundle the offering with IaaS, Storage As A Service, UCaaS, DNSaaS, SIPaaS and more.
 
