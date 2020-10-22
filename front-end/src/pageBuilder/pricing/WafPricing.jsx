@@ -70,7 +70,7 @@ function WafPricing(props) {
                             <div className="h6">How many applications?</div></div>
                         <div className="offset-lg-1 col-lg-4 mt-3">
                             <NumberInput
-                                                    onChange={(value)=>{value<=40?setApplications(value):setApplications(40)}}
+                                                    onChange={(value)=>{value<=20?setApplications(value):setApplications(20)}}
                                                     value={applications}
                                                     min={1}
                                                     max={20}
@@ -132,7 +132,7 @@ function WafPricing(props) {
                         </div>
 
                         <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                            <PricingQuote serviceName="WAF As A Service" serviceDescription={`${type} ${verifyNotEmpty(applications, "Application")} ${verifyNotEmpty(value*5,"Mbps Bandwidth")} ${handleBot(bot)} ${handleRedundancy(redundancy)}`} button ></PricingQuote>
+                            <PricingQuote serviceName="WAF As A Service" serviceDescription={`${type} ${verifyNotEmpty(applications, "Application")} ${verifyNotEmpty(value*5,"Mbps Bandwidth/App")} ${handleBot(bot)} ${handleRedundancy(redundancy)}`} button ></PricingQuote>
                         </div>
                     </div>
                 </div>
