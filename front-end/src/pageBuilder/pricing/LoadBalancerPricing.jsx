@@ -4,7 +4,7 @@ import { Slider, Select, SliderFilledTrack, SliderTrack, SliderThumb,RadioButton
     NumberInputField,
     NumberInputStepper,
     NumberIncrementStepper,
-    NumberDecrementStepper,FormLabel,Switch} from "@chakra-ui/core"
+    NumberDecrementStepper,FormLabel,Switch,Image} from "@chakra-ui/core"
 import Fade from "react-reveal/Fade"
 
 const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + " " + text : "");
@@ -26,23 +26,30 @@ const CustomRadio = React.forwardRef((props, ref) => {
     );
 });
 
-function WafPricing(props) {
-    const [type, setType] = React.useState("Radware");
+function LoadBalancerPricing(props) {
+    const [type, setType] = React.useState("Single");
     const [applications, setApplications] = React.useState(1);
+    const [connections, setConnections] = React.useState(1);
+    const [IP, setIP] = React.useState(1);
     const [value, setValue] = React.useState(10);
     const handleChange = value => setValue(value);
     const [bot, setBot] = React.useState(false);
     const [redundancy, setRedundancy] = React.useState(false);
     
-    const handleBot = (swi) => swi ? ",Enable BOT Protection" : "";
-    const handleRedundancy = (swi) => swi ? ",Enable Redundancy" : "";
+    const handleBot = (swi) => swi ? ",Enable GTM" : "";
+    const handleRedundancy = (swi) => swi ? ",Enable WAF" : "";
     return (        
-        <div id="pricing" className="container">
+        <div id="pricing">
             <Fade className="px-lg-5 " duration={500} bottom>
                 <div className="px-lg-4 py-5 rounded-8 shadow-lg">
-                    <div className="display5 text-center">WAF Options</div>
-                    <div className="row px-3 justify-content-center px-lg-4">
-                        <div className="col-lg-10 mt-4">
+                    
+                    <div className="row px-3  px-lg-4">
+                    <div className="col-lg-10 offset-lg-1 d-flex mt-4">
+                    <Image h="40px" mr={4} src="/assets/images/brands/Icons/F5_Networks.png"/>
+                    <div className="display5">F5 Load Balancing</div>
+                    </div>
+                        <div className="col-lg-10 offset-lg-1 mt-4">
+                        
                                                 <div className="h6">
                                                     Choose a type
                                                 </div>
@@ -54,21 +61,18 @@ function WafPricing(props) {
                                                     mt={4}
                                                     isInline
                                                 >
-                                                    <CustomRadio value="Radware">
-                                                        Radware
+                                                    <CustomRadio value="Single">
+                                                        Single
                                                     </CustomRadio>
-                                                    <CustomRadio value="F5">
-                                                        F5
-                                                    </CustomRadio>
-                                                    <CustomRadio value="Fortinet">
-                                                        Fortinet
+                                                    <CustomRadio value="Cluster">
+                                                        Cluster
                                                     </CustomRadio>
                                                 </RadioButtonGroup>
                                             </div>
                         
-                        <div className="col-lg-5 mt-4">
-                            <div className="h6">How many applications?</div></div>
-                        <div className="offset-lg-1 col-lg-4 mt-3">
+                        <div className="col-lg-4 offset-lg-1 mt-4">
+                            <div className="h6">Applications</div>
+                        
                             <NumberInput
                                                     onChange={(value)=>{value<=20?setApplications(value):setApplications(20)}}
                                                     value={applications}
@@ -83,7 +87,24 @@ function WafPricing(props) {
                                                     </NumberInputStepper>
                                                 </NumberInput>
                         </div>
-                        <div className="col-lg-10 mt-4">
+                        <div className="col-lg-4 offset-lg-2 mt-4">
+                            <div className="h6">Connections / Application</div>
+                        
+                            <NumberInput
+                                                    onChange={(value)=>{value<=20?setConnections(value):setConnections(20)}}
+                                                    value={connections}
+                                                    min={1}
+                                                    max={20}
+                                                    
+                                                >
+                                                    <NumberInputField className="bg-light" />
+                                                    <NumberInputStepper>
+                                                        <NumberIncrementStepper />
+                                                        <NumberDecrementStepper />
+                                                    </NumberInputStepper>
+                                                </NumberInput>
+                        </div>
+                        <div className="col-lg-10 offset-lg-1 mt-4">
                                 <div className="h6">
                                                     Bandwidth per Application (in Mbps)
                                                 </div>
@@ -100,7 +121,7 @@ function WafPricing(props) {
                                             children={value*5} />
                             </Slider>
                         </div>
-                        <div className="col-lg-10 mt-4 d-flex justify-content-between">
+                        <div className="col-lg-10 offset-lg-1 mt-4 d-flex justify-content-between">
                             <div>
                             
                                 <Switch color="primary"
@@ -111,7 +132,7 @@ function WafPricing(props) {
                                     id="license"
                                 />
                                 <FormLabel ml={[0,3]} htmlFor="license">
-                                    BOT Protection
+                                    GTM Enabled
                                 </FormLabel>
                                 </div>
                                 
@@ -125,14 +146,31 @@ function WafPricing(props) {
                                     id="license"
                                 />
                                 <FormLabel ml={[0,3]} htmlFor="license">
-                                    Redundancy
+                                    WAF Enabled
                                 </FormLabel>
                                 </div>
                                 
                         </div>
+                        <div className="col-lg-5 offset-lg-1 mt-4">
+                            <div className="h6">How many Public IP's?</div></div>
+                        <div className="offset-lg-1 col-lg-4 mt-3">
+                            <NumberInput
+                                                    onChange={(value)=>{value<=20?setIP(value):setIP(20)}}
+                                                    value={IP}
+                                                    min={1}
+                                                    max={20}
+                                                    
+                                                >
+                                                    <NumberInputField className="bg-light" />
+                                                    <NumberInputStepper>
+                                                        <NumberIncrementStepper />
+                                                        <NumberDecrementStepper />
+                                                    </NumberInputStepper>
+                                                </NumberInput>
+                        </div>
 
                         <div className="col-lg-12 mt-4 d-flex justify-content-center">
-                            <PricingQuote serviceName="WAF As A Service" serviceDescription={`${type} ${verifyNotEmpty(applications, "Application")} ${verifyNotEmpty(value*5,"Mbps Bandwidth/App")} ${handleBot(bot)} ${handleRedundancy(redundancy)}`} button ></PricingQuote>
+                            <PricingQuote serviceName="Load Balancer As A Service" serviceDescription={` F5, ${type} ${verifyNotEmpty(applications, "Application")} ${verifyNotEmpty(connections,"Connections/App")} ${verifyNotEmpty(value*5,"Mbps Bandwidth/App")} ${handleBot(bot)} ${handleRedundancy(redundancy)} ${verifyNotEmpty(IP, "Public IP's")}`} button ></PricingQuote>
                         </div>
                     </div>
                 </div>
@@ -141,4 +179,4 @@ function WafPricing(props) {
     );
 }
 
-export default WafPricing;
+export default LoadBalancerPricing;

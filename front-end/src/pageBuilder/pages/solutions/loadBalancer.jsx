@@ -1,3 +1,5 @@
+import LoadBalancerPricing from "../../pricing/LoadBalancerPricing";
+
 export default [
     {
         gap: 10,
@@ -34,6 +36,19 @@ export default [
                 </span>
             }]
         }]
+    },
+    {
+        py: [0, 4],
+        gap: 0, mt: 0,
+        mb:0,
+        px:0,
+        bg: "light.400",
+        body: [{
+            width: "100%",
+            type: "pricing",
+            data: <LoadBalancerPricing/>
+        },
+        ]
     },
     {
         title : "Manage your Traffic with Our Load Balancers",

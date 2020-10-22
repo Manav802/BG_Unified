@@ -19,18 +19,17 @@ function SdwanPricing(props) {
     const [switch2, setSwitch2] = React.useState(false);
     const handleSwitch = (swi) => swi ? ",Virtual" : ",Physical";
     const fortnietFeatures = ["One WAN Link", "3G/4G Failover Configuration", "Multi-Path Controller & Link Health Monitoring","Dual WAN","Load-balancing & Bandwidth Sharing", "Preferential Policy Routes","QoS Provisioning","Application Prioritization","VPN Failover to data center","Performance SLA","Traffic Shaping"]
+    
     return (
                 <div id="pricing" className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-12">
+                            {/* <Tabs onChange={()=>{setSwitch1(false); setSwitch2(false);}} align="center"> */}
                             <Tabs onChange={()=>{setSwitch1(false); setSwitch2(false);}} align="center">
                                 <TabList
                                 >
-                                    <Tab className="py-4 px-5 display6">
+                                    <Tab pointerEvents="none" style={{cursor:"default"}} className="py-4 px-5 display6">
                                         Fortinet
-                                    </Tab>
-                                    <Tab className="py-4 px-5 display6 ">
-                                        Silver Peak
                                     </Tab>
                                     
                                 </TabList>
@@ -96,7 +95,7 @@ function SdwanPricing(props) {
                                             </div>
                                         </Fade>
                                     </TabPanel>
-                                    <TabPanel className="py-2">
+                                    {/* <TabPanel className="py-2">
                                         <Fade
                                             duration={500}
                                             distance={"30%"}
@@ -173,7 +172,7 @@ function SdwanPricing(props) {
                                                 </div>
                                             </div>
                                         </Fade>
-                                    </TabPanel>
+                                    </TabPanel> */}
                                 </TabPanels>
                             </Tabs>
                             <div></div>

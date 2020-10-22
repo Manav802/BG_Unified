@@ -25,11 +25,6 @@ function TpaasPricing(props) {
     const [units1, setUnits1] = React.useState(0);
     const [units2, setUnits2] = React.useState(0);
     const [units3, setUnits3] = React.useState(0);
-    const features = ["High-performance routes", "Fully Managed Service"];
-    const [switch1, setSwitch1] = React.useState(false);
-    const [switch2, setSwitch2] = React.useState(false);
-    const handleSwitch = (swi) => swi ? ",Virtual" : ",Physical";
-    const fortnietFeatures = ["One WAN Link", "3G/4G Failover Configuration", "Multi-Path Controller & Link Health Monitoring","Dual WAN","Load-balancing & Bandwidth Sharing", "Preferential Policy Routes","QoS Provisioning","Application Prioritization","VPN Failover to data center","Performance SLA","Traffic Shaping"]
     return (
                 <div id="pricing" className="container">
                     <div className="row justify-content-center">
