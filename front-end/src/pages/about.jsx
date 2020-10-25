@@ -100,9 +100,9 @@ class about extends Component {
                     <h5>Projects</h5>
                   </div>
                 </div>
-                <div className="display6 py-3">Who are We?</div>
+                <div className="display6 py-3">Who are WE?</div>
                 <Text fontSize="xl">
-                BG Unified Solutions Pty Ltd Team consists of experts in 
+                BG Unified Solutions Pty. Ltd. Team consists of experts in 
                 different technologies like Security, Voice, and a broad range of 
                 additional skills, including F5 Load Balancers, WAN Optimization, WAN, 
                 Cloud Technologies, and Cisco Technologies. As experts in different 
