@@ -100,7 +100,7 @@ class about extends Component {
                     <h5>Projects</h5>
                   </div>
                 </div>
-                <div className="display6 py-3">Our Mission</div>
+                <div className="display6 py-3">Who are We?</div>
                 <Text fontSize="xl">
                 BG Unified Solutions Pty Ltd Team consists of experts in 
                 different technologies like Security, Voice, and a broad range of 
