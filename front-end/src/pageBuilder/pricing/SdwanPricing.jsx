@@ -25,17 +25,7 @@ function SdwanPricing(props) {
                     <div className="row justify-content-center">
                         <div className="col-lg-12">
                             {/* <Tabs onChange={()=>{setSwitch1(false); setSwitch2(false);}} align="center"> */}
-                            <Tabs onChange={()=>{setSwitch1(false); setSwitch2(false);}} align="center">
-                                <TabList
-                                >
-                                    <Tab pointerEvents="none" style={{cursor:"default"}} className="py-4 px-5 display6">
-                                        Fortinet
-                                    </Tab>
-                                    
-                                </TabList>
-
-                                <TabPanels>
-                                    <TabPanel className="py-2">
+                           
                                         <Fade
                                             duration={500}
                                             distance={"30%"}
@@ -94,7 +84,7 @@ function SdwanPricing(props) {
                                                 </div>
                                             </div>
                                         </Fade>
-                                    </TabPanel>
+                                    {/* </TabPanel> */}
                                     {/* <TabPanel className="py-2">
                                         <Fade
                                             duration={500}
@@ -173,8 +163,8 @@ function SdwanPricing(props) {
                                             </div>
                                         </Fade>
                                     </TabPanel> */}
-                                </TabPanels>
-                            </Tabs>
+                                {/* </TabPanels>
+                            </Tabs> */}
                             <div></div>
                         </div>
                     </div>

@@ -35,9 +35,9 @@ const sliderInfo = [
       btnSecondaryLink: "/contact"
     },
     {
-      title: <p>Creating Impact <br/> Together</p>,
+      title: <p>Creating Impact Together</p>,
       imgSrc: "/assets/images/backgrounds/landing-3.png",
-      subTitle: "Consultel Group coming together with BGUS, for efficient and intelligent business solutions with authentic integrity.",
+      subTitle: <span><b className="text-primary">Consultel Group</b> coming together with BGUS, for efficient and intelligent business solutions with authentic integrity.</span>,
       btnSecondaryText: "Read Customer Stories",
       btnSecondaryLink: "/stories"
     
@@ -45,7 +45,7 @@ const sliderInfo = [
     {
       title: <p>Intelligent Business<br/> Solutions</p>,
       imgSrc: "/assets/images/backgrounds/landing5.png",
-      subTitle: "Radware and BGUS providing highly secured WAF and DDoS Solutions to the end-customers collaboratively.",
+      subTitle: <span><b className="text-primary">Radware</b> and BGUS providing highly secured WAF and DDoS Solutions to the end-customers collaboratively.</span>,
       btnSecondaryText: "Read Customer Stories",
       btnSecondaryLink: "/stories"
     
@@ -53,15 +53,15 @@ const sliderInfo = [
     {
       title: <p>Bright Solutions. Comprehensive Results.</p>,
       imgSrc: "/assets/images/backgrounds/city.png",
-      subTitle: "Huawei working collaboratively with BG Unified Solutions to extend BG's services offerings and enhance growth.",
+      subTitle: <span><b className="text-primary">Huawei</b> working collaboratively with BG Unified Solutions to extend BG's services offerings and enhance growth.</span>,
       btnSecondaryText: "Read Customer Stories",
       btnSecondaryLink: "/stories"
     
     },
     {
-      title: <p>Client Focused.<br/> Results Driven.</p>,
-      imgSrc: "/assets/images/backgrounds/Artboard 7.png",
-      subTitle: "Infin8IT working as the technology partner  with BGUS to extend service offerings to the end-customers.",
+      title: <p>Client Focused. Results Driven.</p>,
+      imgSrc: "/assets/images/backgrounds/landing-7.png",
+      subTitle: <span><b className="text-primary">Infin8IT</b> working as the technology partner  with BGUS to extend service offerings to the end-customers.</span>,
       btnSecondaryText: "Read Customer Stories",
       btnSecondaryLink: "/stories"
     
@@ -172,10 +172,10 @@ function main(props) {
                   </Box> */}
                   </Box>
                   <Box>
-                    <Heading textShadow="xl" fontSize={["3xl","4xl","48px","64px"]} width={["100%","100%","80%","100%"]} fontFamily="Nexa Bold">
+                    <Heading textShadow="xl" fontSize={["3xl","4xl","48px","64px"]} width={["100%","100%","80%"]} fontFamily="Nexa Bold">
                         {sliderInfo[animate % sliderInfo.length].title} 
                     </Heading>
-                    <Text textShadow="xl" width={["100%","100%","72%","84%"]} mt={4} opacity=".7" fontSize={["md","lg"]}>
+                    <Text textShadow="xl" width={["100%","100%","72%"]} mt={4} fontSize={["md","lg","2xl"]}>
                         {sliderInfo[animate % sliderInfo.length].subTitle}
                     </Text>
                     <ButtonGroup mt={6}>
