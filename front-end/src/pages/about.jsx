@@ -30,7 +30,15 @@ class about extends Component {
       <>
         <div className="about">
           <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
             <title>More About Us | BG Unified Solutions</title>
+            <meta name="description" content=" BG Unified Solutions Pty. Ltd. Team consists of experts in different technologies like Security, Voice, and a broad range of additional skills, including F5 Load Balancers, WAN Optimization, WAN, Cloud Technologies, and Cisco Technologies. As experts in different technologies, our focus is to provide competitive and affordable Unified Solutions to our clients.">
+          </meta>
+          <meta property="og:title" content="More About Us | BG Unified Solutions" key="title" />
+          <meta property="og:description" content=" BG Unified Solutions Pty. Ltd. Team consists of experts in different technologies like Security, Voice, and a broad range of additional skills, including F5 Load Balancers, WAN Optimization, WAN, Cloud Technologies, and Cisco Technologies. As experts in different technologies, our focus is to provide competitive and affordable Unified Solutions to our clients." />
           </Head>
           <Box pos="relative" bg="dark.500">
             <Image position="absolute" height="100%" zIndex="0" top={0} left={0} opacity=".3" objectFit="cover" width="100%" src="/assets/images/backgrounds/aboutus.jpg"></Image>
@@ -100,8 +108,8 @@ class about extends Component {
                     <h5>Projects</h5>
                   </div>
                 </div>
-                <div className="display6 py-3">Who are WE?</div>
-                <Text fontSize="xl">
+                <div className="display6 py-3" >Who are WE?</div>
+                <Text fontSize="xl" >
                 BG Unified Solutions Pty. Ltd. Team consists of experts in 
                 different technologies like Security, Voice, and a broad range of 
                 additional skills, including F5 Load Balancers, WAN Optimization, WAN, 
@@ -110,16 +118,13 @@ class about extends Component {
                 Unified Solutions to our clients.
 
                     </Text>
-                <Text fontSize="xl" mt={3}>
-                We majorly deal with Cisco Voice / Video Projects, WAN Implementations, 
-                DC Design, and Implementation. Our goal is to make our customers more 
-                competitive and achieve higher business efficiency through increased 
-                agility, significant cost containment, and lower risk. BG Unified Solutions, 
-                founded in 2013, provides national and international IT Services to some 
-                of Australia's leading companies, who use information technology to 
-                improve their business results.
-
-                    </Text> 
+                    <div className="display6 py-3" >OUR MISSION...</div>
+                <Text fontSize="xl" >Render comprehensive, secure, dependable, 
+                affordable IT services and amenities that intensify the End-customer Experience.
+                </Text> 
+                <div className="display6 py-3" >OUR VISION...</div>
+                <Text fontSize="xl" >Uplifting Tech Essentials for your Enterprise.
+                </Text>
               </div>
             </div>
           </div>
