@@ -108,8 +108,7 @@ class about extends Component {
                     <h5>Projects</h5>
                   </div>
                 </div>
-                <div className="display6 py-3" >Who are WE?</div>
-                <Text fontSize="xl" >
+                <Text textAlign="justify" fontSize="xl" >
                 BG Unified Solutions Pty. Ltd. Team consists of experts in 
                 different technologies like Security, Voice, and a broad range of 
                 additional skills, including F5 Load Balancers, WAN Optimization, WAN, 
@@ -117,13 +116,13 @@ class about extends Component {
                 technologies, our focus is to provide competitive and affordable 
                 Unified Solutions to our clients.
 
-                    </Text>
-                    <div className="display6 py-3" >OUR MISSION...</div>
-                <Text fontSize="xl" >Render comprehensive, secure, dependable, 
+                </Text>
+                <Flex mt={4} align="center"><Image src="/assets/images/icons/color/target.svg" height="64px"></Image>&nbsp;&nbsp;<Heading size="lg" fontFamily="Nexa Bold">Our Mission</Heading></Flex>
+                <Text  mt={2} fontSize="xl" >Render comprehensive, secure, dependable, 
                 affordable IT services and amenities that intensify the End-customer Experience.
                 </Text> 
-                <div className="display6 py-3" >OUR VISION...</div>
-                <Text fontSize="xl" >Uplifting Tech Essentials for your Enterprise.
+                <Flex mt={4} align="center"><Image src="/assets/images/icons/color/strategic-vision.svg" height="64px"></Image>&nbsp;&nbsp;<Heading size="lg" fontFamily="Nexa Bold">Our Vision</Heading></Flex>
+                <Text mt={2} fontSize="xl" >Uplifting Tech Essentials for your Enterprise.
                 </Text>
               </div>
             </div>
