@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import {
-    FormControl, FormLabel, Link, Input, Button, ModalContent, ModalHeader, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse, ModalBody ,Alert,AlertIcon
+    FormControl, FormLabel, Input, Button, ModalContent, ModalHeader, Spinner, Modal, ModalOverlay, Textarea, Tabs, TabPanels, TabList, TabPanel, Tab, Select, Box, Radio, RadioButtonGroup, RadioGroup, Collapse, ModalBody, Text
 } from "@chakra-ui/core";
-import keys from '../../apiKeys';
 import deviceList from '../../deviceDetect.js';
 import Toast from '../Toast/main';
 import { useDisclosure } from "@chakra-ui/core";
 import { deviceType, browserName, osName } from "react-device-detect";
 import SVG from '../svg/SVG';
 import axios from "axios";
+import cookie from 'react-cookies'
 const CustomRadio = React.forwardRef((props, ref) => {
     const { isChecked, ...rest } = props;
     return (
@@ -31,10 +31,10 @@ const deviceInfo = {
 }
 function ErrorForm(props) {
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
+    const [name, setName] = useState(cookie.load('name') ? cookie.load('name') : '');
+    const [email, setEmail] = useState(cookie.load('email') ? cookie.load('email') : '');
     const [description, setDescription] = useState('');
-    const [phone, setPhone] = useState('');
+    const [phone, setPhone] = useState(cookie.load('phone') ? cookie.load('phone') : '');
     const [error, setError] = useState('');
     const [browser, setBrowser] = useState(deviceInfo.browser);
     const [device, setDevice] = useState(deviceInfo.device);
@@ -42,6 +42,9 @@ function ErrorForm(props) {
     const [othererror, setOtherInput] = useState('');
     const [rend, setRend] = useState(false);
     const [show, setShow] = useState(false);
+    const [shown, setShown] = useState(cookie.load('name') ? false : true);
+    const [showe, setShowe] = useState(cookie.load('email') ? false : true);
+    const [showp, setShowp] = useState(cookie.load('phone') ? false : true);
     const [tabIndex, setTabIndex] = useState(0);
     const [activeButton, setActiveButton] = useState(deviceInfo.device);
     const [screenWidth, setScreenWidth] = useState(1000);
@@ -106,12 +109,13 @@ function ErrorForm(props) {
     const refreshForm = (res) => {
         loadingState(false)
         console.log(res);
+        setCookies();
         setResponse(res);
         setResponse('');
-        setName('');
-        setEmail('');
+        setName(cookie.load('name') ? cookie.load('name') : '');
+        setEmail(cookie.load('email') ? cookie.load('email') : '');
         setDescription('');
-        setPhone('');
+        setPhone(cookie.load('phone') ? cookie.load('phone') : '');
         setDevice(deviceInfo.device);
         setBrowser(deviceInfo.browser);
         setOs(deviceInfo.os);
@@ -143,11 +147,16 @@ function ErrorForm(props) {
         onClose();
         setTabIndex(0);
     }
+    const setCookies = () => {
+        cookie.save("name", name, { path: "/" });
+        cookie.save("email", email, { path: "/" });
+        cookie.save("phone", phone, { path: "/" });
+    }
     const onSubmit = (event) => {
         event.preventDefault()
         loadingState(true);
         axios.post('/api/report/submit', form)
-            .then((response) => refreshForm(response),error=>refreshForm(error))
+            .then((response) => refreshForm(response), error => refreshForm(error))
     }
     const updateWidth = () => {
         setScreenWidth(window.innerWidth);
@@ -223,39 +232,39 @@ function ErrorForm(props) {
                                         </TabPanel>
                                         <TabPanel>
                                             <FormControl isRequired mt={10} >
-                                                <FormLabel htmlFor="name">Name:</FormLabel>
-                                                <Input
+                                                <FormLabel htmlFor="name">Name:{!shown && <Text onClick={() => { setShown(true) }}>{name}</Text>}</FormLabel>
+                                                {shown ? <Input
                                                     variant="flushed"
                                                     type="text"
                                                     name="name"
                                                     value={form.name}
                                                     onChange={onChange}
-                                                />
+                                                /> : ''}
                                             </FormControl>
                                             <Box className="row" >
                                                 <div className="col-md-6">
                                                     <FormControl isRequired mt={10}>
-                                                        <FormLabel htmlFor="email">Email:</FormLabel>
-                                                        <Input
+                                                        <FormLabel htmlFor="email">Email:{!showe && <Text onClick={() => { setShowe(true) }}>{email}</Text>}</FormLabel>
+                                                        {showe ? <Input
                                                             variant="flushed"
                                                             type="email"
                                                             name="email"
                                                             value={form.email}
                                                             onChange={onChange}
-                                                        />
+                                                        /> : ''}
                                                     </FormControl>
                                                 </div>
                                                 <div className="col-md-6">
                                                     <FormControl isRequired mt={10} >
-                                                        <FormLabel htmlFor="phone">Contact No.</FormLabel>
-                                                        <Input
+                                                        <FormLabel htmlFor="phone">Contact No:{!showp && <Text onClick={() => { setShowp(true) }}>{phone}</Text>}</FormLabel>
+                                                        {showp ? <Input
                                                             type="tel"
                                                             pattern="[0-9]{10}"
                                                             variant="flushed"
                                                             name="phone"
                                                             value={form.contactNumber}
                                                             onChange={onChange}
-                                                        />
+                                                        /> : ''}
                                                     </FormControl>
                                                 </div>
                                             </Box>

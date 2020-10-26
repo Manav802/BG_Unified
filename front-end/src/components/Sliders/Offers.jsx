@@ -31,7 +31,7 @@ function main({height = "296px", ...props}) {
         <SwiperSlide>
             <Container>
                 <Grid templateColumns={["100%","128px auto","192px auto","256px auto","40% 60%"]} p={[5,8,12]}>
-                    <Image height={height} alt="Free Healthcare Services" justifySelf="center" src="/assets/images/vectors/bank_secure.svg" padding={[4,0]}  width="100%"></Image>
+                    <Image height={height} alt="Free Healthcare Services" justifySelf="center" src="/assets/images/brands/okta.png" padding={[4,0]}  width="100%"></Image>
                     <Flex direction="column" justify="center" px={[3,5,12]}>
                         <Heading fontSize={["xl","xl","2xl","3xl"]} fontFamily="Nexa Bold">OKTA Services offered to our customers</Heading>
                         <Text mt={3} opacity={.7}>- BG Unified Solutions is one step away from offering OKTA services to the end customers. Thanks to NEXTGEN Distribution for making this happen.

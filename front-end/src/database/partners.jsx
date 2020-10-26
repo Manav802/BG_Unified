@@ -31,6 +31,11 @@ export default [
         description: "AGC Networks (AGC) is a Global Solutions Integrator representing the world’s best brands in Unified Communications, Data Center & Edge IT, Cyber Security (CYBER-i) and Digital Transformation & Applications to evolve the customer’s digital landscape. AGC’s ability to tailor solutions across quadrants is strengthened through delivery of seamless customer support services.",
     },
     {
+        name: "OKTA",
+        logo: "/assets/images/brands/okta.png",
+        description: "Okta, Inc. is a publicly traded identity and access management company based in San Francisco. It provides cloud software that helps companies manage and secure user authentication into modern applications, and for developers to build identity controls into applications, website web services and devices.",
+    },
+    {
         name: "Fortinet (MSSP)",
         logo: "/assets/images/brands/fortinet.png",
         description: "Fortinet (MSSP) secures the largest enterprise, service provider, and government organizations around the world. Fortinet empowers its customers with intelligent, seamless protection across the expanding attack surface and the power to take on ever-increasing performance requirements of the borderless network"
