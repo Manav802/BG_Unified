@@ -36,3 +36,6 @@ module.exports.cybersecurity = cybersecurity
 
 import huawei from './huawei'
 module.exports.huawei = huawei
+
+import sdwan from './sdwan'
+module.exports.sdwan = sdwan
