@@ -12,7 +12,7 @@ const blogs = [
         date: "October 2020",
         by: "Saurabh Sareen",
         avatar: "/assets/images/team/saurabh.jpg",
-        image: "/assets/images/brands/fortinet.png",
+        image: "/assets/images/newsroom/fortinet.jpg",
         imgalt: " BG Unified Solutions and Fortinet working collaboratively",
         category: "Updates",
         tags: ["Fortinet", "SD-WAN", "BOTaaS", "DDOS", "BGUS", "WAFaaS", "VDOM", "VSYS", "Sareen", "infrastructure", "racks", "Network"],
