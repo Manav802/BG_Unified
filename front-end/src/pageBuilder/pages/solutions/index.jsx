@@ -93,3 +93,9 @@ module.exports.gpu = gpu
 
 import kubernetes from './kubernetes'
 module.exports.kubernetes = kubernetes
+
+import networkFinance from './network-finance'
+module.exports.networkFinance = networkFinance
+
+import serverFinance from './server-finance'
+module.exports.serverFinance = serverFinance

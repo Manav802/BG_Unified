@@ -68,6 +68,7 @@ function header(props) {
                                                         <Tab p={6} _selected={{ color: "purple.500", borderBottomColor: "purple.500" }}>Cyber Security Services</Tab>
                                                         <Tab p={6} _selected={{ color: "orange.400", borderBottomColor: "orange.400" }}>Collaborative Services</Tab>
                                                         <Tab p={6} _selected={{ color: "primary.500", borderBottomColor: "primary.500" }}>Professional Services</Tab>
+                                                        {/* <Tab p={6} _selected={{ color: "primary.500", borderBottomColor: "yellow.500" }}>Equipment Finance</Tab> */}
                                                     </TabList>
 
                                                     <TabPanels>
@@ -141,6 +142,20 @@ function header(props) {
                                                                 ))}
                                                             </Flex>
                                                         </TabPanel>
+                                                        {/* <TabPanel>
+                                                            <Flex wrap="wrap" p={6}>
+                                                                {servicesArray.filter(service => service[1].category === "Equipment Finance").map(service => (
+                                                                    <Hyperlink href="/solutions/[name]" as={"/solutions/" + service[0]}>
+                                                                        <Link onClick={onClose2} my={1} width="33%" fontSize="md" px={3} fontWeight="600">
+                                                                            <Flex align="center" p={3} className="hover-effect">
+                                                                                <SVG hex={service[1].color} size="24px" src={service[1].icon} />
+                                                                                <Box as="span" ml={3}>{service[1].slogan}</Box>
+                                                                            </Flex>
+                                                                        </Link>
+                                                                    </Hyperlink>
+                                                                ))}
+                                                            </Flex>
+                                                        </TabPanel> */}
                                                     </TabPanels>
                                                 </Tabs>
                                             </Box>

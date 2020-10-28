@@ -452,6 +452,36 @@ const services = {
         conclusion: "Video Conferencing Experience like never before with BGUS TPaaS!",
         sections: sections.tpaas
     },
+    "server-finance": {
+        title: "Equipment Finance",
+        slogan: "Server Infrastructure",
+        bgImage: "/assets/images/services/server.jpg",
+        category: "Equipment Finance",
+        icon: "/assets/images/icons/library/devices/server.svg",
+        color: "#E4572E",
+        popular: true,
+        tags: ["telepresence", "video", "conferencing", "collaboration"],
+        description: "BGUS' TelePresence Services provide comprehensive service offerings to help enterprises prepare, plan, and design their networks. These services combine extensive engineering expertise in converged networks,",
+        illustration: "",
+        relatedService: ["Unified Communications As A Service", "Service Desk As A Service", "Contact Center As A Service"],
+        conclusion: "Video Conferencing Experience like never before with BGUS TPaaS!",
+        sections: sections.serverFinance
+    },
+    "network-finance": {
+        title: "Equipment Finance",
+        slogan: "Network Infrastructure",
+        bgImage: "/assets/images/services/logging.jpg",
+        category: "Equipment Finance",
+        icon: "/assets/images/icons/library/devices/lte-1.svg",
+        color: "#E4572E",
+        popular: true,
+        tags: ["telepresence", "video", "conferencing", "collaboration"],
+        description: "BGUS' TelePresence Services provide comprehensive service offerings to help enterprises prepare, plan, and design their networks. These services combine extensive engineering expertise in converged networks,",
+        illustration: "",
+        relatedService: ["Unified Communications As A Service", "Service Desk As A Service", "Contact Center As A Service"],
+        conclusion: "Video Conferencing Experience like never before with BGUS TPaaS!",
+        sections: sections.networkFinance
+    },
  
   
 }
