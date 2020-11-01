@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-flickity-component";
 import Team from "../components/cards/team";
 import { FaArrowRight } from "react-icons/fa";
-import { Box, Flex, Heading, Text, Image } from "@chakra-ui/core";
+import { Box, Flex, Heading, Text, Image, Button, Icon } from "@chakra-ui/core";
 import Head from "next/head";
 import Fade from 'react-reveal/Fade';
 import Section from "../pageBuilder/Section";
@@ -12,20 +12,34 @@ import MyCount from "../components/Countup/main";
 import Link from "next/link";
 import skills from "../database/skills";
 import timeline from "../database/timeline";
+import Container from "../pageBuilder/Container";
 
-class about extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeYearCard: 1,
-    };
-  }
-  goToIndex = (index) => {
-    //using Flickity API
-    this.flkty.select(index);
-    this.setState({ activeYearCard: index });
-  };
-  render() {
+function about(){
+    const [activeCard, setCard] = React.useState(0);
+    const setNext = () => {
+      if(activeCard === timeline.length){
+        setCard(0)
+      }
+      else {
+        setCard(activeCard + 1)
+      }
+    }
+    const move = (index) => {
+        if(activeCard === timeline.length){
+          setCard(0)
+        }
+        else {
+          setCard(activeCard + 1)
+        }
+    }
+    const setPrev = () => {
+      if(activeCard === 0){
+        setCard(timeline.length)
+      }
+      else {
+        setCard(activeCard - 1)
+      }
+    }
     return (
       <>
         <div className="about">
@@ -43,13 +57,13 @@ class about extends Component {
           <Box pos="relative" bg="dark.500">
             <Image position="absolute" height="100%" zIndex="0" top={0} left={0} opacity=".3" objectFit="cover" width="100%" src="/assets/images/backgrounds/aboutus.jpg"></Image>
             <Fade distance="5%" duration={500} top>
-              <Section zIndex="100" textAlign="center" color="white" py={[16, 40]} my={0}>
+              <Section textAlign="center" color="white" py={[16, 40]} my={0}>
                 <Heading size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Know More</Heading>
-                <Title zIndex="100" fontSize={["44px", "64px"]}>About Us</Title>
+                <Title fontSize={["44px", "64px"]}>About Us</Title>
               </Section>
             </Fade>
           </Box>
-          <Box mt="-48px">
+          {/* <Box mt="-48px">
             <Slider
               className="timeline"
               flickityRef={(c) => (this.flkty = c)}
@@ -84,6 +98,28 @@ class about extends Component {
                 <Flex justify="center" align="center" height="96px"><Box width="100%" height="4px" bg="gray.200"></Box></Flex>
               </div>
             </Slider>
+          </Box> */}
+          <Box my={12} pos="relative">
+            <Container>
+              <Flex width="100%" height="400px" onClick={() => move()} cursor="pointer" pos="relative">
+                {timeline.map((year, index) => <Box cursor="pointer"  transition="1s" zIndex={index * -1} transform={`rotate(${year.rotate}deg) translateX(${activeCard > index ? 600 : 0}px)`} p={12} overflow="hidden" pos="absolute" height="400px" bg="white" width="360px" boxShadow="md" rounded={8}>
+                  <Heading position="absolute" bottom="-48px" left="48px" size="lg" transform="scale(1.2)" fontSize="120px" opacity=".05" my={4} color={year.color} fontFamily="Nexa Bold">{year.year}</Heading>
+                  <Heading size="xl" my={4} color={year.color} fontFamily="Nexa Bold">{year.year}</Heading>
+                  <Box mt={8}>{year.text}</Box>
+                </Box>)}
+              </Flex>
+              {/* <Button onClick={() => {setNext()}}>Next</Button>
+              <Button onClick={() => {setPrev()}}>Prev</Button>{activeCard} */}
+              <Flex transform={`translateX(600px)`} opacity={activeCard === 0 ? ".5" : 0} transition=".3s" position="absolute" top={0} height="400px" width="300px" justify="center" align="center" flexDirection="column">
+                <Image src="/assets/images/vectors/arrow.svg" height="32px" my={4}></Image>
+                Click on the card to explore...
+              </Flex>              
+              
+                <Flex cursor="pointer" transform={`scale(${activeCard === timeline.length ? 1 : 0})`} transition=".3s" opacity=".5" onClick={() => setCard(0)} position="absolute" top={0} height="400px" width="300px" justify="center" align="center" flexDirection="column">
+                <Icon name="repeat" size="64px"></Icon>
+                {/* Reset */}
+              </Flex>
+            </Container>
           </Box>
           <div className="container">
             <div className="row">
@@ -176,6 +212,5 @@ class about extends Component {
       </>
     );
   }
-}
 
 export default about;
